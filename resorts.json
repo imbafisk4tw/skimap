@@ -1,0 +1,1132 @@
+[
+  {
+    "name": "Axamer Lizum",
+    "lat": 47.195,
+    "lon": 11.281,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.axamer-lizum.at"
+  },
+  {
+    "name": "Bergeralm – Steinach am Brenner",
+    "lat": 47.065,
+    "lon": 11.466,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.bergeralm.net"
+  },
+  {
+    "name": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
+    "lat": 47.391,
+    "lon": 10.692,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.berwang.tirol"
+  },
+  {
+    "name": "Biberwier – Marienberg",
+    "lat": 47.368,
+    "lon": 10.873,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-langes.at"
+  },
+  {
+    "name": "Brauneck – Lenggries",
+    "lat": 47.666,
+    "lon": 11.553,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.brauneck-bergbahn.de"
+  },
+  {
+    "name": "Buchensteinwand – Pillersee",
+    "lat": 47.497,
+    "lon": 12.576,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.bergbahn-pillersee.com"
+  },
+  {
+    "name": "Ehrwald – Ehrwalder Alm",
+    "lat": 47.41,
+    "lon": 10.92,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.almbahn.at"
+  },
+  {
+    "name": "Elferbahnen – Neustift",
+    "lat": 47.109,
+    "lon": 11.309,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.stubai.at/skigebiete/elferbahnen"
+  },
+  {
+    "name": "Fendels",
+    "lat": 47.063,
+    "lon": 10.671,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html"
+  },
+  {
+    "name": "Galsterberg",
+    "lat": 47.385,
+    "lon": 13.944,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.galsterberg.at"
+  },
+  {
+    "name": "Galtür – Silvapark",
+    "lat": 46.967,
+    "lon": 10.184,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.galtuer.com/de/winter/skigebiet-silvapark"
+  },
+  {
+    "name": "Garmisch-Classic",
+    "lat": 47.492,
+    "lon": 11.118,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://zugspitze.de"
+  },
+  {
+    "name": "Gastein – Bad Gastein",
+    "lat": 47.116,
+    "lon": 13.134,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.skigastein.com"
+  },
+  {
+    "name": "Gastein – Bad Hofgastein",
+    "lat": 47.171,
+    "lon": 13.1,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.skigastein.com"
+  },
+  {
+    "name": "Gerlitzen Alpe",
+    "lat": 46.669,
+    "lon": 13.894,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.gerlitzen.com"
+  },
+  {
+    "name": "Glungezer – Tulfes",
+    "lat": 47.235,
+    "lon": 11.522,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.glungezerbahn.at"
+  },
+  {
+    "name": "Goldeck – Spittal/Drau",
+    "lat": 46.797,
+    "lon": 13.476,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.sportberg-goldeck.com"
+  },
+  {
+    "name": "Grebenzen – St. Lambrecht",
+    "lat": 47.07,
+    "lon": 14.34,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://grebenzen.at"
+  },
+  {
+    "name": "Großglockner Resort Kals–Matrei",
+    "lat": 46.999,
+    "lon": 12.562,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.gg-resort.at"
+  },
+  {
+    "name": "Hauser Kaibling",
+    "lat": 47.401,
+    "lon": 13.83,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.hauser-kaibling.at"
+  },
+  {
+    "name": "Heiligenblut – Großglockner",
+    "lat": 47.037,
+    "lon": 12.846,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.heiligenblut.at"
+  },
+  {
+    "name": "Hinterstoder – Höss",
+    "lat": 47.696,
+    "lon": 14.158,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.hinterstoder.at"
+  },
+  {
+    "name": "Hintertuxer Gletscher",
+    "lat": 47.074,
+    "lon": 11.664,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hintertuxergletscher.at"
+  },
+  {
+    "name": "Hochficht",
+    "lat": 48.732,
+    "lon": 13.913,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.hochficht.at"
+  },
+  {
+    "name": "Hochficht (Böhmerwald)",
+    "lat": 48.732,
+    "lon": 13.913,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.hochficht.at"
+  },
+  {
+    "name": "Hochkönig – Maria Alm/Dienten/Mühlbach",
+    "lat": 47.391,
+    "lon": 13.103,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.hochkoenig.at"
+  },
+  {
+    "name": "Hochkössen (Unterberghorn)",
+    "lat": 47.674,
+    "lon": 12.423,
+    "sct": true,
+    "ssc": false,
+    "region": "Tirol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-koessen.at"
+  },
+  {
+    "name": "Hochwurzen",
+    "lat": 47.367,
+    "lon": 13.72,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.planai.at"
+  },
+  {
+    "name": "Hochoetz",
+    "lat": 47.212,
+    "lon": 10.898,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.oetztal.com/de/aktivitaeten/winter/skigebiete/skigebiet-hochoetz.html"
+  },
+  {
+    "name": "Hochzeiger – Jerzens",
+    "lat": 47.155,
+    "lon": 10.744,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hochzeiger.com"
+  },
+  {
+    "name": "Imst – Hochimst",
+    "lat": 47.23,
+    "lon": 10.745,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.imster-bergbahnen.at"
+  },
+  {
+    "name": "Ischgl / Samnaun (Silvretta Arena)",
+    "lat": 46.99,
+    "lon": 10.29,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.ischgl.com"
+  },
+  {
+    "name": "Jenner – Königssee",
+    "lat": 47.583,
+    "lon": 12.996,
+    "sct": false,
+    "ssc": true,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.jennerbahn.de"
+  },
+  {
+    "name": "Kappl",
+    "lat": 47.069,
+    "lon": 10.376,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kappl.com"
+  },
+  {
+    "name": "Kaprun – Kitzsteinhorn (Gletscher)",
+    "lat": 47.219,
+    "lon": 12.759,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.kitzsteinhorn.at"
+  },
+  {
+    "name": "Kasberg – Grünau im Almtal",
+    "lat": 47.874,
+    "lon": 13.994,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.kasberg.at"
+  },
+  {
+    "name": "Katschberg/Aineck",
+    "lat": 47.074,
+    "lon": 13.647,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia/Salzburg",
+    "country": "Austria",
+    "website": "https://www.katschberg.at"
+  },
+  {
+    "name": "KitzSki – Kitzbühel/Kirchberg",
+    "lat": 47.442,
+    "lon": 12.392,
+    "sct": true,
+    "ssc": true,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kitzski.at"
+  },
+  {
+    "name": "Kitzsteinhorn – Kaprun",
+    "lat": 47.219,
+    "lon": 12.759,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.kitzsteinhorn.at"
+  },
+  {
+    "name": "Kleinarl – Shuttleberg",
+    "lat": 47.276,
+    "lon": 13.333,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.shuttleberg.com"
+  },
+  {
+    "name": "Kreischberg",
+    "lat": 47.081,
+    "lon": 14.101,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.kreischberg.at"
+  },
+  {
+    "name": "Kühtai",
+    "lat": 47.212,
+    "lon": 11.023,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kuehtai.info"
+  },
+  {
+    "name": "Lachtal",
+    "lat": 47.255,
+    "lon": 14.384,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.lachtal.at"
+  },
+  {
+    "name": "Lermoos – Grubigstein",
+    "lat": 47.401,
+    "lon": 10.879,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-langes.at"
+  },
+  {
+    "name": "Lienz – Hochstein",
+    "lat": 46.828,
+    "lon": 12.759,
+    "sct": true,
+    "ssc": false,
+    "region": "East Tyrol",
+    "country": "Austria",
+    "website": "https://www.lienzer-bergbahnen.at"
+  },
+  {
+    "name": "Lienz – Zettersfeld",
+    "lat": 46.846,
+    "lon": 12.77,
+    "sct": true,
+    "ssc": false,
+    "region": "East Tyrol",
+    "country": "Austria",
+    "website": "https://www.lienzer-bergbahnen.at"
+  },
+  {
+    "name": "Loser – Altaussee",
+    "lat": 47.645,
+    "lon": 13.79,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.loser.at"
+  },
+  {
+    "name": "Mayrhofen – Penken/Ahorn",
+    "lat": 47.167,
+    "lon": 11.861,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.mayrhofner-bergbahnen.com"
+  },
+  {
+    "name": "Mölltaler Gletscher",
+    "lat": 46.935,
+    "lon": 13.013,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.moelltaler-gletscher.at"
+  },
+  {
+    "name": "Mölltaler Gletscher & Ankogelbahn",
+    "lat": 46.95,
+    "lon": 13.02,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.gletscher.co.at"
+  },
+  {
+    "name": "Montafon – Silvretta Montafon",
+    "lat": 47.044,
+    "lon": 9.987,
+    "sct": false,
+    "ssc": true,
+    "region": "Vorarlberg",
+    "country": "Austria",
+    "website": "https://www.silvretta-montafon.at"
+  },
+  {
+    "name": "Muttereralm",
+    "lat": 47.227,
+    "lon": 11.337,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.muttereralm.at"
+  },
+  {
+    "name": "Nauders – Bergkastel",
+    "lat": 46.882,
+    "lon": 10.504,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.nauders.com"
+  },
+  {
+    "name": "Nassfeld – Hermagor",
+    "lat": 46.556,
+    "lon": 13.282,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia",
+    "country": "Austria",
+    "website": "https://www.nassfeld.at"
+  },
+  {
+    "name": "Nordkette – Seegrube/Hafelekar (Innsbruck)",
+    "lat": 47.306,
+    "lon": 11.377,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.nordkette.com"
+  },
+  {
+    "name": "Obergurgl-Hochgurgl",
+    "lat": 46.869,
+    "lon": 11.027,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.gurgl.com"
+  },
+  {
+    "name": "Obertauern",
+    "lat": 47.251,
+    "lon": 13.563,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.obertauern.com"
+  },
+  {
+    "name": "Obertraun – Dachstein Krippenstein",
+    "lat": 47.543,
+    "lon": 13.686,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.dachstein-salzkammergut.com"
+  },
+  {
+    "name": "Oberstdorf – Fellhorn/Kanzelwand",
+    "lat": 47.35,
+    "lon": 10.233,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.ok-bergbahnen.com"
+  },
+  {
+    "name": "Oberstdorf – Nebelhorn",
+    "lat": 47.416,
+    "lon": 10.328,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.ok-bergbahnen.com"
+  },
+  {
+    "name": "Oberstdorf – Söllereck",
+    "lat": 47.385,
+    "lon": 10.223,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.ok-bergbahnen.com"
+  },
+  {
+    "name": "Patscherkofel – Igls",
+    "lat": 47.215,
+    "lon": 11.43,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.patscherkofelbahn.at"
+  },
+  {
+    "name": "Planneralm",
+    "lat": 47.402,
+    "lon": 14.084,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.planneralm.at"
+  },
+  {
+    "name": "Pitztaler Gletscher",
+    "lat": 46.97,
+    "lon": 10.866,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.pitztaler-gletscher.at"
+  },
+  {
+    "name": "Präbichl",
+    "lat": 47.541,
+    "lon": 14.986,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.praebichl.at"
+  },
+  {
+    "name": "Radstadt/Altenmarkt",
+    "lat": 47.383,
+    "lon": 13.45,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.radstadt-altenmarkt.at"
+  },
+  {
+    "name": "Ramsau am Dachstein (Rittisberg)",
+    "lat": 47.43,
+    "lon": 13.65,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.rittisberg.at"
+  },
+  {
+    "name": "Ramsau am Dachstein – Rittisberg",
+    "lat": 47.43,
+    "lon": 13.65,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.rittisberg.at"
+  },
+  {
+    "name": "Rangger Köpfl – Oberperfuss",
+    "lat": 47.264,
+    "lon": 11.259,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.rangger-koepfl.at"
+  },
+  {
+    "name": "Reiteralm",
+    "lat": 47.373,
+    "lon": 13.656,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.reiteralm.at"
+  },
+  {
+    "name": "Riesneralm – Donnersbachwald",
+    "lat": 47.383,
+    "lon": 14.1,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.riesneralm.at"
+  },
+  {
+    "name": "Saalbach Hinterglemm – Leogang – Fieberbrunn",
+    "lat": 47.391,
+    "lon": 12.639,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg/Tyrol",
+    "country": "Austria",
+    "website": "https://www.saalbach.com"
+  },
+  {
+    "name": "Schladming – Planai",
+    "lat": 47.39,
+    "lon": 13.689,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.planai.at"
+  },
+  {
+    "name": "Schladming – Planai/Hochwurzen",
+    "lat": 47.39,
+    "lon": 13.689,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.planai.at"
+  },
+  {
+    "name": "Schlick 2000 – Fulpmes",
+    "lat": 47.152,
+    "lon": 11.325,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.stubai.at/skigebiete/schlick2000"
+  },
+  {
+    "name": "Schmittenhöhe – Zell am See",
+    "lat": 47.325,
+    "lon": 12.787,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.schmitten.at"
+  },
+  {
+    "name": "See im Paznaun",
+    "lat": 47.079,
+    "lon": 10.756,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.see.at"
+  },
+  {
+    "name": "Seefeld – Rosshütte",
+    "lat": 47.345,
+    "lon": 11.185,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.rosshuette.at"
+  },
+  {
+    "name": "Serfaus-Fiss-Ladis",
+    "lat": 47.039,
+    "lon": 10.6,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.serfaus-fiss-ladis.at"
+  },
+  {
+    "name": "Serlesbahnen – Mieders",
+    "lat": 47.156,
+    "lon": 11.368,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.stubai.at/skigebiete/serlesbahnen"
+  },
+  {
+    "name": "Silvretta Montafon",
+    "lat": 47.044,
+    "lon": 9.987,
+    "sct": false,
+    "ssc": true,
+    "region": "Vorarlberg",
+    "country": "Austria",
+    "website": "https://www.silvretta-montafon.at"
+  },
+  {
+    "name": "Sillian – Thurntaler (Hochpustertal)",
+    "lat": 46.749,
+    "lon": 12.42,
+    "sct": true,
+    "ssc": false,
+    "region": "East Tyrol",
+    "country": "Austria",
+    "website": "https://www.hochpustertal-ski.at"
+  },
+  {
+    "name": "Ski Amadé",
+    "lat": 47.336,
+    "lon": 13.465,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg/Styria",
+    "country": "Austria",
+    "website": "https://www.skiamade.com"
+  },
+  {
+    "name": "SkiWelt Wilder Kaiser – Brixental",
+    "lat": 47.494,
+    "lon": 12.292,
+    "sct": true,
+    "ssc": true,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Skiarena Wildkogel – Neukirchen/Bramberg",
+    "lat": 47.25,
+    "lon": 12.265,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.wildkogel-arena.at"
+  },
+  {
+    "name": "Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn",
+    "lat": 47.391,
+    "lon": 12.639,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg/Tyrol",
+    "country": "Austria",
+    "website": "https://www.saalbach.com"
+  },
+  {
+    "name": "Skijuwel Alpbachtal – Wildschönau",
+    "lat": 47.444,
+    "lon": 11.945,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skijuwel.com"
+  },
+  {
+    "name": "Snow Space Salzburg – Flachau",
+    "lat": 47.342,
+    "lon": 13.394,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.snow-space.com"
+  },
+  {
+    "name": "Snow Space Salzburg – Flachau/Wagrain/St. Johann",
+    "lat": 47.342,
+    "lon": 13.394,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.snow-space.com"
+  },
+  {
+    "name": "Snow Space Salzburg – St. Johann/Alpendorf",
+    "lat": 47.33,
+    "lon": 13.204,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.snow-space.com"
+  },
+  {
+    "name": "Snow Space Salzburg – Wagrain",
+    "lat": 47.335,
+    "lon": 13.29,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.snow-space.com"
+  },
+  {
+    "name": "Sportgastein",
+    "lat": 47.069,
+    "lon": 13.132,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.skigastein.com"
+  },
+  {
+    "name": "Spitzingsee – Tegernsee",
+    "lat": 47.65,
+    "lon": 11.9,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.alpenbahnen-spitzingsee.de"
+  },
+  {
+    "name": "St. Jakob im Defereggental – Brunnalm",
+    "lat": 46.932,
+    "lon": 12.329,
+    "sct": true,
+    "ssc": false,
+    "region": "East Tyrol",
+    "country": "Austria",
+    "website": "https://www.stjakob-ski.at"
+  },
+  {
+    "name": "St. Johann in Tirol – Oberndorf",
+    "lat": 47.527,
+    "lon": 12.433,
+    "sct": true,
+    "ssc": true,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-stjohann.at"
+  },
+  {
+    "name": "St. Michael – Großeck-Speiereck",
+    "lat": 47.1,
+    "lon": 13.633,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.grosseck-speiereck.at"
+  },
+  {
+    "name": "Steinplatte – Waidring",
+    "lat": 47.582,
+    "lon": 12.571,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.steinplatte.tirol"
+  },
+  {
+    "name": "Stubaier Gletscher",
+    "lat": 46.999,
+    "lon": 11.112,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.stubaier-gletscher.com"
+  },
+  {
+    "name": "Sudelfeld – Bayrischzell",
+    "lat": 47.692,
+    "lon": 12.011,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.sudelfeld.de"
+  },
+  {
+    "name": "Tauplitz/Bad Mitterndorf",
+    "lat": 47.565,
+    "lon": 13.99,
+    "sct": false,
+    "ssc": true,
+    "region": "Styria",
+    "country": "Austria",
+    "website": "https://www.dietauplitz.com"
+  },
+  {
+    "name": "Turracher Höhe (Kärnten/Steiermark)",
+    "lat": 46.909,
+    "lon": 13.873,
+    "sct": false,
+    "ssc": true,
+    "region": "Carinthia/Styria",
+    "country": "Austria",
+    "website": "https://www.turracherhoehe.at"
+  },
+  {
+    "name": "Venet – Zams/Fließ",
+    "lat": 47.152,
+    "lon": 10.65,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.venet.at"
+  },
+  {
+    "name": "Werfenweng",
+    "lat": 47.46,
+    "lon": 13.247,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.werfenweng.eu"
+  },
+  {
+    "name": "Wildkogel Arena – Neukirchen/Bramberg",
+    "lat": 47.25,
+    "lon": 12.265,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.wildkogel-arena.at"
+  },
+  {
+    "name": "Winklmoosalm – Reit im Winkl",
+    "lat": 47.654,
+    "lon": 12.596,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://www.winklmoosalm.com"
+  },
+  {
+    "name": "Wurzeralm",
+    "lat": 47.654,
+    "lon": 14.33,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.hiwu.at"
+  },
+  {
+    "name": "Wurzeralm – Spital am Pyhrn",
+    "lat": 47.654,
+    "lon": 14.33,
+    "sct": false,
+    "ssc": true,
+    "region": "Upper Austria",
+    "country": "Austria",
+    "website": "https://www.hiwu.at"
+  },
+  {
+    "name": "Zauchensee – Flachauwinkl",
+    "lat": 47.29,
+    "lon": 13.455,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.zauchensee.at"
+  },
+  {
+    "name": "Zauchensee/Flachauwinkl",
+    "lat": 47.29,
+    "lon": 13.455,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.zauchensee.at"
+  },
+  {
+    "name": "Zell am See – Schmittenhöhe",
+    "lat": 47.325,
+    "lon": 12.787,
+    "sct": false,
+    "ssc": true,
+    "region": "Salzburg",
+    "country": "Austria",
+    "website": "https://www.schmitten.at"
+  },
+  {
+    "name": "Zillertal Arena",
+    "lat": 47.242,
+    "lon": 12.091,
+    "sct": true,
+    "ssc": true,
+    "region": "Tyrol/Salzburg",
+    "country": "Austria",
+    "website": "https://www.zillertalarena.com"
+  },
+  {
+    "name": "Zugspitze",
+    "lat": 47.421,
+    "lon": 10.985,
+    "sct": false,
+    "ssc": false,
+    "region": "Bavaria",
+    "country": "Germany",
+    "nearMuc": true,
+    "website": "https://zugspitze.de"
+  }
+]

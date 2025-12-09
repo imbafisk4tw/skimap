@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ski-Pässe: Snow Card Tirol & SuperSkiCard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+    .legend-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+      background: white;
+      padding: 10px;
+      border: 1px solid #888;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .search-box {
+      position: fixed;
+      top: 10px;
+      left: 50px;
+      z-index: 10000;
+      background: white;
+      padding: 8px;
+      border: 1px solid #888;
+      font-size: 13px;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+    .search-box label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+    .search-box input {
+      width: 220px;
+      padding: 4px 6px;
+      font-size: 13px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+	
+	.slider-box {
+  position: fixed;
+  bottom: 110px;        /* sitzt über der Legende */
+  left: 20px;
+  z-index: 10000;
+  background: white;
+  padding: 8px 10px;
+  border: 1px solid #888;
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  max-width: 260px;
+  width: calc(100vw - 40px); /* mobil: passt sich an */
+  box-sizing: border-box;
+}
+
+.slider-box label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.slider-box input[type="range"] {
+  width: 100%;
+}
+.slider-box .time-label {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #444;
+}
+
+/* Box für Startadresse & Button */
+.home-box {
+  position: fixed;
+  top: 80px;           /* sitzt unter der Suchbox */
+  left: 50px;
+  z-index: 10000;
+  background: white;
+  padding: 8px 10px;
+  border: 1px solid #888;
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  max-width: 260px;
+  width: calc(100vw - 40px);
+  box-sizing: border-box;
+}
+.home-box label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+.home-box input {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 13px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+}
+.home-box button {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.home-box button:hover {
+  background: #e0e0e0;
+}
+
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Suchfeld -->
+<div class="search-box">
+  <label for="resort-search">Skigebiet suchen</label>
+  <input
+    id="resort-search"
+    list="resort-datalist"
+    type="text"
+    placeholder="Name eingeben & Enter drücken..."
+  />
+  <datalist id="resort-datalist"></datalist>
+</div>
+
+<!-- Startadresse & Button -->
+<div class="home-box">
+  <label for="home-input">Startadresse (Adresse oder lat,lon)</label>
+  <input
+    id="home-input"
+    type="text"
+    placeholder="z.B. München, Marienplatz oder 48.12,11.57"
+  />
+  <button id="btn-calc-times" type="button">Fahrzeiten berechnen</button>
+</div>
+
+<!-- Fahrzeit-Slider -->
+<div class="slider-box">
+  <label for="time-slider">Max. Fahrzeit ab München</label>
+  <input id="time-slider" type="range" min="0" max="100" value="100" />
+  <div id="time-slider-label" class="time-label">Voll (alle Gebiete)</div>
+</div>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+
+<script>
+  // --------- Basis-Einstellungen ---------
+  const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImRhZjIxYzViN2RhZjQ1ZmNhZGY4ZjNlZThhZjEzODE3IiwiaCI6Im11cm11cjY0In0="; // <-- hier deinen ORS-Key eintragen
+
+  const MUC_LAT = 48.137;
+  const MUC_LON = 11.575;
+  const AVG_SPEED_KMH = 70.0;
+  
+  function getResortNameFromInput(raw) {
+    if (!raw) return '';
+    // trennt nur an " – " oder " - " (mit Leerzeichen davor und danach)
+    const parts = raw.split(/\s[–-]\s/);
+    return parts[0].trim();
+  }
+
+  function toRad(x) {
+    return x * Math.PI / 180;
+  }
+
+  function haversineKm(lat1, lon1, lat2, lon2) {
+    const R = 6371.0;
+    const phi1 = toRad(lat1);
+    const phi2 = toRad(lat2);
+    const dphi = toRad(lat2 - lat1);
+    const dlambda = toRad(lon2 - lon1);
+    const a = Math.sin(dphi / 2) ** 2 +
+              Math.cos(phi1) * Math.cos(phi2) * Math.sin(dlambda / 2) ** 2;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  }
+  
+  function buildDriveText(r) {
+    let distTxt = "";
+    if (r.distKm != null && isFinite(r.distKm)) {
+      distTxt = `${Math.round(r.distKm)} km`;
+    }
+    let timeTxt = "";
+    if (r.travelHours != null && isFinite(r.travelHours)) {
+      timeTxt = fmtTime(r.travelHours); // nutzt deine bestehende fmtTime()
+    }
+
+    if (distTxt && timeTxt) return `${distTxt} · ca. ${timeTxt}`;
+    if (distTxt)           return distTxt;
+    if (timeTxt)           return "ca. " + timeTxt;
+    return "keine Angabe";
+  }
+
+  function makePopupHtml(r) {
+    const passes = [];
+    if (r.sct) passes.push("Snow Card Tirol");
+    if (r.ssc) passes.push("SuperSkiCard");
+    if (r.nearMuc && !r.sct && !r.ssc) passes.push("Weitere Gebiete südlich von München");
+    const passesStr = passes.length ? passes.join(", ") : "–";
+
+    const driveTxt = buildDriveText(r);
+    const mapsUrl = `https://www.google.com/maps?q=${r.lat},${r.lon}`;
+
+    let websiteLine = "";
+    if (r.website) {
+      const url = r.website.startsWith("http") ? r.website : "https://" + r.website;
+      const label = url.replace(/^https?:\/\//, "");
+      websiteLine = `<b>Website:</b> <a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a><br/>`;
+    }
+
+    return `
+      <div style="font-size:13px">
+        <b>${r.name}</b><br/>
+        <b>Pässe:</b> ${passesStr}<br/>
+        <b>Gletscher:</b> ${r.glacier ? "Ja" : "Nein"}<br/>
+        ${websiteLine}
+        <b>Ab Zuhause:</b> ${driveTxt}<br/>
+        <a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">
+          In Google Maps öffnen
+        </a>
+      </div>
+    `;
+  }
+  
+  
+  function fmtTime(hoursFloat) {
+    const totalMin = Math.round(hoursFloat * 60);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+    return `${h}h ${m.toString().padStart(2, "0")}m`;
+  }
+
+  function norm(name) {
+    return name
+      .toLowerCase()
+      .replace(/–/g, "-")
+      .replace(/—/g, "-")
+      .replace(/  +/g, " ")
+      .trim();
+  }
+
+  // --------- Datenarrays bleiben als Referenz, echte Daten kommen aus resorts.json ---------
+  const sctList = [
+    ["Hintertuxer Gletscher", 47.110, 11.660, true],
+    ["Kaunertaler Gletscher", 46.882, 10.718, true],
+    ["Pitztaler Gletscher", 46.973, 10.867, true],
+    ["Sölden (Rettenbach/Tiefenbach)", 46.970, 10.987, true],
+    ["Stubaier Gletscher", 46.997, 11.135, true],
+    ["Ischgl / Samnaun (Silvretta Arena)", 46.988, 10.287, false],
+    ["Serfaus-Fiss-Ladis", 47.037, 10.604, false],
+    ["Mayrhofen – Penken/Ahorn", 47.166, 11.862, false],
+    ["Hochzillertal / Hochfügen", 47.255, 11.780, false],
+    ["Zillertal Arena", 47.230, 12.100, false],
+    ["Kühtai", 47.211, 11.019, false],
+    ["Axamer Lizum", 47.197, 11.268, false],
+    ["Schlick 2000 – Fulpmes", 47.142, 11.345, false],
+    ["Patscherkofel – Igls", 47.217, 11.461, false],
+    ["Bergeralm – Steinach am Brenner", 47.073, 11.467, false],
+    ["Obergurgl-Hochgurgl", 46.870, 11.027, false],
+    ["Hochoetz", 47.212, 10.932, false],
+    ["Galtür – Silvapark", 46.984, 10.185, false],
+    ["Kappl", 47.071, 10.384, false],
+    ["See im Paznaun", 47.079, 10.483, false],
+    ["Nauders – Bergkastel", 46.891, 10.506, false],
+    ["KitzSki – Kitzbühel/Kirchberg", 47.447, 12.392, false],
+    ["SkiWelt Wilder Kaiser – Brixental", 47.510, 12.220, false],
+    ["Skijuwel Alpbachtal – Wildschönau", 47.438, 11.941, false],
+    ["St. Johann in Tirol – Oberndorf", 47.523, 12.430, false],
+    ["Fieberbrunn", 47.478, 12.539, false],
+    ["Hochkössen (Unterberghorn)", 47.667, 12.413, false],
+    ["Steinplatte – Waidring", 47.581, 12.572, false],
+    ["Lermoos – Grubigstein", 47.398, 10.883, false],
+    ["Biberwier – Marienberg", 47.383, 10.847, false],
+    ["Ehrwald – Ehrwalder Alm", 47.403, 10.945, false],
+    ["Seefeld – Rosshütte", 47.330, 11.188, false],
+    ["Glungezer – Tulfes", 47.231, 11.533, false],
+    ["Imst – Hochimst", 47.231, 10.739, false],
+    ["Hochzeiger – Jerzens", 47.160, 10.749, false],
+    ["Fendels", 47.073, 10.667, false],
+    ["Muttereralm", 47.223, 11.340, false],
+    ["Rangger Köpfl – Oberperfuss", 47.258, 11.243, false],
+    ["Serlesbahnen – Mieders", 47.145, 11.383, false],
+    ["Elferbahnen – Neustift", 47.110, 11.305, false],
+    ["Nordkette – Seegrube/Hafelekar (Innsbruck)", 47.306, 11.383, false],
+    ["Berwang/Bichlbach – Berwanger Sonnalmbahn", 47.434, 10.621, false],
+    ["Venet – Zams/Fließ", 47.143, 10.590, false],
+    ["Buchensteinwand – Pillersee", 47.512, 12.584, false],
+    ["Großglockner Resort Kals–Matrei", 46.999, 12.606, false],
+    ["Lienz – Zettersfeld", 46.845, 12.805, false],
+    ["Lienz – Hochstein", 46.832, 12.756, false],
+    ["Sillian – Thurntaler (Hochpustertal)", 46.752, 12.455, false],
+    ["St. Jakob im Defereggental – Brunnalm", 46.929, 12.323, false],
+    ["Obertilliach – Golzentipp", 46.727, 12.660, false]
+  ];
+
+  const sscList = [
+    ["Kaprun – Kitzsteinhorn (Gletscher)", 47.204, 12.698, true],
+    ["Mölltaler Gletscher & Ankogelbahn", 47.0094, 13.0198, true],
+    ["Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn", 47.410, 12.640, false],
+    ["Zell am See – Schmittenhöhe", 47.323, 12.795, false],
+    ["Hochkönig – Maria Alm/Dienten/Mühlbach", 47.401, 12.904, false],
+    ["Snow Space Salzburg – Flachau", 47.343, 13.389, false],
+    ["Snow Space Salzburg – Wagrain", 47.332, 13.300, false],
+    ["Snow Space Salzburg – St. Johann/Alpendorf", 47.336, 13.207, false],
+    ["Zauchensee/Flachauwinkl", 47.294, 13.454, false],
+    ["Kleinarl – Shuttleberg", 47.325, 13.317, false],
+    ["Radstadt/Altenmarkt", 47.384, 13.453, false],
+    ["Filzmoos", 47.428, 13.522, false],
+    ["Werfenweng", 47.464, 13.231, false],
+    ["Dorfgastein – Großarl", 47.279, 13.203, false],
+    ["Gastein – Bad Gastein", 47.115, 13.134, false],
+    ["Gastein – Bad Hofgastein", 47.171, 13.104, false],
+    ["Sportgastein", 47.049, 13.112, false],
+    ["Obertauern", 47.251, 13.561, false],
+    ["Dachstein West – Gosau/Rußbach/Annaberg", 47.550, 13.452, false],
+    ["Almenwelt Lofer", 47.597, 12.694, false],
+    ["Wildkogel Arena – Neukirchen/Bramberg", 47.252, 12.331, false],
+    ["KitzSki – Kitzbühel/Kirchberg", 47.447, 12.392, false],
+    ["SkiWelt Wilder Kaiser – Brixental", 47.510, 12.220, false],
+    ["St. Johann in Tirol – Oberndorf", 47.523, 12.430, false],
+    ["Fieberbrunn", 47.478, 12.539, false],
+    ["Schladming – Planai", 47.393, 13.696, false],
+    ["Hauser Kaibling", 47.423, 13.767, false],
+    ["Hochwurzen", 47.373, 13.651, false],
+    ["Reiteralm", 47.393, 13.598, false],
+    ["Fageralm", 47.357, 13.546, false],
+    ["Ramsau am Dachstein (Rittisberg)", 47.430, 13.651, false],
+    ["Galsterberg", 47.414, 13.874, false],
+    ["Riesneralm – Donnersbachwald", 47.430, 14.096, false],
+    ["Planneralm", 47.455, 14.147, false],
+    ["Tauplitz/Bad Mitterndorf", 47.557, 13.999, false],
+    ["Loser – Altaussee", 47.652, 13.792, false],
+    ["Präbichl", 47.527, 14.944, false],
+    ["Grebenzen – St. Lambrecht", 47.075, 14.301, false],
+    ["Kreischberg", 47.097, 14.044, false],
+    ["Lachtal", 47.251, 14.379, false],
+    ["Heiligenblut – Großglockner", 47.046, 12.842, false],
+    ["Katschberg/Aineck", 47.054, 13.615, false],
+    ["Turracher Höhe (Kärnten/Steiermark)", 46.909, 13.872, false],
+    ["Bad Kleinkirchheim – St. Oswald", 46.812, 13.773, false],
+    ["Gerlitzen Alpe", 46.676, 13.916, false],
+    ["Goldeck – Spittal/Drau", 46.794, 13.455, false],
+    ["Nassfeld – Hermagor", 46.561, 13.281, false],
+    ["Hinterstoder – Höss", 47.705, 14.158, false],
+    ["Wurzeralm – Spital am Pyhrn", 47.658, 14.339, false],
+    ["Feuerkogel – Ebensee", 47.820, 13.724, false],
+    ["Hochficht (Böhmerwald)", 48.732, 13.915, false]
+  ];
+
+  const nearMucList = [
+    ["Garmisch-Classic",              47.490, 11.090, false],
+    ["Zugspitze",                     47.421, 10.985, true],
+    ["Brauneck – Lenggries",         47.682, 11.573, false],
+    ["Spitzingsee – Tegernsee",      47.658, 11.887, false],
+    ["Sudelfeld – Bayrischzell",     47.691, 12.010, false],
+    ["Oberstdorf – Nebelhorn",       47.406, 10.279, false],
+    ["Oberstdorf – Fellhorn/Kanzelwand", 47.361, 10.213, false],
+    ["Oberstdorf – Söllereck",       47.393, 10.252, false],
+    ["Winklmoosalm – Reit im Winkl", 47.644, 12.598, false],
+    ["Jenner – Königssee",           47.593, 13.003, false]
+  ];
+
+  const resorts = {};
+  const resortMarkers = {};
+  let minHours = Infinity;
+  let maxHours = 0;
+
+  const travelTimeCache = {};
+  let originMarker = null;
+
+  // >>> ANGEPASST: website wird mit aufgenommen <<<
+  function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website) {
+    const key = norm(name);
+    if (!resorts[key]) {
+      resorts[key] = {
+        name: name,
+        lat: lat,
+        lon: lon,
+        sct: false,
+        ssc: false,
+        glacier: false,
+        nearMuc: false,
+        website: website || null
+      };
+    } else if (website && !resorts[key].website) {
+      resorts[key].website = website;
+    }
+    if (passType === "SCT") resorts[key].sct = true;
+    if (passType === "SSC") resorts[key].ssc = true;
+    if (passType === "MUC") resorts[key].nearMuc = true;
+    if (nearMuc) resorts[key].nearMuc = true;
+    if (isGlacier) resorts[key].glacier = true;
+  }
+
+  // >>> ANGEPASST: website aus resorts.json übernehmen <<<
+  function initResortsFromJson(list) {
+    list.forEach(r => {
+      const name    = r.name;
+      const lat     = r.lat;
+      const lon     = r.lon;
+      const glacier = !!r.glacier;
+      const sct     = !!r.sct;
+      const ssc     = !!r.ssc;
+      const nearMuc = !!r.nearMuc;
+      const website = r.website || null;
+
+      if (sct) {
+        addResort(name, lat, lon, "SCT", glacier, nearMuc, website);
+      }
+      if (ssc) {
+        addResort(name, lat, lon, "SSC", glacier, nearMuc, website);
+      }
+      if (!sct && !ssc) {
+        // reine "München-Gebiete" ohne Pass
+        addResort(name, lat, lon, "MUC", glacier, nearMuc, website);
+      }
+    });
+  }
+
+  function loadResortsAndInit() {
+    fetch("resorts.json")
+      .then(resp => {
+        if (!resp.ok) {
+          throw new Error("HTTP " + resp.status);
+        }
+        return resp.json();
+      })
+      .then(list => {
+        initResortsFromJson(list);
+        buildMarkers();
+        if (typeof rebuildDatalist === "function") {
+          rebuildDatalist();
+        }
+        updateTimeLabel(100);
+        applyTimeFilter(100);
+        if (typeof loadTravelTimesJson === "function") {
+          loadTravelTimesJson();
+        }
+      })
+      .catch(err => {
+        console.error("Fehler beim Laden von resorts.json:", err);
+        alert("Fehler beim Laden der Skigebiete (Details in Konsole).");
+      });
+  }
+
+  const map = L.map("map").setView([47.2, 12.2], 7.5);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap-Mitwirkende"
+  }).addTo(map);
+
+  const sctLayer = L.layerGroup();
+  const sscLayer = L.layerGroup();
+  const overlapLayer = L.layerGroup();
+  const glacierLayer = L.layerGroup();
+  const nearMucLayer = L.layerGroup();
+
+  const COLOR_SCT   = "#9C2419";
+  const COLOR_SSC   = "#004A8F";
+  const COLOR_BOTH  = "#9C27B0";
+  const COLOR_MUC   = "#2E7D32";
+  const COLOR_OTHER = "#888888";
+
+  function buildMarkers() {
+    Object.values(resorts).forEach(r => {
+      const passes = [];
+      if (r.sct) passes.push("Snow Card Tirol");
+      if (r.ssc) passes.push("SuperSkiCard");
+      if (r.nearMuc && !r.sct && !r.ssc) passes.push("Extra: ab München");
+      const passesStr = passes.length ? passes.join(", ") : "–";
+
+      let color = COLOR_OTHER;
+      if (r.sct && r.ssc)      color = COLOR_BOTH;
+      else if (r.sct)          color = COLOR_SCT;
+      else if (r.ssc)          color = COLOR_SSC;
+      else if (r.nearMuc)      color = COLOR_MUC;
+
+      const distKm   = haversineKm(MUC_LAT, MUC_LON, r.lat, r.lon);
+      const estHours = distKm / AVG_SPEED_KMH;
+      r.distKm = distKm;
+      r.travelHours = estHours;
+      if (estHours < minHours) minHours = estHours;
+      if (estHours > maxHours) maxHours = estHours;
+
+      const mapsUrl = `https://www.google.com/maps?q=${r.lat},${r.lon}`;
+      const driveTxt = `${Math.round(distKm)} km · ca. ${fmtTime(estHours)}`;
+
+      // (popupHtml bleibt ungenutzt, wir nehmen makePopupHtml)
+      const popupHtml = `
+        <div style="font-size:13px">
+          <b>${r.name}</b><br/>
+          <b>Pässe:</b> ${passesStr}<br/>
+          <b>Gletscher:</b> ${r.glacier ? "Ja" : "Nein"}<br/>
+          <b>Ab München (Luftlinie):</b> ${driveTxt}<br/>
+          <a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">
+            In Google Maps öffnen
+          </a>
+        </div>
+      `;
+
+      let marker;
+
+      if (r.glacier) {
+        const glacierIcon = L.divIcon({
+          html: `
+            <div style="
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              border: 2px solid ${color};
+              background: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 16px;
+            ">
+              ❄
+            </div>
+          `,
+          className: "",
+          iconSize: [26, 26],
+          iconAnchor: [13, 13],
+          popupAnchor: [0, -13]
+        });
+
+        marker = L.marker([r.lat, r.lon], { icon: glacierIcon });
+      } else {
+        marker = L.circleMarker([r.lat, r.lon], {
+          radius: 8,
+          color: color,
+          fillColor: color,
+          fillOpacity: 0.95,
+          weight: 2
+        });
+      }
+
+      marker
+        .bindPopup(() => makePopupHtml(r))
+        .bindTooltip(`${r.name} (${passesStr})`);
+
+      if (r.sct) sctLayer.addLayer(marker);
+      if (r.ssc) sscLayer.addLayer(marker);
+      if (r.sct && r.ssc) overlapLayer.addLayer(marker);
+      if (r.glacier) glacierLayer.addLayer(marker);
+      if (r.nearMuc) nearMucLayer.addLayer(marker);
+
+      resortMarkers[norm(r.name)] = marker;
+    });
+  }
+
+  const timeSlider = document.getElementById("time-slider");
+  const timeLabel  = document.getElementById("time-slider-label");
+
+  function updateTimeLabel(pct) {
+    if (pct >= 99) {
+      timeLabel.textContent = "Voll (alle Gebiete)";
+      return;
+    }
+    const limitHours = minHours + (pct / 100) * (maxHours - minHours);
+    timeLabel.textContent = "bis ca. " + fmtTime(limitHours);
+  }
+
+  function applyTimeFilter(pct) {
+    const limitHours = minHours + (pct / 100) * (maxHours - minHours);
+
+    Object.values(resorts).forEach(r => {
+      const key = norm(r.name);
+      const marker = resortMarkers[key];
+      if (!marker || r.travelHours == null) return;
+
+      const inside = (pct >= 99) || (r.travelHours <= limitHours + 1e-6);
+
+      if (r.sct) {
+        if (inside) sctLayer.addLayer(marker);
+        else sctLayer.removeLayer(marker);
+      }
+      if (r.ssc) {
+        if (inside) sscLayer.addLayer(marker);
+        else sscLayer.removeLayer(marker);
+      }
+      if (r.sct && r.ssc) {
+        if (inside) overlapLayer.addLayer(marker);
+        else overlapLayer.removeLayer(marker);
+      }
+      if (r.glacier) {
+        if (inside) glacierLayer.addLayer(marker);
+        else glacierLayer.removeLayer(marker);
+      }
+      if (r.nearMuc) {
+        if (inside) nearMucLayer.addLayer(marker);
+        else nearMucLayer.removeLayer(marker);
+      }
+    });
+  }
+
+  if (timeSlider) {
+    timeSlider.addEventListener("input", (e) => {
+      const pct = Number(e.target.value);
+      updateTimeLabel(pct);
+      applyTimeFilter(pct);
+    });
+  }
+
+  sctLayer.addTo(map);
+  sscLayer.addTo(map);
+  overlapLayer.addTo(map);
+  glacierLayer.addTo(map);
+  nearMucLayer.addTo(map);
+
+  const overlays = {
+    "Snow Card Tirol": sctLayer,
+    "SuperSkiCard": sscLayer,
+    "Überschneidung SCT & SSC": overlapLayer,
+    "Gletschergebiete": glacierLayer,
+    "Nahe München": nearMucLayer
+  };
+
+  L.control.layers({}, overlays, { collapsed: false }).addTo(map);
+
+  const legend = document.createElement("div");
+  legend.className = "legend-box";
+  legend.innerHTML = `
+    <b>Farbcode</b><br/>
+    <span style="color: ${COLOR_SCT};">■</span> Nur Snow Card Tirol<br/>
+    <span style="color: ${COLOR_SSC};">■</span> Nur SuperSkiCard<br/>
+    <span style="color: ${COLOR_BOTH};">■</span> Beide Pässe<br/>
+  `;
+  document.body.appendChild(legend);
+
+  const searchInput = document.getElementById("resort-search");
+  const datalist = document.getElementById("resort-datalist");
+
+  function rebuildDatalist() {
+    while (datalist.firstChild) {
+      datalist.removeChild(datalist.firstChild);
+    }
+    Object.values(resorts)
+      .sort((a, b) => a.name.localeCompare(b.name, "de"))
+      .forEach(r => {
+        const opt = document.createElement("option");
+        if (r.travelHours != null && isFinite(r.travelHours)) {
+          opt.value = r.name + " – " + fmtTime(r.travelHours);
+        } else {
+          opt.value = r.name;
+        }
+        datalist.appendChild(opt);
+      });
+  }
+
+  function extractResortName(raw) {
+    if (!raw) return "";
+    const idx = raw.indexOf(" – ");
+    if (idx === -1) {
+      return raw.trim();
+    }
+    return raw.slice(0, idx).trim();
+  }
+
+  function focusResortByName(query) {
+    if (!query) return;
+    const qNorm = norm(query);
+    const keys = Object.keys(resortMarkers);
+
+    let bestKey = null;
+
+    if (resortMarkers[qNorm]) {
+      bestKey = qNorm;
+    } else {
+      for (const k of keys) {
+        if (k.startsWith(qNorm)) {
+          bestKey = k;
+          break;
+        }
+      }
+      if (!bestKey) {
+        for (const k of keys) {
+          if (k.includes(qNorm)) {
+            bestKey = k;
+            break;
+          }
+        }
+      }
+    }
+
+    if (!bestKey) {
+      alert("Kein Skigebiet gefunden für: " + query);
+      return;
+    }
+
+    const marker = resortMarkers[bestKey];
+    const latLng = marker.getLatLng();
+    map.setView(latLng, 11);
+    marker.openPopup();
+  }
+
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const onlyName = extractResortName(searchInput.value);
+      focusResortByName(onlyName);
+    }
+  });
+
+  function applyTravelTimesFromMap(ttMap) {
+    const resortList = Object.values(resorts);
+    minHours = Infinity;
+    maxHours = 0;
+
+    resortList.forEach(r => {
+      const tt = ttMap[r.name];
+      if (tt && typeof tt.hours === "number" && typeof tt.km === "number") {
+        r.travelHours = tt.hours;
+        r.distKm = tt.km;
+        if (tt.hours < minHours) minHours = tt.hours;
+        if (tt.hours > maxHours) maxHours = tt.hours;
+      }
+    });
+
+    if (typeof rebuildDatalist === "function") {
+      rebuildDatalist();
+    }
+    if (typeof timeSlider !== "undefined" && timeSlider) {
+      timeSlider.value = 100;
+    }
+    updateTimeLabel(100);
+    applyTimeFilter(100);
+  }
+
+  async function recalcTravelTimesFromOrigin() {
+    const input = document.getElementById("home-input");
+    const value = input.value.trim();
+
+    let originLat;
+    let originLon;
+
+    if (!value) {
+      originLat = MUC_LAT;
+      originLon = MUC_LON;
+    } else if (value.includes(",")) {
+      const parts = value.split(",");
+      originLat = parseFloat(parts[0]);
+      originLon = parseFloat(parts[1]);
+      if (!isFinite(originLat) || !isFinite(originLon)) {
+        alert("Konnte Eingabe nicht als 'lat,lon' interpretieren.");
+        return;
+      }
+    } else {
+      if (!ORS_API_KEY || ORS_API_KEY === "DEIN_ORS_API_KEY") {
+        alert("Bitte zuerst ORS_API_KEY im Script eintragen.");
+        return;
+      }
+      try {
+        const url = "https://api.openrouteservice.org/geocode/search?api_key=" +
+                    encodeURIComponent(ORS_API_KEY) +
+                    "&text=" + encodeURIComponent(value) +
+                    "&size=1";
+        const resp = await fetch(url);
+        if (!resp.ok) {
+          throw new Error("Geocoding-Request fehlgeschlagen");
+        }
+        const data = await resp.json();
+        const feats = data.features || [];
+        if (!feats.length) {
+          alert("Adresse konnte nicht gefunden werden.");
+          return;
+        }
+        const coords = feats[0].geometry.coordinates;
+        originLon = coords[0];
+        originLat = coords[1];
+      } catch (err) {
+        console.error("Fehler beim Geocoding:", err);
+        alert("Fehler beim Geocoding (Details in Konsole).");
+        return;
+      }
+    }
+
+    if (typeof map !== "undefined") {
+      if (originMarker) {
+        map.removeLayer(originMarker);
+      }
+      const originIcon = L.divIcon({
+        html: `
+          <div style="
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 2px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+          ">
+            🏠
+          </div>
+        `,
+        className: "",
+        iconSize: [20, 20],
+        iconAnchor: [10, 10]
+      });
+      originMarker = L.marker([originLat, originLon], { icon: originIcon })
+        .addTo(map)
+        .bindTooltip("Startpunkt", { permanent: false });
+    }
+
+    const key = originLat.toFixed(3) + "," + originLon.toFixed(3);
+
+    if (travelTimeCache[key]) {
+      applyTravelTimesFromMap(travelTimeCache[key]);
+      return;
+    }
+
+    const resortList = Object.values(resorts);
+    const locations = [[originLon, originLat]].concat(
+      resortList.map(r => [r.lon, r.lat])
+    );
+    const body = {
+      locations: locations,
+      metrics: ["distance", "duration"],
+      units: "km",
+      sources: [0],
+      destinations: resortList.map((_, idx) => idx + 1)
+    };
+
+    if (!ORS_API_KEY || ORS_API_KEY === "DEIN_ORS_API_KEY") {
+      alert("Bitte zuerst ORS_API_KEY im Script eintragen.");
+      return;
+    }
+
+    try {
+      const resp = await fetch("https://api.openrouteservice.org/v2/matrix/driving-car", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": ORS_API_KEY
+        },
+        body: JSON.stringify(body)
+      });
+      if (!resp.ok) {
+        throw new Error("Matrix-Request fehlgeschlagen: " + resp.status);
+      }
+      const data = await resp.json();
+      const durations = (data.durations && data.durations[0]) || [];
+      const distances = (data.distances && data.distances[0]) || [];
+
+      const ttMap = {};
+      resortList.forEach((r, idx) => {
+        const durSec = durations[idx];
+        const distKm = distances[idx];
+        if (typeof durSec === "number" && typeof distKm === "number") {
+          const hours = durSec / 3600.0;
+          ttMap[r.name] = { hours: hours, km: distKm };
+        }
+      });
+
+      travelTimeCache[key] = ttMap;
+      applyTravelTimesFromMap(ttMap);
+    } catch (err) {
+      console.error("Fehler beim Abrufen der Matrix:", err);
+      alert("Fehler beim Abrufen der Fahrzeiten (Details in Konsole).");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btn-calc-times");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        recalcTravelTimesFromOrigin();
+      });
+    }
+  });
+
+  function loadTravelTimesJson() {
+    fetch("travel_times.json")
+      .then(resp => resp.json())
+      .then(data => {
+        Object.values(resorts).forEach(r => {
+          const tt = data[r.name];
+          if (tt) {
+            if (typeof tt.hours === "number") {
+              r.travelHours = tt.hours;
+            }
+            if (typeof tt.km === "number") {
+              r.distKm = tt.km;
+            }
+          }
+        });
+
+        minHours = Infinity;
+        maxHours = 0;
+        Object.values(resorts).forEach(r => {
+          if (r.travelHours != null && isFinite(r.travelHours)) {
+            if (r.travelHours < minHours) minHours = r.travelHours;
+            if (r.travelHours > maxHours) maxHours = r.travelHours;
+          }
+        });
+
+        if (typeof rebuildDatalist === "function") {
+          rebuildDatalist();
+        }
+
+        if (typeof timeSlider !== "undefined" && timeSlider) {
+          timeSlider.value = 100;
+        }
+        updateTimeLabel(100);
+        applyTimeFilter(100);
+      })
+      .catch(err => {
+        console.error("Fehler beim Laden von travel_times.json, nutze Luftlinie:", err);
+        updateTimeLabel(100);
+        applyTimeFilter(100);
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadResortsAndInit();
+  });
+
+</script>
+</body>
+</html>
