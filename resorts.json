@@ -80,7 +80,7 @@
     "country": "Austria",
     "website": "https://www.stubai.at/skigebiete/elferbahnen"
   },
-    {
+  {
     "name": "Kaunertaler Gletscher",
     "lat": 46.882,
     "lon": 10.718,
@@ -229,7 +229,7 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-	"glacier": true,
+    "glacier": true,
     "website": "https://www.hintertuxergletscher.at"
   },
   {
@@ -349,7 +349,7 @@
     "lon": 12.759,
     "sct": false,
     "ssc": true,
-	"glacier": true,
+    "glacier": true,
     "region": "Salzburg",
     "country": "Austria",
     "website": "https://www.kitzsteinhorn.at"
@@ -480,7 +480,7 @@
     "lon": 13.013,
     "sct": false,
     "ssc": true,
-	"glacier": true,
+    "glacier": true,
     "region": "Carinthia",
     "country": "Austria",
     "website": "https://www.moelltaler-gletscher.at"
@@ -624,7 +624,7 @@
     "lon": 10.866,
     "sct": true,
     "ssc": false,
-	"glacier": true,
+    "glacier": true,
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.pitztaler-gletscher.at"
@@ -968,7 +968,7 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-	"glacier": true,
+    "glacier": true,
     "website": "https://www.stubaier-gletscher.com"
   },
   {
@@ -982,7 +982,7 @@
     "nearMuc": true,
     "website": "https://www.sudelfeld.de"
   },
-    {
+  {
     "name": "Sölden (Rettenbach/Tiefenbach)",
     "lat": 46.97,
     "lon": 10.987,
@@ -1123,5 +1123,815 @@
     "country": "Germany",
     "nearMuc": true,
     "website": "https://zugspitze.de"
+  },
+  {
+    "name": "Alpbachtal - Ski Juwel Alpbachtal Wildschönau",
+    "lat": 47.403555,
+    "lon": 11.877854,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skijuwel.com/"
+  },
+  {
+    "name": "Amberglift Walchsee",
+    "lat": 47.641227,
+    "lon": 12.295233,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.amberglift.at/"
+  },
+  {
+    "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
+    "lat": 47.486326,
+    "lon": 12.587202,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahn-pillersee.com"
+  },
+  {
+    "name": "Bergeralm",
+    "lat": 47.004371,
+    "lon": 12.39825,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergeralm.net/"
+  },
+  {
+    "name": "Bergwelt Hahnenkamm",
+    "lat": 47.144212,
+    "lon": 10.307553,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergwelt-hahnenkamm.at"
+  },
+  {
+    "name": "Berwang",
+    "lat": 47.40807,
+    "lon": 10.74735,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Bichllifte Prägraten",
+    "lat": 47.01667,
+    "lon": 12.38333,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84"
+  },
+  {
+    "name": "Brixen im Thale - SkiWelt",
+    "lat": 47.466333,
+    "lon": 12.234134,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Dorfberg Kartitsch",
+    "lat": 46.72889,
+    "lon": 12.50083,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://kartitscher-liftgesellschaft.jimdofree.com/"
+  },
+  {
+    "name": "Eggalmbahnen",
+    "lat": 47.156899,
+    "lon": 11.728876,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/"
+  },
+  {
+    "name": "Ehrwalder Alm",
+    "lat": 47.384912,
+    "lon": 10.968338,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.almbahn.tirol"
+  },
+  {
+    "name": "Ehrwalder Wettersteinbahnen",
+    "lat": 47.410234,
+    "lon": 10.938698,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.wetterstein-bahnen.at/"
+  },
+  {
+    "name": "Ellmau-Going - SkiWelt",
+    "lat": 47.519862,
+    "lon": 12.301404,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Fendels - Ried - Prutz",
+    "lat": 47.076977,
+    "lon": 10.66669,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863"
+  },
+  {
+    "name": "Finkenberger Almbahnen",
+    "lat": 47.15285,
+    "lon": 11.821412,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/"
+  },
+  {
+    "name": "Fiss-Ladis",
+    "lat": 47.075259,
+    "lon": 10.649304,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.serfaus-fiss-ladis.at/"
+  },
+  {
+    "name": "Galtür",
+    "lat": 46.96667,
+    "lon": 10.18333,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.silvapark.at"
+  },
+  {
+    "name": "Gerlos - Zillertal Arena",
+    "lat": 47.21667,
+    "lon": 12.0,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zillertalarena.com"
+  },
+  {
+    "name": "Gerlosstein - Zillertal Arena",
+    "lat": 47.194217,
+    "lon": 11.923857,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zillertalarena.com/"
+  },
+  {
+    "name": "Glungezer",
+    "lat": 47.207598,
+    "lon": 11.528384,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.glungezerbahn.at"
+  },
+  {
+    "name": "Gschwandtkopflifte",
+    "lat": 0.0,
+    "lon": 0.0,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skigebiet-seefeld.at/"
+  },
+  {
+    "name": "Hochalmlifte Christlum - Achenkirch",
+    "lat": 47.513119,
+    "lon": 11.697002,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.christlum.at"
+  },
+  {
+    "name": "Hochfügen",
+    "lat": 47.269316,
+    "lon": 11.775599,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Hochkrimml - Zillertal Arena",
+    "lat": 47.26179,
+    "lon": 11.88471,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zillertalarena.com"
+  },
+  {
+    "name": "Hochoetz - Oetz",
+    "lat": 47.212221,
+    "lon": 10.929613,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.oetz.com/"
+  },
+  {
+    "name": "Hochzeiger - Pitztal",
+    "lat": 47.145582,
+    "lon": 10.795257,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Hochzillertal-Kaltenbach",
+    "lat": 47.296919,
+    "lon": 11.875362,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Hopfgarten - Itter - SkiWelt",
+    "lat": 47.449133,
+    "lon": 12.159385,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Hüttegglift Weerberg",
+    "lat": 47.289792,
+    "lon": 11.683876,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.huettegglift.at/"
+  },
+  {
+    "name": "Imst",
+    "lat": 47.239026,
+    "lon": 10.742382,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.imster-bergbahnen.at/"
+  },
+  {
+    "name": "Ischgl",
+    "lat": 47.011371,
+    "lon": 10.293548,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Ischgl  - Silvretta Arena",
+    "lat": 47.011371,
+    "lon": 10.293548,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.ischgl.com/"
+  },
+  {
+    "name": "Jöchelspitze Lechtal",
+    "lat": 47.281742,
+    "lon": 10.359239,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.lechtaler-bergbahnen.at/"
+  },
+  {
+    "name": "Karwendel-Bergbahn - Pertisau",
+    "lat": 47.427522,
+    "lon": 11.695987,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html"
+  },
+  {
+    "name": "Katzenkopf Leutasch",
+    "lat": 47.369026,
+    "lon": 11.164731,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.katzenkopf-leutasch.at"
+  },
+  {
+    "name": "Kellerjochbahn Schwaz-Pill",
+    "lat": 47.321123,
+    "lon": 11.731026,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kellerjochbahn.at/cms/"
+  },
+  {
+    "name": "Kitzbühel",
+    "lat": 47.44492,
+    "lon": 12.394167,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kitzski.at"
+  },
+  {
+    "name": "Kolsassberg",
+    "lat": 47.3,
+    "lon": 11.63333,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.kolsassberglift.at/"
+  },
+  {
+    "name": "Königsleiten - Zillertal Arena",
+    "lat": 47.26179,
+    "lon": 11.88471,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zillertalarena.com"
+  },
+  {
+    "name": "Kössen",
+    "lat": 47.659278,
+    "lon": 12.391375,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://skisport.com/Hochkoessen/de"
+  },
+  {
+    "name": "Landeck - Zams - Fliess (Familienskigebiet Venet)",
+    "lat": 47.135006,
+    "lon": 10.578077,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.venet.at"
+  },
+  {
+    "name": "Lienz Zettersfeld Hochstein",
+    "lat": 46.830857,
+    "lon": 12.764987,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.lienzer-bergbahnen.at"
+  },
+  {
+    "name": "Mayrhofen",
+    "lat": 47.164944,
+    "lon": 11.86192,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.mountopolis.at"
+  },
+  {
+    "name": "Mittersill - Paß Thurn - Kitzbühel",
+    "lat": 47.281856,
+    "lon": 12.48711,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.mittersill.info/"
+  },
+  {
+    "name": "Muttereralm - Nockspitzbahn",
+    "lat": 47.21978,
+    "lon": 11.321516,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.muttereralm.at"
+  },
+  {
+    "name": "Nauders",
+    "lat": 46.891217,
+    "lon": 10.50142,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "Neukirchen - Bramberg - Wildkogel",
+    "lat": 47.123291,
+    "lon": 10.876187,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-wildkogel.at"
+  },
+  {
+    "name": "Neunerköpfle - Tannheim",
+    "lat": 47.482127,
+    "lon": 10.542658,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.tannheimer-bergbahnen.at"
+  },
+  {
+    "name": "Nordkette - Innsbruck",
+    "lat": 47.285764,
+    "lon": 11.398915,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.nordkette.com/"
+  },
+  {
+    "name": "Obertilliacher Bergbahnen",
+    "lat": 46.68333,
+    "lon": 12.6,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.obertilliacher-bergbahnen.com/"
+  },
+  {
+    "name": "Patscherkofel",
+    "lat": 47.208828,
+    "lon": 11.460608,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.patscherkofelbahn.at"
+  },
+  {
+    "name": "Pitztaler Gletscher - Rifflsee",
+    "lat": 46.926822,
+    "lon": 10.879164,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.pitztaler-gletscher.at"
+  },
+  {
+    "name": "Rangger Köpfl",
+    "lat": 47.242646,
+    "lon": 11.181427,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.rangger-koepfl.at"
+  },
+  {
+    "name": "Rastkogelbahnen",
+    "lat": 0.0,
+    "lon": 0.0,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/"
+  },
+  {
+    "name": "Rofan Seilbahn - Maurach",
+    "lat": 47.434393,
+    "lon": 11.757219,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.rofanseilbahn.at"
+  },
+  {
+    "name": "Rosshütte - Seefeld in Tirol",
+    "lat": 47.331793,
+    "lon": 11.199848,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.rosshuette.at/"
+  },
+  {
+    "name": "Schattwald - Zöblen im Tannheimertal",
+    "lat": 47.51667,
+    "lon": 10.45,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen"
+  },
+  {
+    "name": "Scheffau - SkiWelt",
+    "lat": 47.41987,
+    "lon": 12.244438,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Schlick 2000",
+    "lat": 47.156272,
+    "lon": 11.306785,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.stubai.at/skigebiete/schlick2000/"
+  },
+  {
+    "name": "Schneeberglifte Thiersee",
+    "lat": 0.0,
+    "lon": 0.0,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.schneeberglifte.at"
+  },
+  {
+    "name": "Schwannerlifte in Weerberg",
+    "lat": 47.124034,
+    "lon": 11.259919,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg"
+  },
+  {
+    "name": "See i. Paznauntal",
+    "lat": 47.08333,
+    "lon": 10.46667,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahn.com"
+  },
+  {
+    "name": "Serfaus",
+    "lat": 47.038305,
+    "lon": 10.611371,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.serfaus-fiss-ladis.at/"
+  },
+  {
+    "name": "Skilifte Kirchdorf",
+    "lat": 47.567804,
+    "lon": 10.452172,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "http://www.yappys-winterland.tirol"
+  },
+  {
+    "name": "Skilifte Knittel",
+    "lat": 47.567804,
+    "lon": 10.452172,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.knitteltirol.at/"
+  },
+  {
+    "name": "Skilifte Lärchenhof",
+    "lat": 51.016104,
+    "lon": 11.338518,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.laerchenhof-tirol.at/"
+  },
+  {
+    "name": "Skizentrum Sillian/ Hochpustertal",
+    "lat": 46.750666,
+    "lon": 12.43325,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.hochpustertal-ski.at"
+  },
+  {
+    "name": "Skizentrum St. Jakob",
+    "lat": 49.513615,
+    "lon": 12.612803,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.stjakob-ski.at/"
+  },
+  {
+    "name": "Sölden",
+    "lat": 46.965575,
+    "lon": 11.007183,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.soelden.com/"
+  },
+  {
+    "name": "Söll - SkiWelt",
+    "lat": 47.504513,
+    "lon": 12.193689,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Spieljochbahn Fügen",
+    "lat": 47.338941,
+    "lon": 11.843108,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": ""
+  },
+  {
+    "name": "St. Johann in Tirol",
+    "lat": 46.712002,
+    "lon": 11.138789,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.bergbahnen-stjohann.at"
+  },
+  {
+    "name": "Steinplatte-Winklmoosalm",
+    "lat": 47.605714,
+    "lon": 12.554601,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.steinplatte.tirol/"
+  },
+  {
+    "name": "Tiroler Zugspitzbahn",
+    "lat": 47.423933,
+    "lon": 10.963568,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zugspitzbahn.at"
+  },
+  {
+    "name": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
+    "lat": 0.0,
+    "lon": 0.0,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.tirolina.at/de/startseite.html"
+  },
+  {
+    "name": "Umhausen",
+    "lat": 47.137818,
+    "lon": 10.924619,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.oetztal.com/skigebiet-niederthai"
+  },
+  {
+    "name": "Venter Seilbahnen",
+    "lat": 47.472696,
+    "lon": 10.685707,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.vent.at/"
+  },
+  {
+    "name": "Vögelsberg Aktivpark",
+    "lat": 47.275502,
+    "lon": 11.590985,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://voegelsberg.at/"
+  },
+  {
+    "name": "Westendorf - SkiWelt",
+    "lat": 47.37698,
+    "lon": 12.21548,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skiwelt.at"
+  },
+  {
+    "name": "Wildschönau - Ski Juwel Alpbachtal Wildschönau",
+    "lat": 47.40619,
+    "lon": 12.03784,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.skijuwel.com/"
+  },
+  {
+    "name": "Zell am Ziller - Zillertal Arena",
+    "lat": 47.233379,
+    "lon": 11.879974,
+    "sct": true,
+    "ssc": false,
+    "region": "Tyrol",
+    "country": "Austria",
+    "website": "https://www.zell.at"
   }
 ]
