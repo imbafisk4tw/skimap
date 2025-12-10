@@ -1,215 +1,183 @@
 {
-  "Almenwelt Lofer": {
-    "hours": 1.96,
-    "km": 160.4
-  },
   "Axamer Lizum": {
-    "hours": 2.22,
-    "km": 142.6
-  },
-  "Bad Kleinkirchheim – St. Oswald": {
-    "hours": 3.32,
-    "km": 298.0
+    "hours": 2.31,
+    "km": 149.4
   },
   "Bergeralm – Steinach am Brenner": {
-    "hours": 2.09,
-    "km": 189.5
+    "hours": 2.14,
+    "km": 190.3
   },
   "Berwang/Bichlbach – Berwanger Sonnalmbahn": {
-    "hours": 1.94,
-    "km": 131.5
+    "hours": 2.02,
+    "km": 130.5
   },
   "Biberwier – Marienberg": {
-    "hours": 1.82,
-    "km": 117.8
+    "hours": 1.62,
+    "km": 114.9
   },
   "Brauneck – Lenggries": {
-    "hours": 0.95,
-    "km": 60.6
+    "hours": 1.02,
+    "km": 62.4
   },
   "Buchensteinwand – Pillersee": {
-    "hours": 1.93,
-    "km": 131.5
-  },
-  "Dachstein West – Gosau/Rußbach/Annaberg": {
-    "hours": 2.27,
-    "km": 187.8
-  },
-  "Dorfgastein – Großarl": {
-    "hours": 2.43,
-    "km": 203.9
+    "hours": 1.98,
+    "km": 133.0
   },
   "Ehrwald – Ehrwalder Alm": {
-    "hours": 1.63,
-    "km": 112.9
+    "hours": 1.49,
+    "km": 109.5
   },
   "Elferbahnen – Neustift": {
-    "hours": 2.15,
-    "km": 182.4
-  },
-  "Fageralm": {
-    "hours": 2.31,
-    "km": 211.9
-  },
-  "Fendels": {
-    "hours": 2.54,
-    "km": 187.9
-  },
-  "Feuerkogel – Ebensee": {
-    "hours": 2.75,
-    "km": 222.9
-  },
-  "Fieberbrunn": {
-    "hours": 1.98,
-    "km": 127.6
-  },
-  "Filzmoos": {
-    "hours": 2.13,
-    "km": 203.5
-  },
-  "Galsterberg": {
-    "hours": 2.79,
-    "km": 236.2
-  },
-  "Galtür – Silvapark": {
-    "hours": 3.7,
-    "km": 224.2
-  },
-  "Garmisch-Classic": {
-    "hours": 1.07,
-    "km": 88.2
-  },
-  "Gastein – Bad Gastein": {
-    "hours": 2.71,
-    "km": 224.6
-  },
-  "Gastein – Bad Hofgastein": {
-    "hours": 2.53,
-    "km": 217.7
-  },
-  "Gerlitzen Alpe": {
-    "hours": 3.63,
-    "km": 326.6
-  },
-  "Glungezer – Tulfes": {
-    "hours": 2.07,
-    "km": 168.1
-  },
-  "Goldeck – Spittal/Drau": {
-    "hours": 2.95,
-    "km": 282.3
-  },
-  "Grebenzen – St. Lambrecht": {
-    "hours": 3.53,
-    "km": 304.3
-  },
-  "Großglockner Resort Kals–Matrei": {
-    "hours": 3.8,
-    "km": 216.6
-  },
-  "Hauser Kaibling": {
-    "hours": 2.54,
-    "km": 228.0
-  },
-  "Heiligenblut – Großglockner": {
-    "hours": 3.55,
-    "km": 265.7
-  },
-  "Hinterstoder – Höss": {
-    "hours": 2.72,
-    "km": 281.0
-  },
-  "Hintertuxer Gletscher": {
-    "hours": 2.39,
-    "km": 179.0
-  },
-  "Hochficht (Böhmerwald)": {
-    "hours": 2.99,
-    "km": 241.5
-  },
-  "Hochkönig – Maria Alm/Dienten/Mühlbach": {
-    "hours": 2.32,
-    "km": 214.8
-  },
-  "Hochkössen (Unterberghorn)": {
-    "hours": 1.45,
-    "km": 102.9
-  },
-  "Hochoetz": {
-    "hours": 2.29,
-    "km": 163.8
-  },
-  "Hochwurzen": {
-    "hours": 2.49,
-    "km": 224.0
-  },
-  "Hochzeiger – Jerzens": {
-    "hours": 2.44,
-    "km": 174.6
-  },
-  "Hochzillertal / Hochfügen": {
-    "hours": 1.83,
-    "km": 149.1
-  },
-  "Imst – Hochimst": {
-    "hours": 2.21,
-    "km": 141.9
-  },
-  "Ischgl / Samnaun (Silvretta Arena)": {
-    "hours": 3.2,
-    "km": 212.1
-  },
-  "Jenner – Königssee": {
-    "hours": 1.85,
-    "km": 159.3
-  },
-  "Kappl": {
-    "hours": 2.97,
-    "km": 201.6
-  },
-  "Kaprun – Kitzsteinhorn (Gletscher)": {
-    "hours": 2.82,
-    "km": 236.4
-  },
-  "Katschberg/Aineck": {
-    "hours": 2.46,
-    "km": 243.7
+    "hours": 2.18,
+    "km": 182.9
   },
   "Kaunertaler Gletscher": {
     "hours": 3.48,
     "km": 221.7
   },
+  "Galsterberg": {
+    "hours": 3.17,
+    "km": 256.4
+  },
+  "Galtür – Silvapark": {
+    "hours": 3.28,
+    "km": 217.3
+  },
+  "Garmisch-Classic": {
+    "hours": 1.09,
+    "km": 88.0
+  },
+  "Gastein – Bad Gastein": {
+    "hours": 2.71,
+    "km": 224.5
+  },
+  "Gastein – Bad Hofgastein": {
+    "hours": 2.52,
+    "km": 217.9
+  },
+  "Gerlitzen Alpe": {
+    "hours": 3.56,
+    "km": 323.9
+  },
+  "Glungezer – Tulfes": {
+    "hours": 2.02,
+    "km": 167.0
+  },
+  "Goldeck – Spittal/Drau": {
+    "hours": 2.82,
+    "km": 279.0
+  },
+  "Grebenzen – St. Lambrecht": {
+    "hours": 3.71,
+    "km": 307.9
+  },
+  "Großglockner Resort Kals–Matrei": {
+    "hours": 3.33,
+    "km": 195.8
+  },
+  "Hauser Kaibling": {
+    "hours": 2.77,
+    "km": 233.7
+  },
+  "Heiligenblut – Großglockner": {
+    "hours": 3.57,
+    "km": 269.5
+  },
+  "Hinterstoder – Höss": {
+    "hours": 2.83,
+    "km": 283.3
+  },
+  "Hintertuxer Gletscher": {
+    "hours": 1.66,
+    "km": 116.5
+  },
+  "Hochficht": {
+    "hours": 2.98,
+    "km": 241.5
+  },
+  "Hochficht (Böhmerwald)": {
+    "hours": 2.98,
+    "km": 241.5
+  },
+  "Hochkönig – Maria Alm/Dienten/Mühlbach": {
+    "hours": 2.01,
+    "km": 194.8
+  },
+  "Hochkössen (Unterberghorn)": {
+    "hours": 1.48,
+    "km": 122.4
+  },
+  "Hochwurzen": {
+    "hours": 2.68,
+    "km": 231.1
+  },
+  "Hochoetz": {
+    "hours": 2.28,
+    "km": 162.7
+  },
+  "Hochzeiger – Jerzens": {
+    "hours": 2.34,
+    "km": 172.6
+  },
+  "Imst – Hochimst": {
+    "hours": 2.18,
+    "km": 141.4
+  },
+  "Ischgl / Samnaun (Silvretta Arena)": {
+    "hours": 3.13,
+    "km": 210.4
+  },
+  "Jenner – Königssee": {
+    "hours": 1.85,
+    "km": 159.2
+  },
+  "Kappl": {
+    "hours": 2.98,
+    "km": 202.1
+  },
+  "Kaprun – Kitzsteinhorn (Gletscher)": {
+    "hours": 1.91,
+    "km": 134.0
+  },
+  "Kasberg – Grünau im Almtal": {
+    "hours": 2.72,
+    "km": 241.7
+  },
+  "Katschberg/Aineck": {
+    "hours": 2.59,
+    "km": 247.3
+  },
   "KitzSki – Kitzbühel/Kirchberg": {
-    "hours": 1.81,
-    "km": 125.0
+    "hours": 1.85,
+    "km": 125.3
   },
   "Kleinarl – Shuttleberg": {
-    "hours": 2.16,
-    "km": 201.6
+    "hours": 2.23,
+    "km": 206.0
   },
   "Kreischberg": {
-    "hours": 3.32,
-    "km": 284.6
+    "hours": 3.33,
+    "km": 287.8
   },
   "Kühtai": {
-    "hours": 2.34,
-    "km": 156.9
+    "hours": 2.32,
+    "km": 156.4
   },
   "Lachtal": {
-    "hours": 3.95,
-    "km": 328.8
+    "hours": 3.9,
+    "km": 327.9
   },
   "Lermoos – Grubigstein": {
     "hours": 1.54,
-    "km": 111.5
+    "km": 111.4
   },
   "Lienz – Hochstein": {
-    "hours": 3.62,
-    "km": 217.6
+    "hours": 3.63,
+    "km": 217.8
   },
   "Lienz – Zettersfeld": {
-    "hours": 3.84,
-    "km": 223.8
+    "hours": 3.68,
+    "km": 219.8
   },
   "Loser – Altaussee": {
     "hours": 2.67,
@@ -219,212 +187,584 @@
     "hours": 2.03,
     "km": 159.7
   },
+  "Mölltaler Gletscher": {
+    "hours": 3.77,
+    "km": 321.3
+  },
+  "Montafon – Silvretta Montafon": {
+    "hours": 3.05,
+    "km": 264.1
+  },
   "Muttereralm": {
-    "hours": 1.93,
-    "km": 170.6
-  },
-  "Mölltaler Gletscher & Ankogelbahn": {
-    "hours": 3.4,
-    "km": 314.1
-  },
-  "Nassfeld – Hermagor": {
-    "hours": 3.62,
-    "km": 339.6
+    "hours": 1.92,
+    "km": 170.3
   },
   "Nauders – Bergkastel": {
-    "hours": 2.97,
-    "km": 216.6
+    "hours": 2.95,
+    "km": 217.2
+  },
+  "Nassfeld – Hermagor": {
+    "hours": 3.63,
+    "km": 340.7
   },
   "Nordkette – Seegrube/Hafelekar (Innsbruck)": {
-    "hours": 1.89,
-    "km": 165.4
+    "hours": 1.31,
+    "km": 91.6
   },
   "Obergurgl-Hochgurgl": {
-    "hours": 3.1,
-    "km": 204.9
-  },
-  "Oberstdorf – Fellhorn/Kanzelwand": {
-    "hours": 2.36,
-    "km": 201.9
-  },
-  "Oberstdorf – Nebelhorn": {
-    "hours": 2.19,
-    "km": 195.3
-  },
-  "Oberstdorf – Söllereck": {
-    "hours": 2.14,
-    "km": 194.7
+    "hours": 3.11,
+    "km": 205.1
   },
   "Obertauern": {
     "hours": 2.29,
-    "km": 221.6
+    "km": 221.7
   },
-  "Obertilliach – Golzentipp": {
-    "hours": 4.73,
-    "km": 372.5
+  "Obertraun – Dachstein Krippenstein": {
+    "hours": 2.6,
+    "km": 215.3
+  },
+  "Oberstdorf – Fellhorn/Kanzelwand": {
+    "hours": 2.37,
+    "km": 202.4
+  },
+  "Oberstdorf – Nebelhorn": {
+    "hours": 1.73,
+    "km": 121.4
+  },
+  "Oberstdorf – Söllereck": {
+    "hours": 2.2,
+    "km": 197.4
   },
   "Patscherkofel – Igls": {
-    "hours": 2.1,
-    "km": 170.1
-  },
-  "Pitztaler Gletscher": {
-    "hours": 2.94,
-    "km": 197.8
+    "hours": 1.92,
+    "km": 165.2
   },
   "Planneralm": {
-    "hours": 3.21,
-    "km": 263.6
+    "hours": 3.32,
+    "km": 254.4
+  },
+  "Pitztaler Gletscher": {
+    "hours": 2.91,
+    "km": 198.7
   },
   "Präbichl": {
-    "hours": 3.86,
-    "km": 384.5
+    "hours": 4.05,
+    "km": 390.8
   },
   "Radstadt/Altenmarkt": {
-    "hours": 1.97,
-    "km": 198.9
+    "hours": 1.94,
+    "km": 198.6
   },
   "Ramsau am Dachstein (Rittisberg)": {
     "hours": 2.45,
     "km": 216.8
   },
+  "Ramsau am Dachstein – Rittisberg": {
+    "hours": 2.45,
+    "km": 216.8
+  },
   "Rangger Köpfl – Oberperfuss": {
-    "hours": 2.01,
-    "km": 136.6
+    "hours": 1.89,
+    "km": 132.8
   },
   "Reiteralm": {
-    "hours": 2.15,
-    "km": 210.7
+    "hours": 2.55,
+    "km": 226.0
   },
   "Riesneralm – Donnersbachwald": {
-    "hours": 3.39,
-    "km": 268.7
+    "hours": 3.42,
+    "km": 273.0
+  },
+  "Saalbach Hinterglemm – Leogang – Fieberbrunn": {
+    "hours": 2.8,
+    "km": 178.6
   },
   "Schladming – Planai": {
-    "hours": 2.35,
-    "km": 219.3
+    "hours": 2.32,
+    "km": 218.1
+  },
+  "Schladming – Planai/Hochwurzen": {
+    "hours": 2.32,
+    "km": 218.1
   },
   "Schlick 2000 – Fulpmes": {
-    "hours": 2.03,
-    "km": 177.2
+    "hours": 2.16,
+    "km": 180.5
+  },
+  "Schmittenhöhe – Zell am See": {
+    "hours": 2.65,
+    "km": 169.3
   },
   "See im Paznaun": {
-    "hours": 2.91,
-    "km": 196.1
+    "hours": 3.13,
+    "km": 203.7
   },
   "Seefeld – Rosshütte": {
-    "hours": 1.65,
-    "km": 119.6
+    "hours": 1.62,
+    "km": 120.9
   },
   "Serfaus-Fiss-Ladis": {
     "hours": 2.82,
-    "km": 202.1
+    "km": 202.3
   },
   "Serlesbahnen – Mieders": {
-    "hours": 2.05,
-    "km": 176.1
+    "hours": 2.03,
+    "km": 176.6
+  },
+  "Silvretta Montafon": {
+    "hours": 3.05,
+    "km": 264.1
   },
   "Sillian – Thurntaler (Hochpustertal)": {
-    "hours": 4.09,
-    "km": 307.9
+    "hours": 4.01,
+    "km": 304.5
+  },
+  "Ski Amadé": {
+    "hours": 2.24,
+    "km": 207.0
   },
   "SkiWelt Wilder Kaiser – Brixental": {
-    "hours": 1.25,
-    "km": 104.4
+    "hours": 1.64,
+    "km": 114.6
+  },
+  "Skiarena Wildkogel – Neukirchen/Bramberg": {
+    "hours": 2.6,
+    "km": 190.1
   },
   "Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn": {
-    "hours": 2.97,
-    "km": 182.8
+    "hours": 2.8,
+    "km": 178.6
   },
   "Skijuwel Alpbachtal – Wildschönau": {
-    "hours": 1.48,
-    "km": 127.5
+    "hours": 1.36,
+    "km": 115.8
   },
   "Snow Space Salzburg – Flachau": {
-    "hours": 1.97,
-    "km": 200.8
+    "hours": 1.96,
+    "km": 200.5
+  },
+  "Snow Space Salzburg – Flachau/Wagrain/St. Johann": {
+    "hours": 1.96,
+    "km": 200.5
   },
   "Snow Space Salzburg – St. Johann/Alpendorf": {
-    "hours": 2.09,
-    "km": 194.8
+    "hours": 2.03,
+    "km": 193.9
   },
   "Snow Space Salzburg – Wagrain": {
-    "hours": 2.04,
-    "km": 198.4
+    "hours": 2.0,
+    "km": 196.9
+  },
+  "Sportgastein": {
+    "hours": 2.89,
+    "km": 230.9
   },
   "Spitzingsee – Tegernsee": {
     "hours": 1.13,
     "km": 74.5
   },
-  "Sportgastein": {
-    "hours": 3.0,
-    "km": 234.2
-  },
   "St. Jakob im Defereggental – Brunnalm": {
-    "hours": 3.79,
-    "km": 221.8
+    "hours": 3.82,
+    "km": 222.6
   },
   "St. Johann in Tirol – Oberndorf": {
     "hours": 1.68,
     "km": 116.2
+  },
+  "St. Michael – Großeck-Speiereck": {
+    "hours": 2.35,
+    "km": 237.5
   },
   "Steinplatte – Waidring": {
     "hours": 1.77,
     "km": 122.5
   },
   "Stubaier Gletscher": {
-    "hours": 2.69,
-    "km": 203.1
+    "hours": 2.78,
+    "km": 205.2
   },
   "Sudelfeld – Bayrischzell": {
     "hours": 1.22,
     "km": 75.7
   },
   "Sölden (Rettenbach/Tiefenbach)": {
-    "hours": 2.97,
+    "hours": 2.96,
     "km": 197.4
   },
   "Tauplitz/Bad Mitterndorf": {
-    "hours": 2.91,
-    "km": 243.5
+    "hours": 3.04,
+    "km": 247.1
   },
   "Turracher Höhe (Kärnten/Steiermark)": {
     "hours": 3.28,
     "km": 289.4
   },
   "Venet – Zams/Fließ": {
-    "hours": 2.66,
-    "km": 183.9
+    "hours": 2.74,
+    "km": 186.7
   },
   "Werfenweng": {
-    "hours": 1.87,
-    "km": 178.4
+    "hours": 1.82,
+    "km": 180.5
   },
   "Wildkogel Arena – Neukirchen/Bramberg": {
-    "hours": 2.76,
-    "km": 197.9
+    "hours": 2.6,
+    "km": 190.1
   },
   "Winklmoosalm – Reit im Winkl": {
-    "hours": 1.65,
-    "km": 127.8
+    "hours": 2.31,
+    "km": 167.8
+  },
+  "Wurzeralm": {
+    "hours": 2.75,
+    "km": 290.4
   },
   "Wurzeralm – Spital am Pyhrn": {
-    "hours": 2.8,
-    "km": 292.3
+    "hours": 2.75,
+    "km": 290.4
+  },
+  "Zauchensee – Flachauwinkl": {
+    "hours": 2.22,
+    "km": 209.0
   },
   "Zauchensee/Flachauwinkl": {
-    "hours": 2.17,
-    "km": 208.2
+    "hours": 2.22,
+    "km": 209.0
   },
   "Zell am See – Schmittenhöhe": {
-    "hours": 2.61,
-    "km": 168.9
+    "hours": 2.65,
+    "km": 169.3
   },
   "Zillertal Arena": {
-    "hours": 2.52,
-    "km": 182.9
+    "hours": 2.24,
+    "km": 173.7
   },
   "Zugspitze": {
-    "hours": 1.29,
-    "km": 97.1
+    "hours": 1.27,
+    "km": 89.1
+  },
+  "Alpbachtal - Ski Juwel Alpbachtal Wildschönau": {
+    "hours": 1.5,
+    "km": 125.7
+  },
+  "Amberglift Walchsee": {
+    "hours": 1.1,
+    "km": 90.5
+  },
+  "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich": {
+    "hours": 2.07,
+    "km": 135.9
+  },
+  "Bergeralm": {
+    "hours": 3.52,
+    "km": 205.5
+  },
+  "Bergwelt Hahnenkamm": {
+    "hours": 2.63,
+    "km": 199.9
+  },
+  "Berwang": {
+    "hours": 1.77,
+    "km": 123.1
+  },
+  "Bichllifte Prägraten": {
+    "hours": 3.39,
+    "km": 204.4
+  },
+  "Brixen im Thale - SkiWelt": {
+    "hours": 1.59,
+    "km": 113.3
+  },
+  "Dorfberg Kartitsch": {
+    "hours": 4.23,
+    "km": 251.3
+  },
+  "Eggalmbahnen": {
+    "hours": 2.26,
+    "km": 171.8
+  },
+  "Ehrwalder Alm": {
+    "hours": 1.33,
+    "km": 93.3
+  },
+  "Ehrwalder Wettersteinbahnen": {
+    "hours": 1.61,
+    "km": 112.7
+  },
+  "Ellmau-Going - SkiWelt": {
+    "hours": 1.41,
+    "km": 110.3
+  },
+  "Fendels - Ried - Prutz": {
+    "hours": 2.51,
+    "km": 187.7
+  },
+  "Finkenberger Almbahnen": {
+    "hours": 2.12,
+    "km": 163.7
+  },
+  "Fiss-Ladis": {
+    "hours": 2.6,
+    "km": 193.6
+  },
+  "Galtür": {
+    "hours": 3.28,
+    "km": 217.3
+  },
+  "Gerlos - Zillertal Arena": {
+    "hours": 2.16,
+    "km": 168.2
+  },
+  "Gerlosstein - Zillertal Arena": {
+    "hours": 2.29,
+    "km": 163.0
+  },
+  "Glungezer": {
+    "hours": 2.18,
+    "km": 171.3
+  },
+  "Gschwandtkopflifte": {
+    "hours": 78.08,
+    "km": 5465.8
+  },
+  "Hochalmlifte Christlum - Achenkirch": {
+    "hours": 1.62,
+    "km": 93.0
+  },
+  "Hochfügen": {
+    "hours": 1.77,
+    "km": 147.3
+  },
+  "Hochkrimml - Zillertal Arena": {
+    "hours": 1.88,
+    "km": 149.2
+  },
+  "Hochoetz - Oetz": {
+    "hours": 2.4,
+    "km": 166.2
+  },
+  "Hochzeiger - Pitztal": {
+    "hours": 2.72,
+    "km": 179.7
+  },
+  "Hochzillertal-Kaltenbach": {
+    "hours": 1.7,
+    "km": 142.3
+  },
+  "Hopfgarten - Itter - SkiWelt": {
+    "hours": 1.41,
+    "km": 114.0
+  },
+  "Hüttegglift Weerberg": {
+    "hours": 1.8,
+    "km": 150.4
+  },
+  "Imst": {
+    "hours": 2.19,
+    "km": 140.8
+  },
+  "Ischgl": {
+    "hours": 3.04,
+    "km": 207.7
+  },
+  "Ischgl  - Silvretta Arena": {
+    "hours": 3.04,
+    "km": 207.7
+  },
+  "Jöchelspitze Lechtal": {
+    "hours": 2.7,
+    "km": 167.6
+  },
+  "Karwendel-Bergbahn - Pertisau": {
+    "hours": 1.95,
+    "km": 145.9
+  },
+  "Katzenkopf Leutasch": {
+    "hours": 1.61,
+    "km": 120.1
+  },
+  "Kellerjochbahn Schwaz-Pill": {
+    "hours": 1.82,
+    "km": 145.5
+  },
+  "Kitzbühel": {
+    "hours": 1.82,
+    "km": 124.9
+  },
+  "Kolsassberg": {
+    "hours": 1.68,
+    "km": 146.0
+  },
+  "Königsleiten - Zillertal Arena": {
+    "hours": 1.88,
+    "km": 149.2
+  },
+  "Kössen": {
+    "hours": 1.37,
+    "km": 100.5
+  },
+  "Landeck - Zams - Fliess (Familienskigebiet Venet)": {
+    "hours": 2.64,
+    "km": 183.8
+  },
+  "Lienz Zettersfeld Hochstein": {
+    "hours": 3.65,
+    "km": 218.1
+  },
+  "Mayrhofen": {
+    "hours": 2.03,
+    "km": 159.8
+  },
+  "Mittersill - Paß Thurn - Kitzbühel": {
+    "hours": 2.58,
+    "km": 153.8
+  },
+  "Muttereralm - Nockspitzbahn": {
+    "hours": 2.06,
+    "km": 173.1
+  },
+  "Nauders": {
+    "hours": 2.94,
+    "km": 216.2
+  },
+  "Neukirchen - Bramberg - Wildkogel": {
+    "hours": 2.63,
+    "km": 175.1
+  },
+  "Neunerköpfle - Tannheim": {
+    "hours": 2.2,
+    "km": 195.6
+  },
+  "Nordkette - Innsbruck": {
+    "hours": 2.03,
+    "km": 169.1
+  },
+  "Obertilliacher Bergbahnen": {
+    "hours": 4.78,
+    "km": 373.3
+  },
+  "Patscherkofel": {
+    "hours": 2.11,
+    "km": 170.1
+  },
+  "Pitztaler Gletscher - Rifflsee": {
+    "hours": 2.03,
+    "km": 142.4
+  },
+  "Rangger Köpfl": {
+    "hours": 2.27,
+    "km": 145.2
+  },
+  "Rastkogelbahnen": {
+    "hours": 78.08,
+    "km": 5465.8
+  },
+  "Rofan Seilbahn - Maurach": {
+    "hours": 1.6,
+    "km": 134.4
+  },
+  "Rosshütte - Seefeld in Tirol": {
+    "hours": 1.64,
+    "km": 119.6
+  },
+  "Schattwald - Zöblen im Tannheimertal": {
+    "hours": 1.97,
+    "km": 187.4
+  },
+  "Scheffau - SkiWelt": {
+    "hours": 1.94,
+    "km": 130.8
+  },
+  "Schlick 2000": {
+    "hours": 2.21,
+    "km": 182.0
+  },
+  "Schneeberglifte Thiersee": {
+    "hours": 78.08,
+    "km": 5465.8
+  },
+  "Schwannerlifte in Weerberg": {
+    "hours": 2.38,
+    "km": 187.4
+  },
+  "See i. Paznauntal": {
+    "hours": 2.59,
+    "km": 191.3
+  },
+  "Serfaus": {
+    "hours": 2.8,
+    "km": 201.7
+  },
+  "Skilifte Kirchdorf": {
+    "hours": 1.86,
+    "km": 178.4
+  },
+  "Skilifte Knittel": {
+    "hours": 1.86,
+    "km": 178.4
+  },
+  "Skilifte Lärchenhof": {
+    "hours": 3.82,
+    "km": 403.1
+  },
+  "Skizentrum Sillian/ Hochpustertal": {
+    "hours": 4.03,
+    "km": 305.6
+  },
+  "Skizentrum St. Jakob": {
+    "hours": 2.34,
+    "km": 235.8
+  },
+  "Sölden": {
+    "hours": 2.83,
+    "km": 191.1
+  },
+  "Söll - SkiWelt": {
+    "hours": 1.24,
+    "km": 103.3
+  },
+  "Spieljochbahn Fügen": {
+    "hours": 1.6,
+    "km": 135.1
+  },
+  "St. Johann in Tirol": {
+    "hours": 3.64,
+    "km": 272.8
+  },
+  "Steinplatte-Winklmoosalm": {
+    "hours": 1.82,
+    "km": 123.2
+  },
+  "Tiroler Zugspitzbahn": {
+    "hours": 1.71,
+    "km": 115.1
+  },
+  "Tirolina - Ski-,Sport-, und Aktivberg Thiersee": {
+    "hours": 78.08,
+    "km": 5465.8
+  },
+  "Umhausen": {
+    "hours": 2.4,
+    "km": 168.7
+  },
+  "Venter Seilbahnen": {
+    "hours": 1.87,
+    "km": 124.7
+  },
+  "Vögelsberg Aktivpark": {
+    "hours": 1.75,
+    "km": 153.0
+  },
+  "Westendorf - SkiWelt": {
+    "hours": 1.8,
+    "km": 128.5
+  },
+  "Wildschönau - Ski Juwel Alpbachtal Wildschönau": {
+    "hours": 1.54,
+    "km": 121.2
+  },
+  "Zell am Ziller - Zillertal Arena": {
+    "hours": 1.85,
+    "km": 151.4
   }
 }
