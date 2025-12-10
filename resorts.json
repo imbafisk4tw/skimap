@@ -80,14 +80,14 @@
     "country": "Austria",
     "website": "https://www.stubai.at/skigebiete/elferbahnen"
   },
-  {
-    "name": "Fendels",
-    "lat": 47.063,
-    "lon": 10.671,
+    {
+    "name": "Kaunertaler Gletscher",
+    "lat": 46.882,
+    "lon": 10.718,
     "sct": true,
     "ssc": false,
-    "region": "Tirol",
-    "country": "Austria",
+    "nearMuc": false,
+    "glacier": true,
     "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html"
   },
   {
@@ -229,6 +229,7 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
+	"glacier": true,
     "website": "https://www.hintertuxergletscher.at"
   },
   {
@@ -348,6 +349,7 @@
     "lon": 12.759,
     "sct": false,
     "ssc": true,
+	"glacier": true,
     "region": "Salzburg",
     "country": "Austria",
     "website": "https://www.kitzsteinhorn.at"
@@ -381,16 +383,6 @@
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.kitzski.at"
-  },
-  {
-    "name": "Kitzsteinhorn – Kaprun",
-    "lat": 47.219,
-    "lon": 12.759,
-    "sct": false,
-    "ssc": true,
-    "region": "Salzburg",
-    "country": "Austria",
-    "website": "https://www.kitzsteinhorn.at"
   },
   {
     "name": "Kleinarl – Shuttleberg",
@@ -488,19 +480,10 @@
     "lon": 13.013,
     "sct": false,
     "ssc": true,
+	"glacier": true,
     "region": "Carinthia",
     "country": "Austria",
     "website": "https://www.moelltaler-gletscher.at"
-  },
-  {
-    "name": "Mölltaler Gletscher & Ankogelbahn",
-    "lat": 46.95,
-    "lon": 13.02,
-    "sct": false,
-    "ssc": true,
-    "region": "Carinthia",
-    "country": "Austria",
-    "website": "https://www.gletscher.co.at"
   },
   {
     "name": "Montafon – Silvretta Montafon",
@@ -641,6 +624,7 @@
     "lon": 10.866,
     "sct": true,
     "ssc": false,
+	"glacier": true,
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.pitztaler-gletscher.at"
@@ -984,6 +968,7 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
+	"glacier": true,
     "website": "https://www.stubaier-gletscher.com"
   },
   {
@@ -996,6 +981,16 @@
     "country": "Germany",
     "nearMuc": true,
     "website": "https://www.sudelfeld.de"
+  },
+    {
+    "name": "Sölden (Rettenbach/Tiefenbach)",
+    "lat": 46.97,
+    "lon": 10.987,
+    "sct": true,
+    "ssc": false,
+    "nearMuc": false,
+    "glacier": true,
+    "website": "https://www.soelden.com/de"
   },
   {
     "name": "Tauplitz/Bad Mitterndorf",
