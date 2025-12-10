@@ -135,13 +135,28 @@
 .home-box button:hover {
   background: #e0e0e0;
 }
-
+.counter-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: white;
+  padding: 6px 10px;
+  border: 1px solid #888;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
   </style>
 </head>
 <body>
 
 <div id="map"></div>
-
+<!-- Counter sichtbare Resorts -->
+<div id="resort-counter" class="counter-box">
+  0 / 0
+</div>
 <!-- Suchfeld -->
 <div class="search-box">
   <label for="resort-search">Skigebiet suchen</label>
@@ -402,6 +417,24 @@
 
   const travelTimeCache = {};
   let originMarker = null;
+  
+	// NEU: Gesamtzahl der Resorts
+	let totalResorts = 0;
+
+	// NEU: Counter-Update-Funktion
+	function updateResortCounter() {
+	  const box = document.getElementById("resort-counter");
+	  if (!box) return;
+
+	  let visible = 0;
+	  Object.values(resortMarkers).forEach(marker => {
+		if (map.hasLayer(marker)) {
+		  visible++;
+		}
+	  });
+
+	  box.textContent = `${visible} / ${totalResorts}`;
+	}
 
   // >>> ANGEPASST: website wird mit aufgenommen <<<
   function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website) {
@@ -452,33 +485,41 @@
     });
   }
 
-  function loadResortsAndInit() {
-    fetch("resorts.json")
-      .then(resp => {
-        if (!resp.ok) {
-          throw new Error("HTTP " + resp.status);
-        }
-        return resp.json();
-      })
-      .then(list => {
-        initResortsFromJson(list);
-        buildMarkers();
-        if (typeof rebuildDatalist === "function") {
-          rebuildDatalist();
-        }
-        updateTimeLabel(100);
-        applyTimeFilter(100);
-        if (typeof loadTravelTimesJson === "function") {
-          loadTravelTimesJson();
-        }
-      })
-      .catch(err => {
-        console.error("Fehler beim Laden von resorts.json:", err);
-        alert("Fehler beim Laden der Skigebiete (Details in Konsole).");
-      });
-  }
+function loadResortsAndInit() {
+  fetch("resorts.json")
+    .then(resp => {
+      if (!resp.ok) {
+        throw new Error("HTTP " + resp.status);
+      }
+      return resp.json();
+    })
+    .then(list => {
+      initResortsFromJson(list);
 
-  const map = L.map("map").setView([47.2, 12.2], 7.5);
+      // NEU: Gesamtzahl der Resorts bestimmen
+      totalResorts = Object.keys(resorts).length;
+
+      buildMarkers();
+      if (typeof rebuildDatalist === "function") {
+        rebuildDatalist();
+      }
+      updateTimeLabel(100);
+      applyTimeFilter(100);   // ruft gleich updateResortCounter() mit auf
+      if (typeof loadTravelTimesJson === "function") {
+        loadTravelTimesJson();
+      }
+    })
+    .catch(err => {
+      console.error("Fehler beim Laden von resorts.json:", err);
+      alert("Fehler beim Laden der Skigebiete (Details in Konsole).");
+    });
+}
+
+	const map = L.map("map").setView([47.2, 12.2], 7.5);
+
+	// NEU: wenn Layer an/aus geschaltet werden, Counter aktualisieren
+	map.on("overlayadd",  updateResortCounter);
+	map.on("overlayremove", updateResortCounter);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
@@ -596,38 +637,42 @@
     timeLabel.textContent = "bis ca. " + fmtTime(limitHours);
   }
 
-  function applyTimeFilter(pct) {
-    const limitHours = minHours + (pct / 100) * (maxHours - minHours);
+function applyTimeFilter(pct) {
+  const limitHours = minHours + (pct / 100) * (maxHours - minHours);
 
-    Object.values(resorts).forEach(r => {
-      const key = norm(r.name);
-      const marker = resortMarkers[key];
-      if (!marker || r.travelHours == null) return;
+  Object.values(resorts).forEach(r => {
+    const key = norm(r.name);
+    const marker = resortMarkers[key];
+    if (!marker || r.travelHours == null) return;
 
-      const inside = (pct >= 99) || (r.travelHours <= limitHours + 1e-6);
+    const inside = (pct >= 99) || (r.travelHours <= limitHours + 1e-6);
 
-      if (r.sct) {
-        if (inside) sctLayer.addLayer(marker);
-        else sctLayer.removeLayer(marker);
-      }
-      if (r.ssc) {
-        if (inside) sscLayer.addLayer(marker);
-        else sscLayer.removeLayer(marker);
-      }
-      if (r.sct && r.ssc) {
-        if (inside) overlapLayer.addLayer(marker);
-        else overlapLayer.removeLayer(marker);
-      }
-      if (r.glacier) {
-        if (inside) glacierLayer.addLayer(marker);
-        else glacierLayer.removeLayer(marker);
-      }
-      if (r.nearMuc) {
-        if (inside) nearMucLayer.addLayer(marker);
-        else nearMucLayer.removeLayer(marker);
-      }
-    });
-  }
+    if (r.sct) {
+      if (inside) sctLayer.addLayer(marker);
+      else sctLayer.removeLayer(marker);
+    }
+    if (r.ssc) {
+      if (inside) sscLayer.addLayer(marker);
+      else sscLayer.removeLayer(marker);
+    }
+    if (r.sct && r.ssc) {
+      if (inside) overlapLayer.addLayer(marker);
+      else overlapLayer.removeLayer(marker);
+    }
+    if (r.glacier) {
+      if (inside) glacierLayer.addLayer(marker);
+      else glacierLayer.removeLayer(marker);
+    }
+    if (r.nearMuc) {
+      if (inside) nearMucLayer.addLayer(marker);
+      else nearMucLayer.removeLayer(marker);
+    }
+  });
+
+  // NEU: nach jeder Filteränderung aktualisieren
+  updateResortCounter();
+}
+
 
   if (timeSlider) {
     timeSlider.addEventListener("input", (e) => {
