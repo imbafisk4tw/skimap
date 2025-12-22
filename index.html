@@ -14,7 +14,69 @@
   />
 
   <style>
-    html, body {
+    
+/* Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München) */
+.filter-box.leaflet-control{
+  background:white;
+  padding:8px 10px;
+  border:1px solid #888;
+  font-size:13px;
+  line-height:1.4;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  border-radius:4px;
+  width:190px;
+  box-sizing:border-box;
+}
+.filter-box .title{
+  font-weight:600;
+  font-size:12px;
+  margin-bottom:6px;
+}
+.filter-box label{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin:4px 0;
+  user-select:none;
+}
+.filter-box input[type="checkbox"]{
+  margin:0;
+}
+
+/* Export-Box (aktueller Filter) */
+.export-box.leaflet-control{
+  background:white;
+  padding:8px 10px;
+  border:1px solid #888;
+  font-size:13px;
+  line-height:1.4;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  border-radius:4px;
+  width:190px;
+  box-sizing:border-box;
+}
+.export-box .title{
+  font-weight:600;
+  font-size:12px;
+  margin-bottom:6px;
+}
+.export-box button{
+  width:100%;
+  padding:5px 6px;
+  margin:4px 0 0 0;
+  font-size:13px;
+  border-radius:3px;
+  border:1px solid #666;
+  background:#f0f0f0;
+  cursor:pointer;
+}
+.export-box button:hover{ background:#e0e0e0; }
+.export-box .hint{
+  margin-top:6px;
+  font-size:11px;
+  color:#444;
+}
+html, body {
       height: 100%;
       margin: 0;
     }
@@ -61,7 +123,7 @@
     }
 	
     .slider-box {
-      position: fixed;
+      position: relative;
       bottom: 110px;        /* sitzt über der Legende */
       left: 20px;
       z-index: 10000;
@@ -150,50 +212,28 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       border-radius: 4px;
     }
-	
-		/* Export-Box als Leaflet-Control (erscheint oben rechts unter dem Layer-Control) */
-	.export-box.leaflet-control {
-	  background: white;
-	  padding: 8px 10px;
-	  border: 1px solid #888;
-	  font-size: 13px;
-	  line-height: 1.4;
-	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-	  border-radius: 4px;
-	  width: 240px;
-	  box-sizing: border-box;
-	}
-
-	.export-box .title {
-	  font-weight: 600;
-	  font-size: 12px;
-	  margin-bottom: 6px;
-	}
-
-	.export-box button {
-	  width: 100%;
-	  padding: 6px 8px;
-	  font-size: 13px;
-	  border-radius: 3px;
-	  border: 1px solid #666;
-	  background: #f0f0f0;
-	  cursor: pointer;
-	}
-
-	.export-box button:hover {
-	  background: #e0e0e0;
-	}
-
-	.export-box button + button {
-	  margin-top: 6px;
-	}
-
-	.export-box .hint {
-	  margin-top: 6px;
-	  font-size: 11px;
-	  color: #555;
-	}
-  </style>
+  
+    /* Responsive: Boxen bleiben im Viewport */
+    @media (max-width: 720px) {
+      .search-box,
+      .home-box,
+      .slider-box,
+      .legend-box {
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: none !important;
+      }
+      .search-box input { width: 100% !important; }
+      .slider-box { bottom: 120px !important; }
+      .legend-box { bottom: 10px !important; }
+      .counter-box { right: 10px !important; bottom: 10px !important; }
+      .filter-box.leaflet-control,
+      .export-box.leaflet-control {
+        width: 170px !important;
+      }
+    }
+</style>
 </head>
 <body>
 
@@ -362,12 +402,8 @@
     maxZoom: 18,
     attribution: "&copy; OpenStreetMap-Mitwirkende"
   }).addTo(map);
-
-  const sctLayer = L.layerGroup();
-  const sscLayer = L.layerGroup();
-  const overlapLayer = L.layerGroup();
-  const nearMucLayer = L.layerGroup();
-
+  // Ein Layer für alle Resort-Marker (Filter steuern Sichtbarkeit)
+  const markerLayer = L.layerGroup().addTo(map);
   const COLOR_SCT   = "#9C2419";
   const COLOR_SSC   = "#004A8F";
   const COLOR_BOTH  = "#9C27B0";
@@ -388,8 +424,6 @@
 
     box.textContent = `${visible} / ${totalResorts}`;
   }
-
-
   function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website) {
     const key = norm(name);
     if (!resorts[key]) {
@@ -528,13 +562,7 @@
       marker
         .bindPopup(() => makePopupHtml(r))
         .bindTooltip(`${r.name} (${passesStr})`);
-
-      // Kategorie-Layer (mutual exclusive für Saisonpass-Kategorien)
-      if (r.sct && r.ssc)      overlapLayer.addLayer(marker);
-      else if (r.sct)          sctLayer.addLayer(marker);
-      else if (r.ssc)          sscLayer.addLayer(marker);
-      else if (r.nearMuc)      nearMucLayer.addLayer(marker);
-
+      markerLayer.addLayer(marker);
       resortMarkers[norm(r.name)] = marker;
     });
 
@@ -542,45 +570,27 @@
     updateResortCounter();
   }
   const timeSlider = document.getElementById("time-slider");
+  const overlays = {
+  };
 
-  sctLayer.addTo(map);
-  sscLayer.addTo(map);
-  overlapLayer.addTo(map);
-  nearMucLayer.addTo(map);
-
-  const legend = document.createElement("div");
-  legend.className = "legend-box";
-  legend.innerHTML = `
-    <b>Farbcode</b><br/>
-    <span style="color: ${COLOR_SCT};">■</span> Nur Snow Card Tirol<br/>
-    <span style="color: ${COLOR_SSC};">■</span> Nur SuperSkiCard<br/>
-    <span style="color: ${COLOR_BOTH};">■</span> Beide Pässe<br/>
-  `;
-  document.body.appendChild(legend);
-
-
+  if (Object.keys(overlays).length) {
+    L.control.layers({}, overlays, { collapsed: false }).addTo(map);
+  }
   // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
-	const ui = window.initSearchAndFilters({
-	  map,
-	  resorts,
-	  resortMarkers,
-	  layers: { sctLayer, sscLayer, overlapLayer, nearMucLayer },
-	  fmtTime,
-	  norm,
-	  getMinHours: () => minHours,
-	  getMaxHours: () => maxHours,
-	  updateResortCounter,
-
-	  // NEU: Layercontrol wird in searchFilter.js gebaut
-	  layerControlOverlays: {
-		"Snow Card Tirol": sctLayer,
-		"SuperSkiCard": sscLayer,
-		"Überschneidung SCT & SSC": overlapLayer,		"Nahe München": nearMucLayer
-	  },
-	  layerControlCollapsed: false
-	});
-
-  // Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
+  const ui = window.initSearchAndFilters({
+    map,
+    resorts,
+    resortMarkers,
+    markerLayer,
+    fmtTime,
+    norm,
+    getMinHours: () => minHours,
+    getMaxHours: () => maxHours,
+    updateResortCounter,
+    createFilterControl: true,
+    createExportControl: true
+  });
+// Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
   window.rebuildDatalist   = ui.rebuildDatalist;
   window.updateTimeLabel   = ui.updateTimeLabel;
   window.applyTimeFilter   = ui.applyTimeFilter;
