@@ -7,7 +7,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.axamer-lizum.at"
+    "website": "https://www.axamer-lizum.at",
+    "groupId": "axamer-lizum",
+    "groupName": "Axamer Lizum",
+    "entryType": "main",
+    "entryName": "Axamer Lizum"
   },
   {
     "name": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
@@ -17,7 +21,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.berwang.tirol"
+    "website": "https://www.berwang.tirol",
+    "groupId": "berwang",
+    "groupName": "Berwang",
+    "entryType": "entry",
+    "entryName": "Bichlbach er Sonnalmbahn"
   },
   {
     "name": "Biberwier – Marienberg",
@@ -27,7 +35,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.bergbahnen-langes.at"
+    "website": "https://www.bergbahnen-langes.at",
+    "groupId": "bergbahnen-langes",
+    "groupName": "Lermoos - Grubigstein",
+    "entryType": "entry",
+    "entryName": "Biberwier"
   },
   {
     "name": "Brauneck – Lenggries",
@@ -38,7 +50,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.brauneck-bergbahn.de"
+    "website": "https://www.brauneck-bergbahn.de",
+    "groupId": "brauneck-bergbahn",
+    "groupName": "Brauneck - Lenggries",
+    "entryType": "main",
+    "entryName": "Brauneck"
   },
   {
     "name": "Buchensteinwand – Pillersee",
@@ -48,7 +64,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.bergbahn-pillersee.com"
+    "website": "https://www.bergbahn-pillersee.com",
+    "groupId": "bergbahn-pillersee",
+    "groupName": "Buchensteinwand - Pillersee",
+    "entryType": "main",
+    "entryName": "Buchensteinwand"
   },
   {
     "name": "Ehrwald – Ehrwalder Alm",
@@ -58,7 +78,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.almbahn.at"
+    "website": "https://www.almbahn.at",
+    "groupId": "almbahn",
+    "groupName": "Ehrwalder Alm",
+    "entryType": "entry",
+    "entryName": "Ehrwald"
   },
   {
     "name": "Elferbahnen – Neustift",
@@ -68,7 +92,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.stubai.at/skigebiete/elferbahnen"
+    "website": "https://www.stubai.at/skigebiete/elferbahnen",
+    "groupId": "stubai",
+    "groupName": "Schlick 2000",
+    "entryType": "entry",
+    "entryName": "Elferbahnen"
   },
   {
     "name": "Kaunertaler Gletscher",
@@ -78,7 +106,11 @@
     "ssc": false,
     "nearMuc": false,
     "glacier": true,
-    "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html"
+    "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html",
+    "groupId": "kaunertaler-gletscher",
+    "groupName": "Kaunertaler Gletscher",
+    "entryType": "main",
+    "entryName": "Kaunertaler Gletscher"
   },
   {
     "name": "Galsterberg",
@@ -88,7 +120,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.galsterberg.at"
+    "website": "https://www.galsterberg.at",
+    "groupId": "galsterberg",
+    "groupName": "Galsterberg",
+    "entryType": "main",
+    "entryName": "Galsterberg"
   },
   {
     "name": "Garmisch-Classic",
@@ -99,7 +135,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://zugspitze.de"
+    "website": "https://zugspitze.de",
+    "groupId": "zugspitze",
+    "groupName": "Zugspitze",
+    "entryType": "entry",
+    "entryName": "Garmisch-Classic"
   },
   {
     "name": "Gastein – Bad Gastein",
@@ -109,7 +149,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.skigastein.com"
+    "website": "https://www.skigastein.com",
+    "groupId": "skigastein",
+    "groupName": "Sportgastein",
+    "entryType": "entry",
+    "entryName": "Gastein"
   },
   {
     "name": "Gastein – Bad Hofgastein",
@@ -119,7 +163,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.skigastein.com"
+    "website": "https://www.skigastein.com",
+    "groupId": "skigastein",
+    "groupName": "Sportgastein",
+    "entryType": "entry",
+    "entryName": "Gastein"
   },
   {
     "name": "Gerlitzen Alpe",
@@ -129,7 +177,11 @@
     "ssc": true,
     "region": "Carinthia",
     "country": "Austria",
-    "website": "https://www.gerlitzen.com"
+    "website": "https://www.gerlitzen.com",
+    "groupId": "gerlitzen",
+    "groupName": "Gerlitzen Alpe",
+    "entryType": "main",
+    "entryName": "Gerlitzen Alpe"
   },
   {
     "name": "Glungezer – Tulfes",
@@ -139,7 +191,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.glungezerbahn.at"
+    "website": "https://www.glungezerbahn.at",
+    "groupId": "glungezerbahn",
+    "groupName": "Glungezer - Tulfes",
+    "entryType": "main",
+    "entryName": "Glungezer"
   },
   {
     "name": "Goldeck – Spittal/Drau",
@@ -149,7 +205,11 @@
     "ssc": true,
     "region": "Carinthia",
     "country": "Austria",
-    "website": "https://www.sportberg-goldeck.com"
+    "website": "https://www.sportberg-goldeck.com",
+    "groupId": "sportberg-goldeck",
+    "groupName": "Goldeck - Spittal/Drau",
+    "entryType": "main",
+    "entryName": "Goldeck"
   },
   {
     "name": "Grebenzen – St. Lambrecht",
@@ -159,7 +219,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://grebenzen.at"
+    "website": "https://grebenzen.at",
+    "groupId": "grebenzen",
+    "groupName": "Grebenzen - St. Lambrecht",
+    "entryType": "main",
+    "entryName": "Grebenzen"
   },
   {
     "name": "Großglockner Resort Kals–Matrei",
@@ -169,7 +233,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.gg-resort.at"
+    "website": "https://www.gg-resort.at",
+    "groupId": "gg-resort",
+    "groupName": "Großglockner Resort Kals-Matrei",
+    "entryType": "main",
+    "entryName": "Großglockner Resort Kals–Matrei"
   },
   {
     "name": "Hauser Kaibling",
@@ -179,7 +247,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.hauser-kaibling.at"
+    "website": "https://www.hauser-kaibling.at",
+    "groupId": "hauser-kaibling",
+    "groupName": "Hauser Kaibling",
+    "entryType": "main",
+    "entryName": "Hauser Kaibling"
   },
   {
     "name": "Heiligenblut – Großglockner",
@@ -189,7 +261,11 @@
     "ssc": true,
     "region": "Carinthia",
     "country": "Austria",
-    "website": "https://www.heiligenblut.at"
+    "website": "https://www.heiligenblut.at",
+    "groupId": "heiligenblut",
+    "groupName": "Heiligenblut - Großglockner",
+    "entryType": "main",
+    "entryName": "Heiligenblut"
   },
   {
     "name": "Hinterstoder – Höss",
@@ -199,7 +275,11 @@
     "ssc": true,
     "region": "Upper Austria",
     "country": "Austria",
-    "website": "https://www.hinterstoder.at"
+    "website": "https://www.hinterstoder.at",
+    "groupId": "hinterstoder",
+    "groupName": "Hinterstoder - Höss",
+    "entryType": "main",
+    "entryName": "Hinterstoder"
   },
   {
     "name": "Hintertuxer Gletscher",
@@ -210,7 +290,11 @@
     "region": "Tyrol",
     "country": "Austria",
     "glacier": true,
-    "website": "https://www.hintertuxergletscher.at"
+    "website": "https://www.hintertuxergletscher.at",
+    "groupId": "hintertuxergletscher",
+    "groupName": "Eggalmbahnen",
+    "entryType": "entry",
+    "entryName": "Hintertuxer Gletscher"
   },
   {
     "name": "Hochficht (Böhmerwald)",
@@ -220,7 +304,11 @@
     "ssc": true,
     "region": "Upper Austria",
     "country": "Austria",
-    "website": "https://www.hochficht.at"
+    "website": "https://www.hochficht.at",
+    "groupId": "hochficht",
+    "groupName": "Hochficht (Böhmerwald)",
+    "entryType": "main",
+    "entryName": "Hochficht (Böhmerwald)"
   },
   {
     "name": "Hochkönig – Maria Alm/Dienten/Mühlbach",
@@ -230,7 +318,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.hochkoenig.at"
+    "website": "https://www.hochkoenig.at",
+    "groupId": "hochkoenig",
+    "groupName": "Hochkönig - Maria Alm/Dienten/Mühlbach",
+    "entryType": "main",
+    "entryName": "Hochkönig"
   },
   {
     "name": "Hochkössen (Unterberghorn)",
@@ -240,7 +332,11 @@
     "ssc": false,
     "region": "Tirol",
     "country": "Austria",
-    "website": "https://www.bergbahnen-koessen.at"
+    "website": "https://www.bergbahnen-koessen.at",
+    "groupId": "bergbahnen-koessen",
+    "groupName": "Hochkössen (Unterberghorn)",
+    "entryType": "main",
+    "entryName": "Hochkössen (Unterberghorn)"
   },
   {
     "name": "Hochwurzen",
@@ -250,7 +346,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.planai.at"
+    "website": "https://www.planai.at",
+    "groupId": "planai",
+    "groupName": "Hochwurzen",
+    "entryType": "main",
+    "entryName": "Hochwurzen"
   },
   {
     "name": "Hochzeiger – Jerzens Pitztal",
@@ -260,7 +360,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.hochzeiger.com"
+    "website": "https://www.hochzeiger.com",
+    "groupId": "hochzeiger",
+    "groupName": "Hochzeiger - Jerzens Pitztal",
+    "entryType": "main",
+    "entryName": "Hochzeiger"
   },
   {
     "name": "Jenner – Königssee",
@@ -271,7 +375,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.jennerbahn.de"
+    "website": "https://www.jennerbahn.de",
+    "groupId": "jennerbahn",
+    "groupName": "Jenner - Königssee",
+    "entryType": "main",
+    "entryName": "Jenner"
   },
   {
     "name": "Kappl",
@@ -281,7 +389,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kappl.com"
+    "website": "https://www.kappl.com",
+    "groupId": "kappl",
+    "groupName": "Kappl",
+    "entryType": "main",
+    "entryName": "Kappl"
   },
   {
     "name": "Kaprun – Kitzsteinhorn (Gletscher)",
@@ -292,7 +404,11 @@
     "glacier": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.kitzsteinhorn.at"
+    "website": "https://www.kitzsteinhorn.at",
+    "groupId": "kitzsteinhorn",
+    "groupName": "Kaprun - Kitzsteinhorn (Gletscher)",
+    "entryType": "main",
+    "entryName": "Kaprun"
   },
   {
     "name": "Kasberg – Grünau im Almtal",
@@ -302,7 +418,11 @@
     "ssc": true,
     "region": "Upper Austria",
     "country": "Austria",
-    "website": "https://www.kasberg.at"
+    "website": "https://www.kasberg.at",
+    "groupId": "kasberg",
+    "groupName": "Kasberg - Grünau im Almtal",
+    "entryType": "main",
+    "entryName": "Kasberg"
   },
   {
     "name": "Katschberg/Aineck",
@@ -312,7 +432,11 @@
     "ssc": true,
     "region": "Carinthia/Salzburg",
     "country": "Austria",
-    "website": "https://www.katschberg.at"
+    "website": "https://www.katschberg.at",
+    "groupId": "katschberg",
+    "groupName": "Katschberg/Aineck",
+    "entryType": "main",
+    "entryName": "Katschberg/Aineck"
   },
   {
     "name": "KitzSki – Kitzbühel/Kirchberg",
@@ -322,7 +446,11 @@
     "ssc": true,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kitzski.at"
+    "website": "https://www.kitzski.at",
+    "groupId": "kitzski",
+    "groupName": "Kitzbühel",
+    "entryType": "entry",
+    "entryName": "KitzSki Kirchberg"
   },
   {
     "name": "Kleinarl – Shuttleberg",
@@ -332,7 +460,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.shuttleberg.com"
+    "website": "https://www.shuttleberg.com",
+    "groupId": "shuttleberg",
+    "groupName": "Kleinarl - Shuttleberg",
+    "entryType": "main",
+    "entryName": "Kleinarl"
   },
   {
     "name": "Kreischberg",
@@ -342,7 +474,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.kreischberg.at"
+    "website": "https://www.kreischberg.at",
+    "groupId": "kreischberg",
+    "groupName": "Kreischberg",
+    "entryType": "main",
+    "entryName": "Kreischberg"
   },
   {
     "name": "Kühtai",
@@ -352,7 +488,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kuehtai.info"
+    "website": "https://www.kuehtai.info",
+    "groupId": "kuehtai",
+    "groupName": "Kühtai",
+    "entryType": "main",
+    "entryName": "Kühtai"
   },
   {
     "name": "Lachtal",
@@ -362,7 +502,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.lachtal.at"
+    "website": "https://www.lachtal.at",
+    "groupId": "lachtal",
+    "groupName": "Lachtal",
+    "entryType": "main",
+    "entryName": "Lachtal"
   },
   {
     "name": "Lermoos – Grubigstein",
@@ -372,7 +516,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.bergbahnen-langes.at"
+    "website": "https://www.bergbahnen-langes.at",
+    "groupId": "bergbahnen-langes",
+    "groupName": "Lermoos - Grubigstein",
+    "entryType": "main",
+    "entryName": "Lermoos"
   },
   {
     "name": "Loser – Altaussee",
@@ -382,7 +530,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.loser.at"
+    "website": "https://www.loser.at",
+    "groupId": "loser",
+    "groupName": "Loser - Altaussee",
+    "entryType": "main",
+    "entryName": "Loser"
   },
   {
     "name": "Mayrhofen – Penken/Ahorn",
@@ -392,7 +544,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.mayrhofner-bergbahnen.com"
+    "website": "https://www.mayrhofner-bergbahnen.com",
+    "groupId": "mayrhofner-bergbahnen",
+    "groupName": "Mayrhofen - Penken/Ahorn",
+    "entryType": "main",
+    "entryName": "Mayrhofen"
   },
   {
     "name": "Mölltaler Gletscher",
@@ -403,7 +559,11 @@
     "glacier": true,
     "region": "Carinthia",
     "country": "Austria",
-    "website": "https://www.moelltaler-gletscher.at"
+    "website": "https://www.moelltaler-gletscher.at",
+    "groupId": "moelltaler-gletscher",
+    "groupName": "Mölltaler Gletscher",
+    "entryType": "main",
+    "entryName": "Mölltaler Gletscher"
   },
   {
     "name": "Nauders – Bergkastel",
@@ -413,7 +573,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.nauders.com"
+    "website": "https://www.nauders.com",
+    "groupId": "nauders",
+    "groupName": "Nauders - Bergkastel",
+    "entryType": "main",
+    "entryName": "Nauders"
   },
   {
     "name": "Nassfeld – Hermagor",
@@ -423,7 +587,11 @@
     "ssc": true,
     "region": "Carinthia",
     "country": "Austria",
-    "website": "https://www.nassfeld.at"
+    "website": "https://www.nassfeld.at",
+    "groupId": "nassfeld",
+    "groupName": "Nassfeld - Hermagor",
+    "entryType": "main",
+    "entryName": "Nassfeld"
   },
   {
     "name": "Obergurgl-Hochgurgl",
@@ -433,7 +601,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.gurgl.com"
+    "website": "https://www.gurgl.com",
+    "groupId": "gurgl",
+    "groupName": "Obergurgl-Hochgurgl",
+    "entryType": "main",
+    "entryName": "Obergurgl-Hochgurgl"
   },
   {
     "name": "Obertauern",
@@ -443,7 +615,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.obertauern.com"
+    "website": "https://www.obertauern.com",
+    "groupId": "obertauern",
+    "groupName": "Obertauern",
+    "entryType": "main",
+    "entryName": "Obertauern"
   },
   {
     "name": "Obertraun – Dachstein Krippenstein",
@@ -453,7 +629,11 @@
     "ssc": true,
     "region": "Upper Austria",
     "country": "Austria",
-    "website": "https://www.dachstein-salzkammergut.com"
+    "website": "https://www.dachstein-salzkammergut.com",
+    "groupId": "dachstein-salzkammergut",
+    "groupName": "Obertraun - Dachstein Krippenstein",
+    "entryType": "main",
+    "entryName": "Obertraun"
   },
   {
     "name": "Oberstdorf – Fellhorn/Kanzelwand",
@@ -464,7 +644,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.ok-bergbahnen.com"
+    "website": "https://www.ok-bergbahnen.com",
+    "groupId": "ok-bergbahnen",
+    "groupName": "Oberstdorf - Nebelhorn",
+    "entryType": "entry",
+    "entryName": "Oberstdorf"
   },
   {
     "name": "Oberstdorf – Nebelhorn",
@@ -475,7 +659,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.ok-bergbahnen.com"
+    "website": "https://www.ok-bergbahnen.com",
+    "groupId": "ok-bergbahnen",
+    "groupName": "Oberstdorf - Nebelhorn",
+    "entryType": "main",
+    "entryName": "Oberstdorf"
   },
   {
     "name": "Oberstdorf – Söllereck",
@@ -486,7 +674,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.ok-bergbahnen.com"
+    "website": "https://www.ok-bergbahnen.com",
+    "groupId": "ok-bergbahnen",
+    "groupName": "Oberstdorf - Nebelhorn",
+    "entryType": "entry",
+    "entryName": "Oberstdorf"
   },
   {
     "name": "Patscherkofel – Igls",
@@ -496,7 +688,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.patscherkofelbahn.at"
+    "website": "https://www.patscherkofelbahn.at",
+    "groupId": "patscherkofelbahn",
+    "groupName": "Patscherkofel",
+    "entryType": "entry",
+    "entryName": "Igls"
   },
   {
     "name": "Planneralm",
@@ -506,7 +702,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.planneralm.at"
+    "website": "https://www.planneralm.at",
+    "groupId": "planneralm",
+    "groupName": "Planneralm",
+    "entryType": "main",
+    "entryName": "Planneralm"
   },
   {
     "name": "Präbichl",
@@ -516,7 +716,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.praebichl.at"
+    "website": "https://www.praebichl.at",
+    "groupId": "praebichl",
+    "groupName": "Präbichl",
+    "entryType": "main",
+    "entryName": "Präbichl"
   },
   {
     "name": "Radstadt/Altenmarkt",
@@ -526,7 +730,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.radstadt-altenmarkt.at"
+    "website": "https://www.radstadt-altenmarkt.at",
+    "groupId": "radstadt-altenmarkt",
+    "groupName": "Radstadt/Altenmarkt",
+    "entryType": "main",
+    "entryName": "Radstadt/Altenmarkt"
   },
   {
     "name": "Ramsau am Dachstein – Rittisberg",
@@ -536,7 +744,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.rittisberg.at"
+    "website": "https://www.rittisberg.at",
+    "groupId": "rittisberg",
+    "groupName": "Ramsau am Dachstein - Rittisberg",
+    "entryType": "main",
+    "entryName": "Ramsau am Dachstein"
   },
   {
     "name": "Rangger Köpfl – Oberperfuss",
@@ -546,7 +758,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.rangger-koepfl.at"
+    "website": "https://www.rangger-koepfl.at",
+    "groupId": "rangger-koepfl",
+    "groupName": "Rangger Köpfl",
+    "entryType": "entry",
+    "entryName": "Oberperfuss"
   },
   {
     "name": "Reiteralm",
@@ -556,7 +772,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.reiteralm.at"
+    "website": "https://www.reiteralm.at",
+    "groupId": "reiteralm",
+    "groupName": "Reiteralm",
+    "entryType": "main",
+    "entryName": "Reiteralm"
   },
   {
     "name": "Riesneralm – Donnersbachwald",
@@ -566,7 +786,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.riesneralm.at"
+    "website": "https://www.riesneralm.at",
+    "groupId": "riesneralm",
+    "groupName": "Riesneralm - Donnersbachwald",
+    "entryType": "main",
+    "entryName": "Riesneralm"
   },
   {
     "name": "Saalbach Hinterglemm – Leogang – Fieberbrunn",
@@ -576,7 +800,11 @@
     "ssc": true,
     "region": "Salzburg/Tyrol",
     "country": "Austria",
-    "website": "https://www.saalbach.com"
+    "website": "https://www.saalbach.com",
+    "groupId": "skicircus",
+    "groupName": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
+    "entryType": "main",
+    "entryName": "Saalbach Hinterglemm"
   },
   {
     "name": "Schladming – Planai/Hochwurzen",
@@ -586,7 +814,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.planai.at"
+    "website": "https://www.planai.at",
+    "groupId": "planai",
+    "groupName": "Hochwurzen",
+    "entryType": "entry",
+    "entryName": "Schladming Planai"
   },
   {
     "name": "See im Paznaun",
@@ -596,7 +828,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.see.at"
+    "website": "https://www.see.at",
+    "groupId": "see",
+    "groupName": "See im Paznaun",
+    "entryType": "main",
+    "entryName": "See im Paznaun"
   },
   {
     "name": "Seefeld – Rosshütte",
@@ -606,7 +842,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.rosshuette.at"
+    "website": "https://www.rosshuette.at",
+    "groupId": "rosshuette",
+    "groupName": "Seefeld - Rosshütte",
+    "entryType": "main",
+    "entryName": "Seefeld"
   },
   {
     "name": "Serfaus-Fiss-Ladis",
@@ -616,7 +856,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.serfaus-fiss-ladis.at"
+    "website": "https://www.serfaus-fiss-ladis.at",
+    "groupId": "serfaus-fiss-ladis",
+    "groupName": "Serfaus-Fiss-Ladis",
+    "entryType": "main",
+    "entryName": "Serfaus-Fiss-Ladis"
   },
   {
     "name": "Serlesbahnen – Mieders",
@@ -626,7 +870,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.stubai.at/skigebiete/serlesbahnen"
+    "website": "https://www.stubai.at/skigebiete/serlesbahnen",
+    "groupId": "stubai",
+    "groupName": "Schlick 2000",
+    "entryType": "entry",
+    "entryName": "Serlesbahnen"
   },
   {
     "name": "Silvretta Montafon",
@@ -636,7 +884,11 @@
     "ssc": true,
     "region": "Vorarlberg",
     "country": "Austria",
-    "website": "https://www.silvretta-montafon.at"
+    "website": "https://www.silvretta-montafon.at",
+    "groupId": "silvretta-montafon",
+    "groupName": "Silvretta Montafon",
+    "entryType": "main",
+    "entryName": "Silvretta Montafon"
   },
   {
     "name": "Sillian – Thurntaler (Hochpustertal)",
@@ -646,7 +898,11 @@
     "ssc": false,
     "region": "East Tyrol",
     "country": "Austria",
-    "website": "https://www.hochpustertal-ski.at"
+    "website": "https://www.hochpustertal-ski.at",
+    "groupId": "hochpustertal-ski",
+    "groupName": "Skizentrum Sillian/ Hochpustertal",
+    "entryType": "entry",
+    "entryName": "Sillian"
   },
   {
     "name": "Ski Amadé",
@@ -656,17 +912,11 @@
     "ssc": true,
     "region": "Salzburg/Styria",
     "country": "Austria",
-    "website": "https://www.skiamade.com"
-  },
-  {
-    "name": "SkiWelt Wilder Kaiser – Brixental",
-    "lat": 47.494,
-    "lon": 12.292,
-    "sct": true,
-    "ssc": true,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiamade.com",
+    "groupId": "skiamade",
+    "groupName": "Ski Amadé",
+    "entryType": "main",
+    "entryName": "Ski Amadé"
   },
   {
     "name": "Skijuwel Alpbachtal – Wildschönau",
@@ -676,7 +926,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skijuwel.com"
+    "website": "https://www.skijuwel.com",
+    "groupId": "skijuwel",
+    "groupName": "Ski Juwel Alpbachtal Wildschönau",
+    "entryType": "main",
+    "entryName": "Skijuwel Alpbachtal"
   },
   {
     "name": "Snow Space Salzburg – Flachau",
@@ -686,7 +940,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.snow-space.com"
+    "website": "https://www.snow-space.com",
+    "groupId": "snow-space-salzburg",
+    "groupName": "Snow Space Salzburg",
+    "entryType": "main",
+    "entryName": "Flachau"
   },
   {
     "name": "Snow Space Salzburg – Flachau/Wagrain/St. Johann",
@@ -696,7 +954,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.snow-space.com"
+    "website": "https://www.snow-space.com",
+    "groupId": "snow-space-salzburg",
+    "groupName": "Snow Space Salzburg",
+    "entryType": "entry",
+    "entryName": "Flachau Wagrain St. Johann"
   },
   {
     "name": "Snow Space Salzburg – St. Johann/Alpendorf",
@@ -706,7 +968,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.snow-space.com"
+    "website": "https://www.snow-space.com",
+    "groupId": "snow-space-salzburg",
+    "groupName": "Snow Space Salzburg",
+    "entryType": "entry",
+    "entryName": "St. Johann Alpendorf"
   },
   {
     "name": "Snow Space Salzburg – Wagrain",
@@ -716,7 +982,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.snow-space.com"
+    "website": "https://www.snow-space.com",
+    "groupId": "snow-space-salzburg",
+    "groupName": "Snow Space Salzburg",
+    "entryType": "entry",
+    "entryName": "Wagrain"
   },
   {
     "name": "Sportgastein",
@@ -726,7 +996,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.skigastein.com"
+    "website": "https://www.skigastein.com",
+    "groupId": "skigastein",
+    "groupName": "Sportgastein",
+    "entryType": "main",
+    "entryName": "Sportgastein"
   },
   {
     "name": "Spitzingsee – Tegernsee",
@@ -737,7 +1011,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.alpenbahnen-spitzingsee.de"
+    "website": "https://www.alpenbahnen-spitzingsee.de",
+    "groupId": "alpenbahnen-spitzingsee",
+    "groupName": "Spitzingsee - Tegernsee",
+    "entryType": "main",
+    "entryName": "Spitzingsee"
   },
   {
     "name": "St. Jakob im Defereggental – Brunnalm",
@@ -747,7 +1025,11 @@
     "ssc": false,
     "region": "East Tyrol",
     "country": "Austria",
-    "website": "https://www.stjakob-ski.at"
+    "website": "https://www.stjakob-ski.at",
+    "groupId": "stjakob-ski",
+    "groupName": "St. Jakob im Defereggental - Brunnalm",
+    "entryType": "main",
+    "entryName": "St. Jakob im Defereggental"
   },
   {
     "name": "St. Michael – Großeck-Speiereck",
@@ -757,7 +1039,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.grosseck-speiereck.at"
+    "website": "https://www.grosseck-speiereck.at",
+    "groupId": "grosseck-speiereck",
+    "groupName": "St. Michael - Großeck-Speiereck",
+    "entryType": "main",
+    "entryName": "St. Michael"
   },
   {
     "name": "Steinplatte – Waidring",
@@ -767,7 +1053,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.steinplatte.tirol"
+    "website": "https://www.steinplatte.tirol",
+    "groupId": "steinplatte",
+    "groupName": "Steinplatte - Waidring",
+    "entryType": "main",
+    "entryName": "Steinplatte"
   },
   {
     "name": "Stubaier Gletscher",
@@ -778,7 +1068,11 @@
     "region": "Tyrol",
     "country": "Austria",
     "glacier": true,
-    "website": "https://www.stubaier-gletscher.com"
+    "website": "https://www.stubaier-gletscher.com",
+    "groupId": "stubaier-gletscher",
+    "groupName": "Stubaier Gletscher",
+    "entryType": "main",
+    "entryName": "Stubaier Gletscher"
   },
   {
     "name": "Sudelfeld – Bayrischzell",
@@ -789,7 +1083,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://www.sudelfeld.de"
+    "website": "https://www.sudelfeld.de",
+    "groupId": "sudelfeld",
+    "groupName": "Sudelfeld - Bayrischzell",
+    "entryType": "main",
+    "entryName": "Sudelfeld"
   },
   {
     "name": "Sölden (Rettenbach/Tiefenbach)",
@@ -799,7 +1097,11 @@
     "ssc": false,
     "nearMuc": false,
     "glacier": true,
-    "website": "https://www.soelden.com/de"
+    "website": "https://www.soelden.com/de",
+    "groupId": "soelden",
+    "groupName": "Sölden (Rettenbach/Tiefenbach)",
+    "entryType": "main",
+    "entryName": "Sölden (Rettenbach/Tiefenbach)"
   },
   {
     "name": "Tauplitz/Bad Mitterndorf",
@@ -809,7 +1111,11 @@
     "ssc": true,
     "region": "Styria",
     "country": "Austria",
-    "website": "https://www.dietauplitz.com"
+    "website": "https://www.dietauplitz.com",
+    "groupId": "dietauplitz",
+    "groupName": "Tauplitz/Bad Mitterndorf",
+    "entryType": "main",
+    "entryName": "Tauplitz/Bad Mitterndorf"
   },
   {
     "name": "Turracher Höhe (Kärnten/Steiermark)",
@@ -819,7 +1125,11 @@
     "ssc": true,
     "region": "Carinthia/Styria",
     "country": "Austria",
-    "website": "https://www.turracherhoehe.at"
+    "website": "https://www.turracherhoehe.at",
+    "groupId": "turracherhoehe",
+    "groupName": "Turracher Höhe (Kärnten/Steiermark)",
+    "entryType": "main",
+    "entryName": "Turracher Höhe (Kärnten/Steiermark)"
   },
   {
     "name": "Venet – Zams/Fließ",
@@ -829,7 +1139,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.venet.at"
+    "website": "https://www.venet.at",
+    "groupId": "venet",
+    "groupName": "Venet - Zams/Fließ",
+    "entryType": "main",
+    "entryName": "Venet"
   },
   {
     "name": "Werfenweng",
@@ -839,7 +1153,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.werfenweng.eu"
+    "website": "https://www.werfenweng.eu",
+    "groupId": "werfenweng",
+    "groupName": "Werfenweng",
+    "entryType": "main",
+    "entryName": "Werfenweng"
   },
   {
     "name": "Wildkogel Arena – Neukirchen/Bramberg",
@@ -849,7 +1167,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.wildkogel-arena.at"
+    "website": "https://www.wildkogel-arena.at",
+    "groupId": "wildkogel-arena",
+    "groupName": "Wildkogel Arena",
+    "entryType": "main",
+    "entryName": "Neukirchen Bramberg"
   },
   {
     "name": "Winklmoosalm – Reit im Winkl",
@@ -860,7 +1182,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://winklmoosalm.de/"
+    "website": "https://winklmoosalm.de/",
+    "groupId": "winklmoosalm",
+    "groupName": "Winklmoosalm - Reit im Winkl",
+    "entryType": "main",
+    "entryName": "Winklmoosalm"
   },
   {
     "name": "Wurzeralm – Spital am Pyhrn",
@@ -870,7 +1196,11 @@
     "ssc": true,
     "region": "Upper Austria",
     "country": "Austria",
-    "website": "https://www.hiwu.at"
+    "website": "https://www.hiwu.at",
+    "groupId": "hiwu",
+    "groupName": "Wurzeralm - Spital am Pyhrn",
+    "entryType": "main",
+    "entryName": "Wurzeralm"
   },
   {
     "name": "Zauchensee - Flachauwinkl",
@@ -880,7 +1210,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.zauchensee.at"
+    "website": "https://www.zauchensee.at",
+    "groupId": "zauchensee",
+    "groupName": "Zauchensee - Flachauwinkl",
+    "entryType": "main",
+    "entryName": "Zauchensee"
   },
   {
     "name": "Zell am See – Schmittenhöhe",
@@ -890,7 +1224,11 @@
     "ssc": true,
     "region": "Salzburg",
     "country": "Austria",
-    "website": "https://www.schmitten.at"
+    "website": "https://www.schmitten.at",
+    "groupId": "schmitten",
+    "groupName": "Zell am See - Schmittenhöhe",
+    "entryType": "main",
+    "entryName": "Zell am See"
   },
   {
     "name": "Zillertal Arena",
@@ -900,7 +1238,11 @@
     "ssc": true,
     "region": "Tyrol/Salzburg",
     "country": "Austria",
-    "website": "https://www.zillertalarena.com"
+    "website": "https://www.zillertalarena.com",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "main",
+    "entryName": "Zillertal Arena"
   },
   {
     "name": "Zugspitze",
@@ -911,7 +1253,11 @@
     "region": "Bavaria",
     "country": "Germany",
     "nearMuc": true,
-    "website": "https://zugspitze.de"
+    "website": "https://zugspitze.de",
+    "groupId": "zugspitze",
+    "groupName": "Zugspitze",
+    "entryType": "main",
+    "entryName": "Zugspitze"
   },
   {
     "name": "Amberglift Walchsee",
@@ -921,7 +1267,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.amberglift.at/"
+    "website": "https://www.amberglift.at/",
+    "groupId": "amberglift",
+    "groupName": "Amberglift Walchsee",
+    "entryType": "main",
+    "entryName": "Amberglift Walchsee"
   },
   {
     "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
@@ -931,7 +1281,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.bergbahn-pillersee.com"
+    "website": "https://www.bergbahn-pillersee.com",
+    "groupId": "bergbahn-pillersee",
+    "groupName": "Buchensteinwand - Pillersee",
+    "entryType": "entry",
+    "entryName": "Bergbahnen Pillersee"
   },
   {
     "name": "Bergeralm",
@@ -941,7 +1295,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.bergeralm.net/"
+    "website": "https://www.bergeralm.net/",
+    "groupId": "bergeralm",
+    "groupName": "Bergeralm",
+    "entryType": "main",
+    "entryName": "Bergeralm"
   },
   {
     "name": "Bergwelt Hahnenkamm",
@@ -951,7 +1309,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.bergwelt-hahnenkamm.at"
+    "website": "https://www.bergwelt-hahnenkamm.at",
+    "groupId": "bergwelt-hahnenkamm",
+    "groupName": "Bergwelt Hahnenkamm",
+    "entryType": "main",
+    "entryName": "Bergwelt Hahnenkamm"
   },
   {
     "name": "Berwang",
@@ -961,7 +1323,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": ""
+    "website": "",
+    "groupId": "berwang",
+    "groupName": "Berwang",
+    "entryType": "main",
+    "entryName": "Berwang"
   },
   {
     "name": "Bichllifte Prägraten",
@@ -971,7 +1337,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84"
+    "website": "https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84",
+    "groupId": "tirol",
+    "groupName": "Bichllifte Prägraten",
+    "entryType": "main",
+    "entryName": "Bichllifte Prägraten"
   },
   {
     "name": "Brixen im Thale - SkiWelt",
@@ -981,7 +1351,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Brixen im Thale"
   },
   {
     "name": "Dorfberg Kartitsch",
@@ -991,7 +1365,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://kartitscher-liftgesellschaft.jimdofree.com/"
+    "website": "https://kartitscher-liftgesellschaft.jimdofree.com/",
+    "groupId": "jimdofree",
+    "groupName": "Dorfberg Kartitsch",
+    "entryType": "main",
+    "entryName": "Dorfberg Kartitsch"
   },
   {
     "name": "Eggalmbahnen",
@@ -1001,7 +1379,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/"
+    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/",
+    "groupId": "hintertuxergletscher",
+    "groupName": "Eggalmbahnen",
+    "entryType": "main",
+    "entryName": "Eggalmbahnen"
   },
   {
     "name": "Ehrwalder Alm",
@@ -1011,7 +1393,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.almbahn.tirol"
+    "website": "https://www.almbahn.tirol",
+    "groupId": "almbahn",
+    "groupName": "Ehrwalder Alm",
+    "entryType": "main",
+    "entryName": "Ehrwalder Alm"
   },
   {
     "name": "Ehrwalder Wettersteinbahnen",
@@ -1021,7 +1407,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.wetterstein-bahnen.at/"
+    "website": "https://www.wetterstein-bahnen.at/",
+    "groupId": "wetterstein-bahnen",
+    "groupName": "Ehrwalder Wettersteinbahnen",
+    "entryType": "main",
+    "entryName": "Ehrwalder Wettersteinbahnen"
   },
   {
     "name": "Ellmau-Going - SkiWelt",
@@ -1031,7 +1421,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Ellmau-Going"
   },
   {
     "name": "Fendels - Ried - Prutz",
@@ -1041,7 +1435,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863"
+    "website": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863",
+    "groupId": "kaunertal",
+    "groupName": "Fendels - Ried - Prutz",
+    "entryType": "main",
+    "entryName": "Fendels"
   },
   {
     "name": "Finkenberger Almbahnen",
@@ -1051,7 +1449,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/"
+    "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/",
+    "groupId": "hintertuxergletscher",
+    "groupName": "Eggalmbahnen",
+    "entryType": "entry",
+    "entryName": "Finkenberger Almbahnen"
   },
   {
     "name": "Galtür - Silvapark",
@@ -1061,7 +1463,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.silvapark.at"
+    "website": "https://www.silvapark.at",
+    "groupId": "silvapark",
+    "groupName": "Galtür - Silvapark",
+    "entryType": "main",
+    "entryName": "Galtür"
   },
   {
     "name": "Gerlos - Zillertal Arena",
@@ -1071,7 +1477,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zillertalarena.com"
+    "website": "https://www.zillertalarena.com",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "entry",
+    "entryName": "Gerlos"
   },
   {
     "name": "Gerlosstein - Zillertal Arena",
@@ -1081,7 +1491,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zillertalarena.com/"
+    "website": "https://www.zillertalarena.com/",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "entry",
+    "entryName": "Gerlosstein"
   },
   {
     "name": "Gschwandtkopflifte",
@@ -1091,7 +1505,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skigebiet-seefeld.at/"
+    "website": "https://www.skigebiet-seefeld.at/",
+    "groupId": "skigebiet-seefeld",
+    "groupName": "Gschwandtkopflifte",
+    "entryType": "main",
+    "entryName": "Gschwandtkopflifte"
   },
   {
     "name": "Hochalmlifte Christlum - Achenkirch",
@@ -1101,7 +1519,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.christlum.at"
+    "website": "https://www.christlum.at",
+    "groupId": "christlum",
+    "groupName": "Hochalmlifte Christlum - Achenkirch",
+    "entryType": "main",
+    "entryName": "Hochalmlifte Christlum"
   },
   {
     "name": "Hochfügen",
@@ -1111,7 +1533,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": ""
+    "website": "",
+    "groupId": "hochf-gen",
+    "groupName": "Hochfügen",
+    "entryType": "main",
+    "entryName": "Hochfügen"
   },
   {
     "name": "Hochkrimml - Zillertal Arena",
@@ -1121,7 +1547,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zillertalarena.com"
+    "website": "https://www.zillertalarena.com",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "entry",
+    "entryName": "Hochkrimml"
   },
   {
     "name": "Hochoetz - Oetz",
@@ -1131,7 +1561,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.oetz.com/"
+    "website": "https://www.oetz.com/",
+    "groupId": "oetz",
+    "groupName": "Hochoetz - Oetz",
+    "entryType": "main",
+    "entryName": "Hochoetz"
   },
   {
     "name": "Hochzillertal-Kaltenbach",
@@ -1141,7 +1575,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": ""
+    "website": "",
+    "groupId": "hochzillertal-kaltenbach",
+    "groupName": "Hochzillertal-Kaltenbach",
+    "entryType": "main",
+    "entryName": "Hochzillertal-Kaltenbach"
   },
   {
     "name": "Hopfgarten - Itter - SkiWelt",
@@ -1151,7 +1589,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Hopfgarten"
   },
   {
     "name": "Hüttegglift Weerberg",
@@ -1161,7 +1603,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.huettegglift.at/"
+    "website": "https://www.huettegglift.at/",
+    "groupId": "huettegglift",
+    "groupName": "Hüttegglift Weerberg",
+    "entryType": "main",
+    "entryName": "Hüttegglift Weerberg"
   },
   {
     "name": "Imst - Hochimst",
@@ -1171,7 +1617,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.imster-bergbahnen.at/"
+    "website": "https://www.imster-bergbahnen.at/",
+    "groupId": "imster-bergbahnen",
+    "groupName": "Imst - Hochimst",
+    "entryType": "main",
+    "entryName": "Imst"
   },
   {
     "name": "Ischgl  - Silvretta Arena",
@@ -1181,7 +1631,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.ischgl.com/"
+    "website": "https://www.ischgl.com/",
+    "groupId": "ischgl",
+    "groupName": "Ischgl - Silvretta Arena",
+    "entryType": "main",
+    "entryName": "Ischgl"
   },
   {
     "name": "Jöchelspitze Lechtal",
@@ -1191,7 +1645,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.lechtaler-bergbahnen.at/"
+    "website": "https://www.lechtaler-bergbahnen.at/",
+    "groupId": "lechtaler-bergbahnen",
+    "groupName": "Jöchelspitze Lechtal",
+    "entryType": "main",
+    "entryName": "Jöchelspitze Lechtal"
   },
   {
     "name": "Karwendel-Bergbahn - Pertisau",
@@ -1201,7 +1659,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html"
+    "website": "https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html",
+    "groupId": "karwendel-bergbahn",
+    "groupName": "Karwendel-Bergbahn - Pertisau",
+    "entryType": "main",
+    "entryName": "Karwendel-Bergbahn"
   },
   {
     "name": "Katzenkopf Leutasch",
@@ -1211,7 +1673,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.katzenkopf-leutasch.at"
+    "website": "https://www.katzenkopf-leutasch.at",
+    "groupId": "katzenkopf-leutasch",
+    "groupName": "Katzenkopf Leutasch",
+    "entryType": "main",
+    "entryName": "Katzenkopf Leutasch"
   },
   {
     "name": "Kellerjochbahn Schwaz-Pill",
@@ -1221,7 +1687,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kellerjochbahn.at/cms/"
+    "website": "https://www.kellerjochbahn.at/cms/",
+    "groupId": "kellerjochbahn",
+    "groupName": "Kellerjochbahn Schwaz-Pill",
+    "entryType": "main",
+    "entryName": "Kellerjochbahn Schwaz-Pill"
   },
   {
     "name": "Kitzbühel",
@@ -1231,7 +1701,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kitzski.at"
+    "website": "https://www.kitzski.at",
+    "groupId": "kitzski",
+    "groupName": "Kitzbühel",
+    "entryType": "main",
+    "entryName": "Kitzbühel"
   },
   {
     "name": "Kolsassberg",
@@ -1241,7 +1715,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.kolsassberglift.at/"
+    "website": "https://www.kolsassberglift.at/",
+    "groupId": "kolsassberglift",
+    "groupName": "Kolsassberg",
+    "entryType": "main",
+    "entryName": "Kolsassberg"
   },
   {
     "name": "Königsleiten - Zillertal Arena",
@@ -1251,7 +1729,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zillertalarena.com"
+    "website": "https://www.zillertalarena.com",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "entry",
+    "entryName": "Königsleiten"
   },
   {
     "name": "Kössen",
@@ -1261,7 +1743,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://skisport.com/Hochkoessen/de"
+    "website": "https://skisport.com/Hochkoessen/de",
+    "groupId": "skisport",
+    "groupName": "Kössen",
+    "entryType": "main",
+    "entryName": "Kössen"
   },
   {
     "name": "Landeck - Zams - Fliess (Familienskigebiet Venet)",
@@ -1271,7 +1757,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.venet.at"
+    "website": "https://www.venet.at",
+    "groupId": "venet",
+    "groupName": "Venet - Zams/Fließ",
+    "entryType": "entry",
+    "entryName": "Landeck"
   },
   {
     "name": "Lienz Zettersfeld Hochstein",
@@ -1281,7 +1771,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.lienzer-bergbahnen.at"
+    "website": "https://www.lienzer-bergbahnen.at",
+    "groupId": "lienzer-bergbahnen",
+    "groupName": "Lienz Zettersfeld Hochstein",
+    "entryType": "main",
+    "entryName": "Lienz Zettersfeld Hochstein"
   },
   {
     "name": "Mittersill - Paß Thurn - Kitzbühel",
@@ -1291,7 +1785,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.mittersill.info/"
+    "website": "https://www.mittersill.info/",
+    "groupId": "mittersill",
+    "groupName": "Mittersill - Paß Thurn - Kitzbühel",
+    "entryType": "main",
+    "entryName": "Mittersill"
   },
   {
     "name": "Muttereralm - Nockspitzbahn",
@@ -1301,7 +1799,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.muttereralm.at"
+    "website": "https://www.muttereralm.at",
+    "groupId": "muttereralm",
+    "groupName": "Muttereralm - Nockspitzbahn",
+    "entryType": "main",
+    "entryName": "Muttereralm"
   },
   {
     "name": "Neunerköpfle - Tannheim",
@@ -1311,7 +1813,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.tannheimer-bergbahnen.at"
+    "website": "https://www.tannheimer-bergbahnen.at",
+    "groupId": "tannheimer-bergbahnen",
+    "groupName": "Neunerköpfle - Tannheim",
+    "entryType": "main",
+    "entryName": "Neunerköpfle"
   },
   {
     "name": "Nordkette - Innsbruck",
@@ -1321,7 +1827,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.nordkette.com/"
+    "website": "https://www.nordkette.com/",
+    "groupId": "nordkette",
+    "groupName": "Nordkette - Innsbruck",
+    "entryType": "main",
+    "entryName": "Nordkette"
   },
   {
     "name": "Obertilliacher Bergbahnen",
@@ -1331,7 +1841,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.obertilliacher-bergbahnen.com/"
+    "website": "https://www.obertilliacher-bergbahnen.com/",
+    "groupId": "obertilliacher-bergbahnen",
+    "groupName": "Obertilliacher Bergbahnen",
+    "entryType": "main",
+    "entryName": "Obertilliacher Bergbahnen"
   },
   {
     "name": "Patscherkofel",
@@ -1341,7 +1855,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.patscherkofelbahn.at"
+    "website": "https://www.patscherkofelbahn.at",
+    "groupId": "patscherkofelbahn",
+    "groupName": "Patscherkofel",
+    "entryType": "main",
+    "entryName": "Patscherkofel"
   },
   {
     "name": "Pitztaler Gletscher - Rifflsee",
@@ -1351,7 +1869,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.pitztaler-gletscher.at"
+    "website": "https://www.pitztaler-gletscher.at",
+    "groupId": "pitztaler-gletscher",
+    "groupName": "Pitztaler Gletscher - Rifflsee",
+    "entryType": "main",
+    "entryName": "Pitztaler Gletscher"
   },
   {
     "name": "Rangger Köpfl",
@@ -1361,7 +1883,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.rangger-koepfl.at"
+    "website": "https://www.rangger-koepfl.at",
+    "groupId": "rangger-koepfl",
+    "groupName": "Rangger Köpfl",
+    "entryType": "main",
+    "entryName": "Rangger Köpfl"
   },
   {
     "name": "Rastkogelbahnen",
@@ -1371,7 +1897,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/"
+    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/",
+    "groupId": "hintertuxergletscher",
+    "groupName": "Eggalmbahnen",
+    "entryType": "entry",
+    "entryName": "Rastkogelbahnen"
   },
   {
     "name": "Rofan Seilbahn - Maurach",
@@ -1381,7 +1911,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.rofanseilbahn.at"
+    "website": "https://www.rofanseilbahn.at",
+    "groupId": "rofanseilbahn",
+    "groupName": "Rofan Seilbahn - Maurach",
+    "entryType": "main",
+    "entryName": "Rofan Seilbahn"
   },
   {
     "name": "Rosshütte - Seefeld in Tirol",
@@ -1391,7 +1925,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.rosshuette.at/"
+    "website": "https://www.rosshuette.at/",
+    "groupId": "rosshuette",
+    "groupName": "Seefeld - Rosshütte",
+    "entryType": "entry",
+    "entryName": "Rosshütte"
   },
   {
     "name": "Schattwald - Zöblen im Tannheimertal",
@@ -1401,7 +1939,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen"
+    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen",
+    "groupId": "tirol",
+    "groupName": "Bichllifte Prägraten",
+    "entryType": "entry",
+    "entryName": "Schattwald"
   },
   {
     "name": "Scheffau - SkiWelt",
@@ -1411,7 +1953,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Scheffau"
   },
   {
     "name": "Schlick 2000",
@@ -1421,7 +1967,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.stubai.at/skigebiete/schlick2000/"
+    "website": "https://www.stubai.at/skigebiete/schlick2000/",
+    "groupId": "stubai",
+    "groupName": "Schlick 2000",
+    "entryType": "main",
+    "entryName": "Schlick 2000"
   },
   {
     "name": "Schneeberglifte Thiersee",
@@ -1431,7 +1981,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.schneeberglifte.at"
+    "website": "https://www.schneeberglifte.at",
+    "groupId": "schneeberglifte",
+    "groupName": "Schneeberglifte Thiersee",
+    "entryType": "main",
+    "entryName": "Schneeberglifte Thiersee"
   },
   {
     "name": "Schwannerlifte in Weerberg",
@@ -1441,7 +1995,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg"
+    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg",
+    "groupId": "tirol",
+    "groupName": "Bichllifte Prägraten",
+    "entryType": "entry",
+    "entryName": "Schwannerlifte in Weerberg"
   },
   {
     "name": "Skilifte Kirchdorf",
@@ -1451,7 +2009,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "http://www.yappys-winterland.tirol"
+    "website": "http://www.yappys-winterland.tirol",
+    "groupId": "yappys-winterland",
+    "groupName": "Skilifte Kirchdorf",
+    "entryType": "main",
+    "entryName": "Skilifte Kirchdorf"
   },
   {
     "name": "Skilifte Knittel",
@@ -1461,7 +2023,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.knitteltirol.at/"
+    "website": "https://www.knitteltirol.at/",
+    "groupId": "knitteltirol",
+    "groupName": "Skilifte Knittel",
+    "entryType": "main",
+    "entryName": "Skilifte Knittel"
   },
   {
     "name": "Skilifte Lärchenhof",
@@ -1471,7 +2037,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.laerchenhof-tirol.at/"
+    "website": "https://www.laerchenhof-tirol.at/",
+    "groupId": "laerchenhof-tirol",
+    "groupName": "Skilifte Lärchenhof",
+    "entryType": "main",
+    "entryName": "Skilifte Lärchenhof"
   },
   {
     "name": "Skizentrum Sillian/ Hochpustertal",
@@ -1481,7 +2051,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.hochpustertal-ski.at"
+    "website": "https://www.hochpustertal-ski.at",
+    "groupId": "hochpustertal-ski",
+    "groupName": "Skizentrum Sillian/ Hochpustertal",
+    "entryType": "main",
+    "entryName": "Skizentrum Sillian/ Hochpustertal"
   },
   {
     "name": "Söll - SkiWelt",
@@ -1491,7 +2065,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Söll"
   },
   {
     "name": "Spieljochbahn Fügen",
@@ -1501,7 +2079,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": ""
+    "website": "",
+    "groupId": "spieljochbahn-f-gen",
+    "groupName": "Spieljochbahn Fügen",
+    "entryType": "main",
+    "entryName": "Spieljochbahn Fügen"
   },
   {
     "name": "St. Johann in Tirol – Oberndorf",
@@ -1511,7 +2093,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.bergbahnen-stjohann.at"
+    "website": "https://www.bergbahnen-stjohann.at",
+    "groupId": "bergbahnen-stjohann",
+    "groupName": "St. Johann in Tirol - Oberndorf",
+    "entryType": "main",
+    "entryName": "St. Johann in Tirol"
   },
   {
     "name": "Steinplatte-Winklmoosalm",
@@ -1521,7 +2107,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.steinplatte.tirol/"
+    "website": "https://www.steinplatte.tirol/",
+    "groupId": "steinplatte",
+    "groupName": "Steinplatte - Waidring",
+    "entryType": "entry",
+    "entryName": "Steinplatte-Winklmoosalm"
   },
   {
     "name": "Tiroler Zugspitzbahn",
@@ -1531,7 +2121,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zugspitzbahn.at"
+    "website": "https://www.zugspitzbahn.at",
+    "groupId": "zugspitzbahn",
+    "groupName": "Tiroler Zugspitzbahn",
+    "entryType": "main",
+    "entryName": "Tiroler Zugspitzbahn"
   },
   {
     "name": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
@@ -1541,7 +2135,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.tirolina.at/de/startseite.html"
+    "website": "https://www.tirolina.at/de/startseite.html",
+    "groupId": "tirolina",
+    "groupName": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
+    "entryType": "main",
+    "entryName": "Tirolina"
   },
   {
     "name": "Umhausen",
@@ -1551,7 +2149,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.oetztal.com/skigebiet-niederthai"
+    "website": "https://www.oetztal.com/skigebiet-niederthai",
+    "groupId": "oetztal",
+    "groupName": "Umhausen",
+    "entryType": "main",
+    "entryName": "Umhausen"
   },
   {
     "name": "Venter Seilbahnen",
@@ -1561,7 +2163,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.vent.at/"
+    "website": "https://www.vent.at/",
+    "groupId": "vent",
+    "groupName": "Venter Seilbahnen",
+    "entryType": "main",
+    "entryName": "Venter Seilbahnen"
   },
   {
     "name": "Vögelsberg Aktivpark",
@@ -1571,7 +2177,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://voegelsberg.at/"
+    "website": "https://voegelsberg.at/",
+    "groupId": "voegelsberg",
+    "groupName": "Vögelsberg Aktivpark",
+    "entryType": "main",
+    "entryName": "Vögelsberg Aktivpark"
   },
   {
     "name": "Westendorf - SkiWelt",
@@ -1581,7 +2191,11 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.skiwelt.at"
+    "website": "https://www.skiwelt.at",
+    "groupId": "skiwelt",
+    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "entryType": "entry",
+    "entryName": "Westendorf"
   },
   {
     "name": "Zell am Ziller - Zillertal Arena",
@@ -1591,6 +2205,10 @@
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
-    "website": "https://www.zell.at"
+    "website": "https://www.zell.at",
+    "groupId": "zillertal-arena",
+    "groupName": "Zillertal Arena",
+    "entryType": "entry",
+    "entryName": "Zell am Ziller"
   }
 ]
