@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skimap resorts.json schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "lat", "lon"],
+    "additionalProperties": true,
+    "properties": {
+      "id": { "type": "string", "minLength": 1 },
+      "name": { "type": "string", "minLength": 1 },
+      "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+      "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+
+      "website": { "type": "string", "minLength": 1 },
+      "ssc": { "type": "boolean" },
+      "sct": { "type": "boolean" },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+
+      "verbund": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 }
+        }
+      },
+
+      "entrypoint": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
