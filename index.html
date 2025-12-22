@@ -198,6 +198,8 @@
   crossorigin=""
 ></script>
 
+<script src="searchFilter.js"></script>
+
 <script>
   // --------- Basis-Einstellungen ---------
   const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImRhZjIxYzViN2RhZjQ1ZmNhZGY4ZjNlZThhZjEzODE3IiwiaCI6Im11cm11cjY0In0="; // dein ORS-Key
@@ -497,61 +499,7 @@
     // einmal initial nach Markerbau updaten
     updateResortCounter();
   }
-
   const timeSlider = document.getElementById("time-slider");
-  const timeLabel  = document.getElementById("time-slider-label");
-
-  function updateTimeLabel(pct) {
-    if (pct >= 99) {
-      timeLabel.textContent = "Voll (alle Gebiete)";
-      return;
-    }
-    const limitHours = minHours + (pct / 100) * (maxHours - minHours);
-    timeLabel.textContent = "bis ca. " + fmtTime(limitHours);
-  }
-
-  function applyTimeFilter(pct) {
-    const limitHours = minHours + (pct / 100) * (maxHours - minHours);
-
-    Object.values(resorts).forEach(r => {
-      const key = norm(r.name);
-      const marker = resortMarkers[key];
-      if (!marker || r.travelHours == null) return;
-
-      const inside = (pct >= 99) || (r.travelHours <= limitHours + 1e-6);
-
-      if (r.sct) {
-        if (inside) sctLayer.addLayer(marker);
-        else sctLayer.removeLayer(marker);
-      }
-      if (r.ssc) {
-        if (inside) sscLayer.addLayer(marker);
-        else sscLayer.removeLayer(marker);
-      }
-      if (r.sct && r.ssc) {
-        if (inside) overlapLayer.addLayer(marker);
-        else overlapLayer.removeLayer(marker);
-      }
-      if (r.glacier) {
-        if (inside) glacierLayer.addLayer(marker);
-        else glacierLayer.removeLayer(marker);
-      }
-      if (r.nearMuc) {
-        if (inside) nearMucLayer.addLayer(marker);
-        else nearMucLayer.removeLayer(marker);
-      }
-    });
-
-    updateResortCounter();
-  }
-
-  if (timeSlider) {
-    timeSlider.addEventListener("input", (e) => {
-      const pct = Number(e.target.value);
-      updateTimeLabel(pct);
-      applyTimeFilter(pct);
-    });
-  }
 
   sctLayer.addTo(map);
   sscLayer.addTo(map);
@@ -579,79 +527,26 @@
   `;
   document.body.appendChild(legend);
 
-  const searchInput = document.getElementById("resort-search");
-  const datalist = document.getElementById("resort-datalist");
 
-  function rebuildDatalist() {
-    while (datalist.firstChild) {
-      datalist.removeChild(datalist.firstChild);
-    }
-    Object.values(resorts)
-      .sort((a, b) => a.name.localeCompare(b.name, "de"))
-      .forEach(r => {
-        const opt = document.createElement("option");
-        if (r.travelHours != null && isFinite(r.travelHours)) {
-          opt.value = r.name + " – " + fmtTime(r.travelHours);
-        } else {
-          opt.value = r.name;
-        }
-        datalist.appendChild(opt);
-      });
-  }
-
-  function extractResortName(raw) {
-    if (!raw) return "";
-    const idx = raw.indexOf(" – ");
-    if (idx === -1) {
-      return raw.trim();
-    }
-    return raw.slice(0, idx).trim();
-  }
-
-  function focusResortByName(query) {
-    if (!query) return;
-    const qNorm = norm(query);
-    const keys = Object.keys(resortMarkers);
-
-    let bestKey = null;
-
-    if (resortMarkers[qNorm]) {
-      bestKey = qNorm;
-    } else {
-      for (const k of keys) {
-        if (k.startsWith(qNorm)) {
-          bestKey = k;
-          break;
-        }
-      }
-      if (!bestKey) {
-        for (const k of keys) {
-          if (k.includes(qNorm)) {
-            bestKey = k;
-            break;
-          }
-        }
-      }
-    }
-
-    if (!bestKey) {
-      alert("Kein Skigebiet gefunden für: " + query);
-      return;
-    }
-
-    const marker = resortMarkers[bestKey];
-    const latLng = marker.getLatLng();
-    map.setView(latLng, 11);
-    marker.openPopup();
-  }
-
-  searchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      const onlyName = extractResortName(searchInput.value);
-      focusResortByName(onlyName);
-    }
+  // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
+  const ui = window.initSearchAndFilters({
+    map,
+    resorts,
+    resortMarkers,
+    layers: { sctLayer, sscLayer, overlapLayer, glacierLayer, nearMucLayer },
+    fmtTime,
+    norm,
+    getMinHours: () => minHours,
+    getMaxHours: () => maxHours,
+    updateResortCounter
   });
+
+  // Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
+  window.rebuildDatalist   = ui.rebuildDatalist;
+  window.updateTimeLabel   = ui.updateTimeLabel;
+  window.applyTimeFilter   = ui.applyTimeFilter;
+  window.focusResortByName = ui.focusResortByName;
+  // Suche & Filter wurden in searchFilter.js ausgelagert.
 
   function applyTravelTimesFromMap(ttMap) {
     const resortList = Object.values(resorts);
