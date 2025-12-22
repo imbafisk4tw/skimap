@@ -1694,20 +1694,6 @@
     "entryName": "Kellerjochbahn Schwaz-Pill"
   },
   {
-    "name": "Kitzbühel",
-    "lat": 47.44492,
-    "lon": 12.394167,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.kitzski.at",
-    "groupId": "kitzski",
-    "groupName": "Kitzbühel",
-    "entryType": "main",
-    "entryName": "Kitzbühel"
-  },
-  {
     "name": "Kolsassberg",
     "lat": 47.3,
     "lon": 11.63333,
