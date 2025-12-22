@@ -21,3 +21,8 @@ data/
 
 # --- node ---
 node_modules/
+
+
+# allow published isochrones
+!isochrones/
+!isochrones/*.geojson

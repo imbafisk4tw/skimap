@@ -260,6 +260,11 @@ padding: 4px 6px;
         width: 170px !important;
       }
     }
+
+    /* Layer-Control: nie "abschneiden" und scrollbar machen */
+    .leaflet-top.leaflet-right { z-index: 2000; }
+    .leaflet-control-layers { max-height: 70vh; overflow-y: auto; overflow-x: hidden; }
+
 </style>
 </head>
 <body>
@@ -434,11 +439,18 @@ padding: 4px 6px;
   // Karte
   const map = L.map("map").setView([47.2, 12.2], 9);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18,
+  const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
     attribution: "&copy; OpenStreetMap-Mitwirkende"
-  }).addTo(map);
-  
+  });
+  osm.addTo(map);
+
+  // Optional: Topo-Look mit Relief (zeigt Höhen/Topologie etwas deutlicher)
+  const topo = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
+    maxZoom: 17,
+    attribution: "Map data: &copy; OpenStreetMap-Mitwirkende, SRTM | Map style: &copy; OpenTopoMap"
+  });
+
   // --------- PMTiles Overlay (Pisten & Lifte) ---------
   // Lege die Dateien in deinem Projekt z.B. unter /tiles ab:
   //   ./tiles/pistes.pmtiles
@@ -717,6 +729,17 @@ if (passType === "SCT") resorts[key].sct = true;
     iso.setMaxMinutes(minutes);
   }
 
+  const baseLayers = {
+    "OSM": osm,
+    "Topo (Relief)": topo
+  };
+
+  const overlays = {};
+  if (pistesLayer) overlays["Pisten"] = pistesLayer;
+  if (liftsLayer)  overlays["Lifte"]  = liftsLayer;
+
+  window.layerControl = L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
+
   (async () => {
     if (!window.IsochroneOverlay) return;
 
@@ -741,14 +764,8 @@ if (passType === "SCT") resorts[key].sct = true;
   })();
 
 
-const overlays = {};
-  if (pistesLayer) overlays["Pisten"] = pistesLayer;
-  if (liftsLayer)  overlays["Lifte"]  = liftsLayer;
 
-  if (Object.keys(overlays).length) {
-    window.layerControl = L.control.layers({}, overlays, { collapsed: false }).addTo(map);
-  }
-  // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
+// --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
   const ui = window.initSearchAndFilters({
     map,
     resorts,
