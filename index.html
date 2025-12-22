@@ -96,13 +96,16 @@ html, body {
       line-height: 1.4;
     }
     .search-box {
-      position: fixed;
+      position: fixed !important;
       top: 10px;
       left: 50px;
       z-index: 10000;
       background: white;
       padding: 8px;
-      border: 1px solid #888;
+      width: 360px;
+      max-width: calc(100vw - 40px);
+      box-sizing: border-box;
+border: 1px solid #888;
       font-size: 13px;
       line-height: 1.4;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -114,15 +117,39 @@ html, body {
       font-size: 12px;
     }
     .search-box input {
-      width: 220px;
-      padding: 4px 6px;
+      width: 100%;
+padding: 4px 6px;
       font-size: 13px;
       border: 1px solid #bbb;
       border-radius: 3px;
       box-sizing: border-box;
     }
 	
-    .slider-box {
+    
+    .search-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .search-row input {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    #clear-verbund-btn {
+      flex: 0 0 auto;
+      padding: 4px 8px;
+      font-size: 12px;
+      border: 1px solid #666;
+      border-radius: 3px;
+      background: #f0f0f0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #clear-verbund-btn:disabled {
+      opacity: 0.55;
+      cursor: default;
+    }
+.slider-box {
       position: relative;
       bottom: 110px;        /* sitzt über der Legende */
       left: 20px;
@@ -247,12 +274,15 @@ html, body {
 <!-- Suchfeld -->
 <div class="search-box">
   <label for="resort-search">Skigebiet suchen</label>
-  <input
-    id="resort-search"
-    list="resort-datalist"
-    type="text"
-    placeholder="Name eingeben & Enter drücken..."
-  />
+  <div class="search-row">
+    <input
+      id="resort-search"
+      list="resort-datalist"
+      type="text"
+      placeholder="Name eingeben & Enter drücken..."
+    />
+    <button id="clear-verbund-btn" type="button" disabled>Verbundfilter aufheben</button>
+  </div>
   <datalist id="resort-datalist"></datalist>
 </div>
 
@@ -396,7 +426,7 @@ html, body {
   let totalResorts = 0;
 
   // Karte
-  const map = L.map("map").setView([47.2, 12.2], 7.5);
+  const map = L.map("map").setView([47.2, 12.2], 9);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
@@ -424,7 +454,7 @@ html, body {
 
     box.textContent = `${visible} / ${totalResorts}`;
   }
-  function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website) {
+  function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website, groupId = null, groupName = null, entryType = null, entryName = null) {
     const key = norm(name);
     if (!resorts[key]) {
       resorts[key] = {
@@ -435,12 +465,22 @@ html, body {
         ssc: false,
         glacier: false,
         nearMuc: false,
-        website: website || null
+        website: website || null,
+        groupId: groupId || null,
+        groupName: groupName || null,
+        entryType: entryType || null,
+        entryName: entryName || null
       };
     } else if (website && !resorts[key].website) {
       resorts[key].website = website;
     }
-    if (passType === "SCT") resorts[key].sct = true;
+    
+    // Gruppierung / Entrypoint (nur setzen, wenn noch nicht vorhanden)
+    if (groupId && !resorts[key].groupId) resorts[key].groupId = groupId;
+    if (groupName && !resorts[key].groupName) resorts[key].groupName = groupName;
+    if (entryType && !resorts[key].entryType) resorts[key].entryType = entryType;
+    if (entryName && !resorts[key].entryName) resorts[key].entryName = entryName;
+if (passType === "SCT") resorts[key].sct = true;
     if (passType === "SSC") resorts[key].ssc = true;
     if (passType === "MUC") resorts[key].nearMuc = true;
     if (nearMuc) resorts[key].nearMuc = true;
@@ -448,24 +488,33 @@ html, body {
   }
 
   function initResortsFromJson(list) {
+
     list.forEach(r => {
       const name    = r.name;
       const lat     = r.lat;
       const lon     = r.lon;
+
       const glacier = !!r.glacier;
       const sct     = !!r.sct;
       const ssc     = !!r.ssc;
       const nearMuc = !!r.nearMuc;
-      const website = r.website || null;
+
+      const website = (typeof r.website === "string" && r.website.trim()) ? r.website.trim() : null;
+
+      // Gruppierung / Entrypoints (neues Datenmodell)
+      const groupId   = (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim() : null;
+      const groupName = (typeof r.groupName === "string" && r.groupName.trim()) ? r.groupName.trim() : null;
+      const entryType = (typeof r.entryType === "string" && r.entryType.trim()) ? r.entryType.trim() : null;
+      const entryName = (typeof r.entryName === "string" && r.entryName.trim()) ? r.entryName.trim() : null;
 
       if (sct) {
-        addResort(name, lat, lon, "SCT", glacier, nearMuc, website);
+        addResort(name, lat, lon, "SCT", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
       }
       if (ssc) {
-        addResort(name, lat, lon, "SSC", glacier, nearMuc, website);
+        addResort(name, lat, lon, "SSC", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
       }
       if (!sct && !ssc) {
-        addResort(name, lat, lon, "MUC", glacier, nearMuc, website);
+        addResort(name, lat, lon, "MUC", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
       }
     });
   }
