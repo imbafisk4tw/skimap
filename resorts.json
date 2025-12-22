@@ -881,7 +881,7 @@
     "lat": 47.044,
     "lon": 9.987,
     "sct": false,
-    "ssc": true,
+    "ssc": false,
     "region": "Vorarlberg",
     "country": "Austria",
     "website": "https://www.silvretta-montafon.at",
