@@ -1326,8 +1326,8 @@
   },
   {
     "name": "Gschwandtkopflifte",
-    "lat": 0.0,
-    "lon": 0.0,
+    "lat": 47.3247875,
+    "lon": 11.1771783,
     "sct": true,
     "ssc": false,
     "region": "Tyrol",
@@ -1656,8 +1656,8 @@
   },
   {
     "name": "Rastkogelbahnen",
-    "lat": 0.0,
-    "lon": 0.0,
+    "lat": 47.163698,
+    "lon": 11.7405103,
     "sct": true,
     "ssc": false,
     "region": "Tyrol",
