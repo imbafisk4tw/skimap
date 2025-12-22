@@ -8,27 +8,111 @@
     return raw.slice(0, idx).trim();
   }
 
+  function downloadText(filename, mime, text) {
+    const blob = new Blob([text], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function toCsv(rows) {
+    const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const header = ["name", "lat", "lon", "travelHours", "distKm", "sct", "ssc", "glacier", "nearMuc", "website"];
+    const lines = [header.join(",")];
+
+    for (const r of rows) {
+      lines.push([
+        esc(r.name),
+        esc(r.lat),
+        esc(r.lon),
+        esc(r.travelHours),
+        esc(r.distKm),
+        esc(!!r.sct),
+        esc(!!r.ssc),
+        esc(!!r.glacier),
+        esc(!!r.nearMuc),
+        esc(r.website || r.url || "")
+      ].join(","));
+    }
+    return lines.join("\n");
+  }
+
+  function toKml(rows) {
+    const xmlEsc = (s) => String(s ?? "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+    const placemarks = rows.map(r => {
+      const website = r.website || r.url || "";
+      const descParts = [];
+
+      if (r.travelHours != null && isFinite(r.travelHours)) descParts.push(`Fahrzeit (h): ${r.travelHours.toFixed(2)}`);
+      if (r.distKm != null && isFinite(r.distKm)) descParts.push(`Distanz (km): ${Math.round(r.distKm)}`);
+      if (website) descParts.push(`Website: ${website}`);
+
+      return `
+      <Placemark>
+        <name>${xmlEsc(r.name)}</name>
+        <description>${xmlEsc(descParts.join("\n"))}</description>
+        <Point>
+          <coordinates>${r.lon},${r.lat},0</coordinates>
+        </Point>
+      </Placemark>`;
+    }).join("\n");
+
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Skigebiete Export</name>
+    ${placemarks}
+  </Document>
+</kml>`;
+  }
+
   /**
-   * Initialisiert Suche + Fahrzeit-Slider Filter UI.
-   * Erwartet dieselben Datenstrukturen wie in deinem index.html:
-   * - resorts: { [key]: {name, lat, lon, sct, ssc, glacier, nearMuc, travelHours, ...} }
-   * - resortMarkers: { [normName]: Leaflet Marker/CircleMarker }
+   * initSearchAndFilters
+   * - Filter/Slider/Suche
+   * - optional: LayerControl + Counter-Update bei Layer-Toggle
+   * - Export der aktuell sichtbaren Resorts (berücksichtigt Time-Filter + LayerControl)
    */
   function initSearchAndFilters(opts) {
     const {
       map,
       resorts,
       resortMarkers,
-      layers,
+      layers, // { sctLayer, sscLayer, overlapLayer, glacierLayer, nearMucLayer }
       fmtTime,
       norm,
       getMinHours,
       getMaxHours,
-      updateResortCounter
+      updateResortCounter,
+
+      // optional: Layer control auslagern
+      layerControlOverlays, // { "Label": layerGroup, ... }
+      layerControlCollapsed = false,
+
+      // optional: Export button IDs
+      exportCsvBtnId = "btn-export-visible-csv",
+      exportKmlBtnId = "btn-export-visible-kml",
     } = opts || {};
 
     if (!map || !resorts || !resortMarkers || !layers || !fmtTime || !norm || !getMinHours || !getMaxHours) {
       throw new Error("initSearchAndFilters: Missing required options.");
+    }
+
+    // --- optional: Layer-Control hier erstellen + Counter bei Toggle ---
+    if (layerControlOverlays && typeof L !== "undefined") {
+      L.control.layers({}, layerControlOverlays, { collapsed: !!layerControlCollapsed }).addTo(map);
+
+      if (typeof updateResortCounter === "function") {
+        map.on("overlayadd", updateResortCounter);
+        map.on("overlayremove", updateResortCounter);
+      }
     }
 
     // --- Elemente ---
@@ -42,19 +126,14 @@
     function rebuildDatalist() {
       if (!datalist) return;
 
-      while (datalist.firstChild) {
-        datalist.removeChild(datalist.firstChild);
-      }
+      while (datalist.firstChild) datalist.removeChild(datalist.firstChild);
 
       Object.values(resorts)
         .sort((a, b) => a.name.localeCompare(b.name, "de"))
         .forEach(r => {
           const opt = document.createElement("option");
-          if (r.travelHours != null && isFinite(r.travelHours)) {
-            opt.value = r.name + " – " + fmtTime(r.travelHours);
-          } else {
-            opt.value = r.name;
-          }
+          if (r.travelHours != null && isFinite(r.travelHours)) opt.value = r.name + " – " + fmtTime(r.travelHours);
+          else opt.value = r.name;
           datalist.appendChild(opt);
         });
     }
@@ -65,18 +144,10 @@
       const keys = Object.keys(resortMarkers);
 
       let bestKey = null;
-
-      if (resortMarkers[qNorm]) {
-        bestKey = qNorm;
-      } else {
-        for (const k of keys) {
-          if (k.startsWith(qNorm)) { bestKey = k; break; }
-        }
-        if (!bestKey) {
-          for (const k of keys) {
-            if (k.includes(qNorm)) { bestKey = k; break; }
-          }
-        }
+      if (resortMarkers[qNorm]) bestKey = qNorm;
+      else {
+        for (const k of keys) { if (k.startsWith(qNorm)) { bestKey = k; break; } }
+        if (!bestKey) for (const k of keys) { if (k.includes(qNorm)) { bestKey = k; break; } }
       }
 
       if (!bestKey) {
@@ -130,31 +201,15 @@
 
         const inside = (pct >= 99) || (r.travelHours <= limitHours + 1e-6);
 
-        if (r.sct) {
-          if (inside) layers.sctLayer.addLayer(marker);
-          else layers.sctLayer.removeLayer(marker);
-        }
-        if (r.ssc) {
-          if (inside) layers.sscLayer.addLayer(marker);
-          else layers.sscLayer.removeLayer(marker);
-        }
-        if (r.sct && r.ssc) {
-          if (inside) layers.overlapLayer.addLayer(marker);
-          else layers.overlapLayer.removeLayer(marker);
-        }
-        if (r.glacier) {
-          if (inside) layers.glacierLayer.addLayer(marker);
-          else layers.glacierLayer.removeLayer(marker);
-        }
-        if (r.nearMuc) {
-          if (inside) layers.nearMucLayer.addLayer(marker);
-          else layers.nearMucLayer.removeLayer(marker);
-        }
+        if (r.sct)      inside ? layers.sctLayer.addLayer(marker)      : layers.sctLayer.removeLayer(marker);
+        if (r.ssc)      inside ? layers.sscLayer.addLayer(marker)      : layers.sscLayer.removeLayer(marker);
+        if (r.sct && r.ssc)
+                      inside ? layers.overlapLayer.addLayer(marker)    : layers.overlapLayer.removeLayer(marker);
+        if (r.glacier)  inside ? layers.glacierLayer.addLayer(marker)  : layers.glacierLayer.removeLayer(marker);
+        if (r.nearMuc)  inside ? layers.nearMucLayer.addLayer(marker)  : layers.nearMucLayer.removeLayer(marker);
       });
 
-      if (typeof updateResortCounter === "function") {
-        updateResortCounter();
-      }
+      if (typeof updateResortCounter === "function") updateResortCounter();
     }
 
     if (timeSlider) {
@@ -165,12 +220,58 @@
       });
     }
 
+    // --- Sichtbarkeit unter Berücksichtigung des LayerControls ---
+    function isMarkerVisibleOnMap(marker) {
+      // Sichtbar, wenn Marker in einem aktuell eingeblendeten Layer steckt
+      if (map.hasLayer(layers.sctLayer)     && layers.sctLayer.hasLayer(marker)) return true;
+      if (map.hasLayer(layers.sscLayer)     && layers.sscLayer.hasLayer(marker)) return true;
+      if (map.hasLayer(layers.overlapLayer) && layers.overlapLayer.hasLayer(marker)) return true;
+      if (map.hasLayer(layers.glacierLayer) && layers.glacierLayer.hasLayer(marker)) return true;
+      if (map.hasLayer(layers.nearMucLayer) && layers.nearMucLayer.hasLayer(marker)) return true;
+      return false;
+    }
+
+    function getVisibleResorts() {
+      const out = [];
+      for (const r of Object.values(resorts)) {
+        const key = norm(r.name);
+        const marker = resortMarkers[key];
+        if (!marker) continue;
+        if (isMarkerVisibleOnMap(marker)) out.push(r);
+      }
+      out.sort((a, b) => a.name.localeCompare(b.name, "de"));
+      return out;
+    }
+
+    function exportVisibleToCsv() {
+      const rows = getVisibleResorts();
+      const csv = toCsv(rows);
+      downloadText("skigebiete-filter.csv", "text/csv;charset=utf-8", csv);
+    }
+
+    function exportVisibleToKml() {
+      const rows = getVisibleResorts();
+      const kml = toKml(rows);
+      downloadText("skigebiete-filter.kml", "application/vnd.google-earth.kml+xml;charset=utf-8", kml);
+    }
+
+    // --- Buttons auto-wire (wenn vorhanden) ---
+    const btnCsv = document.getElementById(exportCsvBtnId);
+    if (btnCsv) btnCsv.addEventListener("click", exportVisibleToCsv);
+
+    const btnKml = document.getElementById(exportKmlBtnId);
+    if (btnKml) btnKml.addEventListener("click", exportVisibleToKml);
+
     return {
       rebuildDatalist,
       focusResortByName,
       extractResortName,
       updateTimeLabel,
-      applyTimeFilter
+      applyTimeFilter,
+
+      getVisibleResorts,
+      exportVisibleToCsv,
+      exportVisibleToKml
     };
   }
 
