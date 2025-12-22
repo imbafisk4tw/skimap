@@ -10,16 +10,6 @@
     "website": "https://www.axamer-lizum.at"
   },
   {
-    "name": "Bergeralm – Steinach am Brenner",
-    "lat": 47.065,
-    "lon": 11.466,
-    "sct": true,
-    "ssc": false,
-    "region": "Tirol",
-    "country": "Austria",
-    "website": "https://www.bergeralm.net"
-  },
-  {
     "name": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
     "lat": 47.391,
     "lon": 10.692,
@@ -99,16 +89,6 @@
     "region": "Styria",
     "country": "Austria",
     "website": "https://www.galsterberg.at"
-  },
-  {
-    "name": "Galtür – Silvapark",
-    "lat": 46.967,
-    "lon": 10.184,
-    "sct": true,
-    "ssc": false,
-    "region": "Tirol",
-    "country": "Austria",
-    "website": "https://www.galtuer.com/de/winter/skigebiet-silvapark"
   },
   {
     "name": "Garmisch-Classic",
@@ -233,16 +213,6 @@
     "website": "https://www.hintertuxergletscher.at"
   },
   {
-    "name": "Hochficht",
-    "lat": 48.732,
-    "lon": 13.913,
-    "sct": false,
-    "ssc": true,
-    "region": "Upper Austria",
-    "country": "Austria",
-    "website": "https://www.hochficht.at"
-  },
-  {
     "name": "Hochficht (Böhmerwald)",
     "lat": 48.732,
     "lon": 13.913,
@@ -283,44 +253,14 @@
     "website": "https://www.planai.at"
   },
   {
-    "name": "Hochoetz",
-    "lat": 47.212,
-    "lon": 10.898,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.oetztal.com/de/aktivitaeten/winter/skigebiete/skigebiet-hochoetz.html"
-  },
-  {
-    "name": "Hochzeiger – Jerzens",
-    "lat": 47.155,
-    "lon": 10.744,
+    "name": "Hochzeiger – Jerzens Pitztal",
+    "lat": 47.1516147,
+    "lon": 10.757664,
     "sct": true,
     "ssc": false,
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.hochzeiger.com"
-  },
-  {
-    "name": "Imst – Hochimst",
-    "lat": 47.23,
-    "lon": 10.745,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.imster-bergbahnen.at"
-  },
-  {
-    "name": "Ischgl / Samnaun (Silvretta Arena)",
-    "lat": 46.99,
-    "lon": 10.29,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.ischgl.com"
   },
   {
     "name": "Jenner – Königssee",
@@ -435,26 +375,6 @@
     "website": "https://www.bergbahnen-langes.at"
   },
   {
-    "name": "Lienz – Hochstein",
-    "lat": 46.828,
-    "lon": 12.759,
-    "sct": true,
-    "ssc": false,
-    "region": "East Tyrol",
-    "country": "Austria",
-    "website": "https://www.lienzer-bergbahnen.at"
-  },
-  {
-    "name": "Lienz – Zettersfeld",
-    "lat": 46.846,
-    "lon": 12.77,
-    "sct": true,
-    "ssc": false,
-    "region": "East Tyrol",
-    "country": "Austria",
-    "website": "https://www.lienzer-bergbahnen.at"
-  },
-  {
     "name": "Loser – Altaussee",
     "lat": 47.645,
     "lon": 13.79,
@@ -486,26 +406,6 @@
     "website": "https://www.moelltaler-gletscher.at"
   },
   {
-    "name": "Montafon – Silvretta Montafon",
-    "lat": 47.044,
-    "lon": 9.987,
-    "sct": false,
-    "ssc": true,
-    "region": "Vorarlberg",
-    "country": "Austria",
-    "website": "https://www.silvretta-montafon.at"
-  },
-  {
-    "name": "Muttereralm",
-    "lat": 47.227,
-    "lon": 11.337,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.muttereralm.at"
-  },
-  {
     "name": "Nauders – Bergkastel",
     "lat": 46.882,
     "lon": 10.504,
@@ -524,16 +424,6 @@
     "region": "Carinthia",
     "country": "Austria",
     "website": "https://www.nassfeld.at"
-  },
-  {
-    "name": "Nordkette – Seegrube/Hafelekar (Innsbruck)",
-    "lat": 47.306,
-    "lon": 11.377,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.nordkette.com"
   },
   {
     "name": "Obergurgl-Hochgurgl",
@@ -619,17 +509,6 @@
     "website": "https://www.planneralm.at"
   },
   {
-    "name": "Pitztaler Gletscher",
-    "lat": 46.97,
-    "lon": 10.866,
-    "sct": true,
-    "ssc": false,
-    "glacier": true,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.pitztaler-gletscher.at"
-  },
-  {
     "name": "Präbichl",
     "lat": 47.541,
     "lon": 14.986,
@@ -648,16 +527,6 @@
     "region": "Salzburg",
     "country": "Austria",
     "website": "https://www.radstadt-altenmarkt.at"
-  },
-  {
-    "name": "Ramsau am Dachstein (Rittisberg)",
-    "lat": 47.43,
-    "lon": 13.65,
-    "sct": false,
-    "ssc": true,
-    "region": "Styria",
-    "country": "Austria",
-    "website": "https://www.rittisberg.at"
   },
   {
     "name": "Ramsau am Dachstein – Rittisberg",
@@ -710,16 +579,6 @@
     "website": "https://www.saalbach.com"
   },
   {
-    "name": "Schladming – Planai",
-    "lat": 47.39,
-    "lon": 13.689,
-    "sct": false,
-    "ssc": true,
-    "region": "Styria",
-    "country": "Austria",
-    "website": "https://www.planai.at"
-  },
-  {
     "name": "Schladming – Planai/Hochwurzen",
     "lat": 47.39,
     "lon": 13.689,
@@ -728,26 +587,6 @@
     "region": "Styria",
     "country": "Austria",
     "website": "https://www.planai.at"
-  },
-  {
-    "name": "Schlick 2000 – Fulpmes",
-    "lat": 47.152,
-    "lon": 11.325,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.stubai.at/skigebiete/schlick2000"
-  },
-  {
-    "name": "Schmittenhöhe – Zell am See",
-    "lat": 47.325,
-    "lon": 12.787,
-    "sct": false,
-    "ssc": true,
-    "region": "Salzburg",
-    "country": "Austria",
-    "website": "https://www.schmitten.at"
   },
   {
     "name": "See im Paznaun",
@@ -830,26 +669,6 @@
     "website": "https://www.skiwelt.at"
   },
   {
-    "name": "Skiarena Wildkogel – Neukirchen/Bramberg",
-    "lat": 47.25,
-    "lon": 12.265,
-    "sct": false,
-    "ssc": true,
-    "region": "Salzburg",
-    "country": "Austria",
-    "website": "https://www.wildkogel-arena.at"
-  },
-  {
-    "name": "Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn",
-    "lat": 47.391,
-    "lon": 12.639,
-    "sct": false,
-    "ssc": true,
-    "region": "Salzburg/Tyrol",
-    "country": "Austria",
-    "website": "https://www.saalbach.com"
-  },
-  {
     "name": "Skijuwel Alpbachtal – Wildschönau",
     "lat": 47.444,
     "lon": 11.945,
@@ -929,16 +748,6 @@
     "region": "East Tyrol",
     "country": "Austria",
     "website": "https://www.stjakob-ski.at"
-  },
-  {
-    "name": "St. Johann in Tirol – Oberndorf",
-    "lat": 47.527,
-    "lon": 12.433,
-    "sct": true,
-    "ssc": true,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.bergbahnen-stjohann.at"
   },
   {
     "name": "St. Michael – Großeck-Speiereck",
@@ -1054,16 +863,6 @@
     "website": "https://winklmoosalm.de/"
   },
   {
-    "name": "Wurzeralm",
-    "lat": 47.654,
-    "lon": 14.33,
-    "sct": false,
-    "ssc": true,
-    "region": "Upper Austria",
-    "country": "Austria",
-    "website": "https://www.hiwu.at"
-  },
-  {
     "name": "Wurzeralm – Spital am Pyhrn",
     "lat": 47.654,
     "lon": 14.33,
@@ -1074,17 +873,7 @@
     "website": "https://www.hiwu.at"
   },
   {
-    "name": "Zauchensee – Flachauwinkl",
-    "lat": 47.29,
-    "lon": 13.455,
-    "sct": false,
-    "ssc": true,
-    "region": "Salzburg",
-    "country": "Austria",
-    "website": "https://www.zauchensee.at"
-  },
-  {
-    "name": "Zauchensee/Flachauwinkl",
+    "name": "Zauchensee - Flachauwinkl",
     "lat": 47.29,
     "lon": 13.455,
     "sct": false,
@@ -1123,16 +912,6 @@
     "country": "Germany",
     "nearMuc": true,
     "website": "https://zugspitze.de"
-  },
-  {
-    "name": "Alpbachtal - Ski Juwel Alpbachtal Wildschönau",
-    "lat": 47.403555,
-    "lon": 11.877854,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.skijuwel.com/"
   },
   {
     "name": "Amberglift Walchsee",
@@ -1275,17 +1054,7 @@
     "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/"
   },
   {
-    "name": "Fiss-Ladis",
-    "lat": 47.075259,
-    "lon": 10.649304,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.serfaus-fiss-ladis.at/"
-  },
-  {
-    "name": "Galtür",
+    "name": "Galtür - Silvapark",
     "lat": 46.96667,
     "lon": 10.18333,
     "sct": true,
@@ -1313,16 +1082,6 @@
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.zillertalarena.com/"
-  },
-  {
-    "name": "Glungezer",
-    "lat": 47.207598,
-    "lon": 11.528384,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.glungezerbahn.at"
   },
   {
     "name": "Gschwandtkopflifte",
@@ -1375,16 +1134,6 @@
     "website": "https://www.oetz.com/"
   },
   {
-    "name": "Hochzeiger - Pitztal",
-    "lat": 47.145582,
-    "lon": 10.795257,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": ""
-  },
-  {
     "name": "Hochzillertal-Kaltenbach",
     "lat": 47.296919,
     "lon": 11.875362,
@@ -1415,7 +1164,7 @@
     "website": "https://www.huettegglift.at/"
   },
   {
-    "name": "Imst",
+    "name": "Imst - Hochimst",
     "lat": 47.239026,
     "lon": 10.742382,
     "sct": true,
@@ -1423,16 +1172,6 @@
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.imster-bergbahnen.at/"
-  },
-  {
-    "name": "Ischgl",
-    "lat": 47.011371,
-    "lon": 10.293548,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": ""
   },
   {
     "name": "Ischgl  - Silvretta Arena",
@@ -1545,16 +1284,6 @@
     "website": "https://www.lienzer-bergbahnen.at"
   },
   {
-    "name": "Mayrhofen",
-    "lat": 47.164944,
-    "lon": 11.86192,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.mountopolis.at"
-  },
-  {
     "name": "Mittersill - Paß Thurn - Kitzbühel",
     "lat": 47.281856,
     "lon": 12.48711,
@@ -1573,26 +1302,6 @@
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.muttereralm.at"
-  },
-  {
-    "name": "Nauders",
-    "lat": 46.891217,
-    "lon": 10.50142,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": ""
-  },
-  {
-    "name": "Neukirchen - Bramberg - Wildkogel",
-    "lat": 47.123291,
-    "lon": 10.876187,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.bergbahnen-wildkogel.at"
   },
   {
     "name": "Neunerköpfle - Tannheim",
@@ -1735,26 +1444,6 @@
     "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg"
   },
   {
-    "name": "See i. Paznauntal",
-    "lat": 47.08333,
-    "lon": 10.46667,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.bergbahn.com"
-  },
-  {
-    "name": "Serfaus",
-    "lat": 47.038305,
-    "lon": 10.611371,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.serfaus-fiss-ladis.at/"
-  },
-  {
     "name": "Skilifte Kirchdorf",
     "lat": 47.567804,
     "lon": 10.452172,
@@ -1795,16 +1484,6 @@
     "website": "https://www.hochpustertal-ski.at"
   },
   {
-    "name": "Sölden",
-    "lat": 46.965575,
-    "lon": 11.007183,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.soelden.com/"
-  },
-  {
     "name": "Söll - SkiWelt",
     "lat": 47.504513,
     "lon": 12.193689,
@@ -1825,7 +1504,7 @@
     "website": ""
   },
   {
-    "name": "St. Johann in Tirol",
+    "name": "St. Johann in Tirol – Oberndorf",
     "lat": 46.712002,
     "lon": 11.138789,
     "sct": true,
@@ -1903,16 +1582,6 @@
     "region": "Tyrol",
     "country": "Austria",
     "website": "https://www.skiwelt.at"
-  },
-  {
-    "name": "Wildschönau - Ski Juwel Alpbachtal Wildschönau",
-    "lat": 47.40619,
-    "lon": 12.03784,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.skijuwel.com/"
   },
   {
     "name": "Zell am Ziller - Zillertal Arena",
