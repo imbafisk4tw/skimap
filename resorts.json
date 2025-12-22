@@ -1795,16 +1795,6 @@
     "website": "https://www.hochpustertal-ski.at"
   },
   {
-    "name": "Skizentrum St. Jakob",
-    "lat": 46.9089738,
-    "lon": 12.3333513,
-    "sct": true,
-    "ssc": false,
-    "region": "Tyrol",
-    "country": "Austria",
-    "website": "https://www.stjakob-ski.at/"
-  },
-  {
     "name": "Sölden",
     "lat": 46.965575,
     "lon": 11.007183,
