@@ -1,0 +1,402 @@
+{
+  "https://www.bergfex.at/lienz/": {
+    "name": "Zettersfeld Lienzer Bergbahnen - Zettersfeld (2.278 m) 2.278 m Pisten: 20,6 km Lifte: 5/6 Schnee: 50 cm Preis: € 70,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/alpbachtal/": {
+    "name": "Alpbach Alpbach / Ski Juwel Alpbachtal Wildschönau (2.025 m) 2.025 m Pisten: 114 km Lifte: 33/45 Schnee: 70 cm Preis: € 68,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/petzen/": {
+    "name": "Petzen Petzen / Feistritz ob Bleiburg (1.920 m) 1.920 m Pisten: 17 km Lifte: 3/5 Schnee: 40 cm Preis: € 47,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/reiteralm/": {
+    "name": "Reiteralm Reiteralm / Schladming / Ski amade (1.860 m) 1.860 m Pisten: 122,7 km Lifte: 10/13 Schnee: 60 cm Preis: € 78,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/pitztalergletscher/": {
+    "name": "Pitztal Gletscher Pitztaler Gletscher / Rifflsee / Pitztal (3.440 m) 3.440 m Pisten: 68 km Lifte: 13/13 Schnee: 170 cm Preis: € 75,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/hohentauern/": {
+    "name": "Hohentauern Hohentauern (1.800 m) 1.800 m Pisten: 13 km Lifte: 1/6 Schnee: 10 cm Preis: € 48,30",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/dorfgastein/": {
+    "name": "Dorfgastein Dorfgastein / Ski amade (2.033 m) 2.033 m Pisten: 79,1 km Lifte: 6/7 Schnee: 70 cm Preis: € 78,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/zauchensee/": {
+    "name": "Zauchensee Ski amade / Zauchensee / Flachauwinkl (2.176 m) 2.176 m Pisten: 45 km Lifte: 12/15 Schnee: 80 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/faschina/": {
+    "name": "Faschina Faschina / Fontanella (2.000 m) 2.000 m Pisten: 15 km Lifte: 22/29 Schnee: 35 cm Preis: € 56,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/dreilaendereck/": {
+    "name": "Dreiländereck Dreiländereck / Arnoldstein (1.552 m) 1.552 m Pisten: 15 km Lifte: 4/7 Schnee: 50 cm Preis: € 49,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/wildkogel/": {
+    "name": "Wildkogel-Arena Wildkogel-Arena / Neukirchen / Bramberg (2.150 m) 2.150 m Pisten: 75 km Lifte: 14/20 Schnee: 30 cm Preis: € 69,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/pillersee-hochfilzen/": {
+    "name": "Pillersee Bergbahn Pillersee / Buchensteinwand (1.456 m) 1.456 m Pisten: 22 km Lifte: 4/8 Schnee: 20 cm Preis: € 50,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/matrei/": {
+    "name": "Matrei Matrei / GG Resorts Kals-Matrei (2.403 m) 2.403 m Pisten: 44,6 km Lifte: 11/18 Schnee: 60 cm Preis: € 70,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/gerlitzen-alpe/": {
+    "name": "Gerlitzen Gerlitzen Alpe (1.911 m) 1.911 m Pisten: 65 km Lifte: 18/21 Schnee: 60 cm Preis: € 69,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/walmendingerhorn-ifen-heuberg/": {
+    "name": "Heuberg - Ifen Walmendingerhorn / Ifen / Heuberg (2.030 m) 2.030 m Pisten: 67 km Lifte: 0/18 Schnee: 90 cm Preis: € 68,70",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/annaberg/": {
+    "name": "Annaberg Annaberg (1.300 m) 1.300 m Pisten: 12,5 km Lifte: 5/6 Schnee: 20 cm Preis: dynamisch",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/unken-heutal/": {
+    "name": "Unken Unken / Heutal (1.650 m) 1.650 m Pisten: 13,5 km Lifte: 0/4 Schnee: 50 cm Preis: € 39,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/lermoos/": {
+    "name": "Lermoos Lermoos / Grubigsteinbahnen (2.160 m) 2.160 m Pisten: 28,2 km Lifte: 8/9 Schnee: 60 cm Preis: € 68,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/flachau/": {
+    "name": "Flachau Ski amade / Flachau / Snow Space Salzburg (2.000 m) 2.000 m Pisten: 210 km Lifte: 40/45 Schnee: 80 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/gerlos/": {
+    "name": "Gerlos Gerlos / Zillertal Arena (2.500 m) 2.500 m Pisten: 150 km Lifte: 46/52 Schnee: 50 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/fieberbrunn/": {
+    "name": "Fieberbrunn Fieberbrunn / Saalbach Hinterglemm Leogang (2.096 m) 2.096 m Pisten: 270 km Lifte: 48/69 Schnee: 70 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/bergeralm/": {
+    "name": "Bergeralm Bergeralm / Steinach am Brenner (2.231 m) 2.231 m Pisten: 29,5 km Lifte: 6/7 Schnee: 30 cm Preis: € 57,30",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/schmittenhoehe-zellamsee/": {
+    "name": "Schmitten Schmitten / Zell am See (2.000 m) 2.000 m Pisten: 77 km Lifte: 9/27 Schnee: 31 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/grosseck-speiereck/": {
+    "name": "Großeck-Speiereck Großeck / Speiereck / Mauterndorf (2.400 m) 2.400 m Pisten: 50 km Lifte: 8/10 Schnee: 50 cm Preis: € 61,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/klippitztoerl/": {
+    "name": "Klippitztörl Klippitztörl (1.818 m) 1.818 m Pisten: 28 km Lifte: 4/6 Schnee: 20 cm Preis: € 47,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/fuegen-spieljoch/": {
+    "name": "Spieljoch-Fügen Spieljoch / Fügen / Zillertal (2.054 m) 2.054 m Pisten: 21,1 km Lifte: 9/10 Schnee: 50 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/oetz-hochoetz/": {
+    "name": "Hochoetz Oetz / Hochoetz (2.300 m) 2.300 m Pisten: 41 km Lifte: 13/15 Schnee: 60 cm Preis: € 62,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/wagrain/": {
+    "name": "Wagrain Ski amade / Wagrain / Snow Space Salzburg (2.000 m) 2.000 m Pisten: 210 km Lifte: 40/45 Schnee: 80 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/krimml-hochkrimml/": {
+    "name": "Krimml Krimml-Hochkrimml / Zillertal Arena (2.040 m) 2.040 m Pisten: 150 km Lifte: 46/52 Schnee: 40 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/sonnenkopf/": {
+    "name": "Sonnenkopf Sonnenkopf / Klostertal (2.300 m) 2.300 m Pisten: 34 km Lifte: 6/9 Schnee: 30 cm Preis: € 58,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/karwendel-bergbahn-pertisau/": {
+    "name": "Karwendel Karwendel-Bergbahn Pertisau / Achensee (1.510 m) 1.510 m Pisten: 12 km Lifte: 3/5 Schnee: 20 cm Preis: € 35,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/westendorf/": {
+    "name": "Westendorf SkiWelt / Westendorf (1.869 m) 1.869 m Pisten: 275 km Lifte: 70/84 Schnee: 50 cm Preis: € 76,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/gemeindealpe/": {
+    "name": "Gemeindealpe Gemeindealpe / Mitterbach (1.626 m) 1.626 m Pisten: 15,5 km Lifte: 2/4 Schnee: 15 cm Preis: € 53,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/schetteregg/": {
+    "name": "Schetteregg Schetteregg (1.400 m) 1.400 m Pisten: 10 km Lifte: 3/8 Schnee: 30 cm Preis: € 47,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/fendels/": {
+    "name": "Fendels Fendels / Ried / Prutz (2.300 m) 2.300 m Pisten: 11 km Lifte: 4/6 Schnee: 45 cm Preis: € 54,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/hintertux/": {
+    "name": "Hintertux Hintertuxer Gletscher / Hintertux / Zillertal (3.250 m) 3.250 m Pisten: 62 km Lifte: 19/20 Schnee: 140 cm Preis: € 79,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/flattnitz/": {
+    "name": "Flattnitz Flattnitz (1.840 m) 1.840 m Pisten: 13 km Lifte: 1/5 Schnee: 40 cm Preis: € 25,50",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/hochrindl/": {
+    "name": "Hochrindl Hochrindl / Sirnitz / Deutsch Griffen (1.886 m) 1.886 m Pisten: 20,8 km Lifte: 3/7 Schnee: 30 cm Preis: € 52,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/postalm/": {
+    "name": "Postalm Winterpark Postalm (1.900 m) 1.900 m Pisten: 12 km Lifte: 2/6 Schnee: 10 cm Preis: € 51,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  },
+  "https://www.bergfex.at/sillian/": {
+    "name": "Hochpustertal Sillian / Hochpustertal (2.407 m) 2.407 m Pisten: 22,4 km Lifte: 6/7 Schnee: 45 cm Preis: € 70,00",
+    "maxElevationM": 2278,
+    "pisteKm": 20.6,
+    "liftsOpen": 5,
+    "liftsTotal": 6,
+    "snowCm": 50,
+    "scrapedAt": "2025-12-22T16:07:23.856715+00:00",
+    "source": "bergfex_list"
+  }
+}

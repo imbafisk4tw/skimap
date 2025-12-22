@@ -1,0 +1,1128 @@
+<div id="search_load-skigebiete" class="searchloadwrap">
+
+			<div class="skigebiete_list_items" id="paging_load-skigebiete">
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Alpbachtal - Ski Juwel Alpbachtal Wildschönau</h5>
+							<p>
+								Alpbach 311<br>
+								6236 Alpbach<br>
+								+43 5336 52 33<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skijuwel.com/" target="_blank">Website</a>								<a href="mailto:info@alpbacher-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Alpbachtal - Ski Juwel Alpbachtal Wildschönau_2564" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Amberglift Walchsee</h5>
+							<p>
+								Kaiserweg  6<br>
+								6344 Walchsee<br>
+								+43 676 841 640 810<br>
+							</p>
+							<div class="links">
+								<a href="https://www.amberglift.at/" target="_blank">Website</a>								<a href="mailto:info@amberglift.at">E-Mail</a>								<a href="/skigebiet/Amberglift Walchsee_388" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Axamer Lizum</h5>
+							<p>
+								Lizum 6<br>
+								6094 Axam<br>
+								+43 5234  68240<br>
+							</p>
+							<div class="links">
+								<a href="https://www.axamer-lizum.at" target="_blank">Website</a>								<a href="mailto:office@axamer-lizum.at">E-Mail</a>								<a href="/skigebiet/Axamer Lizum_36" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Bergbahnen Pillersee - Buchensteinwand - St. Ulrich</h5>
+							<p>
+								Buchenstein 13<br>
+								6393 St. Ulrich am Pillersee<br>
+								+43 5354 77077<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergbahn-pillersee.com" target="_blank">Website</a>								<a href="mailto:info@bergbahn-pillersee.com">E-Mail</a>								<a href="/skigebiet/Bergbahnen Pillersee - Buchensteinwand - St. Ulrich_68" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Bergeralm</h5>
+							<p>
+								Huebenweg 25<br>
+								6150 Steinach am Brenner<br>
+								+43 5272 / 6333<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergeralm.net/" target="_blank">Website</a>								<a href="mailto:mail@bergeralm.net">E-Mail</a>								<a href="/skigebiet/Bergeralm_37" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Bergwelt Hahnenkamm</h5>
+							<p>
+								Bergbahnstraße 18<br>
+								6604 Höfen<br>
+								+43 5672 62420<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergwelt-hahnenkamm.at" target="_blank">Website</a>								<a href="mailto:info@bergwelt-hahnenkamm.at">E-Mail</a>								<a href="/skigebiet/Bergwelt Hahnenkamm_493" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Berwang</h5>
+							<p>
+								Berwang<br>
+								6622 Berwang<br>
+								+43 5674 8124<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@berwang.tirol">E-Mail</a>								<a href="/skigebiet/Berwang_164" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Bichllifte Prägraten</h5>
+							<p>
+								St. Andrä 35a<br>
+								9974 Prägraten am Großvenediger<br>
+								+43 50 212 530<br>
+							</p>
+							<div class="links">
+								<a href="https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84" target="_blank">Website</a>								<a href="mailto:praegraten@osttirol.com">E-Mail</a>								<a href="/skigebiet/Bichllifte Prägraten_2557" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Brixen im Thale - SkiWelt</h5>
+							<p>
+								Liftweg 1<br>
+								6364 Brixen im Thale<br>
+								+43 5334 8507<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.brixen@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Brixen im Thale - SkiWelt_58" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+			
+                                    						<div class="skigebiete_list_item">
+							<h5>Dorfberg Kartitsch</h5>
+							<p>
+								St. Oswald 3a<br>
+								9941 Kartitsch<br>
+								+436641618723<br>
+							</p>
+							<div class="links">
+								<a href="https://kartitscher-liftgesellschaft.jimdofree.com/" target="_blank">Website</a>								<a href="mailto:info@bodner.tirol">E-Mail</a>								<a href="/skigebiet/Dorfberg Kartitsch_71" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Eggalmbahnen</h5>
+							<p>
+								Lanersbach 395<br>
+								6293 Tux<br>
+								+43 (0) 5287 87246<br>
+							</p>
+							<div class="links">
+								<a href="https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/" target="_blank">Website</a>								<a href="mailto:info@eggalm.com">E-Mail</a>								<a href="/skigebiet/Eggalmbahnen_26" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Ehrwalder Alm</h5>
+							<p>
+								Dr. Ludwig Ganghofer-Straße 66<br>
+								6632 Ehrwald<br>
+								+43 5673 2468<br>
+							</p>
+							<div class="links">
+								<a href="https://www.almbahn.tirol" target="_blank">Website</a>								<a href="mailto:info@zugspitze.at">E-Mail</a>								<a href="/skigebiet/Ehrwalder Alm_165" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Ehrwalder Wettersteinbahnen</h5>
+							<p>
+								Ebene 50<br>
+								6632 Ehrwald<br>
+								+43 5673 2501<br>
+							</p>
+							<div class="links">
+								<a href="https://www.wetterstein-bahnen.at/" target="_blank">Website</a>								<a href="mailto:t.riedel@wetterstein-bahnen.at">E-Mail</a>								<a href="/skigebiet/Ehrwalder Wettersteinbahnen_166" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Elferbahnen Neustift</h5>
+							<p>
+								Moos 12<br>
+								6167 Neustift<br>
+								+43 5226 / 22 70<br>
+							</p>
+							<div class="links">
+								<a href="https://www.elfer.at/" target="_blank">Website</a>								<a href="mailto:office@elferlifte.at">E-Mail</a>								<a href="/skigebiet/Elferbahnen Neustift_2278" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Ellmau-Going - SkiWelt</h5>
+							<p>
+								Weissachgraben 5<br>
+								6352 Ellmau<br>
+								+43 5358 2320<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.ellmau@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Ellmau-Going - SkiWelt_61" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Fendels - Ried - Prutz</h5>
+							<p>
+								Fendels 40<br>
+								6531 Ried i. Oberinntal<br>
+								+43 5472 63662<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863" target="_blank">Website</a>								<a href="mailto:fendels@tirolgletscher.com">E-Mail</a>								<a href="/skigebiet/Fendels - Ried - Prutz_40" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Finkenberger Almbahnen</h5>
+							<p>
+								Persal 200<br>
+								6292 Finkenberg<br>
+								+43 5285 68196<br>
+							</p>
+							<div class="links">
+								<a href="https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/" target="_blank">Website</a>								<a href="mailto:info@almbahnen.at">E-Mail</a>								<a href="/skigebiet/Finkenberger Almbahnen_24" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Fiss-Ladis</h5>
+							<p>
+								Seilbahnstraße 44<br>
+								6533 Fiss<br>
+								+43 5476 6396<br>
+							</p>
+							<div class="links">
+								<a href="https://www.serfaus-fiss-ladis.at/" target="_blank">Website</a>								<a href="mailto:office@bergbahnen-fiss.at">E-Mail</a>								<a href="/skigebiet/Fiss-Ladis_98" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Galtür</h5>
+							<p>
+								Dorfplatz 39<br>
+								6563 Galtür<br>
+								+43 5443 8344<br>
+							</p>
+							<div class="links">
+								<a href="https://www.silvapark.at" target="_blank">Website</a>								<a href="mailto:info@bergbahnen-galtuer.at">E-Mail</a>								<a href="/skigebiet/Galtür_2551" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Gerlos - Zillertal Arena</h5>
+							<p>
+								Gerlos Nr. 306<br>
+								6281 Gerlos<br>
+								+43 5284 5376<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zillertalarena.com" target="_blank">Website</a>								<a href="mailto:info@zillertalarena.com">E-Mail</a>								<a href="/skigebiet/Gerlos - Zillertal Arena_30" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Gerlosstein - Zillertal Arena</h5>
+							<p>
+								Dörfl 396<br>
+								6278 Hainzenberg<br>
+								+43 5282 7165<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zillertalarena.com/" target="_blank">Website</a>								<a href="mailto:info@zillertalarena.com">E-Mail</a>								<a href="/skigebiet/Gerlosstein - Zillertal Arena_97" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Glungezer</h5>
+							<p>
+								Glungezerstraße 14<br>
+								6075 Tulfes<br>
+								+43 5223 78321<br>
+							</p>
+							<div class="links">
+								<a href="https://www.glungezerbahn.at" target="_blank">Website</a>								<a href="mailto:info@glungezerbahn.at">E-Mail</a>								<a href="/skigebiet/Glungezer_42" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Großglockner Resort Kals-Matrei</h5>
+							<p>
+								Großdorf 70<br>
+								9981 Kals am Großglockner<br>
+								+43 4876 8233<br>
+							</p>
+							<div class="links">
+								<a href="https://www.gg-resort.at/" target="_blank">Website</a>								<a href="mailto:info@matrei-ski.at">E-Mail</a>								<a href="/skigebiet/Großglockner Resort Kals-Matrei_72" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Gschwandtkopflifte</h5>
+							<p>
+								Gschwandtkopf 702<br>
+								6100 Seefeld<br>
+								+43 5212 2490<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skigebiet-seefeld.at/" target="_blank">Website</a>								<a href="mailto:gschwandtkopf@tirol.com">E-Mail</a>								<a href="/skigebiet/Gschwandtkopflifte_78" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hintertuxer Gletscher</h5>
+							<p>
+								Hintertux 794<br>
+								6293 Tux<br>
+								+43 5287 8510<br>
+							</p>
+							<div class="links">
+								<a href="https://www.hintertuxergletscher.at" target="_blank">Website</a>								<a href="mailto:info@hintertuxergletscher.at">E-Mail</a>								<a href="/skigebiet/Hintertuxer Gletscher_18" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochalmlifte Christlum - Achenkirch</h5>
+							<p>
+								Christlumsiedlung  115a<br>
+								6215 Achenkirch<br>
+								+43 5246 6300<br>
+							</p>
+							<div class="links">
+								<a href="https://www.christlum.at" target="_blank">Website</a>								<a href="mailto:info@christlum.at">E-Mail</a>								<a href="/skigebiet/Hochalmlifte Christlum - Achenkirch_38" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochfügen</h5>
+							<p>
+								Sennereistraße<br>
+								6263 F&amp;#252;gen<br>
+								+43 5288 62319<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@hochfuegenski.com">E-Mail</a>								<a href="/skigebiet/Hochfügen_2549" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Hochkrimml - Zillertal Arena</h5>
+							<p>
+								Oberkrimml 95<br>
+								5743 Krimml<br>
+								+436564732513<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zillertalarena.com" target="_blank">Website</a>								<a href="mailto:info@zillertalarena.com">E-Mail</a>								<a href="/skigebiet/Hochkrimml - Zillertal Arena_91" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochoetz - Oetz</h5>
+							<p>
+								Angerweg 13<br>
+								6433 Oetz<br>
+								+43 5252 / 6385<br>
+							</p>
+							<div class="links">
+								<a href="https://www.oetz.com/" target="_blank">Website</a>								<a href="mailto:info@hochoetz.at">E-Mail</a>								<a href="/skigebiet/Hochoetz - Oetz_15" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochzeiger - Jerzens</h5>
+							<p>
+								Liss 270<br>
+								6474 Jerzens<br>
+								+43 5414 87000<br>
+							</p>
+							<div class="links">
+								<a href="https://www.pitztal.com/de/hochzeiger-im-winter" target="_blank">Website</a>								<a href="mailto:info@hochzeiger.com">E-Mail</a>								<a href="/skigebiet/Hochzeiger - Jerzens_43" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochzeiger - Pitztal</h5>
+							<p>
+								Liß<br>
+								6474 Jerzens<br>
+								+43 5414 87000<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@hochzeiger.com">E-Mail</a>								<a href="/skigebiet/Hochzeiger - Pitztal_2624" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hochzillertal-Kaltenbach</h5>
+							<p>
+								Postfeldstraße<br>
+								6272 Kaltenbach<br>
+								+43 5283 2800<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@hochzillertal.com">E-Mail</a>								<a href="/skigebiet/Hochzillertal-Kaltenbach_2179" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hopfgarten - Itter - SkiWelt</h5>
+							<p>
+								Meierhofgasse 29<br>
+								6361 Hopfgarten<br>
+								+43 5335 2238<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.hopfgarten@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Hopfgarten - Itter - SkiWelt_1834" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Hüttegglift Weerberg</h5>
+							<p>
+								Zallerstrasse 79<br>
+								6133 Weerberg<br>
+								+43 5224 68562<br>
+							</p>
+							<div class="links">
+								<a href="https://www.huettegglift.at/" target="_blank">Website</a>								<a href="mailto:info@huettegglift.at">E-Mail</a>								<a href="/skigebiet/Hüttegglift Weerberg_2559" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Imst</h5>
+							<p>
+								Hoch Imst 19<br>
+								6460 Imst<br>
+								+43 5412 66322<br>
+							</p>
+							<div class="links">
+								<a href="https://www.imster-bergbahnen.at/" target="_blank">Website</a>								<a href="mailto:info@alpine-coaster.at">E-Mail</a>								<a href="/skigebiet/Imst_44" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Ischgl</h5>
+							<p>
+								Silvrettaplatz 2<br>
+								6561 Ischgl<br>
+								+435444606<br>
+							</p>
+							<div class="links">
+																<a href="mailto:office@silvretta.at">E-Mail</a>								<a href="/skigebiet/Ischgl_2897" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Ischgl  - Silvretta Arena</h5>
+							<p>
+								Silvrettaplatz 2<br>
+								6561 Ischgl<br>
+								+435444606<br>
+							</p>
+							<div class="links">
+								<a href="https://www.ischgl.com/" target="_blank">Website</a>								<a href="mailto:office@silvretta.at">E-Mail</a>								<a href="/skigebiet/Ischgl  - Silvretta Arena_11" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Jöchelspitze Lechtal</h5>
+							<p>
+								Benglerwald 70b<br>
+								6653 Bach<br>
+								+43 5583 3601-0<br>
+							</p>
+							<div class="links">
+								<a href="https://www.lechtaler-bergbahnen.at/" target="_blank">Website</a>								<a href="mailto:info@lechtaler-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Jöchelspitze Lechtal_2906" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kappl</h5>
+							<p>
+								Au 483<br>
+								6555 Kappl<br>
+								+43 5445 6251-0<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kappl.com" target="_blank">Website</a>								<a href="mailto:info@bergbahnenkappl.at">E-Mail</a>								<a href="/skigebiet/Kappl_31" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Karwendel-Bergbahn - Pertisau</h5>
+							<p>
+								Naturparkstraße 31<br>
+								6213 Pertisau am Achensee<br>
+								+43 (5243) 5326<br>
+							</p>
+							<div class="links">
+								<a href="https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html" target="_blank">Website</a>								<a href="mailto:info@karwendel-bergbahn.at">E-Mail</a>								<a href="/skigebiet/Karwendel-Bergbahn - Pertisau_74" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Katzenkopf Leutasch</h5>
+							<p>
+								Weidach 381a<br>
+								6105 Leutasch<br>
+								+43 5214 6219<br>
+							</p>
+							<div class="links">
+								<a href="https://www.katzenkopf-leutasch.at" target="_blank">Website</a>								<a href="mailto:info@katzenkopf-leutasch.at">E-Mail</a>								<a href="/skigebiet/Katzenkopf Leutasch_659" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kaunertaler Gletscher</h5>
+							<p>
+								Gletscherstraße 240<br>
+								6524 Feichten im Kaunertal<br>
+								+43 5475 5566<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kaunertaler-gletscher.at" target="_blank">Website</a>								<a href="mailto:kaunertal@tirolgletscher.com">E-Mail</a>								<a href="/skigebiet/Kaunertaler Gletscher_45" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kellerjochbahn Schwaz-Pill</h5>
+							<p>
+								Pillbergstraße 210<br>
+								6136 Pill<br>
+								+43 5242 62323<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kellerjochbahn.at/cms/" target="_blank">Website</a>								<a href="mailto:info@kellerjochbahn.at">E-Mail</a>								<a href="/skigebiet/Kellerjochbahn Schwaz-Pill_77" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kitzbühel</h5>
+							<p>
+								Hahnenkammstraße 1a +43 5356 6951<br>
+								6370 Kitzbühel<br>
+								+43 5356 6951 215<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kitzski.at" target="_blank">Website</a>								<a href="mailto:info@kitzski.at">E-Mail</a>								<a href="/skigebiet/Kitzbühel_2541" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kolsassberg</h5>
+							<p>
+								Rettenbergstraße 25<br>
+								6115 Kolsassberg<br>
+								+43 5224 68511<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kolsassberglift.at/" target="_blank">Website</a>								<a href="mailto:info@kolsassberglift.at">E-Mail</a>								<a href="/skigebiet/Kolsassberg_85" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Königsleiten - Zillertal Arena</h5>
+							<p>
+								Königsleiten<br>
+								5742 Wald im Pinzgau<br>
+								+436564 8212<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zillertalarena.com" target="_blank">Website</a>								<a href="mailto:info@zillertalarena.com">E-Mail</a>								<a href="/skigebiet/Königsleiten - Zillertal Arena_2563" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kössen</h5>
+							<p>
+								Thurnbichl 47<br>
+								6345 Kössen<br>
+								+43 5375 6226<br>
+							</p>
+							<div class="links">
+								<a href="https://skisport.com/Hochkoessen/de" target="_blank">Website</a>								<a href="mailto:koessen@skisport.com">E-Mail</a>								<a href="/skigebiet/Kössen_2545" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Kühtai</h5>
+							<p>
+								Kühtai 48<br>
+								6183 Kühtai<br>
+								+43 5239 / 5229<br>
+							</p>
+							<div class="links">
+								<a href="https://www.kuehtai.info/skigebiet-kuehtai" target="_blank">Website</a>								<a href="mailto:bergbahnen@lifte.at">E-Mail</a>								<a href="/skigebiet/Kühtai_2553" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Landeck - Zams - Fliess (Familienskigebiet Venet)</h5>
+							<p>
+								Hauptstraße 38<br>
+								6511 Zams<br>
+								+43 5442 62663<br>
+							</p>
+							<div class="links">
+								<a href="https://www.venet.at" target="_blank">Website</a>								<a href="mailto:vertrieb@venet.at">E-Mail</a>								<a href="/skigebiet/Landeck - Zams - Fliess (Familienskigebiet Venet)_75" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Lermoos-Grubigstein</h5>
+							<p>
+								Juch 3<br>
+								6631 Lermoos<br>
+								+43 56732323<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergbahnen-langes.at/" target="_blank">Website</a>								<a href="mailto:info@bergbahnen-langes.at">E-Mail</a>								<a href="/skigebiet/Lermoos-Grubigstein_23" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Lienz Zettersfeld</h5>
+							<p>
+								Zettersfeldstraße 38<br>
+								9900 Lienz<br>
+								+43 4852 63975<br>
+							</p>
+							<div class="links">
+								<a href="https://www.lienzer-bergbahnen.at" target="_blank">Website</a>								<a href="mailto:info@lienzer-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Lienz Zettersfeld_2907" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Lienz Zettersfeld Hochstein</h5>
+							<p>
+								Zettersfeldstraße 38<br>
+								9900 Lienz<br>
+								+43 4852 63975<br>
+							</p>
+							<div class="links">
+								<a href="https://www.lienzer-bergbahnen.at" target="_blank">Website</a>								<a href="mailto:info@lienzer-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Lienz Zettersfeld Hochstein_48" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Mayrhofen</h5>
+							<p>
+								Ahornstraße 853<br>
+								6290 Mayrhofen<br>
+								+43 5285 62277<br>
+							</p>
+							<div class="links">
+								<a href="https://www.mountopolis.at" target="_blank">Website</a>								<a href="mailto:marketing@mayrhofner-bergbahnen.com">E-Mail</a>								<a href="/skigebiet/Mayrhofen_17" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Mittersill - Paß Thurn - Kitzbühel</h5>
+							<p>
+								Hahnenkammstraße 1a<br>
+								6370 Kitzbühel<br>
+								+43 5356 6951 215<br>
+							</p>
+							<div class="links">
+								<a href="https://www.mittersill.info/" target="_blank">Website</a>								<a href="mailto:info@kitzski.at">E-Mail</a>								<a href="/skigebiet/Mittersill - Paß Thurn - Kitzbühel_2544" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Muttereralm - Nockspitzbahn</h5>
+							<p>
+								Nockhofweg 40<br>
+								6162 Mutters<br>
+								+43 512 / 54 83 30<br>
+							</p>
+							<div class="links">
+								<a href="https://www.muttereralm.at" target="_blank">Website</a>								<a href="mailto:office@muttereralm.at">E-Mail</a>								<a href="/skigebiet/Muttereralm - Nockspitzbahn_49" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Nauders</h5>
+							<p>
+								Gewerbegebiet<br>
+								A - 6543 Nauders<br>
+								+ 43 (0) 5473 87427<br>
+							</p>
+							<div class="links">
+																<a href="mailto:bergbahnen@nauders.com">E-Mail</a>								<a href="/skigebiet/Nauders_82" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Neukirchen - Bramberg - Wildkogel</h5>
+							<p>
+								Wildkogelbahnstraße 343<br>
+								5741 &amp; 5733 Neukirchen &amp; Bramberg<br>
+								+43 6565 6405<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergbahnen-wildkogel.at" target="_blank">Website</a>								<a href="mailto:info@bergbahnen-wildkogel.at">E-Mail</a>								<a href="/skigebiet/Neukirchen - Bramberg - Wildkogel_28" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Neunerköpfle - Tannheim</h5>
+							<p>
+								Bergbahnweg 12<br>
+								6675 Tannheim<br>
+								+43 (0) 5675 6260<br>
+							</p>
+							<div class="links">
+								<a href="https://www.tannheimer-bergbahnen.at" target="_blank">Website</a>								<a href="mailto:info@tannheimer-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Neunerköpfle - Tannheim_2561" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Nordkette - Innsbruck</h5>
+							<p>
+								Höhenstraße 145<br>
+								6020 Innsbruck<br>
+								+43 512 / 29 33 44<br>
+							</p>
+							<div class="links">
+								<a href="https://www.nordkette.com/" target="_blank">Website</a>								<a href="mailto:info@nordkette.com">E-Mail</a>								<a href="/skigebiet/Nordkette - Innsbruck_51" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Obergurgl-Hochgurgl</h5>
+							<p>
+								Gurglerstraße 93<br>
+								6456 Obergurgl<br>
+								+43 5256 6260<br>
+							</p>
+							<div class="links">
+								<a href="https://www.obergurgl.com" target="_blank">Website</a>								<a href="mailto:bergbahnen@obergurgl.com">E-Mail</a>								<a href="/skigebiet/Obergurgl-Hochgurgl_14" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Obertilliacher Bergbahnen</h5>
+							<p>
+								Dorf 135<br>
+								9942 Obertilliach<br>
+								+4348475300<br>
+							</p>
+							<div class="links">
+								<a href="https://www.obertilliacher-bergbahnen.com/" target="_blank">Website</a>								<a href="mailto:info@obertilliacher-bergbahnen.com">E-Mail</a>								<a href="/skigebiet/Obertilliacher Bergbahnen_52" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Patscherkofel</h5>
+							<p>
+								Römerstraße 81<br>
+								6080 Igls<br>
+								+43 512 / 37 72 34<br>
+							</p>
+							<div class="links">
+								<a href="https://www.patscherkofelbahn.at" target="_blank">Website</a>								<a href="mailto:info@patscherkofelbahn.at">E-Mail</a>								<a href="/skigebiet/Patscherkofel_34" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Pitztaler Gletscher - Rifflsee</h5>
+							<p>
+								Mittelberg 103<br>
+								6481 St. Leonhard<br>
+								0043 5413 86288<br>
+							</p>
+							<div class="links">
+								<a href="https://www.pitztaler-gletscher.at" target="_blank">Website</a>								<a href="mailto:pitztal@tirolgletscher.com">E-Mail</a>								<a href="/skigebiet/Pitztaler Gletscher - Rifflsee_53" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Rangger Köpfl</h5>
+							<p>
+								Peter-Anich-Weg 11<br>
+								6173 Oberperfuss<br>
+								+43 5232 / 81 505<br>
+							</p>
+							<div class="links">
+								<a href="https://www.rangger-koepfl.at" target="_blank">Website</a>								<a href="mailto:office@rangger-koepfl.at">E-Mail</a>								<a href="/skigebiet/Rangger Köpfl_2555" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Rastkogelbahnen</h5>
+							<p>
+								Vorderlanersbach 272<br>
+								6293 Tux<br>
+								+43 5287 87510<br>
+							</p>
+							<div class="links">
+								<a href="https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/" target="_blank">Website</a>								<a href="mailto:info@hintertuxergletscher.at">E-Mail</a>								<a href="/skigebiet/Rastkogelbahnen_25" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Rofan Seilbahn - Maurach</h5>
+							<p>
+								Achenseestraße 10<br>
+								6212 Maurach am Achensee<br>
+								+43 5243 5292<br>
+							</p>
+							<div class="links">
+								<a href="https://www.rofanseilbahn.at" target="_blank">Website</a>								<a href="mailto:info@rofanseilbahn.at">E-Mail</a>								<a href="/skigebiet/Rofan Seilbahn - Maurach_2680" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Rosshütte - Seefeld in Tirol</h5>
+							<p>
+								Talstation 419<br>
+								6100 Seefeld in Tirol<br>
+								+43 5212 24160<br>
+							</p>
+							<div class="links">
+								<a href="https://www.rosshuette.at/" target="_blank">Website</a>								<a href="mailto:info@bergbahnen-seefeld.com">E-Mail</a>								<a href="/skigebiet/Rosshütte - Seefeld in Tirol_2571" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Schattwald - Zöblen im Tannheimertal</h5>
+							<p>
+								Bergbahnweg 12<br>
+								6675 Tannheim<br>
+								+43 5675 6260<br>
+							</p>
+							<div class="links">
+								<a href="https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen" target="_blank">Website</a>								<a href="mailto:info@tannheimer-bergbahnen.at">E-Mail</a>								<a href="/skigebiet/Schattwald - Zöblen im Tannheimertal_2554" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Scheffau - SkiWelt</h5>
+							<p>
+								Schwarzach 2<br>
+								6351 Scheffau<br>
+								+43 5358 8153<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.scheffau@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Scheffau - SkiWelt_62" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Schlick 2000</h5>
+							<p>
+								Tschaffinis Umgebung 26<br>
+								6166 Fulpmes/Stubaital<br>
+								+43 5225 / 62 321<br>
+							</p>
+							<div class="links">
+								<a href="https://www.stubai.at/skigebiete/schlick2000/" target="_blank">Website</a>								<a href="mailto:info@schlick2000.at">E-Mail</a>								<a href="/skigebiet/Schlick 2000_56" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Schneeberglifte Thiersee</h5>
+							<p>
+								Mitterland 91<br>
+								6335 Thiersee<br>
+								+43 664 1812220<br>
+							</p>
+							<div class="links">
+								<a href="https://www.schneeberglifte.at" target="_blank">Website</a>								<a href="mailto:info@schneeberglifte.at">E-Mail</a>								<a href="/skigebiet/Schneeberglifte Thiersee_87" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Schwannerlifte in Weerberg</h5>
+							<p>
+								Mitterberg 59<br>
+								6133 Weerberg<br>
+								+43522468568<br>
+							</p>
+							<div class="links">
+								<a href="https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg" target="_blank">Website</a>								<a href="mailto:gasthof@schwannerwirt.at">E-Mail</a>								<a href="/skigebiet/Schwannerlifte in Weerberg_2605" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>See i. Paznauntal</h5>
+							<p>
+								Hnr. 178<br>
+								6553 See<br>
+								+43 5441 8288<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergbahn.com" target="_blank">Website</a>								<a href="mailto:see@bergbahn.com">E-Mail</a>								<a href="/skigebiet/See i. Paznauntal_32" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Serfaus</h5>
+							<p>
+								Dorfbahnstraße 75<br>
+								6534 Serfaus<br>
+								+43 5476 6203<br>
+							</p>
+							<div class="links">
+								<a href="https://www.serfaus-fiss-ladis.at/" target="_blank">Website</a>								<a href="mailto:info@skiserfaus.at">E-Mail</a>								<a href="/skigebiet/Serfaus_16" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Serlesbahnen Mieders</h5>
+							<p>
+								Waldrasterweg 1<br>
+								6142 Mieders<br>
+								+43 5225 / 62 77 60<br>
+							</p>
+							<div class="links">
+								<a href="https://www.serlesbahnen.com/" target="_blank">Website</a>								<a href="mailto:kassa@serlesbahnen.com">E-Mail</a>								<a href="/skigebiet/Serlesbahnen Mieders_80" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Skilifte Kirchdorf</h5>
+							<p>
+								Innsbrucker Straße 1<br>
+								6382 Kirchdorf<br>
+								+43 5352 63545<br>
+							</p>
+							<div class="links">
+								<a href="http://www.yappys-winterland.tirol" target="_blank">Website</a>								<a href="mailto:info@skilift-kirchdorf.com">E-Mail</a>								<a href="/skigebiet/Skilifte Kirchdorf_83" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Skilifte Knittel</h5>
+							<p>
+								Untergiblen 15<br>
+								6652 Elbigenalp<br>
+								+43 5634 6240<br>
+							</p>
+							<div class="links">
+								<a href="https://www.knitteltirol.at/" target="_blank">Website</a>								<a href="mailto:info@knitteltirol.at">E-Mail</a>								<a href="/skigebiet/Skilifte Knittel_93" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Skilifte Lärchenhof</h5>
+							<p>
+								Lärchenweg 11<br>
+								6383 Erpfendorf<br>
+								+43 5352 8138<br>
+							</p>
+							<div class="links">
+								<a href="https://www.laerchenhof-tirol.at/" target="_blank">Website</a>								<a href="mailto:info@laerchenhof-tirol.at">E-Mail</a>								<a href="/skigebiet/Skilifte Lärchenhof_2560" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Skizentrum Sillian/ Hochpustertal</h5>
+							<p>
+								Sillian 49 E<br>
+								9920 Sillian<br>
+								+43 4842 60110<br>
+							</p>
+							<div class="links">
+								<a href="https://www.hochpustertal-ski.at" target="_blank">Website</a>								<a href="mailto:info@hochpustertal-ski.at">E-Mail</a>								<a href="/skigebiet/Skizentrum Sillian/ Hochpustertal_57" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Skizentrum St. Jakob</h5>
+							<p>
+								Außerrotte 33<br>
+								9963 St. Jakob i. Defereggen<br>
+								+43 4873 5274<br>
+							</p>
+							<div class="links">
+								<a href="https://www.stjakob-ski.at/" target="_blank">Website</a>								<a href="mailto:info@stjakob-ski.at">E-Mail</a>								<a href="/skigebiet/Skizentrum St. Jakob_70" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Sölden</h5>
+							<p>
+								Dorfstraße 115<br>
+								6450 Sölden<br>
+								+43 5254 508<br>
+							</p>
+							<div class="links">
+								<a href="https://www.soelden.com/" target="_blank">Website</a>								<a href="mailto:bergbahnen@soelden.com">E-Mail</a>								<a href="/skigebiet/Sölden_2562" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Söll - SkiWelt</h5>
+							<p>
+								Stampfanger 21<br>
+								6306 Söll<br>
+								+43 5333 5260<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.soell@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Söll - SkiWelt_2548" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Spieljochbahn Fügen</h5>
+							<p>
+								Hochfügenerstraße<br>
+								6263 F&amp;#252;gen<br>
+								+43 5288 62991<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@spieljochbahn.at">E-Mail</a>								<a href="/skigebiet/Spieljochbahn Fügen_2550" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>St. Johann in Tirol</h5>
+							<p>
+								Hornweg 21<br>
+								6380 St.Johann in Tirol<br>
+								+43 5352 62293<br>
+							</p>
+							<div class="links">
+								<a href="https://www.bergbahnen-stjohann.at" target="_blank">Website</a>								<a href="mailto:info@bergbahnen-stjohann.at">E-Mail</a>								<a href="/skigebiet/St. Johann in Tirol_1048" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Steinplatte-Waidring</h5>
+							<p>
+								Alpegg 10<br>
+								6384 Waidring<br>
+								+43 (0) 5353 5330 0<br>
+							</p>
+							<div class="links">
+								<a href="https://www.steinplatte.tirol/" target="_blank">Website</a>								<a href="mailto:office@steinplatte.co.at">E-Mail</a>								<a href="/skigebiet/Steinplatte-Waidring_67" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Steinplatte-Winklmoosalm</h5>
+							<p>
+								Alpegg 10<br>
+								6384 Waidring<br>
+								+43 (0) 5353 5330 0<br>
+							</p>
+							<div class="links">
+								<a href="https://www.steinplatte.tirol/" target="_blank">Website</a>								<a href="mailto:office@steinplatte.co.at">E-Mail</a>								<a href="/skigebiet/Steinplatte-Winklmoosalm_2572" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Stubaier Gletscher</h5>
+							<p>
+								Mutterberg 2<br>
+								6167 Neustift<br>
+								+43 5226 8141<br>
+							</p>
+							<div class="links">
+																<a href="mailto:info@stubaier-gletscher.com">E-Mail</a>								<a href="/skigebiet/Stubaier Gletscher_27" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Tiroler Zugspitzbahn</h5>
+							<p>
+								Obermoos 1<br>
+								6632 Ehrwald<br>
+								+43 5673 2309<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zugspitzbahn.at" target="_blank">Website</a>								<a href="mailto:info@zugspitze.at">E-Mail</a>								<a href="/skigebiet/Tiroler Zugspitzbahn_22" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Tirolina - Ski-,Sport-, und Aktivberg Thiersee</h5>
+							<p>
+								Hinterthiersee 75<br>
+								6335 Thiersee<br>
+								+43 5376 21234<br>
+							</p>
+							<div class="links">
+								<a href="https://www.tirolina.at/de/startseite.html" target="_blank">Website</a>								<a href="mailto:office@tirolina.at">E-Mail</a>								<a href="/skigebiet/Tirolina - Ski-,Sport-, und Aktivberg Thiersee_96" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Umhausen</h5>
+							<p>
+								Gemeindestrasse 4<br>
+								6450 Sölden<br>
+								+4357200<br>
+							</p>
+							<div class="links">
+								<a href="https://www.oetztal.com/skigebiet-niederthai" target="_blank">Website</a>								<a href="mailto:info@oetztal.com">E-Mail</a>								<a href="/skigebiet/Umhausen_1617" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+
+                                    						<div class="skigebiete_list_item">
+							<h5>Venter Seilbahnen</h5>
+							<p>
+								Venterstr. 40<br>
+								6458 Vent<br>
+								+43 5254 8153<br>
+							</p>
+							<div class="links">
+								<a href="https://www.vent.at/" target="_blank">Website</a>								<a href="mailto:vent@oetztal.com">E-Mail</a>								<a href="/skigebiet/Venter Seilbahnen_2606" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Vögelsberg Aktivpark</h5>
+							<p>
+								Vögelsberg 4<br>
+								6112 Wattens<br>
+								+43522451675<br>
+							</p>
+							<div class="links">
+								<a href="https://voegelsberg.at/" target="_blank">Website</a>								<a href="mailto:info@voegelsberg.at">E-Mail</a>								<a href="/skigebiet/Vögelsberg Aktivpark_2543" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Westendorf - SkiWelt</h5>
+							<p>
+								Bergliftstraße 18<br>
+								6363 Westendorf<br>
+								+43 5334 2000<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skiwelt.at" target="_blank">Website</a>								<a href="mailto:bergbahnen.westendorf@skiwelt.at">E-Mail</a>								<a href="/skigebiet/Westendorf - SkiWelt_63" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Wildschönau - Ski Juwel Alpbachtal Wildschönau</h5>
+							<p>
+								Dorf, Auffach 273<br>
+								6313 Wildschönau<br>
+								+43 5339 5353<br>
+							</p>
+							<div class="links">
+								<a href="https://www.skijuwel.com/" target="_blank">Website</a>								<a href="mailto:buero@schatzbergbahn.at">E-Mail</a>								<a href="/skigebiet/Wildschönau - Ski Juwel Alpbachtal Wildschönau_2546" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+											<div class="skigebiete_list_item">
+							<h5>Zell am Ziller - Zillertal Arena</h5>
+							<p>
+								Rohr 23<br>
+								6280 Zell am Ziller<br>
+								+43 5282 7165<br>
+							</p>
+							<div class="links">
+								<a href="https://www.zell.at" target="_blank">Website</a>								<a href="mailto:info@zillertalarena.com">E-Mail</a>								<a href="/skigebiet/Zell am Ziller - Zillertal Arena_86" class="show_location_detail">Infos &amp; Karte</a>
+							</div>
+						</div>
+									
+
+	<div id="location_load"></div>
+</div>
+                        
+							<div class="paging skigebiete_paging" data-total="95" data-container="#paging_load-skigebiete" data-morename="mehr Skigebiete anzeigen">
+					<nav style="display: none;">
+                                                                                                                                                                                                                                                                
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+						                                                                                                                                                            
+							
+
+											</nav>
+				</div>
+					</div>

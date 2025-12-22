@@ -1,0 +1,2 @@
+# Secrets / lokale Konfiguration
+config.js
