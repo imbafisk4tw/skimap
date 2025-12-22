@@ -1,0 +1,23 @@
+# Secrets / lokale Konfiguration
+config.js
+
+# --- private / local ---
+.env
+.cache/
+db/
+*.log
+
+# --- build / tools / scripts (nicht ins repo) ---
+old/
+tools/
+data/
+*.py
+*.ipynb
+
+# --- big osm artifacts ---
+*.osm.pbf
+*.pbf
+*.geojson
+
+# --- node ---
+node_modules/
