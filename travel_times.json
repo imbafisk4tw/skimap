@@ -80,7 +80,7 @@
     "km": 233.7
   },
   "Heiligenblut – Großglockner": {
-    "hours": 3.57,
+    "hours": 3.56,
     "km": 269.5
   },
   "Hinterstoder – Höss": {
@@ -92,11 +92,11 @@
     "km": 116.5
   },
   "Hochficht": {
-    "hours": 2.98,
+    "hours": 2.99,
     "km": 241.5
   },
   "Hochficht (Böhmerwald)": {
-    "hours": 2.98,
+    "hours": 2.99,
     "km": 241.5
   },
   "Hochkönig – Maria Alm/Dienten/Mühlbach": {
@@ -224,7 +224,7 @@
     "km": 215.3
   },
   "Oberstdorf – Fellhorn/Kanzelwand": {
-    "hours": 2.37,
+    "hours": 2.38,
     "km": 202.4
   },
   "Oberstdorf – Nebelhorn": {
@@ -232,7 +232,7 @@
     "km": 121.4
   },
   "Oberstdorf – Söllereck": {
-    "hours": 2.2,
+    "hours": 2.21,
     "km": 197.4
   },
   "Patscherkofel – Igls": {
@@ -537,7 +537,7 @@
   },
   "Hochkrimml - Zillertal Arena": {
     "hours": 1.88,
-    "km": 149.2
+    "km": 148.6
   },
   "Hochoetz - Oetz": {
     "hours": 2.4,
@@ -597,7 +597,7 @@
   },
   "Königsleiten - Zillertal Arena": {
     "hours": 1.88,
-    "km": 149.2
+    "km": 148.6
   },
   "Kössen": {
     "hours": 1.37,
@@ -704,16 +704,12 @@
     "km": 178.4
   },
   "Skilifte Lärchenhof": {
-    "hours": 3.82,
-    "km": 403.1
+    "hours": 1.61,
+    "km": 114.7
   },
   "Skizentrum Sillian/ Hochpustertal": {
-    "hours": 4.03,
+    "hours": 4.04,
     "km": 305.6
-  },
-  "Skizentrum St. Jakob": {
-    "hours": 2.34,
-    "km": 235.8
   },
   "Sölden": {
     "hours": 2.83,
@@ -740,8 +736,8 @@
     "km": 115.1
   },
   "Tirolina - Ski-,Sport-, und Aktivberg Thiersee": {
-    "hours": 78.08,
-    "km": 5465.8
+    "hours": 1.76,
+    "km": 162.0
   },
   "Umhausen": {
     "hours": 2.4,
