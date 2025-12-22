@@ -150,6 +150,49 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       border-radius: 4px;
     }
+	
+		/* Export-Box als Leaflet-Control (erscheint oben rechts unter dem Layer-Control) */
+	.export-box.leaflet-control {
+	  background: white;
+	  padding: 8px 10px;
+	  border: 1px solid #888;
+	  font-size: 13px;
+	  line-height: 1.4;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	  border-radius: 4px;
+	  width: 240px;
+	  box-sizing: border-box;
+	}
+
+	.export-box .title {
+	  font-weight: 600;
+	  font-size: 12px;
+	  margin-bottom: 6px;
+	}
+
+	.export-box button {
+	  width: 100%;
+	  padding: 6px 8px;
+	  font-size: 13px;
+	  border-radius: 3px;
+	  border: 1px solid #666;
+	  background: #f0f0f0;
+	  cursor: pointer;
+	}
+
+	.export-box button:hover {
+	  background: #e0e0e0;
+	}
+
+	.export-box button + button {
+	  margin-top: 6px;
+	}
+
+	.export-box .hint {
+	  margin-top: 6px;
+	  font-size: 11px;
+	  color: #555;
+	}
   </style>
 </head>
 <body>
@@ -198,11 +241,14 @@
   crossorigin=""
 ></script>
 
+<script src="config.js"></script>
+
 <script src="searchFilter.js"></script>
 
 <script>
   // --------- Basis-Einstellungen ---------
-  const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImRhZjIxYzViN2RhZjQ1ZmNhZGY4ZjNlZThhZjEzODE3IiwiaCI6Im11cm11cjY0In0="; // dein ORS-Key
+  // ORS_API_KEY wird aus config.js gelesen (nicht in Git einchecken).
+  const ORS_API_KEY = (window.APP_CONFIG && window.APP_CONFIG.ORS_API_KEY) ? window.APP_CONFIG.ORS_API_KEY : "DEIN_ORS_API_KEY";
 
   const MUC_LAT = 48.137;
   const MUC_LON = 11.575;
@@ -320,7 +366,6 @@
   const sctLayer = L.layerGroup();
   const sscLayer = L.layerGroup();
   const overlapLayer = L.layerGroup();
-  const glacierLayer = L.layerGroup();
   const nearMucLayer = L.layerGroup();
 
   const COLOR_SCT   = "#9C2419";
@@ -344,9 +389,6 @@
     box.textContent = `${visible} / ${totalResorts}`;
   }
 
-  // Wenn Layer an/aus geschaltet werden, Counter updaten
-  map.on("overlayadd",  updateResortCounter);
-  map.on("overlayremove", updateResortCounter);
 
   function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website) {
     const key = norm(name);
@@ -487,11 +529,11 @@
         .bindPopup(() => makePopupHtml(r))
         .bindTooltip(`${r.name} (${passesStr})`);
 
-      if (r.sct) sctLayer.addLayer(marker);
-      if (r.ssc) sscLayer.addLayer(marker);
-      if (r.sct && r.ssc) overlapLayer.addLayer(marker);
-      if (r.glacier) glacierLayer.addLayer(marker);
-      if (r.nearMuc) nearMucLayer.addLayer(marker);
+      // Kategorie-Layer (mutual exclusive für Saisonpass-Kategorien)
+      if (r.sct && r.ssc)      overlapLayer.addLayer(marker);
+      else if (r.sct)          sctLayer.addLayer(marker);
+      else if (r.ssc)          sscLayer.addLayer(marker);
+      else if (r.nearMuc)      nearMucLayer.addLayer(marker);
 
       resortMarkers[norm(r.name)] = marker;
     });
@@ -504,18 +546,7 @@
   sctLayer.addTo(map);
   sscLayer.addTo(map);
   overlapLayer.addTo(map);
-  glacierLayer.addTo(map);
   nearMucLayer.addTo(map);
-
-  const overlays = {
-    "Snow Card Tirol": sctLayer,
-    "SuperSkiCard": sscLayer,
-    "Überschneidung SCT & SSC": overlapLayer,
-    "Gletschergebiete": glacierLayer,
-    "Nahe München": nearMucLayer
-  };
-
-  L.control.layers({}, overlays, { collapsed: false }).addTo(map);
 
   const legend = document.createElement("div");
   legend.className = "legend-box";
@@ -529,17 +560,25 @@
 
 
   // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
-  const ui = window.initSearchAndFilters({
-    map,
-    resorts,
-    resortMarkers,
-    layers: { sctLayer, sscLayer, overlapLayer, glacierLayer, nearMucLayer },
-    fmtTime,
-    norm,
-    getMinHours: () => minHours,
-    getMaxHours: () => maxHours,
-    updateResortCounter
-  });
+	const ui = window.initSearchAndFilters({
+	  map,
+	  resorts,
+	  resortMarkers,
+	  layers: { sctLayer, sscLayer, overlapLayer, nearMucLayer },
+	  fmtTime,
+	  norm,
+	  getMinHours: () => minHours,
+	  getMaxHours: () => maxHours,
+	  updateResortCounter,
+
+	  // NEU: Layercontrol wird in searchFilter.js gebaut
+	  layerControlOverlays: {
+		"Snow Card Tirol": sctLayer,
+		"SuperSkiCard": sscLayer,
+		"Überschneidung SCT & SSC": overlapLayer,		"Nahe München": nearMucLayer
+	  },
+	  layerControlCollapsed: false
+	});
 
   // Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
   window.rebuildDatalist   = ui.rebuildDatalist;
@@ -593,7 +632,7 @@
       }
     } else {
       if (!ORS_API_KEY || ORS_API_KEY === "DEIN_ORS_API_KEY") {
-        alert("Bitte zuerst ORS_API_KEY im Script eintragen.");
+        alert("Bitte ORS_API_KEY in config.js eintragen.");
         return;
       }
       try {
@@ -670,7 +709,7 @@
     };
 
     if (!ORS_API_KEY || ORS_API_KEY === "DEIN_ORS_API_KEY") {
-      alert("Bitte zuerst ORS_API_KEY im Script eintragen.");
+      alert("Bitte ORS_API_KEY in config.js eintragen.");
       return;
     }
 
