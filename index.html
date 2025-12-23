@@ -447,6 +447,8 @@ padding: 4px 6px;
 
   // Karte
   const map = L.map("map").setView([47.2, 12.2], 9);
+  // Debug/DevTools access
+  window.map = map;
 
   const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -835,6 +837,9 @@ if (passType === "SCT") resorts[key].sct = true;
         enabled: false,
         baseOpacity: 0.18
       });
+
+      // Debug/DevTools access
+      window.treeOverlay = tree;
 
       if (window.layerControl && tree.getLayer && tree.getLayer()) {
         window.layerControl.addOverlay(tree.getLayer(), "Tree Routes (Fahrzeit-Netz)");

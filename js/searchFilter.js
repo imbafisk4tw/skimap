@@ -1,6 +1,20 @@
 (function () {
   "use strict";
 
+
+// --- Basemap Dim Toggle (for better contrast with overlays) ---
+const TILE_FILTER_DARK = "saturate(0.55) brightness(0.18) contrast(0.92)";
+
+function setMapTileFilter(filterStr) {
+  const pane = document.querySelector(".leaflet-tile-pane");
+  if (!pane) return;
+  pane.style.filter = filterStr || "";
+}
+
+function setMapDim(on) {
+  setMapTileFilter(on ? TILE_FILTER_DARK : "");
+}
+
   function defaultExtractResortName(raw) {
     if (!raw) return "";
     const idx = raw.indexOf(" – ");
@@ -280,7 +294,8 @@ const timeSlider = document.getElementById("time-slider");
           <label><input type="checkbox" id="flt-both" checked> Beide Pässe</label>
           <label><input type="checkbox" id="flt-glacier" checked> Gletscher</label>
           <label><input type="checkbox" id="flt-muc" checked> Nahe München</label>
-        `;
+                  <label><input type="checkbox" id="flt-dimmap"> Karte abdunkeln</label>
+`;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
         return div;
@@ -295,6 +310,23 @@ const timeSlider = document.getElementById("time-slider");
         const elGl = document.getElementById("flt-glacier");
         const elMuc = document.getElementById("flt-muc");
 
+const elDim = document.getElementById("flt-dimmap");
+
+// restore + apply saved dim state
+const savedDim = (typeof localStorage !== "undefined") && localStorage.getItem("mapDim") === "1";
+if (elDim) {
+  elDim.checked = !!savedDim;
+  setMapDim(!!savedDim);
+  elDim.addEventListener("change", () => {
+    const on = !!elDim.checked;
+    setMapDim(on);
+    if (typeof localStorage !== "undefined") {
+      localStorage.setItem("mapDim", on ? "1" : "0");
+    }
+  });
+} else {
+  setMapDim(!!savedDim);
+}
         const handler = () => {
           filterState.sctOnly = !!elSct?.checked;
           filterState.sscOnly = !!elSsc?.checked;

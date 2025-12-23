@@ -3,10 +3,9 @@
 
   // TreeRoutesOverlay: visualizes many routes (LineStrings) as a "reachability tree / chaos layer".
   // Expected GeoJSON FeatureCollection with LineString geometries and properties including:
-  // - name OR resort_name (used for matching to resorts filter)
   // - duration_min OR duration_sec (used for time filtering + coloring)
   //
-  // The overlay is intentionally low-opacity so overlaps naturally create "thicker" corridors.
+  // New: two-pass rendering (outline + colored stroke) for much better contrast on OSM tiles.
 
   function clamp(n, a, b) {
     return Math.max(a, Math.min(b, n));
@@ -30,20 +29,30 @@
   }
 
   function defaultNameFromProps(p) {
-    return (p && (p.name || p.resort_name || p.resort || p.resortId || p.resort_id)) ? String(p.name || p.resort_name || p.resort || p.resortId || p.resort_id) : "";
+    return (p && (p.name || p.resort_name || p.resort || p.resortId || p.resort_id))
+      ? String(p.name || p.resort_name || p.resort || p.resortId || p.resort_id)
+      : "";
   }
 
   async function init(map, opts) {
     if (typeof L === "undefined") throw new Error("Leaflet (L) not available.");
     if (!map) throw new Error("TreeRoutesOverlay.init: map missing.");
 
-    const {
-      url,
-      enabled = false,
-      baseOpacity = 0.18,
-      weight = 2,
-      renderer = L.canvas({ padding: 0.5 })
-    } = (opts || {});
+    const o = (opts || {});
+    const url = o.url;
+    const enabled = !!o.enabled;
+
+    // Style defaults (tunable)
+    const styleState = {
+      baseOpacity: (typeof o.baseOpacity === "number") ? o.baseOpacity : 0.18,
+      weight: (typeof o.weight === "number") ? o.weight : 3.0,
+
+      outlineColor: o.outlineColor || "#000",
+      outlineOpacity: (typeof o.outlineOpacity === "number") ? o.outlineOpacity : 0.25,
+      outlineWeight: (typeof o.outlineWeight === "number") ? o.outlineWeight : 6.0
+    };
+
+    const renderer = o.renderer || L.canvas({ padding: 0.5 });
 
     if (!url) throw new Error("TreeRoutesOverlay.init: url missing.");
 
@@ -51,18 +60,30 @@
     let maxMinutes = Infinity;
     let predicate = null;
 
-    const layer = L.geoJSON({ type: "FeatureCollection", features: [] }, {
+    const outlineLayer = L.geoJSON({ type: "FeatureCollection", features: [] }, {
+      renderer,
+      style: () => ({
+        color: styleState.outlineColor,
+        weight: styleState.outlineWeight,
+        opacity: styleState.outlineOpacity
+      })
+    });
+
+    const colorLayer = L.geoJSON({ type: "FeatureCollection", features: [] }, {
       renderer,
       style: (feature) => {
         const props = feature && feature.properties ? feature.properties : {};
         const min = minutesFromProps(props);
         return {
           color: colorByMinutes(min),
-          weight: weight,
-          opacity: baseOpacity
+          weight: styleState.weight,
+          opacity: styleState.baseOpacity
         };
       }
     });
+
+    // One checkbox in LayerControl
+    const layerGroup = L.layerGroup([outlineLayer, colorLayer]);
 
     async function load() {
       const resp = await fetch(url);
@@ -97,8 +118,11 @@
         filtered.push(f);
       }
 
-      layer.clearLayers();
-      layer.addData({ type: "FeatureCollection", features: filtered });
+      const fcFiltered = { type: "FeatureCollection", features: filtered };
+      outlineLayer.clearLayers();
+      outlineLayer.addData(fcFiltered);
+      colorLayer.clearLayers();
+      colorLayer.addData(fcFiltered);
     }
 
     function setMaxHours(hours) {
@@ -121,17 +145,48 @@
       rebuild();
     }
 
-    function getLayer() { return layer; }
+    // Live tuning: call from DevTools
+    function setStyle(patch) {
+      if (!patch || typeof patch !== "object") return;
+      if (typeof patch.baseOpacity === "number") styleState.baseOpacity = patch.baseOpacity;
+      if (typeof patch.weight === "number") styleState.weight = patch.weight;
+      if (typeof patch.outlineOpacity === "number") styleState.outlineOpacity = patch.outlineOpacity;
+      if (typeof patch.outlineWeight === "number") styleState.outlineWeight = patch.outlineWeight;
+      if (typeof patch.outlineColor === "string") styleState.outlineColor = patch.outlineColor;
+
+      // Force restyle
+      outlineLayer.setStyle(() => ({
+        color: styleState.outlineColor,
+        weight: styleState.outlineWeight,
+        opacity: styleState.outlineOpacity
+      }));
+      colorLayer.setStyle((feature) => {
+        const props = feature && feature.properties ? feature.properties : {};
+        const min = minutesFromProps(props);
+        return {
+          color: colorByMinutes(min),
+          weight: styleState.weight,
+          opacity: styleState.baseOpacity
+        };
+      });
+    }
+
+    function getLayer() { return layerGroup; }
+    function getOutlineLayer() { return outlineLayer; }
+    function getColorLayer() { return colorLayer; }
 
     await load();
 
-    if (enabled) layer.addTo(map);
+    if (enabled) layerGroup.addTo(map);
 
     return {
       getLayer,
+      getOutlineLayer,
+      getColorLayer,
       setMaxHours,
       setMaxMinutes,
       setPredicate,
+      setStyle,
       // helper for matching by name if you want it
       defaultNameFromProps
     };

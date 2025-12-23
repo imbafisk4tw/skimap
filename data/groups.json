@@ -1,1347 +1,1934 @@
-{
-  "generatedAt": "2025-12-22T18:14:54.729102+00:00Z",
-  "schema": "groups.v1",
-  "groups": [
-    {
-      "id": "almbahn",
-      "name": "Ehrwalder Alm",
-      "aliases": [
-        "Ehrwalder Alm",
-        "almbahn",
-        "ehrwalder",
-        "ehrwalder alm",
-        "ehrwalder-alm"
-      ]
-    },
-    {
-      "id": "alpenbahnen-spitzingsee",
-      "name": "Spitzingsee - Tegernsee",
-      "aliases": [
-        "Spitzingsee - Tegernsee",
-        "alpenbahnen-spitzingsee",
-        "spitzingsee",
-        "spitzingsee - tegernsee",
-        "spitzingsee-tegernsee",
-        "tegernsee"
-      ]
-    },
-    {
-      "id": "amberglift",
-      "name": "Amberglift Walchsee",
-      "aliases": [
-        "Amberglift Walchsee",
-        "amberglift",
-        "amberglift walchsee",
-        "amberglift-walchsee",
-        "walchsee"
-      ]
-    },
-    {
-      "id": "axamer-lizum",
-      "name": "Axamer Lizum",
-      "aliases": [
-        "Axamer Lizum",
-        "axamer",
-        "axamer lizum",
-        "axamer-lizum",
-        "lizum"
-      ]
-    },
-    {
-      "id": "bergbahn-pillersee",
-      "name": "Buchensteinwand - Pillersee",
-      "aliases": [
-        "Buchensteinwand - Pillersee",
-        "bergbahn-pillersee",
-        "buchensteinwand",
-        "buchensteinwand - pillersee",
-        "buchensteinwand-pillersee",
-        "pillersee"
-      ]
-    },
-    {
-      "id": "bergbahnen-koessen",
-      "name": "Hochkössen (Unterberghorn)",
-      "aliases": [
-        "Hochkössen (Unterberghorn)",
-        "bergbahnen-koessen",
-        "hochkossen-unterberghorn",
-        "hochkössen",
-        "hochkössen unterberghorn",
-        "unterberghorn"
-      ]
-    },
-    {
-      "id": "bergbahnen-langes",
-      "name": "Lermoos - Grubigstein",
-      "aliases": [
-        "Lermoos - Grubigstein",
-        "bergbahnen-langes",
-        "grubigstein",
-        "lermoos",
-        "lermoos - grubigstein",
-        "lermoos-grubigstein"
-      ]
-    },
-    {
-      "id": "bergbahnen-stjohann",
-      "name": "St. Johann in Tirol - Oberndorf",
-      "aliases": [
-        "St. Johann in Tirol - Oberndorf",
-        "bergbahnen-stjohann",
-        "johann",
-        "oberndorf",
-        "st johann in tirol - oberndorf",
-        "st-johann-in-tirol-oberndorf",
-        "tirol"
-      ]
-    },
-    {
-      "id": "bergeralm",
-      "name": "Bergeralm",
-      "aliases": [
-        "Bergeralm",
-        "bergeralm"
-      ]
-    },
-    {
-      "id": "bergwelt-hahnenkamm",
-      "name": "Bergwelt Hahnenkamm",
-      "aliases": [
-        "Bergwelt Hahnenkamm",
-        "bergwelt",
-        "bergwelt hahnenkamm",
-        "bergwelt-hahnenkamm",
-        "hahnenkamm"
-      ]
-    },
-    {
-      "id": "berwang",
-      "name": "Berwang",
-      "aliases": [
-        "Berwang",
-        "berwang"
-      ]
-    },
-    {
-      "id": "brauneck-bergbahn",
-      "name": "Brauneck - Lenggries",
-      "aliases": [
-        "Brauneck - Lenggries",
-        "brauneck",
-        "brauneck - lenggries",
-        "brauneck-bergbahn",
-        "brauneck-lenggries",
-        "lenggries"
-      ]
-    },
-    {
-      "id": "christlum",
-      "name": "Hochalmlifte Christlum - Achenkirch",
-      "aliases": [
-        "Hochalmlifte Christlum - Achenkirch",
-        "achenkirch",
-        "christlum",
-        "hochalmlifte",
-        "hochalmlifte christlum - achenkirch",
-        "hochalmlifte-christlum-achenkirch"
-      ]
-    },
-    {
-      "id": "dachstein-salzkammergut",
-      "name": "Obertraun - Dachstein Krippenstein",
-      "aliases": [
-        "Obertraun - Dachstein Krippenstein",
-        "dachstein",
-        "dachstein-salzkammergut",
-        "krippenstein",
-        "obertraun",
-        "obertraun - dachstein krippenstein",
-        "obertraun-dachstein-krippenstein"
-      ]
-    },
-    {
-      "id": "dietauplitz",
-      "name": "Tauplitz/Bad Mitterndorf",
-      "aliases": [
-        "Tauplitz/Bad Mitterndorf",
-        "dietauplitz",
-        "mitterndorf",
-        "tauplitzbad",
-        "tauplitzbad mitterndorf",
-        "tauplitzbad-mitterndorf"
-      ]
-    },
-    {
-      "id": "galsterberg",
-      "name": "Galsterberg",
-      "aliases": [
-        "Galsterberg",
-        "galsterberg"
-      ]
-    },
-    {
-      "id": "gerlitzen",
-      "name": "Gerlitzen Alpe",
-      "aliases": [
-        "Gerlitzen Alpe",
-        "alpe",
-        "gerlitzen",
-        "gerlitzen alpe",
-        "gerlitzen-alpe"
-      ]
-    },
-    {
-      "id": "gg-resort",
-      "name": "Großglockner Resort Kals-Matrei",
-      "aliases": [
-        "Großglockner Resort Kals-Matrei",
-        "gg-resort",
-        "großglockner",
-        "großglockner resort kals-matrei",
-        "großglockner-resort-kals-matrei",
-        "kals",
-        "matrei",
-        "resort"
-      ]
-    },
-    {
-      "id": "glungezerbahn",
-      "name": "Glungezer - Tulfes",
-      "aliases": [
-        "Glungezer - Tulfes",
-        "glungezer",
-        "glungezer - tulfes",
-        "glungezer-tulfes",
-        "glungezerbahn",
-        "tulfes"
-      ]
-    },
-    {
-      "id": "grebenzen",
-      "name": "Grebenzen - St. Lambrecht",
-      "aliases": [
-        "Grebenzen - St. Lambrecht",
-        "grebenzen",
-        "grebenzen - st lambrecht",
-        "grebenzen-st-lambrecht",
-        "lambrecht"
-      ]
-    },
-    {
-      "id": "grosseck-speiereck",
-      "name": "St. Michael - Großeck-Speiereck",
-      "aliases": [
-        "St. Michael - Großeck-Speiereck",
-        "grosseck-speiereck",
-        "großeck",
-        "michael",
-        "speiereck",
-        "st michael - großeck-speiereck",
-        "st-michael-großeck-speiereck"
-      ]
-    },
-    {
-      "id": "gurgl",
-      "name": "Obergurgl-Hochgurgl",
-      "aliases": [
-        "Obergurgl-Hochgurgl",
-        "gurgl",
-        "hochgurgl",
-        "obergurgl",
-        "obergurgl-hochgurgl"
-      ]
-    },
-    {
-      "id": "hauser-kaibling",
-      "name": "Hauser Kaibling",
-      "aliases": [
-        "Hauser Kaibling",
-        "hauser",
-        "hauser kaibling",
-        "hauser-kaibling",
-        "kaibling"
-      ]
-    },
-    {
-      "id": "heiligenblut",
-      "name": "Heiligenblut - Großglockner",
-      "aliases": [
-        "Heiligenblut - Großglockner",
-        "großglockner",
-        "heiligenblut",
-        "heiligenblut - großglockner",
-        "heiligenblut-großglockner"
-      ]
-    },
-    {
-      "id": "hinterstoder",
-      "name": "Hinterstoder - Höss",
-      "aliases": [
-        "Hinterstoder - Höss",
-        "hinterstoder",
-        "hinterstoder - höss",
-        "hinterstoder-hoss",
-        "höss"
-      ]
-    },
-    {
-      "id": "hintertuxergletscher",
-      "name": "Eggalmbahnen",
-      "aliases": [
-        "Eggalmbahnen",
-        "eggalmbahnen",
-        "hintertuxergletscher"
-      ]
-    },
-    {
-      "id": "hiwu",
-      "name": "Wurzeralm - Spital am Pyhrn",
-      "aliases": [
-        "Wurzeralm - Spital am Pyhrn",
-        "hiwu",
-        "pyhrn",
-        "spital",
-        "wurzeralm",
-        "wurzeralm - spital am pyhrn",
-        "wurzeralm-spital-am-pyhrn"
-      ]
-    },
-    {
-      "id": "hochf-gen",
-      "name": "Hochfügen",
-      "aliases": [
-        "Hochfügen",
-        "hochf-gen",
-        "hochfugen",
-        "hochfügen"
-      ]
-    },
-    {
-      "id": "hochficht",
-      "name": "Hochficht (Böhmerwald)",
-      "aliases": [
-        "Hochficht (Böhmerwald)",
-        "böhmerwald",
-        "hochficht",
-        "hochficht böhmerwald",
-        "hochficht-bohmerwald"
-      ]
-    },
-    {
-      "id": "hochkoenig",
-      "name": "Hochkönig - Maria Alm/Dienten/Mühlbach",
-      "aliases": [
-        "Hochkönig - Maria Alm/Dienten/Mühlbach",
-        "almdientenmühlbach",
-        "hochkoenig",
-        "hochkonig-maria-almdientenmuhlbach",
-        "hochkönig",
-        "hochkönig - maria almdientenmühlbach",
-        "maria"
-      ]
-    },
-    {
-      "id": "hochpustertal-ski",
-      "name": "Skizentrum Sillian/ Hochpustertal",
-      "aliases": [
-        "Skizentrum Sillian/ Hochpustertal",
-        "hochpustertal",
-        "hochpustertal-ski",
-        "sillian",
-        "skizentrum",
-        "skizentrum sillian hochpustertal",
-        "skizentrum-sillian-hochpustertal"
-      ]
-    },
-    {
-      "id": "hochzeiger",
-      "name": "Hochzeiger - Jerzens Pitztal",
-      "aliases": [
-        "Hochzeiger - Jerzens Pitztal",
-        "hochzeiger",
-        "hochzeiger - jerzens pitztal",
-        "hochzeiger-jerzens-pitztal",
-        "jerzens",
-        "pitztal"
-      ]
-    },
-    {
-      "id": "hochzillertal-kaltenbach",
-      "name": "Hochzillertal-Kaltenbach",
-      "aliases": [
-        "Hochzillertal-Kaltenbach",
-        "hochzillertal",
-        "hochzillertal-kaltenbach",
-        "kaltenbach"
-      ]
-    },
-    {
-      "id": "huettegglift",
-      "name": "Hüttegglift Weerberg",
-      "aliases": [
-        "Hüttegglift Weerberg",
-        "huettegglift",
-        "huttegglift-weerberg",
-        "hüttegglift",
-        "hüttegglift weerberg",
-        "weerberg"
-      ]
-    },
-    {
-      "id": "imster-bergbahnen",
-      "name": "Imst - Hochimst",
-      "aliases": [
-        "Imst - Hochimst",
-        "hochimst",
-        "imst",
-        "imst - hochimst",
-        "imst-hochimst",
-        "imster-bergbahnen"
-      ]
-    },
-    {
-      "id": "ischgl",
-      "name": "Ischgl - Silvretta Arena",
-      "aliases": [
-        "Ischgl - Silvretta Arena",
-        "arena",
-        "ischgl",
-        "ischgl - silvretta arena",
-        "ischgl-silvretta-arena",
-        "silvretta"
-      ]
-    },
-    {
-      "id": "jennerbahn",
-      "name": "Jenner - Königssee",
-      "aliases": [
-        "Jenner - Königssee",
-        "jenner",
-        "jenner - königssee",
-        "jenner-konigssee",
-        "jennerbahn",
-        "königssee"
-      ]
-    },
-    {
-      "id": "jimdofree",
-      "name": "Dorfberg Kartitsch",
-      "aliases": [
-        "Dorfberg Kartitsch",
-        "dorfberg",
-        "dorfberg kartitsch",
-        "dorfberg-kartitsch",
-        "jimdofree",
-        "kartitsch"
-      ]
-    },
-    {
-      "id": "kappl",
-      "name": "Kappl",
-      "aliases": [
-        "Kappl",
-        "kappl"
-      ]
-    },
-    {
-      "id": "karwendel-bergbahn",
-      "name": "Karwendel-Bergbahn - Pertisau",
-      "aliases": [
-        "Karwendel-Bergbahn - Pertisau",
-        "bergbahn",
-        "karwendel",
-        "karwendel-bergbahn",
-        "karwendel-bergbahn - pertisau",
-        "karwendel-bergbahn-pertisau",
-        "pertisau"
-      ]
-    },
-    {
-      "id": "kasberg",
-      "name": "Kasberg - Grünau im Almtal",
-      "aliases": [
-        "Kasberg - Grünau im Almtal",
-        "almtal",
-        "grünau",
-        "kasberg",
-        "kasberg - grünau im almtal",
-        "kasberg-grunau-im-almtal"
-      ]
-    },
-    {
-      "id": "katschberg",
-      "name": "Katschberg/Aineck",
-      "aliases": [
-        "Katschberg/Aineck",
-        "katschberg",
-        "katschbergaineck"
-      ]
-    },
-    {
-      "id": "katzenkopf-leutasch",
-      "name": "Katzenkopf Leutasch",
-      "aliases": [
-        "Katzenkopf Leutasch",
-        "katzenkopf",
-        "katzenkopf leutasch",
-        "katzenkopf-leutasch",
-        "leutasch"
-      ]
-    },
-    {
-      "id": "kaunertal",
-      "name": "Fendels - Ried - Prutz",
-      "aliases": [
-        "Fendels - Ried - Prutz",
-        "fendels",
-        "fendels - ried - prutz",
-        "fendels-ried-prutz",
-        "kaunertal",
-        "prutz",
-        "ried"
-      ]
-    },
-    {
-      "id": "kaunertaler-gletscher",
-      "name": "Kaunertaler Gletscher",
-      "aliases": [
-        "Kaunertaler Gletscher",
-        "gletscher",
-        "kaunertaler",
-        "kaunertaler gletscher",
-        "kaunertaler-gletscher"
-      ]
-    },
-    {
-      "id": "kellerjochbahn",
-      "name": "Kellerjochbahn Schwaz-Pill",
-      "aliases": [
-        "Kellerjochbahn Schwaz-Pill",
-        "kellerjochbahn",
-        "kellerjochbahn schwaz-pill",
-        "kellerjochbahn-schwaz-pill",
-        "pill",
-        "schwaz"
-      ]
-    },
-    {
-      "id": "kitzski",
-      "name": "Kitzbühel",
-      "aliases": [
-        "Kitzbühel",
-        "kitzbuhel",
-        "kitzbühel",
-        "kitzski"
-      ]
-    },
-    {
-      "id": "kitzsteinhorn",
-      "name": "Kaprun - Kitzsteinhorn (Gletscher)",
-      "aliases": [
-        "Kaprun - Kitzsteinhorn (Gletscher)",
-        "gletscher",
-        "kaprun",
-        "kaprun - kitzsteinhorn gletscher",
-        "kaprun-kitzsteinhorn-gletscher",
-        "kitzsteinhorn"
-      ]
-    },
-    {
-      "id": "knitteltirol",
-      "name": "Skilifte Knittel",
-      "aliases": [
-        "Skilifte Knittel",
-        "knittel",
-        "knitteltirol",
-        "skilifte",
-        "skilifte knittel",
-        "skilifte-knittel"
-      ]
-    },
-    {
-      "id": "kolsassberglift",
-      "name": "Kolsassberg",
-      "aliases": [
-        "Kolsassberg",
-        "kolsassberg",
-        "kolsassberglift"
-      ]
-    },
-    {
-      "id": "kreischberg",
-      "name": "Kreischberg",
-      "aliases": [
-        "Kreischberg",
-        "kreischberg"
-      ]
-    },
-    {
-      "id": "kuehtai",
-      "name": "Kühtai",
-      "aliases": [
-        "Kühtai",
-        "kuehtai",
-        "kuhtai",
-        "kühtai"
-      ]
-    },
-    {
-      "id": "lachtal",
-      "name": "Lachtal",
-      "aliases": [
-        "Lachtal",
-        "lachtal"
-      ]
-    },
-    {
-      "id": "laerchenhof-tirol",
-      "name": "Skilifte Lärchenhof",
-      "aliases": [
-        "Skilifte Lärchenhof",
-        "laerchenhof-tirol",
-        "lärchenhof",
-        "skilifte",
-        "skilifte lärchenhof",
-        "skilifte-larchenhof"
-      ]
-    },
-    {
-      "id": "lechtaler-bergbahnen",
-      "name": "Jöchelspitze Lechtal",
-      "aliases": [
-        "Jöchelspitze Lechtal",
-        "jochelspitze-lechtal",
-        "jöchelspitze",
-        "jöchelspitze lechtal",
-        "lechtal",
-        "lechtaler-bergbahnen"
-      ]
-    },
-    {
-      "id": "lienzer-bergbahnen",
-      "name": "Lienz Zettersfeld Hochstein",
-      "aliases": [
-        "Lienz Zettersfeld Hochstein",
-        "hochstein",
-        "lienz",
-        "lienz zettersfeld hochstein",
-        "lienz-zettersfeld-hochstein",
-        "lienzer-bergbahnen",
-        "zettersfeld"
-      ]
-    },
-    {
-      "id": "loser",
-      "name": "Loser - Altaussee",
-      "aliases": [
-        "Loser - Altaussee",
-        "altaussee",
-        "loser",
-        "loser - altaussee",
-        "loser-altaussee"
-      ]
-    },
-    {
-      "id": "mayrhofner-bergbahnen",
-      "name": "Mayrhofen - Penken/Ahorn",
-      "aliases": [
-        "Mayrhofen - Penken/Ahorn",
-        "mayrhofen",
-        "mayrhofen - penkenahorn",
-        "mayrhofen-penkenahorn",
-        "mayrhofner-bergbahnen",
-        "penkenahorn"
-      ]
-    },
-    {
-      "id": "mittersill",
-      "name": "Mittersill - Paß Thurn - Kitzbühel",
-      "aliases": [
-        "Mittersill - Paß Thurn - Kitzbühel",
-        "kitzbühel",
-        "mittersill",
-        "mittersill - paß thurn - kitzbühel",
-        "mittersill-paß-thurn-kitzbuhel",
-        "thurn"
-      ]
-    },
-    {
-      "id": "moelltaler-gletscher",
-      "name": "Mölltaler Gletscher",
-      "aliases": [
-        "Mölltaler Gletscher",
-        "gletscher",
-        "moelltaler-gletscher",
-        "molltaler-gletscher",
-        "mölltaler",
-        "mölltaler gletscher"
-      ]
-    },
-    {
-      "id": "muttereralm",
-      "name": "Muttereralm - Nockspitzbahn",
-      "aliases": [
-        "Muttereralm - Nockspitzbahn",
-        "muttereralm",
-        "muttereralm - nockspitzbahn",
-        "muttereralm-nockspitzbahn",
-        "nockspitzbahn"
-      ]
-    },
-    {
-      "id": "nassfeld",
-      "name": "Nassfeld - Hermagor",
-      "aliases": [
-        "Nassfeld - Hermagor",
-        "hermagor",
-        "nassfeld",
-        "nassfeld - hermagor",
-        "nassfeld-hermagor"
-      ]
-    },
-    {
-      "id": "nauders",
-      "name": "Nauders - Bergkastel",
-      "aliases": [
-        "Nauders - Bergkastel",
-        "bergkastel",
-        "nauders",
-        "nauders - bergkastel",
-        "nauders-bergkastel"
-      ]
-    },
-    {
-      "id": "nordkette",
-      "name": "Nordkette - Innsbruck",
-      "aliases": [
-        "Nordkette - Innsbruck",
-        "innsbruck",
-        "nordkette",
-        "nordkette - innsbruck",
-        "nordkette-innsbruck"
-      ]
-    },
-    {
-      "id": "obertauern",
-      "name": "Obertauern",
-      "aliases": [
-        "Obertauern",
-        "obertauern"
-      ]
-    },
-    {
-      "id": "obertilliacher-bergbahnen",
-      "name": "Obertilliacher Bergbahnen",
-      "aliases": [
-        "Obertilliacher Bergbahnen",
-        "bergbahnen",
-        "obertilliacher",
-        "obertilliacher bergbahnen",
-        "obertilliacher-bergbahnen"
-      ]
-    },
-    {
-      "id": "oetz",
-      "name": "Hochoetz - Oetz",
-      "aliases": [
-        "Hochoetz - Oetz",
-        "hochoetz",
-        "hochoetz - oetz",
-        "hochoetz-oetz",
-        "oetz"
-      ]
-    },
-    {
-      "id": "oetztal",
-      "name": "Umhausen",
-      "aliases": [
-        "Umhausen",
-        "oetztal",
-        "umhausen"
-      ]
-    },
-    {
-      "id": "ok-bergbahnen",
-      "name": "Oberstdorf - Nebelhorn",
-      "aliases": [
-        "Oberstdorf - Nebelhorn",
-        "nebelhorn",
-        "oberstdorf",
-        "oberstdorf - nebelhorn",
-        "oberstdorf-nebelhorn",
-        "ok-bergbahnen"
-      ]
-    },
-    {
-      "id": "patscherkofelbahn",
-      "name": "Patscherkofel",
-      "aliases": [
-        "Patscherkofel",
-        "patscherkofel",
-        "patscherkofelbahn"
-      ]
-    },
-    {
-      "id": "pitztaler-gletscher",
-      "name": "Pitztaler Gletscher - Rifflsee",
-      "aliases": [
-        "Pitztaler Gletscher - Rifflsee",
-        "gletscher",
-        "pitztaler",
-        "pitztaler gletscher - rifflsee",
-        "pitztaler-gletscher",
-        "pitztaler-gletscher-rifflsee",
-        "rifflsee"
-      ]
-    },
-    {
-      "id": "planai",
-      "name": "Hochwurzen",
-      "aliases": [
-        "Hochwurzen",
-        "hochwurzen",
-        "planai"
-      ]
-    },
-    {
-      "id": "planneralm",
-      "name": "Planneralm",
-      "aliases": [
-        "Planneralm",
-        "planneralm"
-      ]
-    },
-    {
-      "id": "praebichl",
-      "name": "Präbichl",
-      "aliases": [
-        "Präbichl",
-        "prabichl",
-        "praebichl",
-        "präbichl"
-      ]
-    },
-    {
-      "id": "radstadt-altenmarkt",
-      "name": "Radstadt/Altenmarkt",
-      "aliases": [
-        "Radstadt/Altenmarkt",
-        "radstadt-altenmarkt",
-        "radstadtaltenmarkt"
-      ]
-    },
-    {
-      "id": "rangger-koepfl",
-      "name": "Rangger Köpfl",
-      "aliases": [
-        "Rangger Köpfl",
-        "köpfl",
-        "rangger",
-        "rangger köpfl",
-        "rangger-koepfl",
-        "rangger-kopfl"
-      ]
-    },
-    {
-      "id": "reiteralm",
-      "name": "Reiteralm",
-      "aliases": [
-        "Reiteralm",
-        "reiteralm"
-      ]
-    },
-    {
-      "id": "riesneralm",
-      "name": "Riesneralm - Donnersbachwald",
-      "aliases": [
-        "Riesneralm - Donnersbachwald",
-        "donnersbachwald",
-        "riesneralm",
-        "riesneralm - donnersbachwald",
-        "riesneralm-donnersbachwald"
-      ]
-    },
-    {
-      "id": "rittisberg",
-      "name": "Ramsau am Dachstein - Rittisberg",
-      "aliases": [
-        "Ramsau am Dachstein - Rittisberg",
-        "dachstein",
-        "ramsau",
-        "ramsau am dachstein - rittisberg",
-        "ramsau-am-dachstein-rittisberg",
-        "rittisberg"
-      ]
-    },
-    {
-      "id": "rofanseilbahn",
-      "name": "Rofan Seilbahn - Maurach",
-      "aliases": [
-        "Rofan Seilbahn - Maurach",
-        "maurach",
-        "rofan",
-        "rofan seilbahn - maurach",
-        "rofan-seilbahn-maurach",
-        "rofanseilbahn",
-        "seilbahn"
-      ]
-    },
-    {
-      "id": "rosshuette",
-      "name": "Seefeld - Rosshütte",
-      "aliases": [
-        "Seefeld - Rosshütte",
-        "rosshuette",
-        "rosshütte",
-        "seefeld",
-        "seefeld - rosshütte",
-        "seefeld-rosshutte"
-      ]
-    },
-    {
-      "id": "schmitten",
-      "name": "Zell am See - Schmittenhöhe",
-      "aliases": [
-        "Zell am See - Schmittenhöhe",
-        "schmitten",
-        "schmittenhöhe",
-        "zell",
-        "zell am see - schmittenhöhe",
-        "zell-am-see-schmittenhohe"
-      ]
-    },
-    {
-      "id": "schneeberglifte",
-      "name": "Schneeberglifte Thiersee",
-      "aliases": [
-        "Schneeberglifte Thiersee",
-        "schneeberglifte",
-        "schneeberglifte thiersee",
-        "schneeberglifte-thiersee",
-        "thiersee"
-      ]
-    },
-    {
-      "id": "see",
-      "name": "See im Paznaun",
-      "aliases": [
-        "See im Paznaun",
-        "paznaun",
-        "see",
-        "see im paznaun",
-        "see-im-paznaun"
-      ]
-    },
-    {
-      "id": "serfaus-fiss-ladis",
-      "name": "Serfaus-Fiss-Ladis",
-      "aliases": [
-        "Serfaus-Fiss-Ladis",
-        "fiss",
-        "ladis",
-        "serfaus",
-        "serfaus-fiss-ladis"
-      ]
-    },
-    {
-      "id": "shuttleberg",
-      "name": "Kleinarl - Shuttleberg",
-      "aliases": [
-        "Kleinarl - Shuttleberg",
-        "kleinarl",
-        "kleinarl - shuttleberg",
-        "kleinarl-shuttleberg",
-        "shuttleberg"
-      ]
-    },
-    {
-      "id": "silvapark",
-      "name": "Galtür - Silvapark",
-      "aliases": [
-        "Galtür - Silvapark",
-        "galtur-silvapark",
-        "galtür",
-        "galtür - silvapark",
-        "silvapark"
-      ]
-    },
-    {
-      "id": "silvretta-montafon",
-      "name": "Silvretta Montafon",
-      "aliases": [
-        "Silvretta Montafon",
-        "montafon",
-        "silvretta",
-        "silvretta montafon",
-        "silvretta-montafon"
-      ]
-    },
-    {
-      "id": "skiamade",
-      "name": "Ski Amadé",
-      "aliases": [
-        "Ski Amadé",
-        "amadé",
-        "ski amadé",
-        "ski-amade",
-        "skiamade"
-      ]
-    },
-    {
-      "id": "skicircus",
-      "name": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
-      "aliases": [
-        "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
-        "fieberbrunn",
-        "hinterglemm",
-        "leogang",
-        "saalbach",
-        "skicircus",
-        "skicircus saalbach hinterglemm leogang fieberbrunn",
-        "skicircus-saalbach-hinterglemm-leogang-fieberbrunn"
-      ]
-    },
-    {
-      "id": "skigastein",
-      "name": "Sportgastein",
-      "aliases": [
-        "Sportgastein",
-        "skigastein",
-        "sportgastein"
-      ]
-    },
-    {
-      "id": "skigebiet-seefeld",
-      "name": "Gschwandtkopflifte",
-      "aliases": [
-        "Gschwandtkopflifte",
-        "gschwandtkopflifte",
-        "skigebiet-seefeld"
-      ]
-    },
-    {
-      "id": "skijuwel",
-      "name": "Ski Juwel Alpbachtal Wildschönau",
-      "aliases": [
-        "Ski Juwel Alpbachtal Wildschönau",
-        "alpbachtal",
-        "juwel",
-        "ski juwel alpbachtal wildschönau",
-        "ski-juwel-alpbachtal-wildschonau",
-        "skijuwel",
-        "wildschönau"
-      ]
-    },
-    {
-      "id": "skisport",
-      "name": "Kössen",
-      "aliases": [
-        "Kössen",
-        "kossen",
-        "kössen",
-        "skisport"
-      ]
-    },
-    {
-      "id": "skiwelt",
-      "name": "SkiWelt Wilder Kaiser – Brixental",
-      "aliases": [
-        "SkiWelt Wilder Kaiser – Brixental",
-        "brixental",
-        "kaiser",
-        "skiwelt",
-        "skiwelt wilder kaiser brixental",
-        "skiwelt-wilder-kaiser-brixental",
-        "wilder"
-      ]
-    },
-    {
-      "id": "snow-space-salzburg",
-      "name": "Snow Space Salzburg",
-      "aliases": [
-        "Snow Space Salzburg",
-        "salzburg",
-        "snow",
-        "snow space salzburg",
-        "snow-space-salzburg",
-        "space"
-      ]
-    },
-    {
-      "id": "soelden",
-      "name": "Sölden (Rettenbach/Tiefenbach)",
-      "aliases": [
-        "Sölden (Rettenbach/Tiefenbach)",
-        "rettenbachtiefenbach",
-        "soelden",
-        "solden-rettenbachtiefenbach",
-        "sölden",
-        "sölden rettenbachtiefenbach"
-      ]
-    },
-    {
-      "id": "spieljochbahn-f-gen",
-      "name": "Spieljochbahn Fügen",
-      "aliases": [
-        "Spieljochbahn Fügen",
-        "fügen",
-        "spieljochbahn",
-        "spieljochbahn fügen",
-        "spieljochbahn-f-gen",
-        "spieljochbahn-fugen"
-      ]
-    },
-    {
-      "id": "sportberg-goldeck",
-      "name": "Goldeck - Spittal/Drau",
-      "aliases": [
-        "Goldeck - Spittal/Drau",
-        "goldeck",
-        "goldeck - spittaldrau",
-        "goldeck-spittaldrau",
-        "spittaldrau",
-        "sportberg-goldeck"
-      ]
-    },
-    {
-      "id": "steinplatte",
-      "name": "Steinplatte - Waidring",
-      "aliases": [
-        "Steinplatte - Waidring",
-        "steinplatte",
-        "steinplatte - waidring",
-        "steinplatte-waidring",
-        "waidring"
-      ]
-    },
-    {
-      "id": "stjakob-ski",
-      "name": "St. Jakob im Defereggental - Brunnalm",
-      "aliases": [
-        "St. Jakob im Defereggental - Brunnalm",
-        "brunnalm",
-        "defereggental",
-        "jakob",
-        "st jakob im defereggental - brunnalm",
-        "st-jakob-im-defereggental-brunnalm",
-        "stjakob-ski"
-      ]
-    },
-    {
-      "id": "stubai",
-      "name": "Schlick 2000",
-      "aliases": [
-        "2000",
-        "Schlick 2000",
-        "schlick",
-        "schlick 2000",
-        "schlick-2000",
-        "stubai"
-      ]
-    },
-    {
-      "id": "stubaier-gletscher",
-      "name": "Stubaier Gletscher",
-      "aliases": [
-        "Stubaier Gletscher",
-        "gletscher",
-        "stubaier",
-        "stubaier gletscher",
-        "stubaier-gletscher"
-      ]
-    },
-    {
-      "id": "sudelfeld",
-      "name": "Sudelfeld - Bayrischzell",
-      "aliases": [
-        "Sudelfeld - Bayrischzell",
-        "bayrischzell",
-        "sudelfeld",
-        "sudelfeld - bayrischzell",
-        "sudelfeld-bayrischzell"
-      ]
-    },
-    {
-      "id": "tannheimer-bergbahnen",
-      "name": "Neunerköpfle - Tannheim",
-      "aliases": [
-        "Neunerköpfle - Tannheim",
-        "neunerkopfle-tannheim",
-        "neunerköpfle",
-        "neunerköpfle - tannheim",
-        "tannheim",
-        "tannheimer-bergbahnen"
-      ]
-    },
-    {
-      "id": "tirol",
-      "name": "Bichllifte Prägraten",
-      "aliases": [
-        "Bichllifte Prägraten",
-        "bichllifte",
-        "bichllifte prägraten",
-        "bichllifte-pragraten",
-        "prägraten",
-        "tirol"
-      ]
-    },
-    {
-      "id": "tirolina",
-      "name": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
-      "aliases": [
-        "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
-        "aktivberg",
-        "sport",
-        "thiersee",
-        "tirolina",
-        "tirolina - ski-sport- und aktivberg thiersee",
-        "tirolina-ski-sport-und-aktivberg-thiersee"
-      ]
-    },
-    {
-      "id": "turracherhoehe",
-      "name": "Turracher Höhe (Kärnten/Steiermark)",
-      "aliases": [
-        "Turracher Höhe (Kärnten/Steiermark)",
-        "höhe",
-        "kärntensteiermark",
-        "turracher",
-        "turracher höhe kärntensteiermark",
-        "turracher-hohe-karntensteiermark",
-        "turracherhoehe"
-      ]
-    },
-    {
-      "id": "venet",
-      "name": "Venet - Zams/Fließ",
-      "aliases": [
-        "Venet - Zams/Fließ",
-        "venet",
-        "venet - zamsfließ",
-        "venet-zamsfließ",
-        "zamsfließ"
-      ]
-    },
-    {
-      "id": "vent",
-      "name": "Venter Seilbahnen",
-      "aliases": [
-        "Venter Seilbahnen",
-        "seilbahnen",
-        "vent",
-        "venter",
-        "venter seilbahnen",
-        "venter-seilbahnen"
-      ]
-    },
-    {
-      "id": "voegelsberg",
-      "name": "Vögelsberg Aktivpark",
-      "aliases": [
-        "Vögelsberg Aktivpark",
-        "aktivpark",
-        "voegelsberg",
-        "vogelsberg-aktivpark",
-        "vögelsberg",
-        "vögelsberg aktivpark"
-      ]
-    },
-    {
-      "id": "werfenweng",
-      "name": "Werfenweng",
-      "aliases": [
-        "Werfenweng",
-        "werfenweng"
-      ]
-    },
-    {
-      "id": "wetterstein-bahnen",
-      "name": "Ehrwalder Wettersteinbahnen",
-      "aliases": [
-        "Ehrwalder Wettersteinbahnen",
-        "ehrwalder",
-        "ehrwalder wettersteinbahnen",
-        "ehrwalder-wettersteinbahnen",
-        "wetterstein-bahnen",
-        "wettersteinbahnen"
-      ]
-    },
-    {
-      "id": "wildkogel-arena",
-      "name": "Wildkogel Arena",
-      "aliases": [
-        "Wildkogel Arena",
-        "arena",
-        "wildkogel",
-        "wildkogel arena",
-        "wildkogel-arena"
-      ]
-    },
-    {
-      "id": "winklmoosalm",
-      "name": "Winklmoosalm - Reit im Winkl",
-      "aliases": [
-        "Winklmoosalm - Reit im Winkl",
-        "reit",
-        "winkl",
-        "winklmoosalm",
-        "winklmoosalm - reit im winkl",
-        "winklmoosalm-reit-im-winkl"
-      ]
-    },
-    {
-      "id": "yappys-winterland",
-      "name": "Skilifte Kirchdorf",
-      "aliases": [
-        "Skilifte Kirchdorf",
-        "kirchdorf",
-        "skilifte",
-        "skilifte kirchdorf",
-        "skilifte-kirchdorf",
-        "yappys-winterland"
-      ]
-    },
-    {
-      "id": "zauchensee",
-      "name": "Zauchensee - Flachauwinkl",
-      "aliases": [
-        "Zauchensee - Flachauwinkl",
-        "flachauwinkl",
-        "zauchensee",
-        "zauchensee - flachauwinkl",
-        "zauchensee-flachauwinkl"
-      ]
-    },
-    {
-      "id": "zillertal-arena",
-      "name": "Zillertal Arena",
-      "aliases": [
-        "Zillertal Arena",
-        "arena",
-        "zillertal",
-        "zillertal arena",
-        "zillertal-arena"
-      ]
-    },
-    {
-      "id": "zugspitzbahn",
-      "name": "Tiroler Zugspitzbahn",
-      "aliases": [
-        "Tiroler Zugspitzbahn",
-        "tiroler",
-        "tiroler zugspitzbahn",
-        "tiroler-zugspitzbahn",
-        "zugspitzbahn"
-      ]
-    },
-    {
-      "id": "zugspitze",
-      "name": "Zugspitze",
-      "aliases": [
-        "Zugspitze",
-        "zugspitze"
-      ]
-    }
-  ]
-}
+[
+  {
+    "group_id": "amberglift",
+    "group_name": "Amberglift Walchsee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "amberglift-walchsee",
+        "entryName": "Amberglift Walchsee",
+        "entryType": "main",
+        "lat": 47.641227,
+        "lon": 12.295233
+      }
+    ]
+  },
+  {
+    "group_id": "axamer-lizum",
+    "group_name": "Axamer Lizum",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "axamer-lizum",
+        "entryName": "Axamer Lizum",
+        "entryType": "main",
+        "lat": 47.195,
+        "lon": 11.281
+      }
+    ]
+  },
+  {
+    "group_id": "bergeralm",
+    "group_name": "Bergeralm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "bergeralm",
+        "entryName": "Bergeralm",
+        "entryType": "main",
+        "lat": 47.004371,
+        "lon": 12.39825
+      }
+    ]
+  },
+  {
+    "group_id": "bergwelt-hahnenkamm",
+    "group_name": "Bergwelt Hahnenkamm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "bergwelt-hahnenkamm",
+        "entryName": "Bergwelt Hahnenkamm",
+        "entryType": "main",
+        "lat": 47.144212,
+        "lon": 10.307553
+      }
+    ]
+  },
+  {
+    "group_id": "berwang",
+    "group_name": "Berwang",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "berwang",
+        "entryName": "Berwang",
+        "entryType": "main",
+        "lat": 47.40807,
+        "lon": 10.74735
+      },
+      {
+        "stable_id": "berwangbichlbach-berwanger-sonnalmbahn",
+        "entryName": "Bichlbach er Sonnalmbahn",
+        "entryType": "entry",
+        "lat": 47.391,
+        "lon": 10.692
+      }
+    ]
+  },
+  {
+    "group_id": "tirol",
+    "group_name": "Bichllifte Prägraten",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "bichllifte-prägraten",
+        "entryName": "Bichllifte Prägraten",
+        "entryType": "main",
+        "lat": 47.01667,
+        "lon": 12.38333
+      },
+      {
+        "stable_id": "schattwald-zöblen-im-tannheimertal",
+        "entryName": "Schattwald",
+        "entryType": "entry",
+        "lat": 47.51667,
+        "lon": 10.45
+      },
+      {
+        "stable_id": "schwannerlifte-in-weerberg",
+        "entryName": "Schwannerlifte in Weerberg",
+        "entryType": "entry",
+        "lat": 47.124034,
+        "lon": 11.259919
+      }
+    ]
+  },
+  {
+    "group_id": "brauneck-bergbahn",
+    "group_name": "Brauneck - Lenggries",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "brauneck-lenggries",
+        "entryName": "Brauneck",
+        "entryType": "main",
+        "lat": 47.666,
+        "lon": 11.553
+      }
+    ]
+  },
+  {
+    "group_id": "bergbahn-pillersee",
+    "group_name": "Buchensteinwand - Pillersee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "bergbahnen-pillersee-buchensteinwand-st-ulrich",
+        "entryName": "Bergbahnen Pillersee",
+        "entryType": "entry",
+        "lat": 47.486326,
+        "lon": 12.587202
+      },
+      {
+        "stable_id": "buchensteinwand-pillersee",
+        "entryName": "Buchensteinwand",
+        "entryType": "main",
+        "lat": 47.497,
+        "lon": 12.576
+      }
+    ]
+  },
+  {
+    "group_id": "jimdofree",
+    "group_name": "Dorfberg Kartitsch",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "dorfberg-kartitsch",
+        "entryName": "Dorfberg Kartitsch",
+        "entryType": "main",
+        "lat": 46.72889,
+        "lon": 12.50083
+      }
+    ]
+  },
+  {
+    "group_id": "hintertuxergletscher",
+    "group_name": "Eggalmbahnen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "eggalmbahnen",
+        "entryName": "Eggalmbahnen",
+        "entryType": "main",
+        "lat": 47.156899,
+        "lon": 11.728876
+      },
+      {
+        "stable_id": "finkenberger-almbahnen",
+        "entryName": "Finkenberger Almbahnen",
+        "entryType": "entry",
+        "lat": 47.15285,
+        "lon": 11.821412
+      },
+      {
+        "stable_id": "hintertuxer-gletscher",
+        "entryName": "Hintertuxer Gletscher",
+        "entryType": "entry",
+        "lat": 47.074,
+        "lon": 11.664
+      },
+      {
+        "stable_id": "rastkogelbahnen",
+        "entryName": "Rastkogelbahnen",
+        "entryType": "entry",
+        "lat": 47.163698,
+        "lon": 11.7405103
+      }
+    ]
+  },
+  {
+    "group_id": "almbahn",
+    "group_name": "Ehrwalder Alm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "ehrwald-ehrwalder-alm",
+        "entryName": "Ehrwald",
+        "entryType": "entry",
+        "lat": 47.41,
+        "lon": 10.92
+      },
+      {
+        "stable_id": "ehrwalder-alm",
+        "entryName": "Ehrwalder Alm",
+        "entryType": "main",
+        "lat": 47.384912,
+        "lon": 10.968338
+      }
+    ]
+  },
+  {
+    "group_id": "wetterstein-bahnen",
+    "group_name": "Ehrwalder Wettersteinbahnen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "ehrwalder-wettersteinbahnen",
+        "entryName": "Ehrwalder Wettersteinbahnen",
+        "entryType": "main",
+        "lat": 47.410234,
+        "lon": 10.938698
+      }
+    ]
+  },
+  {
+    "group_id": "kaunertal",
+    "group_name": "Fendels - Ried - Prutz",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "fendels-ried-prutz",
+        "entryName": "Fendels",
+        "entryType": "main",
+        "lat": 47.076977,
+        "lon": 10.66669
+      }
+    ]
+  },
+  {
+    "group_id": "galsterberg",
+    "group_name": "Galsterberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "galsterberg",
+        "entryName": "Galsterberg",
+        "entryType": "main",
+        "lat": 47.385,
+        "lon": 13.944
+      }
+    ]
+  },
+  {
+    "group_id": "silvapark",
+    "group_name": "Galtür - Silvapark",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "galtür-silvapark",
+        "entryName": "Galtür",
+        "entryType": "main",
+        "lat": 46.96667,
+        "lon": 10.18333
+      }
+    ]
+  },
+  {
+    "group_id": "gerlitzen",
+    "group_name": "Gerlitzen Alpe",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "gerlitzen-alpe",
+        "entryName": "Gerlitzen Alpe",
+        "entryType": "main",
+        "lat": 46.669,
+        "lon": 13.894
+      }
+    ]
+  },
+  {
+    "group_id": "glungezerbahn",
+    "group_name": "Glungezer - Tulfes",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "glungezer-tulfes",
+        "entryName": "Glungezer",
+        "entryType": "main",
+        "lat": 47.235,
+        "lon": 11.522
+      }
+    ]
+  },
+  {
+    "group_id": "sportberg-goldeck",
+    "group_name": "Goldeck - Spittal/Drau",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "goldeck-spittaldrau",
+        "entryName": "Goldeck",
+        "entryType": "main",
+        "lat": 46.797,
+        "lon": 13.476
+      }
+    ]
+  },
+  {
+    "group_id": "grebenzen",
+    "group_name": "Grebenzen - St. Lambrecht",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "grebenzen-st-lambrecht",
+        "entryName": "Grebenzen",
+        "entryType": "main",
+        "lat": 47.07,
+        "lon": 14.34
+      }
+    ]
+  },
+  {
+    "group_id": "gg-resort",
+    "group_name": "Großglockner Resort Kals-Matrei",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "großglockner-resort-kalsmatrei",
+        "entryName": "Großglockner Resort Kals–Matrei",
+        "entryType": "main",
+        "lat": 46.999,
+        "lon": 12.562
+      }
+    ]
+  },
+  {
+    "group_id": "skigebiet-seefeld",
+    "group_name": "Gschwandtkopflifte",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "gschwandtkopflifte",
+        "entryName": "Gschwandtkopflifte",
+        "entryType": "main",
+        "lat": 47.3247875,
+        "lon": 11.1771783
+      }
+    ]
+  },
+  {
+    "group_id": "hauser-kaibling",
+    "group_name": "Hauser Kaibling",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hauser-kaibling",
+        "entryName": "Hauser Kaibling",
+        "entryType": "main",
+        "lat": 47.401,
+        "lon": 13.83
+      }
+    ]
+  },
+  {
+    "group_id": "heiligenblut",
+    "group_name": "Heiligenblut - Großglockner",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "heiligenblut-großglockner",
+        "entryName": "Heiligenblut",
+        "entryType": "main",
+        "lat": 47.037,
+        "lon": 12.846
+      }
+    ]
+  },
+  {
+    "group_id": "hinterstoder",
+    "group_name": "Hinterstoder - Höss",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hinterstoder-höss",
+        "entryName": "Hinterstoder",
+        "entryType": "main",
+        "lat": 47.696,
+        "lon": 14.158
+      }
+    ]
+  },
+  {
+    "group_id": "christlum",
+    "group_name": "Hochalmlifte Christlum - Achenkirch",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochalmlifte-christlum-achenkirch",
+        "entryName": "Hochalmlifte Christlum",
+        "entryType": "main",
+        "lat": 47.513119,
+        "lon": 11.697002
+      }
+    ]
+  },
+  {
+    "group_id": "hochficht",
+    "group_name": "Hochficht (Böhmerwald)",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochficht-böhmerwald",
+        "entryName": "Hochficht (Böhmerwald)",
+        "entryType": "main",
+        "lat": 48.732,
+        "lon": 13.913
+      }
+    ]
+  },
+  {
+    "group_id": "hochf-gen",
+    "group_name": "Hochfügen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochfügen",
+        "entryName": "Hochfügen",
+        "entryType": "main",
+        "lat": 47.269316,
+        "lon": 11.775599
+      }
+    ]
+  },
+  {
+    "group_id": "hochkoenig",
+    "group_name": "Hochkönig - Maria Alm/Dienten/Mühlbach",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochkönig-maria-almdientenmühlbach",
+        "entryName": "Hochkönig",
+        "entryType": "main",
+        "lat": 47.391,
+        "lon": 13.103
+      }
+    ]
+  },
+  {
+    "group_id": "bergbahnen-koessen",
+    "group_name": "Hochkössen (Unterberghorn)",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochkössen-unterberghorn",
+        "entryName": "Hochkössen (Unterberghorn)",
+        "entryType": "main",
+        "lat": 47.674,
+        "lon": 12.423
+      }
+    ]
+  },
+  {
+    "group_id": "oetz",
+    "group_name": "Hochoetz - Oetz",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochoetz-oetz",
+        "entryName": "Hochoetz",
+        "entryType": "main",
+        "lat": 47.212221,
+        "lon": 10.929613
+      }
+    ]
+  },
+  {
+    "group_id": "planai",
+    "group_name": "Hochwurzen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochwurzen",
+        "entryName": "Hochwurzen",
+        "entryType": "main",
+        "lat": 47.367,
+        "lon": 13.72
+      },
+      {
+        "stable_id": "schladming-planaihochwurzen",
+        "entryName": "Schladming Planai",
+        "entryType": "entry",
+        "lat": 47.39,
+        "lon": 13.689
+      }
+    ]
+  },
+  {
+    "group_id": "hochzeiger",
+    "group_name": "Hochzeiger - Jerzens Pitztal",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochzeiger-jerzens-pitztal",
+        "entryName": "Hochzeiger",
+        "entryType": "main",
+        "lat": 47.1516147,
+        "lon": 10.757664
+      }
+    ]
+  },
+  {
+    "group_id": "hochzillertal-kaltenbach",
+    "group_name": "Hochzillertal-Kaltenbach",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hochzillertal-kaltenbach",
+        "entryName": "Hochzillertal-Kaltenbach",
+        "entryType": "main",
+        "lat": 47.296919,
+        "lon": 11.875362
+      }
+    ]
+  },
+  {
+    "group_id": "huettegglift",
+    "group_name": "Hüttegglift Weerberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "hüttegglift-weerberg",
+        "entryName": "Hüttegglift Weerberg",
+        "entryType": "main",
+        "lat": 47.289792,
+        "lon": 11.683876
+      }
+    ]
+  },
+  {
+    "group_id": "imster-bergbahnen",
+    "group_name": "Imst - Hochimst",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "imst-hochimst",
+        "entryName": "Imst",
+        "entryType": "main",
+        "lat": 47.239026,
+        "lon": 10.742382
+      }
+    ]
+  },
+  {
+    "group_id": "ischgl",
+    "group_name": "Ischgl - Silvretta Arena",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "ischgl-silvretta-arena",
+        "entryName": "Ischgl",
+        "entryType": "main",
+        "lat": 47.011371,
+        "lon": 10.293548
+      }
+    ]
+  },
+  {
+    "group_id": "jennerbahn",
+    "group_name": "Jenner - Königssee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "jenner-königssee",
+        "entryName": "Jenner",
+        "entryType": "main",
+        "lat": 47.583,
+        "lon": 12.996
+      }
+    ]
+  },
+  {
+    "group_id": "lechtaler-bergbahnen",
+    "group_name": "Jöchelspitze Lechtal",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "jöchelspitze-lechtal",
+        "entryName": "Jöchelspitze Lechtal",
+        "entryType": "main",
+        "lat": 47.281742,
+        "lon": 10.359239
+      }
+    ]
+  },
+  {
+    "group_id": "kappl",
+    "group_name": "Kappl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kappl",
+        "entryName": "Kappl",
+        "entryType": "main",
+        "lat": 47.069,
+        "lon": 10.376
+      }
+    ]
+  },
+  {
+    "group_id": "kitzsteinhorn",
+    "group_name": "Kaprun - Kitzsteinhorn (Gletscher)",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kaprun-kitzsteinhorn-gletscher",
+        "entryName": "Kaprun",
+        "entryType": "main",
+        "lat": 47.219,
+        "lon": 12.759
+      }
+    ]
+  },
+  {
+    "group_id": "karwendel-bergbahn",
+    "group_name": "Karwendel-Bergbahn - Pertisau",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "karwendel-bergbahn-pertisau",
+        "entryName": "Karwendel-Bergbahn",
+        "entryType": "main",
+        "lat": 47.427522,
+        "lon": 11.695987
+      }
+    ]
+  },
+  {
+    "group_id": "kasberg",
+    "group_name": "Kasberg - Grünau im Almtal",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kasberg-grünau-im-almtal",
+        "entryName": "Kasberg",
+        "entryType": "main",
+        "lat": 47.874,
+        "lon": 13.994
+      }
+    ]
+  },
+  {
+    "group_id": "katschberg",
+    "group_name": "Katschberg/Aineck",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "katschbergaineck",
+        "entryName": "Katschberg/Aineck",
+        "entryType": "main",
+        "lat": 47.074,
+        "lon": 13.647
+      }
+    ]
+  },
+  {
+    "group_id": "katzenkopf-leutasch",
+    "group_name": "Katzenkopf Leutasch",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "katzenkopf-leutasch",
+        "entryName": "Katzenkopf Leutasch",
+        "entryType": "main",
+        "lat": 47.369026,
+        "lon": 11.164731
+      }
+    ]
+  },
+  {
+    "group_id": "kaunertaler-gletscher",
+    "group_name": "Kaunertaler Gletscher",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kaunertaler-gletscher",
+        "entryName": "Kaunertaler Gletscher",
+        "entryType": "main",
+        "lat": 46.882,
+        "lon": 10.718
+      }
+    ]
+  },
+  {
+    "group_id": "kellerjochbahn",
+    "group_name": "Kellerjochbahn Schwaz-Pill",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kellerjochbahn-schwaz-pill",
+        "entryName": "Kellerjochbahn Schwaz-Pill",
+        "entryType": "main",
+        "lat": 47.321123,
+        "lon": 11.731026
+      }
+    ]
+  },
+  {
+    "group_id": "kitzski",
+    "group_name": "Kitzbühel",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kitzski-kitzbühelkirchberg",
+        "entryName": "KitzSki Kirchberg",
+        "entryType": "entry",
+        "lat": 47.442,
+        "lon": 12.392
+      }
+    ]
+  },
+  {
+    "group_id": "shuttleberg",
+    "group_name": "Kleinarl - Shuttleberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kleinarl-shuttleberg",
+        "entryName": "Kleinarl",
+        "entryType": "main",
+        "lat": 47.276,
+        "lon": 13.333
+      }
+    ]
+  },
+  {
+    "group_id": "kolsassberglift",
+    "group_name": "Kolsassberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kolsassberg",
+        "entryName": "Kolsassberg",
+        "entryType": "main",
+        "lat": 47.3,
+        "lon": 11.63333
+      }
+    ]
+  },
+  {
+    "group_id": "kreischberg",
+    "group_name": "Kreischberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kreischberg",
+        "entryName": "Kreischberg",
+        "entryType": "main",
+        "lat": 47.081,
+        "lon": 14.101
+      }
+    ]
+  },
+  {
+    "group_id": "skisport",
+    "group_name": "Kössen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kössen",
+        "entryName": "Kössen",
+        "entryType": "main",
+        "lat": 47.659278,
+        "lon": 12.391375
+      }
+    ]
+  },
+  {
+    "group_id": "kuehtai",
+    "group_name": "Kühtai",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "kühtai",
+        "entryName": "Kühtai",
+        "entryType": "main",
+        "lat": 47.212,
+        "lon": 11.023
+      }
+    ]
+  },
+  {
+    "group_id": "lachtal",
+    "group_name": "Lachtal",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "lachtal",
+        "entryName": "Lachtal",
+        "entryType": "main",
+        "lat": 47.255,
+        "lon": 14.384
+      }
+    ]
+  },
+  {
+    "group_id": "bergbahnen-langes",
+    "group_name": "Lermoos - Grubigstein",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "biberwier-marienberg",
+        "entryName": "Biberwier",
+        "entryType": "entry",
+        "lat": 47.368,
+        "lon": 10.873
+      },
+      {
+        "stable_id": "lermoos-grubigstein",
+        "entryName": "Lermoos",
+        "entryType": "main",
+        "lat": 47.401,
+        "lon": 10.879
+      }
+    ]
+  },
+  {
+    "group_id": "lienzer-bergbahnen",
+    "group_name": "Lienz Zettersfeld Hochstein",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "lienz-zettersfeld-hochstein",
+        "entryName": "Lienz Zettersfeld Hochstein",
+        "entryType": "main",
+        "lat": 46.830857,
+        "lon": 12.764987
+      }
+    ]
+  },
+  {
+    "group_id": "loser",
+    "group_name": "Loser - Altaussee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "loser-altaussee",
+        "entryName": "Loser",
+        "entryType": "main",
+        "lat": 47.645,
+        "lon": 13.79
+      }
+    ]
+  },
+  {
+    "group_id": "mayrhofner-bergbahnen",
+    "group_name": "Mayrhofen - Penken/Ahorn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "mayrhofen-penkenahorn",
+        "entryName": "Mayrhofen",
+        "entryType": "main",
+        "lat": 47.1904302,
+        "lon": 11.8568543
+      }
+    ]
+  },
+  {
+    "group_id": "mittersill",
+    "group_name": "Mittersill - Paß Thurn - Kitzbühel",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "mittersill-paß-thurn-kitzbühel",
+        "entryName": "Mittersill",
+        "entryType": "main",
+        "lat": 47.281856,
+        "lon": 12.48711
+      }
+    ]
+  },
+  {
+    "group_id": "muttereralm",
+    "group_name": "Muttereralm - Nockspitzbahn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "muttereralm-nockspitzbahn",
+        "entryName": "Muttereralm",
+        "entryType": "main",
+        "lat": 47.21978,
+        "lon": 11.321516
+      }
+    ]
+  },
+  {
+    "group_id": "moelltaler-gletscher",
+    "group_name": "Mölltaler Gletscher",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "mölltaler-gletscher",
+        "entryName": "Mölltaler Gletscher",
+        "entryType": "main",
+        "lat": 46.935,
+        "lon": 13.013
+      }
+    ]
+  },
+  {
+    "group_id": "nassfeld",
+    "group_name": "Nassfeld - Hermagor",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "nassfeld-hermagor",
+        "entryName": "Nassfeld",
+        "entryType": "main",
+        "lat": 46.556,
+        "lon": 13.282
+      }
+    ]
+  },
+  {
+    "group_id": "nauders",
+    "group_name": "Nauders - Bergkastel",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "nauders-bergkastel",
+        "entryName": "Nauders",
+        "entryType": "main",
+        "lat": 46.882,
+        "lon": 10.504
+      }
+    ]
+  },
+  {
+    "group_id": "tannheimer-bergbahnen",
+    "group_name": "Neunerköpfle - Tannheim",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "neunerköpfle-tannheim",
+        "entryName": "Neunerköpfle",
+        "entryType": "main",
+        "lat": 47.482127,
+        "lon": 10.542658
+      }
+    ]
+  },
+  {
+    "group_id": "nordkette",
+    "group_name": "Nordkette - Innsbruck",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "nordkette-innsbruck",
+        "entryName": "Nordkette",
+        "entryType": "main",
+        "lat": 47.285764,
+        "lon": 11.398915
+      }
+    ]
+  },
+  {
+    "group_id": "gurgl",
+    "group_name": "Obergurgl-Hochgurgl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "obergurgl-hochgurgl",
+        "entryName": "Obergurgl-Hochgurgl",
+        "entryType": "main",
+        "lat": 46.869,
+        "lon": 11.027
+      }
+    ]
+  },
+  {
+    "group_id": "ok-bergbahnen",
+    "group_name": "Oberstdorf - Nebelhorn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "oberstdorf-fellhornkanzelwand",
+        "entryName": "Oberstdorf",
+        "entryType": "entry",
+        "lat": 47.35,
+        "lon": 10.233
+      },
+      {
+        "stable_id": "oberstdorf-nebelhorn",
+        "entryName": "Oberstdorf",
+        "entryType": "main",
+        "lat": 47.416,
+        "lon": 10.328
+      },
+      {
+        "stable_id": "oberstdorf-söllereck",
+        "entryName": "Oberstdorf",
+        "entryType": "entry",
+        "lat": 47.385,
+        "lon": 10.223
+      }
+    ]
+  },
+  {
+    "group_id": "obertauern",
+    "group_name": "Obertauern",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "obertauern",
+        "entryName": "Obertauern",
+        "entryType": "main",
+        "lat": 47.251,
+        "lon": 13.563
+      }
+    ]
+  },
+  {
+    "group_id": "obertilliacher-bergbahnen",
+    "group_name": "Obertilliacher Bergbahnen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "obertilliacher-bergbahnen",
+        "entryName": "Obertilliacher Bergbahnen",
+        "entryType": "main",
+        "lat": 46.68333,
+        "lon": 12.6
+      }
+    ]
+  },
+  {
+    "group_id": "dachstein-salzkammergut",
+    "group_name": "Obertraun - Dachstein Krippenstein",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "obertraun-dachstein-krippenstein",
+        "entryName": "Obertraun",
+        "entryType": "main",
+        "lat": 47.543,
+        "lon": 13.686
+      }
+    ]
+  },
+  {
+    "group_id": "patscherkofelbahn",
+    "group_name": "Patscherkofel",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "patscherkofel",
+        "entryName": "Patscherkofel",
+        "entryType": "main",
+        "lat": 47.208828,
+        "lon": 11.460608
+      },
+      {
+        "stable_id": "patscherkofel-igls",
+        "entryName": "Igls",
+        "entryType": "entry",
+        "lat": 47.215,
+        "lon": 11.43
+      }
+    ]
+  },
+  {
+    "group_id": "pitztaler-gletscher",
+    "group_name": "Pitztaler Gletscher - Rifflsee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "pitztaler-gletscher-rifflsee",
+        "entryName": "Pitztaler Gletscher",
+        "entryType": "main",
+        "lat": 46.926822,
+        "lon": 10.879164
+      }
+    ]
+  },
+  {
+    "group_id": "planneralm",
+    "group_name": "Planneralm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "planneralm",
+        "entryName": "Planneralm",
+        "entryType": "main",
+        "lat": 47.402,
+        "lon": 14.084
+      }
+    ]
+  },
+  {
+    "group_id": "praebichl",
+    "group_name": "Präbichl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "präbichl",
+        "entryName": "Präbichl",
+        "entryType": "main",
+        "lat": 47.541,
+        "lon": 14.986
+      }
+    ]
+  },
+  {
+    "group_id": "radstadt-altenmarkt",
+    "group_name": "Radstadt/Altenmarkt",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "radstadtaltenmarkt",
+        "entryName": "Radstadt/Altenmarkt",
+        "entryType": "main",
+        "lat": 47.383,
+        "lon": 13.45
+      }
+    ]
+  },
+  {
+    "group_id": "rittisberg",
+    "group_name": "Ramsau am Dachstein - Rittisberg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "ramsau-am-dachstein-rittisberg",
+        "entryName": "Ramsau am Dachstein",
+        "entryType": "main",
+        "lat": 47.43,
+        "lon": 13.65
+      }
+    ]
+  },
+  {
+    "group_id": "rangger-koepfl",
+    "group_name": "Rangger Köpfl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "rangger-köpfl",
+        "entryName": "Rangger Köpfl",
+        "entryType": "main",
+        "lat": 47.242646,
+        "lon": 11.181427
+      },
+      {
+        "stable_id": "rangger-köpfl-oberperfuss",
+        "entryName": "Oberperfuss",
+        "entryType": "entry",
+        "lat": 47.264,
+        "lon": 11.259
+      }
+    ]
+  },
+  {
+    "group_id": "reiteralm",
+    "group_name": "Reiteralm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "reiteralm",
+        "entryName": "Reiteralm",
+        "entryType": "main",
+        "lat": 47.373,
+        "lon": 13.656
+      }
+    ]
+  },
+  {
+    "group_id": "riesneralm",
+    "group_name": "Riesneralm - Donnersbachwald",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "riesneralm-donnersbachwald",
+        "entryName": "Riesneralm",
+        "entryType": "main",
+        "lat": 47.383,
+        "lon": 14.1
+      }
+    ]
+  },
+  {
+    "group_id": "rofanseilbahn",
+    "group_name": "Rofan Seilbahn - Maurach",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "rofan-seilbahn-maurach",
+        "entryName": "Rofan Seilbahn",
+        "entryType": "main",
+        "lat": 47.434393,
+        "lon": 11.757219
+      }
+    ]
+  },
+  {
+    "group_id": "stubai",
+    "group_name": "Schlick 2000",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "elferbahnen-neustift",
+        "entryName": "Elferbahnen",
+        "entryType": "entry",
+        "lat": 47.109,
+        "lon": 11.309
+      },
+      {
+        "stable_id": "schlick-2000",
+        "entryName": "Schlick 2000",
+        "entryType": "main",
+        "lat": 47.156272,
+        "lon": 11.306785
+      },
+      {
+        "stable_id": "serlesbahnen-mieders",
+        "entryName": "Serlesbahnen",
+        "entryType": "entry",
+        "lat": 47.156,
+        "lon": 11.368
+      }
+    ]
+  },
+  {
+    "group_id": "schneeberglifte",
+    "group_name": "Schneeberglifte Thiersee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "schneeberglifte-thiersee",
+        "entryName": "Schneeberglifte Thiersee",
+        "entryType": "main",
+        "lat": 47.5876839,
+        "lon": 12.0910096
+      }
+    ]
+  },
+  {
+    "group_id": "see",
+    "group_name": "See im Paznaun",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "see-im-paznaun",
+        "entryName": "See im Paznaun",
+        "entryType": "main",
+        "lat": 47.079,
+        "lon": 10.756
+      }
+    ]
+  },
+  {
+    "group_id": "rosshuette",
+    "group_name": "Seefeld - Rosshütte",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "rosshütte-seefeld-in-tirol",
+        "entryName": "Rosshütte",
+        "entryType": "entry",
+        "lat": 47.331793,
+        "lon": 11.199848
+      },
+      {
+        "stable_id": "seefeld-rosshütte",
+        "entryName": "Seefeld",
+        "entryType": "main",
+        "lat": 47.345,
+        "lon": 11.185
+      }
+    ]
+  },
+  {
+    "group_id": "serfaus-fiss-ladis",
+    "group_name": "Serfaus-Fiss-Ladis",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "serfaus-fiss-ladis",
+        "entryName": "Serfaus-Fiss-Ladis",
+        "entryType": "main",
+        "lat": 47.039,
+        "lon": 10.6
+      }
+    ]
+  },
+  {
+    "group_id": "silvretta-montafon",
+    "group_name": "Silvretta Montafon",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "silvretta-montafon",
+        "entryName": "Silvretta Montafon",
+        "entryType": "main",
+        "lat": 47.044,
+        "lon": 9.987
+      }
+    ]
+  },
+  {
+    "group_id": "skiamade",
+    "group_name": "Ski Amadé",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "ski-amadé",
+        "entryName": "Ski Amadé",
+        "entryType": "main",
+        "lat": 47.336,
+        "lon": 13.465
+      }
+    ]
+  },
+  {
+    "group_id": "skijuwel",
+    "group_name": "Ski Juwel Alpbachtal Wildschönau",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "skijuwel-alpbachtal-wildschönau",
+        "entryName": "Skijuwel Alpbachtal",
+        "entryType": "main",
+        "lat": 47.444,
+        "lon": 11.945
+      }
+    ]
+  },
+  {
+    "group_id": "skicircus",
+    "group_name": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "saalbach-hinterglemm-leogang-fieberbrunn",
+        "entryName": "Saalbach Hinterglemm",
+        "entryType": "main",
+        "lat": 47.391,
+        "lon": 12.639
+      }
+    ]
+  },
+  {
+    "group_id": "yappys-winterland",
+    "group_name": "Skilifte Kirchdorf",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "skilifte-kirchdorf",
+        "entryName": "Skilifte Kirchdorf",
+        "entryType": "main",
+        "lat": 47.567804,
+        "lon": 10.452172
+      }
+    ]
+  },
+  {
+    "group_id": "knitteltirol",
+    "group_name": "Skilifte Knittel",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "skilifte-knittel",
+        "entryName": "Skilifte Knittel",
+        "entryType": "main",
+        "lat": 47.567804,
+        "lon": 10.452172
+      }
+    ]
+  },
+  {
+    "group_id": "laerchenhof-tirol",
+    "group_name": "Skilifte Lärchenhof",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "skilifte-lärchenhof",
+        "entryName": "Skilifte Lärchenhof",
+        "entryType": "main",
+        "lat": 47.5847241,
+        "lon": 12.4821568
+      }
+    ]
+  },
+  {
+    "group_id": "skiwelt",
+    "group_name": "SkiWelt Wilder Kaiser – Brixental",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "brixen-im-thale-skiwelt",
+        "entryName": "Brixen im Thale",
+        "entryType": "entry",
+        "lat": 47.466333,
+        "lon": 12.234134
+      },
+      {
+        "stable_id": "ellmau-going-skiwelt",
+        "entryName": "Ellmau-Going",
+        "entryType": "entry",
+        "lat": 47.519862,
+        "lon": 12.301404
+      },
+      {
+        "stable_id": "hopfgarten-itter-skiwelt",
+        "entryName": "Hopfgarten",
+        "entryType": "entry",
+        "lat": 47.449133,
+        "lon": 12.159385
+      },
+      {
+        "stable_id": "scheffau-skiwelt",
+        "entryName": "Scheffau",
+        "entryType": "entry",
+        "lat": 47.41987,
+        "lon": 12.244438
+      },
+      {
+        "stable_id": "söll-skiwelt",
+        "entryName": "Söll",
+        "entryType": "entry",
+        "lat": 47.504513,
+        "lon": 12.193689
+      },
+      {
+        "stable_id": "westendorf-skiwelt",
+        "entryName": "Westendorf",
+        "entryType": "entry",
+        "lat": 47.37698,
+        "lon": 12.21548
+      }
+    ]
+  },
+  {
+    "group_id": "hochpustertal-ski",
+    "group_name": "Skizentrum Sillian/ Hochpustertal",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "sillian-thurntaler-hochpustertal",
+        "entryName": "Sillian",
+        "entryType": "entry",
+        "lat": 46.749,
+        "lon": 12.42
+      },
+      {
+        "stable_id": "skizentrum-sillian-hochpustertal",
+        "entryName": "Skizentrum Sillian/ Hochpustertal",
+        "entryType": "main",
+        "lat": 46.750666,
+        "lon": 12.43325
+      }
+    ]
+  },
+  {
+    "group_id": "snow-space-salzburg",
+    "group_name": "Snow Space Salzburg",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "snow-space-salzburg-flachau",
+        "entryName": "Flachau",
+        "entryType": "main",
+        "lat": 47.342,
+        "lon": 13.394
+      },
+      {
+        "stable_id": "snow-space-salzburg-flachauwagrainst-johann",
+        "entryName": "Flachau Wagrain St. Johann",
+        "entryType": "entry",
+        "lat": 47.342,
+        "lon": 13.394
+      },
+      {
+        "stable_id": "snow-space-salzburg-st-johannalpendorf",
+        "entryName": "St. Johann Alpendorf",
+        "entryType": "entry",
+        "lat": 47.33,
+        "lon": 13.204
+      },
+      {
+        "stable_id": "snow-space-salzburg-wagrain",
+        "entryName": "Wagrain",
+        "entryType": "entry",
+        "lat": 47.335,
+        "lon": 13.29
+      }
+    ]
+  },
+  {
+    "group_id": "spieljochbahn-f-gen",
+    "group_name": "Spieljochbahn Fügen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "spieljochbahn-fügen",
+        "entryName": "Spieljochbahn Fügen",
+        "entryType": "main",
+        "lat": 47.338941,
+        "lon": 11.843108
+      }
+    ]
+  },
+  {
+    "group_id": "alpenbahnen-spitzingsee",
+    "group_name": "Spitzingsee - Tegernsee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "spitzingsee-tegernsee",
+        "entryName": "Spitzingsee",
+        "entryType": "main",
+        "lat": 47.65,
+        "lon": 11.9
+      }
+    ]
+  },
+  {
+    "group_id": "skigastein",
+    "group_name": "Sportgastein",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "gastein-bad-gastein",
+        "entryName": "Gastein",
+        "entryType": "entry",
+        "lat": 47.116,
+        "lon": 13.134
+      },
+      {
+        "stable_id": "gastein-bad-hofgastein",
+        "entryName": "Gastein",
+        "entryType": "entry",
+        "lat": 47.171,
+        "lon": 13.1
+      },
+      {
+        "stable_id": "sportgastein",
+        "entryName": "Sportgastein",
+        "entryType": "main",
+        "lat": 47.069,
+        "lon": 13.132
+      }
+    ]
+  },
+  {
+    "group_id": "stjakob-ski",
+    "group_name": "St. Jakob im Defereggental - Brunnalm",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "st-jakob-im-defereggental-brunnalm",
+        "entryName": "St. Jakob im Defereggental",
+        "entryType": "main",
+        "lat": 46.932,
+        "lon": 12.329
+      }
+    ]
+  },
+  {
+    "group_id": "bergbahnen-stjohann",
+    "group_name": "St. Johann in Tirol - Oberndorf",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "st-johann-in-tirol-oberndorf",
+        "entryName": "St. Johann in Tirol",
+        "entryType": "main",
+        "lat": 46.712002,
+        "lon": 11.138789
+      }
+    ]
+  },
+  {
+    "group_id": "grosseck-speiereck",
+    "group_name": "St. Michael - Großeck-Speiereck",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "st-michael-großeck-speiereck",
+        "entryName": "St. Michael",
+        "entryType": "main",
+        "lat": 47.1,
+        "lon": 13.633
+      }
+    ]
+  },
+  {
+    "group_id": "steinplatte",
+    "group_name": "Steinplatte - Waidring",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "steinplatte-waidring",
+        "entryName": "Steinplatte",
+        "entryType": "main",
+        "lat": 47.582,
+        "lon": 12.571
+      },
+      {
+        "stable_id": "steinplatte-winklmoosalm",
+        "entryName": "Steinplatte-Winklmoosalm",
+        "entryType": "entry",
+        "lat": 47.605714,
+        "lon": 12.554601
+      }
+    ]
+  },
+  {
+    "group_id": "stubaier-gletscher",
+    "group_name": "Stubaier Gletscher",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "stubaier-gletscher",
+        "entryName": "Stubaier Gletscher",
+        "entryType": "main",
+        "lat": 46.999,
+        "lon": 11.112
+      }
+    ]
+  },
+  {
+    "group_id": "sudelfeld",
+    "group_name": "Sudelfeld - Bayrischzell",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "sudelfeld-bayrischzell",
+        "entryName": "Sudelfeld",
+        "entryType": "main",
+        "lat": 47.692,
+        "lon": 12.011
+      }
+    ]
+  },
+  {
+    "group_id": "soelden",
+    "group_name": "Sölden (Rettenbach/Tiefenbach)",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "sölden-rettenbachtiefenbach",
+        "entryName": "Sölden (Rettenbach/Tiefenbach)",
+        "entryType": "main",
+        "lat": 46.97,
+        "lon": 10.987
+      }
+    ]
+  },
+  {
+    "group_id": "dietauplitz",
+    "group_name": "Tauplitz/Bad Mitterndorf",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "tauplitzbad-mitterndorf",
+        "entryName": "Tauplitz/Bad Mitterndorf",
+        "entryType": "main",
+        "lat": 47.565,
+        "lon": 13.99
+      }
+    ]
+  },
+  {
+    "group_id": "zugspitzbahn",
+    "group_name": "Tiroler Zugspitzbahn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "tiroler-zugspitzbahn",
+        "entryName": "Tiroler Zugspitzbahn",
+        "entryType": "main",
+        "lat": 47.4255773,
+        "lon": 10.9411261
+      }
+    ]
+  },
+  {
+    "group_id": "tirolina",
+    "group_name": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "tirolina-ski-sport-und-aktivberg-thiersee",
+        "entryName": "Tirolina",
+        "entryType": "main",
+        "lat": 47.2515148,
+        "lon": 11.4194271
+      }
+    ]
+  },
+  {
+    "group_id": "turracherhoehe",
+    "group_name": "Turracher Höhe (Kärnten/Steiermark)",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "turracher-höhe-kärntensteiermark",
+        "entryName": "Turracher Höhe (Kärnten/Steiermark)",
+        "entryType": "main",
+        "lat": 46.909,
+        "lon": 13.873
+      }
+    ]
+  },
+  {
+    "group_id": "oetztal",
+    "group_name": "Umhausen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "umhausen",
+        "entryName": "Umhausen",
+        "entryType": "main",
+        "lat": 47.137818,
+        "lon": 10.924619
+      }
+    ]
+  },
+  {
+    "group_id": "venet",
+    "group_name": "Venet - Zams/Fließ",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "landeck-zams-fliess-familienskigebiet-venet",
+        "entryName": "Landeck",
+        "entryType": "entry",
+        "lat": 47.135006,
+        "lon": 10.578077
+      },
+      {
+        "stable_id": "venet-zamsfließ",
+        "entryName": "Venet",
+        "entryType": "main",
+        "lat": 47.152,
+        "lon": 10.65
+      }
+    ]
+  },
+  {
+    "group_id": "vent",
+    "group_name": "Venter Seilbahnen",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "venter-seilbahnen",
+        "entryName": "Venter Seilbahnen",
+        "entryType": "main",
+        "lat": 47.472696,
+        "lon": 10.685707
+      }
+    ]
+  },
+  {
+    "group_id": "voegelsberg",
+    "group_name": "Vögelsberg Aktivpark",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "vögelsberg-aktivpark",
+        "entryName": "Vögelsberg Aktivpark",
+        "entryType": "main",
+        "lat": 47.275502,
+        "lon": 11.590985
+      }
+    ]
+  },
+  {
+    "group_id": "werfenweng",
+    "group_name": "Werfenweng",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "werfenweng",
+        "entryName": "Werfenweng",
+        "entryType": "main",
+        "lat": 47.46,
+        "lon": 13.247
+      }
+    ]
+  },
+  {
+    "group_id": "wildkogel-arena",
+    "group_name": "Wildkogel Arena",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "wildkogel-arena-neukirchenbramberg",
+        "entryName": "Neukirchen Bramberg",
+        "entryType": "main",
+        "lat": 47.25,
+        "lon": 12.265
+      }
+    ]
+  },
+  {
+    "group_id": "winklmoosalm",
+    "group_name": "Winklmoosalm - Reit im Winkl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "winklmoosalm-reit-im-winkl",
+        "entryName": "Winklmoosalm",
+        "entryType": "main",
+        "lat": 47.654,
+        "lon": 12.596
+      }
+    ]
+  },
+  {
+    "group_id": "hiwu",
+    "group_name": "Wurzeralm - Spital am Pyhrn",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "wurzeralm-spital-am-pyhrn",
+        "entryName": "Wurzeralm",
+        "entryType": "main",
+        "lat": 47.654,
+        "lon": 14.33
+      }
+    ]
+  },
+  {
+    "group_id": "zauchensee",
+    "group_name": "Zauchensee - Flachauwinkl",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "zauchensee-flachauwinkl",
+        "entryName": "Zauchensee",
+        "entryType": "main",
+        "lat": 47.29,
+        "lon": 13.455
+      }
+    ]
+  },
+  {
+    "group_id": "schmitten",
+    "group_name": "Zell am See - Schmittenhöhe",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "zell-am-see-schmittenhöhe",
+        "entryName": "Zell am See",
+        "entryType": "main",
+        "lat": 47.325,
+        "lon": 12.787
+      }
+    ]
+  },
+  {
+    "group_id": "zillertal-arena",
+    "group_name": "Zillertal Arena",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "gerlosstein-zillertal-arena",
+        "entryName": "Gerlosstein",
+        "entryType": "entry",
+        "lat": 47.194217,
+        "lon": 11.923857
+      },
+      {
+        "stable_id": "gerlos-zillertal-arena",
+        "entryName": "Gerlos",
+        "entryType": "entry",
+        "lat": 47.21667,
+        "lon": 12.0
+      },
+      {
+        "stable_id": "hochkrimml-zillertal-arena",
+        "entryName": "Hochkrimml",
+        "entryType": "entry",
+        "lat": 47.26179,
+        "lon": 11.88471
+      },
+      {
+        "stable_id": "königsleiten-zillertal-arena",
+        "entryName": "Königsleiten",
+        "entryType": "entry",
+        "lat": 47.26179,
+        "lon": 11.88471
+      },
+      {
+        "stable_id": "zell-am-ziller-zillertal-arena",
+        "entryName": "Zell am Ziller",
+        "entryType": "entry",
+        "lat": 47.233379,
+        "lon": 11.879974
+      },
+      {
+        "stable_id": "zillertal-arena",
+        "entryName": "Zillertal Arena",
+        "entryType": "main",
+        "lat": 47.242,
+        "lon": 12.091
+      }
+    ]
+  },
+  {
+    "group_id": "zugspitze",
+    "group_name": "Zugspitze",
+    "marketing_names": [],
+    "members": [
+      {
+        "stable_id": "garmisch-classic",
+        "entryName": "Garmisch-Classic",
+        "entryType": "entry",
+        "lat": 47.492,
+        "lon": 11.118
+      },
+      {
+        "stable_id": "zugspitze",
+        "entryName": "Zugspitze",
+        "entryType": "main",
+        "lat": 47.421,
+        "lon": 10.985
+      }
+    ]
+  }
+]

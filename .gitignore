@@ -17,3 +17,8 @@ tools/
 # Optional: große OSM Dateien (falls du die lokal hast)
 *.osm.pbf
 *.pbf
+
+# OSRM build artifacts (sehr groß) – nur lokal nötig
+osrm*/
+*.osrm*
+*.osrm.*
