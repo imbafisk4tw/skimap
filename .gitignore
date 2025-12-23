@@ -11,6 +11,8 @@ db/
 old/
 tools/
 data/
+!data/isochrones/
+!data/isochrones/*.geojson
 *.py
 *.ipynb
 
@@ -23,6 +25,5 @@ data/
 node_modules/
 
 
-# allow published isochrones
-!isochrones/
-!isochrones/*.geojson
+
+
