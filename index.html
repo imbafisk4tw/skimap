@@ -957,7 +957,7 @@ if (passType === "SCT") resorts[key].sct = true;
   });
 
   function loadTravelTimesJson() {
-    fetch("/data/travel_times.json")
+    fetch("data/travel_times.json")
       .then(resp => resp.json())
       .then(data => {
         Object.values(resorts).forEach(r => {
