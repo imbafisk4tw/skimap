@@ -12,21 +12,22 @@ old/
 tools/
 
 # data grundsätzlich ignorieren ...
-data/
-# ... aber Isochrones-Ordner + seine GeoJSON erlauben
+data/*
+# ... aber Isochrones-Ordner + GeoJSON darin erlauben
 !data/isochrones/
 !data/isochrones/**/
 !data/isochrones/**/*.geojson
 
+# --- scripts ---
 *.py
 *.ipynb
 
 # --- big osm artifacts ---
 *.osm.pbf
 *.pbf
-# GeoJSON grundsätzlich ignorieren ...
 *.geojson
-# ... außer die Isochrones GeoJSON (muss NACH *.geojson stehen!)
+
+# ... Ausnahme (muss NACH *.geojson stehen!)
 !data/isochrones/**/*.geojson
 
 # --- node ---

@@ -1,4 +1,0 @@
-https://www.snowcard.tirol.at/skigebiete?page=1
-bis page 2 3 4 5 usw
-
-npx http-server . -p 8080 -c-1
