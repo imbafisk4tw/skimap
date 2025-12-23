@@ -1,34 +1,19 @@
-# Secrets / lokale Konfiguration
+# Secrets / local config
+.env
 config.js
 
-# --- private / local ---
-.env
+# Node
+node_modules/
+
+# Local caches / runtime
 .cache/
 db/
 *.log
 
-# --- build / tools / scripts (nicht ins repo) ---
+# Not needed in repo
 old/
 tools/
 
-# data grundsätzlich ignorieren ...
-data/*
-# ... aber Isochrones-Ordner + GeoJSON darin erlauben
-!data/isochrones/
-!data/isochrones/**/
-!data/isochrones/**/*.geojson
-
-# --- scripts ---
-*.py
-*.ipynb
-
-# --- big osm artifacts ---
+# Optional: große OSM Dateien (falls du die lokal hast)
 *.osm.pbf
 *.pbf
-*.geojson
-
-# ... Ausnahme (muss NACH *.geojson stehen!)
-!data/isochrones/**/*.geojson
-
-# --- node ---
-node_modules/
