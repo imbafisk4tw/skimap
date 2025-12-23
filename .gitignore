@@ -10,20 +10,24 @@ db/
 # --- build / tools / scripts (nicht ins repo) ---
 old/
 tools/
+
+# data grundsätzlich ignorieren ...
 data/
+# ... aber Isochrones-Ordner + seine GeoJSON erlauben
 !data/isochrones/
-!data/isochrones/*.geojson
+!data/isochrones/**/
+!data/isochrones/**/*.geojson
+
 *.py
 *.ipynb
 
 # --- big osm artifacts ---
 *.osm.pbf
 *.pbf
+# GeoJSON grundsätzlich ignorieren ...
 *.geojson
+# ... außer die Isochrones GeoJSON (muss NACH *.geojson stehen!)
+!data/isochrones/**/*.geojson
 
 # --- node ---
 node_modules/
-
-
-
-
