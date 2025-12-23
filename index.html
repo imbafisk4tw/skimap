@@ -333,6 +333,8 @@ padding: 4px 6px;
 
 <script src="js/isochroneOverlay.js"></script>
 
+<script src="js/treeRoutesOverlay.js"></script>
+
 <script>
   // --------- Basis-Einstellungen ---------
   // ORS_API_KEY wird aus config.js gelesen (nicht in Git einchecken).
@@ -792,6 +794,72 @@ if (passType === "SCT") resorts[key].sct = true;
   window.applyTimeFilter   = ui.applyTimeFilter;
   window.focusResortByName = ui.focusResortByName;
   // Suche & Filter wurden in searchFilter.js ausgelagert.
+
+
+  // --------- Tree Routes Overlay (Reachability "Chaos"-Layer) ---------
+  // Erwartet eine Datei: data/routes/home_muc.geojson
+  // Du kannst später pro Home-Adresse eine andere Datei laden (home_<id>.geojson).
+  let tree = null;
+
+  function pctToLimitHours(pct) {
+    const p = Math.max(0, Math.min(100, Number(pct))) / 100;
+    // minHours/maxHours werden aus travel_times.json (oder ORS Matrix) gesetzt
+    if (!isFinite(minHours) || !isFinite(maxHours) || minHours === Infinity) return Infinity;
+    return minHours + p * (maxHours - minHours);
+  }
+
+  function syncTreeWithUi(uiObj, pct) {
+    if (!tree || !uiObj) return;
+
+    // 1) Zeitlimit aus Slider-Prozent
+    const limitHours = (pct >= 99) ? Infinity : pctToLimitHours(pct);
+    tree.setMaxHours(limitHours);
+
+    // 2) Weitere Filter: Wir übernehmen einfach die aktuell sichtbaren Resorts aus der UI
+    //    und zeigen nur deren Routen an.
+    const visible = uiObj.getVisibleResorts ? uiObj.getVisibleResorts() : [];
+    const visibleSet = new Set(visible.map(r => norm(r.name)));
+
+    tree.setPredicate((props) => {
+      const nm = props && (props.name || props.resort_name || props.resort) ? String(props.name || props.resort_name || props.resort) : "";
+      return visibleSet.has(norm(nm));
+    });
+  }
+
+  // Tree Overlay initialisieren und in Layer-Control aufnehmen
+  (async () => {
+    if (!window.TreeRoutesOverlay) return;
+    try {
+      tree = await window.TreeRoutesOverlay.init(map, {
+        url: "data/routes/home_muc.geojson",
+        enabled: false,
+        baseOpacity: 0.18
+      });
+
+      if (window.layerControl && tree.getLayer && tree.getLayer()) {
+        window.layerControl.addOverlay(tree.getLayer(), "Tree Routes (Fahrzeit-Netz)");
+      }
+
+      // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
+      if (ui && typeof ui.applyFilters === "function") {
+        const _apply = ui.applyFilters;
+        ui.applyFilters = function (pct) {
+          _apply(pct);
+          syncTreeWithUi(ui, pct);
+        };
+        // alte Alias-Funktion ebenfalls aktualisieren
+        window.applyTimeFilter = ui.applyFilters;
+        window.applyFilters = ui.applyFilters;
+      }
+
+      // initial sync
+      const initialPct = Number(timeSlider?.value ?? 100);
+      syncTreeWithUi(ui, initialPct);
+    } catch (err) {
+      console.error("TreeRoutesOverlay init failed:", err);
+      // kein alert, damit die Seite nicht "hart" bricht
+    }
+  })();
 
   function applyTravelTimesFromMap(ttMap) {
     const resortList = Object.values(resorts);
