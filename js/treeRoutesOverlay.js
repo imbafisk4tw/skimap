@@ -3,9 +3,11 @@
 
   // TreeRoutesOverlay: visualizes many routes (LineStrings) as a "reachability tree / chaos layer".
   // Expected GeoJSON FeatureCollection with LineString geometries and properties including:
-  // - duration_min OR duration_sec (used for time filtering + coloring)
+  // - duration_min OR duration_sec OR duration (seconds) (used for time filtering + coloring)
   //
-  // New: two-pass rendering (outline + colored stroke) for much better contrast on OSM tiles.
+  // New in this version:
+  // - Optional start marker (e.g. home) via opts.startPoint = [lat, lon] or {lat, lon}
+  // - Optional cache busting via opts.cacheBust = true | "v=123" | number
 
   function clamp(n, a, b) {
     return Math.max(a, Math.min(b, n));
@@ -34,6 +36,32 @@
       : "";
   }
 
+  function normalizeStartPoint(sp) {
+    // Accept [lat, lon] or {lat, lon}
+    if (!sp) return null;
+    if (Array.isArray(sp) && sp.length >= 2) {
+      const lat = Number(sp[0]);
+      const lon = Number(sp[1]);
+      if (isFinite(lat) && isFinite(lon)) return [lat, lon];
+      return null;
+    }
+    if (typeof sp === "object") {
+      const lat = Number(sp.lat);
+      const lon = Number(sp.lon);
+      if (isFinite(lat) && isFinite(lon)) return [lat, lon];
+    }
+    return null;
+  }
+
+  function withCacheBust(url, cacheBust) {
+    if (!cacheBust) return url;
+    const sep = url.includes("?") ? "&" : "?";
+    if (cacheBust === true) return url + sep + "v=" + Date.now();
+    if (typeof cacheBust === "number" && isFinite(cacheBust)) return url + sep + "v=" + cacheBust;
+    if (typeof cacheBust === "string" && cacheBust.trim()) return url + sep + cacheBust.trim().replace(/^\?+/, "");
+    return url + sep + "v=" + Date.now();
+  }
+
   async function init(map, opts) {
     if (typeof L === "undefined") throw new Error("Leaflet (L) not available.");
     if (!map) throw new Error("TreeRoutesOverlay.init: map missing.");
@@ -41,6 +69,11 @@
     const o = (opts || {});
     const url = o.url;
     const enabled = !!o.enabled;
+
+    // Optional start marker (e.g. home)
+    const startPoint = normalizeStartPoint(o.startPoint);
+    const startMarkerOptions = o.startMarkerOptions || {}; // Leaflet marker options
+    const startPopupText = (typeof o.startPopupText === "string") ? o.startPopupText : null;
 
     // Style defaults (tunable)
     const styleState = {
@@ -82,11 +115,22 @@
       }
     });
 
+    const layers = [outlineLayer, colorLayer];
+
+    // Optional home/start marker
+    let startMarkerLayer = null;
+    if (startPoint) {
+      startMarkerLayer = L.marker(startPoint, startMarkerOptions);
+      if (startPopupText) startMarkerLayer.bindPopup(startPopupText);
+      layers.push(startMarkerLayer);
+    }
+
     // One checkbox in LayerControl
-    const layerGroup = L.layerGroup([outlineLayer, colorLayer]);
+    const layerGroup = L.layerGroup(layers);
 
     async function load() {
-      const resp = await fetch(url);
+      const fetchUrl = withCacheBust(url, o.cacheBust);
+      const resp = await fetch(fetchUrl);
       if (!resp.ok) throw new Error("Failed to load routes GeoJSON: HTTP " + resp.status);
       const fc = await resp.json();
       const feats = Array.isArray(fc && fc.features) ? fc.features : [];

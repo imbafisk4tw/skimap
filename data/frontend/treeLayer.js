@@ -7,6 +7,10 @@
  *  - layerGroup: Leaflet layer group for LayerControl
  *  - setMaxHours(h), setPredicate(fn), setResortsById(map), refresh()
  *  - setRouteStyle({ ... }) for live tuning
+ *
+ * New in this version:
+ *  - Optional start/home marker via opts.startPoint = [lat, lon] or {lat, lon}
+ *  - Optional cache busting via opts.cacheBust = true | number | string
  */
 
 export async function createTreeLayer(opts) {
@@ -26,6 +30,16 @@ export async function createTreeLayer(opts) {
     // corridor defaults
     corridorOpacity = 0.18,
 
+    // optional: show home/start marker
+    // startPoint: [lat, lon] OR {lat, lon}
+    startPoint = null,
+    startPopupText = null,
+    startMarkerOptions = null,
+
+    // optional: cache busting for fetch URLs
+    // true => v=Date.now(), number => v=<number>, string => appended as query
+    cacheBust = false,
+
     // behavior
     enabled = false
   } = opts || {};
@@ -42,11 +56,35 @@ export async function createTreeLayer(opts) {
   let maxHours = (typeof opts.maxHours === "number") ? opts.maxHours : 3;
   let predicate = null;
 
-  // Load data
-  const routesFc = await fetch(routesUrl).then(r => r.json());
+  function normalizeStartPoint(sp) {
+    if (!sp) return null;
+    if (Array.isArray(sp) && sp.length >= 2) {
+      const lat = Number(sp[0]);
+      const lon = Number(sp[1]);
+      return (isFinite(lat) && isFinite(lon)) ? [lat, lon] : null;
+    }
+    if (typeof sp === "object") {
+      const lat = Number(sp.lat);
+      const lon = Number(sp.lon);
+      return (isFinite(lat) && isFinite(lon)) ? [lat, lon] : null;
+    }
+    return null;
+  }
+
+  function withCacheBust(url) {
+    if (!cacheBust) return url;
+    const sep = url.includes("?") ? "&" : "?";
+    if (cacheBust === true) return url + sep + "v=" + Date.now();
+    if (typeof cacheBust === "number" && isFinite(cacheBust)) return url + sep + "v=" + cacheBust;
+    if (typeof cacheBust === "string" && cacheBust.trim()) return url + sep + cacheBust.trim().replace(/^\?+/, "");
+    return url + sep + "v=" + Date.now();
+  }
+
+  // Load data (with optional cache bust)
+  const routesFc = await fetch(withCacheBust(routesUrl)).then(r => r.json());
   const allRoutes = Array.isArray(routesFc.features) ? routesFc.features : [];
 
-  const corridorsFc = corridorsUrl ? await fetch(corridorsUrl).then(r => r.json()) : null;
+  const corridorsFc = corridorsUrl ? await fetch(withCacheBust(corridorsUrl)).then(r => r.json()) : null;
 
   // Style helpers
   function minutesFromProps(p) {
@@ -102,6 +140,16 @@ export async function createTreeLayer(opts) {
   // One checkbox in LayerControl:
   const treeRoutesLayer = L.layerGroup([routesOutlineLayer, routesColorLayer]);
 
+  // Optional home/start marker
+  const sp = normalizeStartPoint(startPoint);
+  const startMarkerLayer = sp
+    ? L.marker(sp, startMarkerOptions || undefined)
+    : null;
+
+  if (startMarkerLayer && typeof startPopupText === "string" && startPopupText.trim()) {
+    startMarkerLayer.bindPopup(startPopupText.trim());
+  }
+
   // Predicate + time filter
   function passes(routeFt) {
     const minutes = minutesFromProps(routeFt.properties);
@@ -115,7 +163,10 @@ export async function createTreeLayer(opts) {
   }
 
   function refresh() {
-    const filtered = allRoutes.filter(f => f && f.geometry?.type === "LineString").filter(passes);
+    const filtered = allRoutes
+      .filter(f => f && f.geometry?.type === "LineString")
+      .filter(passes);
+
     const fcFiltered = { type: "FeatureCollection", features: filtered };
 
     routesOutlineLayer.clearLayers();
@@ -129,6 +180,7 @@ export async function createTreeLayer(opts) {
   const layerGroup = L.layerGroup([]);
   if (corridorsLayer) layerGroup.addLayer(corridorsLayer);
   layerGroup.addLayer(treeRoutesLayer);
+  if (startMarkerLayer) layerGroup.addLayer(startMarkerLayer);
 
   if (enabled) layerGroup.addTo(map);
 
@@ -137,11 +189,11 @@ export async function createTreeLayer(opts) {
     homeId,
     layerGroup,
 
-    // expose sublayers for devtools tuning
     treeRoutesLayer,
     routesOutlineLayer,
     routesColorLayer,
     corridorsLayer,
+    startMarkerLayer,
 
     setMaxHours(h) { maxHours = Number(h) || 0; refresh(); },
     setPredicate(fn) { predicate = (typeof fn === "function") ? fn : null; refresh(); },

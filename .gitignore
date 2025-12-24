@@ -18,7 +18,8 @@ tools/
 *.osm.pbf
 *.pbf
 
-# OSRM build artifacts (sehr groß) – nur lokal nötig
-osrm*/
+# OSRM artifacts / downloads (huge)
+osrm_*/
+osrm_dach/
+*.osm.pbf
 *.osrm*
-*.osrm.*
