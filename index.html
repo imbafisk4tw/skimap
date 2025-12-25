@@ -922,6 +922,34 @@ button, input, select, textarea{
 #mobile-panel label input{
   margin-right: 0;
 }
+
+
+/* --- FIX: Mobile panel horizontal overflow (Layers control was wider due to content-box + padding) --- */
+#mobile-panel .panel-section{
+  overflow-x: hidden !important;  /* prevent sideways scroll */
+  overflow-y: auto !important;
+}
+
+#mobile-panel .leaflet-control-layers,
+#mobile-panel .leaflet-control-layers.leaflet-control-layers-expanded{
+  box-sizing: border-box !important; /* include padding/border in width */
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+
+/* --- FIX: Filter box tiny horizontal scroll in mobile panel --- */
+#mobile-panel .filter-box.leaflet-control{
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important; /* keep vertical scroll, kill horizontal */
+}
+
+/* Some browsers still create 1–2px overflow due to label/gap -> clamp */
+#mobile-panel .filter-box.leaflet-control *{
+  max-width: 100% !important;
+}
 </style>
 
 </head>
