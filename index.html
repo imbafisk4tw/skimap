@@ -811,6 +811,48 @@ img.leaflet-marker-icon.last-search-marker {
   box-sizing: border-box !important;
 }
 
+
+
+/* --- FIX: Unified UI font sizes (side panel + right controls) --- */
+:root{
+  --ui-font-size: 14px;
+  --ui-font-size-small: 12px;
+  --ui-font-size-title: 14px;
+}
+
+/* Desktop right controls */
+.leaflet-top.leaflet-right .leaflet-control{
+  font-size: var(--ui-font-size) !important;
+}
+
+/* Mobile side panel: accordion titles + all Leaflet controls inside */
+#mobile-panel details.panel-accordion > summary{
+  font-size: var(--ui-font-size-title) !important;
+}
+
+#mobile-panel .leaflet-control,
+#mobile-panel .leaflet-control-layers,
+#mobile-panel .filter-box,
+#mobile-panel .export-box{
+  font-size: var(--ui-font-size) !important;
+}
+
+#mobile-panel .leaflet-control-layers label,
+#mobile-panel .leaflet-control-layers-list,
+#mobile-panel .filter-box label{
+  font-size: var(--ui-font-size) !important;
+}
+
+/* Small caps headings inside Leaflet layer control (KARTE / OVERLAYS) */
+#mobile-panel .leaflet-control-layers-base,
+#mobile-panel .leaflet-control-layers-overlays{
+  font-size: var(--ui-font-size-small) !important;
+}
+
+/* Export buttons in panel/desktop */
+.export-box button{
+  font-size: var(--ui-font-size) !important;
+}
 </style>
 
 </head>
