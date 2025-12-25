@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Ski-Pässe: Snow Card Tirol & SuperSkiCard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <!-- Leaflet CSS -->
   <link
@@ -85,10 +85,13 @@ html, body {
       height: 100%;
       margin: 0;
     }
+    :root { --app-h: 100dvh; }
+    @supports not (height: 100dvh) { :root { --app-h: 100vh; } }
     #map {
-      height: 100vh;
+      height: var(--app-h);
       width: 100vw;
     }
+
     .legend-box {
       position: fixed;
       bottom: 20px;
@@ -135,12 +138,25 @@ padding: 4px 6px;
       display: flex;
       gap: 6px;
       align-items: center;
+      flex-wrap: wrap;
     }
     .search-row input {
       flex: 1 1 auto;
       min-width: 0;
     }
-    #clear-verbund-btn {
+    #search-btn {
+      flex: 0 0 auto;
+      padding: 4px 10px;
+      font-size: 12px;
+      border: 1px solid #666;
+      border-radius: 3px;
+      background: #f0f0f0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #search-btn:hover{ background:#e0e0e0; }
+
+#clear-verbund-btn {
       flex: 0 0 auto;
       padding: 4px 8px;
       font-size: 12px;
@@ -255,7 +271,18 @@ padding: 4px 6px;
         right: 10px !important;
         width: auto !important;
         max-width: none !important;
-      }
+
+      /* Mobile: Startadresse & Export ausblenden */
+      .home-box { display: none !important; }
+      .export-box.leaflet-control { display: none !important; }
+
+      /* Mobile: bessere Tap-Ziele */
+      .filter-box label { padding: 6px 2px; }
+      .filter-box input[type="checkbox"] { width: 20px; height: 20px; }
+      .leaflet-control-layers label { padding: 6px 2px; }
+      .leaflet-control-layers-toggle { width: 44px; height: 44px; }
+
+    }
       .search-box input { width: 100% !important; }
       .slider-box { bottom: 120px !important; }
       .legend-box { bottom: 10px !important; }
@@ -282,19 +309,23 @@ padding: 4px 6px;
 </div>
 
 <!-- Suchfeld -->
-<div class="search-box">
+<form id="resort-search-form" class="search-box" autocomplete="off">
   <label for="resort-search">Skigebiet suchen</label>
   <div class="search-row">
     <input
       id="resort-search"
       list="resort-datalist"
-      type="text"
+      type="search"
+      inputmode="search"
+      enterkeyhint="search"
+      autocapitalize="off"
       placeholder="Name eingeben & Enter drücken..."
     />
+    <button id="search-btn" type="submit" title="Suche ausführen">Suchen</button>
     <button id="clear-verbund-btn" type="button" disabled>Verbundfilter aufheben</button>
   </div>
   <datalist id="resort-datalist"></datalist>
-</div>
+</form>
 
 <!-- Startadresse & Button -->
 <div class="home-box">

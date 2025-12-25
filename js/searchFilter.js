@@ -114,6 +114,9 @@ function setMapDim(on) {
     const searchInput = document.getElementById("resort-search");
     const datalist = document.getElementById("resort-datalist");
     
+    const searchForm = document.getElementById("resort-search-form");
+    const searchBtn = document.getElementById("search-btn");
+
     const clearVerbundBtn = document.getElementById("clear-verbund-btn");
 const timeSlider = document.getElementById("time-slider");
     const timeLabel = document.getElementById("time-slider-label");
@@ -532,15 +535,13 @@ if (elDim) {
         if (mode !== datalistMode) rebuildDatalist(mode);
       });
 
-      searchInput.addEventListener("keydown", (e) => {
-        if (e.key !== "Enter") return;
-        e.preventDefault();
-
+            function performSearch() {
         const raw = (searchInput.value || "").trim();
         if (!raw) return;
 
         // Index sicher aktuell halten (wichtig, weil resorts erst nachträglich befüllt werden)
         rebuildGroupIndex();
+
 
         // Prefix-Mode: z.B. "verbund: skiwelt" wie bei Google "site:".
         // Damit ist die Absicht eindeutig und wir müssen nicht raten.
@@ -628,7 +629,33 @@ if (elDim) {
         }
 // Fallback
         focusResortByName(onlyName);
+      }
+
+      // Mobile/Touch: Form-Submit + Button
+      if (searchForm) {
+        searchForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          performSearch();
+          try { searchInput.blur(); } catch (_) {}
+        });
+      }
+      if (searchBtn) {
+        searchBtn.addEventListener("click", (e) => {
+          // click löst ohnehin submit aus, aber falls das Markup anders ist: fallback
+          if (searchForm) return;
+          e.preventDefault();
+          performSearch();
+          try { searchInput.blur(); } catch (_) {}
+        });
+      }
+
+      // Desktop: Enter bleibt erhalten
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter") return;
+        e.preventDefault();
+        performSearch();
       });
+
     }
 
     // -------- Fahrzeit-Slider --------
