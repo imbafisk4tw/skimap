@@ -500,6 +500,15 @@ padding: 4px 6px;
       #mobile-panel, #mobile-panel-backdrop, #mobile-panel-toggle{ display:none !important; }
     }
 
+.control-select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.2);
+  background: white;
+}
+
+
 </style>
 
 </head>
@@ -550,6 +559,12 @@ padding: 4px 6px;
   <div id="time-slider-label" class="time-label">Voll (alle Gebiete)</div>
 </div>
 
+<!-- Home Selector (wird je nach Screen in Desktop-Box-Stack oder Mobile-Sidepanel verschoben) -->
+<div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;">
+  <div class="title">Startpunkt</div>
+  <select id="homeSelect" class="control-select"></select>
+</div>
+
 <!-- isochroneControl -->
 <!-- Leaflet JS -->
 <script
@@ -569,6 +584,8 @@ padding: 4px 6px;
 
 
 <script src="js/treeRoutesOverlay.js"></script>
+
+<script src="js/homeRoutesSelector.js"></script>
 
 <script>
   // --------- Basis-Einstellungen ---------
@@ -984,6 +1001,7 @@ if (passType === "SCT") resorts[key].sct = true;
     createFilterControl: true,
     createExportControl: true
   });
+  window.ui = ui;
 // Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
   window.rebuildDatalist   = ui.rebuildDatalist;
   window.updateTimeLabel   = ui.updateTimeLabel;
@@ -993,9 +1011,10 @@ if (passType === "SCT") resorts[key].sct = true;
 
 
   // --------- Tree Routes Overlay (Reachability "Chaos"-Layer) ---------
-  // Erwartet eine Datei: data/routes/home_muc.geojson
-  // Du kannst später pro Home-Adresse eine andere Datei laden (home_<id>.geojson).
+  // Erwartete Dateien: data/routes/home_<homeId>.geojson (z.B. home_muc.geojson)
+  // Home-Auswahl erfolgt über das Dropdown (HomeRoutesSelector) und lädt die passende Datei.
   let tree = null;
+  let currentTreeHomeId = "muc"; // Fallback; wird bei Init vom Selector überschrieben
 
   function pctToLimitHours(pct) {
     const p = Math.max(0, Math.min(100, Number(pct))) / 100;
@@ -1022,41 +1041,69 @@ if (passType === "SCT") resorts[key].sct = true;
     });
   }
 
-  // Tree Overlay initialisieren und in Layer-Control aufnehmen
-  (async () => {
-    if (!window.TreeRoutesOverlay) return;
-    try {
-      tree = await window.TreeRoutesOverlay.init(map, {
-        url: "data/routes/home_muc.geojson",
-        enabled: false,
-        baseOpacity: 0.18
-      });
+  // Tree Overlay (re-)initialisieren und (optional) in Layer-Control aufnehmen
+  async function ensureTreeOverlayForHome(homeId) {
+    if (!window.TreeRoutesOverlay) return null;
+    const url = `data/routes/home_${homeId}.geojson`;
 
-      // Debug/DevTools access
-      window.treeOverlay = tree;
+    // Enabled-Status merken
+    const wasEnabled = !!(tree && tree.getLayer && tree.getLayer() && map.hasLayer(tree.getLayer()));
 
-      if (window.layerControl && tree.getLayer && tree.getLayer()) {
-        window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
-      }
+    // Alte Instanz entfernen (Layer + Eintrag im LayerControl)
+    if (tree && tree.getLayer && tree.getLayer()) {
+      const oldLayer = tree.getLayer();
+      try { if (map.hasLayer(oldLayer)) map.removeLayer(oldLayer); } catch (_) {}
+      try { if (window.layerControl && typeof window.layerControl.removeLayer === "function") window.layerControl.removeLayer(oldLayer); } catch (_) {}
+    }
 
-      // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
-      if (ui && typeof ui.applyFilters === "function") {
-        const _apply = ui.applyFilters;
+    // Neu initialisieren (preserve enabled state)
+    const next = await window.TreeRoutesOverlay.init(map, {
+      url,
+      enabled: wasEnabled,   // bleibt an/aus wie vorher
+      baseOpacity: 0.18
+    });
+
+    tree = next;
+    currentTreeHomeId = homeId;
+    window.treeOverlay = tree;
+
+    // Eintrag (Checkbox) in Layer-Control hinzufügen (Leaflet setzt checked abhängig von map.hasLayer)
+    if (window.layerControl && tree.getLayer && tree.getLayer()) {
+      window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
+    }
+
+    // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
+    if (ui && typeof ui.applyFilters === "function") {
+      const _apply = ui.applyFilters;
+      if (!_apply.__treeHooked) {
         ui.applyFilters = function (pct) {
           _apply(pct);
           syncTreeWithUi(ui, pct);
         };
+        ui.applyFilters.__treeHooked = true;
+
         // alte Alias-Funktion ebenfalls aktualisieren
         window.applyTimeFilter = ui.applyFilters;
         window.applyFilters = ui.applyFilters;
       }
+    }
 
-      // initial sync
-      const initialPct = Number(timeSlider?.value ?? 100);
-      syncTreeWithUi(ui, initialPct);
+    // initial sync
+    const initialPct = Number(timeSlider?.value ?? 100);
+    syncTreeWithUi(ui, initialPct);
+
+    return tree;
+  }
+
+  // Expose for home selector
+  window.ensureTreeOverlayForHome = ensureTreeOverlayForHome;
+
+  // Initial: versuche mit muc zu laden (wenn Datei fehlt, bleibt es still)
+  (async () => {
+    try {
+      await ensureTreeOverlayForHome(currentTreeHomeId);
     } catch (err) {
-      console.error("TreeRoutesOverlay init failed:", err);
-      // kein alert, damit die Seite nicht "hart" bricht
+      console.warn("TreeRoutesOverlay init skipped/failed:", err);
     }
   })();
 
@@ -1271,7 +1318,36 @@ if (passType === "SCT") resorts[key].sct = true;
       });
   }
 
+  
+  // --------- Home Dropdown (Tree Routes auswählen) ---------
   document.addEventListener("DOMContentLoaded", () => {
+    if (!window.HomeRoutesSelector) return;
+
+    window.HomeRoutesSelector.init({
+      homesUrl: "data/homes.json",
+      routesDir: "data/routes",
+      routeFile: (homeId) => `data/routes/home_${homeId}.geojson`,
+      defaultHomeId: "muc",
+      selectId: "homeSelect",
+      boxId: "homeSelectorBox",
+      desktopHostSelector: ".leaflet-top.leaflet-right",
+      mobileHostId: "panel-filters", // im Side-Panel bei Mobile
+      storageKey: "skimap.selectedHomeId",
+      onHomeChanged: async (homeId, homeMeta) => {
+        // Slider-Label updaten
+        const lbl = document.querySelector('.slider-box label[for="time-slider"]');
+        if (lbl) lbl.textContent = `Max. Fahrzeit ab ${homeMeta?.name || homeId}`;
+
+        // Tree-Routes neu laden (ohne Checkbox-Status zu verändern)
+        if (typeof window.ensureTreeOverlayForHome === "function") {
+          try { await window.ensureTreeOverlayForHome(homeId); }
+          catch (e) { console.warn("ensureTreeOverlayForHome failed:", e); }
+        }
+      }
+    });
+  });
+
+document.addEventListener("DOMContentLoaded", () => {
     loadResortsAndInit();
   });
 
