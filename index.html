@@ -112,7 +112,9 @@
 }
 
 /* --- Filter-Box --- */
-.filter-box.leaflet-control{
+.filter-box.leaflet-control,
+.export-box.leaflet-control,
+.leaflet-control-layers{
   width: 210px;
 }
 .filter-box.leaflet-control,
@@ -125,6 +127,7 @@
   font-size: 13px;
   line-height: 1.35;
   box-sizing:border-box;
+  width: 210px;
 }
 .filter-box .title,
 .export-box .title{
@@ -780,6 +783,34 @@ img.leaflet-marker-icon.last-search-marker {
   65%  { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
+
+
+/* --- FIX: Desktop right controls unified width + edge spacing --- */
+:root{
+  --right-controls-w: 210px;
+  --right-controls-pad: 12px;
+}
+
+/* Abstand zum rechten/oberen Rand (wirkt wie "margin" zur Karte) */
+.leaflet-top.leaflet-right{
+  padding-right: var(--right-controls-pad) !important;
+  padding-top: var(--right-controls-pad) !important;
+}
+
+/* Alle Panel-Controls (Layers / Filters / Export) exakt gleich breit (outer width) */
+.leaflet-top.leaflet-right .leaflet-control-layers,
+.leaflet-top.leaflet-right .filter-box.leaflet-control,
+.leaflet-top.leaflet-right .export-box.leaflet-control{
+  width: var(--right-controls-w) !important;
+  box-sizing: border-box !important; /* Leaflet layers war sonst content-box -> wird breiter */
+}
+
+/* Sicherheit: auch im expanded state gleich breit */
+.leaflet-top.leaflet-right .leaflet-control-layers.leaflet-control-layers-expanded{
+  width: var(--right-controls-w) !important;
+  box-sizing: border-box !important;
+}
+
 </style>
 
 </head>

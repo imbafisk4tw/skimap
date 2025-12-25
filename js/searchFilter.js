@@ -427,13 +427,13 @@ function updateVerbundUi() {
       ctrl.onAdd = function () {
         const div = L.DomUtil.create("div", "filter-box leaflet-control");
         div.innerHTML = `
-          <div class="title">Filter</div>
-          <label><input type="checkbox" id="flt-sct" checked> Nur Snow Card Tirol</label>
-          <label><input type="checkbox" id="flt-ssc" checked> Nur SuperSkiCard</label>
-          <label><input type="checkbox" id="flt-both" checked> Beide Pässe</label>
-          <label><input type="checkbox" id="flt-glacier" checked> Gletscher</label>
-          <label><input type="checkbox" id="flt-muc" checked> Nahe München</label>
-                  <label><input type="checkbox" id="flt-dimmap"> Karte abdunkeln</label>
+          <div class="title">Filters</div>
+          <label><input type="checkbox" id="flt-sct" checked> Snow Card Tirol</label>
+          <label><input type="checkbox" id="flt-ssc" checked> SuperSkiCard</label>
+          <label><input type="checkbox" id="flt-both" checked> Both passes</label>
+          <label><input type="checkbox" id="flt-glacier" checked> Glaciers</label>
+          <label><input type="checkbox" id="flt-muc" checked> Near Munich</label>
+                  <label><input type="checkbox" id="flt-dimmap"> Dark Mode</label>
 `;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
@@ -492,11 +492,10 @@ if (elDim) {
       exportControl.onAdd = function () {
         const div = L.DomUtil.create("div", "export-box leaflet-control");
         div.innerHTML = `
-          <div class="title">Export (aktueller Filter)</div>
-          <button id="${exportCsvBtnId}" type="button">CSV → Google My Maps</button>
-          <button id="${exportKmlBtnId}" type="button">KML → Google My Maps</button>
-          <div class="hint">Import in Google My Maps, danach in Google Maps nutzbar.</div>
-        `;
+          <div class="title">Export (Slider Selection)</div>
+          <button id="${exportCsvBtnId}" type="button">CSV</button>
+          <button id="${exportKmlBtnId}" type="button">KML</button>
+`;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
         return div;
