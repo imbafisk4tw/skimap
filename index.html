@@ -1229,8 +1229,8 @@ if (typeof rebuildDatalist === "function") {
   };
 
   const overlays = {};
-  if (pistesLayer) overlays["Pisten"] = pistesLayer;
-  if (liftsLayer)  overlays["Lifte"]  = liftsLayer;
+  if (pistesLayer) overlays["Pists"] = pistesLayer;
+  if (liftsLayer)  overlays["Lifts"]  = liftsLayer;
 
   window.layerControl = L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
 
