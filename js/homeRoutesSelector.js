@@ -1,6 +1,6 @@
 // js/homeRoutesSelector.js
 // Home dropdown that auto-detects which precomputed route files exist (based on data/homes.json + existence check)
-// and lets the user switch the Tree Routes dataset.
+// and lets the user switch the active home profile.
 //
 // Expected:
 // - data/homes.json: { "muc": { "name": "...", "lat": 48.1, "lon": 11.5 }, ... }
@@ -35,7 +35,6 @@
     if (isMobile()) {
       const host = document.getElementById(mobileHostId);
       if (host) {
-        // place at top of the section
         if (host.firstChild) host.insertBefore(box, host.firstChild);
         else host.appendChild(box);
       }
@@ -62,7 +61,6 @@
     const box = document.getElementById(boxId);
     if (!select || !box) return;
 
-    // Load homes
     let homesObj;
     try {
       homesObj = await fetchJson(homesUrl);
@@ -71,7 +69,6 @@
       return;
     }
 
-    // Convert to array
     const homesAll = Object.entries(homesObj).map(([id, h]) => ({
       id,
       name: (h && h.name) ? String(h.name) : id,
@@ -79,13 +76,8 @@
       lon: h?.lon
     }));
 
-    // Check which route files exist
     const checks = await Promise.all(
-      homesAll.map(async (h) => {
-        const url = routeFile(h.id);
-        const ok = await fileExists(url);
-        return ok ? h : null;
-      })
+      homesAll.map(async (h) => (await fileExists(routeFile(h.id))) ? h : null)
     );
     const available = checks.filter(Boolean);
 
@@ -94,7 +86,6 @@
       return;
     }
 
-    // Populate select
     select.innerHTML = "";
     for (const h of available) {
       const opt = document.createElement("option");
@@ -103,7 +94,6 @@
       select.appendChild(opt);
     }
 
-    // Determine selection
     const saved = storageKey ? localStorage.getItem(storageKey) : null;
     const initial = (saved && available.some(h => h.id === saved))
       ? saved
@@ -111,11 +101,9 @@
 
     select.value = initial;
 
-    // Show + place
     box.style.display = "";
     placeBox({ box, desktopHostSelector, mobileHostId });
 
-    // Re-place on resize (mobile <-> desktop)
     const rePlace = () => placeBox({ box, desktopHostSelector, mobileHostId });
     window.addEventListener("resize", rePlace);
     if (window.matchMedia) {
@@ -123,13 +111,11 @@
       if (mq.addEventListener) mq.addEventListener("change", rePlace);
     }
 
-    // Fire initial
     const meta0 = available.find(h => h.id === initial);
     if (typeof onHomeChanged === "function") {
       try { await onHomeChanged(initial, meta0); } catch (e) { console.warn("HomeRoutesSelector onHomeChanged failed:", e); }
     }
 
-    // Handle change
     select.addEventListener("change", async () => {
       const homeId = select.value;
       const meta = available.find(h => h.id === homeId);

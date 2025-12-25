@@ -584,8 +584,8 @@ padding: 4px 6px;
 
 
 <script src="js/treeRoutesOverlay.js"></script>
-
 <script src="js/homeRoutesSelector.js"></script>
+<script src="js/homeTravelTimes.js"></script>
 
 <script>
   // --------- Basis-Einstellungen ---------
@@ -688,6 +688,7 @@ padding: 4px 6px;
 
   const resorts = {};
   const resortMarkers = {};
+  window.__resortsReady = false;
   let minHours = Infinity;
   let maxHours = 0;
 
@@ -888,7 +889,11 @@ if (passType === "SCT") resorts[key].sct = true;
         totalResorts = Object.keys(resorts).length;
 
         buildMarkers();
-        if (typeof rebuildDatalist === "function") {
+        window.__resortsReady = true;
+        if (window.HomeTravelTimes && typeof window.HomeTravelTimes.onResortsReady === "function") {
+          try { window.HomeTravelTimes.onResortsReady(); } catch (e) { console.warn(e); }
+        }
+if (typeof rebuildDatalist === "function") {
           rebuildDatalist();
         }
         updateTimeLabel(100);
@@ -1018,7 +1023,7 @@ if (passType === "SCT") resorts[key].sct = true;
 
   function pctToLimitHours(pct) {
     const p = Math.max(0, Math.min(100, Number(pct))) / 100;
-    // minHours/maxHours werden aus travel_times.json (oder ORS Matrix) gesetzt
+    // minHours/maxHours werden aus travel_times.json (oder OSRM/ORS) gesetzt
     if (!isFinite(minHours) || !isFinite(maxHours) || minHours === Infinity) return Infinity;
     return minHours + p * (maxHours - minHours);
   }
@@ -1276,50 +1281,31 @@ if (passType === "SCT") resorts[key].sct = true;
     }
   });
 
-  function loadTravelTimesJson() {
-    fetch("data/travel_times.json")
+  function loadTravelTimesJson(homeId) {
+    // Kompatibilität: lädt vorkomputierte Fahrzeiten pro Home-Profil
+    // Erwartet Datei: data/travel_times/home_<homeId>.json
+    const stored = (window.HomeTravelTimes && typeof window.HomeTravelTimes.getSelectedHomeId === "function")
+      ? window.HomeTravelTimes.getSelectedHomeId()
+      : null;
+
+    const hid = homeId || stored || (localStorage.getItem("skimap.selectedHomeId")) || "muc";
+    if (window.HomeTravelTimes && typeof window.HomeTravelTimes.load === "function") {
+      return window.HomeTravelTimes.load(hid);
+    }
+
+    // Fallback (sollte praktisch nie passieren):
+    fetch(`data/travel_times/home_${hid}.json`)
       .then(resp => resp.json())
-      .then(data => {
-        Object.values(resorts).forEach(r => {
-          const tt = data[r.name];
-          if (tt) {
-            if (typeof tt.hours === "number") {
-              r.travelHours = tt.hours;
-            }
-            if (typeof tt.km === "number") {
-              r.distKm = tt.km;
-            }
-          }
-        });
-
-        minHours = Infinity;
-        maxHours = 0;
-        Object.values(resorts).forEach(r => {
-          if (r.travelHours != null && isFinite(r.travelHours)) {
-            if (r.travelHours < minHours) minHours = r.travelHours;
-            if (r.travelHours > maxHours) maxHours = r.travelHours;
-          }
-        });
-
-        if (typeof rebuildDatalist === "function") {
-          rebuildDatalist();
-        }
-
-        if (typeof timeSlider !== "undefined" && timeSlider) {
-          timeSlider.value = 100;
-        }
-        updateTimeLabel(100);
-        applyTimeFilter(100);      
-      })
+      .then(data => applyTravelTimesFromMap(data))
       .catch(err => {
-        console.error("Fehler beim Laden von travel_times.json, nutze Luftlinie:", err);
+        console.error("Fehler beim Laden von travel_times (per home), nutze Luftlinie:", err);
         updateTimeLabel(100);
-        applyTimeFilter(100);        
+        applyTimeFilter(100);
       });
   }
 
   
-  // --------- Home Dropdown (Tree Routes auswählen) ---------
+  // --------- Home Dropdown (Tree Routes + Fahrzeiten auswählen) ---------
   document.addEventListener("DOMContentLoaded", () => {
     if (!window.HomeRoutesSelector) return;
 
@@ -1331,12 +1317,21 @@ if (passType === "SCT") resorts[key].sct = true;
       selectId: "homeSelect",
       boxId: "homeSelectorBox",
       desktopHostSelector: ".leaflet-top.leaflet-right",
-      mobileHostId: "panel-filters", // im Side-Panel bei Mobile
+      mobileHostId: "panel-filters",
       storageKey: "skimap.selectedHomeId",
       onHomeChanged: async (homeId, homeMeta) => {
         // Slider-Label updaten
         const lbl = document.querySelector('.slider-box label[for="time-slider"]');
         if (lbl) lbl.textContent = `Max. Fahrzeit ab ${homeMeta?.name || homeId}`;
+
+        // Fahrzeiten pro Home laden
+        if (window.HomeTravelTimes && typeof window.HomeTravelTimes.setSelectedHomeId === "function") {
+          window.HomeTravelTimes.setSelectedHomeId(homeId);
+        }
+        if (window.HomeTravelTimes && typeof window.HomeTravelTimes.load === "function") {
+          try { await window.HomeTravelTimes.load(homeId); }
+          catch (e) { console.warn("HomeTravelTimes load failed:", e); }
+        }
 
         // Tree-Routes neu laden (ohne Checkbox-Status zu verändern)
         if (typeof window.ensureTreeOverlayForHome === "function") {
