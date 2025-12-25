@@ -104,7 +104,13 @@ function setMapDim(on) {
       createExportControl = true,
 
       exportCsvBtnId = "btn-export-visible-csv",
-      exportKmlBtnId = "btn-export-visible-kml"
+      exportKmlBtnId = "btn-export-visible-kml",
+
+      // Optional: allow caller to define what "reset view" means (like page reload)
+      initialCenter = null,
+      initialZoom = null,
+      initialBounds = null,
+      resetView = null
     } = opts || {};
 
     if (!map || !resorts || !resortMarkers || !markerLayer || !fmtTime || !norm || !getMinHours || !getMaxHours) {
@@ -118,6 +124,41 @@ function setMapDim(on) {
     const searchBtn = document.getElementById("search-btn");
 
     const clearVerbundBtn = document.getElementById("clear-verbund-btn");
+
+// --- Map view reset (like page reload) ---
+// We capture the view at init time (or accept overrides via opts) and can smoothly return to it.
+const _initialCenter = initialCenter || map.getCenter();
+const _initialZoom = (typeof initialZoom === "number") ? initialZoom : map.getZoom();
+const _initialBounds = initialBounds || null;
+
+function resetMapView() {
+  if (typeof resetView === "function") {
+    try { resetView(map); } catch (_) {}
+    return;
+  }
+
+  try { map.closePopup(); } catch (_) {}
+
+  const animOpts = { animate: true, duration: 0.8 };
+
+  if (_initialBounds && typeof map.fitBounds === "function") {
+    try {
+      map.fitBounds(_initialBounds, Object.assign({ padding: [20, 20] }, animOpts));
+      return;
+    } catch (_) {}
+  }
+
+  if (typeof map.flyTo === "function") {
+    try {
+      map.flyTo(_initialCenter, _initialZoom, animOpts);
+      return;
+    } catch (_) {}
+  }
+
+  try {
+    map.setView(_initialCenter, _initialZoom, animOpts);
+  } catch (_) {}
+}
 const timeSlider = document.getElementById("time-slider");
     const timeLabel = document.getElementById("time-slider-label");
 
@@ -224,9 +265,10 @@ const timeSlider = document.getElementById("time-slider");
       clearVerbundBtn.addEventListener("click", () => {
         setGroupFilter(null);
         searchInput.value = "";
+        resetMapView();
         searchInput.focus();
       });
-    }
+}
 
     function updateVerbundUi() {
       if (!searchInput) return;
