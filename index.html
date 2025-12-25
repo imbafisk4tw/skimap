@@ -261,29 +261,108 @@ padding: 4px 6px;
       border-radius: 4px;
     }
   
-    /* Responsive: Boxen bleiben im Viewport */
+    /* Responsive: Mobile Layout */
     @media (max-width: 720px) {
-      .search-box,
-      .home-box,
-      .slider-box,
-      .legend-box {
-        left: 10px !important;
-        right: 10px !important;
+      /* Auf Mobile aufräumen */
+      .home-box { display: none !important; }               /* Startadresse ausblenden */
+      .export-box.leaflet-control { display: none !important; } /* Export ausblenden */
+      .legend-box { display: none !important; }             /* optional: Legende ausblenden */
+
+      /* Suchleiste oben als "Card" */
+      .search-box {
+        top: calc(env(safe-area-inset-top, 0px) + 8px) !important;
+        left: 8px !important;
+        right: 8px !important;
         width: auto !important;
         max-width: none !important;
+        padding: 10px 10px 12px 10px !important;
+        border-radius: 14px !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.18) !important;
+        backdrop-filter: blur(8px);
+        background: rgba(255,255,255,0.92) !important;
+      }
+      .search-box label {
+        display: block;
+        font-size: 14px !important;
+        margin-bottom: 6px !important;
+      }
 
-      /* Mobile: Startadresse & Export ausblenden */
-      .home-box { display: none !important; }
-      .export-box.leaflet-control { display: none !important; }
+      .search-row { gap: 8px !important; flex-wrap: wrap !important; }
 
-      /* Mobile: bessere Tap-Ziele */
-      .filter-box label { padding: 6px 2px; }
+      #resort-search {
+        flex: 1 1 220px !important;
+        min-width: 180px;
+        height: 44px;
+        padding: 10px 12px !important;
+        font-size: 16px !important; /* verhindert iOS auto-zoom */
+        border-radius: 10px !important;
+      }
+
+      #search-btn,
+      #clear-verbund-btn {
+        height: 44px;
+        padding: 0 12px !important;
+        font-size: 14px !important;
+        border-radius: 10px !important;
+      }
+
+      /* "Verbundfilter aufheben" auf eigene Zeile -> stabilere Höhe */
+      #clear-verbund-btn { flex: 1 0 100% !important; }
+
+      /* Leaflet Controls nicht unter der Suchbox verstecken */
+      .leaflet-top.leaflet-right {
+        top: calc(env(safe-area-inset-top, 0px) + 118px) !important;
+        right: 8px !important;
+        z-index: 2000;
+      }
+      .leaflet-top.leaflet-left {
+        top: calc(env(safe-area-inset-top, 0px) + 118px) !important;
+        left: 8px !important;
+        z-index: 2000;
+      }
+
+      /* Filter-Box: scrollfähig und touch-freundlich */
+      .filter-box.leaflet-control {
+        width: min(52vw, 260px) !important;
+        max-height: 48vh;
+        overflow: auto;
+        border-radius: 14px;
+      }
+      .filter-box label { padding: 8px 2px; }
       .filter-box input[type="checkbox"] { width: 20px; height: 20px; }
-      .leaflet-control-layers label { padding: 6px 2px; }
-      .leaflet-control-layers-toggle { width: 44px; height: 44px; }
 
+      /* Layer-Control: komfortabler auf Touch */
+      .leaflet-control-layers {
+        width: min(52vw, 260px) !important;
+        border-radius: 14px;
+        max-height: 48vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .leaflet-control-layers-toggle { width: 44px; height: 44px; }
+      .leaflet-control-layers label { padding: 8px 2px; }
+
+      /* Slider unten als "Bottom Bar" */
+      .slider-box {
+        left: 8px !important;
+        right: 8px !important;
+        width: auto !important;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 10px) !important;
+        border-radius: 14px !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.18) !important;
+        background: rgba(255,255,255,0.92) !important;
+        backdrop-filter: blur(8px);
+      }
+
+      /* Counter über dem Slider, damit nichts überlappt */
+      .counter-box {
+        right: 8px !important;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 92px) !important;
+        border-radius: 12px !important;
+      }
     }
-      .search-box input { width: 100% !important; }
+
+.search-box input { width: 100% !important; }
       .slider-box { bottom: 120px !important; }
       .legend-box { bottom: 10px !important; }
       .counter-box { right: 10px !important; bottom: 10px !important; }
