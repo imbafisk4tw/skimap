@@ -125,6 +125,28 @@ function setMapDim(on) {
 
     const clearVerbundBtn = document.getElementById("clear-verbund-btn");
 
+    // Default placeholder (from HTML) so we can restore it when no Verbund filter is active
+    const defaultSearchPlaceholder =
+      (searchInput && typeof searchInput.placeholder === "string" && searchInput.placeholder.trim())
+        ? searchInput.placeholder
+        : "Suche...";
+
+    // We also want the X button to be usable after a normal resort search (zoom-in),
+    // not only when a Verbund filter is active.
+    let hasSearchView = false; // becomes true after performSearch triggers a view change
+
+    function updateClearBtnState() {
+      if (!clearVerbundBtn) return;
+      // Enabled when either a Verbund filter is active OR we have zoomed/fitBounds via search.
+      clearVerbundBtn.disabled = !(!!currentGroupId || hasSearchView);
+    }
+
+    function setHasSearchView(on) {
+      hasSearchView = !!on;
+      updateClearBtnState();
+    }
+
+
 // --- Map view reset (like page reload) ---
 // We capture the view at init time (or accept overrides via opts) and can smoothly return to it.
 const _initialCenter = initialCenter || map.getCenter();
@@ -260,32 +282,48 @@ const timeSlider = document.getElementById("time-slider");
       applyFilters(currentPct); // sofort anwenden, andere Filter bleiben unberührt
     }
 
-    // Verbund-Reset Button neben Suchfeld (hebt nur Verbundfilter auf, andere Filter bleiben unberührt)
-    if (clearVerbundBtn) {
-      clearVerbundBtn.addEventListener("click", () => {
-        setGroupFilter(null);
-        searchInput.value = "";
-        resetMapView();
-        searchInput.focus();
-      });
-}
+    // Reset-Button neben Suchfeld:
+// - hebt Verbundfilter auf (falls aktiv)
+// - setzt die Kartenansicht auf die initiale View zurück
+if (clearVerbundBtn) {
+  clearVerbundBtn.addEventListener("click", () => {
+    // "Zurücksetzen" soll sich wie ein Reload anfühlen:
+    // - Suchfeld leeren
+    // - Verbundfilter aus
+    // - Slider auf 100%
+    // - Kartenansicht auf initiale View (smooth)
+    if (searchInput) searchInput.value = "";
+    setHasSearchView(false);
+    setGroupFilter(null);
 
-    function updateVerbundUi() {
-      if (!searchInput) return;
-
-      const active = !!currentGroupId;
-
-      if (clearVerbundBtn) {
-        clearVerbundBtn.disabled = !active;
-      }
-
-      if (active) {
-        const vName = groupById.get(currentGroupId)?.displayName || groupById.get(currentGroupId)?.id || "Verbund";
-        searchInput.placeholder = `Filter aktiv: ${vName} (Button zum Aufheben)`;
-      } else {
-        searchInput.placeholder = "Suche...";
-      }
+    if (timeSlider) {
+      timeSlider.value = 100;
+      currentPct = 100;
+      updateTimeLabel(100);
+      applyFilters(100);
     }
+
+    rebuildDatalist();
+    resetMapView();
+    try { searchInput && searchInput.focus(); } catch (_) {}
+  });
+}
+function updateVerbundUi() {
+  if (!searchInput) return;
+
+  const activeGroup = !!currentGroupId;
+
+  if (activeGroup) {
+    const vName = groupById.get(currentGroupId)?.displayName || groupById.get(currentGroupId)?.id || "Verbund";
+    searchInput.placeholder = `Filter aktiv: ${vName} (Button zum Aufheben)`;
+  } else {
+    // restore HTML placeholder
+    searchInput.placeholder = defaultSearchPlaceholder;
+  }
+
+  // X button should be enabled either for active Verbund OR after any search zoom/fitBounds
+  updateClearBtnState();
+}
 
     // -------- Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München) --------
     const filterState = {
@@ -327,91 +365,90 @@ const timeSlider = document.getElementById("time-slider");
     }
 
     function buildFilterControl() {
-      if (!createFilterControl || typeof L === "undefined") return;
+  if (!createFilterControl || typeof L === "undefined") return;
 
-      const ctrl = L.control({ position: "topright" });
-      ctrl.onAdd = function () {
-        const div = L.DomUtil.create("div", "filter-box leaflet-control");
-        div.innerHTML = `
-          <div class="title">Filter</div>
-          <label><input type="checkbox" id="flt-sct" checked> Nur Snow Card Tirol</label>
-          <label><input type="checkbox" id="flt-ssc" checked> Nur SuperSkiCard</label>
-          <label><input type="checkbox" id="flt-both" checked> Beide Pässe</label>
-          <label><input type="checkbox" id="flt-glacier" checked> Gletscher</label>
-          <label><input type="checkbox" id="flt-muc" checked> Nahe München</label>
-                  <label><input type="checkbox" id="flt-dimmap"> Karte abdunkeln</label>
-`;
-        L.DomEvent.disableClickPropagation(div);
-        L.DomEvent.disableScrollPropagation(div);
-        return div;
-      };
-      ctrl.addTo(map);
+  const filterControl = L.control({ position: "topright" });
+  filterControl.onAdd = function () {
+    const div = L.DomUtil.create("div", "filter-box leaflet-control");
 
-      // wiring (nachdem es im DOM ist)
-      const wire = () => {
-        const elSct = document.getElementById("flt-sct");
-        const elSsc = document.getElementById("flt-ssc");
-        const elBoth = document.getElementById("flt-both");
-        const elGl = document.getElementById("flt-glacier");
-        const elMuc = document.getElementById("flt-muc");
+    div.innerHTML = `
+      <div class="title">Filter</div>
+      <label class="filter-item"><input type="checkbox" id="flt-sct-only"> Nur Snow Card Tirol</label>
+      <label class="filter-item"><input type="checkbox" id="flt-ssc-only"> Nur SuperSkiCard</label>
+      <label class="filter-item"><input type="checkbox" id="flt-both"> Beide Pässe</label>
+      <label class="filter-item"><input type="checkbox" id="flt-glacier"> Gletscher</label>
+      <label class="filter-item"><input type="checkbox" id="flt-near-muc"> Nahe München</label>
+      <label class="filter-item"><input type="checkbox" id="flt-dim"> Karte abdunkeln</label>
+    `;
 
-const elDim = document.getElementById("flt-dimmap");
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
 
-// restore + apply saved dim state
-const savedDim = (typeof localStorage !== "undefined") && localStorage.getItem("mapDim") === "1";
-if (elDim) {
-  elDim.checked = !!savedDim;
-  setMapDim(!!savedDim);
-  elDim.addEventListener("change", () => {
-    const on = !!elDim.checked;
-    setMapDim(on);
-    if (typeof localStorage !== "undefined") {
-      localStorage.setItem("mapDim", on ? "1" : "0");
+    // Initialize checkbox states from filterState
+    const elSct = div.querySelector("#flt-sct-only");
+    const elSsc = div.querySelector("#flt-ssc-only");
+    const elBoth = div.querySelector("#flt-both");
+    const elGlac = div.querySelector("#flt-glacier");
+    const elNear = div.querySelector("#flt-near-muc");
+    const elDim = div.querySelector("#flt-dim");
+
+    if (elSct) elSct.checked = !!filterState.sctOnly;
+    if (elSsc) elSsc.checked = !!filterState.sscOnly;
+    if (elBoth) elBoth.checked = !!filterState.both;
+    if (elGlac) elGlac.checked = !!filterState.glacier;
+    if (elNear) elNear.checked = !!filterState.nearMuc;
+    if (elDim) elDim.checked = false;
+
+    const onChange = () => {
+      if (elSct) filterState.sctOnly = !!elSct.checked;
+      if (elSsc) filterState.sscOnly = !!elSsc.checked;
+      if (elBoth) filterState.both = !!elBoth.checked;
+      if (elGlac) filterState.glacier = !!elGlac.checked;
+      if (elNear) filterState.nearMuc = !!elNear.checked;
+      applyFilters(currentPct);
+      // Datalist kann (wenn gewünscht) aktualisiert werden – aber nicht zwingend.
+    };
+
+    if (elSct) elSct.addEventListener("change", onChange);
+    if (elSsc) elSsc.addEventListener("change", onChange);
+    if (elBoth) elBoth.addEventListener("change", onChange);
+    if (elGlac) elGlac.addEventListener("change", onChange);
+    if (elNear) elNear.addEventListener("change", onChange);
+
+    if (elDim) {
+      elDim.addEventListener("change", () => setMapDim(!!elDim.checked));
     }
-  });
-} else {
-  setMapDim(!!savedDim);
+
+    return div;
+  };
+
+  filterControl.addTo(map);
+  return filterControl;
 }
-        const handler = () => {
-          filterState.sctOnly = !!elSct?.checked;
-          filterState.sscOnly = !!elSsc?.checked;
-          filterState.both = !!elBoth?.checked;
-          filterState.glacier = !!elGl?.checked;
-          filterState.nearMuc = !!elMuc?.checked;
-          applyFilters(currentPct);
-        };
 
-        [elSct, elSsc, elBoth, elGl, elMuc].forEach(el => {
-          if (!el) return;
-          el.addEventListener("change", handler);
-        });
-      };
+function buildExportControl() {
+  if (!createExportControl || typeof L === "undefined") return;
 
-      // nächster Tick (sicherstellen DOM ist da)
-      setTimeout(wire, 0);
-    }
+  const exportControl = L.control({ position: "topright" });
+  exportControl.onAdd = function () {
+    const div = L.DomUtil.create("div", "export-box leaflet-control");
+    div.innerHTML = `
+      <div class="title">Export</div>
+      <button id="${exportCsvBtnId}" type="button">CSV-Export</button>
+      <button id="${exportKmlBtnId}" type="button">KML-Export</button>
+    `;
 
-    function buildExportControl() {
-      if (!createExportControl || typeof L === "undefined") return;
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+    return div;
+  };
 
-      const exportControl = L.control({ position: "topright" });
-      exportControl.onAdd = function () {
-        const div = L.DomUtil.create("div", "export-box leaflet-control");
-        div.innerHTML = `
-          <div class="title">Export (aktueller Filter)</div>
-          <button id="${exportCsvBtnId}" type="button">CSV → Google My Maps</button>
-          <button id="${exportKmlBtnId}" type="button">KML → Google My Maps</button>
-          <div class="hint">Import in Google My Maps, danach in Google Maps nutzbar.</div>
-        `;
-        L.DomEvent.disableClickPropagation(div);
-        L.DomEvent.disableScrollPropagation(div);
-        return div;
-      };
-      exportControl.addTo(map);
-    }
+  exportControl.addTo(map);
+  return exportControl;
+}
 
-    buildFilterControl();
-    buildExportControl();
+buildFilterControl();
+buildExportControl();
 
     // -------- Suche --------
     // Datalist Autocomplete:
@@ -508,6 +545,7 @@ if (elDim) {
       const latLng = marker.getLatLng();
       map.setView(latLng, 11);
       marker.openPopup();
+      setHasSearchView(true);
     }
 
     function extractResortName(raw) {
@@ -564,7 +602,10 @@ if (elDim) {
         }
       }
 
-      if (bounds.isValid()) map.fitBounds(bounds.pad(0.15));
+      if (bounds.isValid()) {
+        map.fitBounds(bounds.pad(0.15));
+        setHasSearchView(true);
+      }
     }
 
     if (searchInput) {
