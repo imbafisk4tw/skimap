@@ -238,8 +238,12 @@ const timeSlider = document.getElementById("time-slider");
         const groupIdRaw =
           (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim()
           : (r.verbund && typeof r.verbund.id === "string" && r.verbund.id.trim()) ? r.verbund.id.trim()
-          : (shortNameRaw ? norm(shortNameRaw) : (groupNameRaw ? norm(groupNameRaw) : null));
+          : null;
 
+        // IMPORTANT:
+        // We only index real Verbünde that are explicitly present in the data (groupId / verbund.id).
+        // We do NOT synthesize a groupId from resort names (e.g. "Achenkirch – ..."),
+        // otherwise single resorts would wrongly show up as "Verbund:" suggestions again.
         if (!groupIdRaw) return;
 
         if (!groupById.has(groupIdRaw)) {
@@ -472,23 +476,24 @@ buildExportControl();
     function fillDatalistForGroups() {
       if (!datalist) return;
       rebuildGroupIndex();
+
+      // Only show real Verbünde (>= 2 Resorts) and only ONE suggestion per Verbund.
+      // Value uses the human displayName to avoid "verbund: skiwelt" vs "verbund: SkiWelt" duplicates.
       const groups = Array.from(groupById.values())
+        .filter(g => g && Array.isArray(g.resorts) && g.resorts.length >= 2)
         .sort((a, b) => String(a.displayName || a.id).localeCompare(String(b.displayName || b.id), "de"));
+
       for (const g of groups) {
-        const addOpt = (value, label) => {
-          const opt = document.createElement("option");
-          opt.value = value;
-          if (label) opt.label = label;
-          datalist.appendChild(opt);
-        };
+        const display = String(g.displayName || g.id || "").trim();
+        if (!display) continue;
 
-        // 1) zuverlässig: groupId
-        addOpt(`verbund: ${g.id}`, g.displayName && g.displayName !== g.id ? String(g.displayName) : "");
+        const opt = document.createElement("option");
+        opt.value = `verbund: ${display}`;
 
-        // 2) komfortabel: Anzeigename (falls anders als groupId)
-        if (g.displayName && String(g.displayName).trim() && String(g.displayName) !== String(g.id)) {
-          addOpt(`verbund: ${String(g.displayName)}`, String(g.id));
-        }
+        // Optional: keep the stable id for debugging/clarity (some browsers show it)
+        if (g.id && display !== String(g.id)) opt.label = String(g.id);
+
+        datalist.appendChild(opt);
       }
     }
 
