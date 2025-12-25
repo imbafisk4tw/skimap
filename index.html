@@ -331,7 +331,6 @@ padding: 4px 6px;
 
 <script src="js/searchFilter.js"></script>
 
-<script src="js/isochroneOverlay.js"></script>
 
 <script src="js/treeRoutesOverlay.js"></script>
 
@@ -641,8 +640,7 @@ if (passType === "SCT") resorts[key].sct = true;
         }
         updateTimeLabel(100);
         applyTimeFilter(100);
-        syncIsoWithSlider();
-        if (typeof loadTravelTimesJson === "function") {
+                if (typeof loadTravelTimesJson === "function") {
           loadTravelTimesJson();
         }
       })
@@ -724,21 +722,6 @@ if (passType === "SCT") resorts[key].sct = true;
   }
   const timeSlider = document.getElementById("time-slider");
   
-  // --------- Isochrone Overlay (Erreichbarkeit) ---------
-  // Hinweis: ORS-Isochronen sind hier nur 10–60 Minuten verfügbar (API-Limit).
-  // Damit die Kopplung am Slider trotzdem deutlich sichtbar ist, mappen wir 0..100% auf 10..60 Minuten (visuelle Skala).
-  let iso = null;
-
-  function sliderPercentToIsoMinutes(pct) {
-    const p = Math.max(0, Math.min(100, Number(pct))) / 100;
-    return 10 + p * (60 - 10); // 10..60 Minuten
-  }
-
-  function syncIsoWithSlider() {
-    if (!iso || !timeSlider) return;
-    const minutes = sliderPercentToIsoMinutes(timeSlider.value);
-    iso.setMaxMinutes(minutes);
-  }
 
   const baseLayers = {
     "OSM": osm,
@@ -750,31 +733,6 @@ if (passType === "SCT") resorts[key].sct = true;
   if (liftsLayer)  overlays["Lifte"]  = liftsLayer;
 
   window.layerControl = L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
-
-  (async () => {
-    if (!window.IsochroneOverlay) return;
-
-    iso = await window.IsochroneOverlay.init(map, {
-      url: "data/isochrones/home_10-60min.geojson",
-      enabled: true
-    });
-
-    // In die Leaflet-Layer-Control aufnehmen (oben rechts)
-    if (window.layerControl && iso && iso.getLayer && iso.getLayer()) {
-      window.layerControl.addOverlay(iso.getLayer(), "Erreichbarkeit (10–60 min)");
-    }
-
-    // Slider koppeln
-    if (timeSlider) {
-      timeSlider.addEventListener("input", syncIsoWithSlider);
-      timeSlider.addEventListener("change", syncIsoWithSlider);
-    }
-
-    // initialer Sync
-    syncIsoWithSlider();
-  })();
-
-
 
 // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
   const ui = window.initSearchAndFilters({
@@ -842,7 +800,7 @@ if (passType === "SCT") resorts[key].sct = true;
       window.treeOverlay = tree;
 
       if (window.layerControl && tree.getLayer && tree.getLayer()) {
-        window.layerControl.addOverlay(tree.getLayer(), "Tree Routes (Fahrzeit-Netz)");
+        window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
       }
 
       // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
@@ -888,8 +846,7 @@ if (passType === "SCT") resorts[key].sct = true;
       timeSlider.value = 100;
     }
     updateTimeLabel(100);
-    applyTimeFilter(100);
-    syncIsoWithSlider();
+    applyTimeFilter(100);    
   }
 
   async function recalcTravelTimesFromOrigin() {
@@ -1069,14 +1026,12 @@ if (passType === "SCT") resorts[key].sct = true;
           timeSlider.value = 100;
         }
         updateTimeLabel(100);
-        applyTimeFilter(100);
-        syncIsoWithSlider();
+        applyTimeFilter(100);      
       })
       .catch(err => {
         console.error("Fehler beim Laden von travel_times.json, nutze Luftlinie:", err);
         updateTimeLabel(100);
-        applyTimeFilter(100);
-        syncIsoWithSlider();
+        applyTimeFilter(100);        
       });
   }
 
