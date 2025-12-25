@@ -219,6 +219,12 @@ padding: 4px 6px;
       width: calc(100vw - 40px);
       box-sizing: border-box;
     }
+
+    /* Desktop: Home-Box ausblenden (Dropdown sitzt oben im Slider) */
+    @media (min-width: 721px){
+      .home-box{ display:none !important; }
+    }
+
     .home-box label {
       display: block;
       margin-bottom: 4px;
@@ -634,17 +640,9 @@ html, body {
 </div>
 <input id="time-slider" type="range" min="0" max="100" value="100" />
 </div>
-</div>
 
-<!-- Home Selector (legacy) deaktiviert – Dropdown sitzt jetzt in der Slider-Box -->
-<!--
-<!-- Home Selector (wird je nach Screen in Desktop-Box-Stack oder Mobile-Sidepanel verschoben) -->
-<div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;">
-  <div class="title">Startpunkt</div>
-  
--->
-<select id="homeSelect" class="control-select"></select>
-</div>
+<!-- Home Selector Host (Placeholder für HomeRoutesSelector; Dropdown sitzt im Slider) -->
+<div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;"></div>
 
 <!-- isochroneControl -->
 <!-- Leaflet JS -->
@@ -1133,7 +1131,8 @@ if (typeof rebuildDatalist === "function") {
     const url = `data/routes/home_${homeId}.geojson`;
 
     // Enabled-Status merken
-    const wasEnabled = !!(tree && tree.getLayer && tree.getLayer() && map.hasLayer(tree.getLayer()));
+    const hadTree = !!(tree && tree.getLayer && tree.getLayer());
+    const wasEnabled = hadTree ? map.hasLayer(tree.getLayer()) : true; // default: an
 
     // Alte Instanz entfernen (Layer + Eintrag im LayerControl)
     if (tree && tree.getLayer && tree.getLayer()) {
@@ -1156,6 +1155,10 @@ if (typeof rebuildDatalist === "function") {
     // Eintrag (Checkbox) in Layer-Control hinzufügen (Leaflet setzt checked abhängig von map.hasLayer)
     if (window.layerControl && tree.getLayer && tree.getLayer()) {
       window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
+      // Default/Restore: wenn enabled, Layer auch wirklich auf die Karte legen (damit Checkbox checked ist)
+      if (wasEnabled && tree.getLayer && tree.getLayer() && !map.hasLayer(tree.getLayer())) {
+        map.addLayer(tree.getLayer());
+      }
     }
 
     // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
