@@ -463,9 +463,9 @@ padding: 4px 6px;
     }
     #mobile-panel{
       position: fixed;
-      top: 0;
+      top: var(--search-bottom, 76px);
       right: 0;
-      height: 100dvh;
+      height: calc(100dvh - var(--search-bottom, 76px));
       width: min(84vw, 340px);
       background: rgba(255,255,255,0.96);
       backdrop-filter: blur(10px);
@@ -473,7 +473,7 @@ padding: 4px 6px;
       transform: translateX(102%);
       transition: transform .22s ease;
       z-index: 3600;
-      padding: calc(env(safe-area-inset-top, 0px) + 14px) 12px 12px 12px;
+      padding: 14px 12px calc(env(safe-area-inset-bottom, 0px) + 12px) 12px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -1290,7 +1290,24 @@ if (passType === "SCT") resorts[key].sct = true;
     const btn = document.getElementById('mobile-panel-toggle');
     const backdrop = document.getElementById('mobile-panel-backdrop');
     const panel = document.getElementById('mobile-panel');
-    if (!btn || !backdrop || !panel) return;
+    const panelLayers = document.getElementById('panel-layers');
+    const panelFilters = document.getElementById('panel-filters');
+    if (!btn || !backdrop || !panel || !panelLayers || !panelFilters) return;
+
+    const mq = window.matchMedia('(max-width: 720px)');
+    const isMobile = () => mq && mq.matches;
+
+    // Remember original parents so we can restore on desktop
+    let origLayersParent = null, origLayersNext = null;
+    let origFiltersParent = null, origFiltersNext = null;
+
+    const setSearchBottomVar = () => {
+      const box = document.querySelector('.search-box');
+      if (!box) return;
+      const r = box.getBoundingClientRect();
+      const px = Math.max(56, Math.round(r.bottom + 8)); // +8px spacing
+      document.documentElement.style.setProperty('--search-bottom', px + 'px');
+    };
 
     const open = () => {
       document.body.classList.add('mobile-panel-open');
@@ -1298,7 +1315,11 @@ if (passType === "SCT") resorts[key].sct = true;
       btn.textContent = '✕';
       btn.title = 'Panel schließen';
       btn.setAttribute('aria-label', btn.title);
+
+      // On open: re-try moving in case Leaflet created controls late
+      moveToPanel({force:true});
     };
+
     const close = () => {
       document.body.classList.remove('mobile-panel-open');
       btn.setAttribute('aria-pressed','false');
@@ -1313,33 +1334,85 @@ if (passType === "SCT") resorts[key].sct = true;
     });
     backdrop.addEventListener('click', close);
 
-    // Move Leaflet controls into the panel (robust retry, because Leaflet builds controls after map init)
-    const tryMove = () => {
-      const layers = document.querySelector('.leaflet-control-layers');
-      const filters = document.querySelector('.filter-box');
-      const panelLayers = document.getElementById('panel-layers');
-      const panelFilters = document.getElementById('panel-filters');
-
-      let moved = false;
-      if (layers && panelLayers && !panelLayers.contains(layers)) {
-        panelLayers.appendChild(layers);
-        moved = true;
+    const captureOriginals = (layers, filters) => {
+      if (layers && !origLayersParent) {
+        origLayersParent = layers.parentNode;
+        origLayersNext = layers.nextSibling;
       }
-      if (filters && panelFilters && !panelFilters.contains(filters)) {
-        panelFilters.appendChild(filters);
-        moved = true;
+      if (filters && !origFiltersParent) {
+        origFiltersParent = filters.parentNode;
+        origFiltersNext = filters.nextSibling;
       }
-      return moved || (!!layers && !!filters);
     };
 
+    const restoreFromPanel = () => {
+      const layers = document.querySelector('.leaflet-control-layers');
+      const filters = document.querySelector('.filter-box');
+
+      if (layers && origLayersParent && layers.parentNode !== origLayersParent) {
+        try { origLayersParent.insertBefore(layers, origLayersNext || null); }
+        catch (_) { origLayersParent.appendChild(layers); }
+      }
+      if (filters && origFiltersParent && filters.parentNode !== origFiltersParent) {
+        try { origFiltersParent.insertBefore(filters, origFiltersNext || null); }
+        catch (_) { origFiltersParent.appendChild(filters); }
+      }
+    };
+
+    const moveToPanel = ({force=false} = {}) => {
+      if (!isMobile()) return false;
+
+      const layers = document.querySelector('.leaflet-control-layers');
+      const filters = document.querySelector('.filter-box');
+
+      // If Leaflet hasn't created them yet, keep waiting
+      if (!layers && !filters) return false;
+
+      captureOriginals(layers, filters);
+
+      let movedAny = false;
+      if (layers && (!panelLayers.contains(layers) || force)) {
+        panelLayers.appendChild(layers);
+        movedAny = true;
+      }
+      if (filters && (!panelFilters.contains(filters) || force)) {
+        panelFilters.appendChild(filters);
+        movedAny = true;
+      }
+      return movedAny || (!!layers && !!filters && panelLayers.contains(layers) && panelFilters.contains(filters));
+    };
+
+    // Keep trying for a short while (Leaflet creates controls asynchronously)
     let attempts = 0;
     const timer = setInterval(() => {
       attempts++;
-      const done = tryMove();
-      if (done || attempts > 40) clearInterval(timer);
+      setSearchBottomVar();
+
+      if (isMobile()) {
+        const done = moveToPanel();
+        if (done || attempts > 80) clearInterval(timer);
+      } else {
+        restoreFromPanel();
+        if (attempts > 10) clearInterval(timer);
+      }
     }, 200);
 
-    // Start with panel closed (more map area)
+    const onResize = () => {
+      setSearchBottomVar();
+      if (isMobile()) {
+        // Move again (e.g., after rotate)
+        moveToPanel({force:true});
+        close(); // start closed for more map area
+      } else {
+        close();
+        restoreFromPanel();
+      }
+    };
+    window.addEventListener('resize', onResize);
+    if (mq && mq.addEventListener) mq.addEventListener('change', onResize);
+
+    // Init
+    setSearchBottomVar();
     close();
   })();
 </script>
