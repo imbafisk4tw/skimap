@@ -263,19 +263,65 @@ padding: 4px 6px;
   
     /* Responsive: Mobile Layout */
     @media (max-width: 720px) {
+      /* --- Strong overrides for mobile topbar layout --- */
+      .search-box .search-row{ flex-wrap: nowrap !important; }
+      #resort-search{ min-width: 0 !important; }
+      #search-btn{ min-width: 56px; }
+      #clear-verbund-btn,
+      #mobile-panel-toggle{ width: 44px; min-width: 44px; height: 44px; padding: 0 !important; }
+      #clear-verbund-btn{ border-radius: 10px !important; }
+
+      /* Zoom: unten rechts über dem Counter */
+      .leaflet-control-zoom{
+        position: fixed !important;
+        right: 12px !important;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 64px) !important;
+        left: auto !important;
+        top: auto !important;
+        z-index: 4000 !important;
+      }
+      .leaflet-control-zoom a{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+      }
+
       /* Auf Mobile aufräumen */
       .home-box { display: none !important; }               /* Startadresse ausblenden */
       .export-box.leaflet-control { display: none !important; } /* Export ausblenden */
       .legend-box { display: none !important; }             /* optional: Legende ausblenden */
 
       /* Suchleiste oben als "Card" */
+      .search-box label{ display:none; }
+
+      /* Top-Bar: Input + Go + X + Menü in EINER Zeile */
+      #search-btn{
+        height: 44px;
+        padding: 0 10px !important;
+        font-size: 14px !important;
+        border-radius: 10px !important;
+        min-width: 56px;
+        flex: 0 0 auto !important;
+      }
+      #clear-verbund-btn,
+      #mobile-panel-toggle{
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        padding: 0 !important;
+        flex: 0 0 auto !important;
+      }
+      /* falls irgendwo noch alte Flex-Regeln greifen */
+      #clear-verbund-btn{ margin-left: 0 !important; }
+
       .search-box {
         top: calc(env(safe-area-inset-top, 0px) + 8px) !important;
         left: 8px !important;
         right: 8px !important;
         width: auto !important;
         max-width: none !important;
-        padding: 10px 10px 12px 10px !important;
+        padding: 8px 10px 10px 10px !important;
         border-radius: 14px !important;
         box-shadow: 0 10px 25px rgba(0,0,0,0.18) !important;
         backdrop-filter: blur(8px);
@@ -305,11 +351,7 @@ padding: 4px 6px;
         font-size: 14px !important;
         border-radius: 10px !important;
       }
-
-      /* "Verbundfilter aufheben" auf eigene Zeile -> stabilere Höhe */
-      #clear-verbund-btn { flex: 1 0 100% !important; }
-
-      /* Leaflet Controls nicht unter der Suchbox verstecken */
+/* Leaflet Controls nicht unter der Suchbox verstecken */
       .leaflet-top.leaflet-right {
         top: calc(env(safe-area-inset-top, 0px) + 118px) !important;
         right: 8px !important;
@@ -376,7 +418,90 @@ padding: 4px 6px;
     .leaflet-top.leaflet-right { z-index: 2000; }
     .leaflet-control-layers { max-height: 70vh; overflow-y: auto; overflow-x: hidden; }
 
+
+    /* A11y helpers */
+    .sr-only{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+    .icon-btn{
+      width:44px;
+      height:44px;
+      border:1px solid #666;
+      border-radius:10px;
+      background:#f0f0f0;
+      cursor:pointer;
+      font-size:18px;
+      line-height:1;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+    }
+    .icon-btn:hover{ background:#e0e0e0; }
+
+    /* Button text variants */
+    #clear-verbund-btn .btn-short{ display:none; }
+    #clear-verbund-btn .btn-full{ display:inline; }
+
+    /* Mobile Slide-In Panel (Filter + Layer) */
+    #mobile-panel-backdrop{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .18s ease;
+      z-index: 3500;
+    }
+    #mobile-panel{
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(84vw, 340px);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: -12px 0 28px rgba(0,0,0,0.22);
+      transform: translateX(102%);
+      transition: transform .22s ease;
+      z-index: 3600;
+      padding: calc(env(safe-area-inset-top, 0px) + 14px) 12px 12px 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #mobile-panel h3{
+      margin: 0 0 4px 0;
+      font-size: 14px;
+      font-weight: 700;
+      opacity: .85;
+    }
+    #mobile-panel .panel-section{
+      overflow: auto;
+      border-radius: 14px;
+    }
+    body.mobile-panel-open #mobile-panel-backdrop{
+      opacity: 1;
+      pointer-events: auto;
+    }
+    body.mobile-panel-open #mobile-panel{
+      transform: translateX(0);
+    }
+    @media (min-width: 721px){
+      #mobile-panel, #mobile-panel-backdrop, #mobile-panel-toggle{ display:none !important; }
+    }
+
 </style>
+
 </head>
 <body>
 
@@ -389,7 +514,7 @@ padding: 4px 6px;
 
 <!-- Suchfeld -->
 <form id="resort-search-form" class="search-box" autocomplete="off">
-  <label for="resort-search">Skigebiet suchen</label>
+  <label for="resort-search" class="sr-only">Skigebiet suchen</label>
   <div class="search-row">
     <input
       id="resort-search"
@@ -400,9 +525,10 @@ padding: 4px 6px;
       autocapitalize="off"
       placeholder="Name eingeben & Enter drücken..."
     />
-    <button id="search-btn" type="submit" title="Suche ausführen">Suchen</button>
-    <button id="clear-verbund-btn" type="button" disabled>Verbundfilter aufheben</button>
-  </div>
+    <button id="search-btn" type="submit" title="Suche ausführen">Go</button>
+    <button id="clear-verbund-btn" type="button" disabled class="icon-btn icon-btn--danger" aria-label="Verbundfilter aufheben" title="Verbundfilter aufheben">✕</button>
+    <button id="mobile-panel-toggle" class="icon-btn" type="button" aria-pressed="false" title="Filter & Layer" aria-label="Filter und Layer öffnen">☰</button>
+    </div>
   <datalist id="resort-datalist"></datalist>
 </form>
 
@@ -1150,5 +1276,73 @@ if (passType === "SCT") resorts[key].sct = true;
   });
 
 </script>
+
+<div id="mobile-panel-backdrop" aria-hidden="true"></div>
+<aside id="mobile-panel" aria-label="Filter und Layer">
+  <h3>Filter & Layer</h3>
+  <div id="panel-layers" class="panel-section"></div>
+  <div id="panel-filters" class="panel-section"></div>
+</aside>
+
+
+<script>
+  (function initMobilePanel(){
+    const btn = document.getElementById('mobile-panel-toggle');
+    const backdrop = document.getElementById('mobile-panel-backdrop');
+    const panel = document.getElementById('mobile-panel');
+    if (!btn || !backdrop || !panel) return;
+
+    const open = () => {
+      document.body.classList.add('mobile-panel-open');
+      btn.setAttribute('aria-pressed','true');
+      btn.textContent = '✕';
+      btn.title = 'Panel schließen';
+      btn.setAttribute('aria-label', btn.title);
+    };
+    const close = () => {
+      document.body.classList.remove('mobile-panel-open');
+      btn.setAttribute('aria-pressed','false');
+      btn.textContent = '☰';
+      btn.title = 'Filter & Layer';
+      btn.setAttribute('aria-label', 'Filter und Layer öffnen');
+    };
+
+    btn.addEventListener('click', () => {
+      if (document.body.classList.contains('mobile-panel-open')) close();
+      else open();
+    });
+    backdrop.addEventListener('click', close);
+
+    // Move Leaflet controls into the panel (robust retry, because Leaflet builds controls after map init)
+    const tryMove = () => {
+      const layers = document.querySelector('.leaflet-control-layers');
+      const filters = document.querySelector('.filter-box');
+      const panelLayers = document.getElementById('panel-layers');
+      const panelFilters = document.getElementById('panel-filters');
+
+      let moved = false;
+      if (layers && panelLayers && !panelLayers.contains(layers)) {
+        panelLayers.appendChild(layers);
+        moved = true;
+      }
+      if (filters && panelFilters && !panelFilters.contains(filters)) {
+        panelFilters.appendChild(filters);
+        moved = true;
+      }
+      return moved || (!!layers && !!filters);
+    };
+
+    let attempts = 0;
+    const timer = setInterval(() => {
+      attempts++;
+      const done = tryMove();
+      if (done || attempts > 40) clearInterval(timer);
+    }, 200);
+
+    // Start with panel closed (more map area)
+    close();
+  })();
+</script>
+
 </body>
 </html>
