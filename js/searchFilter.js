@@ -379,7 +379,7 @@ function updateVerbundUi() {
       <div class="title">Filter</div>
       <label class="filter-item"><input type="checkbox" id="flt-sct-only">Snow Card Tirol</label>
       <label class="filter-item"><input type="checkbox" id="flt-ssc-only">SuperSkiCard</label>
-      <label class="filter-item"><input type="checkbox" id="flt-both">In both Tickets/label>
+      <label class="filter-item"><input type="checkbox" id="flt-both">In both Tickets</label>
       <label class="filter-item"><input type="checkbox" id="flt-glacier">Glacier</label>
       <label class="filter-item"><input type="checkbox" id="flt-near-muc">Near Munich</label>
       <label class="filter-item"><input type="checkbox" id="flt-dim">Dark mode</label>
