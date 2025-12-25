@@ -489,6 +489,40 @@ padding: 4px 6px;
       overflow: visible;
       border-radius: 14px;
     }
+
+    /* Accordion headers (mobile panel) */
+    #mobile-panel details.panel-accordion{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    #mobile-panel details.panel-accordion > summary{
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 6px 2px;
+      margin: 0;
+    }
+    #mobile-panel details.panel-accordion > summary::-webkit-details-marker{ display:none; }
+    #mobile-panel details.panel-accordion > summary::after{
+      content: "▾";
+      opacity: .75;
+      transform: rotate(0deg);
+      transition: transform .15s ease;
+    }
+    #mobile-panel details.panel-accordion:not([open]) > summary::after{
+      transform: rotate(-90deg);
+    }
+    #mobile-panel details.panel-accordion > .panel-section{
+      margin-top: 6px;
+    }
     /* Controls im Panel als volle Breite Cards */
     #mobile-panel .leaflet-control{ margin: 0 !important; }
     #mobile-panel .leaflet-control-layers,
@@ -1436,10 +1470,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <div id="mobile-panel-backdrop" aria-hidden="true"></div>
 <aside id="mobile-panel" aria-label="Filter und Layer">
-  <h3>Filter & Layer</h3>
-  <div id="panel-layers" class="panel-section"></div>
-  <div id="panel-filters" class="panel-section"></div>
-  <div id="panel-export" class="panel-section"></div>
+  <h3>Filter &amp; Layer</h3>
+
+  <details class="panel-accordion" open>
+    <summary>Layer</summary>
+    <div id="panel-layers" class="panel-section"></div>
+  </details>
+
+  <details class="panel-accordion" open>
+    <summary>Filter</summary>
+    <div id="panel-filters" class="panel-section"></div>
+  </details>
+
+  <details class="panel-accordion" open>
+    <summary>Export</summary>
+    <div id="panel-export" class="panel-section"></div>
+  </details>
 </aside>
 
 
