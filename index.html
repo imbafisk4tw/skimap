@@ -20,144 +20,66 @@
 
   <style>
     
-/* --- Unified Control Cards (Layer / Filter / Export) --- */
-:root{
-  --panel-bg: #ffffff;
-  --panel-border: rgba(0,0,0,0.18);
-  --panel-radius: 14px;
-  --panel-shadow: 0 8px 22px rgba(0,0,0,0.16);
-  --panel-pad: 10px 12px;
-  --panel-title-size: 13px;
-  --panel-title-weight: 700;
-  --panel-muted: rgba(0,0,0,0.62);
-  --control-gap: 10px;
+/* Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München) */
+.filter-box.leaflet-control{
+  background:white;
+  padding:8px 10px;
+  border:1px solid #888;
+  font-size:13px;
+  line-height:1.4;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  border-radius:4px;
+  width:190px;
+  box-sizing:border-box;
 }
-
-.panel-card{
-  background: var(--panel-bg);
-  padding: var(--panel-pad);
-  border: 1px solid var(--panel-border);
-  border-radius: var(--panel-radius);
-  box-shadow: var(--panel-shadow);
-  box-sizing: border-box;
+.filter-box .title{
+  font-weight:600;
+  font-size:12px;
+  margin-bottom:6px;
 }
-
-.panel-title{
-  font-weight: var(--panel-title-weight);
-  font-size: var(--panel-title-size);
-  margin: 0 0 8px 0;
-  color: rgba(0,0,0,0.86);
-}
-
-.panel-group-title{
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .02em;
-  text-transform: uppercase;
-  color: var(--panel-muted);
-  margin: 10px 0 6px 0;
-}
-
-.panel-card label{
+.filter-box label{
   display:flex;
   align-items:center;
-  gap:8px;
-  margin: 6px 0;
+  gap:6px;
+  margin:4px 0;
   user-select:none;
 }
-.panel-card input[type="checkbox"],
-.panel-card input[type="radio"]{
+.filter-box input[type="checkbox"]{
   margin:0;
 }
 
-/* Desktop: rechte Control-Spalte sauber stapeln */
-.leaflet-top.leaflet-right{
-  display:flex;
-  flex-direction:column;
-  gap: var(--control-gap);
-}
-
-/* Desktop: rechte Control-Spalte darf scrollen (damit Filter nicht "verschwinden") */
-@media (min-width: 721px){
-  .leaflet-top.leaflet-right{
-    max-height: calc(var(--app-h) - 18px);
-    overflow-y: auto;
-    padding-right: 4px;
-  }
-  .leaflet-top.leaflet-right::-webkit-scrollbar{ width: 8px; }
-  .leaflet-top.leaflet-right::-webkit-scrollbar-thumb{
-    background: rgba(0,0,0,0.18);
-    border-radius: 10px;
-  }
-}
-.leaflet-top.leaflet-right .leaflet-control{
-  margin: 0 !important; /* gap regelt Abstand */
-}
-
-/* --- Filter-Box --- */
-.filter-box.leaflet-control{
-  width: 210px;
-}
-.filter-box.leaflet-control,
+/* Export-Box (aktueller Filter) */
 .export-box.leaflet-control{
-  background: var(--panel-bg);
-  padding: var(--panel-pad);
-  border: 1px solid var(--panel-border);
-  border-radius: var(--panel-radius);
-  box-shadow: var(--panel-shadow);
-  font-size: 13px;
-  line-height: 1.35;
+  background:white;
+  padding:8px 10px;
+  border:1px solid #888;
+  font-size:13px;
+  line-height:1.4;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  border-radius:4px;
+  width:190px;
   box-sizing:border-box;
 }
-.filter-box .title,
 .export-box .title{
-  font-weight: var(--panel-title-weight);
-  font-size: var(--panel-title-size);
-  margin: 0 0 8px 0;
-  color: rgba(0,0,0,0.86);
+  font-weight:600;
+  font-size:12px;
+  margin-bottom:6px;
 }
-
-/* Leaflet Layers Control wie Panel-Card */
-.leaflet-control-layers{
-  width: 210px;
-  background: var(--panel-bg) !important;
-  padding: var(--panel-pad) !important;
-  border: 1px solid var(--panel-border) !important;
-  border-radius: var(--panel-radius) !important;
-  box-shadow: var(--panel-shadow) !important;
-}
-.leaflet-control-layers .leaflet-control-layers-separator{
-  border-top: 1px solid rgba(0,0,0,0.12);
-  margin: 8px 0;
-}
-.leaflet-control-layers label{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  margin: 6px 0;
-}
-.leaflet-control-layers input{
-  margin: 0;
-}
-
-/* Export Buttons etwas "ruhiger" */
 .export-box button{
   width:100%;
-  height: 32px;
-  padding: 0 10px;
-  margin: 6px 0 0 0;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.35);
-  background:#f3f3f3;
+  padding:5px 6px;
+  margin:4px 0 0 0;
+  font-size:13px;
+  border-radius:3px;
+  border:1px solid #666;
+  background:#f0f0f0;
   cursor:pointer;
 }
-.export-box button:hover{ background:#e9e9e9; }
+.export-box button:hover{ background:#e0e0e0; }
 .export-box .hint{
-  margin-top:8px;
+  margin-top:6px;
   font-size:11px;
-  color: rgba(0,0,0,0.68);
+  color:#444;
 }
 html, body {
       height: 100%;
@@ -181,71 +103,70 @@ html, body {
       font-size: 13px;
       line-height: 1.4;
     }
-.search-box {
-  position: fixed !important;
-  top: 10px;
-  left: 50px;
-  z-index: 10000;
-  background: white;
-  padding: 10px 10px 12px 10px;
-  width: 390px;
-  max-width: calc(100vw - 40px);
-  box-sizing: border-box;
-  border: 1px solid #888;
-  font-size: 13px;
-  line-height: 1.35;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.16);
-  border-radius: 12px;
-}
-.search-box label {
+    .search-box {
+      position: fixed !important;
+      top: 10px;
+      left: 50px;
+      z-index: 10000;
+      background: white;
+      padding: 8px;
+      width: 360px;
+      max-width: calc(100vw - 40px);
+      box-sizing: border-box;
+border: 1px solid #888;
+      font-size: 13px;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+    .search-box label {
       display: block;
       margin-bottom: 4px;
       font-size: 12px;
     }
-.search-box input {
-  width: 100%;
-  height: 36px;
-  padding: 8px 10px;
-  font-size: 14px;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  box-sizing: border-box;
-  outline: none;
-}
-.search-box input:focus {
-  border-color: #777;
-}
-.search-row {
-  display: flex;
-  gap: 8px;
-  align-items: stretch;
-  flex-wrap: nowrap;
-}
-.search-row input {
+    .search-box input {
+      width: 100%;
+padding: 4px 6px;
+      font-size: 13px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+	
+    
+    .search-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .search-row input {
       flex: 1 1 auto;
       min-width: 0;
     }
-#search-btn {
-  flex: 0 0 auto;
-  height: 36px;
-  padding: 0 12px;
-  font-size: 13px;
-  font-weight: 600;
-  border: 1px solid #666;
-  border-radius: 10px;
-  background: #f0f0f0;
-  cursor: pointer;
-  white-space: nowrap;
-}
-#search-btn:hover{ background:#e0e0e0; }
+    #search-btn {
+      flex: 0 0 auto;
+      padding: 4px 10px;
+      font-size: 12px;
+      border: 1px solid #666;
+      border-radius: 3px;
+      background: #f0f0f0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #search-btn:hover{ background:#e0e0e0; }
+
 #clear-verbund-btn {
-  flex: 0 0 auto;
-}
-#clear-verbund-btn:disabled {
-  opacity: 0.55;
-  cursor: default;
-}
-#clear-verbund-btn:disabled {
+      flex: 0 0 auto;
+      padding: 4px 8px;
+      font-size: 12px;
+      border: 1px solid #666;
+      border-radius: 3px;
+      background: #f0f0f0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    #clear-verbund-btn:disabled {
       opacity: 0.55;
       cursor: default;
     }
@@ -298,12 +219,6 @@ html, body {
       width: calc(100vw - 40px);
       box-sizing: border-box;
     }
-
-    /* Desktop: Home-Box ausblenden (Dropdown sitzt oben im Slider) */
-    @media (min-width: 721px){
-      .home-box{ display:none !important; }
-    }
-
     .home-box label {
       display: block;
       margin-bottom: 4px;
@@ -374,7 +289,7 @@ html, body {
 
       /* Auf Mobile aufräumen */
       .home-box { display: none !important; }               /* Startadresse ausblenden */
-      .export-box.leaflet-control { display: none !important; } /* Export ausblenden */
+      /* Export wird im Mobile-Panel angezeigt (nicht auf der Map) */
       .legend-box { display: none !important; }             /* optional: Legende ausblenden */
 
       /* Suchleiste oben als "Card" */
@@ -472,7 +387,7 @@ html, body {
       /* Slider unten als "Bottom Bar" */
       .slider-box {
         left: 8px !important;
-        right: 8px !important;
+        right: 72px !important; /* rechts Platz für Zoom + Counter */
         width: auto !important;
         bottom: calc(env(safe-area-inset-bottom, 0px) + 10px) !important;
         border-radius: 14px !important;
@@ -481,11 +396,21 @@ html, body {
         backdrop-filter: blur(8px);
       }
 
-      /* Counter über dem Slider, damit nichts überlappt */
+      /* Counter unten rechts (nicht mehr so weit oben) */
       .counter-box {
         right: 8px !important;
-        bottom: calc(env(safe-area-inset-bottom, 0px) + 92px) !important;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 10px) !important;
         border-radius: 12px !important;
+      }
+    }
+
+.search-box input { width: 100% !important; }
+      .slider-box { bottom: 20px !important; }
+      .legend-box { bottom: 10px !important; }
+      .counter-box { right: 10px !important; bottom: 10px !important; }
+      .filter-box.leaflet-control,
+      .export-box.leaflet-control {
+        width: 170px !important;
       }
     }
 
@@ -506,22 +431,21 @@ html, body {
       white-space:nowrap !important;
       border:0 !important;
     }
-.icon-btn{
-  width:36px;
-  height:36px;
-  border:1px solid #666;
-  border-radius:10px;
-  background:#f0f0f0;
-  cursor:pointer;
-  font-size:16px;
-  line-height:1;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:0;
-  flex: 0 0 auto;
-}
-.icon-btn:hover{ background:#e0e0e0; }
+    .icon-btn{
+      width:44px;
+      height:44px;
+      border:1px solid #666;
+      border-radius:10px;
+      background:#f0f0f0;
+      cursor:pointer;
+      font-size:18px;
+      line-height:1;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+    }
+    .icon-btn:hover{ background:#e0e0e0; }
 
     /* Button text variants */
     #clear-verbund-btn .btn-short{ display:none; }
@@ -550,7 +474,7 @@ html, body {
       transition: transform .22s ease;
       z-index: 3600;
       padding: 14px 12px calc(env(safe-area-inset-bottom, 0px) + 12px) 12px;
-      overflow: hidden;
+      overflow: auto;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -562,9 +486,14 @@ html, body {
       opacity: .85;
     }
     #mobile-panel .panel-section{
-      overflow: auto;
+      overflow: visible;
       border-radius: 14px;
     }
+    /* Controls im Panel als volle Breite Cards */
+    #mobile-panel .leaflet-control{ margin: 0 !important; }
+    #mobile-panel .leaflet-control-layers,
+    #mobile-panel .filter-box,
+    #mobile-panel .export-box{ width: 100% !important; box-sizing: border-box; }
     body.mobile-panel-open #mobile-panel-backdrop{
       opacity: 1;
       pointer-events: auto;
@@ -679,7 +608,7 @@ html, body {
       placeholder="Name eingeben & Enter drücken..."
     />
     <button id="search-btn" type="submit" title="Suche ausführen">Go</button>
-    <button id="clear-verbund-btn" type="button" disabled class="icon-btn icon-btn--danger" aria-label="Ansicht zurücksetzen" title="Ansicht zurücksetzen (Zoom / Suche)">✕</button>
+    <button id="clear-verbund-btn" type="button" disabled class="icon-btn icon-btn--danger" aria-label="Verbundfilter aufheben" title="Verbundfilter aufheben">✕</button>
     <button id="mobile-panel-toggle" class="icon-btn" type="button" aria-pressed="false" title="Filter & Layer" aria-label="Filter und Layer öffnen">☰</button>
     </div>
   <datalist id="resort-datalist"></datalist>
@@ -710,9 +639,17 @@ html, body {
 </div>
 <input id="time-slider" type="range" min="0" max="100" value="100" />
 </div>
+</div>
 
-<!-- Home Selector Host (Placeholder für HomeRoutesSelector; Dropdown sitzt im Slider) -->
-<div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;"></div>
+<!-- Home Selector (legacy) deaktiviert – Dropdown sitzt jetzt in der Slider-Box -->
+<!--
+<!-- Home Selector (wird je nach Screen in Desktop-Box-Stack oder Mobile-Sidepanel verschoben) -->
+<div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;">
+  <div class="title">Startpunkt</div>
+  
+-->
+<select id="homeSelect" class="control-select"></select>
+</div>
 
 <!-- isochroneControl -->
 <!-- Leaflet JS -->
@@ -1141,33 +1078,6 @@ if (typeof rebuildDatalist === "function") {
 
   window.layerControl = L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
 
-
-
-// --- Panel: Layer-Control optisch/inhaltlich gliedern (Karte vs Overlays) ---
-(function decorateLayerControl(){
-  try{
-    const lc = window.layerControl;
-    const c = lc && lc.getContainer ? lc.getContainer() : document.querySelector('.leaflet-control-layers');
-    if (!c) return;
-
-    // Titel (nur einmal)
-    if (!c.querySelector('.panel-title')){
-      c.insertAdjacentHTML('afterbegin', '<div class="panel-title">Layer</div>');
-    }
-
-    // Gruppenüberschriften
-    const base = c.querySelector('.leaflet-control-layers-base');
-    const ov   = c.querySelector('.leaflet-control-layers-overlays');
-    if (base && !(base.previousElementSibling && base.previousElementSibling.classList.contains('panel-group-title'))){
-      base.insertAdjacentHTML('beforebegin', '<div class="panel-group-title">Karte</div>');
-    }
-    if (ov && !(ov.previousElementSibling && ov.previousElementSibling.classList.contains('panel-group-title'))){
-      ov.insertAdjacentHTML('beforebegin', '<div class="panel-group-title">Overlays</div>');
-    }
-  } catch(e){
-    console.warn('decorateLayerControl failed', e);
-  }
-})();
 // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
   const ui = window.initSearchAndFilters({
     map,
@@ -1228,8 +1138,7 @@ if (typeof rebuildDatalist === "function") {
     const url = `data/routes/home_${homeId}.geojson`;
 
     // Enabled-Status merken
-    const hadTree = !!(tree && tree.getLayer && tree.getLayer());
-    const wasEnabled = hadTree ? map.hasLayer(tree.getLayer()) : true; // default: an
+    const wasEnabled = !!(tree && tree.getLayer && tree.getLayer() && map.hasLayer(tree.getLayer()));
 
     // Alte Instanz entfernen (Layer + Eintrag im LayerControl)
     if (tree && tree.getLayer && tree.getLayer()) {
@@ -1252,10 +1161,6 @@ if (typeof rebuildDatalist === "function") {
     // Eintrag (Checkbox) in Layer-Control hinzufügen (Leaflet setzt checked abhängig von map.hasLayer)
     if (window.layerControl && tree.getLayer && tree.getLayer()) {
       window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
-      // Default/Restore: wenn enabled, Layer auch wirklich auf die Karte legen (damit Checkbox checked ist)
-      if (wasEnabled && tree.getLayer && tree.getLayer() && !map.hasLayer(tree.getLayer())) {
-        map.addLayer(tree.getLayer());
-      }
     }
 
     // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
@@ -1534,6 +1439,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <h3>Filter & Layer</h3>
   <div id="panel-layers" class="panel-section"></div>
   <div id="panel-filters" class="panel-section"></div>
+  <div id="panel-export" class="panel-section"></div>
 </aside>
 
 
@@ -1544,7 +1450,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const panel = document.getElementById('mobile-panel');
     const panelLayers = document.getElementById('panel-layers');
     const panelFilters = document.getElementById('panel-filters');
-    if (!btn || !backdrop || !panel || !panelLayers || !panelFilters) return;
+    const panelExport = document.getElementById('panel-export');
+    if (!btn || !backdrop || !panel || !panelLayers || !panelFilters || !panelExport) return;
 
     const mq = window.matchMedia('(max-width: 720px)');
     const isMobile = () => mq && mq.matches;
@@ -1552,6 +1459,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Remember original parents so we can restore on desktop
     let origLayersParent = null, origLayersNext = null;
     let origFiltersParent = null, origFiltersNext = null;
+    let origExportParent = null, origExportNext = null;
 
     const setSearchBottomVar = () => {
       const box = document.querySelector('.search-box');
@@ -1586,7 +1494,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     backdrop.addEventListener('click', close);
 
-    const captureOriginals = (layers, filters) => {
+    const captureOriginals = (layers, filters, exportBox) => {
       if (layers && !origLayersParent) {
         origLayersParent = layers.parentNode;
         origLayersNext = layers.nextSibling;
@@ -1595,11 +1503,16 @@ document.addEventListener("DOMContentLoaded", () => {
         origFiltersParent = filters.parentNode;
         origFiltersNext = filters.nextSibling;
       }
+      if (exportBox && !origExportParent) {
+        origExportParent = exportBox.parentNode;
+        origExportNext = exportBox.nextSibling;
+      }
     };
 
     const restoreFromPanel = () => {
       const layers = document.querySelector('.leaflet-control-layers');
       const filters = document.querySelector('.filter-box');
+      const exportBox = document.querySelector('.export-box');
 
       if (layers && origLayersParent && layers.parentNode !== origLayersParent) {
         try { origLayersParent.insertBefore(layers, origLayersNext || null); }
@@ -1609,6 +1522,10 @@ document.addEventListener("DOMContentLoaded", () => {
         try { origFiltersParent.insertBefore(filters, origFiltersNext || null); }
         catch (_) { origFiltersParent.appendChild(filters); }
       }
+      if (exportBox && origExportParent && exportBox.parentNode !== origExportParent) {
+        try { origExportParent.insertBefore(exportBox, origExportNext || null); }
+        catch (_) { origExportParent.appendChild(exportBox); }
+      }
     };
 
     const moveToPanel = ({force=false} = {}) => {
@@ -1616,6 +1533,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const layers = document.querySelector('.leaflet-control-layers');
       const filters = document.querySelector('.filter-box');
+      const exportBox = document.querySelector('.export-box');
 
       // If Leaflet hasn't created them yet, keep waiting
       if (!layers && !filters) return false;
@@ -1631,7 +1549,15 @@ document.addEventListener("DOMContentLoaded", () => {
         panelFilters.appendChild(filters);
         movedAny = true;
       }
-      return movedAny || (!!layers && !!filters && panelLayers.contains(layers) && panelFilters.contains(filters));
+      if (exportBox && (!panelExport.contains(exportBox) || force)) {
+        panelExport.appendChild(exportBox);
+        movedAny = true;
+      }
+      return movedAny || (
+        (!!layers ? panelLayers.contains(layers) : true) &&
+        (!!filters ? panelFilters.contains(filters) : true) &&
+        (!!exportBox ? panelExport.contains(exportBox) : true)
+      );
     };
 
     // Keep trying for a short while (Leaflet creates controls asynchronously)
