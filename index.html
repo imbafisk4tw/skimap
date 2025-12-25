@@ -746,6 +746,40 @@ html, body {
 #mobile-panel details.panel-accordion[open] > summary::after{ content: "▴"; }
 #mobile-panel details.panel-accordion + details.panel-accordion{ margin-top: 8px; }
 
+
+
+/* --- Last search highlight (ring + subtle pulse) --- */
+.leaflet-interactive.last-search-marker {
+  animation: lastSearchBounce 0.9s ease-out 0s 1;
+  filter: drop-shadow(0 0 6px rgba(255, 204, 0, 0.75));
+}
+img.leaflet-marker-icon.last-search-marker {
+  animation: lastSearchBounce 0.9s ease-out 0s 1;
+  filter: drop-shadow(0 0 6px rgba(255, 204, 0, 0.75));
+}
+
+.last-search-indicator {
+  /* color of the ring (override Leaflet default path styling) */
+  stroke: rgba(255, 204, 0, 0.95);
+  stroke-width: 3;
+  fill: transparent;
+}
+.last-search-indicator.pulse {
+  animation: lastSearchRing 1.2s ease-out 0s 1;
+  transform-origin: center;
+}
+
+@keyframes lastSearchRing {
+  0%   { opacity: 1; transform: scale(0.6); }
+  100% { opacity: 0; transform: scale(1.8); }
+}
+@keyframes lastSearchBounce {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-10px); }
+  45%  { transform: translateY(0); }
+  65%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
 </style>
 
 </head>
@@ -1262,7 +1296,7 @@ if (typeof rebuildDatalist === "function") {
   // Passe RESET_ZOOM_MOBILE in den DevTools an, bis es sich für dich richtig anfühlt.
   const RESET_CENTER = [47.2, 12.2];
   const RESET_ZOOM_DESKTOP = 9;
-  const RESET_ZOOM_MOBILE  = 7; // <— hier testen/ändern
+  const RESET_ZOOM_MOBILE  = 8; // <— hier testen/ändern
 
   const isMobileViewport = () => window.matchMedia("(max-width: 720px)").matches;
 

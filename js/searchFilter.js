@@ -146,6 +146,75 @@ function setMapDim(on) {
       updateClearBtnState();
     }
 
+    // --- Last search highlighting (helps finding the last searched resort after zoom reset) ---
+    let lastSearchMarker = null;
+    let lastSearchLatLng = null;
+    let lastSearchIndicator = null;
+
+    function _getLayerElement(layer) {
+      // Leaflet 1.9+: getElement(); otherwise fallback to _path (SVG)
+      if (!layer) return null;
+      if (typeof layer.getElement === "function") return layer.getElement();
+      return layer._path || null;
+    }
+
+    function _ensureLastSearchIndicator() {
+      if (!lastSearchLatLng || typeof L === "undefined") return;
+
+      if (!lastSearchIndicator) {
+        try {
+          lastSearchIndicator = L.circleMarker(lastSearchLatLng, {
+            radius: 12,
+            weight: 3,
+            opacity: 0.95,
+            fillOpacity: 0,
+            interactive: false,
+            className: "last-search-indicator",
+          }).addTo(map);
+        } catch (_) {
+          lastSearchIndicator = null;
+          return;
+        }
+      } else {
+        try { lastSearchIndicator.setLatLng(lastSearchLatLng); } catch (_) {}
+      }
+
+      try { lastSearchIndicator.bringToFront && lastSearchIndicator.bringToFront(); } catch (_) {}
+    }
+
+    function pulseLastSearch() {
+      if (!lastSearchLatLng) return;
+
+      _ensureLastSearchIndicator();
+
+      // Pulse ring
+      const ringEl = _getLayerElement(lastSearchIndicator);
+      if (ringEl && ringEl.classList) {
+        ringEl.classList.remove("pulse");
+        // force reflow so the animation can re-trigger
+        void ringEl.offsetWidth;
+        ringEl.classList.add("pulse");
+        window.setTimeout(() => { try { ringEl.classList.remove("pulse"); } catch (_) {} }, 1400);
+      }
+
+      // Pulse the actual marker too (works for SVG markers / circleMarkers; for image icons it still applies a shadow/bounce)
+      const markerEl = _getLayerElement(lastSearchMarker);
+      if (markerEl && markerEl.classList) {
+        markerEl.classList.remove("last-search-marker");
+        void markerEl.offsetWidth;
+        markerEl.classList.add("last-search-marker");
+        window.setTimeout(() => { try { markerEl.classList.remove("last-search-marker"); } catch (_) {} }, 1400);
+      }
+    }
+
+    function setLastSearchMarker(marker) {
+      lastSearchMarker = marker || null;
+      try { lastSearchLatLng = marker ? marker.getLatLng() : null; } catch (_) { lastSearchLatLng = null; }
+      // if the user searches while already zoomed out, we still want the marker to be findable
+      pulseLastSearch();
+    }
+
+
 
 // --- Map view reset (like page reload) ---
 // We capture the view at init time (or accept overrides via opts) and can smoothly return to it.
@@ -238,12 +307,8 @@ const timeSlider = document.getElementById("time-slider");
         const groupIdRaw =
           (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim()
           : (r.verbund && typeof r.verbund.id === "string" && r.verbund.id.trim()) ? r.verbund.id.trim()
-          : null;
+          : (shortNameRaw ? norm(shortNameRaw) : (groupNameRaw ? norm(groupNameRaw) : null));
 
-        // IMPORTANT:
-        // We only index real Verbünde that are explicitly present in the data (groupId / verbund.id).
-        // We do NOT synthesize a groupId from resort names (e.g. "Achenkirch – ..."),
-        // otherwise single resorts would wrongly show up as "Verbund:" suggestions again.
         if (!groupIdRaw) return;
 
         if (!groupById.has(groupIdRaw)) {
@@ -291,24 +356,11 @@ const timeSlider = document.getElementById("time-slider");
 // - setzt die Kartenansicht auf die initiale View zurück
 if (clearVerbundBtn) {
   clearVerbundBtn.addEventListener("click", () => {
-    // "Zurücksetzen" soll sich wie ein Reload anfühlen:
-    // - Suchfeld leeren
-    // - Verbundfilter aus
-    // - Slider auf 100%
-    // - Kartenansicht auf initiale View (smooth)
-    if (searchInput) searchInput.value = "";
-    setHasSearchView(false);
     setGroupFilter(null);
-
-    if (timeSlider) {
-      timeSlider.value = 100;
-      currentPct = 100;
-      updateTimeLabel(100);
-      applyFilters(100);
-    }
-
-    rebuildDatalist();
+    setHasSearchView(false);
     resetMapView();
+    // After zoom reset, add a short pulse so the user can spot the last searched resort.
+    window.setTimeout(pulseLastSearch, 220);
     try { searchInput && searchInput.focus(); } catch (_) {}
   });
 }
@@ -369,90 +421,91 @@ function updateVerbundUi() {
     }
 
     function buildFilterControl() {
-  if (!createFilterControl || typeof L === "undefined") return;
+      if (!createFilterControl || typeof L === "undefined") return;
 
-  const filterControl = L.control({ position: "topright" });
-  filterControl.onAdd = function () {
-    const div = L.DomUtil.create("div", "filter-box leaflet-control");
+      const ctrl = L.control({ position: "topright" });
+      ctrl.onAdd = function () {
+        const div = L.DomUtil.create("div", "filter-box leaflet-control");
+        div.innerHTML = `
+          <div class="title">Filter</div>
+          <label><input type="checkbox" id="flt-sct" checked> Nur Snow Card Tirol</label>
+          <label><input type="checkbox" id="flt-ssc" checked> Nur SuperSkiCard</label>
+          <label><input type="checkbox" id="flt-both" checked> Beide Pässe</label>
+          <label><input type="checkbox" id="flt-glacier" checked> Gletscher</label>
+          <label><input type="checkbox" id="flt-muc" checked> Nahe München</label>
+                  <label><input type="checkbox" id="flt-dimmap"> Karte abdunkeln</label>
+`;
+        L.DomEvent.disableClickPropagation(div);
+        L.DomEvent.disableScrollPropagation(div);
+        return div;
+      };
+      ctrl.addTo(map);
 
-    div.innerHTML = `
-      <div class="title">Filter</div>
-      <label class="filter-item"><input type="checkbox" id="flt-sct-only">Snow Card Tirol</label>
-      <label class="filter-item"><input type="checkbox" id="flt-ssc-only">SuperSkiCard</label>
-      <label class="filter-item"><input type="checkbox" id="flt-both">In both Tickets</label>
-      <label class="filter-item"><input type="checkbox" id="flt-glacier">Glacier</label>
-      <label class="filter-item"><input type="checkbox" id="flt-near-muc">Near Munich</label>
-      <label class="filter-item"><input type="checkbox" id="flt-dim">Dark mode</label>
-    `;
+      // wiring (nachdem es im DOM ist)
+      const wire = () => {
+        const elSct = document.getElementById("flt-sct");
+        const elSsc = document.getElementById("flt-ssc");
+        const elBoth = document.getElementById("flt-both");
+        const elGl = document.getElementById("flt-glacier");
+        const elMuc = document.getElementById("flt-muc");
 
-    L.DomEvent.disableClickPropagation(div);
-    L.DomEvent.disableScrollPropagation(div);
+const elDim = document.getElementById("flt-dimmap");
 
-    // Initialize checkbox states from filterState
-    const elSct = div.querySelector("#flt-sct-only");
-    const elSsc = div.querySelector("#flt-ssc-only");
-    const elBoth = div.querySelector("#flt-both");
-    const elGlac = div.querySelector("#flt-glacier");
-    const elNear = div.querySelector("#flt-near-muc");
-    const elDim = div.querySelector("#flt-dim");
+// restore + apply saved dim state
+const savedDim = (typeof localStorage !== "undefined") && localStorage.getItem("mapDim") === "1";
+if (elDim) {
+  elDim.checked = !!savedDim;
+  setMapDim(!!savedDim);
+  elDim.addEventListener("change", () => {
+    const on = !!elDim.checked;
+    setMapDim(on);
+    if (typeof localStorage !== "undefined") {
+      localStorage.setItem("mapDim", on ? "1" : "0");
+    }
+  });
+} else {
+  setMapDim(!!savedDim);
+}
+        const handler = () => {
+          filterState.sctOnly = !!elSct?.checked;
+          filterState.sscOnly = !!elSsc?.checked;
+          filterState.both = !!elBoth?.checked;
+          filterState.glacier = !!elGl?.checked;
+          filterState.nearMuc = !!elMuc?.checked;
+          applyFilters(currentPct);
+        };
 
-    if (elSct) elSct.checked = !!filterState.sctOnly;
-    if (elSsc) elSsc.checked = !!filterState.sscOnly;
-    if (elBoth) elBoth.checked = !!filterState.both;
-    if (elGlac) elGlac.checked = !!filterState.glacier;
-    if (elNear) elNear.checked = !!filterState.nearMuc;
-    if (elDim) elDim.checked = false;
+        [elSct, elSsc, elBoth, elGl, elMuc].forEach(el => {
+          if (!el) return;
+          el.addEventListener("change", handler);
+        });
+      };
 
-    const onChange = () => {
-      if (elSct) filterState.sctOnly = !!elSct.checked;
-      if (elSsc) filterState.sscOnly = !!elSsc.checked;
-      if (elBoth) filterState.both = !!elBoth.checked;
-      if (elGlac) filterState.glacier = !!elGlac.checked;
-      if (elNear) filterState.nearMuc = !!elNear.checked;
-      applyFilters(currentPct);
-      // Datalist kann (wenn gewünscht) aktualisiert werden – aber nicht zwingend.
-    };
-
-    if (elSct) elSct.addEventListener("change", onChange);
-    if (elSsc) elSsc.addEventListener("change", onChange);
-    if (elBoth) elBoth.addEventListener("change", onChange);
-    if (elGlac) elGlac.addEventListener("change", onChange);
-    if (elNear) elNear.addEventListener("change", onChange);
-
-    if (elDim) {
-      elDim.addEventListener("change", () => setMapDim(!!elDim.checked));
+      // nächster Tick (sicherstellen DOM ist da)
+      setTimeout(wire, 0);
     }
 
-    return div;
-  };
+    function buildExportControl() {
+      if (!createExportControl || typeof L === "undefined") return;
 
-  filterControl.addTo(map);
-  return filterControl;
-}
+      const exportControl = L.control({ position: "topright" });
+      exportControl.onAdd = function () {
+        const div = L.DomUtil.create("div", "export-box leaflet-control");
+        div.innerHTML = `
+          <div class="title">Export (aktueller Filter)</div>
+          <button id="${exportCsvBtnId}" type="button">CSV → Google My Maps</button>
+          <button id="${exportKmlBtnId}" type="button">KML → Google My Maps</button>
+          <div class="hint">Import in Google My Maps, danach in Google Maps nutzbar.</div>
+        `;
+        L.DomEvent.disableClickPropagation(div);
+        L.DomEvent.disableScrollPropagation(div);
+        return div;
+      };
+      exportControl.addTo(map);
+    }
 
-function buildExportControl() {
-  if (!createExportControl || typeof L === "undefined") return;
-
-  const exportControl = L.control({ position: "topright" });
-  exportControl.onAdd = function () {
-    const div = L.DomUtil.create("div", "export-box leaflet-control");
-    div.innerHTML = `
-      <div class="title">Export Slider Selection</div>
-      <button id="${exportCsvBtnId}" type="button">CSV-Export</button>
-      <button id="${exportKmlBtnId}" type="button">KML-Export</button>
-    `;
-
-    L.DomEvent.disableClickPropagation(div);
-    L.DomEvent.disableScrollPropagation(div);
-    return div;
-  };
-
-  exportControl.addTo(map);
-  return exportControl;
-}
-
-buildFilterControl();
-buildExportControl();
+    buildFilterControl();
+    buildExportControl();
 
     // -------- Suche --------
     // Datalist Autocomplete:
@@ -476,24 +529,23 @@ buildExportControl();
     function fillDatalistForGroups() {
       if (!datalist) return;
       rebuildGroupIndex();
-
-      // Only show real Verbünde (>= 2 Resorts) and only ONE suggestion per Verbund.
-      // Value uses the human displayName to avoid "verbund: skiwelt" vs "verbund: SkiWelt" duplicates.
       const groups = Array.from(groupById.values())
-        .filter(g => g && Array.isArray(g.resorts) && g.resorts.length >= 2)
         .sort((a, b) => String(a.displayName || a.id).localeCompare(String(b.displayName || b.id), "de"));
-
       for (const g of groups) {
-        const display = String(g.displayName || g.id || "").trim();
-        if (!display) continue;
+        const addOpt = (value, label) => {
+          const opt = document.createElement("option");
+          opt.value = value;
+          if (label) opt.label = label;
+          datalist.appendChild(opt);
+        };
 
-        const opt = document.createElement("option");
-        opt.value = `verbund: ${display}`;
+        // 1) zuverlässig: groupId
+        addOpt(`verbund: ${g.id}`, g.displayName && g.displayName !== g.id ? String(g.displayName) : "");
 
-        // Optional: keep the stable id for debugging/clarity (some browsers show it)
-        if (g.id && display !== String(g.id)) opt.label = String(g.id);
-
-        datalist.appendChild(opt);
+        // 2) komfortabel: Anzeigename (falls anders als groupId)
+        if (g.displayName && String(g.displayName).trim() && String(g.displayName) !== String(g.id)) {
+          addOpt(`verbund: ${String(g.displayName)}`, String(g.id));
+        }
       }
     }
 
@@ -551,6 +603,7 @@ buildExportControl();
       map.setView(latLng, 11);
       marker.openPopup();
       setHasSearchView(true);
+      setLastSearchMarker(marker);
     }
 
     function extractResortName(raw) {
@@ -610,6 +663,7 @@ buildExportControl();
       if (bounds.isValid()) {
         map.fitBounds(bounds.pad(0.15));
         setHasSearchView(true);
+      setLastSearchMarker(marker);
       }
     }
 
