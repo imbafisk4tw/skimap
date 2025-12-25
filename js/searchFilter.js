@@ -377,12 +377,12 @@ function updateVerbundUi() {
 
     div.innerHTML = `
       <div class="title">Filter</div>
-      <label class="filter-item"><input type="checkbox" id="flt-sct-only"> Nur Snow Card Tirol</label>
-      <label class="filter-item"><input type="checkbox" id="flt-ssc-only"> Nur SuperSkiCard</label>
-      <label class="filter-item"><input type="checkbox" id="flt-both"> Beide Pässe</label>
-      <label class="filter-item"><input type="checkbox" id="flt-glacier"> Gletscher</label>
-      <label class="filter-item"><input type="checkbox" id="flt-near-muc"> Nahe München</label>
-      <label class="filter-item"><input type="checkbox" id="flt-dim"> Karte abdunkeln</label>
+      <label class="filter-item"><input type="checkbox" id="flt-sct-only">Snow Card Tirol</label>
+      <label class="filter-item"><input type="checkbox" id="flt-ssc-only">SuperSkiCard</label>
+      <label class="filter-item"><input type="checkbox" id="flt-both">In both Tickets/label>
+      <label class="filter-item"><input type="checkbox" id="flt-glacier">Glacier</label>
+      <label class="filter-item"><input type="checkbox" id="flt-near-muc">Near Munich</label>
+      <label class="filter-item"><input type="checkbox" id="flt-dim">Dark mode</label>
     `;
 
     L.DomEvent.disableClickPropagation(div);
