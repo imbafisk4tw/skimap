@@ -171,7 +171,7 @@ padding: 4px 6px;
       cursor: default;
     }
 .slider-box {
-      position: relative;
+      position: fixed;
       bottom: 110px;        /* sitzt über der Legende */
       left: 20px;
       z-index: 10000;
@@ -405,7 +405,7 @@ padding: 4px 6px;
     }
 
 .search-box input { width: 100% !important; }
-      .slider-box { bottom: 120px !important; }
+      .slider-box { bottom: 20px !important; }
       .legend-box { bottom: 10px !important; }
       .counter-box { right: 10px !important; bottom: 10px !important; }
       .filter-box.leaflet-control,
@@ -509,6 +509,74 @@ padding: 4px 6px;
 }
 
 
+
+
+/* --- Fix: Legacy-Startpunkt-Box ausblenden (falls sie noch existiert) --- */
+#homeSelectorBox,
+.homeSelectorBox,
+.leaflet-control.home-selector,
+.leaflet-control.homeSelector {
+  display: none !important;
+}
+
+/* --- Fix: Seite nicht scrollbar (verhindert weißen Leerraum unten auf Mobile) --- */
+html, body {
+  overflow: hidden;
+}
+
+/* --- Slider-Box wirklich als Overlay (nicht im Dokumentfluss) --- */
+.slider-box {
+  position: fixed !important;
+  left: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+}
+
+/* Mobile: etwas kompakter, damit nichts überlappt */
+@media (max-width: 640px){
+  .slider-box{
+    left: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    max-width: min(320px, calc(100vw - 24px));
+    width: calc(100vw - 24px);
+  }
+}
+
+/* Startpunkt (Dropdown) oberhalb des Sliders */
+.startpoint-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.startpoint-title{
+  font-weight:600;
+  font-size:12px;
+  opacity:.9;
+}
+.slider-sep{
+  height:1px;
+  background: rgba(0,0,0,.12);
+  margin: 10px 0 8px 0;
+}
+
+
+/* Label + Fahrzeit in einer Zeile */
+.time-row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:6px;
+}
+.time-row label{
+  margin:0;
+  flex: 1 1 auto;
+  min-width:0;
+}
+.time-value{
+  font-weight:700;
+  color:#1a73e8;
+  white-space:nowrap;
+}
 </style>
 
 </head>
@@ -552,17 +620,30 @@ padding: 4px 6px;
   <button id="btn-calc-times" type="button">Fahrzeiten berechnen</button>
 </div>
 
-<!-- Fahrzeit-Slider -->
+<!-- Fahrzeit-Slider + Startpunkt -->
 <div class="slider-box">
-  <label for="time-slider">Max. Fahrzeit ab München</label>
-  <input id="time-slider" type="range" min="0" max="100" value="100" />
-  <div id="time-slider-label" class="time-label">Voll (alle Gebiete)</div>
+  <div class="startpoint-row">    
+    <select id="homeSelectSlider" class="control-select" aria-label="Startpunkt auswählen"></select>
+  </div>
+
+  <div class="slider-sep"></div>
+
+  <div class="time-row">
+  <label for="time-slider" id="time-slider-title">Max. Fahrzeit</label>
+  <span id="time-slider-label" class="time-value">bis ca. 0h 00m</span>
+</div>
+<input id="time-slider" type="range" min="0" max="100" value="100" />
+</div>
 </div>
 
+<!-- Home Selector (legacy) deaktiviert – Dropdown sitzt jetzt in der Slider-Box -->
+<!--
 <!-- Home Selector (wird je nach Screen in Desktop-Box-Stack oder Mobile-Sidepanel verschoben) -->
 <div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;">
   <div class="title">Startpunkt</div>
-  <select id="homeSelect" class="control-select"></select>
+  
+-->
+<select id="homeSelect" class="control-select"></select>
 </div>
 
 <!-- isochroneControl -->
@@ -1314,7 +1395,7 @@ if (typeof rebuildDatalist === "function") {
       routesDir: "data/routes",
       routeFile: (homeId) => `data/routes/home_${homeId}.geojson`,
       defaultHomeId: "muc",
-      selectId: "homeSelect",
+      selectId: "homeSelectSlider",
       boxId: "homeSelectorBox",
       desktopHostSelector: ".leaflet-top.leaflet-right",
       mobileHostId: "panel-filters",

@@ -241,7 +241,7 @@ const timeSlider = document.getElementById("time-slider");
         const vName = groupById.get(currentGroupId)?.displayName || groupById.get(currentGroupId)?.id || "Verbund";
         searchInput.placeholder = `Filter aktiv: ${vName} (Button zum Aufheben)`;
       } else {
-        searchInput.placeholder = "Name eingeben & Enter drücken...";
+        searchInput.placeholder = "Suche...";
       }
     }
 
@@ -662,10 +662,12 @@ if (elDim) {
     function updateTimeLabel(pct) {
       if (!timeLabel) return;
 
-      if (pct >= 99) {
-        timeLabel.textContent = "Voll (alle Gebiete)";
-        return;
-      }
+    if (pct >= 99) {
+      const maxHours = getMaxHours();
+      timeLabel.textContent = "ca. " + fmtTime(maxHours);
+      return;
+    }
+
       const minHours = getMinHours();
       const maxHours = getMaxHours();
       const limitHours = minHours + (pct / 100) * (maxHours - minHours);
