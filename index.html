@@ -880,6 +880,48 @@ button, input, select, textarea{
 .leaflet-tooltip{
   font-family: var(--ui-font-family) !important;
 }
+
+
+/* --- Unified checkbox/radio sizing (mobile + desktop) --- */
+:root{
+  --ui-check-size: 18px;   /* try 16-20px */
+  --ui-check-scale: 1.1;   /* helps on browsers that ignore width/height on native inputs */
+}
+
+/* Target Leaflet layers control + our filter box (desktop) */
+.leaflet-control-layers input[type="checkbox"],
+.leaflet-control-layers input[type="radio"],
+.filter-box input[type="checkbox"],
+.filter-box input[type="radio"],
+.export-box input[type="checkbox"],
+.export-box input[type="radio"],
+/* Target everything inside the mobile side panel */
+#mobile-panel input[type="checkbox"],
+#mobile-panel input[type="radio"]{
+  inline-size: var(--ui-check-size);
+  block-size: var(--ui-check-size);
+  transform: scale(var(--ui-check-scale));
+  transform-origin: center;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Keep label text nicely aligned */
+.leaflet-control-layers label,
+.filter-box label,
+#mobile-panel label{
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* When using flex+gap, don't double-space from margin-right */
+.leaflet-control-layers label input,
+.filter-box label input,
+#mobile-panel label input{
+  margin-right: 0;
+}
 </style>
 
 </head>
