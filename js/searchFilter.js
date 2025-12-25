@@ -437,7 +437,7 @@ function buildExportControl() {
   exportControl.onAdd = function () {
     const div = L.DomUtil.create("div", "export-box leaflet-control");
     div.innerHTML = `
-      <div class="title">Export</div>
+      <div class="title">Export Slider Selection</div>
       <button id="${exportCsvBtnId}" type="button">CSV-Export</button>
       <button id="${exportKmlBtnId}" type="button">KML-Export</button>
     `;
