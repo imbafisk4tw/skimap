@@ -950,6 +950,20 @@ button, input, select, textarea{
 #mobile-panel .filter-box.leaflet-control *{
   max-width: 100% !important;
 }
+
+/* GPS toggle inside export box */
+.export-box label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin: 6px 0;
+}
+.export-box .gps-hint{
+  font-size: 11px;
+  color: rgba(0,0,0,0.68);
+  margin-top: 4px;
+}
+
 </style>
 
 </head>
@@ -1033,6 +1047,8 @@ button, input, select, textarea{
 <script src="js/homeRoutesSelector.js"></script>
 <script src="js/homeTravelTimes.js"></script>
 
+
+<script src="js/gpsControl.js"></script>
 <script>
   // --------- Basis-Einstellungen ---------
   // ORS_API_KEY wird aus config.js gelesen (nicht in Git einchecken).
@@ -1501,6 +1517,12 @@ if (typeof rebuildDatalist === "function") {
   ,
     resetView});
   window.ui = ui;
+
+  // --------- GPS: aktuelle Position anzeigen (mobil) ---------
+  if (window.GpsControl && typeof window.GpsControl.init === "function") {
+    try { window.GpsControl.init(map); } catch (e) { console.warn("GpsControl init failed", e); }
+  }
+
 // Alte Funktionsnamen weiterhin verfügbar halten (damit bestehender Code unverändert bleibt)
   window.rebuildDatalist   = ui.rebuildDatalist;
   window.updateTimeLabel   = ui.updateTimeLabel;
