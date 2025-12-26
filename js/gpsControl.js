@@ -14,6 +14,8 @@
   let marker = null;
   let accuracyCircle = null;
 
+  let lastLatLng = null;
+
   let didCenterOnce = false;
   let errorAlerted = false;
 
@@ -65,6 +67,53 @@
     });
   }
 
+
+  function centerOnce() {
+    if (!map) return;
+
+    // If we already have a fix, just center.
+    if (lastLatLng) {
+      const z = Math.max(map.getZoom(), 12);
+      try { map.setView(lastLatLng, z, { animate: true }); } catch (_) { map.setView(lastLatLng, z); }
+      return;
+    }
+
+    // Otherwise: request a one-time locate, then center on first result.
+    let centered = false;
+
+    function onceFound(e) {
+      if (centered) return;
+      centered = true;
+      map.off("locationfound", onceFound);
+      map.off("locationerror", onceError);
+
+      const ll = e.latlng;
+      lastLatLng = ll;
+
+      const z = Math.max(map.getZoom(), 12);
+      try { map.setView(ll, z, { animate: true }); } catch (_) { map.setView(ll, z); }
+    }
+
+    function onceError(e) {
+      map.off("locationfound", onceFound);
+      map.off("locationerror", onceError);
+      alert("Standort konnte nicht ermittelt werden. Prüfe Standortfreigabe.\n\nDetails: " + (e && e.message ? e.message : "unbekannt"));
+    }
+
+    map.on("locationfound", onceFound);
+    map.on("locationerror", onceError);
+
+    try {
+      map.locate({
+        watch: false,
+        setView: false,
+        enableHighAccuracy: true,
+        maximumAge: 10_000,
+        timeout: 15_000
+      });
+    } catch (_) {}
+  }
+
   function setEnabled(v) {
     enabled = !!v;
     storeEnabled(enabled);
@@ -80,6 +129,7 @@
     if (!map) return;
 
     const latlng = e.latlng;
+    lastLatLng = latlng;
     const acc = Number(e.accuracy || 0);
 
     if (!marker) {
@@ -133,6 +183,9 @@
     wrap.style.paddingTop = "8px";
     wrap.style.borderTop = "1px solid rgba(0,0,0,0.12)";
 
+    const row = document.createElement("div");
+    row.className = "gps-row";
+
     const label = document.createElement("label");
     label.htmlFor = "gps-toggle";
 
@@ -146,16 +199,21 @@
     label.appendChild(cb);
     label.appendChild(text);
 
-    const hint = document.createElement("div");
-    hint.className = "gps-hint";
-    hint.textContent = "Funktioniert am zuverlässigsten über HTTPS. Beim ersten Mal fragt der Browser nach Erlaubnis.";
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "gps-center-btn";
+    btn.title = "Auf meine Position zentrieren";
+    btn.textContent = "📍 Zentrieren";
 
-    wrap.appendChild(label);
-    wrap.appendChild(hint);
+    row.appendChild(label);
+    row.appendChild(btn);
 
+    wrap.appendChild(row);
     exportBox.appendChild(wrap);
 
     cb.addEventListener("change", () => setEnabled(cb.checked));
+
+    btn.addEventListener("click", () => centerOnce());
 
     // restore last state (best effort)
     const stored = readStoredEnabled();
