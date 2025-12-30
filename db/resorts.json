@@ -10,10 +10,8 @@
     "lon": 12.295233,
     "sct": true,
     "ssc": false,
-    "groupId": "amberglift",
     "entryName": "Amberglift Walchsee",
     "entryType": "main",
-    "groupName": "Amberglift Walchsee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -32,10 +30,8 @@
     "lon": 11.281,
     "sct": true,
     "ssc": false,
-    "groupId": "axamer-lizum",
     "entryName": "Axamer Lizum",
     "entryType": "main",
-    "groupName": "Axamer Lizum",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -57,7 +53,7 @@
     "groupId": "bergbahn-pillersee",
     "entryName": "Bergbahnen Pillersee",
     "entryType": "entry",
-    "groupName": "Buchensteinwand - Pillersee",
+    "groupName": "Bergbahn Pillersee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -76,10 +72,8 @@
     "lon": 12.39825,
     "sct": true,
     "ssc": false,
-    "groupId": "bergeralm",
     "entryName": "Bergeralm",
     "entryType": "main",
-    "groupName": "Bergeralm",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -98,10 +92,8 @@
     "lon": 10.307553,
     "sct": true,
     "ssc": false,
-    "groupId": "bergwelt-hahnenkamm",
     "entryName": "Bergwelt Hahnenkamm",
     "entryType": "main",
-    "groupName": "Bergwelt Hahnenkamm",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -167,7 +159,7 @@
     "groupId": "bergbahnen-langes",
     "entryName": "Biberwier",
     "entryType": "entry",
-    "groupName": "Lermoos - Grubigstein",
+    "groupName": "Bergbahnen Langes",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -189,7 +181,7 @@
     "groupId": "tirol",
     "entryName": "Bichllifte Prägraten",
     "entryType": "main",
-    "groupName": "Bichllifte Prägraten",
+    "groupName": "Tirol",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -208,11 +200,9 @@
     "lon": 11.553,
     "sct": false,
     "ssc": false,
-    "groupId": "brauneck-bergbahn",
     "nearMuc": true,
     "entryName": "Brauneck",
-    "entryType": "main",
-    "groupName": "Brauneck - Lenggries"
+    "entryType": "main"
   },
   {
     "stable_id": "brixen-im-thale-skiwelt",
@@ -228,7 +218,7 @@
     "groupId": "skiwelt",
     "entryName": "Brixen im Thale",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -250,7 +240,7 @@
     "groupId": "bergbahn-pillersee",
     "entryName": "Buchensteinwand",
     "entryType": "main",
-    "groupName": "Buchensteinwand - Pillersee",
+    "groupName": "Bergbahn Pillersee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -269,10 +259,8 @@
     "lon": 12.50083,
     "sct": true,
     "ssc": false,
-    "groupId": "jimdofree",
     "entryName": "Dorfberg Kartitsch",
     "entryType": "main",
-    "groupName": "Dorfberg Kartitsch",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -294,7 +282,7 @@
     "groupId": "hintertuxergletscher",
     "entryName": "Eggalmbahnen",
     "entryType": "main",
-    "groupName": "Eggalmbahnen",
+    "groupName": "Hintertuxer Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -316,7 +304,7 @@
     "groupId": "almbahn",
     "entryName": "Ehrwald",
     "entryType": "entry",
-    "groupName": "Ehrwalder Alm",
+    "groupName": "Almbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -338,7 +326,7 @@
     "groupId": "almbahn",
     "entryName": "Ehrwalder Alm",
     "entryType": "main",
-    "groupName": "Ehrwalder Alm",
+    "groupName": "Almbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -357,10 +345,8 @@
     "lon": 10.938698,
     "sct": true,
     "ssc": false,
-    "groupId": "wetterstein-bahnen",
     "entryName": "Ehrwalder Wettersteinbahnen",
     "entryType": "main",
-    "groupName": "Ehrwalder Wettersteinbahnen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -382,7 +368,7 @@
     "groupId": "stubai",
     "entryName": "Elferbahnen",
     "entryType": "entry",
-    "groupName": "Schlick 2000",
+    "groupName": "Stubai",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -404,7 +390,7 @@
     "groupId": "skiwelt",
     "entryName": "Ellmau-Going",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -423,10 +409,8 @@
     "lon": 10.66669,
     "sct": true,
     "ssc": false,
-    "groupId": "kaunertal",
     "entryName": "Fendels",
     "entryType": "main",
-    "groupName": "Fendels - Ried - Prutz",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -448,7 +432,7 @@
     "groupId": "hintertuxergletscher",
     "entryName": "Finkenberger Almbahnen",
     "entryType": "entry",
-    "groupName": "Eggalmbahnen",
+    "groupName": "Hintertuxer Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -467,10 +451,8 @@
     "lon": 13.944,
     "sct": false,
     "ssc": true,
-    "groupId": "galsterberg",
     "entryName": "Galsterberg",
     "entryType": "main",
-    "groupName": "Galsterberg",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -489,10 +471,8 @@
     "lon": 10.18333,
     "sct": true,
     "ssc": false,
-    "groupId": "silvapark",
     "entryName": "Galtür",
     "entryType": "main",
-    "groupName": "Galtür - Silvapark",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -531,7 +511,7 @@
     "groupId": "skigastein",
     "entryName": "Gastein",
     "entryType": "entry",
-    "groupName": "Sportgastein",
+    "groupName": "Ski Gastein",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -553,7 +533,7 @@
     "groupId": "skigastein",
     "entryName": "Gastein",
     "entryType": "entry",
-    "groupName": "Sportgastein",
+    "groupName": "Ski Gastein",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -572,10 +552,8 @@
     "lon": 13.894,
     "sct": false,
     "ssc": true,
-    "groupId": "gerlitzen",
     "entryName": "Gerlitzen Alpe",
     "entryType": "main",
-    "groupName": "Gerlitzen Alpe",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -638,10 +616,8 @@
     "lon": 11.522,
     "sct": true,
     "ssc": false,
-    "groupId": "glungezerbahn",
     "entryName": "Glungezer",
     "entryType": "main",
-    "groupName": "Glungezer - Tulfes",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -660,10 +636,8 @@
     "lon": 13.476,
     "sct": false,
     "ssc": true,
-    "groupId": "sportberg-goldeck",
     "entryName": "Goldeck",
     "entryType": "main",
-    "groupName": "Goldeck - Spittal/Drau",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -682,10 +656,8 @@
     "lon": 14.34,
     "sct": false,
     "ssc": true,
-    "groupId": "grebenzen",
     "entryName": "Grebenzen",
     "entryType": "main",
-    "groupName": "Grebenzen - St. Lambrecht",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -704,10 +676,8 @@
     "lon": 12.562,
     "sct": true,
     "ssc": false,
-    "groupId": "gg-resort",
     "entryName": "Großglockner Resort Kals–Matrei",
     "entryType": "main",
-    "groupName": "Großglockner Resort Kals-Matrei",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -726,10 +696,8 @@
     "lon": 11.1771783,
     "sct": true,
     "ssc": false,
-    "groupId": "skigebiet-seefeld",
     "entryName": "Gschwandtkopflifte",
     "entryType": "main",
-    "groupName": "Gschwandtkopflifte",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -748,10 +716,8 @@
     "lon": 13.83,
     "sct": false,
     "ssc": true,
-    "groupId": "hauser-kaibling",
     "entryName": "Hauser Kaibling",
     "entryType": "main",
-    "groupName": "Hauser Kaibling",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -770,10 +736,8 @@
     "lon": 12.846,
     "sct": false,
     "ssc": true,
-    "groupId": "heiligenblut",
     "entryName": "Heiligenblut",
     "entryType": "main",
-    "groupName": "Heiligenblut - Großglockner",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -792,10 +756,8 @@
     "lon": 14.158,
     "sct": false,
     "ssc": true,
-    "groupId": "hinterstoder",
     "entryName": "Hinterstoder",
     "entryType": "main",
-    "groupName": "Hinterstoder - Höss",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -818,7 +780,7 @@
     "groupId": "hintertuxergletscher",
     "entryName": "Hintertuxer Gletscher",
     "entryType": "entry",
-    "groupName": "Eggalmbahnen",
+    "groupName": "Hintertuxer Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -837,10 +799,8 @@
     "lon": 11.697002,
     "sct": true,
     "ssc": false,
-    "groupId": "christlum",
     "entryName": "Hochalmlifte Christlum",
     "entryType": "main",
-    "groupName": "Hochalmlifte Christlum - Achenkirch",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -859,10 +819,8 @@
     "lon": 13.913,
     "sct": false,
     "ssc": true,
-    "groupId": "hochficht",
     "entryName": "Hochficht (Böhmerwald)",
     "entryType": "main",
-    "groupName": "Hochficht (Böhmerwald)",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -881,10 +839,8 @@
     "lon": 11.775599,
     "sct": true,
     "ssc": false,
-    "groupId": "hochf-gen",
     "entryName": "Hochfügen",
     "entryType": "main",
-    "groupName": "Hochfügen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -903,10 +859,8 @@
     "lon": 13.103,
     "sct": false,
     "ssc": true,
-    "groupId": "hochkoenig",
     "entryName": "Hochkönig",
     "entryType": "main",
-    "groupName": "Hochkönig - Maria Alm/Dienten/Mühlbach",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -925,10 +879,8 @@
     "lon": 12.423,
     "sct": true,
     "ssc": false,
-    "groupId": "bergbahnen-koessen",
     "entryName": "Hochkössen (Unterberghorn)",
     "entryType": "main",
-    "groupName": "Hochkössen (Unterberghorn)",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -969,10 +921,8 @@
     "lon": 10.929613,
     "sct": true,
     "ssc": false,
-    "groupId": "oetz",
     "entryName": "Hochoetz",
     "entryType": "main",
-    "groupName": "Hochoetz - Oetz",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -994,7 +944,7 @@
     "groupId": "planai",
     "entryName": "Hochwurzen",
     "entryType": "main",
-    "groupName": "Hochwurzen",
+    "groupName": "Planai",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1013,10 +963,8 @@
     "lon": 10.757664,
     "sct": true,
     "ssc": false,
-    "groupId": "hochzeiger",
     "entryName": "Hochzeiger",
     "entryType": "main",
-    "groupName": "Hochzeiger - Jerzens Pitztal",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1035,10 +983,8 @@
     "lon": 11.875362,
     "sct": true,
     "ssc": false,
-    "groupId": "hochzillertal-kaltenbach",
     "entryName": "Hochzillertal-Kaltenbach",
     "entryType": "main",
-    "groupName": "Hochzillertal-Kaltenbach",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1060,7 +1006,7 @@
     "groupId": "skiwelt",
     "entryName": "Hopfgarten",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1079,10 +1025,8 @@
     "lon": 11.683876,
     "sct": true,
     "ssc": false,
-    "groupId": "huettegglift",
     "entryName": "Hüttegglift Weerberg",
     "entryType": "main",
-    "groupName": "Hüttegglift Weerberg",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1101,10 +1045,8 @@
     "lon": 10.742382,
     "sct": true,
     "ssc": false,
-    "groupId": "imster-bergbahnen",
     "entryName": "Imst",
     "entryType": "main",
-    "groupName": "Imst - Hochimst",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1123,10 +1065,8 @@
     "lon": 10.293548,
     "sct": true,
     "ssc": false,
-    "groupId": "ischgl",
     "entryName": "Ischgl",
     "entryType": "main",
-    "groupName": "Ischgl - Silvretta Arena",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1145,11 +1085,9 @@
     "lon": 12.996,
     "sct": false,
     "ssc": true,
-    "groupId": "jennerbahn",
     "nearMuc": true,
     "entryName": "Jenner",
     "entryType": "main",
-    "groupName": "Jenner - Königssee",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1168,10 +1106,8 @@
     "lon": 10.359239,
     "sct": true,
     "ssc": false,
-    "groupId": "lechtaler-bergbahnen",
     "entryName": "Jöchelspitze Lechtal",
     "entryType": "main",
-    "groupName": "Jöchelspitze Lechtal",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1190,10 +1126,8 @@
     "lon": 10.376,
     "sct": true,
     "ssc": false,
-    "groupId": "kappl",
     "entryName": "Kappl",
     "entryType": "main",
-    "groupName": "Kappl",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1213,10 +1147,8 @@
     "sct": false,
     "ssc": true,
     "glacier": true,
-    "groupId": "kitzsteinhorn",
     "entryName": "Kaprun",
     "entryType": "main",
-    "groupName": "Kaprun - Kitzsteinhorn (Gletscher)",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1235,10 +1167,8 @@
     "lon": 11.695987,
     "sct": true,
     "ssc": false,
-    "groupId": "karwendel-bergbahn",
     "entryName": "Karwendel-Bergbahn",
     "entryType": "main",
-    "groupName": "Karwendel-Bergbahn - Pertisau",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1257,10 +1187,8 @@
     "lon": 13.994,
     "sct": false,
     "ssc": true,
-    "groupId": "kasberg",
     "entryName": "Kasberg",
     "entryType": "main",
-    "groupName": "Kasberg - Grünau im Almtal",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1279,10 +1207,8 @@
     "lon": 13.647,
     "sct": false,
     "ssc": true,
-    "groupId": "katschberg",
     "entryName": "Katschberg/Aineck",
     "entryType": "main",
-    "groupName": "Katschberg/Aineck",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1301,10 +1227,8 @@
     "lon": 11.164731,
     "sct": true,
     "ssc": false,
-    "groupId": "katzenkopf-leutasch",
     "entryName": "Katzenkopf Leutasch",
     "entryType": "main",
-    "groupName": "Katzenkopf Leutasch",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1324,11 +1248,9 @@
     "sct": true,
     "ssc": false,
     "glacier": true,
-    "groupId": "kaunertaler-gletscher",
     "nearMuc": false,
     "entryName": "Kaunertaler Gletscher",
     "entryType": "main",
-    "groupName": "Kaunertaler Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1347,10 +1269,8 @@
     "lon": 11.731026,
     "sct": true,
     "ssc": false,
-    "groupId": "kellerjochbahn",
     "entryName": "Kellerjochbahn Schwaz-Pill",
     "entryType": "main",
-    "groupName": "Kellerjochbahn Schwaz-Pill",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1369,10 +1289,8 @@
     "lon": 12.392,
     "sct": true,
     "ssc": true,
-    "groupId": "kitzski",
     "entryName": "KitzSki Kirchberg",
-    "entryType": "entry",
-    "groupName": "Kitzbühel",
+    "entryType": "main",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1395,10 +1313,8 @@
     "lon": 13.333,
     "sct": false,
     "ssc": true,
-    "groupId": "shuttleberg",
     "entryName": "Kleinarl",
     "entryType": "main",
-    "groupName": "Kleinarl - Shuttleberg",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1417,10 +1333,8 @@
     "lon": 11.63333,
     "sct": true,
     "ssc": false,
-    "groupId": "kolsassberglift",
     "entryName": "Kolsassberg",
     "entryType": "main",
-    "groupName": "Kolsassberg",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1461,10 +1375,8 @@
     "lon": 12.391375,
     "sct": true,
     "ssc": false,
-    "groupId": "skisport",
     "entryName": "Kössen",
     "entryType": "main",
-    "groupName": "Kössen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1483,10 +1395,8 @@
     "lon": 14.101,
     "sct": false,
     "ssc": true,
-    "groupId": "kreischberg",
     "entryName": "Kreischberg",
     "entryType": "main",
-    "groupName": "Kreischberg",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1505,10 +1415,8 @@
     "lon": 11.023,
     "sct": true,
     "ssc": false,
-    "groupId": "kuehtai",
     "entryName": "Kühtai",
     "entryType": "main",
-    "groupName": "Kühtai",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1527,10 +1435,8 @@
     "lon": 14.384,
     "sct": false,
     "ssc": true,
-    "groupId": "lachtal",
     "entryName": "Lachtal",
     "entryType": "main",
-    "groupName": "Lachtal",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1552,7 +1458,7 @@
     "groupId": "venet",
     "entryName": "Landeck",
     "entryType": "entry",
-    "groupName": "Venet - Zams/Fließ",
+    "groupName": "Venet",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1574,7 +1480,7 @@
     "groupId": "bergbahnen-langes",
     "entryName": "Lermoos",
     "entryType": "main",
-    "groupName": "Lermoos - Grubigstein",
+    "groupName": "Bergbahnen Langes",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1593,10 +1499,8 @@
     "lon": 12.764987,
     "sct": true,
     "ssc": false,
-    "groupId": "lienzer-bergbahnen",
     "entryName": "Lienz Zettersfeld Hochstein",
     "entryType": "main",
-    "groupName": "Lienz Zettersfeld Hochstein",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1615,10 +1519,8 @@
     "lon": 13.79,
     "sct": false,
     "ssc": true,
-    "groupId": "loser",
     "entryName": "Loser",
     "entryType": "main",
-    "groupName": "Loser - Altaussee",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1637,10 +1539,8 @@
     "lon": 11.8568543,
     "sct": true,
     "ssc": false,
-    "groupId": "mayrhofner-bergbahnen",
     "entryName": "Mayrhofen",
     "entryType": "main",
-    "groupName": "Mayrhofen - Penken/Ahorn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1659,10 +1559,8 @@
     "lon": 12.48711,
     "sct": true,
     "ssc": false,
-    "groupId": "mittersill",
     "entryName": "Mittersill",
     "entryType": "main",
-    "groupName": "Mittersill - Paß Thurn - Kitzbühel",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1682,10 +1580,8 @@
     "sct": false,
     "ssc": true,
     "glacier": true,
-    "groupId": "moelltaler-gletscher",
     "entryName": "Mölltaler Gletscher",
     "entryType": "main",
-    "groupName": "Mölltaler Gletscher",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1704,10 +1600,8 @@
     "lon": 11.321516,
     "sct": true,
     "ssc": false,
-    "groupId": "muttereralm",
     "entryName": "Muttereralm",
     "entryType": "main",
-    "groupName": "Muttereralm - Nockspitzbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1726,10 +1620,8 @@
     "lon": 13.282,
     "sct": false,
     "ssc": true,
-    "groupId": "nassfeld",
     "entryName": "Nassfeld",
     "entryType": "main",
-    "groupName": "Nassfeld - Hermagor",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1748,10 +1640,8 @@
     "lon": 10.504,
     "sct": true,
     "ssc": false,
-    "groupId": "nauders",
     "entryName": "Nauders",
     "entryType": "main",
-    "groupName": "Nauders - Bergkastel",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1770,10 +1660,8 @@
     "lon": 10.542658,
     "sct": true,
     "ssc": false,
-    "groupId": "tannheimer-bergbahnen",
     "entryName": "Neunerköpfle",
     "entryType": "main",
-    "groupName": "Neunerköpfle - Tannheim",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1792,10 +1680,8 @@
     "lon": 11.398915,
     "sct": true,
     "ssc": false,
-    "groupId": "nordkette",
     "entryName": "Nordkette",
     "entryType": "main",
-    "groupName": "Nordkette - Innsbruck",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1814,10 +1700,8 @@
     "lon": 11.027,
     "sct": true,
     "ssc": false,
-    "groupId": "gurgl",
     "entryName": "Obergurgl-Hochgurgl",
     "entryType": "main",
-    "groupName": "Obergurgl-Hochgurgl",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1840,7 +1724,7 @@
     "nearMuc": true,
     "entryName": "Oberstdorf",
     "entryType": "entry",
-    "groupName": "Oberstdorf - Nebelhorn"
+    "groupName": "OK Bergbahnen"
   },
   {
     "stable_id": "oberstdorf-nebelhorn",
@@ -1857,7 +1741,7 @@
     "nearMuc": true,
     "entryName": "Oberstdorf",
     "entryType": "main",
-    "groupName": "Oberstdorf - Nebelhorn"
+    "groupName": "OK Bergbahnen"
   },
   {
     "stable_id": "oberstdorf-söllereck",
@@ -1874,7 +1758,7 @@
     "nearMuc": true,
     "entryName": "Oberstdorf",
     "entryType": "entry",
-    "groupName": "Oberstdorf - Nebelhorn"
+    "groupName": "OK Bergbahnen"
   },
   {
     "stable_id": "obertauern",
@@ -1887,10 +1771,8 @@
     "lon": 13.563,
     "sct": false,
     "ssc": true,
-    "groupId": "obertauern",
     "entryName": "Obertauern",
     "entryType": "main",
-    "groupName": "Obertauern",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1909,10 +1791,8 @@
     "lon": 12.6,
     "sct": true,
     "ssc": false,
-    "groupId": "obertilliacher-bergbahnen",
     "entryName": "Obertilliacher Bergbahnen",
     "entryType": "main",
-    "groupName": "Obertilliacher Bergbahnen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1931,10 +1811,8 @@
     "lon": 13.686,
     "sct": false,
     "ssc": true,
-    "groupId": "dachstein-salzkammergut",
     "entryName": "Obertraun",
     "entryType": "main",
-    "groupName": "Obertraun - Dachstein Krippenstein",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -1956,7 +1834,7 @@
     "groupId": "patscherkofelbahn",
     "entryName": "Patscherkofel",
     "entryType": "main",
-    "groupName": "Patscherkofel",
+    "groupName": "Patscherkofelbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1978,7 +1856,7 @@
     "groupId": "patscherkofelbahn",
     "entryName": "Igls",
     "entryType": "entry",
-    "groupName": "Patscherkofel",
+    "groupName": "Patscherkofelbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -1997,10 +1875,8 @@
     "lon": 10.879164,
     "sct": true,
     "ssc": false,
-    "groupId": "pitztaler-gletscher",
     "entryName": "Pitztaler Gletscher",
     "entryType": "main",
-    "groupName": "Pitztaler Gletscher - Rifflsee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2019,10 +1895,8 @@
     "lon": 14.084,
     "sct": false,
     "ssc": true,
-    "groupId": "planneralm",
     "entryName": "Planneralm",
     "entryType": "main",
-    "groupName": "Planneralm",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2041,10 +1915,8 @@
     "lon": 14.986,
     "sct": false,
     "ssc": true,
-    "groupId": "praebichl",
     "entryName": "Präbichl",
     "entryType": "main",
-    "groupName": "Präbichl",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2063,10 +1935,8 @@
     "lon": 13.45,
     "sct": false,
     "ssc": true,
-    "groupId": "radstadt-altenmarkt",
     "entryName": "Radstadt/Altenmarkt",
     "entryType": "main",
-    "groupName": "Radstadt/Altenmarkt",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2085,10 +1955,8 @@
     "lon": 13.65,
     "sct": false,
     "ssc": true,
-    "groupId": "rittisberg",
     "entryName": "Ramsau am Dachstein",
     "entryType": "main",
-    "groupName": "Ramsau am Dachstein - Rittisberg",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2154,7 +2022,7 @@
     "groupId": "hintertuxergletscher",
     "entryName": "Rastkogelbahnen",
     "entryType": "entry",
-    "groupName": "Eggalmbahnen",
+    "groupName": "Hintertuxer Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2173,10 +2041,8 @@
     "lon": 13.656,
     "sct": false,
     "ssc": true,
-    "groupId": "reiteralm",
     "entryName": "Reiteralm",
     "entryType": "main",
-    "groupName": "Reiteralm",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2195,10 +2061,8 @@
     "lon": 14.1,
     "sct": false,
     "ssc": true,
-    "groupId": "riesneralm",
     "entryName": "Riesneralm",
     "entryType": "main",
-    "groupName": "Riesneralm - Donnersbachwald",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2217,10 +2081,8 @@
     "lon": 11.757219,
     "sct": true,
     "ssc": false,
-    "groupId": "rofanseilbahn",
     "entryName": "Rofan Seilbahn",
     "entryType": "main",
-    "groupName": "Rofan Seilbahn - Maurach",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2242,7 +2104,7 @@
     "groupId": "rosshuette",
     "entryName": "Rosshütte",
     "entryType": "entry",
-    "groupName": "Seefeld - Rosshütte",
+    "groupName": "Roßhütte",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2261,10 +2123,8 @@
     "lon": 12.639,
     "sct": false,
     "ssc": true,
-    "groupId": "skicircus",
     "entryName": "Saalbach Hinterglemm",
     "entryType": "main",
-    "groupName": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2286,7 +2146,7 @@
     "groupId": "tirol",
     "entryName": "Schattwald",
     "entryType": "entry",
-    "groupName": "Bichllifte Prägraten",
+    "groupName": "Tirol",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2308,7 +2168,7 @@
     "groupId": "skiwelt",
     "entryName": "Scheffau",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2330,7 +2190,7 @@
     "groupId": "planai",
     "entryName": "Schladming Planai",
     "entryType": "entry",
-    "groupName": "Hochwurzen",
+    "groupName": "Planai",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2352,7 +2212,7 @@
     "groupId": "stubai",
     "entryName": "Schlick 2000",
     "entryType": "main",
-    "groupName": "Schlick 2000",
+    "groupName": "Stubai",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2371,10 +2231,8 @@
     "lon": 12.0910096,
     "sct": true,
     "ssc": false,
-    "groupId": "schneeberglifte",
     "entryName": "Schneeberglifte Thiersee",
     "entryType": "main",
-    "groupName": "Schneeberglifte Thiersee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2396,7 +2254,7 @@
     "groupId": "tirol",
     "entryName": "Schwannerlifte in Weerberg",
     "entryType": "entry",
-    "groupName": "Bichllifte Prägraten",
+    "groupName": "Tirol",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2418,7 +2276,7 @@
     "groupId": "rosshuette",
     "entryName": "Seefeld",
     "entryType": "main",
-    "groupName": "Seefeld - Rosshütte",
+    "groupName": "Roßhütte",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2437,10 +2295,8 @@
     "lon": 10.756,
     "sct": true,
     "ssc": false,
-    "groupId": "see",
     "entryName": "See im Paznaun",
     "entryType": "main",
-    "groupName": "See im Paznaun",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2459,10 +2315,8 @@
     "lon": 10.6,
     "sct": true,
     "ssc": false,
-    "groupId": "serfaus-fiss-ladis",
     "entryName": "Serfaus-Fiss-Ladis",
     "entryType": "main",
-    "groupName": "Serfaus-Fiss-Ladis",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2484,7 +2338,7 @@
     "groupId": "stubai",
     "entryName": "Serlesbahnen",
     "entryType": "entry",
-    "groupName": "Schlick 2000",
+    "groupName": "Stubai",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2506,7 +2360,7 @@
     "groupId": "hochpustertal-ski",
     "entryName": "Sillian",
     "entryType": "entry",
-    "groupName": "Skizentrum Sillian/ Hochpustertal",
+    "groupName": "Ski Hochpustertal",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2525,10 +2379,8 @@
     "lon": 9.987,
     "sct": false,
     "ssc": false,
-    "groupId": "silvretta-montafon",
     "entryName": "Silvretta Montafon",
-    "entryType": "main",
-    "groupName": "Silvretta Montafon"
+    "entryType": "main"
   },
   {
     "stable_id": "ski-amadé",
@@ -2541,10 +2393,8 @@
     "lon": 13.465,
     "sct": false,
     "ssc": true,
-    "groupId": "skiamade",
     "entryName": "Ski Amadé",
     "entryType": "main",
-    "groupName": "Ski Amadé",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2563,10 +2413,8 @@
     "lon": 11.945,
     "sct": true,
     "ssc": false,
-    "groupId": "skijuwel",
     "entryName": "Skijuwel Alpbachtal",
     "entryType": "main",
-    "groupName": "Ski Juwel Alpbachtal Wildschönau",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2585,10 +2433,8 @@
     "lon": 10.452172,
     "sct": true,
     "ssc": false,
-    "groupId": "yappys-winterland",
     "entryName": "Skilifte Kirchdorf",
     "entryType": "main",
-    "groupName": "Skilifte Kirchdorf",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2607,10 +2453,8 @@
     "lon": 10.452172,
     "sct": true,
     "ssc": false,
-    "groupId": "knitteltirol",
     "entryName": "Skilifte Knittel",
     "entryType": "main",
-    "groupName": "Skilifte Knittel",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2629,10 +2473,8 @@
     "lon": 12.4821568,
     "sct": true,
     "ssc": false,
-    "groupId": "laerchenhof-tirol",
     "entryName": "Skilifte Lärchenhof",
     "entryType": "main",
-    "groupName": "Skilifte Lärchenhof",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2654,7 +2496,7 @@
     "groupId": "hochpustertal-ski",
     "entryName": "Skizentrum Sillian/ Hochpustertal",
     "entryType": "main",
-    "groupName": "Skizentrum Sillian/ Hochpustertal",
+    "groupName": "Ski Hochpustertal",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2762,11 +2604,9 @@
     "sct": true,
     "ssc": false,
     "glacier": true,
-    "groupId": "soelden",
     "nearMuc": false,
     "entryName": "Sölden (Rettenbach/Tiefenbach)",
     "entryType": "main",
-    "groupName": "Sölden (Rettenbach/Tiefenbach)",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2788,7 +2628,7 @@
     "groupId": "skiwelt",
     "entryName": "Söll",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2807,10 +2647,8 @@
     "lon": 11.843108,
     "sct": true,
     "ssc": false,
-    "groupId": "spieljochbahn-f-gen",
     "entryName": "Spieljochbahn Fügen",
     "entryType": "main",
-    "groupName": "Spieljochbahn Fügen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2829,11 +2667,9 @@
     "lon": 11.9,
     "sct": false,
     "ssc": false,
-    "groupId": "alpenbahnen-spitzingsee",
     "nearMuc": true,
     "entryName": "Spitzingsee",
-    "entryType": "main",
-    "groupName": "Spitzingsee - Tegernsee"
+    "entryType": "main"
   },
   {
     "stable_id": "sportgastein",
@@ -2849,7 +2685,7 @@
     "groupId": "skigastein",
     "entryName": "Sportgastein",
     "entryType": "main",
-    "groupName": "Sportgastein",
+    "groupName": "Ski Gastein",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2871,7 +2707,7 @@
     "groupId": "steinplatte",
     "entryName": "Steinplatte",
     "entryType": "main",
-    "groupName": "Steinplatte - Waidring",
+    "groupName": "Steinplatte",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2893,7 +2729,7 @@
     "groupId": "steinplatte",
     "entryName": "Steinplatte-Winklmoosalm",
     "entryType": "entry",
-    "groupName": "Steinplatte - Waidring",
+    "groupName": "Steinplatte",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2912,10 +2748,8 @@
     "lon": 12.329,
     "sct": true,
     "ssc": false,
-    "groupId": "stjakob-ski",
     "entryName": "St. Jakob im Defereggental",
     "entryType": "main",
-    "groupName": "St. Jakob im Defereggental - Brunnalm",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2934,10 +2768,8 @@
     "lon": 11.138789,
     "sct": true,
     "ssc": false,
-    "groupId": "bergbahnen-stjohann",
     "entryName": "St. Johann in Tirol",
     "entryType": "main",
-    "groupName": "St. Johann in Tirol - Oberndorf",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -2956,10 +2788,8 @@
     "lon": 13.633,
     "sct": false,
     "ssc": true,
-    "groupId": "grosseck-speiereck",
     "entryName": "St. Michael",
     "entryType": "main",
-    "groupName": "St. Michael - Großeck-Speiereck",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -2979,10 +2809,8 @@
     "sct": true,
     "ssc": false,
     "glacier": true,
-    "groupId": "stubaier-gletscher",
     "entryName": "Stubaier Gletscher",
     "entryType": "main",
-    "groupName": "Stubaier Gletscher",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3001,11 +2829,9 @@
     "lon": 12.011,
     "sct": false,
     "ssc": false,
-    "groupId": "sudelfeld",
     "nearMuc": true,
     "entryName": "Sudelfeld",
-    "entryType": "main",
-    "groupName": "Sudelfeld - Bayrischzell"
+    "entryType": "main"
   },
   {
     "stable_id": "tauplitzbad-mitterndorf",
@@ -3018,10 +2844,8 @@
     "lon": 13.99,
     "sct": false,
     "ssc": true,
-    "groupId": "dietauplitz",
     "entryName": "Tauplitz/Bad Mitterndorf",
     "entryType": "main",
-    "groupName": "Tauplitz/Bad Mitterndorf",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3040,10 +2864,8 @@
     "lon": 10.9411261,
     "sct": true,
     "ssc": false,
-    "groupId": "zugspitzbahn",
     "entryName": "Tiroler Zugspitzbahn",
     "entryType": "main",
-    "groupName": "Tiroler Zugspitzbahn",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3062,10 +2884,8 @@
     "lon": 11.4194271,
     "sct": true,
     "ssc": false,
-    "groupId": "tirolina",
     "entryName": "Tirolina",
     "entryType": "main",
-    "groupName": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3084,10 +2904,8 @@
     "lon": 13.873,
     "sct": false,
     "ssc": true,
-    "groupId": "turracherhoehe",
     "entryName": "Turracher Höhe (Kärnten/Steiermark)",
     "entryType": "main",
-    "groupName": "Turracher Höhe (Kärnten/Steiermark)",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3106,10 +2924,8 @@
     "lon": 10.924619,
     "sct": true,
     "ssc": false,
-    "groupId": "oetztal",
     "entryName": "Umhausen",
     "entryType": "main",
-    "groupName": "Umhausen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3131,7 +2947,7 @@
     "groupId": "venet",
     "entryName": "Venet",
     "entryType": "main",
-    "groupName": "Venet - Zams/Fließ",
+    "groupName": "Venet",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3150,10 +2966,8 @@
     "lon": 10.685707,
     "sct": true,
     "ssc": false,
-    "groupId": "vent",
     "entryName": "Venter Seilbahnen",
     "entryType": "main",
-    "groupName": "Venter Seilbahnen",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3172,10 +2986,8 @@
     "lon": 11.590985,
     "sct": true,
     "ssc": false,
-    "groupId": "voegelsberg",
     "entryName": "Vögelsberg Aktivpark",
     "entryType": "main",
-    "groupName": "Vögelsberg Aktivpark",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3194,10 +3006,8 @@
     "lon": 13.247,
     "sct": false,
     "ssc": true,
-    "groupId": "werfenweng",
     "entryName": "Werfenweng",
     "entryType": "main",
-    "groupName": "Werfenweng",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3219,7 +3029,7 @@
     "groupId": "skiwelt",
     "entryName": "Westendorf",
     "entryType": "entry",
-    "groupName": "SkiWelt Wilder Kaiser – Brixental",
+    "groupName": "SkiWelt",
     "passes": [
       {
         "stable_id": "snowcard-tirol",
@@ -3238,10 +3048,8 @@
     "lon": 12.265,
     "sct": false,
     "ssc": true,
-    "groupId": "wildkogel-arena",
     "entryName": "Neukirchen Bramberg",
     "entryType": "main",
-    "groupName": "Wildkogel Arena",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3260,11 +3068,9 @@
     "lon": 12.596,
     "sct": false,
     "ssc": false,
-    "groupId": "winklmoosalm",
     "nearMuc": true,
     "entryName": "Winklmoosalm",
-    "entryType": "main",
-    "groupName": "Winklmoosalm - Reit im Winkl"
+    "entryType": "main"
   },
   {
     "stable_id": "wurzeralm-spital-am-pyhrn",
@@ -3277,10 +3083,8 @@
     "lon": 14.33,
     "sct": false,
     "ssc": true,
-    "groupId": "hiwu",
     "entryName": "Wurzeralm",
     "entryType": "main",
-    "groupName": "Wurzeralm - Spital am Pyhrn",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3299,10 +3103,8 @@
     "lon": 13.455,
     "sct": false,
     "ssc": true,
-    "groupId": "zauchensee",
     "entryName": "Zauchensee",
     "entryType": "main",
-    "groupName": "Zauchensee - Flachauwinkl",
     "passes": [
       {
         "stable_id": "superskicard",
@@ -3321,10 +3123,8 @@
     "lon": 12.787,
     "sct": false,
     "ssc": true,
-    "groupId": "schmitten",
     "entryName": "Zell am See",
     "entryType": "main",
-    "groupName": "Zell am See - Schmittenhöhe",
     "passes": [
       {
         "stable_id": "superskicard",

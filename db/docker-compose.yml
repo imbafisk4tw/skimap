@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: skigebiete-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: skigebiete
+      POSTGRES_PASSWORD: skigebiete
+      POSTGRES_DB: skigebiete
+    ports:
+      - "5432:5432"
+    volumes:
+      - skigebiete_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skigebiete -d skigebiete"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  skigebiete_db_data:

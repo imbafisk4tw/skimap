@@ -1,25 +1,97 @@
-# Secrets / local config
+########################################
+# Secrets / lokale Konfiguration
+########################################
 .env
-config.js
+**/.env
+**/*API*Key*.txt
+**/API Key.txt
 
+# Optional: config override für Prod/Local
+# (Empfehlung: js/config.js lokal, js/config.example.js getrackt)
+js/config.js
+
+########################################
+# OS / Editor
+########################################
+.DS_Store
+Thumbs.db
+*.swp
+
+########################################
 # Node
+########################################
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Local caches / runtime
-.cache/
-db/
-*.log
+########################################
+# Python
+########################################
+__pycache__/
+*.pyc
+.venv/
+venv/
 
-# Not needed in repo
-old/
-tools/
-
-# Optional: große OSM Dateien (falls du die lokal hast)
-*.osm.pbf
+########################################
+# Große GIS/OSM/OSRM Artefakte (lokal)
+########################################
 *.pbf
-
-# OSRM artifacts / downloads (huge)
-osrm_*/
-osrm_dach/
 *.osm.pbf
-*.osrm*
+*.osrm
+*.osrm.*
+*.zip
+
+# pmtiles: standardmäßig ignorieren, aber die deploy-Tiles erlauben
+*.pmtiles
+!tiles/*.pmtiles
+
+########################################
+# DB: Starter behalten, aber Exporte/Archive nicht pushen
+########################################
+db/export/
+db/*.zip
+
+########################################
+# Pipeline: Outputs/Caches ignorieren, Skripte/Doku behalten
+########################################
+# Caches / Scrape-HTML etc.
+pipeline/.cache/
+pipeline/**/.cache/
+
+# Große Outputs / Zwischenartefakte
+pipeline/corridors/
+pipeline/isochrones/
+pipeline/osrm_dach/
+pipeline/old/
+
+# Große Rohdaten im pipeline-root (falls du später mehr reinlegst)
+pipeline/*.pbf
+pipeline/*.osm.pbf
+pipeline/**/*.osrm
+pipeline/**/*.osrm.*
+
+# Tools: secrets + Notizen/Exports/Medien lokal lassen
+pipeline/tools/.env
+pipeline/tools/*.csv
+pipeline/tools/*.zip
+pipeline/tools/*.jpg
+pipeline/tools/*.png
+pipeline/tools/Notizen.txt
+
+# --- Whitelist: diese Ordner IMMER tracken ---
+!pipeline/scripts/
+!pipeline/scripts/**
+!pipeline/docs/
+!pipeline/docs/**
+!pipeline/*.md
+!pipeline/*.json
+!pipeline/*.geojson
+!pipeline/*.schema.json
+!pipeline/**/schemas/
+!pipeline/**/schemas/**
+!pipeline/tools/*.py
+!pipeline/tools/*.mjs
+!pipeline/tools/*.js
+!pipeline/tools/*.bat
+
