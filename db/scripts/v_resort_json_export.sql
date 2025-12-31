@@ -61,15 +61,10 @@ LEFT JOIN group_info gi ON gi.resort_id = r.id
 ORDER BY r.name;
 
 -- ============================================
--- JSON-Export Befehl
+-- JSON-Export Befehl (psql)
 -- ============================================
--- Führe diesen Befehl aus, um das JSON-Array zu generieren:
-
-SELECT jsonb_pretty(jsonb_agg(resort_json))
-FROM v_resort_json_export;
-
--- In psql für Datei-Export:
 -- \t on
+-- \pset format unaligned
 -- \o resorts.json
 -- SELECT jsonb_pretty(jsonb_agg(resort_json)) FROM v_resort_json_export;
 -- \o
