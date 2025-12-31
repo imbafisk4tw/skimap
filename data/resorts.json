@@ -1,3200 +1,3614 @@
 [
-  {
-    "stable_id": "amberglift-walchsee",
-    "name": "Amberglift Walchsee",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.amberglift.at/",
-    "is_glacier": false,
-    "lat": 47.641227,
-    "lon": 12.295233,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Amberglift Walchsee",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "axamer-lizum",
-    "name": "Axamer Lizum",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.axamer-lizum.at",
-    "is_glacier": false,
-    "lat": 47.195,
-    "lon": 11.281,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Axamer Lizum",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "bergbahnen-pillersee-buchensteinwand-st-ulrich",
-    "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.bergbahn-pillersee.com",
-    "is_glacier": false,
-    "lat": 47.486326,
-    "lon": 12.587202,
-    "sct": true,
-    "ssc": false,
-    "groupId": "bergbahn-pillersee",
-    "entryName": "Bergbahnen Pillersee",
-    "entryType": "entry",
-    "groupName": "Bergbahn Pillersee",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "bergeralm",
-    "name": "Bergeralm",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.bergeralm.net/",
-    "is_glacier": false,
-    "lat": 47.004371,
-    "lon": 12.39825,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Bergeralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "bergwelt-hahnenkamm",
-    "name": "Bergwelt Hahnenkamm",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.bergwelt-hahnenkamm.at",
-    "is_glacier": false,
-    "lat": 47.144212,
-    "lon": 10.307553,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Bergwelt Hahnenkamm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "berwang",
-    "name": "Berwang",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "",
-    "is_glacier": false,
-    "lat": 47.40807,
-    "lon": 10.74735,
-    "sct": true,
-    "ssc": false,
-    "groupId": "berwang",
-    "entryName": "Berwang",
-    "entryType": "main",
-    "groupName": "Berwang",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "berwangbichlbach-berwanger-sonnalmbahn",
-    "name": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.berwang.tirol",
-    "is_glacier": false,
-    "lat": 47.391,
-    "lon": 10.692,
-    "sct": true,
-    "ssc": false,
-    "groupId": "berwang",
-    "entryName": "Bichlbach er Sonnalmbahn",
-    "entryType": "entry",
-    "groupName": "Berwang",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "biberwier-marienberg",
-    "name": "Biberwier – Marienberg",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.bergbahnen-langes.at",
-    "is_glacier": false,
-    "lat": 47.368,
-    "lon": 10.873,
-    "sct": true,
-    "ssc": false,
-    "groupId": "bergbahnen-langes",
-    "entryName": "Biberwier",
-    "entryType": "entry",
-    "groupName": "Bergbahnen Langes",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "bichllifte-prägraten",
-    "name": "Bichllifte Prägraten",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84",
-    "is_glacier": false,
-    "lat": 47.01667,
-    "lon": 12.38333,
-    "sct": true,
-    "ssc": false,
-    "groupId": "tirol",
-    "entryName": "Bichllifte Prägraten",
-    "entryType": "main",
-    "groupName": "Tirol",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "brauneck-lenggries",
-    "name": "Brauneck – Lenggries",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.brauneck-bergbahn.de",
-    "is_glacier": false,
-    "lat": 47.666,
-    "lon": 11.553,
-    "sct": false,
-    "ssc": false,
-    "nearMuc": true,
-    "entryName": "Brauneck",
-    "entryType": "main"
-  },
-  {
-    "stable_id": "brixen-im-thale-skiwelt",
-    "name": "Brixen im Thale - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.466333,
-    "lon": 12.234134,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Brixen im Thale",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "buchensteinwand-pillersee",
-    "name": "Buchensteinwand – Pillersee",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.bergbahn-pillersee.com",
-    "is_glacier": false,
-    "lat": 47.497,
-    "lon": 12.576,
-    "sct": true,
-    "ssc": false,
-    "groupId": "bergbahn-pillersee",
-    "entryName": "Buchensteinwand",
-    "entryType": "main",
-    "groupName": "Bergbahn Pillersee",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "dorfberg-kartitsch",
-    "name": "Dorfberg Kartitsch",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://kartitscher-liftgesellschaft.jimdofree.com/",
-    "is_glacier": false,
-    "lat": 46.72889,
-    "lon": 12.50083,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Dorfberg Kartitsch",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "eggalmbahnen",
-    "name": "Eggalmbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/",
-    "is_glacier": false,
-    "lat": 47.156899,
-    "lon": 11.728876,
-    "sct": true,
-    "ssc": false,
-    "groupId": "hintertuxergletscher",
-    "entryName": "Eggalmbahnen",
-    "entryType": "main",
-    "groupName": "Hintertuxer Gletscher",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "ehrwald-ehrwalder-alm",
-    "name": "Ehrwald – Ehrwalder Alm",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.almbahn.at",
-    "is_glacier": false,
-    "lat": 47.41,
-    "lon": 10.92,
-    "sct": true,
-    "ssc": false,
-    "groupId": "almbahn",
-    "entryName": "Ehrwald",
-    "entryType": "entry",
-    "groupName": "Almbahn",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "ehrwalder-alm",
-    "name": "Ehrwalder Alm",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.almbahn.tirol",
-    "is_glacier": false,
-    "lat": 47.384912,
-    "lon": 10.968338,
-    "sct": true,
-    "ssc": false,
-    "groupId": "almbahn",
-    "entryName": "Ehrwalder Alm",
-    "entryType": "main",
-    "groupName": "Almbahn",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "ehrwalder-wettersteinbahnen",
-    "name": "Ehrwalder Wettersteinbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.wetterstein-bahnen.at/",
-    "is_glacier": false,
-    "lat": 47.410234,
-    "lon": 10.938698,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Ehrwalder Wettersteinbahnen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "elferbahnen-neustift",
-    "name": "Elferbahnen – Neustift",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.stubai.at/skigebiete/elferbahnen",
-    "is_glacier": false,
-    "lat": 47.109,
-    "lon": 11.309,
-    "sct": true,
-    "ssc": false,
-    "groupId": "stubai",
-    "entryName": "Elferbahnen",
-    "entryType": "entry",
-    "groupName": "Stubai",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "ellmau-going-skiwelt",
-    "name": "Ellmau-Going - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.519862,
-    "lon": 12.301404,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Ellmau-Going",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "fendels-ried-prutz",
-    "name": "Fendels - Ried - Prutz",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863",
-    "is_glacier": false,
-    "lat": 47.076977,
-    "lon": 10.66669,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Fendels",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "finkenberger-almbahnen",
-    "name": "Finkenberger Almbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/",
-    "is_glacier": false,
-    "lat": 47.15285,
-    "lon": 11.821412,
-    "sct": true,
-    "ssc": false,
-    "groupId": "hintertuxergletscher",
-    "entryName": "Finkenberger Almbahnen",
-    "entryType": "entry",
-    "groupName": "Hintertuxer Gletscher",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "galsterberg",
-    "name": "Galsterberg",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.galsterberg.at",
-    "is_glacier": false,
-    "lat": 47.385,
-    "lon": 13.944,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Galsterberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "galtür-silvapark",
-    "name": "Galtür - Silvapark",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.silvapark.at",
-    "is_glacier": false,
-    "lat": 46.96667,
-    "lon": 10.18333,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Galtür",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "garmisch-classic",
-    "name": "Garmisch-Classic",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://zugspitze.de",
-    "is_glacier": false,
-    "lat": 47.492,
-    "lon": 11.118,
-    "sct": false,
-    "ssc": false,
-    "groupId": "zugspitze",
-    "nearMuc": true,
-    "entryName": "Garmisch-Classic",
-    "entryType": "entry",
-    "groupName": "Zugspitze"
-  },
-  {
-    "stable_id": "gastein-bad-gastein",
-    "name": "Gastein – Bad Gastein",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.skigastein.com",
-    "is_glacier": false,
-    "lat": 47.116,
-    "lon": 13.134,
-    "sct": false,
-    "ssc": true,
-    "groupId": "skigastein",
-    "entryName": "Gastein",
-    "entryType": "entry",
-    "groupName": "Ski Gastein",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "gastein-bad-hofgastein",
-    "name": "Gastein – Bad Hofgastein",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.skigastein.com",
-    "is_glacier": false,
-    "lat": 47.171,
-    "lon": 13.1,
-    "sct": false,
-    "ssc": true,
-    "groupId": "skigastein",
-    "entryName": "Gastein",
-    "entryType": "entry",
-    "groupName": "Ski Gastein",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "gerlitzen-alpe",
-    "name": "Gerlitzen Alpe",
-    "country": "Austria",
-    "region": "Carinthia",
-    "website": "https://www.gerlitzen.com",
-    "is_glacier": false,
-    "lat": 46.669,
-    "lon": 13.894,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Gerlitzen Alpe",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "gerlosstein-zillertal-arena",
-    "name": "Gerlosstein - Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zillertalarena.com/",
-    "is_glacier": false,
-    "lat": 47.194217,
-    "lon": 11.923857,
-    "sct": true,
-    "ssc": false,
-    "groupId": "zillertal-arena",
-    "entryName": "Gerlosstein",
-    "entryType": "entry",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "gerlos-zillertal-arena",
-    "name": "Gerlos - Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zillertalarena.com",
-    "is_glacier": false,
-    "lat": 47.21667,
-    "lon": 12.0,
-    "sct": true,
-    "ssc": false,
-    "groupId": "zillertal-arena",
-    "entryName": "Gerlos",
-    "entryType": "entry",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "glungezer-tulfes",
-    "name": "Glungezer – Tulfes",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.glungezerbahn.at",
-    "is_glacier": false,
-    "lat": 47.235,
-    "lon": 11.522,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Glungezer",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "goldeck-spittaldrau",
-    "name": "Goldeck – Spittal/Drau",
-    "country": "Austria",
-    "region": "Carinthia",
-    "website": "https://www.sportberg-goldeck.com",
-    "is_glacier": false,
-    "lat": 46.797,
-    "lon": 13.476,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Goldeck",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "grebenzen-st-lambrecht",
-    "name": "Grebenzen – St. Lambrecht",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://grebenzen.at",
-    "is_glacier": false,
-    "lat": 47.07,
-    "lon": 14.34,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Grebenzen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "großglockner-resort-kalsmatrei",
-    "name": "Großglockner Resort Kals–Matrei",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.gg-resort.at",
-    "is_glacier": false,
-    "lat": 46.999,
-    "lon": 12.562,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Großglockner Resort Kals–Matrei",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "gschwandtkopflifte",
-    "name": "Gschwandtkopflifte",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skigebiet-seefeld.at/",
-    "is_glacier": false,
-    "lat": 47.3247875,
-    "lon": 11.1771783,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Gschwandtkopflifte",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hauser-kaibling",
-    "name": "Hauser Kaibling",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.hauser-kaibling.at",
-    "is_glacier": false,
-    "lat": 47.401,
-    "lon": 13.83,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Hauser Kaibling",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "heiligenblut-großglockner",
-    "name": "Heiligenblut – Großglockner",
-    "country": "Austria",
-    "region": "Carinthia",
-    "website": "https://www.heiligenblut.at",
-    "is_glacier": false,
-    "lat": 47.037,
-    "lon": 12.846,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Heiligenblut",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "hinterstoder-höss",
-    "name": "Hinterstoder – Höss",
-    "country": "Austria",
-    "region": "Upper Austria",
-    "website": "https://www.hinterstoder.at",
-    "is_glacier": false,
-    "lat": 47.696,
-    "lon": 14.158,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Hinterstoder",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "hintertuxer-gletscher",
-    "name": "Hintertuxer Gletscher",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hintertuxergletscher.at",
-    "is_glacier": true,
-    "lat": 47.074,
-    "lon": 11.664,
-    "sct": true,
-    "ssc": false,
-    "glacier": true,
-    "groupId": "hintertuxergletscher",
-    "entryName": "Hintertuxer Gletscher",
-    "entryType": "entry",
-    "groupName": "Hintertuxer Gletscher",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochalmlifte-christlum-achenkirch",
-    "name": "Hochalmlifte Christlum - Achenkirch",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.christlum.at",
-    "is_glacier": false,
-    "lat": 47.513119,
-    "lon": 11.697002,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochalmlifte Christlum",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochficht-böhmerwald",
-    "name": "Hochficht (Böhmerwald)",
-    "country": "Austria",
-    "region": "Upper Austria",
-    "website": "https://www.hochficht.at",
-    "is_glacier": false,
-    "lat": 48.732,
-    "lon": 13.913,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Hochficht (Böhmerwald)",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochfügen",
-    "name": "Hochfügen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "",
-    "is_glacier": false,
-    "lat": 47.269316,
-    "lon": 11.775599,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochfügen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochkönig-maria-almdientenmühlbach",
-    "name": "Hochkönig – Maria Alm/Dienten/Mühlbach",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.hochkoenig.at",
-    "is_glacier": false,
-    "lat": 47.391,
-    "lon": 13.103,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Hochkönig",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochkössen-unterberghorn",
-    "name": "Hochkössen (Unterberghorn)",
-    "country": "Austria",
-    "region": "Tirol",
-    "website": "https://www.bergbahnen-koessen.at",
-    "is_glacier": false,
-    "lat": 47.674,
-    "lon": 12.423,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochkössen (Unterberghorn)",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochkrimml-zillertal-arena",
-    "name": "Hochkrimml - Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zillertalarena.com",
-    "is_glacier": false,
-    "lat": 47.26179,
-    "lon": 11.88471,
-    "sct": true,
-    "ssc": false,
-    "groupId": "zillertal-arena",
-    "entryName": "Hochkrimml",
-    "entryType": "entry",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochoetz-oetz",
-    "name": "Hochoetz - Oetz",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.oetz.com/",
-    "is_glacier": false,
-    "lat": 47.212221,
-    "lon": 10.929613,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochoetz",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochwurzen",
-    "name": "Hochwurzen",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.planai.at",
-    "is_glacier": false,
-    "lat": 47.367,
-    "lon": 13.72,
-    "sct": false,
-    "ssc": true,
-    "groupId": "planai",
-    "entryName": "Hochwurzen",
-    "entryType": "main",
-    "groupName": "Planai",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochzeiger-jerzens-pitztal",
-    "name": "Hochzeiger – Jerzens Pitztal",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hochzeiger.com",
-    "is_glacier": false,
-    "lat": 47.1516147,
-    "lon": 10.757664,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochzeiger",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hochzillertal-kaltenbach",
-    "name": "Hochzillertal-Kaltenbach",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "",
-    "is_glacier": false,
-    "lat": 47.296919,
-    "lon": 11.875362,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hochzillertal-Kaltenbach",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hopfgarten-itter-skiwelt",
-    "name": "Hopfgarten - Itter - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.449133,
-    "lon": 12.159385,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Hopfgarten",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "hüttegglift-weerberg",
-    "name": "Hüttegglift Weerberg",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.huettegglift.at/",
-    "is_glacier": false,
-    "lat": 47.289792,
-    "lon": 11.683876,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Hüttegglift Weerberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "imst-hochimst",
-    "name": "Imst - Hochimst",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.imster-bergbahnen.at/",
-    "is_glacier": false,
-    "lat": 47.239026,
-    "lon": 10.742382,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Imst",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "ischgl-silvretta-arena",
-    "name": "Ischgl  - Silvretta Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.ischgl.com/",
-    "is_glacier": false,
-    "lat": 47.011371,
-    "lon": 10.293548,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Ischgl",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "jenner-königssee",
-    "name": "Jenner – Königssee",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.jennerbahn.de",
-    "is_glacier": false,
-    "lat": 47.583,
-    "lon": 12.996,
-    "sct": false,
-    "ssc": true,
-    "nearMuc": true,
-    "entryName": "Jenner",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "jöchelspitze-lechtal",
-    "name": "Jöchelspitze Lechtal",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.lechtaler-bergbahnen.at/",
-    "is_glacier": false,
-    "lat": 47.281742,
-    "lon": 10.359239,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Jöchelspitze Lechtal",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kappl",
-    "name": "Kappl",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kappl.com",
-    "is_glacier": false,
-    "lat": 47.069,
-    "lon": 10.376,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Kappl",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kaprun-kitzsteinhorn-gletscher",
-    "name": "Kaprun – Kitzsteinhorn (Gletscher)",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.kitzsteinhorn.at",
-    "is_glacier": true,
-    "lat": 47.219,
-    "lon": 12.759,
-    "sct": false,
-    "ssc": true,
-    "glacier": true,
-    "entryName": "Kaprun",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "karwendel-bergbahn-pertisau",
-    "name": "Karwendel-Bergbahn - Pertisau",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html",
-    "is_glacier": false,
-    "lat": 47.427522,
-    "lon": 11.695987,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Karwendel-Bergbahn",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kasberg-grünau-im-almtal",
-    "name": "Kasberg – Grünau im Almtal",
-    "country": "Austria",
-    "region": "Upper Austria",
-    "website": "https://www.kasberg.at",
-    "is_glacier": false,
-    "lat": 47.874,
-    "lon": 13.994,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Kasberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "katschbergaineck",
-    "name": "Katschberg/Aineck",
-    "country": "Austria",
-    "region": "Carinthia/Salzburg",
-    "website": "https://www.katschberg.at",
-    "is_glacier": false,
-    "lat": 47.074,
-    "lon": 13.647,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Katschberg/Aineck",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "katzenkopf-leutasch",
-    "name": "Katzenkopf Leutasch",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.katzenkopf-leutasch.at",
-    "is_glacier": false,
-    "lat": 47.369026,
-    "lon": 11.164731,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Katzenkopf Leutasch",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kaunertaler-gletscher",
-    "name": "Kaunertaler Gletscher",
-    "country": null,
-    "region": null,
-    "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html",
-    "is_glacier": true,
-    "lat": 46.882,
-    "lon": 10.718,
-    "sct": true,
-    "ssc": false,
-    "glacier": true,
-    "nearMuc": false,
-    "entryName": "Kaunertaler Gletscher",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kellerjochbahn-schwaz-pill",
-    "name": "Kellerjochbahn Schwaz-Pill",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kellerjochbahn.at/cms/",
-    "is_glacier": false,
-    "lat": 47.321123,
-    "lon": 11.731026,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Kellerjochbahn Schwaz-Pill",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kitzski-kitzbühelkirchberg",
-    "name": "KitzSki – Kitzbühel/Kirchberg",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kitzski.at",
-    "is_glacier": false,
-    "lat": 47.442,
-    "lon": 12.392,
-    "sct": true,
-    "ssc": true,
-    "entryName": "KitzSki Kirchberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      },
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kleinarl-shuttleberg",
-    "name": "Kleinarl – Shuttleberg",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.shuttleberg.com",
-    "is_glacier": false,
-    "lat": 47.276,
-    "lon": 13.333,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Kleinarl",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "kolsassberg",
-    "name": "Kolsassberg",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kolsassberglift.at/",
-    "is_glacier": false,
-    "lat": 47.3,
-    "lon": 11.63333,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Kolsassberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "königsleiten-zillertal-arena",
-    "name": "Königsleiten - Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zillertalarena.com",
-    "is_glacier": false,
-    "lat": 47.26179,
-    "lon": 11.88471,
-    "sct": true,
-    "ssc": false,
-    "groupId": "zillertal-arena",
-    "entryName": "Königsleiten",
-    "entryType": "entry",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kössen",
-    "name": "Kössen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://skisport.com/Hochkoessen/de",
-    "is_glacier": false,
-    "lat": 47.659278,
-    "lon": 12.391375,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Kössen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "kreischberg",
-    "name": "Kreischberg",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.kreischberg.at",
-    "is_glacier": false,
-    "lat": 47.081,
-    "lon": 14.101,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Kreischberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "kühtai",
-    "name": "Kühtai",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.kuehtai.info",
-    "is_glacier": false,
-    "lat": 47.212,
-    "lon": 11.023,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Kühtai",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "lachtal",
-    "name": "Lachtal",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.lachtal.at",
-    "is_glacier": false,
-    "lat": 47.255,
-    "lon": 14.384,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Lachtal",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "landeck-zams-fliess-familienskigebiet-venet",
-    "name": "Landeck - Zams - Fliess (Familienskigebiet Venet)",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.venet.at",
-    "is_glacier": false,
-    "lat": 47.135006,
-    "lon": 10.578077,
-    "sct": true,
-    "ssc": false,
-    "groupId": "venet",
-    "entryName": "Landeck",
-    "entryType": "entry",
-    "groupName": "Venet",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "lermoos-grubigstein",
-    "name": "Lermoos – Grubigstein",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.bergbahnen-langes.at",
-    "is_glacier": false,
-    "lat": 47.401,
-    "lon": 10.879,
-    "sct": true,
-    "ssc": false,
-    "groupId": "bergbahnen-langes",
-    "entryName": "Lermoos",
-    "entryType": "main",
-    "groupName": "Bergbahnen Langes",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "lienz-zettersfeld-hochstein",
-    "name": "Lienz Zettersfeld Hochstein",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.lienzer-bergbahnen.at",
-    "is_glacier": false,
-    "lat": 46.830857,
-    "lon": 12.764987,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Lienz Zettersfeld Hochstein",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "loser-altaussee",
-    "name": "Loser – Altaussee",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.loser.at",
-    "is_glacier": false,
-    "lat": 47.645,
-    "lon": 13.79,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Loser",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "mayrhofen-penkenahorn",
-    "name": "Mayrhofen – Penken/Ahorn",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.mayrhofner-bergbahnen.com",
-    "is_glacier": false,
-    "lat": 47.1904302,
-    "lon": 11.8568543,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Mayrhofen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "mittersill-paß-thurn-kitzbühel",
-    "name": "Mittersill - Paß Thurn - Kitzbühel",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.mittersill.info/",
-    "is_glacier": false,
-    "lat": 47.281856,
-    "lon": 12.48711,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Mittersill",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "mölltaler-gletscher",
-    "name": "Mölltaler Gletscher",
-    "country": "Austria",
-    "region": "Carinthia",
-    "website": "https://www.moelltaler-gletscher.at",
-    "is_glacier": true,
-    "lat": 46.935,
-    "lon": 13.013,
-    "sct": false,
-    "ssc": true,
-    "glacier": true,
-    "entryName": "Mölltaler Gletscher",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "muttereralm-nockspitzbahn",
-    "name": "Muttereralm - Nockspitzbahn",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.muttereralm.at",
-    "is_glacier": false,
-    "lat": 47.21978,
-    "lon": 11.321516,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Muttereralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "nassfeld-hermagor",
-    "name": "Nassfeld – Hermagor",
-    "country": "Austria",
-    "region": "Carinthia",
-    "website": "https://www.nassfeld.at",
-    "is_glacier": false,
-    "lat": 46.556,
-    "lon": 13.282,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Nassfeld",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "nauders-bergkastel",
-    "name": "Nauders – Bergkastel",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.nauders.com",
-    "is_glacier": false,
-    "lat": 46.882,
-    "lon": 10.504,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Nauders",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "neunerköpfle-tannheim",
-    "name": "Neunerköpfle - Tannheim",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.tannheimer-bergbahnen.at",
-    "is_glacier": false,
-    "lat": 47.482127,
-    "lon": 10.542658,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Neunerköpfle",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "nordkette-innsbruck",
-    "name": "Nordkette - Innsbruck",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.nordkette.com/",
-    "is_glacier": false,
-    "lat": 47.285764,
-    "lon": 11.398915,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Nordkette",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "obergurgl-hochgurgl",
-    "name": "Obergurgl-Hochgurgl",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.gurgl.com",
-    "is_glacier": false,
-    "lat": 46.869,
-    "lon": 11.027,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Obergurgl-Hochgurgl",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "oberstdorf-fellhornkanzelwand",
-    "name": "Oberstdorf – Fellhorn/Kanzelwand",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.ok-bergbahnen.com",
-    "is_glacier": false,
-    "lat": 47.35,
-    "lon": 10.233,
-    "sct": false,
-    "ssc": false,
-    "groupId": "ok-bergbahnen",
-    "nearMuc": true,
-    "entryName": "Oberstdorf",
-    "entryType": "entry",
-    "groupName": "OK Bergbahnen"
-  },
-  {
-    "stable_id": "oberstdorf-nebelhorn",
-    "name": "Oberstdorf – Nebelhorn",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.ok-bergbahnen.com",
-    "is_glacier": false,
-    "lat": 47.416,
-    "lon": 10.328,
-    "sct": false,
-    "ssc": false,
-    "groupId": "ok-bergbahnen",
-    "nearMuc": true,
-    "entryName": "Oberstdorf",
-    "entryType": "main",
-    "groupName": "OK Bergbahnen"
-  },
-  {
-    "stable_id": "oberstdorf-söllereck",
-    "name": "Oberstdorf – Söllereck",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.ok-bergbahnen.com",
-    "is_glacier": false,
-    "lat": 47.385,
-    "lon": 10.223,
-    "sct": false,
-    "ssc": false,
-    "groupId": "ok-bergbahnen",
-    "nearMuc": true,
-    "entryName": "Oberstdorf",
-    "entryType": "entry",
-    "groupName": "OK Bergbahnen"
-  },
-  {
-    "stable_id": "obertauern",
-    "name": "Obertauern",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.obertauern.com",
-    "is_glacier": false,
-    "lat": 47.251,
-    "lon": 13.563,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Obertauern",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "obertilliacher-bergbahnen",
-    "name": "Obertilliacher Bergbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.obertilliacher-bergbahnen.com/",
-    "is_glacier": false,
-    "lat": 46.68333,
-    "lon": 12.6,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Obertilliacher Bergbahnen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "obertraun-dachstein-krippenstein",
-    "name": "Obertraun – Dachstein Krippenstein",
-    "country": "Austria",
-    "region": "Upper Austria",
-    "website": "https://www.dachstein-salzkammergut.com",
-    "is_glacier": false,
-    "lat": 47.543,
-    "lon": 13.686,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Obertraun",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "patscherkofel",
-    "name": "Patscherkofel",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.patscherkofelbahn.at",
-    "is_glacier": false,
-    "lat": 47.208828,
-    "lon": 11.460608,
-    "sct": true,
-    "ssc": false,
-    "groupId": "patscherkofelbahn",
-    "entryName": "Patscherkofel",
-    "entryType": "main",
-    "groupName": "Patscherkofelbahn",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "patscherkofel-igls",
-    "name": "Patscherkofel – Igls",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.patscherkofelbahn.at",
-    "is_glacier": false,
-    "lat": 47.215,
-    "lon": 11.43,
-    "sct": true,
-    "ssc": false,
-    "groupId": "patscherkofelbahn",
-    "entryName": "Igls",
-    "entryType": "entry",
-    "groupName": "Patscherkofelbahn",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "pitztaler-gletscher-rifflsee",
-    "name": "Pitztaler Gletscher - Rifflsee",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.pitztaler-gletscher.at",
-    "is_glacier": false,
-    "lat": 46.926822,
-    "lon": 10.879164,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Pitztaler Gletscher",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "planneralm",
-    "name": "Planneralm",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.planneralm.at",
-    "is_glacier": false,
-    "lat": 47.402,
-    "lon": 14.084,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Planneralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "präbichl",
-    "name": "Präbichl",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.praebichl.at",
-    "is_glacier": false,
-    "lat": 47.541,
-    "lon": 14.986,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Präbichl",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "radstadtaltenmarkt",
-    "name": "Radstadt/Altenmarkt",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.radstadt-altenmarkt.at",
-    "is_glacier": false,
-    "lat": 47.383,
-    "lon": 13.45,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Radstadt/Altenmarkt",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "ramsau-am-dachstein-rittisberg",
-    "name": "Ramsau am Dachstein – Rittisberg",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.rittisberg.at",
-    "is_glacier": false,
-    "lat": 47.43,
-    "lon": 13.65,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Ramsau am Dachstein",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "rangger-köpfl",
-    "name": "Rangger Köpfl",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.rangger-koepfl.at",
-    "is_glacier": false,
-    "lat": 47.242646,
-    "lon": 11.181427,
-    "sct": true,
-    "ssc": false,
-    "groupId": "rangger-koepfl",
-    "entryName": "Rangger Köpfl",
-    "entryType": "main",
-    "groupName": "Rangger Köpfl",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "rangger-köpfl-oberperfuss",
-    "name": "Rangger Köpfl – Oberperfuss",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.rangger-koepfl.at",
-    "is_glacier": false,
-    "lat": 47.264,
-    "lon": 11.259,
-    "sct": true,
-    "ssc": false,
-    "groupId": "rangger-koepfl",
-    "entryName": "Oberperfuss",
-    "entryType": "entry",
-    "groupName": "Rangger Köpfl",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "rastkogelbahnen",
-    "name": "Rastkogelbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/",
-    "is_glacier": false,
-    "lat": 47.163698,
-    "lon": 11.7405103,
-    "sct": true,
-    "ssc": false,
-    "groupId": "hintertuxergletscher",
-    "entryName": "Rastkogelbahnen",
-    "entryType": "entry",
-    "groupName": "Hintertuxer Gletscher",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "reiteralm",
-    "name": "Reiteralm",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.reiteralm.at",
-    "is_glacier": false,
-    "lat": 47.373,
-    "lon": 13.656,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Reiteralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "riesneralm-donnersbachwald",
-    "name": "Riesneralm – Donnersbachwald",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.riesneralm.at",
-    "is_glacier": false,
-    "lat": 47.383,
-    "lon": 14.1,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Riesneralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "rofan-seilbahn-maurach",
-    "name": "Rofan Seilbahn - Maurach",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.rofanseilbahn.at",
-    "is_glacier": false,
-    "lat": 47.434393,
-    "lon": 11.757219,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Rofan Seilbahn",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "rosshütte-seefeld-in-tirol",
-    "name": "Rosshütte - Seefeld in Tirol",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.rosshuette.at/",
-    "is_glacier": false,
-    "lat": 47.331793,
-    "lon": 11.199848,
-    "sct": true,
-    "ssc": false,
-    "groupId": "rosshuette",
-    "entryName": "Rosshütte",
-    "entryType": "entry",
-    "groupName": "Roßhütte",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "saalbach-hinterglemm-leogang-fieberbrunn",
-    "name": "Saalbach Hinterglemm – Leogang – Fieberbrunn",
-    "country": "Austria",
-    "region": "Salzburg/Tyrol",
-    "website": "https://www.saalbach.com",
-    "is_glacier": false,
-    "lat": 47.391,
-    "lon": 12.639,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Saalbach Hinterglemm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "schattwald-zöblen-im-tannheimertal",
-    "name": "Schattwald - Zöblen im Tannheimertal",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen",
-    "is_glacier": false,
-    "lat": 47.51667,
-    "lon": 10.45,
-    "sct": true,
-    "ssc": false,
-    "groupId": "tirol",
-    "entryName": "Schattwald",
-    "entryType": "entry",
-    "groupName": "Tirol",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "scheffau-skiwelt",
-    "name": "Scheffau - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.41987,
-    "lon": 12.244438,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Scheffau",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "schladming-planaihochwurzen",
-    "name": "Schladming – Planai/Hochwurzen",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.planai.at",
-    "is_glacier": false,
-    "lat": 47.39,
-    "lon": 13.689,
-    "sct": false,
-    "ssc": true,
-    "groupId": "planai",
-    "entryName": "Schladming Planai",
-    "entryType": "entry",
-    "groupName": "Planai",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "schlick-2000",
-    "name": "Schlick 2000",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.stubai.at/skigebiete/schlick2000/",
-    "is_glacier": false,
-    "lat": 47.156272,
-    "lon": 11.306785,
-    "sct": true,
-    "ssc": false,
-    "groupId": "stubai",
-    "entryName": "Schlick 2000",
-    "entryType": "main",
-    "groupName": "Stubai",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "schneeberglifte-thiersee",
-    "name": "Schneeberglifte Thiersee",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.schneeberglifte.at",
-    "is_glacier": false,
-    "lat": 47.5876839,
-    "lon": 12.0910096,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Schneeberglifte Thiersee",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "schwannerlifte-in-weerberg",
-    "name": "Schwannerlifte in Weerberg",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg",
-    "is_glacier": false,
-    "lat": 47.124034,
-    "lon": 11.259919,
-    "sct": true,
-    "ssc": false,
-    "groupId": "tirol",
-    "entryName": "Schwannerlifte in Weerberg",
-    "entryType": "entry",
-    "groupName": "Tirol",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "seefeld-rosshütte",
-    "name": "Seefeld – Rosshütte",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.rosshuette.at",
-    "is_glacier": false,
-    "lat": 47.345,
-    "lon": 11.185,
-    "sct": true,
-    "ssc": false,
-    "groupId": "rosshuette",
-    "entryName": "Seefeld",
-    "entryType": "main",
-    "groupName": "Roßhütte",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "see-im-paznaun",
-    "name": "See im Paznaun",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.see.at",
-    "is_glacier": false,
-    "lat": 47.079,
-    "lon": 10.756,
-    "sct": true,
-    "ssc": false,
-    "entryName": "See im Paznaun",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "serfaus-fiss-ladis",
-    "name": "Serfaus-Fiss-Ladis",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.serfaus-fiss-ladis.at",
-    "is_glacier": false,
-    "lat": 47.039,
-    "lon": 10.6,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Serfaus-Fiss-Ladis",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "serlesbahnen-mieders",
-    "name": "Serlesbahnen – Mieders",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.stubai.at/skigebiete/serlesbahnen",
-    "is_glacier": false,
-    "lat": 47.156,
-    "lon": 11.368,
-    "sct": true,
-    "ssc": false,
-    "groupId": "stubai",
-    "entryName": "Serlesbahnen",
-    "entryType": "entry",
-    "groupName": "Stubai",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "sillian-thurntaler-hochpustertal",
-    "name": "Sillian – Thurntaler (Hochpustertal)",
-    "country": "Austria",
-    "region": "East Tyrol",
-    "website": "https://www.hochpustertal-ski.at",
-    "is_glacier": false,
-    "lat": 46.749,
-    "lon": 12.42,
-    "sct": true,
-    "ssc": false,
-    "groupId": "hochpustertal-ski",
-    "entryName": "Sillian",
-    "entryType": "entry",
-    "groupName": "Ski Hochpustertal",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "silvretta-montafon",
-    "name": "Silvretta Montafon",
-    "country": "Austria",
-    "region": "Vorarlberg",
-    "website": "https://www.silvretta-montafon.at",
-    "is_glacier": false,
-    "lat": 47.044,
-    "lon": 9.987,
-    "sct": false,
-    "ssc": false,
-    "entryName": "Silvretta Montafon",
-    "entryType": "main"
-  },
-  {
-    "stable_id": "ski-amadé",
-    "name": "Ski Amadé",
-    "country": "Austria",
-    "region": "Salzburg/Styria",
-    "website": "https://www.skiamade.com",
-    "is_glacier": false,
-    "lat": 47.336,
-    "lon": 13.465,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Ski Amadé",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "skijuwel-alpbachtal-wildschönau",
-    "name": "Skijuwel Alpbachtal – Wildschönau",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skijuwel.com",
-    "is_glacier": false,
-    "lat": 47.444,
-    "lon": 11.945,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Skijuwel Alpbachtal",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "skilifte-kirchdorf",
-    "name": "Skilifte Kirchdorf",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "http://www.yappys-winterland.tirol",
-    "is_glacier": false,
-    "lat": 47.567804,
-    "lon": 10.452172,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Skilifte Kirchdorf",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "skilifte-knittel",
-    "name": "Skilifte Knittel",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.knitteltirol.at/",
-    "is_glacier": false,
-    "lat": 47.567804,
-    "lon": 10.452172,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Skilifte Knittel",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "skilifte-lärchenhof",
-    "name": "Skilifte Lärchenhof",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.laerchenhof-tirol.at/",
-    "is_glacier": false,
-    "lat": 47.5847241,
-    "lon": 12.4821568,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Skilifte Lärchenhof",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "skizentrum-sillian-hochpustertal",
-    "name": "Skizentrum Sillian/ Hochpustertal",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.hochpustertal-ski.at",
-    "is_glacier": false,
-    "lat": 46.750666,
-    "lon": 12.43325,
-    "sct": true,
-    "ssc": false,
-    "groupId": "hochpustertal-ski",
-    "entryName": "Skizentrum Sillian/ Hochpustertal",
-    "entryType": "main",
-    "groupName": "Ski Hochpustertal",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "snow-space-salzburg-flachau",
-    "name": "Snow Space Salzburg – Flachau",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.snow-space.com",
-    "is_glacier": false,
-    "lat": 47.342,
-    "lon": 13.394,
-    "sct": false,
-    "ssc": true,
-    "groupId": "snow-space-salzburg",
-    "entryName": "Flachau",
-    "entryType": "main",
-    "groupName": "Snow Space Salzburg",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "snow-space-salzburg-flachauwagrainst-johann",
-    "name": "Snow Space Salzburg – Flachau/Wagrain/St. Johann",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.snow-space.com",
-    "is_glacier": false,
-    "lat": 47.342,
-    "lon": 13.394,
-    "sct": false,
-    "ssc": true,
-    "groupId": "snow-space-salzburg",
-    "entryName": "Flachau Wagrain St. Johann",
-    "entryType": "entry",
-    "groupName": "Snow Space Salzburg",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "snow-space-salzburg-st-johannalpendorf",
-    "name": "Snow Space Salzburg – St. Johann/Alpendorf",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.snow-space.com",
-    "is_glacier": false,
-    "lat": 47.33,
-    "lon": 13.204,
-    "sct": false,
-    "ssc": true,
-    "groupId": "snow-space-salzburg",
-    "entryName": "St. Johann Alpendorf",
-    "entryType": "entry",
-    "groupName": "Snow Space Salzburg",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "snow-space-salzburg-wagrain",
-    "name": "Snow Space Salzburg – Wagrain",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.snow-space.com",
-    "is_glacier": false,
-    "lat": 47.335,
-    "lon": 13.29,
-    "sct": false,
-    "ssc": true,
-    "groupId": "snow-space-salzburg",
-    "entryName": "Wagrain",
-    "entryType": "entry",
-    "groupName": "Snow Space Salzburg",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "sölden-rettenbachtiefenbach",
-    "name": "Sölden (Rettenbach/Tiefenbach)",
-    "country": null,
-    "region": null,
-    "website": "https://www.soelden.com/de",
-    "is_glacier": true,
-    "lat": 46.97,
-    "lon": 10.987,
-    "sct": true,
-    "ssc": false,
-    "glacier": true,
-    "nearMuc": false,
-    "entryName": "Sölden (Rettenbach/Tiefenbach)",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "söll-skiwelt",
-    "name": "Söll - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.504513,
-    "lon": 12.193689,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Söll",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "spieljochbahn-fügen",
-    "name": "Spieljochbahn Fügen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "",
-    "is_glacier": false,
-    "lat": 47.338941,
-    "lon": 11.843108,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Spieljochbahn Fügen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "spitzingsee-tegernsee",
-    "name": "Spitzingsee – Tegernsee",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.alpenbahnen-spitzingsee.de",
-    "is_glacier": false,
-    "lat": 47.65,
-    "lon": 11.9,
-    "sct": false,
-    "ssc": false,
-    "nearMuc": true,
-    "entryName": "Spitzingsee",
-    "entryType": "main"
-  },
-  {
-    "stable_id": "sportgastein",
-    "name": "Sportgastein",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.skigastein.com",
-    "is_glacier": false,
-    "lat": 47.069,
-    "lon": 13.132,
-    "sct": false,
-    "ssc": true,
-    "groupId": "skigastein",
-    "entryName": "Sportgastein",
-    "entryType": "main",
-    "groupName": "Ski Gastein",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "steinplatte-waidring",
-    "name": "Steinplatte – Waidring",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.steinplatte.tirol",
-    "is_glacier": false,
-    "lat": 47.582,
-    "lon": 12.571,
-    "sct": true,
-    "ssc": false,
-    "groupId": "steinplatte",
-    "entryName": "Steinplatte",
-    "entryType": "main",
-    "groupName": "Steinplatte",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "steinplatte-winklmoosalm",
-    "name": "Steinplatte-Winklmoosalm",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.steinplatte.tirol/",
-    "is_glacier": false,
-    "lat": 47.605714,
-    "lon": 12.554601,
-    "sct": true,
-    "ssc": false,
-    "groupId": "steinplatte",
-    "entryName": "Steinplatte-Winklmoosalm",
-    "entryType": "entry",
-    "groupName": "Steinplatte",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "st-jakob-im-defereggental-brunnalm",
-    "name": "St. Jakob im Defereggental – Brunnalm",
-    "country": "Austria",
-    "region": "East Tyrol",
-    "website": "https://www.stjakob-ski.at",
-    "is_glacier": false,
-    "lat": 46.932,
-    "lon": 12.329,
-    "sct": true,
-    "ssc": false,
-    "entryName": "St. Jakob im Defereggental",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "st-johann-in-tirol-oberndorf",
-    "name": "St. Johann in Tirol – Oberndorf",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.bergbahnen-stjohann.at",
-    "is_glacier": false,
-    "lat": 46.712002,
-    "lon": 11.138789,
-    "sct": true,
-    "ssc": false,
-    "entryName": "St. Johann in Tirol",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "st-michael-großeck-speiereck",
-    "name": "St. Michael – Großeck-Speiereck",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.grosseck-speiereck.at",
-    "is_glacier": false,
-    "lat": 47.1,
-    "lon": 13.633,
-    "sct": false,
-    "ssc": true,
-    "entryName": "St. Michael",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "stubaier-gletscher",
-    "name": "Stubaier Gletscher",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.stubaier-gletscher.com",
-    "is_glacier": true,
-    "lat": 46.999,
-    "lon": 11.112,
-    "sct": true,
-    "ssc": false,
-    "glacier": true,
-    "entryName": "Stubaier Gletscher",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "sudelfeld-bayrischzell",
-    "name": "Sudelfeld – Bayrischzell",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://www.sudelfeld.de",
-    "is_glacier": false,
-    "lat": 47.692,
-    "lon": 12.011,
-    "sct": false,
-    "ssc": false,
-    "nearMuc": true,
-    "entryName": "Sudelfeld",
-    "entryType": "main"
-  },
-  {
-    "stable_id": "tauplitzbad-mitterndorf",
-    "name": "Tauplitz/Bad Mitterndorf",
-    "country": "Austria",
-    "region": "Styria",
-    "website": "https://www.dietauplitz.com",
-    "is_glacier": false,
-    "lat": 47.565,
-    "lon": 13.99,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Tauplitz/Bad Mitterndorf",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "tiroler-zugspitzbahn",
-    "name": "Tiroler Zugspitzbahn",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zugspitzbahn.at",
-    "is_glacier": false,
-    "lat": 47.4255773,
-    "lon": 10.9411261,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Tiroler Zugspitzbahn",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "tirolina-ski-sport-und-aktivberg-thiersee",
-    "name": "Tirolina - Ski-,Sport-, und Aktivberg Thiersee",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.tirolina.at/de/startseite.html",
-    "is_glacier": false,
-    "lat": 47.2515148,
-    "lon": 11.4194271,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Tirolina",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "turracher-höhe-kärntensteiermark",
-    "name": "Turracher Höhe (Kärnten/Steiermark)",
-    "country": "Austria",
-    "region": "Carinthia/Styria",
-    "website": "https://www.turracherhoehe.at",
-    "is_glacier": false,
-    "lat": 46.909,
-    "lon": 13.873,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Turracher Höhe (Kärnten/Steiermark)",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "umhausen",
-    "name": "Umhausen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.oetztal.com/skigebiet-niederthai",
-    "is_glacier": false,
-    "lat": 47.137818,
-    "lon": 10.924619,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Umhausen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "venet-zamsfließ",
-    "name": "Venet – Zams/Fließ",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.venet.at",
-    "is_glacier": false,
-    "lat": 47.152,
-    "lon": 10.65,
-    "sct": true,
-    "ssc": false,
-    "groupId": "venet",
-    "entryName": "Venet",
-    "entryType": "main",
-    "groupName": "Venet",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "venter-seilbahnen",
-    "name": "Venter Seilbahnen",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.vent.at/",
-    "is_glacier": false,
-    "lat": 47.472696,
-    "lon": 10.685707,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Venter Seilbahnen",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "vögelsberg-aktivpark",
-    "name": "Vögelsberg Aktivpark",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://voegelsberg.at/",
-    "is_glacier": false,
-    "lat": 47.275502,
-    "lon": 11.590985,
-    "sct": true,
-    "ssc": false,
-    "entryName": "Vögelsberg Aktivpark",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "werfenweng",
-    "name": "Werfenweng",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.werfenweng.eu",
-    "is_glacier": false,
-    "lat": 47.46,
-    "lon": 13.247,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Werfenweng",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "westendorf-skiwelt",
-    "name": "Westendorf - SkiWelt",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.skiwelt.at",
-    "is_glacier": false,
-    "lat": 47.37698,
-    "lon": 12.21548,
-    "sct": true,
-    "ssc": false,
-    "groupId": "skiwelt",
-    "entryName": "Westendorf",
-    "entryType": "entry",
-    "groupName": "SkiWelt",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "wildkogel-arena-neukirchenbramberg",
-    "name": "Wildkogel Arena – Neukirchen/Bramberg",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.wildkogel-arena.at",
-    "is_glacier": false,
-    "lat": 47.25,
-    "lon": 12.265,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Neukirchen Bramberg",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "winklmoosalm-reit-im-winkl",
-    "name": "Winklmoosalm – Reit im Winkl",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://winklmoosalm.de/",
-    "is_glacier": false,
-    "lat": 47.654,
-    "lon": 12.596,
-    "sct": false,
-    "ssc": false,
-    "nearMuc": true,
-    "entryName": "Winklmoosalm",
-    "entryType": "main"
-  },
-  {
-    "stable_id": "wurzeralm-spital-am-pyhrn",
-    "name": "Wurzeralm – Spital am Pyhrn",
-    "country": "Austria",
-    "region": "Upper Austria",
-    "website": "https://www.hiwu.at",
-    "is_glacier": false,
-    "lat": 47.654,
-    "lon": 14.33,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Wurzeralm",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "zauchensee-flachauwinkl",
-    "name": "Zauchensee - Flachauwinkl",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.zauchensee.at",
-    "is_glacier": false,
-    "lat": 47.29,
-    "lon": 13.455,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Zauchensee",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "zell-am-see-schmittenhöhe",
-    "name": "Zell am See – Schmittenhöhe",
-    "country": "Austria",
-    "region": "Salzburg",
-    "website": "https://www.schmitten.at",
-    "is_glacier": false,
-    "lat": 47.325,
-    "lon": 12.787,
-    "sct": false,
-    "ssc": true,
-    "entryName": "Zell am See",
-    "entryType": "main",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      }
-    ]
-  },
-  {
-    "stable_id": "zell-am-ziller-zillertal-arena",
-    "name": "Zell am Ziller - Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol",
-    "website": "https://www.zell.at",
-    "is_glacier": false,
-    "lat": 47.233379,
-    "lon": 11.879974,
-    "sct": true,
-    "ssc": false,
-    "groupId": "zillertal-arena",
-    "entryName": "Zell am Ziller",
-    "entryType": "entry",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "zillertal-arena",
-    "name": "Zillertal Arena",
-    "country": "Austria",
-    "region": "Tyrol/Salzburg",
-    "website": "https://www.zillertalarena.com",
-    "is_glacier": false,
-    "lat": 47.242,
-    "lon": 12.091,
-    "sct": true,
-    "ssc": true,
-    "groupId": "zillertal-arena",
-    "entryName": "Zillertal Arena",
-    "entryType": "main",
-    "groupName": "Zillertal Arena",
-    "passes": [
-      {
-        "stable_id": "superskicard",
-        "name": "SuperSkiCard"
-      },
-      {
-        "stable_id": "snowcard-tirol",
-        "name": "Snow Card Tirol"
-      }
-    ]
-  },
-  {
-    "stable_id": "zugspitze",
-    "name": "Zugspitze",
-    "country": "Germany",
-    "region": "Bavaria",
-    "website": "https://zugspitze.de",
-    "is_glacier": false,
-    "lat": 47.421,
-    "lon": 10.985,
-    "sct": false,
-    "ssc": false,
-    "groupId": "zugspitze",
-    "nearMuc": true,
-    "entryName": "Zugspitze",
-    "entryType": "main",
-    "groupName": "Zugspitze"
-  }
+    {
+        "lat": 47.641227,
+        "lon": 12.295233,
+        "sct": true,
+        "ssc": false,
+        "name": "Amberglift Walchsee",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.amberglift.at/",
+        "pistesKm": 0.50,
+        "entryName": "Amberglift Walchsee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "amberglift-walchsee",
+        "liftsTotal": 2,
+        "maxElevation": 750
+    },
+    {
+        "lat": 47.195,
+        "lon": 11.281,
+        "sct": true,
+        "ssc": false,
+        "name": "Axamer Lizum",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.axamer-lizum.at",
+        "pistesKm": 41.00,
+        "entryName": "Axamer Lizum",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "axamer-lizum",
+        "liftsTotal": 9,
+        "maxElevation": 2340
+    },
+    {
+        "lat": 47.486326,
+        "lon": 12.587202,
+        "sct": true,
+        "ssc": false,
+        "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergbahn-pillersee.com",
+        "pistesKm": 22.00,
+        "entryName": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "bergbahnen-pillersee-buchensteinwand-st-ulrich",
+        "liftsTotal": 8,
+        "maxElevation": 1456
+    },
+    {
+        "lat": 47.004371,
+        "lon": 12.39825,
+        "sct": true,
+        "ssc": false,
+        "name": "Bergeralm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergeralm.net/",
+        "pistesKm": 29.50,
+        "entryName": "Bergeralm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "bergeralm",
+        "liftsTotal": 7,
+        "maxElevation": 2231
+    },
+    {
+        "lat": 47.144212,
+        "lon": 10.307553,
+        "sct": true,
+        "ssc": false,
+        "name": "Bergwelt Hahnenkamm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergwelt-hahnenkamm.at",
+        "pistesKm": 16.00,
+        "entryName": "Bergwelt Hahnenkamm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "bergwelt-hahnenkamm",
+        "liftsTotal": 3,
+        "maxElevation": 1900
+    },
+    {
+        "lat": 47.40807,
+        "lon": 10.74735,
+        "sct": true,
+        "ssc": false,
+        "name": "Berwang",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.berwang.tirol/",
+        "pistesKm": null,
+        "entryName": "Berwang",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "berwang",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.391,
+        "lon": 10.692,
+        "sct": true,
+        "ssc": false,
+        "name": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.berwang.tirol",
+        "pistesKm": 34.00,
+        "entryName": "Berwang/Bichlbach – Berwanger Sonnalmbahn",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "berwangbichlbach-berwanger-sonnalmbahn",
+        "liftsTotal": 12,
+        "maxElevation": 1740
+    },
+    {
+        "lat": 47.368,
+        "lon": 10.873,
+        "sct": true,
+        "ssc": false,
+        "name": "Biberwier – Marienberg",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "bergbahnen-langes",
+        "nearMuc": false,
+        "website": "https://www.bergbahnen-langes.at",
+        "pistesKm": 12.30,
+        "entryName": "Biberwier – Marienberg",
+        "entryType": "entry",
+        "groupName": "Bergbahnen Langes",
+        "stable_id": "biberwier-marienberg",
+        "liftsTotal": 6,
+        "maxElevation": 1840
+    },
+    {
+        "lat": 47.01667,
+        "lon": 12.38333,
+        "sct": true,
+        "ssc": false,
+        "name": "Bichllifte Prägraten",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://snowcard.tirol.at/alle-skigebiete/bichllifte-praegraten_84",
+        "pistesKm": 2.00,
+        "entryName": "Bichllifte Prägraten",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "bichllifte-prägraten",
+        "liftsTotal": 2,
+        "maxElevation": 1490
+    },
+    {
+        "lat": 47.666,
+        "lon": 11.553,
+        "sct": false,
+        "ssc": false,
+        "name": "Brauneck – Lenggries",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": true,
+        "website": "https://www.brauneck-bergbahn.de",
+        "pistesKm": 32.00,
+        "entryName": "Brauneck – Lenggries",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "brauneck-lenggries",
+        "liftsTotal": 12,
+        "maxElevation": 1712
+    },
+    {
+        "lat": 47.466333,
+        "lon": 12.234134,
+        "sct": true,
+        "ssc": false,
+        "name": "Brixen im Thale - SkiWelt",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skiwelt",
+        "nearMuc": false,
+        "website": "https://www.skiwelt.at",
+        "pistesKm": 275.00,
+        "entryName": "Brixen im Thale - SkiWelt",
+        "entryType": "entry",
+        "groupName": "SkiWelt",
+        "stable_id": "brixen-im-thale-skiwelt",
+        "liftsTotal": 84,
+        "maxElevation": 1820
+    },
+    {
+        "lat": 47.497,
+        "lon": 12.576,
+        "sct": true,
+        "ssc": false,
+        "name": "Buchensteinwand – Pillersee",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergbahn-pillersee.com",
+        "pistesKm": null,
+        "entryName": "Buchensteinwand – Pillersee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "buchensteinwand-pillersee",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 46.72889,
+        "lon": 12.50083,
+        "sct": true,
+        "ssc": false,
+        "name": "Dorfberg Kartitsch",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://kartitscher-liftgesellschaft.jimdofree.com/",
+        "pistesKm": 2.70,
+        "entryName": "Dorfberg Kartitsch",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "dorfberg-kartitsch",
+        "liftsTotal": 2,
+        "maxElevation": 1820
+    },
+    {
+        "lat": 47.156899,
+        "lon": 11.728876,
+        "sct": true,
+        "ssc": false,
+        "name": "Eggalmbahnen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/eggalm-bahnen/",
+        "pistesKm": null,
+        "entryName": "Eggalmbahnen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "eggalmbahnen",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.41,
+        "lon": 10.92,
+        "sct": true,
+        "ssc": false,
+        "name": "Ehrwald – Ehrwalder Alm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.almbahn.at",
+        "pistesKm": null,
+        "entryName": "Ehrwald – Ehrwalder Alm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ehrwald-ehrwalder-alm",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.384912,
+        "lon": 10.968338,
+        "sct": true,
+        "ssc": false,
+        "name": "Ehrwalder Alm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.almbahn.tirol",
+        "pistesKm": 27.50,
+        "entryName": "Ehrwalder Alm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ehrwalder-alm",
+        "liftsTotal": 7,
+        "maxElevation": 1950
+    },
+    {
+        "lat": 47.410234,
+        "lon": 10.938698,
+        "sct": true,
+        "ssc": false,
+        "name": "Ehrwalder Wettersteinbahnen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.wetterstein-bahnen.at/",
+        "pistesKm": 21.00,
+        "entryName": "Ehrwalder Wettersteinbahnen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ehrwalder-wettersteinbahnen",
+        "liftsTotal": 5,
+        "maxElevation": 1520
+    },
+    {
+        "lat": 47.109,
+        "lon": 11.309,
+        "sct": true,
+        "ssc": false,
+        "name": "Elferbahnen – Neustift",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "stubai",
+        "nearMuc": false,
+        "website": "https://www.stubai.at/skigebiete/elferbahnen",
+        "pistesKm": 7.00,
+        "entryName": "Elferbahnen – Neustift",
+        "entryType": "entry",
+        "groupName": "Stubai",
+        "stable_id": "elferbahnen-neustift",
+        "liftsTotal": 3,
+        "maxElevation": 2100
+    },
+    {
+        "lat": 47.519862,
+        "lon": 12.301404,
+        "sct": true,
+        "ssc": false,
+        "name": "Ellmau-Going - SkiWelt",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skiwelt",
+        "nearMuc": false,
+        "website": "https://www.skiwelt.at",
+        "pistesKm": 275.00,
+        "entryName": "Ellmau-Going - SkiWelt",
+        "entryType": "entry",
+        "groupName": "SkiWelt",
+        "stable_id": "ellmau-going-skiwelt",
+        "liftsTotal": 84,
+        "maxElevation": 1525
+    },
+    {
+        "lat": 47.076977,
+        "lon": 10.66669,
+        "sct": true,
+        "ssc": false,
+        "name": "Fendels - Ried - Prutz",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Kaunertal-A-Z/Skigebiet-Fendels_i-2863",
+        "pistesKm": 11.00,
+        "entryName": "Fendels - Ried - Prutz",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "fendels-ried-prutz",
+        "liftsTotal": 6,
+        "maxElevation": 2300
+    },
+    {
+        "lat": 47.15285,
+        "lon": 11.821412,
+        "sct": true,
+        "ssc": false,
+        "name": "Finkenberger Almbahnen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hintertuxergletscher.at/de/sommer/finkenberger-almbahnen/",
+        "pistesKm": 26.00,
+        "entryName": "Finkenberger Almbahnen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "finkenberger-almbahnen",
+        "liftsTotal": 63,
+        "maxElevation": 2095
+    },
+    {
+        "lat": 47.385,
+        "lon": 13.944,
+        "sct": false,
+        "ssc": false,
+        "name": "Galsterberg",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.galsterberg.at",
+        "pistesKm": 20.00,
+        "entryName": "Galsterberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "galsterberg",
+        "liftsTotal": 4,
+        "maxElevation": 1986
+    },
+    {
+        "lat": 46.96667,
+        "lon": 10.18333,
+        "sct": true,
+        "ssc": false,
+        "name": "Galtür - Silvapark",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.silvapark.at",
+        "pistesKm": 12.00,
+        "entryName": "Galtür - Silvapark",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "galtür-silvapark",
+        "liftsTotal": 6,
+        "maxElevation": 1900
+    },
+    {
+        "lat": 47.492,
+        "lon": 11.118,
+        "sct": false,
+        "ssc": false,
+        "name": "Garmisch-Classic",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": true,
+        "website": "https://zugspitze.de",
+        "pistesKm": 40.00,
+        "entryName": "Garmisch-Classic",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "garmisch-classic",
+        "liftsTotal": 17,
+        "maxElevation": 2050
+    },
+    {
+        "lat": 47.116,
+        "lon": 13.134,
+        "sct": false,
+        "ssc": false,
+        "name": "Gastein – Bad Gastein",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skigastein",
+        "nearMuc": false,
+        "website": "https://www.skigastein.com",
+        "pistesKm": null,
+        "entryName": "Gastein – Bad Gastein",
+        "entryType": "entry",
+        "groupName": "Ski Gastein",
+        "stable_id": "gastein-bad-gastein",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.171,
+        "lon": 13.1,
+        "sct": false,
+        "ssc": false,
+        "name": "Gastein – Bad Hofgastein",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skigastein",
+        "nearMuc": false,
+        "website": "https://www.skigastein.com",
+        "pistesKm": 84.00,
+        "entryName": "Gastein – Bad Hofgastein",
+        "entryType": "entry",
+        "groupName": "Ski Gastein",
+        "stable_id": "gastein-bad-hofgastein",
+        "liftsTotal": 18,
+        "maxElevation": 2300
+    },
+    {
+        "lat": 46.669,
+        "lon": 13.894,
+        "sct": false,
+        "ssc": false,
+        "name": "Gerlitzen Alpe",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.gerlitzen.com",
+        "pistesKm": 65.00,
+        "entryName": "Gerlitzen Alpe",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "gerlitzen-alpe",
+        "liftsTotal": 21,
+        "maxElevation": 1911
+    },
+    {
+        "lat": 47.194217,
+        "lon": 11.923857,
+        "sct": true,
+        "ssc": false,
+        "name": "Gerlosstein - Zillertal Arena",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "zillertal-arena",
+        "nearMuc": false,
+        "website": "https://www.zillertalarena.com/",
+        "pistesKm": null,
+        "entryName": "Gerlosstein - Zillertal Arena",
+        "entryType": "entry",
+        "groupName": "Zillertal Arena",
+        "stable_id": "gerlosstein-zillertal-arena",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.21667,
+        "lon": 12,
+        "sct": true,
+        "ssc": false,
+        "name": "Gerlos - Zillertal Arena",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "zillertal-arena",
+        "nearMuc": false,
+        "website": "https://www.zillertalarena.com",
+        "pistesKm": 10.20,
+        "entryName": "Gerlos - Zillertal Arena",
+        "entryType": "entry",
+        "groupName": "Zillertal Arena",
+        "stable_id": "gerlos-zillertal-arena",
+        "liftsTotal": 52,
+        "maxElevation": 1650
+    },
+    {
+        "lat": 47.235,
+        "lon": 11.522,
+        "sct": true,
+        "ssc": false,
+        "name": "Glungezer – Tulfes",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.glungezerbahn.at",
+        "pistesKm": 23.00,
+        "entryName": "Glungezer – Tulfes",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "glungezer-tulfes",
+        "liftsTotal": 6,
+        "maxElevation": 2304
+    },
+    {
+        "lat": 46.797,
+        "lon": 13.476,
+        "sct": false,
+        "ssc": false,
+        "name": "Goldeck – Spittal/Drau",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.sportberg-goldeck.com",
+        "pistesKm": 31.60,
+        "entryName": "Goldeck – Spittal/Drau",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "goldeck-spittaldrau",
+        "liftsTotal": 6,
+        "maxElevation": 2142
+    },
+    {
+        "lat": 47.07,
+        "lon": 14.34,
+        "sct": false,
+        "ssc": false,
+        "name": "Grebenzen – St. Lambrecht",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://grebenzen.at",
+        "pistesKm": 26.70,
+        "entryName": "Grebenzen – St. Lambrecht",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "grebenzen-st-lambrecht",
+        "liftsTotal": 8,
+        "maxElevation": 1900
+    },
+    {
+        "lat": 46.999,
+        "lon": 12.562,
+        "sct": true,
+        "ssc": false,
+        "name": "Großglockner Resort Kals–Matrei",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.gg-resort.at",
+        "pistesKm": 44.60,
+        "entryName": "Großglockner Resort Kals–Matrei",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "großglockner-resort-kalsmatrei",
+        "liftsTotal": 18,
+        "maxElevation": 2403
+    },
+    {
+        "lat": 47.3247875,
+        "lon": 11.1771783,
+        "sct": true,
+        "ssc": false,
+        "name": "Gschwandtkopflifte",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.skigebiet-seefeld.at/",
+        "pistesKm": 5.80,
+        "entryName": "Gschwandtkopflifte",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "gschwandtkopflifte",
+        "liftsTotal": 11,
+        "maxElevation": 1500
+    },
+    {
+        "lat": 47.401,
+        "lon": 13.83,
+        "sct": false,
+        "ssc": false,
+        "name": "Hauser Kaibling",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hauser-kaibling.at",
+        "pistesKm": 123.00,
+        "entryName": "Hauser Kaibling",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hauser-kaibling",
+        "liftsTotal": 14,
+        "maxElevation": 2015
+    },
+    {
+        "lat": 47.037,
+        "lon": 12.846,
+        "sct": false,
+        "ssc": false,
+        "name": "Heiligenblut – Großglockner",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.heiligenblut.at",
+        "pistesKm": 55.00,
+        "entryName": "Heiligenblut – Großglockner",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "heiligenblut-großglockner",
+        "liftsTotal": 11,
+        "maxElevation": 2902
+    },
+    {
+        "lat": 47.696,
+        "lon": 14.158,
+        "sct": false,
+        "ssc": false,
+        "name": "Hinterstoder – Höss",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Upper Austria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hinterstoder.at",
+        "pistesKm": 40.00,
+        "entryName": "Hinterstoder – Höss",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hinterstoder-höss",
+        "liftsTotal": 13,
+        "maxElevation": 2000
+    },
+    {
+        "lat": 47.074,
+        "lon": 11.664,
+        "sct": true,
+        "ssc": false,
+        "name": "Hintertuxer Gletscher",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hintertuxergletscher.at",
+        "pistesKm": 62.00,
+        "entryName": "Hintertuxer Gletscher",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hintertuxer-gletscher",
+        "liftsTotal": 20,
+        "maxElevation": 3250
+    },
+    {
+        "lat": 47.513119,
+        "lon": 11.697002,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochalmlifte Christlum - Achenkirch",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.christlum.at",
+        "pistesKm": 27.00,
+        "entryName": "Hochalmlifte Christlum - Achenkirch",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochalmlifte-christlum-achenkirch",
+        "liftsTotal": 10,
+        "maxElevation": 1800
+    },
+    {
+        "lat": 48.732,
+        "lon": 13.913,
+        "sct": false,
+        "ssc": false,
+        "name": "Hochficht (Böhmerwald)",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Upper Austria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochficht.at",
+        "pistesKm": 24.00,
+        "entryName": "Hochficht (Böhmerwald)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochficht-böhmerwald",
+        "liftsTotal": 9,
+        "maxElevation": 1338
+    },
+    {
+        "lat": 47.269316,
+        "lon": 11.775599,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochfügen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochfuegenski.com/",
+        "pistesKm": 90.70,
+        "entryName": "Hochfügen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochfügen",
+        "liftsTotal": 13,
+        "maxElevation": 2500
+    },
+    {
+        "lat": 47.391,
+        "lon": 13.103,
+        "sct": false,
+        "ssc": false,
+        "name": "Hochkönig – Maria Alm/Dienten/Mühlbach",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochkoenig.at",
+        "pistesKm": 120.00,
+        "entryName": "Hochkönig – Maria Alm/Dienten/Mühlbach",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochkönig-maria-almdientenmühlbach",
+        "liftsTotal": 34,
+        "maxElevation": 1900
+    },
+    {
+        "lat": 47.674,
+        "lon": 12.423,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochkössen (Unterberghorn)",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tirol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergbahnen-koessen.at",
+        "pistesKm": null,
+        "entryName": "Hochkössen (Unterberghorn)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochkössen-unterberghorn",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.26179,
+        "lon": 11.88471,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochkrimml - Zillertal Arena",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "zillertal-arena",
+        "nearMuc": false,
+        "website": "https://www.zillertalarena.com",
+        "pistesKm": 150.00,
+        "entryName": "Hochkrimml - Zillertal Arena",
+        "entryType": "entry",
+        "groupName": "Zillertal Arena",
+        "stable_id": "hochkrimml-zillertal-arena",
+        "liftsTotal": 52,
+        "maxElevation": 2040
+    },
+    {
+        "lat": 47.212221,
+        "lon": 10.929613,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochoetz - Oetz",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.oetz.com/",
+        "pistesKm": 41.00,
+        "entryName": "Hochoetz - Oetz",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochoetz-oetz",
+        "liftsTotal": 15,
+        "maxElevation": 2300
+    },
+    {
+        "lat": 47.367,
+        "lon": 13.72,
+        "sct": false,
+        "ssc": false,
+        "name": "Hochwurzen",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.planai.at",
+        "pistesKm": null,
+        "entryName": "Hochwurzen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochwurzen",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.1516147,
+        "lon": 10.757664,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochzeiger – Jerzens Pitztal",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochzeiger.com",
+        "pistesKm": 40.00,
+        "entryName": "Hochzeiger – Jerzens Pitztal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochzeiger-jerzens-pitztal",
+        "liftsTotal": 9,
+        "maxElevation": 2500
+    },
+    {
+        "lat": 47.296919,
+        "lon": 11.875362,
+        "sct": true,
+        "ssc": false,
+        "name": "Hochzillertal-Kaltenbach",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochzillertal.com/",
+        "pistesKm": 90.70,
+        "entryName": "Hochzillertal-Kaltenbach",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hochzillertal-kaltenbach",
+        "liftsTotal": 25,
+        "maxElevation": 2350
+    },
+    {
+        "lat": 47.449133,
+        "lon": 12.159385,
+        "sct": true,
+        "ssc": false,
+        "name": "Hopfgarten - Itter - SkiWelt",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skiwelt",
+        "nearMuc": false,
+        "website": "https://www.skiwelt.at",
+        "pistesKm": 275.00,
+        "entryName": "Hopfgarten - Itter - SkiWelt",
+        "entryType": "entry",
+        "groupName": "SkiWelt",
+        "stable_id": "hopfgarten-itter-skiwelt",
+        "liftsTotal": 84,
+        "maxElevation": 1829
+    },
+    {
+        "lat": 47.289792,
+        "lon": 11.683876,
+        "sct": true,
+        "ssc": false,
+        "name": "Hüttegglift Weerberg",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.huettegglift.at/",
+        "pistesKm": 2.00,
+        "entryName": "Hüttegglift Weerberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "hüttegglift-weerberg",
+        "liftsTotal": 2,
+        "maxElevation": 1505
+    },
+    {
+        "lat": 47.239026,
+        "lon": 10.742382,
+        "sct": true,
+        "ssc": false,
+        "name": "Imst - Hochimst",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.imster-bergbahnen.at/",
+        "pistesKm": null,
+        "entryName": "Imst - Hochimst",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "imst-hochimst",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.011371,
+        "lon": 10.293548,
+        "sct": true,
+        "ssc": false,
+        "name": "Ischgl  - Silvretta Arena",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.ischgl.com/",
+        "pistesKm": 238.00,
+        "entryName": "Ischgl  - Silvretta Arena",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ischgl-silvretta-arena",
+        "liftsTotal": 46,
+        "maxElevation": 2872
+    },
+    {
+        "lat": 47.583,
+        "lon": 12.996,
+        "sct": false,
+        "ssc": false,
+        "name": "Jenner – Königssee",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": true,
+        "website": "https://www.jennerbahn.de",
+        "pistesKm": 1.00,
+        "entryName": "Jenner – Königssee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "jenner-königssee",
+        "liftsTotal": 3,
+        "maxElevation": 1800
+    },
+    {
+        "lat": 47.281742,
+        "lon": 10.359239,
+        "sct": true,
+        "ssc": false,
+        "name": "Jöchelspitze Lechtal",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.lechtaler-bergbahnen.at/",
+        "pistesKm": 5.00,
+        "entryName": "Jöchelspitze Lechtal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "jöchelspitze-lechtal",
+        "liftsTotal": 1,
+        "maxElevation": 1800
+    },
+    {
+        "lat": 47.069,
+        "lon": 10.376,
+        "sct": true,
+        "ssc": false,
+        "name": "Kappl",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kappl.com",
+        "pistesKm": 42.00,
+        "entryName": "Kappl",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kappl",
+        "liftsTotal": 10,
+        "maxElevation": 2700
+    },
+    {
+        "lat": 47.219,
+        "lon": 12.759,
+        "sct": false,
+        "ssc": false,
+        "name": "Kaprun – Kitzsteinhorn (Gletscher)",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kitzsteinhorn.at",
+        "pistesKm": 62.50,
+        "entryName": "Kaprun – Kitzsteinhorn (Gletscher)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kaprun-kitzsteinhorn-gletscher",
+        "liftsTotal": 24,
+        "maxElevation": 3029
+    },
+    {
+        "lat": 47.427522,
+        "lon": 11.695987,
+        "sct": true,
+        "ssc": false,
+        "name": "Karwendel-Bergbahn - Pertisau",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.karwendel-bergbahn.at/skigebiet-achensee-ski-snowboard.html",
+        "pistesKm": null,
+        "entryName": "Karwendel-Bergbahn - Pertisau",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "karwendel-bergbahn-pertisau",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.874,
+        "lon": 13.994,
+        "sct": false,
+        "ssc": false,
+        "name": "Kasberg – Grünau im Almtal",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Upper Austria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kasberg.at",
+        "pistesKm": 9.00,
+        "entryName": "Kasberg – Grünau im Almtal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kasberg-grünau-im-almtal",
+        "liftsTotal": 5,
+        "maxElevation": 1200
+    },
+    {
+        "lat": 47.074,
+        "lon": 13.647,
+        "sct": false,
+        "ssc": false,
+        "name": "Katschberg/Aineck",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia/Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.katschberg.at",
+        "pistesKm": 5.00,
+        "entryName": "Katschberg/Aineck",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "katschbergaineck",
+        "liftsTotal": 3,
+        "maxElevation": 1100
+    },
+    {
+        "lat": 47.369026,
+        "lon": 11.164731,
+        "sct": true,
+        "ssc": false,
+        "name": "Katzenkopf Leutasch",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.katzenkopf-leutasch.at",
+        "pistesKm": 5.00,
+        "entryName": "Katzenkopf Leutasch",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "katzenkopf-leutasch",
+        "liftsTotal": 3,
+        "maxElevation": 1363
+    },
+    {
+        "lat": 46.882,
+        "lon": 10.718,
+        "sct": true,
+        "ssc": false,
+        "name": "Kaunertaler Gletscher",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html",
+        "pistesKm": 55.00,
+        "entryName": "Kaunertaler Gletscher",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kaunertaler-gletscher",
+        "liftsTotal": 7,
+        "maxElevation": 3113
+    },
+    {
+        "lat": 47.321123,
+        "lon": 11.731026,
+        "sct": true,
+        "ssc": false,
+        "name": "Kellerjochbahn Schwaz-Pill",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kellerjochbahn.at/cms/",
+        "pistesKm": 14.00,
+        "entryName": "Kellerjochbahn Schwaz-Pill",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kellerjochbahn-schwaz-pill",
+        "liftsTotal": 5,
+        "maxElevation": 1888
+    },
+    {
+        "lat": 47.442,
+        "lon": 12.392,
+        "sct": true,
+        "ssc": false,
+        "name": "KitzSki – Kitzbühel/Kirchberg",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            },
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kitzski.at",
+        "pistesKm": 234.00,
+        "entryName": "KitzSki – Kitzbühel/Kirchberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kitzski-kitzbühelkirchberg",
+        "liftsTotal": 56,
+        "maxElevation": 2000
+    },
+    {
+        "lat": 47.276,
+        "lon": 13.333,
+        "sct": false,
+        "ssc": false,
+        "name": "Kleinarl – Shuttleberg",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.shuttleberg.com",
+        "pistesKm": 40.00,
+        "entryName": "Kleinarl – Shuttleberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kleinarl-shuttleberg",
+        "liftsTotal": 12,
+        "maxElevation": 1980
+    },
+    {
+        "lat": 47.3,
+        "lon": 11.63333,
+        "sct": true,
+        "ssc": false,
+        "name": "Kolsassberg",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kolsassberglift.at/",
+        "pistesKm": 0.60,
+        "entryName": "Kolsassberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kolsassberg",
+        "liftsTotal": 2,
+        "maxElevation": 820
+    },
+    {
+        "lat": 47.26179,
+        "lon": 11.88471,
+        "sct": true,
+        "ssc": false,
+        "name": "Königsleiten - Zillertal Arena",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "zillertal-arena",
+        "nearMuc": false,
+        "website": "https://www.zillertalarena.com",
+        "pistesKm": 150.00,
+        "entryName": "Königsleiten - Zillertal Arena",
+        "entryType": "entry",
+        "groupName": "Zillertal Arena",
+        "stable_id": "königsleiten-zillertal-arena",
+        "liftsTotal": 52,
+        "maxElevation": 2315
+    },
+    {
+        "lat": 47.659278,
+        "lon": 12.391375,
+        "sct": true,
+        "ssc": false,
+        "name": "Kössen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://skisport.com/Hochkoessen/de",
+        "pistesKm": 22.00,
+        "entryName": "Kössen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kössen",
+        "liftsTotal": 11,
+        "maxElevation": 1700
+    },
+    {
+        "lat": 47.081,
+        "lon": 14.101,
+        "sct": false,
+        "ssc": false,
+        "name": "Kreischberg",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kreischberg.at",
+        "pistesKm": 42.00,
+        "entryName": "Kreischberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kreischberg",
+        "liftsTotal": 12,
+        "maxElevation": 2118
+    },
+    {
+        "lat": 47.212,
+        "lon": 11.023,
+        "sct": true,
+        "ssc": false,
+        "name": "Kühtai",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.kuehtai.info",
+        "pistesKm": 47.30,
+        "entryName": "Kühtai",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "kühtai",
+        "liftsTotal": 12,
+        "maxElevation": 2520
+    },
+    {
+        "lat": 47.255,
+        "lon": 14.384,
+        "sct": false,
+        "ssc": false,
+        "name": "Lachtal",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.lachtal.at",
+        "pistesKm": 26.00,
+        "entryName": "Lachtal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "lachtal",
+        "liftsTotal": 10,
+        "maxElevation": 2222
+    },
+    {
+        "lat": 47.135006,
+        "lon": 10.578077,
+        "sct": true,
+        "ssc": false,
+        "name": "Landeck - Zams - Fliess (Familienskigebiet Venet)",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.venet.at",
+        "pistesKm": null,
+        "entryName": "Landeck - Zams - Fliess (Familienskigebiet Venet)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "landeck-zams-fliess-familienskigebiet-venet",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.401,
+        "lon": 10.879,
+        "sct": true,
+        "ssc": false,
+        "name": "Lermoos – Grubigstein",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "bergbahnen-langes",
+        "nearMuc": false,
+        "website": "https://www.bergbahnen-langes.at",
+        "pistesKm": null,
+        "entryName": "Lermoos – Grubigstein",
+        "entryType": "entry",
+        "groupName": "Bergbahnen Langes",
+        "stable_id": "lermoos-grubigstein",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 46.830857,
+        "lon": 12.764987,
+        "sct": true,
+        "ssc": false,
+        "name": "Lienz Zettersfeld Hochstein",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.lienzer-bergbahnen.at",
+        "pistesKm": 20.60,
+        "entryName": "Lienz Zettersfeld Hochstein",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "lienz-zettersfeld-hochstein",
+        "liftsTotal": 6,
+        "maxElevation": 2278
+    },
+    {
+        "lat": 47.645,
+        "lon": 13.79,
+        "sct": false,
+        "ssc": false,
+        "name": "Loser – Altaussee",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.loser.at",
+        "pistesKm": 34.00,
+        "entryName": "Loser – Altaussee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "loser-altaussee",
+        "liftsTotal": 10,
+        "maxElevation": 1800
+    },
+    {
+        "lat": 47.1904302,
+        "lon": 11.8568543,
+        "sct": true,
+        "ssc": false,
+        "name": "Mayrhofen – Penken/Ahorn",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.mayrhofner-bergbahnen.com",
+        "pistesKm": 142.00,
+        "entryName": "Mayrhofen – Penken/Ahorn",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "mayrhofen-penkenahorn",
+        "liftsTotal": 27,
+        "maxElevation": 2500
+    },
+    {
+        "lat": 47.281856,
+        "lon": 12.48711,
+        "sct": true,
+        "ssc": false,
+        "name": "Mittersill - Paß Thurn - Kitzbühel",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.mittersill.info/",
+        "pistesKm": 234.00,
+        "entryName": "Mittersill - Paß Thurn - Kitzbühel",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "mittersill-paß-thurn-kitzbühel",
+        "liftsTotal": 56,
+        "maxElevation": 1892
+    },
+    {
+        "lat": 46.935,
+        "lon": 13.013,
+        "sct": false,
+        "ssc": false,
+        "name": "Mölltaler Gletscher",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.moelltaler-gletscher.at",
+        "pistesKm": null,
+        "entryName": "Mölltaler Gletscher",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "mölltaler-gletscher",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.21978,
+        "lon": 11.321516,
+        "sct": true,
+        "ssc": false,
+        "name": "Muttereralm - Nockspitzbahn",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.muttereralm.at",
+        "pistesKm": null,
+        "entryName": "Muttereralm - Nockspitzbahn",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "muttereralm-nockspitzbahn",
+        "liftsTotal": 5,
+        "maxElevation": 1801
+    },
+    {
+        "lat": 46.556,
+        "lon": 13.282,
+        "sct": false,
+        "ssc": false,
+        "name": "Nassfeld – Hermagor",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Carinthia",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.nassfeld.at",
+        "pistesKm": 110.00,
+        "entryName": "Nassfeld – Hermagor",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "nassfeld-hermagor",
+        "liftsTotal": 30,
+        "maxElevation": 2000
+    },
+    {
+        "lat": 46.882,
+        "lon": 10.504,
+        "sct": true,
+        "ssc": false,
+        "name": "Nauders – Bergkastel",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.nauders.com",
+        "pistesKm": 75.00,
+        "entryName": "Nauders – Bergkastel",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "nauders-bergkastel",
+        "liftsTotal": 15,
+        "maxElevation": 2750
+    },
+    {
+        "lat": 47.482127,
+        "lon": 10.542658,
+        "sct": true,
+        "ssc": false,
+        "name": "Neunerköpfle - Tannheim",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.tannheimer-bergbahnen.at",
+        "pistesKm": 9.50,
+        "entryName": "Neunerköpfle - Tannheim",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "neunerköpfle-tannheim",
+        "liftsTotal": 5,
+        "maxElevation": 1820
+    },
+    {
+        "lat": 47.285764,
+        "lon": 11.398915,
+        "sct": true,
+        "ssc": false,
+        "name": "Nordkette - Innsbruck",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.nordkette.com/",
+        "pistesKm": 13.00,
+        "entryName": "Nordkette - Innsbruck",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "nordkette-innsbruck",
+        "liftsTotal": 6,
+        "maxElevation": 2260
+    },
+    {
+        "lat": 46.869,
+        "lon": 11.027,
+        "sct": true,
+        "ssc": false,
+        "name": "Obergurgl-Hochgurgl",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.gurgl.com",
+        "pistesKm": 112.00,
+        "entryName": "Obergurgl-Hochgurgl",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "obergurgl-hochgurgl",
+        "liftsTotal": 25,
+        "maxElevation": 3030
+    },
+    {
+        "lat": 47.35,
+        "lon": 10.233,
+        "sct": false,
+        "ssc": false,
+        "name": "Oberstdorf – Fellhorn/Kanzelwand",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": "ok-bergbahnen",
+        "nearMuc": true,
+        "website": "https://www.ok-bergbahnen.com",
+        "pistesKm": 36.00,
+        "entryName": "Oberstdorf – Fellhorn/Kanzelwand",
+        "entryType": "entry",
+        "groupName": "OK Bergbahnen",
+        "stable_id": "oberstdorf-fellhornkanzelwand",
+        "liftsTotal": 13,
+        "maxElevation": 1967
+    },
+    {
+        "lat": 47.416,
+        "lon": 10.328,
+        "sct": false,
+        "ssc": false,
+        "name": "Oberstdorf – Nebelhorn",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": "ok-bergbahnen",
+        "nearMuc": true,
+        "website": "https://www.ok-bergbahnen.com",
+        "pistesKm": 13.00,
+        "entryName": "Oberstdorf – Nebelhorn",
+        "entryType": "entry",
+        "groupName": "OK Bergbahnen",
+        "stable_id": "oberstdorf-nebelhorn",
+        "liftsTotal": 7,
+        "maxElevation": 2224
+    },
+    {
+        "lat": 47.385,
+        "lon": 10.223,
+        "sct": false,
+        "ssc": false,
+        "name": "Oberstdorf – Söllereck",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": "ok-bergbahnen",
+        "nearMuc": true,
+        "website": "https://www.ok-bergbahnen.com",
+        "pistesKm": 14.00,
+        "entryName": "Oberstdorf – Söllereck",
+        "entryType": "entry",
+        "groupName": "OK Bergbahnen",
+        "stable_id": "oberstdorf-söllereck",
+        "liftsTotal": 7,
+        "maxElevation": 1450
+    },
+    {
+        "lat": 47.251,
+        "lon": 13.563,
+        "sct": false,
+        "ssc": false,
+        "name": "Obertauern",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.obertauern.com",
+        "pistesKm": 100.00,
+        "entryName": "Obertauern",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "obertauern",
+        "liftsTotal": 26,
+        "maxElevation": 2315
+    },
+    {
+        "lat": 46.68333,
+        "lon": 12.6,
+        "sct": true,
+        "ssc": false,
+        "name": "Obertilliacher Bergbahnen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.obertilliacher-bergbahnen.com/",
+        "pistesKm": 10.00,
+        "entryName": "Obertilliacher Bergbahnen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "obertilliacher-bergbahnen",
+        "liftsTotal": 4,
+        "maxElevation": 2100
+    },
+    {
+        "lat": 47.543,
+        "lon": 13.686,
+        "sct": false,
+        "ssc": false,
+        "name": "Obertraun – Dachstein Krippenstein",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Upper Austria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.dachstein-salzkammergut.com",
+        "pistesKm": 10.00,
+        "entryName": "Obertraun – Dachstein Krippenstein",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "obertraun-dachstein-krippenstein",
+        "liftsTotal": 7,
+        "maxElevation": 2100
+    },
+    {
+        "lat": 47.208828,
+        "lon": 11.460608,
+        "sct": true,
+        "ssc": false,
+        "name": "Patscherkofel",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.patscherkofelbahn.at",
+        "pistesKm": null,
+        "entryName": "Patscherkofel",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "patscherkofel",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.215,
+        "lon": 11.43,
+        "sct": true,
+        "ssc": false,
+        "name": "Patscherkofel – Igls",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.patscherkofelbahn.at",
+        "pistesKm": 19.00,
+        "entryName": "Patscherkofel – Igls",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "patscherkofel-igls",
+        "liftsTotal": 7,
+        "maxElevation": 1965
+    },
+    {
+        "lat": 46.926822,
+        "lon": 10.879164,
+        "sct": true,
+        "ssc": false,
+        "name": "Pitztaler Gletscher - Rifflsee",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.pitztaler-gletscher.at",
+        "pistesKm": 42.70,
+        "entryName": "Pitztaler Gletscher - Rifflsee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "pitztaler-gletscher-rifflsee",
+        "liftsTotal": 8,
+        "maxElevation": 3122
+    },
+    {
+        "lat": 47.402,
+        "lon": 14.084,
+        "sct": false,
+        "ssc": false,
+        "name": "Planneralm",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.planneralm.at",
+        "pistesKm": 16.00,
+        "entryName": "Planneralm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "planneralm",
+        "liftsTotal": 6,
+        "maxElevation": 2200
+    },
+    {
+        "lat": 47.541,
+        "lon": 14.986,
+        "sct": false,
+        "ssc": false,
+        "name": "Präbichl",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.praebichl.at",
+        "pistesKm": 20.00,
+        "entryName": "Präbichl",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "präbichl",
+        "liftsTotal": 7,
+        "maxElevation": 1796
+    },
+    {
+        "lat": 47.383,
+        "lon": 13.45,
+        "sct": false,
+        "ssc": false,
+        "name": "Radstadt/Altenmarkt",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.radstadt-altenmarkt.at",
+        "pistesKm": null,
+        "entryName": "Radstadt/Altenmarkt",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "radstadtaltenmarkt",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.43,
+        "lon": 13.65,
+        "sct": false,
+        "ssc": false,
+        "name": "Ramsau am Dachstein – Rittisberg",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rittisberg.at",
+        "pistesKm": 25.00,
+        "entryName": "Ramsau am Dachstein – Rittisberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ramsau-am-dachstein-rittisberg",
+        "liftsTotal": 8,
+        "maxElevation": 2700
+    },
+    {
+        "lat": 47.242646,
+        "lon": 11.181427,
+        "sct": true,
+        "ssc": false,
+        "name": "Rangger Köpfl",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rangger-koepfl.at",
+        "pistesKm": null,
+        "entryName": "Rangger Köpfl",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "rangger-köpfl",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.264,
+        "lon": 11.259,
+        "sct": true,
+        "ssc": false,
+        "name": "Rangger Köpfl – Oberperfuss",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rangger-koepfl.at",
+        "pistesKm": 11.40,
+        "entryName": "Rangger Köpfl – Oberperfuss",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "rangger-köpfl-oberperfuss",
+        "liftsTotal": 5,
+        "maxElevation": 2000
+    },
+    {
+        "lat": 47.163698,
+        "lon": 11.7405103,
+        "sct": true,
+        "ssc": false,
+        "name": "Rastkogelbahnen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hintertuxergletscher.at/de/skifahren/ski-und-gletscherwelt-zillertal-3000/rastkogel-bahnen/",
+        "pistesKm": 32.50,
+        "entryName": "Rastkogelbahnen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "rastkogelbahnen",
+        "liftsTotal": 10,
+        "maxElevation": 2200
+    },
+    {
+        "lat": 47.373,
+        "lon": 13.656,
+        "sct": false,
+        "ssc": false,
+        "name": "Reiteralm",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.reiteralm.at",
+        "pistesKm": 122.70,
+        "entryName": "Reiteralm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "reiteralm",
+        "liftsTotal": 13,
+        "maxElevation": 1860
+    },
+    {
+        "lat": 47.383,
+        "lon": 14.1,
+        "sct": false,
+        "ssc": false,
+        "name": "Riesneralm – Donnersbachwald",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.riesneralm.at",
+        "pistesKm": 32.00,
+        "entryName": "Riesneralm – Donnersbachwald",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "riesneralm-donnersbachwald",
+        "liftsTotal": 8,
+        "maxElevation": 1990
+    },
+    {
+        "lat": 47.434393,
+        "lon": 11.757219,
+        "sct": true,
+        "ssc": false,
+        "name": "Rofan Seilbahn - Maurach",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rofanseilbahn.at",
+        "pistesKm": 4.00,
+        "entryName": "Rofan Seilbahn - Maurach",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "rofan-seilbahn-maurach",
+        "liftsTotal": 3,
+        "maxElevation": 1620
+    },
+    {
+        "lat": 47.331793,
+        "lon": 11.199848,
+        "sct": true,
+        "ssc": false,
+        "name": "Rosshütte - Seefeld in Tirol",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rosshuette.at/",
+        "pistesKm": null,
+        "entryName": "Rosshütte - Seefeld in Tirol",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "rosshütte-seefeld-in-tirol",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.391,
+        "lon": 12.639,
+        "sct": false,
+        "ssc": false,
+        "name": "Saalbach Hinterglemm – Leogang – Fieberbrunn",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg/Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.saalbach.com",
+        "pistesKm": 270.00,
+        "entryName": "Saalbach Hinterglemm – Leogang – Fieberbrunn",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "saalbach-hinterglemm-leogang-fieberbrunn",
+        "liftsTotal": 70,
+        "maxElevation": 1914
+    },
+    {
+        "lat": 47.51667,
+        "lon": 10.45,
+        "sct": true,
+        "ssc": false,
+        "name": "Schattwald - Zöblen im Tannheimertal",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schattwald-zoeblen",
+        "pistesKm": 15.50,
+        "entryName": "Schattwald - Zöblen im Tannheimertal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "schattwald-zöblen-im-tannheimertal",
+        "liftsTotal": 6,
+        "maxElevation": 1620
+    },
+    {
+        "lat": 47.41987,
+        "lon": 12.244438,
+        "sct": true,
+        "ssc": false,
+        "name": "Scheffau - SkiWelt",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skiwelt",
+        "nearMuc": false,
+        "website": "https://www.skiwelt.at",
+        "pistesKm": 275.00,
+        "entryName": "Scheffau - SkiWelt",
+        "entryType": "entry",
+        "groupName": "SkiWelt",
+        "stable_id": "scheffau-skiwelt",
+        "liftsTotal": 84,
+        "maxElevation": 1650
+    },
+    {
+        "lat": 47.39,
+        "lon": 13.689,
+        "sct": false,
+        "ssc": false,
+        "name": "Schladming – Planai/Hochwurzen",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.planai.at",
+        "pistesKm": 122.70,
+        "entryName": "Schladming – Planai/Hochwurzen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "schladming-planaihochwurzen",
+        "liftsTotal": 14,
+        "maxElevation": 1894
+    },
+    {
+        "lat": 47.156272,
+        "lon": 11.306785,
+        "sct": true,
+        "ssc": false,
+        "name": "Schlick 2000",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "stubai",
+        "nearMuc": false,
+        "website": "https://www.stubai.at/skigebiete/schlick2000/",
+        "pistesKm": 25.00,
+        "entryName": "Schlick 2000",
+        "entryType": "entry",
+        "groupName": "Stubai",
+        "stable_id": "schlick-2000",
+        "liftsTotal": 11,
+        "maxElevation": 2240
+    },
+    {
+        "lat": 47.5876839,
+        "lon": 12.0910096,
+        "sct": true,
+        "ssc": false,
+        "name": "Schneeberglifte Thiersee",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.schneeberglifte.at",
+        "pistesKm": 1.50,
+        "entryName": "Schneeberglifte Thiersee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "schneeberglifte-thiersee",
+        "liftsTotal": 4,
+        "maxElevation": 900
+    },
+    {
+        "lat": 47.124034,
+        "lon": 11.259919,
+        "sct": true,
+        "ssc": false,
+        "name": "Schwannerlifte in Weerberg",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.tirol.at/reisefuehrer/sport/skifahren/skigebiete/a-schwannerlifte-in-weerberg",
+        "pistesKm": 1.00,
+        "entryName": "Schwannerlifte in Weerberg",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "schwannerlifte-in-weerberg",
+        "liftsTotal": 1,
+        "maxElevation": 950
+    },
+    {
+        "lat": 47.345,
+        "lon": 11.185,
+        "sct": true,
+        "ssc": false,
+        "name": "Seefeld – Rosshütte",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.rosshuette.at",
+        "pistesKm": 20.00,
+        "entryName": "Seefeld – Rosshütte",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "seefeld-rosshütte",
+        "liftsTotal": 12,
+        "maxElevation": 2064
+    },
+    {
+        "lat": 47.079,
+        "lon": 10.756,
+        "sct": true,
+        "ssc": false,
+        "name": "See im Paznaun",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.see.at",
+        "pistesKm": 43.50,
+        "entryName": "See im Paznaun",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "see-im-paznaun",
+        "liftsTotal": 11,
+        "maxElevation": 2570
+    },
+    {
+        "lat": 47.039,
+        "lon": 10.6,
+        "sct": true,
+        "ssc": false,
+        "name": "Serfaus-Fiss-Ladis",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.serfaus-fiss-ladis.at",
+        "pistesKm": 214.00,
+        "entryName": "Serfaus-Fiss-Ladis",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "serfaus-fiss-ladis",
+        "liftsTotal": 38,
+        "maxElevation": 2828
+    },
+    {
+        "lat": 47.156,
+        "lon": 11.368,
+        "sct": true,
+        "ssc": false,
+        "name": "Serlesbahnen – Mieders",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "stubai",
+        "nearMuc": false,
+        "website": "https://www.stubai.at/skigebiete/serlesbahnen",
+        "pistesKm": 5.70,
+        "entryName": "Serlesbahnen – Mieders",
+        "entryType": "entry",
+        "groupName": "Stubai",
+        "stable_id": "serlesbahnen-mieders",
+        "liftsTotal": 5,
+        "maxElevation": 1606
+    },
+    {
+        "lat": 46.749,
+        "lon": 12.42,
+        "sct": true,
+        "ssc": false,
+        "name": "Sillian – Thurntaler (Hochpustertal)",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "East Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochpustertal-ski.at",
+        "pistesKm": 3.00,
+        "entryName": "Sillian – Thurntaler (Hochpustertal)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "sillian-thurntaler-hochpustertal",
+        "liftsTotal": 4,
+        "maxElevation": 1003
+    },
+    {
+        "lat": 47.044,
+        "lon": 9.987,
+        "sct": false,
+        "ssc": false,
+        "name": "Silvretta Montafon",
+        "passes": [
+        ],
+        "region": "Vorarlberg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.silvretta-montafon.at",
+        "pistesKm": 140.00,
+        "entryName": "Silvretta Montafon",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "silvretta-montafon",
+        "liftsTotal": 35,
+        "maxElevation": 2430
+    },
+    {
+        "lat": 47.336,
+        "lon": 13.465,
+        "sct": false,
+        "ssc": false,
+        "name": "Ski Amadé",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg/Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.skiamade.com",
+        "pistesKm": 14.10,
+        "entryName": "Ski Amadé",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "ski-amadé",
+        "liftsTotal": 3,
+        "maxElevation": 1956
+    },
+    {
+        "lat": 47.444,
+        "lon": 11.945,
+        "sct": true,
+        "ssc": false,
+        "name": "Skijuwel Alpbachtal – Wildschönau",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.skijuwel.com",
+        "pistesKm": 113.00,
+        "entryName": "Skijuwel Alpbachtal – Wildschönau",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "skijuwel-alpbachtal-wildschönau",
+        "liftsTotal": 45,
+        "maxElevation": 1903
+    },
+    {
+        "lat": 47.567804,
+        "lon": 10.452172,
+        "sct": true,
+        "ssc": false,
+        "name": "Skilifte Kirchdorf",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "http://www.yappys-winterland.tirol",
+        "pistesKm": 1.00,
+        "entryName": "Skilifte Kirchdorf",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "skilifte-kirchdorf",
+        "liftsTotal": 3,
+        "maxElevation": 720
+    },
+    {
+        "lat": 47.567804,
+        "lon": 10.452172,
+        "sct": true,
+        "ssc": false,
+        "name": "Skilifte Knittel",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.knitteltirol.at/",
+        "pistesKm": 7.00,
+        "entryName": "Skilifte Knittel",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "skilifte-knittel",
+        "liftsTotal": 4,
+        "maxElevation": 1250
+    },
+    {
+        "lat": 47.5847241,
+        "lon": 12.4821568,
+        "sct": true,
+        "ssc": false,
+        "name": "Skilifte Lärchenhof",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.laerchenhof-tirol.at/",
+        "pistesKm": 1.00,
+        "entryName": "Skilifte Lärchenhof",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "skilifte-lärchenhof",
+        "liftsTotal": 2,
+        "maxElevation": 860
+    },
+    {
+        "lat": 46.750666,
+        "lon": 12.43325,
+        "sct": true,
+        "ssc": false,
+        "name": "Skizentrum Sillian/ Hochpustertal",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.hochpustertal-ski.at",
+        "pistesKm": null,
+        "entryName": "Skizentrum Sillian/ Hochpustertal",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "skizentrum-sillian-hochpustertal",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.342,
+        "lon": 13.394,
+        "sct": false,
+        "ssc": false,
+        "name": "Snow Space Salzburg – Flachau",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "snow-space-salzburg",
+        "nearMuc": false,
+        "website": "https://www.snow-space.com",
+        "pistesKm": null,
+        "entryName": "Snow Space Salzburg – Flachau",
+        "entryType": "entry",
+        "groupName": "Snow Space Salzburg",
+        "stable_id": "snow-space-salzburg-flachau",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.342,
+        "lon": 13.394,
+        "sct": false,
+        "ssc": false,
+        "name": "Snow Space Salzburg – Flachau/Wagrain/St. Johann",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "snow-space-salzburg",
+        "nearMuc": false,
+        "website": "https://www.snow-space.com",
+        "pistesKm": 210.00,
+        "entryName": "Snow Space Salzburg – Flachau/Wagrain/St. Johann",
+        "entryType": "entry",
+        "groupName": "Snow Space Salzburg",
+        "stable_id": "snow-space-salzburg-flachauwagrainst-johann",
+        "liftsTotal": 45,
+        "maxElevation": 2000
+    },
+    {
+        "lat": 47.33,
+        "lon": 13.204,
+        "sct": false,
+        "ssc": false,
+        "name": "Snow Space Salzburg – St. Johann/Alpendorf",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "snow-space-salzburg",
+        "nearMuc": false,
+        "website": "https://www.snow-space.com",
+        "pistesKm": 210.00,
+        "entryName": "Snow Space Salzburg – St. Johann/Alpendorf",
+        "entryType": "entry",
+        "groupName": "Snow Space Salzburg",
+        "stable_id": "snow-space-salzburg-st-johannalpendorf",
+        "liftsTotal": 45,
+        "maxElevation": 1850
+    },
+    {
+        "lat": 47.335,
+        "lon": 13.29,
+        "sct": false,
+        "ssc": false,
+        "name": "Snow Space Salzburg – Wagrain",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "snow-space-salzburg",
+        "nearMuc": false,
+        "website": "https://www.snow-space.com",
+        "pistesKm": null,
+        "entryName": "Snow Space Salzburg – Wagrain",
+        "entryType": "entry",
+        "groupName": "Snow Space Salzburg",
+        "stable_id": "snow-space-salzburg-wagrain",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 46.97,
+        "lon": 10.987,
+        "sct": true,
+        "ssc": false,
+        "name": "Sölden (Rettenbach/Tiefenbach)",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.soelden.com/de",
+        "pistesKm": 146.00,
+        "entryName": "Sölden (Rettenbach/Tiefenbach)",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "sölden-rettenbachtiefenbach",
+        "liftsTotal": 31,
+        "maxElevation": 3340
+    },
+    {
+        "lat": 47.504513,
+        "lon": 12.193689,
+        "sct": true,
+        "ssc": false,
+        "name": "Söll - SkiWelt",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skiwelt",
+        "nearMuc": false,
+        "website": "https://www.skiwelt.at",
+        "pistesKm": 275.00,
+        "entryName": "Söll - SkiWelt",
+        "entryType": "entry",
+        "groupName": "SkiWelt",
+        "stable_id": "söll-skiwelt",
+        "liftsTotal": 84,
+        "maxElevation": 1829
+    },
+    {
+        "lat": 47.338941,
+        "lon": 11.843108,
+        "sct": true,
+        "ssc": false,
+        "name": "Spieljochbahn Fügen",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.spieljochbahn.at/",
+        "pistesKm": null,
+        "entryName": "Spieljochbahn Fügen",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "spieljochbahn-fügen",
+        "liftsTotal": null,
+        "maxElevation": null
+    },
+    {
+        "lat": 47.65,
+        "lon": 11.9,
+        "sct": false,
+        "ssc": false,
+        "name": "Spitzingsee – Tegernsee",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": true,
+        "website": "https://www.alpenbahnen-spitzingsee.de",
+        "pistesKm": 14.20,
+        "entryName": "Spitzingsee – Tegernsee",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "spitzingsee-tegernsee",
+        "liftsTotal": 11,
+        "maxElevation": 1560
+    },
+    {
+        "lat": 47.069,
+        "lon": 13.132,
+        "sct": false,
+        "ssc": false,
+        "name": "Sportgastein",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "skigastein",
+        "nearMuc": false,
+        "website": "https://www.skigastein.com",
+        "pistesKm": 79.10,
+        "entryName": "Sportgastein",
+        "entryType": "entry",
+        "groupName": "Ski Gastein",
+        "stable_id": "sportgastein",
+        "liftsTotal": 7,
+        "maxElevation": 2033
+    },
+    {
+        "lat": 47.582,
+        "lon": 12.571,
+        "sct": true,
+        "ssc": false,
+        "name": "Steinplatte – Waidring",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "steinplatte",
+        "nearMuc": false,
+        "website": "https://www.steinplatte.tirol",
+        "pistesKm": 1.00,
+        "entryName": "Steinplatte – Waidring",
+        "entryType": "entry",
+        "groupName": "Steinplatte–Winklmoosalm",
+        "stable_id": "steinplatte-waidring",
+        "liftsTotal": 1,
+        "maxElevation": 900
+    },
+    {
+        "lat": 47.605714,
+        "lon": 12.554601,
+        "sct": true,
+        "ssc": false,
+        "name": "Steinplatte-Winklmoosalm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": "steinplatte",
+        "nearMuc": false,
+        "website": "https://www.steinplatte.tirol/",
+        "pistesKm": 1.00,
+        "entryName": "Steinplatte-Winklmoosalm",
+        "entryType": "entry",
+        "groupName": "Steinplatte–Winklmoosalm",
+        "stable_id": "steinplatte-winklmoosalm",
+        "liftsTotal": 2,
+        "maxElevation": 795
+    },
+    {
+        "lat": 46.932,
+        "lon": 12.329,
+        "sct": true,
+        "ssc": false,
+        "name": "St. Jakob im Defereggental – Brunnalm",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "East Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.stjakob-ski.at",
+        "pistesKm": 34.80,
+        "entryName": "St. Jakob im Defereggental – Brunnalm",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "st-jakob-im-defereggental-brunnalm",
+        "liftsTotal": 7,
+        "maxElevation": 2680
+    },
+    {
+        "lat": 46.712002,
+        "lon": 11.138789,
+        "sct": true,
+        "ssc": false,
+        "name": "St. Johann in Tirol – Oberndorf",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.bergbahnen-stjohann.at",
+        "pistesKm": 40.00,
+        "entryName": "St. Johann in Tirol – Oberndorf",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "st-johann-in-tirol-oberndorf",
+        "liftsTotal": 9,
+        "maxElevation": 1604
+    },
+    {
+        "lat": 47.1,
+        "lon": 13.633,
+        "sct": false,
+        "ssc": false,
+        "name": "St. Michael – Großeck-Speiereck",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Salzburg",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.grosseck-speiereck.at",
+        "pistesKm": 50.00,
+        "entryName": "St. Michael – Großeck-Speiereck",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "st-michael-großeck-speiereck",
+        "liftsTotal": 10,
+        "maxElevation": 2400
+    },
+    {
+        "lat": 46.999,
+        "lon": 11.112,
+        "sct": true,
+        "ssc": false,
+        "name": "Stubaier Gletscher",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": true,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.stubaier-gletscher.com",
+        "pistesKm": 65.00,
+        "entryName": "Stubaier Gletscher",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "stubaier-gletscher",
+        "liftsTotal": 26,
+        "maxElevation": 3210
+    },
+    {
+        "lat": 47.692,
+        "lon": 12.011,
+        "sct": false,
+        "ssc": false,
+        "name": "Sudelfeld – Bayrischzell",
+        "passes": [
+        ],
+        "region": "Bavaria",
+        "country": "Germany",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": true,
+        "website": "https://www.sudelfeld.de",
+        "pistesKm": 31.10,
+        "entryName": "Sudelfeld – Bayrischzell",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "sudelfeld-bayrischzell",
+        "liftsTotal": 13,
+        "maxElevation": 1563
+    },
+    {
+        "lat": 47.565,
+        "lon": 13.99,
+        "sct": false,
+        "ssc": false,
+        "name": "Tauplitz/Bad Mitterndorf",
+        "passes": [
+            {
+                "name": "SuperSkiCard",
+                "stable_id": "superskicard"
+            }
+        ],
+        "region": "Styria",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.dietauplitz.com",
+        "pistesKm": 43.00,
+        "entryName": "Tauplitz/Bad Mitterndorf",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "tauplitzbad-mitterndorf",
+        "liftsTotal": 17,
+        "maxElevation": 1965
+    },
+    {
+        "lat": 47.4255773,
+        "lon": 10.9411261,
+        "sct": true,
+        "ssc": false,
+        "name": "Tiroler Zugspitzbahn",
+        "passes": [
+            {
+                "name": "Snow Card Tirol",
+                "stable_id": "snowcard-tirol"
+            }
+        ],
+        "region": "Tyrol",
+        "country": "Austria",
+        "glacier": false,
+        "groupId": null,
+        "nearMuc": false,
+        "website": "https://www.zugspitzbahn.at",
+        "pistesKm": 17.00,
+        "entryName": "Tiroler Zugspitzbahn",
+        "entryType": "main",
+        "groupName": null,
+        "stable_id": "tiroler-zugspitzbahn",
+        "liftsTotal": null,
+        "maxElevation": null
+    }
 ]
