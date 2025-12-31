@@ -253,6 +253,50 @@ function resetMapView() {
 const timeSlider = document.getElementById("time-slider");
     const timeLabel = document.getElementById("time-slider-label");
 
+    // Neue Filter-Slider
+    const pistesSlider = document.getElementById("pistes-slider");
+    const pistesLabel = document.getElementById("pistes-slider-label");
+    const liftsSlider = document.getElementById("lifts-slider");
+    const liftsLabel = document.getElementById("lifts-slider-label");
+    const elevationSlider = document.getElementById("elevation-slider");
+    const elevationLabel = document.getElementById("elevation-slider-label");
+
+    // Filter-Bereiche (werden nach Laden der Daten gesetzt)
+    let filterRanges = {
+      pistes: { min: 0, max: 300 },
+      lifts: { min: 0, max: 100 },
+      elevation: { min: 0, max: 4000 }
+    };
+
+    // Aktuelle Filter-Werte (Minimum-Schwellenwerte)
+    let filterValues = {
+      pistes: 0,
+      lifts: 0,
+      elevation: 0
+    };
+
+    function computeFilterRanges() {
+      let maxPistes = 0, maxLifts = 0, maxElevation = 0;
+      Object.values(resorts).forEach(r => {
+        if (r.pistesKm != null && r.pistesKm > maxPistes) maxPistes = r.pistesKm;
+        if (r.liftsTotal != null && r.liftsTotal > maxLifts) maxLifts = r.liftsTotal;
+        if (r.maxElevation != null && r.maxElevation > maxElevation) maxElevation = r.maxElevation;
+      });
+      filterRanges.pistes.max = Math.ceil(maxPistes / 10) * 10 || 300;
+      filterRanges.lifts.max = Math.ceil(maxLifts / 5) * 5 || 100;
+      filterRanges.elevation.max = Math.ceil(maxElevation / 100) * 100 || 4000;
+    }
+
+    function updateFilterSliderLabels() {
+      if (pistesLabel) pistesLabel.textContent = filterValues.pistes + " km";
+      if (liftsLabel) liftsLabel.textContent = filterValues.lifts.toString();
+      if (elevationLabel) elevationLabel.textContent = filterValues.elevation + " m";
+    }
+
+    function sliderPctToValue(pct, range) {
+      return Math.round(range.min + (pct / 100) * (range.max - range.min));
+    }
+
     // -------- Verbund-Filter --------
     // Nutzer sollen auch kurze Eingaben wie "Skiwelt" treffen können,
     // selbst wenn groupName in resorts.json länger ist (z.B. "SkiWelt Wilder Kaiser – Brixental").
@@ -630,7 +674,12 @@ if (elDim) {
 
       const inCategory = categoryMatch(r);
 
-      return inVerbund && inTime && inCategory;
+      // Neue Filter: Pisten, Lifte, Höhe (Minimum-Filter)
+      const inPistes = filterValues.pistes === 0 || (r.pistesKm != null && r.pistesKm >= filterValues.pistes);
+      const inLifts = filterValues.lifts === 0 || (r.liftsTotal != null && r.liftsTotal >= filterValues.lifts);
+      const inElevation = filterValues.elevation === 0 || (r.maxElevation != null && r.maxElevation >= filterValues.elevation);
+
+      return inVerbund && inTime && inCategory && inPistes && inLifts && inElevation;
     }
 
     function fitBoundsForGroup(groupId) {
@@ -843,6 +892,31 @@ if (elDim) {
       });
     }
 
+    // Event-Listener für neue Filter-Slider
+    if (pistesSlider) {
+      pistesSlider.addEventListener("input", (e) => {
+        filterValues.pistes = sliderPctToValue(Number(e.target.value), filterRanges.pistes);
+        updateFilterSliderLabels();
+        applyFilters(currentPct);
+      });
+    }
+
+    if (liftsSlider) {
+      liftsSlider.addEventListener("input", (e) => {
+        filterValues.lifts = sliderPctToValue(Number(e.target.value), filterRanges.lifts);
+        updateFilterSliderLabels();
+        applyFilters(currentPct);
+      });
+    }
+
+    if (elevationSlider) {
+      elevationSlider.addEventListener("input", (e) => {
+        filterValues.elevation = sliderPctToValue(Number(e.target.value), filterRanges.elevation);
+        updateFilterSliderLabels();
+        applyFilters(currentPct);
+      });
+    }
+
     // -------- Export --------
     function getVisibleResorts() {
       const out = [];
@@ -876,6 +950,8 @@ if (elDim) {
     updateVerbundUi();
     rebuildDatalist();
     updateTimeLabel(currentPct);
+    computeFilterRanges();
+    updateFilterSliderLabels();
     applyFilters(currentPct);
 
     return {
@@ -887,7 +963,18 @@ if (elDim) {
       applyTimeFilter: applyFilters,
       getVisibleResorts,
       exportVisibleToCsv,
-      exportVisibleToKml
+      exportVisibleToKml,
+      computeFilterRanges,
+      updateFilterSliderLabels,
+      resetStatSliders: function() {
+        filterValues.pistes = 0;
+        filterValues.lifts = 0;
+        filterValues.elevation = 0;
+        if (pistesSlider) pistesSlider.value = 0;
+        if (liftsSlider) liftsSlider.value = 0;
+        if (elevationSlider) elevationSlider.value = 0;
+        updateFilterSliderLabels();
+      }
     };
   }
 

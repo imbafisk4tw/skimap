@@ -685,6 +685,27 @@ html, body {
   white-space:nowrap;
 }
 
+/* Neue Filter-Slider Zeilen */
+.filter-slider-row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:4px;
+  margin-top:8px;
+}
+.filter-slider-row label{
+  margin:0;
+  flex: 1 1 auto;
+  min-width:0;
+  font-size:12px;
+}
+.filter-value{
+  font-weight:600;
+  color:#1a73e8;
+  white-space:nowrap;
+  font-size:12px;
+}
 
 /* Mobile Panel: etwas aufgeräumter */
 #mobile-panel h3{
@@ -1041,6 +1062,27 @@ button, input, select, textarea{
   <span id="time-slider-label" class="time-value">bis ca. 0h 00m</span>
 </div>
 <input id="time-slider" type="range" min="0" max="100" value="100" />
+
+  <div class="slider-sep"></div>
+
+  <!-- Neue Filter: Pistenkilometer, Lifte, Höhe -->
+  <div class="filter-slider-row">
+    <label for="pistes-slider">Min. Pistenkilometer</label>
+    <span id="pistes-slider-label" class="filter-value">0 km</span>
+  </div>
+  <input id="pistes-slider" type="range" min="0" max="100" value="0" />
+
+  <div class="filter-slider-row">
+    <label for="lifts-slider">Min. Lifte</label>
+    <span id="lifts-slider-label" class="filter-value">0</span>
+  </div>
+  <input id="lifts-slider" type="range" min="0" max="100" value="0" />
+
+  <div class="filter-slider-row">
+    <label for="elevation-slider">Min. Höhe</label>
+    <span id="elevation-slider-label" class="filter-value">0 m</span>
+  </div>
+  <input id="elevation-slider" type="range" min="0" max="100" value="0" />
 </div>
 
 <!-- Home Selector Host (Placeholder für HomeRoutesSelector; Dropdown sitzt im Slider) -->
@@ -1346,6 +1388,11 @@ if (passType === "SCT") resorts[key].sct = true;
       const entryType = (typeof r.entryType === "string" && r.entryType.trim()) ? r.entryType.trim() : null;
       const entryName = (typeof r.entryName === "string" && r.entryName.trim()) ? r.entryName.trim() : null;
 
+      // Neue Filter-Daten
+      const liftsTotal = (r.liftsTotal != null) ? Number(r.liftsTotal) : null;
+      const pistesKm = (r.pistesKm != null) ? Number(r.pistesKm) : null;
+      const maxElevation = (r.maxElevation != null) ? Number(r.maxElevation) : null;
+
       if (sct) {
         addResort(name, lat, lon, "SCT", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
       }
@@ -1354,6 +1401,14 @@ if (passType === "SCT") resorts[key].sct = true;
       }
       if (!sct && !ssc) {
         addResort(name, lat, lon, "MUC", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
+      }
+
+      // Neue Felder zum Resort hinzufügen
+      const key = norm(name);
+      if (resorts[key]) {
+        resorts[key].liftsTotal = liftsTotal;
+        resorts[key].pistesKm = pistesKm;
+        resorts[key].maxElevation = maxElevation;
       }
     });
   }
@@ -1378,6 +1433,11 @@ if (passType === "SCT") resorts[key].sct = true;
         }
 if (typeof rebuildDatalist === "function") {
           rebuildDatalist();
+        }
+        // Neue Filter-Slider initialisieren
+        if (window.ui && typeof window.ui.computeFilterRanges === "function") {
+          window.ui.computeFilterRanges();
+          window.ui.updateFilterSliderLabels();
         }
         updateTimeLabel(100);
         applyTimeFilter(100);
