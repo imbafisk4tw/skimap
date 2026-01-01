@@ -434,13 +434,18 @@ function updateVerbundUi() {
   updateClearBtnState();
 }
 
-    // -------- Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München) --------
+    // -------- Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München / Länder) --------
     const filterState = {
       sct: true,
       ssc: true,
       both: true,
       glacier: true,
-      nearMuc: true
+      nearMuc: true,
+      noPass: true,
+      // Länder
+      countryAT: true,
+      countryDE: true,
+      countryCH: true
     };
 
     // Pass-IDs aus der Datenbank
@@ -453,10 +458,37 @@ function updateVerbundUi() {
       return r.passes.some(p => p.stable_id === passId);
     }
 
+    // Hilfsfunktion: Normalisiert Ländernamen zu Codes
+    function getCountryCode(r) {
+      const country = (r.country || "").toLowerCase().trim();
+      if (country === "austria" || country === "at" || country === "österreich") return "AT";
+      if (country === "germany" || country === "de" || country === "deutschland") return "DE";
+      if (country === "switzerland" || country === "ch" || country === "schweiz") return "CH";
+      return country.toUpperCase();
+    }
+
     function categoryMatch(r) {
-      // Pass-Zugehörigkeit über passes-Array ermitteln
+      // --- Länderfilter (AND-Logik) ---
+      const countryCode = getCountryCode(r);
+
+      // Prüfe ob countryCode ein bekannter Code ist (AT, DE, CH)
+      const isKnownCountry = countryCode === "AT" || countryCode === "DE" || countryCode === "CH";
+
+      const countryMatch = (
+        (filterState.countryAT && countryCode === "AT") ||
+        (filterState.countryDE && countryCode === "DE") ||
+        (filterState.countryCH && countryCode === "CH")
+      );
+
+      // Wenn ein Land-Filter aktiv ist UND das Resort ein bekanntes Land hat,
+      // muss es zu einem ausgewählten Land gehören
+      const anyCountrySelected = filterState.countryAT || filterState.countryDE || filterState.countryCH;
+      if (anyCountrySelected && isKnownCountry && !countryMatch) return false;
+
+      // --- Pass-Zugehörigkeit über passes-Array ermitteln ---
       const hasSct = hasPass(r, PASS_ID_SCT);
       const hasSsc = hasPass(r, PASS_ID_SSC);
+      const hasAnyPass = hasSct || hasSsc;
 
       // Basis-Gruppen (OR-Logik)
       const isSctOnly = hasSct && !hasSsc;  // Hat SCT, aber NICHT SSC
@@ -464,16 +496,20 @@ function updateVerbundUi() {
       const isBoth = hasSct && hasSsc;      // Hat BEIDE Pässe
       const isGlacier = !!r.glacier;
 
-      // Near Munich: Nur für Resorts die KEINEN der beiden Pässe haben
-      const isNearMucOnly = !!(r.nearMuc && !hasSct && !hasSsc);
+      // Near Munich: Resorts mit nearMuc Flag (ohne Pass)
+      const isNearMuc = !!(r.nearMuc && !hasAnyPass);
 
-      const baseSelected = !!(filterState.sct || filterState.ssc || filterState.both || filterState.nearMuc);
+      // No Pass: Resorts ohne jeglichen Pass (und ohne nearMuc)
+      const isNoPass = !hasAnyPass && !r.nearMuc;
+
+      const baseSelected = !!(filterState.sct || filterState.ssc || filterState.both || filterState.nearMuc || filterState.noPass);
 
       const baseMatch = (
         (filterState.sct && isSctOnly) ||
         (filterState.ssc && isSscOnly) ||
         (filterState.both && isBoth) ||
-        (filterState.nearMuc && isNearMucOnly)
+        (filterState.nearMuc && isNearMuc) ||
+        (filterState.noPass && isNoPass)
       );
 
       // Gletscher:
@@ -497,12 +533,19 @@ function updateVerbundUi() {
         const div = L.DomUtil.create("div", "filter-box leaflet-control");
         div.innerHTML = `
           <div class="title">Filters</div>
+          <div class="filter-group-title">Länder</div>
+          <label><input type="checkbox" id="flt-at" checked> Österreich</label>
+          <label><input type="checkbox" id="flt-de" checked> Deutschland</label>
+          <label><input type="checkbox" id="flt-ch" checked> Schweiz</label>
+          <div class="filter-group-title">Pässe</div>
           <label><input type="checkbox" id="flt-sct" checked> Snow Card Tirol</label>
           <label><input type="checkbox" id="flt-ssc" checked> SuperSkiCard</label>
           <label><input type="checkbox" id="flt-both" checked> Both passes</label>
-          <label><input type="checkbox" id="flt-glacier" checked> Glaciers</label>
+          <label><input type="checkbox" id="flt-nopass" checked> Ohne Pass</label>
           <label><input type="checkbox" id="flt-muc" checked> Near Munich</label>
-                  <label><input type="checkbox" id="flt-dimmap"> Dark Mode</label>
+          <div class="filter-group-title">Sonstige</div>
+          <label><input type="checkbox" id="flt-glacier" checked> Glaciers</label>
+          <label><input type="checkbox" id="flt-dimmap"> Dark Mode</label>
 `;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
@@ -512,39 +555,54 @@ function updateVerbundUi() {
 
       // wiring (nachdem es im DOM ist)
       const wire = () => {
+        // Länder
+        const elAT = document.getElementById("flt-at");
+        const elDE = document.getElementById("flt-de");
+        const elCH = document.getElementById("flt-ch");
+        // Pässe
         const elSct = document.getElementById("flt-sct");
         const elSsc = document.getElementById("flt-ssc");
         const elBoth = document.getElementById("flt-both");
-        const elGl = document.getElementById("flt-glacier");
+        const elNoPass = document.getElementById("flt-nopass");
         const elMuc = document.getElementById("flt-muc");
+        // Sonstige
+        const elGl = document.getElementById("flt-glacier");
+        const elDim = document.getElementById("flt-dimmap");
 
-const elDim = document.getElementById("flt-dimmap");
+        // restore + apply saved dim state
+        const savedDim = (typeof localStorage !== "undefined") && localStorage.getItem("mapDim") === "1";
+        if (elDim) {
+          elDim.checked = !!savedDim;
+          setMapDim(!!savedDim);
+          elDim.addEventListener("change", () => {
+            const on = !!elDim.checked;
+            setMapDim(on);
+            if (typeof localStorage !== "undefined") {
+              localStorage.setItem("mapDim", on ? "1" : "0");
+            }
+          });
+        } else {
+          setMapDim(!!savedDim);
+        }
 
-// restore + apply saved dim state
-const savedDim = (typeof localStorage !== "undefined") && localStorage.getItem("mapDim") === "1";
-if (elDim) {
-  elDim.checked = !!savedDim;
-  setMapDim(!!savedDim);
-  elDim.addEventListener("change", () => {
-    const on = !!elDim.checked;
-    setMapDim(on);
-    if (typeof localStorage !== "undefined") {
-      localStorage.setItem("mapDim", on ? "1" : "0");
-    }
-  });
-} else {
-  setMapDim(!!savedDim);
-}
         const handler = () => {
-          filterState.sct = !!elSct?.checked;
-          filterState.ssc = !!elSsc?.checked;
-          filterState.both = !!elBoth?.checked;
-          filterState.glacier = !!elGl?.checked;
-          filterState.nearMuc = !!elMuc?.checked;
+          // Länder (wenn Element nicht gefunden, bleibt true = alle anzeigen)
+          filterState.countryAT = elAT ? !!elAT.checked : true;
+          filterState.countryDE = elDE ? !!elDE.checked : true;
+          filterState.countryCH = elCH ? !!elCH.checked : true;
+          // Pässe
+          filterState.sct = elSct ? !!elSct.checked : true;
+          filterState.ssc = elSsc ? !!elSsc.checked : true;
+          filterState.both = elBoth ? !!elBoth.checked : true;
+          filterState.noPass = elNoPass ? !!elNoPass.checked : true;
+          filterState.nearMuc = elMuc ? !!elMuc.checked : true;
+          // Sonstige
+          filterState.glacier = elGl ? !!elGl.checked : true;
+
           applyFilters(currentPct);
         };
 
-        [elSct, elSsc, elBoth, elGl, elMuc].forEach(el => {
+        [elAT, elDE, elCH, elSct, elSsc, elBoth, elNoPass, elMuc, elGl].forEach(el => {
           if (!el) return;
           el.addEventListener("change", handler);
         });

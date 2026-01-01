@@ -137,6 +137,23 @@
   color: rgba(0,0,0,0.86);
 }
 
+/* Filter-Gruppenüberschriften */
+.filter-box .filter-group-title{
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: rgba(0,0,0,0.5);
+  margin: 12px 0 6px 0;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.filter-box .filter-group-title:first-of-type{
+  margin-top: 4px;
+  padding-top: 0;
+  border-top: none;
+}
+
 /* Leaflet Layers Control wie Panel-Card */
 .leaflet-control-layers{
   width: 210px;
@@ -1396,6 +1413,8 @@ button, input, select, textarea{
         name: r.name,
         lat: r.lat,
         lon: r.lon,
+        country: r.country || null,
+        region: r.region || null,
         passes: r.passes || [],
         glacier: !!r.glacier,
         nearMuc: !!r.nearMuc,
