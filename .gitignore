@@ -99,3 +99,8 @@ pipeline/tools/Notizen.txt
 # local artifacts.claude/
 pipeline/backup.sql
 
+
+# local WIP
+pipeline/Bergfex scraping/
+pipeline/scripts/merge_swiss_resorts.py
+
