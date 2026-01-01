@@ -34,6 +34,15 @@ function setMapDim(on) {
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
+  // Pass-IDs aus der Datenbank (für CSV-Export)
+  const PASS_ID_SCT_EXPORT = "snowcard-tirol";
+  const PASS_ID_SSC_EXPORT = "superskicard";
+
+  function hasPassExport(r, passId) {
+    if (!r.passes || !Array.isArray(r.passes)) return false;
+    return r.passes.some(p => p.stable_id === passId);
+  }
+
   function toCsv(rows) {
     const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
     const header = ["name", "lat", "lon", "travelHours", "distKm", "sct", "ssc", "glacier", "nearMuc", "website"];
@@ -46,8 +55,8 @@ function setMapDim(on) {
         esc(r.lon),
         esc(r.travelHours),
         esc(r.distKm),
-        esc(!!r.sct),
-        esc(!!r.ssc),
+        esc(hasPassExport(r, PASS_ID_SCT_EXPORT)),
+        esc(hasPassExport(r, PASS_ID_SSC_EXPORT)),
         esc(!!r.glacier),
         esc(!!r.nearMuc),
         esc(r.website || r.url || "")
@@ -427,28 +436,44 @@ function updateVerbundUi() {
 
     // -------- Filter-Box (Saisonkarten / Gletscher / Überschneidung / Nahe München) --------
     const filterState = {
-      sctOnly: true,
-      sscOnly: true,
+      sct: true,
+      ssc: true,
       both: true,
       glacier: true,
       nearMuc: true
     };
 
+    // Pass-IDs aus der Datenbank
+    const PASS_ID_SCT = "snowcard-tirol";
+    const PASS_ID_SSC = "superskicard";
+
+    // Hilfsfunktion: Prüft ob ein Resort einen bestimmten Pass hat
+    function hasPass(r, passId) {
+      if (!r.passes || !Array.isArray(r.passes)) return false;
+      return r.passes.some(p => p.stable_id === passId);
+    }
+
     function categoryMatch(r) {
+      // Pass-Zugehörigkeit über passes-Array ermitteln
+      const hasSct = hasPass(r, PASS_ID_SCT);
+      const hasSsc = hasPass(r, PASS_ID_SSC);
+
       // Basis-Gruppen (OR-Logik)
-      const isSctOnly = !!(r.sct && !r.ssc);
-      const isSscOnly = !!(r.ssc && !r.sct);
-      const isBoth = !!(r.sct && r.ssc);
-      const isNear = !!r.nearMuc;
+      const isSctOnly = hasSct && !hasSsc;  // Hat SCT, aber NICHT SSC
+      const isSscOnly = hasSsc && !hasSct;  // Hat SSC, aber NICHT SCT
+      const isBoth = hasSct && hasSsc;      // Hat BEIDE Pässe
       const isGlacier = !!r.glacier;
 
-      const baseSelected = !!(filterState.sctOnly || filterState.sscOnly || filterState.both || filterState.nearMuc);
+      // Near Munich: Nur für Resorts die KEINEN der beiden Pässe haben
+      const isNearMucOnly = !!(r.nearMuc && !hasSct && !hasSsc);
+
+      const baseSelected = !!(filterState.sct || filterState.ssc || filterState.both || filterState.nearMuc);
 
       const baseMatch = (
-        (filterState.sctOnly && isSctOnly) ||
-        (filterState.sscOnly && isSscOnly) ||
+        (filterState.sct && isSctOnly) ||
+        (filterState.ssc && isSscOnly) ||
         (filterState.both && isBoth) ||
-        (filterState.nearMuc && isNear)
+        (filterState.nearMuc && isNearMucOnly)
       );
 
       // Gletscher:
@@ -511,8 +536,8 @@ if (elDim) {
   setMapDim(!!savedDim);
 }
         const handler = () => {
-          filterState.sctOnly = !!elSct?.checked;
-          filterState.sscOnly = !!elSsc?.checked;
+          filterState.sct = !!elSct?.checked;
+          filterState.ssc = !!elSsc?.checked;
           filterState.both = !!elBoth?.checked;
           filterState.glacier = !!elGl?.checked;
           filterState.nearMuc = !!elMuc?.checked;

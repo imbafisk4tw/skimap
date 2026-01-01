@@ -1199,10 +1199,13 @@ button, input, select, textarea{
   }
 
   function makePopupHtml(r) {
+    const hasSct = hasPass(r, PASS_ID_SCT);
+    const hasSsc = hasPass(r, PASS_ID_SSC);
+
     const passes = [];
-    if (r.sct) passes.push("Snow Card Tirol");
-    if (r.ssc) passes.push("SuperSkiCard");
-    if (r.nearMuc && !r.sct && !r.ssc) passes.push("Weitere Gebiete südlich von München");
+    if (hasSct) passes.push("Snow Card Tirol");
+    if (hasSsc) passes.push("SuperSkiCard");
+    if (r.nearMuc && !hasSct && !hasSsc) passes.push("Weitere Gebiete südlich von München");
     const passesStr = passes.length ? passes.join(", ") : "–";
 
     const driveTxt = buildDriveText(r);
@@ -1243,6 +1246,16 @@ button, input, select, textarea{
       .replace(/—/g, "-")
       .replace(/  +/g, " ")
       .trim();
+  }
+
+  // Pass-IDs aus der Datenbank
+  const PASS_ID_SCT = "snowcard-tirol";
+  const PASS_ID_SSC = "superskicard";
+
+  // Hilfsfunktion: Prüft ob ein Resort einen bestimmten Pass hat
+  function hasPass(r, passId) {
+    if (!r.passes || !Array.isArray(r.passes)) return false;
+    return r.passes.some(p => p.stable_id === passId);
   }
 
   // --------- Grunddaten ---------
@@ -1374,81 +1387,27 @@ button, input, select, textarea{
 
     box.textContent = `${visible} / ${totalResorts}`;
   }
-  function addResort(name, lat, lon, passType, isGlacier, nearMuc = false, website, groupId = null, groupName = null, entryType = null, entryName = null) {
-    const key = norm(name);
-    if (!resorts[key]) {
-      resorts[key] = {
-        name: name,
-        lat: lat,
-        lon: lon,
-        sct: false,
-        ssc: false,
-        glacier: false,
-        nearMuc: false,
-        website: website || null,
-        groupId: groupId || null,
-        groupName: groupName || null,
-        entryType: entryType || null,
-        entryName: entryName || null
-      };
-    } else if (website && !resorts[key].website) {
-      resorts[key].website = website;
-    }
-    
-    // Gruppierung / Entrypoint (nur setzen, wenn noch nicht vorhanden)
-    if (groupId && !resorts[key].groupId) resorts[key].groupId = groupId;
-    if (groupName && !resorts[key].groupName) resorts[key].groupName = groupName;
-    if (entryType && !resorts[key].entryType) resorts[key].entryType = entryType;
-    if (entryName && !resorts[key].entryName) resorts[key].entryName = entryName;
-if (passType === "SCT") resorts[key].sct = true;
-    if (passType === "SSC") resorts[key].ssc = true;
-    if (passType === "MUC") resorts[key].nearMuc = true;
-    if (nearMuc) resorts[key].nearMuc = true;
-    if (isGlacier) resorts[key].glacier = true;
-  }
-
   function initResortsFromJson(list) {
-
     list.forEach(r => {
-      const name    = r.name;
-      const lat     = r.lat;
-      const lon     = r.lon;
+      const key = norm(r.name);
 
-      const glacier = !!r.glacier;
-      const sct     = !!r.sct;
-      const ssc     = !!r.ssc;
-      const nearMuc = !!r.nearMuc;
-
-      const website = (typeof r.website === "string" && r.website.trim()) ? r.website.trim() : null;
-
-      // Gruppierung / Entrypoints (neues Datenmodell)
-      const groupId   = (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim() : null;
-      const groupName = (typeof r.groupName === "string" && r.groupName.trim()) ? r.groupName.trim() : null;
-      const entryType = (typeof r.entryType === "string" && r.entryType.trim()) ? r.entryType.trim() : null;
-      const entryName = (typeof r.entryName === "string" && r.entryName.trim()) ? r.entryName.trim() : null;
-
-      // Neue Filter-Daten
-      const liftsTotal = (r.liftsTotal != null) ? Number(r.liftsTotal) : null;
-      const pistesKm = (r.pistesKm != null) ? Number(r.pistesKm) : null;
-      const maxElevation = (r.maxElevation != null) ? Number(r.maxElevation) : null;
-
-      if (sct) {
-        addResort(name, lat, lon, "SCT", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
-      }
-      if (ssc) {
-        addResort(name, lat, lon, "SSC", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
-      }
-      if (!sct && !ssc) {
-        addResort(name, lat, lon, "MUC", glacier, nearMuc, website, groupId, groupName, entryType, entryName);
-      }
-
-      // Neue Felder zum Resort hinzufügen
-      const key = norm(name);
-      if (resorts[key]) {
-        resorts[key].liftsTotal = liftsTotal;
-        resorts[key].pistesKm = pistesKm;
-        resorts[key].maxElevation = maxElevation;
-      }
+      // Resort-Objekt direkt übernehmen (mit passes-Array)
+      resorts[key] = {
+        name: r.name,
+        lat: r.lat,
+        lon: r.lon,
+        passes: r.passes || [],
+        glacier: !!r.glacier,
+        nearMuc: !!r.nearMuc,
+        website: (typeof r.website === "string" && r.website.trim()) ? r.website.trim() : null,
+        groupId: (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim() : null,
+        groupName: (typeof r.groupName === "string" && r.groupName.trim()) ? r.groupName.trim() : null,
+        entryType: (typeof r.entryType === "string" && r.entryType.trim()) ? r.entryType.trim() : null,
+        entryName: (typeof r.entryName === "string" && r.entryName.trim()) ? r.entryName.trim() : null,
+        liftsTotal: (r.liftsTotal != null) ? Number(r.liftsTotal) : null,
+        pistesKm: (r.pistesKm != null) ? Number(r.pistesKm) : null,
+        maxElevation: (r.maxElevation != null) ? Number(r.maxElevation) : null
+      };
     });
   }
 
@@ -1492,17 +1451,20 @@ if (typeof rebuildDatalist === "function") {
 
   function buildMarkers() {
     Object.values(resorts).forEach(r => {
+      const hasSct = hasPass(r, PASS_ID_SCT);
+      const hasSsc = hasPass(r, PASS_ID_SSC);
+
       const passes = [];
-      if (r.sct) passes.push("Snow Card Tirol");
-      if (r.ssc) passes.push("SuperSkiCard");
-      if (r.nearMuc && !r.sct && !r.ssc) passes.push("Extra: ab München");
+      if (hasSct) passes.push("Snow Card Tirol");
+      if (hasSsc) passes.push("SuperSkiCard");
+      if (r.nearMuc && !hasSct && !hasSsc) passes.push("Extra: ab München");
       const passesStr = passes.length ? passes.join(", ") : "–";
 
       let color = COLOR_OTHER;
-      if (r.sct && r.ssc)      color = COLOR_BOTH;
-      else if (r.sct)          color = COLOR_SCT;
-      else if (r.ssc)          color = COLOR_SSC;
-      else if (r.nearMuc)      color = COLOR_MUC;
+      if (hasSct && hasSsc)      color = COLOR_BOTH;
+      else if (hasSct)           color = COLOR_SCT;
+      else if (hasSsc)           color = COLOR_SSC;
+      else if (r.nearMuc)        color = COLOR_MUC;
 
       const distKm   = haversineKm(MUC_LAT, MUC_LON, r.lat, r.lon);
       const estHours = distKm / AVG_SPEED_KMH;
