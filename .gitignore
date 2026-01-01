@@ -95,3 +95,7 @@ pipeline/tools/Notizen.txt
 !pipeline/tools/*.js
 !pipeline/tools/*.bat
 
+
+# local artifacts.claude/
+pipeline/backup.sql
+
