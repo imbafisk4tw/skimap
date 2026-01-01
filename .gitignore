@@ -107,3 +107,7 @@ pipeline/scripts/merge_swiss_resorts.py
 
 # local tooling.claude/
 
+
+# local tooling
+.claude/
+
