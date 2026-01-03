@@ -1155,7 +1155,6 @@ button, input, select, textarea{
 <!-- Protomaps Leaflet (PMTiles + Vector rendering) -->
 <script src="https://unpkg.com/protomaps-leaflet@5.0.0/dist/protomaps-leaflet.js"></script>
 
-
 <!-- Wird später für Live Travel Times im Profil gebraucht -->
 <script src="js/config.js"></script>
 
@@ -1555,8 +1554,224 @@ if (typeof rebuildDatalist === "function") {
 
   window.layerControl = L.control.layers(baseLayers, overlays, { collapsed: false }).addTo(map);
 
+// --------- Live OSM Overpass Overlay (Alpe d'Huez) ---------
+// Quick, no-tiles approach: fetch OSM data from Overpass and render as GeoJSON.
+// BBox source: map.getBounds().toBBoxString() returned west,south,east,north.
+const ALPE_LIVE_BOUNDS = {
+  west: 5.814495389733874,
+  south: 45.03078564735712,
+  east: 6.400547330651842,
+  north: 45.180779880904076
+};
+// Overpass expects: (south,west,north,east)
+const ALPE_OVERPASS_BBOX = `${ALPE_LIVE_BOUNDS.south},${ALPE_LIVE_BOUNDS.west},${ALPE_LIVE_BOUNDS.north},${ALPE_LIVE_BOUNDS.east}`;
+
+const OVERPASS_ENDPOINTS = [
+  "https://overpass-api.de/api/interpreter",
+  "https://overpass.kumi.systems/api/interpreter",
+  "https://overpass.nchc.org.tw/api/interpreter"
+];
+
+const alpeLiveLiftsLayer = L.layerGroup();
+const alpeLivePistesLayer = L.layerGroup();
+let alpeLiveLoaded = false;
+let alpeLiveLoading = false;
+
+async function fetchOverpassJSON(query) {
+  // Overpass does NOT require an API key.
+  // In practice, browser POST requests are sometimes blocked (CORS / overloaded servers),
+  // so we try GET first (most reliable from GitHub Pages), then POST as a fallback.
+  const encoded = encodeURIComponent(query);
+
+  let lastErr = null;
+  for (const baseUrl of OVERPASS_ENDPOINTS) {
+    // --- Try GET ---
+    try {
+      const getUrl = `${baseUrl}?data=${encoded}`;
+      const res = await fetch(getUrl, { method: "GET", mode: "cors", cache: "no-store" });
+      if (!res.ok) throw new Error(`Overpass GET HTTP ${res.status}`);
+      return await res.json();
+    } catch (e) {
+      lastErr = e;
+    }
+
+    // --- Try POST (fallback) ---
+    try {
+      const res = await fetch(baseUrl, {
+        method: "POST",
+        mode: "cors",
+        cache: "no-store",
+        headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" },
+        body: "data=" + encoded
+      });
+      if (!res.ok) throw new Error(`Overpass POST HTTP ${res.status}`);
+      return await res.json();
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr || new Error("Overpass request failed");
+}
+
+function setAlpeLiveStatus(msg) {
+  const el = document.getElementById("alpe-live-status");
+  if (el) el.textContent = msg || "";
+}
+
+function getTags(feature) {
+  const p = feature && feature.properties ? feature.properties : {};
+  return (p.tags && typeof p.tags === "object") ? p.tags : p;
+}
+
+function pisteStyle(tags, z) {
+  const d = String(tags["piste:difficulty"] || "").toLowerCase();
+  // Keep it close to your PMTiles styling
+  if (d === "easy" || d === "novice" || d === "blue")  return { color: "#2b6cff", weight: 3, opacity: 0.95 };
+  if (d === "intermediate" || d === "red")             return { color: "#e53935", weight: 3, opacity: 0.95 };
+  if (d === "advanced" || d === "expert" || d === "black") return { color: "#111111", weight: 3, opacity: 0.95 };
+  return { color: "#6f6f6f", weight: 2.5, opacity: 0.9 };
+}
+
+function overpassWaysToFeatureCollections(osmJson) {
+  const lifts = [];
+  const pistes = [];
+
+  const els = (osmJson && osmJson.elements) ? osmJson.elements : [];
+  for (const el of els) {
+    if (!el || el.type !== "way") continue;
+    const tags = el.tags || {};
+    const geom = el.geometry;
+    if (!Array.isArray(geom) || geom.length < 2) continue;
+
+    const coords = geom.map(p => [p.lon, p.lat]).filter(c => Number.isFinite(c[0]) && Number.isFinite(c[1]));
+    if (coords.length < 2) continue;
+
+    const feat = {
+      type: "Feature",
+      geometry: { type: "LineString", coordinates: coords },
+      properties: { ...tags, osm_id: el.id, osm_type: "way" }
+    };
+
+    if (tags.aerialway) lifts.push(feat);
+    if (tags["piste:type"]) pistes.push(feat);
+  }
+
+  return {
+    lifts: { type: "FeatureCollection", features: lifts },
+    pistes: { type: "FeatureCollection", features: pistes },
+  };
+}
+
+async function loadAlpeLiveOSM(force=false) {
+  if (alpeLiveLoading) return;
+  if (alpeLiveLoaded && !force) return;
+  alpeLiveLoading = true;
+  setAlpeLiveStatus("Lade Alpe d'Huez (Overpass)…");
+
+  try {
+    // We request geometries directly from Overpass (`out geom`) so we don't need osmtogeojson.
+    // Overpass bbox format: south,west,north,east
+    const query = `
+      [out:json][timeout:60];
+      (
+        way["aerialway"](${ALPE_OVERPASS_BBOX});
+        way["piste:type"](${ALPE_OVERPASS_BBOX});
+      );
+      out tags geom;
+    `;
+
+    const osmJson = await fetchOverpassJSON(query);
+    const { lifts, pistes } = overpassWaysToFeatureCollections(osmJson);
+
+    // Replace data in layer groups
+    alpeLiveLiftsLayer.clearLayers();
+    alpeLivePistesLayer.clearLayers();
+
+    const liftsCount = lifts.features.length;
+    const pistesCount = pistes.features.length;
+
+    const liftsGeo = L.geoJSON(lifts, {
+      style: () => ({ color: "#111111", weight: 2.2, opacity: 0.85, dashArray: "5,4" }),
+      onEachFeature: (f, layer) => {
+        const t = getTags(f);
+        const nm = t.name || t.ref || t.aerialway;
+        if (nm) layer.bindTooltip(String(nm), { sticky: true });
+      }
+    });
+    liftsGeo.addTo(alpeLiveLiftsLayer);
+
+    const pistesGeo = L.geoJSON(pistes, {
+      style: (f) => pisteStyle(getTags(f)),
+      onEachFeature: (f, layer) => {
+        const t = getTags(f);
+        const nm = t.name || t.ref || t["piste:name"] || t["piste:type"];
+        if (nm) layer.bindTooltip(String(nm), { sticky: true });
+      }
+    });
+    pistesGeo.addTo(alpeLivePistesLayer);
+
+    alpeLiveLoaded = true;
+
+    if (liftsCount === 0 && pistesCount === 0) {
+      setAlpeLiveStatus("Keine Live-Daten gefunden (OSM).");
+    } else {
+      setAlpeLiveStatus(`Geladen: ${pistesCount} Pisten / ${liftsCount} Lifte`);
+    }
+  } catch (e) {
+    console.error("Alpe live Overpass error:", e);
+    setAlpeLiveStatus("Fehler beim Laden (Overpass).");
+  } finally {
+    alpeLiveLoading = false;
+  }
+}
 
 
+function clearAlpeLiveOSM() {
+  try {
+    alpeLiveLiftsLayer.clearLayers();
+    alpeLivePistesLayer.clearLayers();
+  } catch (_) {}
+  alpeLiveLoaded = false;
+}
+
+async function reloadAlpeLiveOSM() {
+  clearAlpeLiveOSM();
+  // Only reload if at least one of the live layers is currently enabled
+  const enabled = map.hasLayer(alpeLiveLiftsLayer) || map.hasLayer(alpeLivePistesLayer);
+  if (enabled) {
+    await loadAlpeLiveOSM(true);
+  } else {
+    setAlpeLiveStatus("Reload bereit – Overlay aktivieren, um zu laden.");
+  }
+}
+
+// Add overlays to your existing layers control
+if (window.layerControl && typeof window.layerControl.addOverlay === "function") {
+  window.layerControl.addOverlay(alpeLivePistesLayer, "Alpe d'Huez – Pisten (Live)");
+  window.layerControl.addOverlay(alpeLiveLiftsLayer,  "Alpe d'Huez – Lifte (Live)");
+}
+
+
+// If the user has the live overlays enabled by default (or via persisted state), load immediately
+if (map.hasLayer(alpeLivePistesLayer) || map.hasLayer(alpeLiveLiftsLayer)) {
+  loadAlpeLiveOSM();
+}
+
+// Lazy-load on first enable (so you don't hit Overpass until needed)
+map.on("overlayadd", (e) => {
+  if (e.layer === alpeLivePistesLayer || e.layer === alpeLiveLiftsLayer) {
+    loadAlpeLiveOSM();
+  }
+});
+
+
+
+
+map.on("overlayremove", (e) => {
+  if (e.layer === alpeLivePistesLayer || e.layer === alpeLiveLiftsLayer) {
+    setAlpeLiveStatus("");
+  }
+});
 // --- Panel: Layer-Control optisch/inhaltlich gliedern (Karte vs Overlays) ---
 (function decorateLayerControl(){
   try{
@@ -1572,6 +1787,23 @@ if (typeof rebuildDatalist === "function") {
     }
     if (ov && !(ov.previousElementSibling && ov.previousElementSibling.classList.contains('panel-group-title'))){
       ov.insertAdjacentHTML('beforebegin', '<div class="panel-group-title">Overlays</div>');
+    }
+
+    // Reload-Button + Status für Live-Overpass (damit man bei Overpass-Problemen neu versuchen kann)
+    if (!c.querySelector('#alpe-live-reload')) {
+      const wrap = document.createElement('div');
+      wrap.style.marginTop = '8px';
+      wrap.innerHTML = `
+        <button id="alpe-live-reload" type="button" style="width:100%;height:32px;border-radius:10px;border:1px solid rgba(0,0,0,0.35);background:#f3f3f3;cursor:pointer;font-size:12px;font-weight:600;">
+          Reload Alpe d'Huez (Live)
+        </button>
+        <div id="alpe-live-status" style="margin-top:6px;font-size:11px;color:rgba(0,0,0,0.68);"></div>
+      `;
+      c.appendChild(wrap);
+
+      const btn = wrap.querySelector('#alpe-live-reload');
+      btn.addEventListener('click', () => { reloadAlpeLiveOSM(); });
+      setAlpeLiveStatus('');
     }
   } catch(e){
     console.warn('decorateLayerControl failed', e);
