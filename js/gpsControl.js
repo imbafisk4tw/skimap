@@ -1,7 +1,6 @@
 // js/gpsControl.js
 // Simple GPS / Geolocation toggle for Leaflet maps.
-// Adds a checkbox into the existing ".export-box" control so it appears both
-// on desktop (right control stack) and on mobile (burger side panel).
+// Shows a map button (above zoom controls on mobile) + checkbox in export-box.
 
 (function () {
   "use strict";
@@ -9,6 +8,7 @@
   const STORAGE_KEY = "skimap.gpsEnabled";
 
   let map = null;
+  let mapButton = null;
 
   let enabled = false;
   let marker = null;
@@ -121,6 +121,12 @@
     const cb = document.getElementById("gps-toggle");
     if (cb) cb.checked = enabled;
 
+    // Update map button state
+    if (mapButton) {
+      mapButton.classList.toggle("gps-active", enabled);
+      mapButton.title = enabled ? "GPS aktiv – Klick zum Zentrieren" : "GPS Position anzeigen";
+    }
+
     if (enabled) start();
     else stop();
   }
@@ -172,6 +178,48 @@
     }
 
     setEnabled(false);
+  }
+
+  // Create the standalone map button (shown on mobile above zoom controls)
+  function createMapButton() {
+    if (!map || mapButton) return;
+
+    const GpsControl = L.Control.extend({
+      options: { position: "bottomright" },
+      onAdd: function () {
+        const container = L.DomUtil.create("div", "leaflet-bar leaflet-control gps-map-btn-container");
+        const btn = L.DomUtil.create("a", "gps-map-btn", container);
+        btn.href = "#";
+        btn.role = "button";
+        btn.title = "GPS Position anzeigen";
+        // Crosshair / GPS icon - symmetrisch zentriert
+        btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" style="display:block">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+          <line x1="12" y1="2" x2="12" y2="7" stroke="currentColor" stroke-width="2"/>
+          <line x1="12" y1="17" x2="12" y2="22" stroke="currentColor" stroke-width="2"/>
+          <line x1="2" y1="12" x2="7" y2="12" stroke="currentColor" stroke-width="2"/>
+          <line x1="17" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+        </svg>`;
+
+        L.DomEvent.disableClickPropagation(container);
+        L.DomEvent.on(btn, "click", function (e) {
+          L.DomEvent.preventDefault(e);
+          if (enabled) {
+            // Already enabled: center on position
+            centerOnce();
+          } else {
+            // Enable GPS
+            setEnabled(true);
+          }
+        });
+
+        mapButton = btn;
+        return container;
+      }
+    });
+
+    new GpsControl().addTo(map);
   }
 
   function injectUi(exportBox) {
@@ -240,6 +288,10 @@
     map.on("locationfound", onLocationFound);
     map.on("locationerror", onLocationError);
 
+    // Create standalone map button (above zoom controls)
+    createMapButton();
+
+    // Also inject into export-box for desktop control panel
     waitForExportBoxAndInject();
   }
 

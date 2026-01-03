@@ -1057,6 +1057,77 @@ button, input, select, textarea{
   transform: translateY(1px);
 }
 
+/* GPS Map Button (standalone, above zoom controls on mobile) */
+.gps-map-btn-container {
+  margin-bottom: 10px !important;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25) !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+  border: none !important;
+}
+.gps-map-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #fff;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  border: none !important;
+}
+.gps-map-btn:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+.gps-map-btn:active {
+  background: #e8e8e8;
+}
+.gps-map-btn.gps-active {
+  background: #4285F4;
+  color: #fff;
+}
+.gps-map-btn.gps-active:hover {
+  background: #3367D6;
+  color: #fff;
+}
+.gps-map-btn svg {
+  display: block;
+}
+
+/* Desktop: hide map button, use panel checkbox instead */
+@media (min-width: 721px) {
+  .gps-map-btn-container {
+    display: none !important;
+  }
+}
+
+/* Mobile: GPS button fixed above zoom controls */
+@media (max-width: 720px) {
+  .gps-map-btn-container {
+    position: fixed !important;
+    right: 12px !important;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 156px) !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 4000 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
+  }
+  .gps-map-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .gps-map-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 </style>
 
 </head>
