@@ -1128,6 +1128,27 @@ button, input, select, textarea{
   }
 }
 
+/* GPS pulse effect when centering on location */
+@keyframes gps-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.gps-pulse-ring {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #4285F4;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: gps-pulse 0.8s ease-out forwards;
+}
+
 </style>
 
 </head>
@@ -1172,8 +1193,8 @@ button, input, select, textarea{
 </div>
 
 <!-- Fahrzeit-Slider + Startpunkt -->
-<div class="slider-box" id="slider-box">
-  <button type="button" id="slider-box-toggle" class="slider-box-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="true">
+<div class="slider-box collapsed" id="slider-box">
+  <button type="button" id="slider-box-toggle" class="slider-box-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="false">
     <span class="toggle-icon">&#9660;</span>
   </button>
   <div class="slider-box-content">
@@ -2292,12 +2313,12 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="panel-layers" class="panel-section"></div>
   </details>
 
-  <details class="panel-accordion" open>
+  <details class="panel-accordion">
     <summary>Filter</summary>
     <div id="panel-filters" class="panel-section"></div>
   </details>
 
-  <details class="panel-accordion" open>
+  <details class="panel-accordion">
     <summary>Export</summary>
     <div id="panel-export" class="panel-section"></div>
   </details>

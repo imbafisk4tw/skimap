@@ -68,6 +68,18 @@
   }
 
 
+  // Show pulse effect around GPS marker
+  function showPulseEffect(latlng) {
+    if (!map || !latlng) return;
+    const point = map.latLngToContainerPoint(latlng);
+    const ring = document.createElement("div");
+    ring.className = "gps-pulse-ring";
+    ring.style.left = (point.x - 10) + "px";
+    ring.style.top = (point.y - 10) + "px";
+    map.getContainer().appendChild(ring);
+    setTimeout(() => ring.remove(), 850);
+  }
+
   function centerOnce() {
     if (!map) return;
 
@@ -75,6 +87,7 @@
     if (lastLatLng) {
       const z = Math.max(map.getZoom(), 12);
       try { map.setView(lastLatLng, z, { animate: true }); } catch (_) { map.setView(lastLatLng, z); }
+      setTimeout(() => showPulseEffect(lastLatLng), 300);
       return;
     }
 
@@ -92,6 +105,7 @@
 
       const z = Math.max(map.getZoom(), 12);
       try { map.setView(ll, z, { animate: true }); } catch (_) { map.setView(ll, z); }
+      setTimeout(() => showPulseEffect(ll), 300);
     }
 
     function onceError(e) {
