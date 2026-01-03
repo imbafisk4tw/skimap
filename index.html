@@ -1664,8 +1664,8 @@ const OVERPASS_ENDPOINTS = [
   "https://overpass.nchc.org.tw/api/interpreter"
 ];
 
-const alpeLiveLiftsLayer = L.layerGroup();
-const alpeLivePistesLayer = L.layerGroup();
+const alpeLiveLiftsLayer = L.layerGroup().addTo(map);
+const alpeLivePistesLayer = L.layerGroup().addTo(map);
 let alpeLiveLoaded = false;
 let alpeLiveLoading = false;
 
