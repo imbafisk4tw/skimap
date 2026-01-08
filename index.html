@@ -2066,10 +2066,14 @@ map.on("overlayremove", (e) => {
     resortList.forEach(r => {
       const tt = ttMap[r.name];
       if (tt && typeof tt.hours === "number" && typeof tt.km === "number") {
+        // Echte Fahrzeit aus travel_times überschreibt Schätzung
         r.travelHours = tt.hours;
         r.distKm = tt.km;
-        if (tt.hours < minHours) minHours = tt.hours;
-        if (tt.hours > maxHours) maxHours = tt.hours;
+      }
+      // minHours/maxHours von ALLEN Resorts (echte Zeiten + Schätzungen)
+      if (typeof r.travelHours === "number" && isFinite(r.travelHours)) {
+        if (r.travelHours < minHours) minHours = r.travelHours;
+        if (r.travelHours > maxHours) maxHours = r.travelHours;
       }
     });
 
