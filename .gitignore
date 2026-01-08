@@ -7,8 +7,7 @@
 **/API Key.txt
 
 # Optional: config override für Prod/Local
-# (Empfehlung: js/config.js lokal, js/config.example.js getrackt)
-js/config.js
+# js/config.js - jetzt im Repo (kostenloser ORS-Key, kein Risiko)
 
 ########################################
 # OS / Editor

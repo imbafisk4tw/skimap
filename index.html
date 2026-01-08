@@ -725,6 +725,33 @@ html, body {
   opacity:0.6;
   cursor:wait;
 }
+.startpoint-input-row{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:6px;
+  margin-top:6px;
+}
+.startpoint-input{
+  flex:1;
+  padding:4px 6px;
+  font-size:12px;
+  border:1px solid #aaa;
+  border-radius:4px;
+  min-width:0;
+}
+.calc-btn{
+  padding:4px 8px;
+  font-size:12px;
+  border:1px solid #888;
+  border-radius:4px;
+  background:#f5f5f5;
+  cursor:pointer;
+  line-height:1;
+}
+.calc-btn:hover{
+  background:#e8e8e8;
+}
 .startpoint-title{
   font-weight:600;
   font-size:12px;
@@ -1222,6 +1249,10 @@ button, input, select, textarea{
   <div class="startpoint-row">
     <select id="homeSelectSlider" class="control-select" aria-label="Startpunkt auswählen"></select>
     <button id="btn-gps-slider" type="button" class="gps-btn" title="GPS-Standort verwenden">📍</button>
+  </div>
+  <div class="startpoint-input-row">
+    <input id="home-input-slider" type="text" placeholder="Adresse oder lat,lon" class="startpoint-input" />
+    <button id="btn-calc-slider" type="button" class="calc-btn" title="Fahrzeiten berechnen">▶</button>
   </div>
 
   <div class="slider-sep"></div>
@@ -2294,6 +2325,25 @@ map.on("overlayremove", (e) => {
     const gpsSliderBtn = document.getElementById("btn-gps-slider");
     if (gpsSliderBtn) {
       gpsSliderBtn.addEventListener("click", () => handleGpsClick(gpsSliderBtn, "📍"));
+    }
+
+    // Berechnen-Button in slider-box (Desktop)
+    const calcSliderBtn = document.getElementById("btn-calc-slider");
+    const homeInputSlider = document.getElementById("home-input-slider");
+    if (calcSliderBtn && homeInputSlider) {
+      calcSliderBtn.addEventListener("click", () => {
+        // Wert ins home-input kopieren (wird von recalcTravelTimesFromOrigin gelesen)
+        const homeInput = document.getElementById("home-input");
+        if (homeInput) homeInput.value = homeInputSlider.value;
+        recalcTravelTimesFromOrigin();
+      });
+      // Enter-Taste im Input-Feld
+      homeInputSlider.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          calcSliderBtn.click();
+        }
+      });
     }
   });
 
