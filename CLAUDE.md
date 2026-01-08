@@ -1,5 +1,63 @@
 # Skigebiete Karte - Entwicklungsstand
 
+## Abgeschlossene Arbeiten (Session 08.01.2026)
+
+### 1. Fix: Schweizer Skigebiete im Fahrzeit-Slider
+
+**Problem:** ~82 Schweizer Skigebiete verschwanden beim Bewegen des Sliders, weil:
+- Alle Resorts bekamen initial eine Luftlinien-Schätzung
+- Die echten Fahrzeiten aus `home_muc.json` hatten nur AT/DE (156 Einträge)
+- Schweizer behielten ihre hohen Schätzungen (5-6h), wurden aber vom Slider-Maximum (4.2h) abgeschnitten
+
+**Lösung:**
+- `build_travel_times_from_routes.js` neu ausgeführt → `home_muc.json` hat jetzt 299 Einträge
+- `applyTravelTimesFromMap()` berücksichtigt jetzt alle Fahrzeiten für min/max
+
+### 2. GPS-Button für Live-Fahrzeitberechnung
+
+Neuer GPS-Button ermöglicht Fahrzeitberechnung vom aktuellen Standort:
+
+- **Desktop:** 📍 Button neben Home-Dropdown + Input-Feld für Adresse/Koordinaten
+- **Mobile:** 📍 GPS Button in home-box
+- **API:** OpenRouteService Matrix-API (Key in `js/config.js`)
+
+**Einschränkungen:**
+- GPS funktioniert nur über HTTPS oder localhost
+- Berechnet nur Fahrzeiten, keine Tree-Routes (wäre zu aufwändig)
+
+**Dateien:**
+- `index.html` - GPS-Buttons, Input-Feld, Event-Handler
+- `js/config.js` - ORS API-Key (im Repo, da kostenloser Key)
+
+### 3. Status-Icons im Home-Dropdown
+
+Das Home-Dropdown zeigt jetzt den Status der vorberechneten Fahrzeiten:
+
+- 🟢 = ≥95% der Resorts haben Fahrzeiten
+- 🟠 = <95% der Resorts haben Fahrzeiten
+- ⚪ = Keine travel_times Datei vorhanden
+
+**Dateien:**
+- `js/homeRoutesSelector.js` - Status-Prüfung und Icon-Anzeige
+
+### 4. Fahrzeit-Berechnungsprozess (Dokumentation)
+
+```
+homes.json + resorts.json
+        ↓
+   precompute_routes.js (OSRM)
+        ↓
+   data/routes/home_<id>.geojson (Routen + Zeiten)
+        ↓
+   build_travel_times_from_routes.js
+        ↓
+   data/travel_times/home_<id>.json (nur Zeiten)
+        ↓
+   Frontend (Slider)
+```
+
+---
+
 ## Abgeschlossene Arbeiten (Session 31.12.2024)
 
 ### 1. Datenbank-Migration: Statische Spalten in `resort`-Tabelle
@@ -59,14 +117,13 @@ Drei neue Minimum-Filter als Slider hinzugefügt:
 
 ### Hoch-Priorität
 
-1. **Testen der neuen Filter-Slider**
-   - Desktop-Ansicht prüfen
-   - Mobile-Ansicht prüfen (Slider im Mobile-Panel)
-   - Filter-Logik verifizieren
-
-2. **Datenbank-Bereinigung**
+1. **Datenbank-Bereinigung**
    - Spalten aus `resort_stats_snapshot` entfernen (nach Auflösung der View-Dependencies)
    - Views neu erstellen ohne die statischen Spalten
+
+2. **Home-Koordinaten speichern (Feature in Planung)**
+   - Manuell eingegebene Koordinaten in `data/homes.json` aufnehmen
+   - Optionen: Copy-to-Clipboard, Download, localStorage
 
 ### Niedrig-Priorität
 
@@ -77,6 +134,10 @@ Drei neue Minimum-Filter als Slider hinzugefügt:
 
 4. **Export erweitern**
    - Neue Spalten in CSV/KML-Export aufnehmen
+
+5. **Tree-Routes von beliebigem Standort**
+   - Aktuell nur Fahrzeiten via ORS Matrix-API
+   - Tree-Routes bräuchten OSRM-Server (299 einzelne Requests)
 
 ---
 
