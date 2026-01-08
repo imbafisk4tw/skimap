@@ -79,16 +79,56 @@
 
     homes.sort((a, b) => String(a.name).localeCompare(String(b.name), "de"));
 
+    // Status-Icons: Prüfen ob travel_times existieren
+    const travelTimesDir = o.travelTimesDir || "data/travel_times";
+    let totalResorts = 0;
+
+    // Anzahl der Resorts ermitteln (für Prozentberechnung)
+    try {
+      const resortsResp = await fetch("data/resorts.json", { cache: "no-store" });
+      if (resortsResp.ok) {
+        const resortsData = await resortsResp.json();
+        totalResorts = Array.isArray(resortsData) ? resortsData.length : 0;
+      }
+    } catch (_) {}
+
+    // Für jedes Home den travel_times Status laden
+    await Promise.all(homes.map(async (h) => {
+      h.travelTimesStatus = "none"; // none, partial, full
+      h.travelTimesCount = 0;
+      try {
+        const ttResp = await fetch(`${travelTimesDir}/home_${h.id}.json`, { cache: "no-store" });
+        if (ttResp.ok) {
+          const ttData = await ttResp.json();
+          const count = Object.keys(ttData).length;
+          h.travelTimesCount = count;
+          if (totalResorts > 0) {
+            const pct = count / totalResorts;
+            h.travelTimesStatus = pct >= 0.95 ? "full" : "partial";
+          } else {
+            h.travelTimesStatus = count > 0 ? "partial" : "none";
+          }
+        }
+      } catch (_) {}
+    }));
+
     const stored = (typeof localStorage !== "undefined") ? localStorage.getItem(storageKey) : null;
     let selectedId = stored || defaultHomeId || (homes[0]?.id ?? null);
     if (selectedId && homes.length && !homes.some(h => h.id === selectedId)) selectedId = homes[0].id;
+
+    function getStatusIcon(status) {
+      if (status === "full") return "🟢";
+      if (status === "partial") return "🟠";
+      return "⚪";
+    }
 
     function rebuildOptions(sel) {
       sel.innerHTML = "";
       for (const h of homes) {
         const opt = document.createElement("option");
         opt.value = h.id;
-        opt.textContent = h.name || h.id;
+        const icon = getStatusIcon(h.travelTimesStatus);
+        opt.textContent = `${icon} ${h.name || h.id}`;
         sel.appendChild(opt);
       }
     }
