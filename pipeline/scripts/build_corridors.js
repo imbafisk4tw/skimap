@@ -1,5 +1,6 @@
 /* scripts/build_corridors.js
  * Build "corridor/trunk" layer by counting overlapped segments using a grid.
+ * Now includes travel time information for each segment.
  *
  * Usage:
  *   node scripts/build_corridors.js --routes data/routes/home_muc.geojson --out data/corridors/home_muc.geojson \
@@ -38,24 +39,54 @@ function lerpCoord(a, b, t) {
   return [a[0] + (b[0]-a[0])*t, a[1] + (b[1]-a[1])*t];
 }
 
-function resampleLine(coords, stepM) {
-  if (!coords || coords.length < 2) return coords || [];
-  const out = [coords[0]];
+// Get duration in minutes from feature properties
+function getDurationMin(props) {
+  if (!props) return null;
+  if (typeof props.duration_min === "number") return props.duration_min;
+  if (typeof props.duration_sec === "number") return props.duration_sec / 60;
+  if (typeof props.duration === "number") return props.duration / 60;
+  return null;
+}
+
+// Resample line and return points with cumulative distance ratio
+function resampleLineWithProgress(coords, stepM) {
+  if (!coords || coords.length < 2) return [];
+
+  // Calculate total length first
+  let totalLen = 0;
+  for (let i = 0; i < coords.length - 1; i++) {
+    const a = coords[i], b = coords[i + 1];
+    totalLen += haversineMeters(a[1], a[0], b[1], b[0]);
+  }
+  if (totalLen === 0) return [];
+
+  const out = [{ coord: coords[0], progress: 0 }];
+  let cumDist = 0;
   let carry = 0;
-  for (let i=0;i<coords.length-1;i++){
-    const a = coords[i], b = coords[i+1];
-    const segLen = haversineMeters(a[1],a[0],b[1],b[0]);
+
+  for (let i = 0; i < coords.length - 1; i++) {
+    const a = coords[i], b = coords[i + 1];
+    const segLen = haversineMeters(a[1], a[0], b[1], b[0]);
     if (segLen === 0) continue;
+
     let dist = carry;
     while (dist + stepM <= segLen) {
       dist += stepM;
-      out.push(lerpCoord(a,b,dist/segLen));
+      cumDist += stepM;
+      out.push({
+        coord: lerpCoord(a, b, dist / segLen),
+        progress: cumDist / totalLen
+      });
     }
+    cumDist += (segLen - dist);
     carry = segLen - dist;
   }
-  const last = coords[coords.length-1];
-  const lastOut = out[out.length-1];
-  if (!lastOut || lastOut[0]!==last[0] || lastOut[1]!==last[1]) out.push(last);
+
+  const last = coords[coords.length - 1];
+  const lastOut = out[out.length - 1];
+  if (!lastOut || lastOut.coord[0] !== last[0] || lastOut.coord[1] !== last[1]) {
+    out.push({ coord: last, progress: 1 });
+  }
   return out;
 }
 
@@ -91,39 +122,104 @@ function main(){
     process.exit(1);
   }
   const fc=readJson(routesPath);
-  const counts=new Map();
+
+  // Map: key -> { count, minDurationMin, sumDurationMin }
+  const segments = new Map();
+
   for(const f of (fc.features||[])){
     if(!f.geometry||f.geometry.type!=="LineString") continue;
-    const sampled=resampleLine(f.geometry.coordinates, stepM);
-    for(let i=0;i<sampled.length-1;i++){
-      const a=sampled[i], b=sampled[i+1];
-      const ca=cellId(a[0],a[1],gridM), cb=cellId(b[0],b[1],gridM);
-      if(ca.cx===cb.cx && ca.cy===cb.cy) continue;
-      const key=undirectedKey(ca,cb);
-      counts.set(key,(counts.get(key)||0)+1);
+
+    const totalDurationMin = getDurationMin(f.properties);
+    const sampled = resampleLineWithProgress(f.geometry.coordinates, stepM);
+
+    for(let i = 0; i < sampled.length - 1; i++){
+      const a = sampled[i], b = sampled[i + 1];
+      const ca = cellId(a.coord[0], a.coord[1], gridM);
+      const cb = cellId(b.coord[0], b.coord[1], gridM);
+      if(ca.cx === cb.cx && ca.cy === cb.cy) continue;
+
+      const key = undirectedKey(ca, cb);
+
+      // Calculate duration at this point along the route
+      // Use the average progress of the two endpoints
+      const avgProgress = (a.progress + b.progress) / 2;
+      const durationAtPoint = totalDurationMin ? totalDurationMin * avgProgress : null;
+
+      let seg = segments.get(key);
+      if (!seg) {
+        seg = { count: 0, minDurationMin: Infinity, durations: [] };
+        segments.set(key, seg);
+      }
+
+      seg.count++;
+      if (durationAtPoint !== null && isFinite(durationAtPoint)) {
+        seg.durations.push(durationAtPoint);
+        seg.minDurationMin = Math.min(seg.minDurationMin, durationAtPoint);
+      }
     }
   }
-  const feats=[];
-  let max=0;
-  for(const [key,count] of counts.entries()){
-    if(count<minCount) continue;
-    max=Math.max(max,count);
-    const [aStr,bStr]=key.split("|");
-    const [ax,ay]=aStr.split(",").map(Number);
-    const [bx,by]=bStr.split(",").map(Number);
+
+  const feats = [];
+  let maxCount = 0;
+  let maxDuration = 0;
+
+  for(const [key, seg] of segments.entries()){
+    if(seg.count < minCount) continue;
+    maxCount = Math.max(maxCount, seg.count);
+
+    const [aStr, bStr] = key.split("|");
+    const [ax, ay] = aStr.split(",").map(Number);
+    const [bx, by] = bStr.split(",").map(Number);
+
+    // Calculate average duration for this segment
+    const avgDuration = seg.durations.length > 0
+      ? seg.durations.reduce((a, b) => a + b, 0) / seg.durations.length
+      : null;
+
+    const minDuration = seg.minDurationMin !== Infinity ? seg.minDurationMin : null;
+
+    if (minDuration !== null) {
+      maxDuration = Math.max(maxDuration, minDuration);
+    }
+
     feats.push({
-      type:"Feature",
-      geometry:{ type:"LineString", coordinates:[cellCenter(ax,ay,gridM), cellCenter(bx,by,gridM)] },
-      properties:{ count, grid_m:gridM }
+      type: "Feature",
+      geometry: {
+        type: "LineString",
+        coordinates: [cellCenter(ax, ay, gridM), cellCenter(bx, by, gridM)]
+      },
+      properties: {
+        count: seg.count,
+        grid_m: gridM,
+        duration_min: minDuration !== null ? Math.round(minDuration) : null,
+        duration_avg_min: avgDuration !== null ? Math.round(avgDuration) : null
+      }
     });
   }
-  feats.sort((a,b)=>b.properties.count-a.properties.count);
+
+  // Sort by duration (closest first) for better rendering order
+  feats.sort((a, b) => {
+    const da = a.properties.duration_min ?? Infinity;
+    const db = b.properties.duration_min ?? Infinity;
+    return db - da; // Furthest first, so closest renders on top
+  });
+
   ensureDir(path.dirname(outPath));
   fs.writeFileSync(outPath, JSON.stringify({
-    type:"FeatureCollection",
-    properties:{ source_routes:path.basename(routesPath), step_m:stepM, grid_m:gridM, min_count:minCount, max_count:max },
-    features:feats
+    type: "FeatureCollection",
+    properties: {
+      source_routes: path.basename(routesPath),
+      step_m: stepM,
+      grid_m: gridM,
+      min_count: minCount,
+      max_count: maxCount,
+      max_duration_min: Math.round(maxDuration)
+    },
+    features: feats
   }));
-  console.log(`Corridors: ${feats.length} -> ${outPath} (max_count=${max})`);
+
+  console.log(`Corridors: ${feats.length} segments -> ${outPath}`);
+  console.log(`  max_count: ${maxCount}, max_duration: ${Math.round(maxDuration)} min`);
 }
+
 main();

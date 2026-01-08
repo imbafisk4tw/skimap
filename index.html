@@ -312,6 +312,59 @@ html, body {
     .slider-box input[type="range"] {
       width: 100%;
     }
+
+    /* Fahrzeit-Slider mit Farbverlauf (passend zur Corridor-Skala) */
+    #time-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+      border-radius: 4px;
+      outline: none;
+      /* Gradient: grün (0-1h) → hellgrün (1-2h) → gelb (2-3h) → orange (3-4h) → rot (4h+) */
+      /* Bei 6h max: 1h=17%, 2h=33%, 3h=50%, 4h=67% */
+      background: linear-gradient(to right,
+        #1a9850 0%,      /* grün - Start */
+        #1a9850 15%,     /* grün - bis ~1h */
+        #91cf60 25%,     /* hellgrün - ~1.5h */
+        #fee08b 40%,     /* gelb - ~2.5h */
+        #fc8d59 55%,     /* orange - ~3.5h */
+        #d73027 75%,     /* rot - ~4.5h */
+        #d73027 100%     /* rot - Ende */
+      );
+    }
+
+    /* Slider-Thumb (der Anfasser) */
+    #time-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #333;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    #time-slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #333;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* Firefox Track-Styling */
+    #time-slider::-moz-range-track {
+      height: 8px;
+      border-radius: 4px;
+      background: linear-gradient(to right,
+        #1a9850 0%, #1a9850 15%, #91cf60 25%,
+        #fee08b 40%, #fc8d59 55%, #d73027 75%, #d73027 100%
+      );
+    }
     .slider-box .time-label {
       margin-top: 4px;
       font-size: 12px;
@@ -1307,6 +1360,7 @@ button, input, select, textarea{
 
 
 <script src="js/treeRoutesOverlay.js"></script>
+<script src="js/corridorOverlay.js"></script>
 <script src="js/homeRoutesSelector.js"></script>
 <script src="js/homeTravelTimes.js"></script>
 
@@ -2067,14 +2121,8 @@ map.on("overlayremove", (e) => {
     currentTreeHomeId = homeId;
     window.treeOverlay = tree;
 
-    // Eintrag (Checkbox) in Layer-Control hinzufügen (Leaflet setzt checked abhängig von map.hasLayer)
-    if (window.layerControl && tree.getLayer && tree.getLayer()) {
-      window.layerControl.addOverlay(tree.getLayer(), "Tree Routes");
-      // Default/Restore: wenn enabled, Layer auch wirklich auf die Karte legen (damit Checkbox checked ist)
-      if (wasEnabled && tree.getLayer && tree.getLayer() && !map.hasLayer(tree.getLayer())) {
-        map.addLayer(tree.getLayer());
-      }
-    }
+    // Tree Routes aus Layer-Control entfernt - ersetzt durch Corridors
+    // Code bleibt für eventuelle spätere Nutzung erhalten
 
     // applyFilters hooken: immer wenn Marker-Filter aktualisiert werden, Tree synchronisieren
     if (ui && typeof ui.applyFilters === "function") {
@@ -2102,12 +2150,59 @@ map.on("overlayremove", (e) => {
   // Expose for home selector
   window.ensureTreeOverlayForHome = ensureTreeOverlayForHome;
 
-  // Initial: versuche mit muc zu laden (wenn Datei fehlt, bleibt es still)
+  // Tree Routes Overlay deaktiviert - ersetzt durch Corridors
+
+  // --------- Corridor Overlay (Hauptstrecken) ---------
+  // Zeigt die meistgenutzten Streckenabschnitte mit variabler Linienbreite
+  let corridorOverlay = null;
+
+  async function ensureCorridorOverlayForHome(homeId) {
+    if (!window.CorridorOverlay) return null;
+    const url = `data/corridors/home_${homeId}.geojson`;
+
+    // Alten Layer entfernen
+    if (corridorOverlay && corridorOverlay.getLayer) {
+      const oldLayer = corridorOverlay.getLayer();
+      if (oldLayer) {
+        map.removeLayer(oldLayer);
+        if (window.layerControl) {
+          window.layerControl.removeLayer(oldLayer);
+        }
+      }
+    }
+
+    try {
+      corridorOverlay = await window.CorridorOverlay.init(map, {
+        url,
+        enabled: false,  // Default: aus (User kann es einschalten)
+        minWeight: 1.5,
+        maxWeight: 12,
+        baseOpacity: 0.75
+      });
+
+      window.corridorOverlay = corridorOverlay;
+
+      if (window.layerControl && corridorOverlay.getLayer()) {
+        window.layerControl.addOverlay(corridorOverlay.getLayer(), "Corridors (Hauptstrecken)");
+      }
+
+      console.log(`Corridors loaded: ${corridorOverlay.getFeatureCount()} segments, max ${corridorOverlay.getMaxCount()} routes`);
+    } catch (err) {
+      console.warn("CorridorOverlay init skipped/failed:", err);
+    }
+
+    return corridorOverlay;
+  }
+
+  // Expose for home selector
+  window.ensureCorridorOverlayForHome = ensureCorridorOverlayForHome;
+
+  // Initial: Corridors für München laden
   (async () => {
     try {
-      await ensureTreeOverlayForHome(currentTreeHomeId);
+      await ensureCorridorOverlayForHome("muc");
     } catch (err) {
-      console.warn("TreeRoutesOverlay init skipped/failed:", err);
+      console.warn("CorridorOverlay init skipped:", err);
     }
   })();
 
@@ -2399,10 +2494,10 @@ map.on("overlayremove", (e) => {
           catch (e) { console.warn("HomeTravelTimes load failed:", e); }
         }
 
-        // Tree-Routes neu laden (ohne Checkbox-Status zu verändern)
-        if (typeof window.ensureTreeOverlayForHome === "function") {
-          try { await window.ensureTreeOverlayForHome(homeId); }
-          catch (e) { console.warn("ensureTreeOverlayForHome failed:", e); }
+        // Corridors neu laden (ohne Checkbox-Status zu verändern)
+        if (typeof window.ensureCorridorOverlayForHome === "function") {
+          try { await window.ensureCorridorOverlayForHome(homeId); }
+          catch (e) { console.warn("ensureCorridorOverlayForHome failed:", e); }
         }
       }
     });
