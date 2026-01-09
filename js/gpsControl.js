@@ -206,14 +206,14 @@
         btn.href = "#";
         btn.role = "button";
         btn.title = "GPS Position anzeigen";
-        // Crosshair / GPS icon - symmetrisch zentriert
+        // Crosshair / GPS icon - wie Leaflet/Google Maps Style
         btn.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" style="display:block">
-          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-          <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
-          <line x1="12" y1="2" x2="12" y2="7" stroke="currentColor" stroke-width="2"/>
-          <line x1="12" y1="17" x2="12" y2="22" stroke="currentColor" stroke-width="2"/>
-          <line x1="2" y1="12" x2="7" y2="12" stroke="currentColor" stroke-width="2"/>
-          <line x1="17" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="3" fill="currentColor"/>
+          <line x1="12" y1="1" x2="12" y2="5" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="12" y1="19" x2="12" y2="23" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="1" y1="12" x2="5" y2="12" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="19" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="1.5"/>
         </svg>`;
 
         L.DomEvent.disableClickPropagation(container);
