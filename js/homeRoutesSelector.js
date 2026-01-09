@@ -128,7 +128,8 @@
         const opt = document.createElement("option");
         opt.value = h.id;
         const icon = getStatusIcon(h.travelTimesStatus);
-        opt.textContent = `${icon} ${h.name || h.id}`;
+        const countInfo = totalResorts > 0 ? ` (${h.travelTimesCount}/${totalResorts})` : "";
+        opt.textContent = `${icon} ${h.name || h.id}${countInfo}`;
         sel.appendChild(opt);
       }
     }
