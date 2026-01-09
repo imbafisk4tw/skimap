@@ -2114,10 +2114,10 @@ map.on("overlayremove", (e) => {
 // --------- Suche & Filter initialisieren (ausgelagert in searchFilter.js) ---------
 
   // --- Zoom-Reset: mobile anders als Desktop (wird von searchFilter.js über resetMapView() genutzt) ---
-  // Passe RESET_ZOOM_MOBILE in den DevTools an, bis es sich für dich richtig anfühlt.
-  const RESET_CENTER = [47.2, 12.2];
-  const RESET_ZOOM_DESKTOP = 9;
-  const RESET_ZOOM_MOBILE  = 8; // <— hier testen/ändern
+  // Gleiche Werte wie beim initialen Laden der Karte (zentriert über den Alpen)
+  const RESET_CENTER = [46.8, 11.0];
+  const RESET_ZOOM_DESKTOP = 7;
+  const RESET_ZOOM_MOBILE  = 7;
 
   const isMobileViewport = () => window.matchMedia("(max-width: 720px)").matches;
 
