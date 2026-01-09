@@ -1,5 +1,85 @@
 # Skigebiete Karte - Entwicklungsstand
 
+## Abgeschlossene Arbeiten (Session 09.01.2026)
+
+### 1. Default Kartenausschnitt zentriert über den Alpen
+
+**Änderung:** Karte lädt jetzt mit Blick auf alle Skigebiete
+- **Center:** [46.8, 11.0] (vorher [47.2, 12.2])
+- **Zoom:** 7 (vorher 9)
+- Reset-Button (X) verwendet jetzt die gleichen Werte
+
+**Dateien:**
+- `index.html` - `map.setView()` und `RESET_CENTER`/`RESET_ZOOM` Konstanten
+
+### 2. Zoom-abhängige Marker-Skalierung
+
+Marker werden beim Herauszoomen kleiner, damit sie nicht überlappen:
+
+| Zoom | CircleMarker Radius | Gletscher-Icon |
+|------|---------------------|----------------|
+| ≥9   | 8px                 | 26px           |
+| 8    | 7px                 | 22px           |
+| 7    | 6px                 | 18px           |
+| 6    | 5px                 | 14px           |
+| <6   | 4px                 | 12px           |
+
+**Performance-Optimierung:** Updates nur bei Größen-Schwellen-Wechsel (nicht bei jedem Zoom-Step)
+
+**Dateien:**
+- `index.html` - `getMarkerRadius()`, `getGlacierIconSize()`, `updateMarkerSizes()`
+
+### 3. Microsoft Fluent Emoji Schneeflocke
+
+Gletscher-Icons verwenden jetzt ein einheitliches SVG statt Emoji:
+- **Vorher:** `❄` Emoji (sieht auf jedem OS anders aus)
+- **Nachher:** Microsoft Fluent Emoji SVG mit Farbverlauf (#43C4F5 → #3D8DF3)
+
+**Dateien:**
+- `index.html` - `createGlacierIcon()` Funktion
+
+### 4. Home-Dropdown zeigt Fahrtzeit-Abdeckung
+
+Das Dropdown zeigt jetzt neben dem Status-Icon auch die Anzahl:
+- Vorher: `🟢 München Zentrum`
+- Nachher: `🟢 München Zentrum (299/299)`
+
+**Dateien:**
+- `js/homeRoutesSelector.js` - `rebuildOptions()` Funktion
+
+### 5. Gletscher-Markierungen korrigiert (Schweiz)
+
+**Problem:** 21 Schweizer Skigebiete waren als Gletscher markiert, offiziell gibt es nur 9.
+
+**Lösung:** Nur noch offizielle Gletscherskigebiete:
+1. Zermatt
+2. Flims Laax Falera
+3. Verbier / 4 Vallées
+4. Engelberg Titlis
+5. Crans-Montana
+6. Corvatsch-Furtschellas
+7. Saas-Fee
+8. Diavolezza-Lagalb (neu hinzugefügt)
+9. Glacier 3000 - Les Diablerets
+
+**Entfernt:** Jungfrau-Schilthorn, Gstaad, St. Moritz, Belalp, Arolla, Vals, etc.
+
+**Dateien:**
+- `data/resorts.json` - `glacier` Flag korrigiert
+
+### 6. GPS-Button Design (Mobile)
+
+Button ist jetzt rund wie bei Google Maps:
+- **Form:** Kreisförmig (border-radius: 50%)
+- **Größe:** 48x48px auf Mobile
+- **Icon:** Fadenkreuz im Leaflet/Google Maps Style
+
+**Dateien:**
+- `index.html` - CSS für `.gps-map-btn`
+- `js/gpsControl.js` - SVG Icon
+
+---
+
 ## Abgeschlossene Arbeiten (Session 08.01.2026)
 
 ### 1. Fix: Schweizer Skigebiete im Fahrzeit-Slider
