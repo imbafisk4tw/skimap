@@ -1421,7 +1421,6 @@ button, input, select, textarea{
     const passes = [];
     if (hasSct) passes.push("Snow Card Tirol");
     if (hasSsc) passes.push("SuperSkiCard");
-    if (r.nearMuc && !hasSct && !hasSsc) passes.push("Weitere Gebiete südlich von München");
     const passesStr = passes.length ? passes.join(", ") : "–";
 
     const driveTxt = buildDriveText(r);
@@ -1477,7 +1476,6 @@ button, input, select, textarea{
   // --------- Grunddaten ---------
   const sctList = [/* nur noch Referenz, echte Daten aus resorts.json */];
   const sscList = [];
-  const nearMucList = [];
 
   const resorts = {};
   const resortMarkers = {};
@@ -1586,8 +1584,12 @@ button, input, select, textarea{
   const COLOR_SCT   = "#9C2419";
   const COLOR_SSC   = "#004A8F";
   const COLOR_BOTH  = "#9C27B0";
-  const COLOR_MUC   = "#2E7D32";
   const COLOR_OTHER = "#888888";
+  // Länder-Farben für Resorts ohne Pass
+  const COLOR_DE    = "#FFD700";  // Gold (Deutschland)
+  const COLOR_IT    = "#2E7D32";  // Grün (Italien)
+  const COLOR_FR    = "#1565C0";  // Blau (Frankreich)
+  const COLOR_SI    = "#F57C00";  // Orange (Slowenien)
 
   // --------- Zoom-abhängige Skalierung ---------
   // Arrays zum Speichern der verschiedenen Marker-Typen für Zoom-Updates
@@ -1717,28 +1719,57 @@ button, input, select, textarea{
   }
   function initResortsFromJson(list) {
     list.forEach(r => {
+      // Überspringe Resorts ohne gültige Koordinaten
+      if (r.lat == null || r.lon == null) return;
+
       const key = norm(r.name);
 
-      // Resort-Objekt direkt übernehmen (mit passes-Array)
+      // Resort-Objekt mit allen relevanten Feldern
       resorts[key] = {
         name: r.name,
+        stable_id: r.stable_id || null,
         lat: r.lat,
         lon: r.lon,
         country: r.country || null,
+        countryName: r.countryName || null,
         region: r.region || null,
         passes: r.passes || [],
         glacier: !!r.glacier,
-        nearMuc: !!r.nearMuc,
         website: (typeof r.website === "string" && r.website.trim()) ? r.website.trim() : null,
-        groupId: (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim() : null,
-        groupName: (typeof r.groupName === "string" && r.groupName.trim()) ? r.groupName.trim() : null,
-        entryType: (typeof r.entryType === "string" && r.entryType.trim()) ? r.entryType.trim() : null,
-        entryName: (typeof r.entryName === "string" && r.entryName.trim()) ? r.entryName.trim() : null,
         liftsTotal: (r.liftsTotal != null) ? Number(r.liftsTotal) : null,
         pistesKm: (r.pistesKm != null) ? Number(r.pistesKm) : null,
-        maxElevation: (r.maxElevation != null) ? Number(r.maxElevation) : null
+        maxElevation: (r.maxElevation != null) ? Number(r.maxElevation) : null,
+        minElevation: (r.minElevation != null) ? Number(r.minElevation) : null,
+        // Gruppen für Verbund-Filter (neues DB Schema)
+        groups: r.groups || [],
+        primaryGroup: r.primaryGroup || null,
+        // Live-Daten (optional)
+        liveData: r.liveData || null
       };
     });
+  }
+
+  // Normalisiert verschiedene Export-Formate auf ein flaches Array
+  function normalizeResortData(data) {
+    // 1. DBeaver Wrapper: {"v_resort_json_export": [...]}
+    if (data && typeof data === "object" && !Array.isArray(data)) {
+      const keys = Object.keys(data);
+      if (keys.length === 1 && Array.isArray(data[keys[0]])) {
+        data = data[keys[0]];
+      }
+    }
+
+    // 2. Jetzt sollte es ein Array sein
+    if (!Array.isArray(data)) {
+      throw new Error("Ungültiges Datenformat: Erwartet Array");
+    }
+
+    // 3. Wenn Einträge resort_json haben, extrahiere diese
+    if (data.length > 0 && data[0].resort_json) {
+      return data.map(row => row.resort_json);
+    }
+
+    return data;
   }
 
   function loadResortsAndInit() {
@@ -1749,7 +1780,8 @@ button, input, select, textarea{
         }
         return resp.json();
       })
-      .then(list => {
+      .then(rawData => {
+        const list = normalizeResortData(rawData);
         initResortsFromJson(list);
 
         totalResorts = Object.keys(resorts).length;
@@ -1787,14 +1819,20 @@ if (typeof rebuildDatalist === "function") {
       const passes = [];
       if (hasSct) passes.push("Snow Card Tirol");
       if (hasSsc) passes.push("SuperSkiCard");
-      if (r.nearMuc && !hasSct && !hasSsc) passes.push("Extra: ab München");
       const passesStr = passes.length ? passes.join(", ") : "–";
 
       let color = COLOR_OTHER;
       if (hasSct && hasSsc)      color = COLOR_BOTH;
       else if (hasSct)           color = COLOR_SCT;
       else if (hasSsc)           color = COLOR_SSC;
-      else if (r.nearMuc)        color = COLOR_MUC;
+      else {
+        // Länder-Farben für Resorts ohne Pass
+        const countryCode = (r.country || "").toUpperCase();
+        if (countryCode === "DE") color = COLOR_DE;
+        else if (countryCode === "IT") color = COLOR_IT;
+        else if (countryCode === "FR") color = COLOR_FR;
+        else if (countryCode === "SI") color = COLOR_SI;
+      }
 
       const distKm   = haversineKm(MUC_LAT, MUC_LON, r.lat, r.lon);
       const estHours = distKm / AVG_SPEED_KMH;
@@ -2317,11 +2355,31 @@ map.on("overlayremove", (e) => {
     maxHours = 0;
 
     resortList.forEach(r => {
-      const tt = ttMap[r.name];
-      if (tt && typeof tt.hours === "number" && typeof tt.km === "number") {
-        // Echte Fahrzeit aus travel_times überschreibt Schätzung
-        r.travelHours = tt.hours;
-        r.distKm = tt.km;
+      // Lookup by stable_id (preferred), then by name (fallback)
+      const tt = ttMap[r.stable_id] || ttMap[r.name];
+      if (tt) {
+        // Support both formats:
+        // Old: { hours: 2.5, km: 180 }
+        // New: { duration_min: 150, duration_sec: 9000, distance_km: 180 }
+        let hours = null;
+        let km = null;
+
+        if (typeof tt.hours === "number") {
+          hours = tt.hours;
+        } else if (typeof tt.duration_min === "number") {
+          hours = tt.duration_min / 60;
+        }
+
+        if (typeof tt.km === "number") {
+          km = tt.km;
+        } else if (typeof tt.distance_km === "number") {
+          km = tt.distance_km;
+        }
+
+        if (hours !== null) {
+          r.travelHours = hours;
+          if (km !== null) r.distKm = km;
+        }
       }
       // minHours/maxHours von ALLEN Resorts (echte Zeiten + Schätzungen)
       if (typeof r.travelHours === "number" && isFinite(r.travelHours)) {
@@ -2337,7 +2395,7 @@ map.on("overlayremove", (e) => {
       timeSlider.value = 100;
     }
     updateTimeLabel(100);
-    applyTimeFilter(100);    
+    applyTimeFilter(100);
   }
 
   async function recalcTravelTimesFromOrigin() {

@@ -87,7 +87,11 @@
     try {
       const resortsResp = await fetch("data/resorts.json", { cache: "no-store" });
       if (resortsResp.ok) {
-        const resortsData = await resortsResp.json();
+        let resortsData = await resortsResp.json();
+        // Handle DBeaver export format: {"v_resort_json_export": [...]}
+        if (resortsData && resortsData.v_resort_json_export) {
+          resortsData = resortsData.v_resort_json_export;
+        }
         totalResorts = Array.isArray(resortsData) ? resortsData.length : 0;
       }
     } catch (_) {}

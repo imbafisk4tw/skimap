@@ -13,5 +13,10 @@
     "name": "Ljubljana",
     "lat": 46.074893,
     "lon": 14.505501
+  },
+  "alpe_dhuez": {
+    "name": "Alpe d'Huez",
+    "lat": 45.0919,
+    "lon": 6.0653
   }
 }

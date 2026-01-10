@@ -1,5 +1,124 @@
 # Skigebiete Karte - Entwicklungsstand
 
+## Abgeschlossene Arbeiten (Session 10.01.2026 - Abend)
+
+### 1. V2 Database: Travel Times Pipeline
+
+Neue Pipeline zum Berechnen und Exportieren von Fahrzeiten aus der V2 Datenbank:
+
+**Workflow:**
+```
+homes.json → sync_homes_and_routes_to_db.py → DB (home, precomputed_route)
+                      ↓ (OSRM)
+export_travel_times_from_db.py → data/travel_times/home_<id>.json
+                      ↓
+Frontend (Slider)
+```
+
+**Neue Python Scripts:**
+- `pipeline/scripts/sync_homes_and_routes_to_db.py` - Importiert Homes und berechnet OSRM-Routen
+- `pipeline/scripts/export_travel_times_from_db.py` - Exportiert Fahrzeiten als JSON
+
+**Verwendung:**
+```bash
+# Homes importieren
+python sync_homes_and_routes_to_db.py --import-homes
+
+# Routen für alle Homes berechnen (OSRM muss laufen)
+python sync_homes_and_routes_to_db.py --calc-routes --osrm http://localhost:5000
+
+# Fahrzeiten exportieren
+python export_travel_times_from_db.py
+```
+
+**Ergebnis:**
+- 4 Homes: muc, muc_home, ljubljana, alpe_dhuez
+- 1097 Routen pro Home (alle Resorts in der Alpenregion)
+- Travel-Times-Dateien: je ~120 KB
+
+### 2. Bug Fix: Home-Wechsel funktionierte nicht
+
+**Problem:** Beim Wechsel des Home-Dropdowns blieben die Fahrzeiten immer auf München.
+
+**Ursache:** In `initResortsFromJson()` wurde `stable_id` nicht ins Resort-Objekt kopiert. Der Lookup in `applyTravelTimesFromMap()` mit `r.stable_id` fand daher nichts.
+
+**Lösung:** `stable_id: r.stable_id || null` in `initResortsFromJson()` hinzugefügt (index.html:1730).
+
+### 3. DBeaver Export Format Support
+
+`homeRoutesSelector.js` erkennt jetzt das DBeaver-Export-Format:
+```javascript
+// Handle DBeaver export format: {"v_resort_json_export": [...]}
+if (resortsData && resortsData.v_resort_json_export) {
+  resortsData = resortsData.v_resort_json_export;
+}
+```
+
+### 4. Neuer Home: Alpe d'Huez
+
+Aktueller Standort als Home hinzugefügt in `data/homes.json`:
+```json
+"alpe_dhuez": {
+  "name": "Alpe d'Huez",
+  "lat": 45.0919,
+  "lon": 6.0653
+}
+```
+
+### 5. OSRM Hinweis
+
+Aktuelles OSRM-Paket: DACH-Region (DE, AT, CH)
+
+**Empfehlung für vollständige Alpen-Abdeckung:**
+- Geofabrik Alps Extract: https://download.geofabrik.de/europe/alps.html
+- Größe: 2.1 GB (pbf), ~8-10 GB nach OSRM-Build
+- Abdeckung: DE, AT, CH, FR, IT, SI
+
+---
+
+## Abgeschlossene Arbeiten (Session 10.01.2026 - Vormittag)
+
+### 1. Zukunftssicherer JSON-Export View (V2 Database)
+
+Neuer View `v_resort_json_export` mit allen relevanten Feldern aus dem V2 Schema:
+
+**Enthaltene Felder:**
+- **Basis:** id, stable_id, name, country (ISO + countryName), region, website
+- **Koordinaten:** lat, lon
+- **Stammdaten:** glacier, pistesKm, liftsTotal, maxElevation, minElevation
+- **Pässe:** sct (Boolean), ssc (Boolean), passes (Array mit stable_id, name, type)
+- **Gruppen:** primaryGroup, groups (Array mit stable_id, name, kind, isPrimary)
+- **Einstiegspunkte:** accessPointCount, primaryAccessPoint (stable_id, name, lat, lon, elevation)
+- **Live-Daten:** liveData (liftsOpen, status, snowValley, snowMountain, snowFresh, price, priceCurrency, updatedAt)
+- **Meta:** meta, createdAt, updatedAt
+
+**Dateien:**
+- `db/v_resort_json_export_v2.sql` - View-Definition mit Export-Befehlen
+
+### 2. Frontend an V2 Schema angepasst
+
+**Entfernt:**
+- `nearMuc` - War nur ein DE-Experiment, nicht mehr benötigt
+- Vereinfachte `noPass` Logik (nicht mehr abhängig von nearMuc)
+
+**Aktualisiert:**
+- Verbund-Filter unterstützt jetzt neues `groups` Array aus DB
+- Fallback auf Name-Parsing für Rückwärtskompatibilität
+
+**Dateien:**
+- `js/searchFilter.js` - Filter-Logik, Verbund-Index
+
+### 3. Pass-Sync Script (Snow Card Tirol, SuperSkiCard)
+
+Script zum Synchronisieren der Pass-Zuordnungen von resorts.json in die V2 Datenbank:
+- Fuzzy Name-Matching mit manuellen Mappings
+- Erreichte Abdeckung: 89/91 SCT (98%), 46/47 SSC (98%)
+
+**Dateien:**
+- `pipeline/Bergfex scraping/sync_passes_from_resorts_json.py`
+
+---
+
 ## Abgeschlossene Arbeiten (Session 09.01.2026)
 
 ### 1. Default Kartenausschnitt zentriert über den Alpen

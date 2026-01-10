@@ -45,7 +45,7 @@ function setMapDim(on) {
 
   function toCsv(rows) {
     const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
-    const header = ["name", "lat", "lon", "travelHours", "distKm", "sct", "ssc", "glacier", "nearMuc", "website"];
+    const header = ["name", "lat", "lon", "travelHours", "distKm", "sct", "ssc", "glacier", "website"];
     const lines = [header.join(",")];
 
     for (const r of rows) {
@@ -58,7 +58,6 @@ function setMapDim(on) {
         esc(hasPassExport(r, PASS_ID_SCT_EXPORT)),
         esc(hasPassExport(r, PASS_ID_SSC_EXPORT)),
         esc(!!r.glacier),
-        esc(!!r.nearMuc),
         esc(r.website || r.url || "")
       ].join(","));
     }
@@ -279,7 +278,7 @@ const timeSlider = document.getElementById("time-slider");
 
     // Aktuelle Filter-Werte (Minimum-Schwellenwerte)
     let filterValues = {
-      pistes: 0,
+      pistes: 10,  // Default: 10km Minimum
       lifts: 0,
       elevation: 0
     };
@@ -294,6 +293,12 @@ const timeSlider = document.getElementById("time-slider");
       filterRanges.pistes.max = Math.ceil(maxPistes / 10) * 10 || 300;
       filterRanges.lifts.max = Math.ceil(maxLifts / 5) * 5 || 100;
       filterRanges.elevation.max = Math.ceil(maxElevation / 100) * 100 || 4000;
+
+      // Slider-Positionen basierend auf Default-Werten setzen
+      const valueToPct = (val, range) => Math.round(((val - range.min) / (range.max - range.min)) * 100);
+      if (pistesSlider) pistesSlider.value = valueToPct(filterValues.pistes, filterRanges.pistes);
+      if (liftsSlider) liftsSlider.value = valueToPct(filterValues.lifts, filterRanges.lifts);
+      if (elevationSlider) elevationSlider.value = valueToPct(filterValues.elevation, filterRanges.elevation);
     }
 
     function updateFilterSliderLabels() {
@@ -307,12 +312,12 @@ const timeSlider = document.getElementById("time-slider");
     }
 
     // -------- Verbund-Filter --------
-    // Nutzer sollen auch kurze Eingaben wie "Skiwelt" treffen können,
-    // selbst wenn groupName in resorts.json länger ist (z.B. "SkiWelt Wilder Kaiser – Brixental").
-    // Deshalb indexieren wir mehrere Keys je Verbund (groupName, groupId und ggf. Kurzname aus r.name).
+    // Unterstützt sowohl das neue DB Schema (r.groups Array mit primaryGroup)
+    // als auch Fallback auf Name-Parsing für alte resorts.json Formate.
     let currentGroupId = null;
     let currentPct = Number(timeSlider?.value ?? 100);
 
+    // Hilfsfunktion: Extrahiert Verbundnamen aus Resort-Name (Fallback)
     function parseVerbund(resortName) {
       if (!resortName) return null;
 
@@ -327,9 +332,28 @@ const timeSlider = document.getElementById("time-slider");
       return null;
     }
 
+    // Hilfsfunktion: Holt Group-Info aus dem neuen DB Schema
+    function getResortGroups(r) {
+      // Neues Schema: groups Array mit primaryGroup
+      if (Array.isArray(r.groups) && r.groups.length > 0) {
+        return r.groups.map(g => ({
+          id: g.stable_id,
+          name: g.name,
+          isPrimary: !!g.isPrimary
+        }));
+      }
+      // Fallback: primaryGroup ohne groups Array
+      if (r.primaryGroup && r.primaryGroup.stable_id) {
+        return [{
+          id: r.primaryGroup.stable_id,
+          name: r.primaryGroup.name,
+          isPrimary: true
+        }];
+      }
+      return null;
+    }
+
     // Verbund-Index wird dynamisch aus `resorts` aufgebaut.
-    // Wichtig: `initSearchAndFilters()` wird bei dir *vor* dem Laden von resorts.json aufgerufen,
-    // deshalb muss der Index später (nachdem `resorts` befüllt wurde) erneut aufgebaut werden.
     let groupById = new Map();      // id -> { id, displayName, names:Set<string>, resorts: [] }
     let groupKeyToId = new Map();   // norm(anyKey) -> id
 
@@ -350,42 +374,39 @@ const timeSlider = document.getElementById("time-slider");
       };
 
       Object.values(resorts).forEach(r => {
+        // 1. Neues DB Schema: groups Array
+        const dbGroups = getResortGroups(r);
+        if (dbGroups && dbGroups.length > 0) {
+          for (const g of dbGroups) {
+            if (!g.id) continue;
+
+            if (!groupById.has(g.id)) {
+              groupById.set(g.id, { id: g.id, displayName: g.name || g.id, names: new Set(), resorts: [] });
+            }
+
+            const entry = groupById.get(g.id);
+            entry.resorts.push(r);
+            if (g.name) entry.names.add(g.name);
+            entry.names.add(g.id);
+          }
+          return; // DB Schema gefunden, kein Fallback nötig
+        }
+
+        // 2. Fallback: Name-Parsing (für alte Daten oder wenn groups leer)
         const shortNameRaw = parseVerbund(r.name); // z.B. "SkiWelt"
+        if (!shortNameRaw) return;
 
-        const groupNameRaw =
-          (typeof r.groupName === "string" && r.groupName.trim()) ? r.groupName.trim()
-          : (r.verbund && typeof r.verbund.name === "string" && r.verbund.name.trim()) ? r.verbund.name.trim()
-          : shortNameRaw;
-
-        const groupIdRaw =
-          (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim()
-          : (r.verbund && typeof r.verbund.id === "string" && r.verbund.id.trim()) ? r.verbund.id.trim()
-          : (shortNameRaw ? norm(shortNameRaw) : (groupNameRaw ? norm(groupNameRaw) : null));
-
+        const groupIdRaw = norm(shortNameRaw);
         if (!groupIdRaw) return;
 
         if (!groupById.has(groupIdRaw)) {
-          groupById.set(groupIdRaw, { id: groupIdRaw, displayName: null, names: new Set(), resorts: [] });
+          groupById.set(groupIdRaw, { id: groupIdRaw, displayName: shortNameRaw, names: new Set(), resorts: [] });
         }
 
         const entry = groupById.get(groupIdRaw);
         entry.resorts.push(r);
-
-        // Keys sammeln
-        if (groupNameRaw) entry.names.add(groupNameRaw);
-        if (shortNameRaw) entry.names.add(shortNameRaw);
+        entry.names.add(shortNameRaw);
         entry.names.add(groupIdRaw);
-
-        // displayName: möglichst kurz & menschenlesbar
-        const candidates = [shortNameRaw, groupNameRaw].filter(Boolean);
-        for (const c of candidates) {
-          if (!entry.displayName) entry.displayName = c;
-          else {
-            const cur = String(entry.displayName);
-            const cand = String(c);
-            if (cand.length < cur.length) entry.displayName = cand;
-          }
-        }
       });
 
       // Reverse lookup füllen
@@ -440,12 +461,14 @@ function updateVerbundUi() {
       ssc: true,
       both: true,
       glacier: true,
-      nearMuc: true,
       noPass: true,
       // Länder
       countryAT: true,
       countryDE: true,
-      countryCH: true
+      countryCH: true,
+      countryIT: true,
+      countryFR: true,
+      countrySI: true
     };
 
     // Pass-IDs aus der Datenbank
@@ -464,25 +487,32 @@ function updateVerbundUi() {
       if (country === "austria" || country === "at" || country === "österreich") return "AT";
       if (country === "germany" || country === "de" || country === "deutschland") return "DE";
       if (country === "switzerland" || country === "ch" || country === "schweiz") return "CH";
+      if (country === "italy" || country === "it" || country === "italien") return "IT";
+      if (country === "france" || country === "fr" || country === "frankreich") return "FR";
+      if (country === "slovenia" || country === "si" || country === "slowenien") return "SI";
       return country.toUpperCase();
     }
 
     function categoryMatch(r) {
-      // --- Länderfilter (AND-Logik) ---
+      // --- Länderfilter (OR-Logik) ---
       const countryCode = getCountryCode(r);
 
-      // Prüfe ob countryCode ein bekannter Code ist (AT, DE, CH)
-      const isKnownCountry = countryCode === "AT" || countryCode === "DE" || countryCode === "CH";
+      // Prüfe ob countryCode ein bekannter Code ist
+      const isKnownCountry = ["AT", "DE", "CH", "IT", "FR", "SI"].includes(countryCode);
 
       const countryMatch = (
         (filterState.countryAT && countryCode === "AT") ||
         (filterState.countryDE && countryCode === "DE") ||
-        (filterState.countryCH && countryCode === "CH")
+        (filterState.countryCH && countryCode === "CH") ||
+        (filterState.countryIT && countryCode === "IT") ||
+        (filterState.countryFR && countryCode === "FR") ||
+        (filterState.countrySI && countryCode === "SI")
       );
 
       // Wenn ein Land-Filter aktiv ist UND das Resort ein bekanntes Land hat,
       // muss es zu einem ausgewählten Land gehören
-      const anyCountrySelected = filterState.countryAT || filterState.countryDE || filterState.countryCH;
+      const anyCountrySelected = filterState.countryAT || filterState.countryDE || filterState.countryCH ||
+                                  filterState.countryIT || filterState.countryFR || filterState.countrySI;
       if (anyCountrySelected && isKnownCountry && !countryMatch) return false;
 
       // --- Pass-Zugehörigkeit über passes-Array ermitteln ---
@@ -496,19 +526,15 @@ function updateVerbundUi() {
       const isBoth = hasSct && hasSsc;      // Hat BEIDE Pässe
       const isGlacier = !!r.glacier;
 
-      // Near Munich: Resorts mit nearMuc Flag (ohne Pass)
-      const isNearMuc = !!(r.nearMuc && !hasAnyPass);
+      // No Pass: Resorts ohne jeglichen Pass
+      const isNoPass = !hasAnyPass;
 
-      // No Pass: Resorts ohne jeglichen Pass (und ohne nearMuc)
-      const isNoPass = !hasAnyPass && !r.nearMuc;
-
-      const baseSelected = !!(filterState.sct || filterState.ssc || filterState.both || filterState.nearMuc || filterState.noPass);
+      const baseSelected = !!(filterState.sct || filterState.ssc || filterState.both || filterState.noPass);
 
       const baseMatch = (
         (filterState.sct && isSctOnly) ||
         (filterState.ssc && isSscOnly) ||
         (filterState.both && isBoth) ||
-        (filterState.nearMuc && isNearMuc) ||
         (filterState.noPass && isNoPass)
       );
 
@@ -537,12 +563,14 @@ function updateVerbundUi() {
           <label><input type="checkbox" id="flt-at" checked> Österreich</label>
           <label><input type="checkbox" id="flt-de" checked> Deutschland</label>
           <label><input type="checkbox" id="flt-ch" checked> Schweiz</label>
+          <label><input type="checkbox" id="flt-it" checked> Italien</label>
+          <label><input type="checkbox" id="flt-fr" checked> Frankreich</label>
+          <label><input type="checkbox" id="flt-si" checked> Slowenien</label>
           <div class="filter-group-title">Pässe</div>
           <label><input type="checkbox" id="flt-sct" checked> Snow Card Tirol</label>
           <label><input type="checkbox" id="flt-ssc" checked> SuperSkiCard</label>
           <label><input type="checkbox" id="flt-both" checked> Both passes</label>
           <label><input type="checkbox" id="flt-nopass" checked> Ohne Pass</label>
-          <label><input type="checkbox" id="flt-muc" checked> Near Munich</label>
           <div class="filter-group-title">Sonstige</div>
           <label><input type="checkbox" id="flt-glacier" checked> Glaciers</label>
           <label><input type="checkbox" id="flt-dimmap"> Dark Mode</label>
@@ -559,12 +587,14 @@ function updateVerbundUi() {
         const elAT = document.getElementById("flt-at");
         const elDE = document.getElementById("flt-de");
         const elCH = document.getElementById("flt-ch");
+        const elIT = document.getElementById("flt-it");
+        const elFR = document.getElementById("flt-fr");
+        const elSI = document.getElementById("flt-si");
         // Pässe
         const elSct = document.getElementById("flt-sct");
         const elSsc = document.getElementById("flt-ssc");
         const elBoth = document.getElementById("flt-both");
         const elNoPass = document.getElementById("flt-nopass");
-        const elMuc = document.getElementById("flt-muc");
         // Sonstige
         const elGl = document.getElementById("flt-glacier");
         const elDim = document.getElementById("flt-dimmap");
@@ -590,19 +620,21 @@ function updateVerbundUi() {
           filterState.countryAT = elAT ? !!elAT.checked : true;
           filterState.countryDE = elDE ? !!elDE.checked : true;
           filterState.countryCH = elCH ? !!elCH.checked : true;
+          filterState.countryIT = elIT ? !!elIT.checked : true;
+          filterState.countryFR = elFR ? !!elFR.checked : true;
+          filterState.countrySI = elSI ? !!elSI.checked : true;
           // Pässe
           filterState.sct = elSct ? !!elSct.checked : true;
           filterState.ssc = elSsc ? !!elSsc.checked : true;
           filterState.both = elBoth ? !!elBoth.checked : true;
           filterState.noPass = elNoPass ? !!elNoPass.checked : true;
-          filterState.nearMuc = elMuc ? !!elMuc.checked : true;
           // Sonstige
           filterState.glacier = elGl ? !!elGl.checked : true;
 
           applyFilters(currentPct);
         };
 
-        [elAT, elDE, elCH, elSct, elSsc, elBoth, elNoPass, elMuc, elGl].forEach(el => {
+        [elAT, elDE, elCH, elIT, elFR, elSI, elSct, elSsc, elBoth, elNoPass, elGl].forEach(el => {
           if (!el) return;
           el.addEventListener("change", handler);
         });
@@ -740,15 +772,20 @@ function updateVerbundUi() {
       const minHours = getMinHours();
       const maxHours = getMaxHours();
       const limitHours = minHours + (pct / 100) * (maxHours - minHours);
-      // Verbund-Filter (primär über groupId/groupName aus resorts.json)
+
+      // Verbund-Filter (unterstützt neues DB Schema und Fallback)
       let inVerbund = true;
       if (currentGroupId) {
-        const thisGroupId =
-          (typeof r.groupId === "string" && r.groupId.trim()) ? r.groupId.trim()
-          : (r.verbund && typeof r.verbund.id === "string" && r.verbund.id.trim()) ? r.verbund.id.trim()
-          : (parseVerbund(r.name) ? norm(parseVerbund(r.name)) : null);
-
-        inVerbund = !!thisGroupId && String(thisGroupId) === String(currentGroupId);
+        // Neue DB Schema: groups Array
+        const dbGroups = getResortGroups(r);
+        if (dbGroups && dbGroups.length > 0) {
+          inVerbund = dbGroups.some(g => g.id === currentGroupId);
+        } else {
+          // Fallback: Name-Parsing
+          const shortName = parseVerbund(r.name);
+          const thisGroupId = shortName ? norm(shortName) : null;
+          inVerbund = !!thisGroupId && String(thisGroupId) === String(currentGroupId);
+        }
       }
 
 
@@ -1050,10 +1087,11 @@ function updateVerbundUi() {
       computeFilterRanges,
       updateFilterSliderLabels,
       resetStatSliders: function() {
-        filterValues.pistes = 0;
+        filterValues.pistes = 10;  // Default: 10km
         filterValues.lifts = 0;
         filterValues.elevation = 0;
-        if (pistesSlider) pistesSlider.value = 0;
+        const valueToPct = (val, range) => Math.round(((val - range.min) / (range.max - range.min)) * 100);
+        if (pistesSlider) pistesSlider.value = valueToPct(10, filterRanges.pistes);
         if (liftsSlider) liftsSlider.value = 0;
         if (elevationSlider) elevationSlider.value = 0;
         updateFilterSliderLabels();
