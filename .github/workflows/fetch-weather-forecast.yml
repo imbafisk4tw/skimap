@@ -1,0 +1,58 @@
+name: Fetch Weather Forecasts
+
+on:
+  # Manueller Trigger
+  workflow_dispatch:
+
+  # Automatisch 2x täglich (06:00 und 18:00 UTC)
+  schedule:
+    - cron: '0 6 * * *'   # 07:00 CET / 08:00 CEST
+    - cron: '0 18 * * *'  # 19:00 CET / 20:00 CEST
+
+jobs:
+  fetch-forecasts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Fetch weather forecasts
+        run: |
+          python pipeline/scripts/fetch_geosphere_forecast.py --json-only
+
+      - name: Commit and push forecast data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if there are changes
+          if git diff --quiet data/forecasts/; then
+            echo "No changes to forecast data"
+            exit 0
+          fi
+
+          git add data/forecasts/
+          git commit -m "Update weather forecasts $(date -u +%Y-%m-%d)"
+          git push
+
+      # Optional: Mit Datenbank (erfordert Secrets)
+      # - name: Fetch and save to database
+      #   env:
+      #     DB_HOST: ${{ secrets.DB_HOST }}
+      #     DB_PORT: ${{ secrets.DB_PORT }}
+      #     DB_NAME: ${{ secrets.DB_NAME }}
+      #     DB_USER: ${{ secrets.DB_USER }}
+      #     DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      #   run: |
+      #     pip install psycopg2-binary
+      #     python pipeline/scripts/fetch_geosphere_forecast.py

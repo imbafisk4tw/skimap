@@ -129,6 +129,72 @@
   box-sizing:border-box;
   width: 210px;
 }
+/* Panel Toggle Button (für einklappbare Boxen) */
+.filter-box .panel-toggle,
+.export-box .panel-toggle,
+.gps-box .panel-toggle,
+.leaflet-control-layers .panel-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 8px 0;
+  font-family: inherit;
+  font-weight: var(--panel-title-weight);
+  font-size: var(--panel-title-size);
+  color: rgba(0,0,0,0.86);
+  text-align: left;
+}
+.filter-box .panel-toggle:hover,
+.export-box .panel-toggle:hover,
+.gps-box .panel-toggle:hover,
+.leaflet-control-layers .panel-toggle:hover {
+  color: rgba(0,0,0,1);
+}
+.filter-box .toggle-title,
+.export-box .toggle-title,
+.gps-box .toggle-title,
+.leaflet-control-layers .toggle-title {
+  flex: 1;
+}
+.filter-box .toggle-icon,
+.export-box .toggle-icon,
+.gps-box .toggle-icon,
+.leaflet-control-layers .toggle-icon {
+  font-size: 10px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+.filter-box.collapsed .toggle-icon,
+.export-box.collapsed .toggle-icon,
+.gps-box.collapsed .toggle-icon,
+.leaflet-control-layers.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+.filter-box.collapsed .panel-content,
+.export-box.collapsed .panel-content,
+.gps-box.collapsed .panel-content,
+.leaflet-control-layers.collapsed .panel-content {
+  display: none;
+}
+.filter-box.collapsed,
+.export-box.collapsed,
+.gps-box.collapsed,
+.leaflet-control-layers.collapsed {
+  padding: 8px 10px;
+}
+.filter-box.collapsed .panel-toggle,
+.export-box.collapsed .panel-toggle,
+.gps-box.collapsed .panel-toggle,
+.leaflet-control-layers.collapsed .panel-toggle {
+  margin-bottom: 0;
+}
+
+/* Legacy: .title class (falls noch verwendet) */
 .filter-box .title,
 .export-box .title{
   font-weight: var(--panel-title-weight);
@@ -177,8 +243,50 @@
   margin: 0;
 }
 
+/* Leaflet Layers Control: Override für !important padding */
+.leaflet-control-layers.collapsed {
+  padding: 8px 10px !important;
+}
+
+/* GPS-Box Basis-Styling */
+.gps-box.leaflet-control {
+  background: var(--panel-bg);
+  padding: var(--panel-pad);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+  font-size: 13px;
+  line-height: 1.35;
+  box-sizing: border-box;
+  width: 210px;
+}
+.gps-box .gps-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.gps-box .gps-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+.gps-box .gps-center-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid rgba(0,0,0,0.35);
+  border-radius: 6px;
+  background: #f3f3f3;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.gps-box .gps-center-btn:hover {
+  background: #e9e9e9;
+}
+
 /* Export Buttons etwas "ruhiger" */
-.export-box button{
+.export-box button:not(.panel-toggle){
   width:100%;
   height: 36px;
   padding: 0 10px;
@@ -190,7 +298,7 @@
   background:#f3f3f3;
   cursor:pointer;
 }
-.export-box button:hover{ background:#e9e9e9; }
+.export-box button:not(.panel-toggle):hover{ background:#e9e9e9; }
 .export-box .hint{
   margin-top:8px;
   font-size:11px;
@@ -572,29 +680,20 @@ html, body {
         transition: transform 0.3s ease;
       }
 
-      /* Toggle-Button für mobile Slider-Box */
+      /* Mobile: Slider-Box Toggle anpassen */
       .slider-box-toggle {
-        display: flex !important;
-        align-items: center;
         justify-content: center;
-        width: 100%;
         height: 28px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
         margin: -8px 0 4px 0;
+      }
+      .slider-box-toggle .toggle-title {
+        display: none; /* Titel auf Mobile verstecken */
       }
       .slider-box-toggle .toggle-icon {
         font-size: 14px;
-        color: #666;
-        transition: transform 0.3s ease;
       }
       .slider-box.collapsed .toggle-icon {
         transform: rotate(180deg);
-      }
-      .slider-box.collapsed .slider-box-content {
-        display: none;
       }
       .slider-box.collapsed {
         padding: 4px 12px !important;
@@ -737,9 +836,35 @@ html, body {
   bottom: calc(20px + env(safe-area-inset-bottom, 0px));
 }
 
-/* Toggle-Button nur auf Mobile anzeigen */
+/* Toggle-Button für Slider-Box (Desktop + Mobile) */
 .slider-box-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.86);
+}
+.slider-box-toggle .toggle-icon {
+  font-size: 10px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+.slider-box.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+.slider-box.collapsed .slider-box-content {
   display: none;
+}
+.slider-box-toggle .toggle-title {
+  flex: 1;
+  text-align: left;
 }
 
 /* Mobile: etwas kompakter, damit nichts überlappt */
@@ -1123,6 +1248,20 @@ button, input, select, textarea{
   max-width: 100% !important;
 }
 
+/* Mobile-Panel: Panel-Toggles verstecken (Accordions übernehmen das Einklappen) */
+#mobile-panel .panel-toggle {
+  display: none !important;
+}
+#mobile-panel .panel-content {
+  display: block !important; /* Immer sichtbar im Mobile-Panel */
+}
+#mobile-panel .filter-box.collapsed,
+#mobile-panel .export-box.collapsed,
+#mobile-panel .gps-box.collapsed,
+#mobile-panel .leaflet-control-layers.collapsed {
+  padding: var(--panel-pad) !important; /* Reset collapsed padding */
+}
+
 /* GPS toggle inside export box */
 .export-box label{
   display:flex;
@@ -1295,9 +1434,10 @@ button, input, select, textarea{
 </div>
 
 <!-- Fahrzeit-Slider + Startpunkt -->
-<div class="slider-box collapsed" id="slider-box">
-  <button type="button" id="slider-box-toggle" class="slider-box-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="false">
-    <span class="toggle-icon">&#9660;</span>
+<div class="slider-box" id="slider-box">
+  <button type="button" id="slider-box-toggle" class="slider-box-toggle" aria-label="Slider ein-/ausklappen" aria-expanded="true">
+    <span class="toggle-title">Fahrzeit & Filter</span>
+    <span class="toggle-icon">▼</span>
   </button>
   <div class="slider-box-content">
   <div class="startpoint-row">
@@ -1426,23 +1566,82 @@ button, input, select, textarea{
     const driveTxt = buildDriveText(r);
     const mapsUrl = `https://www.google.com/maps?q=${r.lat},${r.lon}`;
 
+    // Pisten-Info (Bergfex System: blau, rot, schwarz)
+    let pistesLine = "";
+    if (r.pistesKm) {
+      let breakdown = [];
+      if (r.pistesBlueKm) breakdown.push(`<span style="color:#3b82f6">${r.pistesBlueKm} km</span>`);
+      if (r.pistesRedKm) breakdown.push(`<span style="color:#ef4444">${r.pistesRedKm} km</span>`);
+      if (r.pistesBlackKm) breakdown.push(`<span style="color:#1f2937">${r.pistesBlackKm} km</span>`);
+      const breakdownStr = breakdown.length ? ` (${breakdown.join(" / ")})` : "";
+      pistesLine = `<b>Pisten:</b> ${r.pistesKm} km${breakdownStr}<br/>`;
+    }
+
+    // Lifte-Info
+    let liftsLine = "";
+    if (r.liftsTotal) {
+      let liftDetails = [];
+      if (r.liftsGondola) liftDetails.push(`${r.liftsGondola} Gondeln`);
+      if (r.liftsChairlift) liftDetails.push(`${r.liftsChairlift} Sessel`);
+      if (r.liftsDraglift) liftDetails.push(`${r.liftsDraglift} Schlepp`);
+      const detailStr = liftDetails.length ? ` (${liftDetails.join(", ")})` : "";
+      liftsLine = `<b>Lifte:</b> ${r.liftsTotal}${detailStr}<br/>`;
+    }
+
+    // Höhe
+    let elevationLine = "";
+    if (r.minElevation || r.maxElevation) {
+      const min = r.minElevation ? `${r.minElevation}m` : "?";
+      const max = r.maxElevation ? `${r.maxElevation}m` : "?";
+      elevationLine = `<b>Höhe:</b> ${min} - ${max}<br/>`;
+    }
+
+    // Saison
+    let seasonLine = "";
+    if (r.seasonStart || r.seasonEnd) {
+      const formatDate = (d) => d ? new Date(d).toLocaleDateString('de-DE', {day: '2-digit', month: '2-digit'}) : "?";
+      seasonLine = `<b>Saison:</b> ${formatDate(r.seasonStart)} - ${formatDate(r.seasonEnd)}<br/>`;
+    }
+
+    // Betriebszeiten
+    let hoursLine = "";
+    if (r.operatingHours) {
+      hoursLine = `<b>Betrieb:</b> ${r.operatingHours.replace('-', ' - ')}<br/>`;
+    }
+
+    // Website
     let websiteLine = "";
     if (r.website) {
       const url = r.website.startsWith("http") ? r.website : "https://" + r.website;
-      const label = url.replace(/^https?:\/\//, "");
-      websiteLine = `<b>Website:</b> <a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a><br/>`;
+      const label = url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+      websiteLine = `<b>Website:</b> <a href="${url}" target="_blank" rel="noopener">${label}</a><br/>`;
     }
 
+    // Bergfex Link
+    let bergfexLine = "";
+    if (r.bergfexUrl) {
+      bergfexLine = `<a href="${r.bergfexUrl}" target="_blank" rel="noopener" style="color:#f97316">Bergfex</a>`;
+    }
+
+    // Links zusammenfassen
+    let linksLine = "";
+    const links = [];
+    links.push(`<a href="${mapsUrl}" target="_blank" rel="noopener">Google Maps</a>`);
+    if (r.bergfexUrl) links.push(`<a href="${r.bergfexUrl}" target="_blank" rel="noopener" style="color:#f97316">Bergfex</a>`);
+    linksLine = links.join(" · ");
+
     return `
-      <div style="font-size:13px">
-        <b>${r.name}</b><br/>
+      <div style="font-size:13px; line-height:1.5">
+        <b style="font-size:14px">${r.name}</b>${r.glacier ? ' <span title="Gletscherskigebiet">❄️</span>' : ''}<br/>
+        ${pistesLine}
+        ${liftsLine}
+        ${elevationLine}
+        ${seasonLine}
+        ${hoursLine}
         <b>Pässe:</b> ${passesStr}<br/>
-        <b>Gletscher:</b> ${r.glacier ? "Ja" : "Nein"}<br/>
         ${websiteLine}
-        <b>Ab Zuhause:</b> ${driveTxt}<br/>
-        <a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">
-          In Google Maps öffnen
-        </a>
+        <b>Anfahrt:</b> ${driveTxt}<br/>
+        <div style="margin-top:4px">${linksLine}</div>
       </div>
     `;
   }
@@ -1737,9 +1936,19 @@ button, input, select, textarea{
         glacier: !!r.glacier,
         website: (typeof r.website === "string" && r.website.trim()) ? r.website.trim() : null,
         liftsTotal: (r.liftsTotal != null) ? Number(r.liftsTotal) : null,
+        liftsGondola: (r.liftsGondola != null) ? Number(r.liftsGondola) : null,
+        liftsChairlift: (r.liftsChairlift != null) ? Number(r.liftsChairlift) : null,
+        liftsDraglift: (r.liftsDraglift != null) ? Number(r.liftsDraglift) : null,
         pistesKm: (r.pistesKm != null) ? Number(r.pistesKm) : null,
+        pistesBlueKm: (r.pistesBlueKm != null) ? Number(r.pistesBlueKm) : null,
+        pistesRedKm: (r.pistesRedKm != null) ? Number(r.pistesRedKm) : null,
+        pistesBlackKm: (r.pistesBlackKm != null) ? Number(r.pistesBlackKm) : null,
         maxElevation: (r.maxElevation != null) ? Number(r.maxElevation) : null,
         minElevation: (r.minElevation != null) ? Number(r.minElevation) : null,
+        seasonStart: r.seasonStart || null,
+        seasonEnd: r.seasonEnd || null,
+        operatingHours: r.operatingHours || null,
+        bergfexUrl: r.bergfexUrl || null,
         // Gruppen für Verbund-Filter (neues DB Schema)
         groups: r.groups || [],
         primaryGroup: r.primaryGroup || null,
@@ -2119,6 +2328,36 @@ map.on("overlayremove", (e) => {
     const c = lc && lc.getContainer ? lc.getContainer() : document.querySelector('.leaflet-control-layers');
     if (!c) return;
 
+    // Collapsible Toggle-Button hinzufügen (falls noch nicht vorhanden)
+    if (!c.querySelector('.panel-toggle')) {
+      // Existierenden Inhalt in panel-content wrappen
+      const list = c.querySelector('.leaflet-control-layers-list');
+      if (list) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'panel-content';
+        list.parentNode.insertBefore(wrapper, list);
+        wrapper.appendChild(list);
+      }
+
+      // Toggle-Button einfügen
+      const toggleBtn = document.createElement('button');
+      toggleBtn.type = 'button';
+      toggleBtn.className = 'panel-toggle';
+      toggleBtn.setAttribute('aria-label', 'Layer ein-/ausklappen');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.innerHTML = '<span class="toggle-title">Layer</span><span class="toggle-icon">▼</span>';
+      c.insertBefore(toggleBtn, c.firstChild);
+
+      // Standardmäßig eingeklappt
+      c.classList.add('collapsed');
+
+      // Toggle-Verhalten
+      toggleBtn.addEventListener('click', () => {
+        const isCollapsed = c.classList.toggle('collapsed');
+        toggleBtn.setAttribute('aria-expanded', !isCollapsed);
+      });
+    }
+
     // Gruppenüberschriften
     const base = c.querySelector('.leaflet-control-layers-base');
     const ov   = c.querySelector('.leaflet-control-layers-overlays');
@@ -2139,7 +2378,10 @@ map.on("overlayremove", (e) => {
         </button>
         <div id="alpe-live-status" style="margin-top:6px;font-size:11px;color:rgba(0,0,0,0.68);"></div>
       `;
-      c.appendChild(wrap);
+      // In panel-content einfügen, damit es auch collapsed wird
+      const pc = c.querySelector('.panel-content');
+      if (pc) pc.appendChild(wrap);
+      else c.appendChild(wrap);
 
       const btn = wrap.querySelector('#alpe-live-reload');
       btn.addEventListener('click', () => { reloadAlpeLiveOSM(); });
@@ -2670,7 +2912,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadResortsAndInit();
   });
 
-  // Slider-Box Toggle für Mobile
+  // Slider-Box Toggle (Desktop + Mobile)
   (function() {
     const sliderBox = document.getElementById('slider-box');
     const toggleBtn = document.getElementById('slider-box-toggle');
@@ -2700,6 +2942,11 @@ document.addEventListener("DOMContentLoaded", () => {
     <summary>Export</summary>
     <div id="panel-export" class="panel-section"></div>
   </details>
+
+  <details class="panel-accordion">
+    <summary>GPS</summary>
+    <div id="panel-gps" class="panel-section"></div>
+  </details>
 </aside>
 
 
@@ -2711,6 +2958,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const panelLayers = document.getElementById('panel-layers');
     const panelFilters = document.getElementById('panel-filters');
     const panelExport = document.getElementById('panel-export');
+    const panelGps = document.getElementById('panel-gps');
     if (!btn || !backdrop || !panel || !panelLayers || !panelFilters || !panelExport) return;
 
     const mq = window.matchMedia('(max-width: 720px)');
@@ -2750,17 +2998,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const layers = document.querySelector('.leaflet-control-layers');
       const filters = document.querySelector('.filter-box');
       const exportBox = document.querySelector('.export-box');
+      const gpsBox = document.querySelector('.gps-box');
 
       if (isMobile()) {
         if (layers && layers.parentNode !== panelLayers) panelLayers.appendChild(layers);
         if (filters && filters.parentNode !== panelFilters) panelFilters.appendChild(filters);
         if (exportBox && exportBox.parentNode !== panelExport) panelExport.appendChild(exportBox);
+        if (gpsBox && panelGps && gpsBox.parentNode !== panelGps) panelGps.appendChild(gpsBox);
       } else {
         const stack = ensureDesktopStack();
         if (!stack) return;
         if (layers && layers.parentNode !== stack) stack.appendChild(layers);
         if (filters && filters.parentNode !== stack) stack.appendChild(filters);
         if (exportBox && exportBox.parentNode !== stack) stack.appendChild(exportBox);
+        if (gpsBox && gpsBox.parentNode !== stack) stack.appendChild(gpsBox);
         closePanel(); // ensure panel isn't stuck open when resizing to desktop
       }
     }
@@ -2774,7 +3025,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const layers = document.querySelector('.leaflet-control-layers');
       const filters = document.querySelector('.filter-box');
       const exportBox = document.querySelector('.export-box');
-      if ((layers && filters && exportBox) || tries > 50) clearInterval(timer);
+      const gpsBox = document.querySelector('.gps-box');
+      if ((layers && filters && exportBox && gpsBox) || tries > 50) clearInterval(timer);
     }, 200);
 
     window.addEventListener('resize', () => placeControls());

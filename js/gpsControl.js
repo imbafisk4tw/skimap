@@ -236,58 +236,73 @@
     new GpsControl().addTo(map);
   }
 
-  function injectUi(exportBox) {
-    if (!exportBox || document.getElementById("gps-toggle")) return;
+  function createGpsBox() {
+    if (document.getElementById("gps-toggle")) return;
 
-    const wrap = document.createElement("div");
-    wrap.className = "gps-control";
-    wrap.style.marginTop = "10px";
-    wrap.style.paddingTop = "8px";
-    wrap.style.borderTop = "1px solid rgba(0,0,0,0.12)";
+    // Eigene GPS-Box als Leaflet Control erstellen
+    const GpsControl = L.Control.extend({
+      options: { position: "topright" },
+      onAdd: function () {
+        const div = L.DomUtil.create("div", "gps-box leaflet-control collapsed");
+        div.innerHTML = `
+          <button type="button" class="panel-toggle" aria-label="GPS ein-/ausklappen" aria-expanded="false">
+            <span class="toggle-title">GPS</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="panel-content">
+            <div class="gps-row">
+              <label for="gps-toggle">
+                <input type="checkbox" id="gps-toggle">
+                <span>Position anzeigen</span>
+              </label>
+              <button type="button" class="gps-center-btn" title="Auf meine Position zentrieren">📍 Zentrieren</button>
+            </div>
+          </div>
+        `;
+        L.DomEvent.disableClickPropagation(div);
+        L.DomEvent.disableScrollPropagation(div);
+        return div;
+      }
+    });
 
-    const row = document.createElement("div");
-    row.className = "gps-row";
+    new GpsControl().addTo(map);
 
-    const label = document.createElement("label");
-    label.htmlFor = "gps-toggle";
+    // Wiring nach kurzem Delay (DOM muss bereit sein)
+    setTimeout(() => {
+      const gpsBox = document.querySelector(".gps-box");
+      if (!gpsBox) return;
 
-    const cb = document.createElement("input");
-    cb.type = "checkbox";
-    cb.id = "gps-toggle";
+      // Toggle-Button
+      const toggleBtn = gpsBox.querySelector(".panel-toggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const isCollapsed = gpsBox.classList.toggle("collapsed");
+          toggleBtn.setAttribute("aria-expanded", !isCollapsed);
+        });
+      }
 
-    const text = document.createElement("span");
-    text.textContent = "GPS: Position anzeigen";
+      // Checkbox
+      const cb = document.getElementById("gps-toggle");
+      if (cb) {
+        cb.addEventListener("change", () => setEnabled(cb.checked));
+        // restore last state
+        const stored = readStoredEnabled();
+        if (stored) setEnabled(true);
+      }
 
-    label.appendChild(cb);
-    label.appendChild(text);
-
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "gps-center-btn";
-    btn.title = "Auf meine Position zentrieren";
-    btn.textContent = "📍 Zentrieren";
-
-    row.appendChild(label);
-    row.appendChild(btn);
-
-    wrap.appendChild(row);
-    exportBox.appendChild(wrap);
-
-    cb.addEventListener("change", () => setEnabled(cb.checked));
-
-    btn.addEventListener("click", () => centerOnce());
-
-    // restore last state (best effort)
-    const stored = readStoredEnabled();
-    if (stored) setEnabled(true);
+      // Zentrieren-Button
+      const centerBtn = gpsBox.querySelector(".gps-center-btn");
+      if (centerBtn) {
+        centerBtn.addEventListener("click", () => centerOnce());
+      }
+    }, 0);
   }
 
-  function waitForExportBoxAndInject() {
+  function waitForMapAndCreate() {
     let tries = 0;
     const t = setInterval(() => {
-      const exportBox = document.querySelector(".export-box");
-      if (exportBox) {
-        injectUi(exportBox);
+      if (map && typeof L !== "undefined") {
+        createGpsBox();
         clearInterval(t);
       }
       tries += 1;
@@ -302,11 +317,11 @@
     map.on("locationfound", onLocationFound);
     map.on("locationerror", onLocationError);
 
-    // Create standalone map button (above zoom controls)
+    // Create standalone map button (above zoom controls on mobile)
     createMapButton();
 
-    // Also inject into export-box for desktop control panel
-    waitForExportBoxAndInject();
+    // Create GPS box as separate Leaflet control (desktop)
+    waitForMapAndCreate();
   }
 
   window.GpsControl = { init };

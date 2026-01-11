@@ -558,7 +558,11 @@ function updateVerbundUi() {
       ctrl.onAdd = function () {
         const div = L.DomUtil.create("div", "filter-box leaflet-control");
         div.innerHTML = `
-          <div class="title">Filters</div>
+          <button type="button" class="panel-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="true">
+            <span class="toggle-title">Filter</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="panel-content">
           <div class="filter-group-title">Länder</div>
           <label><input type="checkbox" id="flt-at" checked> Österreich</label>
           <label><input type="checkbox" id="flt-de" checked> Deutschland</label>
@@ -574,6 +578,7 @@ function updateVerbundUi() {
           <div class="filter-group-title">Sonstige</div>
           <label><input type="checkbox" id="flt-glacier" checked> Glaciers</label>
           <label><input type="checkbox" id="flt-dimmap"> Dark Mode</label>
+          </div><!-- /.panel-content -->
 `;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
@@ -583,6 +588,16 @@ function updateVerbundUi() {
 
       // wiring (nachdem es im DOM ist)
       const wire = () => {
+        // Toggle-Button für Filter-Box
+        const filterBox = document.querySelector(".filter-box.leaflet-control");
+        const toggleBtn = filterBox && filterBox.querySelector(".panel-toggle");
+        if (toggleBtn && filterBox) {
+          toggleBtn.addEventListener("click", () => {
+            const isCollapsed = filterBox.classList.toggle("collapsed");
+            toggleBtn.setAttribute("aria-expanded", !isCollapsed);
+          });
+        }
+
         // Länder
         const elAT = document.getElementById("flt-at");
         const elDE = document.getElementById("flt-de");
@@ -649,14 +664,31 @@ function updateVerbundUi() {
 
       const exportControl = L.control({ position: "topright" });
       exportControl.onAdd = function () {
-        const div = L.DomUtil.create("div", "export-box leaflet-control");
+        const div = L.DomUtil.create("div", "export-box leaflet-control collapsed");
         div.innerHTML = `
-          <div class="title">Export (Slider Selection)</div>
+          <button type="button" class="panel-toggle" aria-label="Export ein-/ausklappen" aria-expanded="false">
+            <span class="toggle-title">Export</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="panel-content">
           <button id="${exportCsvBtnId}" type="button">CSV</button>
           <button id="${exportKmlBtnId}" type="button">KML</button>
+          </div><!-- /.panel-content -->
 `;
         L.DomEvent.disableClickPropagation(div);
         L.DomEvent.disableScrollPropagation(div);
+
+        // Toggle-Button wiring
+        setTimeout(() => {
+          const toggleBtn = div.querySelector(".panel-toggle");
+          if (toggleBtn) {
+            toggleBtn.addEventListener("click", () => {
+              const isCollapsed = div.classList.toggle("collapsed");
+              toggleBtn.setAttribute("aria-expanded", !isCollapsed);
+            });
+          }
+        }, 0);
+
         return div;
       };
       exportControl.addTo(map);

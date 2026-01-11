@@ -35,9 +35,19 @@ SELECT
         -- Stammdaten
         'glacier', COALESCE(r.is_glacier, false),
         'pistesKm', r.pistes_km,
+        'pistesBlueKm', r.pistes_blue_km,
+        'pistesRedKm', r.pistes_red_km,
+        'pistesBlackKm', r.pistes_black_km,
         'liftsTotal', r.lifts_total,
+        'liftsGondola', r.lifts_gondola,
+        'liftsChairlift', r.lifts_chairlift,
+        'liftsDraglift', r.lifts_draglift,
         'maxElevation', r.max_elevation_m,
         'minElevation', r.min_elevation_m,
+        'seasonStart', r.season_start,
+        'seasonEnd', r.season_end,
+        'operatingHours', r.operating_hours,
+        'bergfexUrl', r.bergfex_url,
 
         -- Alle Pässe als Array (sct/ssc können daraus abgeleitet werden)
         'passes', COALESCE(
