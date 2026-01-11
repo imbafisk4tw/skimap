@@ -39,19 +39,7 @@ SELECT
         'maxElevation', r.max_elevation_m,
         'minElevation', r.min_elevation_m,
 
-        -- Pässe (Boolean Flags für schnellen Zugriff)
-        'sct', EXISTS (
-            SELECT 1 FROM resort_pass rp
-            JOIN pass p ON p.id = rp.pass_id
-            WHERE rp.resort_id = r.id AND p.stable_id = 'snowcard-tirol'
-        ),
-        'ssc', EXISTS (
-            SELECT 1 FROM resort_pass rp
-            JOIN pass p ON p.id = rp.pass_id
-            WHERE rp.resort_id = r.id AND p.stable_id = 'superskicard'
-        ),
-
-        -- Alle Pässe als Array
+        -- Alle Pässe als Array (sct/ssc können daraus abgeleitet werden)
         'passes', COALESCE(
             (SELECT jsonb_agg(jsonb_build_object(
                 'stable_id', p.stable_id,

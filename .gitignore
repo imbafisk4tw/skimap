@@ -110,3 +110,11 @@ pipeline/scripts/merge_swiss_resorts.py
 # local tooling
 .claude/
 
+########################################
+# Einmalige Migrations-/Vergleichs-Scripts
+########################################
+db/scripts/insert_missing_*.sql
+db/scripts/update_resort_stats.sql
+pipeline/scripts/compare_ssc*.js
+pipeline/scripts/fix_sct_and_add_missing.js
+
