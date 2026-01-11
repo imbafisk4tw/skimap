@@ -1,0 +1,4477 @@
+{
+  "generated_at": "2026-01-11T21:09:42.437169+00:00",
+  "source": "GeoSphere Austria",
+  "dataset": "nwp-v1-1h-2500m",
+  "forecasts": {
+    "annaberg-lammertal": {
+      "name": "Annaberg / Lungötz / Dachstein West",
+      "lat": 47.5151668,
+      "lon": 13.4499498,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -9.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -9.2,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -10.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 0,
+          "temp_2m": -10.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 8,
+          "temp_2m": -9.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 84,
+          "temp_2m": -8.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 170,
+          "temp_2m": -5.7,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 293,
+          "temp_2m": -3.6,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 391,
+          "temp_2m": -2.3,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 482,
+          "temp_2m": -1.2,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 478,
+          "temp_2m": -0.4,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 257,
+          "temp_2m": -1.1,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.6,
+          "snow_limit_m": 294,
+          "temp_2m": -1.3,
+          "precip_mm": 0.8
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 1.0,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 471,
+          "temp_2m": -0.4,
+          "precip_mm": 1.3
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 1.4,
+          "snowfall_cm": 1.2,
+          "snow_limit_m": 593,
+          "temp_2m": 0.1,
+          "precip_mm": 2.0
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 2.3,
+          "snowfall_cm": 1.8,
+          "snow_limit_m": 691,
+          "temp_2m": 0.3,
+          "precip_mm": 3.7
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 788,
+          "temp_2m": 0.6,
+          "precip_mm": 4.6
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 3.0,
+          "snowfall_cm": 2.4,
+          "snow_limit_m": 958,
+          "temp_2m": 1.0,
+          "precip_mm": 5.2
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 3.0,
+          "snowfall_cm": 2.4,
+          "snow_limit_m": 1052,
+          "temp_2m": 1.1,
+          "precip_mm": 6.3
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 1067,
+          "temp_2m": 1.2,
+          "precip_mm": 8.3
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 1106,
+          "temp_2m": 1.4,
+          "precip_mm": 9.7
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1209,
+          "temp_2m": 1.3,
+          "precip_mm": 11.4
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1346,
+          "temp_2m": 1.7,
+          "precip_mm": 12.1
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1468,
+          "temp_2m": 1.9,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1440,
+          "temp_2m": 1.8,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1483,
+          "temp_2m": 1.8,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1504,
+          "temp_2m": 2.2,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1504,
+          "temp_2m": 2.4,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1482,
+          "temp_2m": 2.2,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1466,
+          "temp_2m": 3.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1419,
+          "temp_2m": 3.6,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1424,
+          "temp_2m": 3.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1418,
+          "temp_2m": 3.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1359,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1340,
+          "temp_2m": 5.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1369,
+          "temp_2m": 5.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1410,
+          "temp_2m": 6.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1462,
+          "temp_2m": 6.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1546,
+          "temp_2m": 6.5,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1625,
+          "temp_2m": 5.9,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1748,
+          "temp_2m": 5.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1849,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1913,
+          "temp_2m": 4.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1969,
+          "temp_2m": 4.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2019,
+          "temp_2m": 4.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2058,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2090,
+          "temp_2m": 3.8,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2111,
+          "temp_2m": 2.7,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2144,
+          "temp_2m": 2.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2176,
+          "temp_2m": 1.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2182,
+          "temp_2m": 1.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2174,
+          "temp_2m": 1.5,
+          "precip_mm": 12.4
+        }
+      ]
+    },
+    "stanton-stchristoph": {
+      "name": "St. Anton / Arlberg",
+      "lat": 47.1826543,
+      "lon": 10.1404336,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 393,
+          "temp_2m": -8.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 459,
+          "temp_2m": -7.9,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 515,
+          "temp_2m": -7.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 595,
+          "temp_2m": -7.1,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 688,
+          "temp_2m": -6.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 814,
+          "temp_2m": -5.9,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 912,
+          "temp_2m": -5.0,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 965,
+          "temp_2m": -4.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 738,
+          "temp_2m": -5.4,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.5,
+          "snowfall_cm": 0.6,
+          "snow_limit_m": 696,
+          "temp_2m": -6.6,
+          "precip_mm": 0.6
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.7,
+          "snowfall_cm": 0.9,
+          "snow_limit_m": 673,
+          "temp_2m": -6.2,
+          "precip_mm": 0.8
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 1.2,
+          "snowfall_cm": 1.4,
+          "snow_limit_m": 769,
+          "temp_2m": -6.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.6,
+          "snow_limit_m": 948,
+          "temp_2m": -5.0,
+          "precip_mm": 1.8
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1055,
+          "temp_2m": -4.2,
+          "precip_mm": 2.4
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 2.5,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1139,
+          "temp_2m": -3.4,
+          "precip_mm": 2.9
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 3.1,
+          "snowfall_cm": 3.1,
+          "snow_limit_m": 1161,
+          "temp_2m": -3.2,
+          "precip_mm": 3.7
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 3.6,
+          "snowfall_cm": 3.6,
+          "snow_limit_m": 1236,
+          "temp_2m": -2.6,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 3.9,
+          "snowfall_cm": 3.9,
+          "snow_limit_m": 1313,
+          "temp_2m": -2.2,
+          "precip_mm": 4.7
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 4.6,
+          "snowfall_cm": 4.6,
+          "snow_limit_m": 1351,
+          "temp_2m": -2.0,
+          "precip_mm": 5.6
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 5.5,
+          "snowfall_cm": 5.5,
+          "snow_limit_m": 1384,
+          "temp_2m": -1.8,
+          "precip_mm": 6.7
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 6.1,
+          "snowfall_cm": 6.1,
+          "snow_limit_m": 1404,
+          "temp_2m": -1.7,
+          "precip_mm": 7.5
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 6.8,
+          "snowfall_cm": 6.8,
+          "snow_limit_m": 1416,
+          "temp_2m": -1.6,
+          "precip_mm": 8.4
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1456,
+          "temp_2m": -1.6,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1492,
+          "temp_2m": -1.1,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1536,
+          "temp_2m": -0.8,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1561,
+          "temp_2m": -0.8,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1570,
+          "temp_2m": -0.8,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1578,
+          "temp_2m": -1.0,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1592,
+          "temp_2m": -0.9,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1598,
+          "temp_2m": -0.9,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1593,
+          "temp_2m": -0.8,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1571,
+          "temp_2m": -0.3,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1559,
+          "temp_2m": -0.5,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1555,
+          "temp_2m": -1.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1589,
+          "temp_2m": -0.9,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1642,
+          "temp_2m": -1.1,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1699,
+          "temp_2m": -0.7,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 6.9,
+          "snow_limit_m": 1761,
+          "temp_2m": -0.3,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 1842,
+          "temp_2m": 0.4,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 1939,
+          "temp_2m": 1.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2044,
+          "temp_2m": 1.9,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2098,
+          "temp_2m": 2.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2139,
+          "temp_2m": 2.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2162,
+          "temp_2m": 2.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2180,
+          "temp_2m": 2.2,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2185,
+          "temp_2m": 2.1,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2174,
+          "temp_2m": 1.8,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2159,
+          "temp_2m": 1.6,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2144,
+          "temp_2m": 1.6,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2123,
+          "temp_2m": 1.6,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2094,
+          "temp_2m": 1.4,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2071,
+          "temp_2m": 1.3,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 2037,
+          "temp_2m": 1.0,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 1984,
+          "temp_2m": 0.9,
+          "precip_mm": 8.5
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 6.9,
+          "snowfall_cm": 5.6,
+          "snow_limit_m": 1942,
+          "temp_2m": 0.9,
+          "precip_mm": 8.5
+        }
+      ]
+    },
+    "katschberg": {
+      "name": "Katschberg",
+      "lat": 47.05,
+      "lon": 13.6167,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": null,
+          "temp_2m": -9.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": null,
+          "temp_2m": -9.6,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": null,
+          "temp_2m": -9.4,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": null,
+          "temp_2m": -9.2,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 5,
+          "temp_2m": -8.4,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 76,
+          "temp_2m": -7.7,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 163,
+          "temp_2m": -7.4,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 255,
+          "temp_2m": -7.5,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 353,
+          "temp_2m": -7.4,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 404,
+          "temp_2m": -7.1,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 458,
+          "temp_2m": -6.6,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 529,
+          "temp_2m": -5.4,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 593,
+          "temp_2m": -3.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 622,
+          "temp_2m": -2.7,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 647,
+          "temp_2m": -2.4,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 671,
+          "temp_2m": -3.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 810,
+          "temp_2m": -2.6,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 0.4,
+          "snowfall_cm": 0.4,
+          "snow_limit_m": 861,
+          "temp_2m": -3.1,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 0.5,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1034,
+          "temp_2m": -3.0,
+          "precip_mm": 0.5
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 0.5,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1250,
+          "temp_2m": -0.6,
+          "precip_mm": 0.5
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.6,
+          "snow_limit_m": 1238,
+          "temp_2m": -1.5,
+          "precip_mm": 0.7
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 0.8,
+          "snowfall_cm": 0.8,
+          "snow_limit_m": 1149,
+          "temp_2m": -2.6,
+          "precip_mm": 0.9
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 1.0,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1224,
+          "temp_2m": -2.3,
+          "precip_mm": 1.2
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 1.2,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1407,
+          "temp_2m": 0.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1497,
+          "temp_2m": 1.2,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1494,
+          "temp_2m": 1.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1540,
+          "temp_2m": 1.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1580,
+          "temp_2m": 2.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1586,
+          "temp_2m": 2.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1591,
+          "temp_2m": 2.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1586,
+          "temp_2m": 0.8,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1627,
+          "temp_2m": 0.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1638,
+          "temp_2m": -0.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1628,
+          "temp_2m": -0.6,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1616,
+          "temp_2m": 2.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1630,
+          "temp_2m": 2.6,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1640,
+          "temp_2m": 3.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1674,
+          "temp_2m": 3.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1713,
+          "temp_2m": 3.7,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1753,
+          "temp_2m": 4.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1753,
+          "temp_2m": 3.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1757,
+          "temp_2m": 2.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1749,
+          "temp_2m": 1.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1735,
+          "temp_2m": 1.7,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1668,
+          "temp_2m": 1.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1568,
+          "temp_2m": 1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1476,
+          "temp_2m": 0.6,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1418,
+          "temp_2m": 0.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1370,
+          "temp_2m": -0.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1325,
+          "temp_2m": -0.8,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1281,
+          "temp_2m": -1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1257,
+          "temp_2m": -1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1208,
+          "temp_2m": -1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1170,
+          "temp_2m": -1.0,
+          "precip_mm": 1.4
+        }
+      ]
+    },
+    "venet": {
+      "name": "Landeck / Zams / Fliess / Venetregion",
+      "lat": 47.135006,
+      "lon": 10.578077,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 295,
+          "temp_2m": -11.1,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 335,
+          "temp_2m": -11.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 374,
+          "temp_2m": -11.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 426,
+          "temp_2m": -11.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 512,
+          "temp_2m": -11.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 630,
+          "temp_2m": -10.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 748,
+          "temp_2m": -8.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 876,
+          "temp_2m": -6.1,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 970,
+          "temp_2m": -3.2,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 861,
+          "temp_2m": -1.3,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 831,
+          "temp_2m": -2.3,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 882,
+          "temp_2m": -1.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 991,
+          "temp_2m": -1.0,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1221,
+          "temp_2m": 1.3,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1365,
+          "temp_2m": 3.7,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1490,
+          "temp_2m": 5.3,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1542,
+          "temp_2m": 5.4,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1602,
+          "temp_2m": 6.3,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1591,
+          "temp_2m": 5.5,
+          "precip_mm": 0.5
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1562,
+          "temp_2m": 3.7,
+          "precip_mm": 0.8
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1570,
+          "temp_2m": 1.9,
+          "precip_mm": 1.2
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1573,
+          "temp_2m": 1.0,
+          "precip_mm": 1.3
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1586,
+          "temp_2m": 1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1604,
+          "temp_2m": 1.8,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1625,
+          "temp_2m": 1.7,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1657,
+          "temp_2m": 2.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1685,
+          "temp_2m": 1.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1698,
+          "temp_2m": 2.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1723,
+          "temp_2m": 0.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1731,
+          "temp_2m": 0.5,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1748,
+          "temp_2m": 0.6,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1735,
+          "temp_2m": 1.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1715,
+          "temp_2m": 2.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1704,
+          "temp_2m": 1.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1721,
+          "temp_2m": 1.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1735,
+          "temp_2m": 2.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1754,
+          "temp_2m": 3.2,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1802,
+          "temp_2m": 4.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1893,
+          "temp_2m": 5.5,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1983,
+          "temp_2m": 6.5,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2068,
+          "temp_2m": 7.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2131,
+          "temp_2m": 7.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2142,
+          "temp_2m": 6.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2135,
+          "temp_2m": 3.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2099,
+          "temp_2m": 0.0,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2075,
+          "temp_2m": -1.6,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2059,
+          "temp_2m": -2.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2037,
+          "temp_2m": -3.2,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2023,
+          "temp_2m": -3.3,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2019,
+          "temp_2m": -3.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2003,
+          "temp_2m": -3.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1991,
+          "temp_2m": -3.4,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1977,
+          "temp_2m": -3.5,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1941,
+          "temp_2m": -3.5,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1904,
+          "temp_2m": -3.5,
+          "precip_mm": 1.4
+        }
+      ]
+    },
+    "russbach": {
+      "name": "Rußbach am Paß Gschütt / Dachstein West",
+      "lat": 47.5187287,
+      "lon": 13.4510291,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -9.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -9.2,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": null,
+          "temp_2m": -10.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 0,
+          "temp_2m": -10.9,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 8,
+          "temp_2m": -9.8,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 84,
+          "temp_2m": -8.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 170,
+          "temp_2m": -5.7,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 293,
+          "temp_2m": -3.6,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 391,
+          "temp_2m": -2.3,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 482,
+          "temp_2m": -1.2,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 478,
+          "temp_2m": -0.4,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 257,
+          "temp_2m": -1.1,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.6,
+          "snow_limit_m": 294,
+          "temp_2m": -1.3,
+          "precip_mm": 0.8
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 1.0,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 471,
+          "temp_2m": -0.4,
+          "precip_mm": 1.3
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 1.4,
+          "snowfall_cm": 1.2,
+          "snow_limit_m": 593,
+          "temp_2m": 0.1,
+          "precip_mm": 2.0
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 2.3,
+          "snowfall_cm": 1.8,
+          "snow_limit_m": 691,
+          "temp_2m": 0.3,
+          "precip_mm": 3.7
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 788,
+          "temp_2m": 0.6,
+          "precip_mm": 4.6
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 3.0,
+          "snowfall_cm": 2.4,
+          "snow_limit_m": 958,
+          "temp_2m": 1.0,
+          "precip_mm": 5.2
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 3.0,
+          "snowfall_cm": 2.4,
+          "snow_limit_m": 1052,
+          "temp_2m": 1.1,
+          "precip_mm": 6.3
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 1067,
+          "temp_2m": 1.2,
+          "precip_mm": 8.3
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 2.9,
+          "snowfall_cm": 2.3,
+          "snow_limit_m": 1106,
+          "temp_2m": 1.4,
+          "precip_mm": 9.7
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1209,
+          "temp_2m": 1.3,
+          "precip_mm": 11.4
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1346,
+          "temp_2m": 1.7,
+          "precip_mm": 12.1
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1468,
+          "temp_2m": 1.9,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1440,
+          "temp_2m": 1.8,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1483,
+          "temp_2m": 1.8,
+          "precip_mm": 12.2
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1504,
+          "temp_2m": 2.2,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1504,
+          "temp_2m": 2.4,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1482,
+          "temp_2m": 2.2,
+          "precip_mm": 12.3
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1466,
+          "temp_2m": 3.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1419,
+          "temp_2m": 3.6,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1424,
+          "temp_2m": 3.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1418,
+          "temp_2m": 3.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1359,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1340,
+          "temp_2m": 5.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1369,
+          "temp_2m": 5.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1410,
+          "temp_2m": 6.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1462,
+          "temp_2m": 6.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1546,
+          "temp_2m": 6.5,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1625,
+          "temp_2m": 5.9,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1748,
+          "temp_2m": 5.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1849,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1913,
+          "temp_2m": 4.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 1969,
+          "temp_2m": 4.2,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2019,
+          "temp_2m": 4.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2058,
+          "temp_2m": 4.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2090,
+          "temp_2m": 3.8,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2111,
+          "temp_2m": 2.7,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2144,
+          "temp_2m": 2.0,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2176,
+          "temp_2m": 1.3,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2182,
+          "temp_2m": 1.4,
+          "precip_mm": 12.4
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.2,
+          "snow_limit_m": 2174,
+          "temp_2m": 1.5,
+          "precip_mm": 12.4
+        }
+      ]
+    },
+    "sonnenkopf": {
+      "name": "Sonnenkopf / Klostertal",
+      "lat": 47.1170734,
+      "lon": 10.0588946,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 390,
+          "temp_2m": -10.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 474,
+          "temp_2m": -9.2,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 543,
+          "temp_2m": -8.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 634,
+          "temp_2m": -8.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 737,
+          "temp_2m": -7.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 865,
+          "temp_2m": -5.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 975,
+          "temp_2m": -3.9,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 1039,
+          "temp_2m": -3.2,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 915,
+          "temp_2m": -4.1,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 796,
+          "temp_2m": -4.0,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 786,
+          "temp_2m": -4.0,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.4,
+          "snowfall_cm": 0.4,
+          "snow_limit_m": 824,
+          "temp_2m": -3.3,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.6,
+          "snow_limit_m": 980,
+          "temp_2m": -1.9,
+          "precip_mm": 0.7
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.8,
+          "snowfall_cm": 0.8,
+          "snow_limit_m": 1096,
+          "temp_2m": -0.9,
+          "precip_mm": 1.0
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.9,
+          "snowfall_cm": 0.8,
+          "snow_limit_m": 1187,
+          "temp_2m": 0.2,
+          "precip_mm": 1.1
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 1.3,
+          "snowfall_cm": 1.0,
+          "snow_limit_m": 1202,
+          "temp_2m": 0.9,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 1.7,
+          "snowfall_cm": 1.4,
+          "snow_limit_m": 1242,
+          "temp_2m": 1.0,
+          "precip_mm": 2.1
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 1.9,
+          "snowfall_cm": 1.5,
+          "snow_limit_m": 1313,
+          "temp_2m": 1.0,
+          "precip_mm": 2.5
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1343,
+          "temp_2m": 0.7,
+          "precip_mm": 3.5
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 2.2,
+          "snowfall_cm": 1.8,
+          "snow_limit_m": 1400,
+          "temp_2m": 0.5,
+          "precip_mm": 4.6
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1468,
+          "temp_2m": 0.4,
+          "precip_mm": 5.4
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1484,
+          "temp_2m": 0.5,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1530,
+          "temp_2m": 0.9,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1590,
+          "temp_2m": 1.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1638,
+          "temp_2m": 0.9,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1661,
+          "temp_2m": 0.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1677,
+          "temp_2m": 0.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1684,
+          "temp_2m": -0.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1687,
+          "temp_2m": -1.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1691,
+          "temp_2m": -1.8,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1692,
+          "temp_2m": -1.7,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1680,
+          "temp_2m": -1.4,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1662,
+          "temp_2m": -1.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1669,
+          "temp_2m": -0.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 1696,
+          "temp_2m": -0.4,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1733,
+          "temp_2m": 0.7,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1777,
+          "temp_2m": 2.0,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1836,
+          "temp_2m": 3.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1918,
+          "temp_2m": 4.5,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2009,
+          "temp_2m": 5.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2082,
+          "temp_2m": 5.8,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2116,
+          "temp_2m": 5.6,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2147,
+          "temp_2m": 5.6,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2171,
+          "temp_2m": 4.5,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2174,
+          "temp_2m": 3.2,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2180,
+          "temp_2m": 2.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2167,
+          "temp_2m": 1.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2148,
+          "temp_2m": 0.4,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2124,
+          "temp_2m": 0.3,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2104,
+          "temp_2m": 0.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 2081,
+          "temp_2m": -0.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 2.1,
+          "snow_limit_m": 2066,
+          "temp_2m": -0.2,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2037,
+          "temp_2m": 0.0,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 2000,
+          "temp_2m": 0.1,
+          "precip_mm": 6.0
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 2.1,
+          "snowfall_cm": 1.7,
+          "snow_limit_m": 1973,
+          "temp_2m": 0.6,
+          "precip_mm": 6.0
+        }
+      ]
+    },
+    "imst": {
+      "name": "Imster Bergbahnen",
+      "lat": 47.239026,
+      "lon": 10.742382,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 133,
+          "temp_2m": -13.7,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 164,
+          "temp_2m": -14.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 193,
+          "temp_2m": -15.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 228,
+          "temp_2m": -15.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 295,
+          "temp_2m": -15.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 375,
+          "temp_2m": -14.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 455,
+          "temp_2m": -12.0,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 556,
+          "temp_2m": -9.0,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 672,
+          "temp_2m": -7.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 714,
+          "temp_2m": -6.7,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 731,
+          "temp_2m": -3.6,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 772,
+          "temp_2m": -2.7,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 777,
+          "temp_2m": -2.2,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 949,
+          "temp_2m": -0.3,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1147,
+          "temp_2m": 2.1,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1405,
+          "temp_2m": 3.5,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1518,
+          "temp_2m": 3.9,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1600,
+          "temp_2m": 4.9,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1611,
+          "temp_2m": 5.8,
+          "precip_mm": 0.5
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1602,
+          "temp_2m": 4.0,
+          "precip_mm": 0.6
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1584,
+          "temp_2m": -0.3,
+          "precip_mm": 0.9
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1610,
+          "temp_2m": 1.4,
+          "precip_mm": 1.2
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1648,
+          "temp_2m": 0.7,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1671,
+          "temp_2m": -0.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1678,
+          "temp_2m": 1.9,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1711,
+          "temp_2m": 1.5,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1750,
+          "temp_2m": 1.7,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1765,
+          "temp_2m": 1.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1776,
+          "temp_2m": 1.2,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1803,
+          "temp_2m": 2.0,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1809,
+          "temp_2m": 1.5,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1772,
+          "temp_2m": 2.6,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1756,
+          "temp_2m": 2.4,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1771,
+          "temp_2m": 2.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1752,
+          "temp_2m": 1.0,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1770,
+          "temp_2m": 1.6,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1794,
+          "temp_2m": 3.0,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1846,
+          "temp_2m": 4.2,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1910,
+          "temp_2m": 5.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2001,
+          "temp_2m": 5.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2063,
+          "temp_2m": 5.9,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2085,
+          "temp_2m": 5.8,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2113,
+          "temp_2m": 4.9,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2131,
+          "temp_2m": 2.9,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2103,
+          "temp_2m": 1.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2080,
+          "temp_2m": -1.1,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2063,
+          "temp_2m": -2.7,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2038,
+          "temp_2m": -4.1,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2022,
+          "temp_2m": -4.9,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2012,
+          "temp_2m": -5.3,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2021,
+          "temp_2m": -5.6,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2038,
+          "temp_2m": -5.7,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 2036,
+          "temp_2m": -6.4,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1995,
+          "temp_2m": -6.6,
+          "precip_mm": 1.5
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1918,
+          "temp_2m": -6.7,
+          "precip_mm": 1.5
+        }
+      ]
+    },
+    "tauplitz": {
+      "name": "Tauplitz / Bad Mitterndorf / Schneebären",
+      "lat": 47.565,
+      "lon": 13.99,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.6,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.9,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.5,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -8.2,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -7.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": null,
+          "temp_2m": -7.3,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 9,
+          "temp_2m": -7.0,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 98,
+          "temp_2m": -6.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 201,
+          "temp_2m": -6.1,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 291,
+          "temp_2m": -5.6,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 399,
+          "temp_2m": -3.0,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 455,
+          "temp_2m": -0.8,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 330,
+          "temp_2m": -1.0,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.2,
+          "snowfall_cm": 0.2,
+          "snow_limit_m": 246,
+          "temp_2m": -1.7,
+          "precip_mm": 0.2
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 0.7,
+          "snowfall_cm": 0.7,
+          "snow_limit_m": 315,
+          "temp_2m": -1.5,
+          "precip_mm": 0.9
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 1.1,
+          "snowfall_cm": 1.1,
+          "snow_limit_m": 469,
+          "temp_2m": -1.1,
+          "precip_mm": 1.4
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 1.9,
+          "snowfall_cm": 1.9,
+          "snow_limit_m": 563,
+          "temp_2m": -0.7,
+          "precip_mm": 2.6
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 2.8,
+          "snowfall_cm": 2.8,
+          "snow_limit_m": 648,
+          "temp_2m": -0.3,
+          "precip_mm": 3.8
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 773,
+          "temp_2m": 0.4,
+          "precip_mm": 4.5
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 3.5,
+          "snowfall_cm": 2.8,
+          "snow_limit_m": 892,
+          "temp_2m": 0.7,
+          "precip_mm": 5.0
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 3.5,
+          "snowfall_cm": 2.8,
+          "snow_limit_m": 1007,
+          "temp_2m": 0.9,
+          "precip_mm": 5.9
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 3.4,
+          "snowfall_cm": 2.7,
+          "snow_limit_m": 1071,
+          "temp_2m": 1.2,
+          "precip_mm": 7.1
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.7,
+          "snow_limit_m": 1172,
+          "temp_2m": 1.6,
+          "precip_mm": 8.3
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1290,
+          "temp_2m": 2.0,
+          "precip_mm": 9.8
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1430,
+          "temp_2m": 2.2,
+          "precip_mm": 10.1
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1468,
+          "temp_2m": 2.5,
+          "precip_mm": 10.3
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1485,
+          "temp_2m": 3.1,
+          "precip_mm": 10.4
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1508,
+          "temp_2m": 3.3,
+          "precip_mm": 10.8
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1497,
+          "temp_2m": 3.5,
+          "precip_mm": 11.1
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1495,
+          "temp_2m": 3.4,
+          "precip_mm": 11.2
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1495,
+          "temp_2m": 3.7,
+          "precip_mm": 11.4
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 3.3,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1300,
+          "temp_2m": 3.5,
+          "precip_mm": 11.8
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1284,
+          "temp_2m": 3.4,
+          "precip_mm": 13.0
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1271,
+          "temp_2m": 3.5,
+          "precip_mm": 13.5
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1276,
+          "temp_2m": 3.7,
+          "precip_mm": 13.8
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.6,
+          "snow_limit_m": 1349,
+          "temp_2m": 3.6,
+          "precip_mm": 14.5
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1366,
+          "temp_2m": 3.8,
+          "precip_mm": 14.9
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1492,
+          "temp_2m": 3.8,
+          "precip_mm": 15.0
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1519,
+          "temp_2m": 3.7,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1528,
+          "temp_2m": 3.8,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1534,
+          "temp_2m": 4.0,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1504,
+          "temp_2m": 3.4,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1574,
+          "temp_2m": 2.0,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1678,
+          "temp_2m": 0.6,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1778,
+          "temp_2m": 1.6,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1866,
+          "temp_2m": 2.4,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 1952,
+          "temp_2m": 2.0,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2018,
+          "temp_2m": 1.7,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2059,
+          "temp_2m": 1.5,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2093,
+          "temp_2m": 1.1,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2121,
+          "temp_2m": 0.9,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2133,
+          "temp_2m": 0.4,
+          "precip_mm": 15.1
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 3.2,
+          "snowfall_cm": 2.5,
+          "snow_limit_m": 2131,
+          "temp_2m": 0.4,
+          "precip_mm": 15.1
+        }
+      ]
+    },
+    "scheffau": {
+      "name": "SkiWelt / Scheffau",
+      "lat": 47.41987,
+      "lon": 12.244438,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": null,
+          "temp_2m": -7.3,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": null,
+          "temp_2m": -7.3,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 1,
+          "temp_2m": -7.5,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 20,
+          "temp_2m": -8.0,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 114,
+          "temp_2m": -8.4,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 196,
+          "temp_2m": -8.5,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 312,
+          "temp_2m": -9.0,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 457,
+          "temp_2m": -7.9,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 604,
+          "temp_2m": -5.9,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 700,
+          "temp_2m": -4.0,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 803,
+          "temp_2m": -2.4,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 704,
+          "temp_2m": -1.8,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.3,
+          "snowfall_cm": 0.3,
+          "snow_limit_m": 453,
+          "temp_2m": -2.4,
+          "precip_mm": 0.4
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.8,
+          "snowfall_cm": 0.8,
+          "snow_limit_m": 451,
+          "temp_2m": -2.4,
+          "precip_mm": 1.2
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 1.4,
+          "snowfall_cm": 1.4,
+          "snow_limit_m": 555,
+          "temp_2m": -1.8,
+          "precip_mm": 2.0
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 1.5,
+          "snowfall_cm": 1.5,
+          "snow_limit_m": 821,
+          "temp_2m": -0.2,
+          "precip_mm": 2.1
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 941,
+          "temp_2m": 0.3,
+          "precip_mm": 2.4
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1104,
+          "temp_2m": 0.9,
+          "precip_mm": 2.7
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1254,
+          "temp_2m": 1.6,
+          "precip_mm": 2.9
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1362,
+          "temp_2m": 1.7,
+          "precip_mm": 2.9
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1325,
+          "temp_2m": 2.0,
+          "precip_mm": 3.2
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1484,
+          "temp_2m": 2.5,
+          "precip_mm": 3.5
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1508,
+          "temp_2m": 2.8,
+          "precip_mm": 3.9
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1552,
+          "temp_2m": 3.1,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1518,
+          "temp_2m": 3.4,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1574,
+          "temp_2m": 3.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1597,
+          "temp_2m": 2.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1620,
+          "temp_2m": 3.2,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1665,
+          "temp_2m": 3.1,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1680,
+          "temp_2m": 2.7,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1669,
+          "temp_2m": 2.6,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1661,
+          "temp_2m": 2.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1673,
+          "temp_2m": 2.2,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1657,
+          "temp_2m": 1.6,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1612,
+          "temp_2m": 0.7,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1587,
+          "temp_2m": 2.4,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1588,
+          "temp_2m": 3.2,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1605,
+          "temp_2m": 3.3,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1648,
+          "temp_2m": 4.3,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1713,
+          "temp_2m": 5.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1778,
+          "temp_2m": 6.0,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1885,
+          "temp_2m": 6.1,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 1970,
+          "temp_2m": 5.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2029,
+          "temp_2m": 3.9,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2059,
+          "temp_2m": 1.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2088,
+          "temp_2m": 0.6,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2131,
+          "temp_2m": 1.6,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2160,
+          "temp_2m": 1.7,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2176,
+          "temp_2m": 1.1,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2175,
+          "temp_2m": 0.5,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2180,
+          "temp_2m": 0.2,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2211,
+          "temp_2m": 0.4,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2226,
+          "temp_2m": 1.2,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2223,
+          "temp_2m": 0.9,
+          "precip_mm": 4.2
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 1.6,
+          "snowfall_cm": 1.3,
+          "snow_limit_m": 2208,
+          "temp_2m": 1.1,
+          "precip_mm": 4.2
+        }
+      ]
+    },
+    "koenigsleiten": {
+      "name": "Königsleiten-Wald / Zillertal Arena",
+      "lat": 47.26179,
+      "lon": 11.88471,
+      "forecasts": [
+        {
+          "timestamp": "2026-01-11T21:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 9,
+          "temp_2m": -8.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T22:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 51,
+          "temp_2m": -8.3,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-11T23:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 106,
+          "temp_2m": -8.1,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T00:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 188,
+          "temp_2m": -7.8,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T01:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 286,
+          "temp_2m": -7.7,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T02:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 396,
+          "temp_2m": -7.6,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T03:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 502,
+          "temp_2m": -7.5,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T04:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 604,
+          "temp_2m": -4.4,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T05:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 737,
+          "temp_2m": -2.0,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T06:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 840,
+          "temp_2m": -1.1,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T07:00+00:00",
+          "snowfall_mm": null,
+          "snowfall_cm": null,
+          "snow_limit_m": 847,
+          "temp_2m": -0.2,
+          "precip_mm": null
+        },
+        {
+          "timestamp": "2026-01-12T08:00+00:00",
+          "snowfall_mm": 0.0,
+          "snowfall_cm": 0.0,
+          "snow_limit_m": 744,
+          "temp_2m": 0.7,
+          "precip_mm": 0.0
+        },
+        {
+          "timestamp": "2026-01-12T09:00+00:00",
+          "snowfall_mm": 0.1,
+          "snowfall_cm": 0.1,
+          "snow_limit_m": 680,
+          "temp_2m": 0.5,
+          "precip_mm": 0.1
+        },
+        {
+          "timestamp": "2026-01-12T10:00+00:00",
+          "snowfall_mm": 0.4,
+          "snowfall_cm": 0.3,
+          "snow_limit_m": 776,
+          "temp_2m": 0.7,
+          "precip_mm": 0.5
+        },
+        {
+          "timestamp": "2026-01-12T11:00+00:00",
+          "snowfall_mm": 0.7,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 969,
+          "temp_2m": 2.1,
+          "precip_mm": 0.9
+        },
+        {
+          "timestamp": "2026-01-12T12:00+00:00",
+          "snowfall_mm": 0.7,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1134,
+          "temp_2m": 3.6,
+          "precip_mm": 0.9
+        },
+        {
+          "timestamp": "2026-01-12T13:00+00:00",
+          "snowfall_mm": 0.7,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1229,
+          "temp_2m": 4.0,
+          "precip_mm": 1.3
+        },
+        {
+          "timestamp": "2026-01-12T14:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1261,
+          "temp_2m": 4.5,
+          "precip_mm": 1.7
+        },
+        {
+          "timestamp": "2026-01-12T15:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1363,
+          "temp_2m": 4.9,
+          "precip_mm": 1.8
+        },
+        {
+          "timestamp": "2026-01-12T16:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1492,
+          "temp_2m": 4.7,
+          "precip_mm": 1.8
+        },
+        {
+          "timestamp": "2026-01-12T17:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1479,
+          "temp_2m": 3.9,
+          "precip_mm": 2.1
+        },
+        {
+          "timestamp": "2026-01-12T18:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1496,
+          "temp_2m": 3.8,
+          "precip_mm": 2.5
+        },
+        {
+          "timestamp": "2026-01-12T19:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1527,
+          "temp_2m": 4.0,
+          "precip_mm": 3.0
+        },
+        {
+          "timestamp": "2026-01-12T20:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1552,
+          "temp_2m": 4.2,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-12T21:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1530,
+          "temp_2m": 4.0,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-12T22:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1574,
+          "temp_2m": 4.0,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-12T23:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1599,
+          "temp_2m": 4.1,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T00:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1632,
+          "temp_2m": 4.6,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T01:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1677,
+          "temp_2m": 4.5,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T02:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1689,
+          "temp_2m": 3.9,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T03:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1692,
+          "temp_2m": 4.2,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T04:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1694,
+          "temp_2m": 3.5,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T05:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1693,
+          "temp_2m": 3.7,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T06:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1694,
+          "temp_2m": 3.6,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T07:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1662,
+          "temp_2m": 1.9,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T08:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1634,
+          "temp_2m": 1.8,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T09:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1637,
+          "temp_2m": 4.4,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T10:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1677,
+          "temp_2m": 7.1,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T11:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1717,
+          "temp_2m": 8.1,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T12:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1774,
+          "temp_2m": 8.7,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T13:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1854,
+          "temp_2m": 8.9,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T14:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 1950,
+          "temp_2m": 8.7,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T15:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2036,
+          "temp_2m": 7.6,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T16:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2082,
+          "temp_2m": 5.2,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T17:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2101,
+          "temp_2m": 4.3,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T18:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2116,
+          "temp_2m": 4.3,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T19:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2142,
+          "temp_2m": 5.3,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T20:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2155,
+          "temp_2m": 3.5,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T21:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2153,
+          "temp_2m": 2.3,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T22:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2150,
+          "temp_2m": 1.8,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-13T23:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2144,
+          "temp_2m": 1.8,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-14T00:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2161,
+          "temp_2m": 2.4,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-14T01:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2157,
+          "temp_2m": 1.9,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-14T02:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2139,
+          "temp_2m": 2.6,
+          "precip_mm": 3.1
+        },
+        {
+          "timestamp": "2026-01-14T03:00+00:00",
+          "snowfall_mm": 0.6,
+          "snowfall_cm": 0.5,
+          "snow_limit_m": 2127,
+          "temp_2m": 4.0,
+          "precip_mm": 3.1
+        }
+      ]
+    }
+  }
+}

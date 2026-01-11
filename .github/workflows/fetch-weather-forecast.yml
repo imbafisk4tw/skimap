@@ -26,7 +26,11 @@ jobs:
         run: |
           pip install requests
 
-      - name: Fetch weather forecasts
+      - name: Fetch Open-Meteo forecasts (16 days, all countries)
+        run: |
+          python pipeline/scripts/fetch_openmeteo_forecast.py
+
+      - name: Fetch GeoSphere forecasts (2.5 days, AT/DE/CH/SI only)
         run: |
           python pipeline/scripts/fetch_geosphere_forecast.py --json-only
 
