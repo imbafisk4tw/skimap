@@ -1389,6 +1389,55 @@ button, input, select, textarea{
   animation: gps-pulse 0.8s ease-out forwards;
 }
 
+/* Snow Forecast Glow Effects */
+.snow-glow-light path,
+.snow-glow-light circle {
+  filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
+}
+
+.snow-glow-moderate path,
+.snow-glow-moderate circle {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.7))
+          drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
+}
+
+.snow-glow-heavy path,
+.snow-glow-heavy circle {
+  filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.9))
+          drop-shadow(0 0 6px rgba(59, 130, 246, 0.7));
+  animation: snow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes snow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.9))
+            drop-shadow(0 0 6px rgba(59, 130, 246, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(37, 99, 235, 1))
+            drop-shadow(0 0 10px rgba(59, 130, 246, 0.9));
+  }
+}
+
+/* Snow info in popup */
+.snow-forecast-section {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.snow-forecast-section .snow-amount {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.snow-amount.heavy { background: #dbeafe; color: #1e40af; }
+.snow-amount.moderate { background: #e0f2fe; color: #0369a1; }
+.snow-amount.light { background: #f1f5f9; color: #475569; }
+
 </style>
 
 </head>
@@ -1630,6 +1679,27 @@ button, input, select, textarea{
     if (r.bergfexUrl) links.push(`<a href="${r.bergfexUrl}" target="_blank" rel="noopener" style="color:#f97316">Bergfex</a>`);
     linksLine = links.join(" · ");
 
+    // Schneevorhersage
+    let snowSection = "";
+    if (r.stable_id) {
+      const snow = getSnowSummary(r.stable_id);
+      if (snow && snow.snow48h > 0) {
+        const levelClass = snow.level !== 'none' ? snow.level : '';
+        const tempStr = snow.minTemp != null ? `🌡️ ${snow.minTemp}°C` : '';
+        const limitStr = snow.snowLimit != null ? `📍 ${snow.snowLimit}m` : '';
+        const extras = [tempStr, limitStr].filter(Boolean).join(' · ');
+
+        snowSection = `
+          <div class="snow-forecast-section">
+            <b>❄️ Neuschnee:</b>
+            <span class="snow-amount ${levelClass}">${snow.snow24h}cm</span> 24h ·
+            <span class="snow-amount ${levelClass}">${snow.snow48h}cm</span> 48h
+            ${extras ? `<br/><span style="color:#64748b;font-size:11px">${extras}</span>` : ''}
+          </div>
+        `;
+      }
+    }
+
     return `
       <div style="font-size:13px; line-height:1.5">
         <b style="font-size:14px">${r.name}</b>${r.glacier ? ' <span title="Gletscherskigebiet">❄️</span>' : ''}<br/>
@@ -1641,6 +1711,7 @@ button, input, select, textarea{
         <b>Pässe:</b> ${passesStr}<br/>
         ${websiteLine}
         <b>Anfahrt:</b> ${driveTxt}<br/>
+        ${snowSection}
         <div style="margin-top:4px">${linksLine}</div>
       </div>
     `;
@@ -1684,9 +1755,80 @@ button, input, select, textarea{
 
   const travelTimeCache = {};
   let originMarker = null;
-  
+
   // Gesamtzahl der Resorts
   let totalResorts = 0;
+
+  // Schneevorhersage-Daten (geladen aus current_forecast.json)
+  const snowForecasts = {};
+
+  // Hilfsfunktion: Berechnet Schnee-Summen aus Forecast-Daten
+  function getSnowSummary(stableId) {
+    const forecast = snowForecasts[stableId];
+    if (!forecast || !forecast.forecasts || !forecast.forecasts.length) {
+      return null;
+    }
+
+    const data = forecast.forecasts;
+    let snow24h = 0;
+    let snow48h = 0;
+    let minTemp = Infinity;
+    let minSnowLimit = Infinity;
+
+    data.forEach((f, i) => {
+      const snow = f.snowfall_cm || 0;
+      if (i < 24) snow24h += snow;
+      if (i < 48) snow48h += snow;
+      if (f.temp_2m != null && f.temp_2m < minTemp) minTemp = f.temp_2m;
+      if (f.snow_limit_m != null && snow > 0 && f.snow_limit_m < minSnowLimit) {
+        minSnowLimit = f.snow_limit_m;
+      }
+    });
+
+    return {
+      snow24h: Math.round(snow24h * 10) / 10,
+      snow48h: Math.round(snow48h * 10) / 10,
+      minTemp: minTemp === Infinity ? null : Math.round(minTemp),
+      snowLimit: minSnowLimit === Infinity ? null : Math.round(minSnowLimit),
+      level: snow48h >= 50 ? 'heavy' : snow48h >= 20 ? 'moderate' : snow48h >= 5 ? 'light' : 'none'
+    };
+  }
+
+  // Lädt Schneevorhersagen und wendet Glow auf Marker an
+  function loadSnowForecasts() {
+    fetch("data/forecasts/current_forecast.json")
+      .then(resp => {
+        if (!resp.ok) throw new Error("Forecast not available");
+        return resp.json();
+      })
+      .then(data => {
+        if (data.forecasts) {
+          Object.assign(snowForecasts, data.forecasts);
+          console.log(`Loaded snow forecasts for ${Object.keys(snowForecasts).length} resorts`);
+          applySnowGlowToMarkers();
+        }
+      })
+      .catch(err => {
+        console.log("Snow forecast not loaded:", err.message);
+      });
+  }
+
+  // Wendet Glow-Klassen auf existierende Marker an
+  function applySnowGlowToMarkers() {
+    Object.values(resorts).forEach(r => {
+      if (!r.stable_id) return;
+      const summary = getSnowSummary(r.stable_id);
+      if (!summary || summary.level === 'none') return;
+
+      const marker = resortMarkers[norm(r.name)];
+      if (!marker || !marker._path) return;
+
+      // Entferne alte Glow-Klassen
+      marker._path.classList.remove('snow-glow-light', 'snow-glow-moderate', 'snow-glow-heavy');
+      // Füge neue Klasse hinzu
+      marker._path.classList.add(`snow-glow-${summary.level}`);
+    });
+  }
 
   // Karte - zentriert über den Alpen, alle Skigebiete sichtbar
   const map = L.map("map").setView([46.8, 11.0], 7);
@@ -1997,6 +2139,10 @@ button, input, select, textarea{
 
         buildMarkers();
         window.__resortsReady = true;
+
+        // Schneevorhersagen laden (nach Markern, damit Glow angewendet werden kann)
+        loadSnowForecasts();
+
         if (window.HomeTravelTimes && typeof window.HomeTravelTimes.onResortsReady === "function") {
           try { window.HomeTravelTimes.onResortsReady(); } catch (e) { console.warn(e); }
         }

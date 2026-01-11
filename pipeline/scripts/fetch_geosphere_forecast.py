@@ -41,24 +41,29 @@ except ImportError:
 GEOSPHERE_BASE_URL = "https://dataset.api.hub.geosphere.at/v1"
 DATASET = "nwp-v1-1h-2500m"
 
-# Parameters to fetch
+# Parameters to fetch (exact API names from metadata)
 PARAMETERS = [
-    "sy",      # Total snowfall amount (kg/m², roughly = mm water equivalent)
-    "schnee",  # Snowlimit (m) - height where snow melts
-    "t",       # Temperature 2m (°C)
-    "rr",      # Total precipitation (mm)
+    "snow_acc",  # Total snowfall amount (kg/m², roughly = mm water equivalent)
+    "snowlmt",   # Snowlimit (m) - height where snow melts
+    "t2m",       # Temperature 2m (°C)
+    "rr_acc",    # Total precipitation (mm)
 ]
 
-# Rate limiting
-REQUEST_DELAY_S = 0.5  # Delay between requests to be nice to the API
+# Rate limiting (GeoSphere has strict rate limits)
+REQUEST_DELAY_S = 1.2  # Delay between requests - 1.2s to stay under rate limit
+MAX_RETRIES = 2        # Retry on 502/503 errors
 
 # Bounding box for Alps (skip resorts outside GeoSphere coverage)
+# Note: GeoSphere covers AT + surrounding area, but FR/IT mostly return errors
 GEOSPHERE_BBOX = {
     "min_lat": 43.0,
     "max_lat": 51.8,
     "min_lon": 5.5,
     "max_lon": 22.1
 }
+
+# Countries with reliable GeoSphere coverage
+COVERED_COUNTRIES = {"AT", "DE", "CH", "SI"}  # FR, IT have limited coverage
 
 # ==============================================================================
 # Database Functions
@@ -98,7 +103,7 @@ def get_resorts_from_db(conn, limit=None):
         return [dict(zip(columns, row)) for row in cur.fetchall()]
 
 
-def get_resorts_from_json(json_path: Path, limit=None):
+def get_resorts_from_json(json_path: Path, limit=None, countries=None):
     """Fallback: Load resorts from resorts.json."""
     with open(json_path, 'r', encoding='utf-8') as f:
         resorts = json.load(f)
@@ -106,10 +111,15 @@ def get_resorts_from_json(json_path: Path, limit=None):
     result = []
     for r in resorts:
         if r.get('lat') and r.get('lon'):
+            country = r.get('country', '')
+            # Filter by country if specified
+            if countries and country not in countries:
+                continue
             result.append({
                 'id': None,  # No UUID in JSON
                 'stable_id': r.get('stable_id', r.get('name', '').lower().replace(' ', '-')),
                 'name': r.get('name'),
+                'country': country,
                 'lat': r['lat'],
                 'lon': r['lon'],
                 'max_elevation_m': r.get('maxElevation')
@@ -188,13 +198,22 @@ def fetch_forecast(lat: float, lon: float) -> dict | None:
         "output_format": "geojson"
     }
 
-    try:
-        response = requests.get(url, params=params, timeout=30)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"  Error fetching forecast: {e}")
-        return None
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            response = requests.get(url, params=params, timeout=30)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.RequestException as e:
+            status = getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None
+            # Retry on 502, 503, 429 errors
+            if status in (502, 503, 429) and attempt < MAX_RETRIES:
+                wait_time = (attempt + 1) * 2  # Exponential backoff: 2s, 4s
+                print(f"  [{status}] Retry {attempt+1}/{MAX_RETRIES} in {wait_time}s...", end=" ", flush=True)
+                time.sleep(wait_time)
+                continue
+            print(f"  Error: {e}")
+            return None
+    return None
 
 
 def parse_geosphere_response(data: dict, max_elevation_m: int = None) -> list:
@@ -215,15 +234,16 @@ def parse_geosphere_response(data: dict, max_elevation_m: int = None) -> list:
     if not features:
         return []
 
+    # Timestamps are at root level, not in properties
+    timestamps = data.get('timestamps', [])
     props = features[0].get('properties', {})
-    timestamps = props.get('timestamps', [])
     parameters = props.get('parameters', {})
 
-    # Extract parameter arrays
-    snowfall = parameters.get('sy', {}).get('data', [])      # kg/m² ≈ mm
-    snow_limit = parameters.get('schnee', {}).get('data', [])  # m
-    temp = parameters.get('t', {}).get('data', [])           # °C
-    precip = parameters.get('rr', {}).get('data', [])        # mm
+    # Extract parameter arrays (using correct API parameter names)
+    snowfall = parameters.get('snow_acc', {}).get('data', [])   # kg/m² ≈ mm
+    snow_limit = parameters.get('snowlmt', {}).get('data', [])  # m
+    temp = parameters.get('t2m', {}).get('data', [])            # °C
+    precip = parameters.get('rr_acc', {}).get('data', [])       # mm
 
     forecasts = []
     for i, ts in enumerate(timestamps):
@@ -304,11 +324,11 @@ def main():
             conn = None
 
     if conn is None:
-        # Fallback to JSON
+        # Fallback to JSON (filter to countries with GeoSphere coverage)
         json_path = args.resorts_json or Path(__file__).parent.parent.parent / "data" / "resorts.json"
         if json_path.exists():
-            resorts = get_resorts_from_json(json_path, args.limit)
-            print(f"Loaded {len(resorts)} resorts from {json_path}")
+            resorts = get_resorts_from_json(json_path, args.limit, countries=COVERED_COUNTRIES)
+            print(f"Loaded {len(resorts)} resorts from {json_path} (filtered to {', '.join(COVERED_COUNTRIES)})")
         else:
             print(f"Error: No database connection and {json_path} not found")
             sys.exit(1)
@@ -329,7 +349,9 @@ def main():
 
     for i, resort in enumerate(resorts_in_coverage):
         stable_id = resort['stable_id']
-        print(f"[{i+1}/{len(resorts_in_coverage)}] {resort['name']}...", end=" ", flush=True)
+        # Use ASCII-safe name for console output (Windows cp1252 compatibility)
+        safe_name = resort['name'].encode('ascii', 'replace').decode('ascii')
+        print(f"[{i+1}/{len(resorts_in_coverage)}] {safe_name}...", end=" ", flush=True)
 
         data = fetch_forecast(resort['lat'], resort['lon'])
 
