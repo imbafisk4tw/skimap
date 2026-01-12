@@ -154,9 +154,11 @@
 
     if (!marker) {
       marker = L.circleMarker(latlng, {
-        radius: 7,
-        weight: 2,
-        fillOpacity: 0.9
+        radius: 8,
+        weight: 3,
+        color: '#ffffff',        // Weißer Rand
+        fillColor: '#00E676',    // Leuchtendes Grün
+        fillOpacity: 1
       }).addTo(map);
       marker.bindTooltip("Du bist hier", { permanent: false });
     } else {
@@ -166,8 +168,10 @@
     if (!accuracyCircle) {
       accuracyCircle = L.circle(latlng, {
         radius: isFinite(acc) && acc > 0 ? acc : 50,
-        weight: 1,
-        fillOpacity: 0.06
+        weight: 2,
+        color: '#00E676',        // Grüner Rand passend zum Marker
+        fillColor: '#00E676',
+        fillOpacity: 0.1
       }).addTo(map);
     } else {
       accuracyCircle.setLatLng(latlng);
