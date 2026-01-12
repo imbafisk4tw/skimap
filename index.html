@@ -104,7 +104,7 @@
 .export-box .hint{ display:none; }
 
 /* Export-Buttons etwas kompakter */
-.export-box button{
+.export-box .panel-content button{
   height: 32px;
   font-size: 12px;
   border-radius: 10px;
@@ -529,19 +529,17 @@ html, body {
       background: #e0e0e0;
     }
 
-    /* Counter unten rechts */
-    .counter-box {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 10000;
-      background: white;
-      padding: 6px 10px;
-      border: 1px solid #888;
+    /* Counter inline neben Suchfeld */
+    .counter-inline {
+      flex: 0 0 auto;
       font-size: 12px;
-      line-height: 1.4;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      border-radius: 4px;
+      font-weight: 500;
+      color: #555;
+      white-space: nowrap;
+      padding: 0 4px;
+      display: flex;
+      align-items: center;
+      height: 36px;
     }
   
     /* Responsive: Mobile Layout */
@@ -574,6 +572,7 @@ html, body {
       .home-box { display: none !important; }               /* Startadresse ausblenden */
       /* Export ausblenden */
       .legend-box { display: none !important; }             /* optional: Legende ausblenden */
+      .weather-box { display: none !important; }            /* Weather in Slider-Box auf Mobile */
 
       /* Suchleiste oben als "Card" */
       .search-box label{ display:none; }
@@ -699,12 +698,6 @@ html, body {
         padding: 4px 12px !important;
       }
 
-      /* Counter über dem Slider, damit nichts überlappt */
-      .counter-box {
-        right: 12px !important;
-        bottom: calc(env(safe-area-inset-bottom, 0px) + 12px) !important;
-        border-radius: 12px !important;
-      }
     }
 
     /* Layer-Control: nie "abschneiden" und scrollbar machen */
@@ -877,6 +870,289 @@ html, body {
   }
 }
 
+/* --- Weather-Box (rechte Seite) --- */
+.weather-box {
+  position: fixed !important;
+  right: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 1000;
+  background: rgba(255,255,255,0.96);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 10px 14px;
+  font-size: 13px;
+  min-width: 200px;
+  max-width: 260px;
+}
+.weather-box-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.86);
+}
+.weather-box-toggle .toggle-icon {
+  font-size: 10px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+.weather-box.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+.weather-box.collapsed .weather-box-content {
+  display: none;
+}
+.weather-box.collapsed {
+  min-width: auto;
+}
+.weather-box-toggle .toggle-title {
+  flex: 1;
+  text-align: left;
+}
+.weather-box .weather-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.weather-box .weather-toggle-switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+}
+.weather-box .weather-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.weather-box .weather-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 22px;
+}
+.weather-box .weather-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.weather-box .weather-toggle-switch input:checked + .weather-toggle-slider {
+  background-color: #3b82f6;
+}
+.weather-box .weather-toggle-switch input:checked + .weather-toggle-slider:before {
+  transform: translateX(20px);
+}
+.weather-box .timeframe-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.weather-box .timeframe-btn {
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 11px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.weather-box .timeframe-btn:hover {
+  background: #e8e8e8;
+}
+.weather-box .timeframe-btn.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+.weather-box .filter-row {
+  margin-bottom: 8px;
+}
+.weather-box .filter-row label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.weather-box .filter-row input[type="range"] {
+  width: 100%;
+  margin: 0;
+}
+.weather-box .legend {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 11px;
+}
+.weather-box .legend-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.weather-box .legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.weather-box .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.weather-box .legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+@media (max-width: 640px) {
+  .weather-box {
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    max-width: min(240px, calc(100vw - 24px));
+  }
+}
+
+/* Weather mobile section (in slider-box) */
+.weather-mobile-section {
+  display: none;  /* Hidden on desktop */
+}
+@media (max-width: 720px) {
+  .weather-mobile-section {
+    display: block;  /* Shown on mobile */
+  }
+}
+.weather-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.weather-section-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+.weather-info-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.weather-info-btn:hover {
+  opacity: 1;
+  background: rgba(0,0,0,0.05);
+}
+/* Mobile weather toggle & legend styles */
+.weather-mobile-section .weather-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.weather-mobile-section .weather-toggle-switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+}
+.weather-mobile-section .weather-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.weather-mobile-section .weather-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 22px;
+}
+.weather-mobile-section .weather-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.weather-mobile-section .weather-toggle-switch input:checked + .weather-toggle-slider {
+  background-color: #3b82f6;
+}
+.weather-mobile-section .weather-toggle-switch input:checked + .weather-toggle-slider:before {
+  transform: translateX(20px);
+}
+.weather-mobile-section .timeframe-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.weather-mobile-section .timeframe-btn {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.weather-mobile-section .timeframe-btn:hover {
+  background: #f3f4f6;
+}
+.weather-mobile-section .timeframe-btn.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+.weather-mobile-section .legend {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 11px;
+}
+.weather-mobile-section .legend-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.weather-mobile-section .legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.weather-mobile-section .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.weather-mobile-section .legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
 /* Startpunkt (Dropdown) oberhalb des Sliders */
 .startpoint-row{
   display:flex;
@@ -1006,14 +1282,6 @@ html, body {
 }
 .desktop-control-stack .leaflet-control{
   margin: 0 !important;
-}
-
-/* --- Mobile: Counter wirklich ganz nach unten rechts --- */
-@media (max-width: 720px){
-  .counter-box{
-    right: 12px !important;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 12px) !important;
-  }
 }
 
 /* --- Mobile Panel: Accordion --- */
@@ -1146,8 +1414,8 @@ img.leaflet-marker-icon.last-search-marker {
   font-size: var(--ui-font-size-small) !important;
 }
 
-/* Export buttons in panel/desktop */
-.export-box button{
+/* Export buttons in panel/desktop (exclude panel-toggle) */
+.export-box .panel-content button{
   font-size: var(--ui-font-size) !important;
 }
 
@@ -1389,35 +1657,24 @@ button, input, select, textarea{
   animation: gps-pulse 0.8s ease-out forwards;
 }
 
-/* Snow Forecast Glow Effects */
-.snow-glow-light path,
-.snow-glow-light circle {
-  filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
+/* Snow Badge (Bergfex-Style) */
+.snow-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.9);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  font-size: 10px;
+  color: white;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+  pointer-events: none;
+  z-index: 500;
 }
-
-.snow-glow-moderate path,
-.snow-glow-moderate circle {
-  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.7))
-          drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
-}
-
-.snow-glow-heavy path,
-.snow-glow-heavy circle {
-  filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.9))
-          drop-shadow(0 0 6px rgba(59, 130, 246, 0.7));
-  animation: snow-pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes snow-pulse {
-  0%, 100% {
-    filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.9))
-            drop-shadow(0 0 6px rgba(59, 130, 246, 0.7));
-  }
-  50% {
-    filter: drop-shadow(0 0 18px rgba(37, 99, 235, 1))
-            drop-shadow(0 0 10px rgba(59, 130, 246, 0.9));
-  }
-}
+.snow-badge-small { width: 14px; height: 14px; font-size: 8px; }
+.snow-badge-medium { width: 18px; height: 18px; font-size: 10px; }
+.snow-badge-large { width: 22px; height: 22px; font-size: 12px; }
+.snow-badge-wrapper { background: transparent !important; border: none !important; }
 
 /* Snow info in popup */
 .snow-forecast-section {
@@ -1445,11 +1702,6 @@ button, input, select, textarea{
 
 <div id="map"></div>
 
-<!-- Counter sichtbare Resorts -->
-<div id="resort-counter" class="counter-box">
-  0 / 0
-</div>
-
 <!-- Suchfeld -->
 <form id="resort-search-form" class="search-box" autocomplete="off">
   <label for="resort-search" class="sr-only">Skigebiet suchen</label>
@@ -1465,6 +1717,8 @@ button, input, select, textarea{
     />
     <button id="search-btn" type="submit" title="Suche ausführen">Go</button>
     <button id="clear-verbund-btn" type="button" disabled class="icon-btn icon-btn--danger" aria-label="Verbundfilter aufheben" title="Verbundfilter aufheben">✕</button>
+    <!-- Counter sichtbare Resorts -->
+    <span id="resort-counter" class="counter-inline">0 / 0</span>
     <button id="mobile-panel-toggle" class="icon-btn" type="button" aria-pressed="false" title="Filter & Layer" aria-label="Filter und Layer öffnen">☰</button>
     </div>
   <datalist id="resort-datalist"></datalist>
@@ -1526,11 +1780,92 @@ button, input, select, textarea{
     <span id="elevation-slider-label" class="filter-value">0 m</span>
   </div>
   <input id="elevation-slider" type="range" min="0" max="100" value="0" />
+
+  <!-- Weather controls (Mobile only - shown via CSS) -->
+  <div class="weather-mobile-section" id="weather-mobile-section">
+    <div class="slider-sep"></div>
+    <div class="weather-header-row">
+      <span class="weather-section-title">❄️ Schnee & Wetter</span>
+      <button type="button" class="weather-info-btn" id="weather-info-btn-mobile" title="Datenquellen-Info">ℹ️</button>
+    </div>
+    <div class="weather-toggle-row">
+      <span>Schnee-Anzeige</span>
+      <label class="weather-toggle-switch">
+        <input type="checkbox" id="weather-toggle-mobile">
+        <span class="weather-toggle-slider"></span>
+      </label>
+    </div>
+    <div class="timeframe-row">
+      <button class="timeframe-btn" data-hours="24">24h</button>
+      <button class="timeframe-btn" data-hours="48">48h</button>
+      <button class="timeframe-btn active" data-hours="72">3T</button>
+      <button class="timeframe-btn" data-hours="168">7T</button>
+    </div>
+    <div class="filter-slider-row">
+      <label for="snow-min-slider-mobile">Schnee-Vorhersage</label>
+      <span id="snow-min-label-mobile" class="filter-value">≥0 cm</span>
+    </div>
+    <input type="range" id="snow-min-slider-mobile" min="0" max="100" value="0" step="5">
+    <div class="legend" style="margin-top:8px;">
+      <div class="legend-title">Legende (Neuschnee-Prognose)</div>
+      <div class="legend-row">
+        <span class="legend-item"><span class="legend-dot" style="background:#FFFF00"></span>10-20</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#00CED1"></span>20-40</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#0000CD"></span>40-70</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#FF8C00"></span>70+</span>
+      </div>
+    </div>
+  </div>
   </div><!-- /.slider-box-content -->
 </div>
 
 <!-- Home Selector Host (Placeholder für HomeRoutesSelector; Dropdown sitzt im Slider) -->
 <div id="homeSelectorBox" class="filter-box leaflet-control" style="display:none;"></div>
+
+<!-- Wetter-Filter Box (rechte Seite) -->
+<div class="weather-box" id="weather-box">
+  <button type="button" id="weather-box-toggle" class="weather-box-toggle" aria-label="Wetter ein-/ausklappen" aria-expanded="true">
+    <span class="toggle-title">❄️ Schnee & Wetter</span>
+    <span class="toggle-icon">▼</span>
+  </button>
+  <div class="weather-box-content">
+    <div class="weather-toggle-row">
+      <span>Schnee-Anzeige</span>
+      <label class="weather-toggle-switch">
+        <input type="checkbox" id="weather-toggle">
+        <span class="weather-toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="timeframe-row">
+      <button class="timeframe-btn" data-hours="24">24h</button>
+      <button class="timeframe-btn" data-hours="48">48h</button>
+      <button class="timeframe-btn active" data-hours="72">3T</button>
+      <button class="timeframe-btn" data-hours="168">7T</button>
+    </div>
+
+    <div class="filter-row">
+      <label for="snow-min-slider">
+        <span>Schnee-Vorhersage</span>
+        <span id="snow-min-label">≥0 cm</span>
+      </label>
+      <input type="range" id="snow-min-slider" min="0" max="100" value="0" step="5">
+    </div>
+
+    <div class="legend">
+      <div class="legend-title">
+        Legende (7-Tage-Prognose)
+        <button type="button" class="weather-info-btn" id="weather-info-btn" title="Datenquellen-Info">ℹ️</button>
+      </div>
+      <div class="legend-row">
+        <span class="legend-item"><span class="legend-dot" style="background:#FFFF00"></span>10-20</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#00CED1"></span>20-40</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#0000CD"></span>40-70</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#FF8C00"></span>70+</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- isochroneControl -->
 <!-- Leaflet JS -->
@@ -1683,7 +2018,7 @@ button, input, select, textarea{
     let snowSection = "";
     if (r.stable_id) {
       const snow = getSnowSummary(r.stable_id);
-      if (snow && snow.snow48h > 0) {
+      if (snow && snow.snow7d > 0) {
         const levelClass = snow.level !== 'none' ? snow.level : '';
         const tempStr = snow.minTemp != null ? `🌡️ ${snow.minTemp}°C` : '';
         const limitStr = snow.snowLimit != null ? `📍 ${snow.snowLimit}m` : '';
@@ -1692,8 +2027,8 @@ button, input, select, textarea{
         snowSection = `
           <div class="snow-forecast-section">
             <b>❄️ Neuschnee:</b>
-            <span class="snow-amount ${levelClass}">${snow.snow24h}cm</span> 24h ·
-            <span class="snow-amount ${levelClass}">${snow.snow48h}cm</span> 48h
+            <span class="snow-amount ${levelClass}">${snow.snow3d}cm</span> 3d ·
+            <span class="snow-amount ${levelClass}">${snow.snow7d}cm</span> 7d
             ${extras ? `<br/><span style="color:#64748b;font-size:11px">${extras}</span>` : ''}
           </div>
         `;
@@ -1759,75 +2094,174 @@ button, input, select, textarea{
   // Gesamtzahl der Resorts
   let totalResorts = 0;
 
-  // Schneevorhersage-Daten (geladen aus current_forecast.json)
-  const snowForecasts = {};
+  // Schneevorhersage-Daten
+  const snowForecasts = {};      // GeoSphere (48h, stündlich, AT/DE/CH/SI)
+  const openMeteoForecasts = {}; // Open-Meteo (16 Tage, täglich, alle Länder)
+  const forecastMeta = {         // Metadata für Info-Anzeige
+    geosphere: { updatedAt: null, count: 0 },
+    openmeteo: { updatedAt: null, count: 0 }
+  };
 
   // Hilfsfunktion: Berechnet Schnee-Summen aus Forecast-Daten
+  // Nutzt Open-Meteo (7-Tage) primär, GeoSphere (48h) als Ergänzung
   function getSnowSummary(stableId) {
-    const forecast = snowForecasts[stableId];
-    if (!forecast || !forecast.forecasts || !forecast.forecasts.length) {
-      return null;
-    }
+    const omForecast = openMeteoForecasts[stableId];
+    const gsForecast = snowForecasts[stableId];
 
-    const data = forecast.forecasts;
-    let snow24h = 0;
-    let snow48h = 0;
+    // Kein Forecast verfügbar
+    if (!omForecast && !gsForecast) return null;
+
+    let snow3d = 0, snow7d = 0;
     let minTemp = Infinity;
     let minSnowLimit = Infinity;
 
-    data.forEach((f, i) => {
-      const snow = f.snowfall_cm || 0;
-      if (i < 24) snow24h += snow;
-      if (i < 48) snow48h += snow;
-      if (f.temp_2m != null && f.temp_2m < minTemp) minTemp = f.temp_2m;
-      if (f.snow_limit_m != null && snow > 0 && f.snow_limit_m < minSnowLimit) {
-        minSnowLimit = f.snow_limit_m;
+    // Open-Meteo: 7-Tage-Prognose (vorberechnet)
+    if (omForecast) {
+      snow3d = omForecast.snow_3d_cm || 0;
+      snow7d = omForecast.snow_7d_cm || 0;
+      // Min-Temp aus daily-Daten
+      if (omForecast.daily) {
+        omForecast.daily.slice(0, 7).forEach(d => {
+          if (d.temp_min != null && d.temp_min < minTemp) minTemp = d.temp_min;
+        });
       }
-    });
+    }
+
+    // GeoSphere: Detaillierte Stunden-Daten (falls verfügbar)
+    if (gsForecast && gsForecast.forecasts && gsForecast.forecasts.length) {
+      gsForecast.forecasts.forEach(f => {
+        if (f.snow_limit_m != null && (f.snowfall_cm || 0) > 0 && f.snow_limit_m < minSnowLimit) {
+          minSnowLimit = f.snow_limit_m;
+        }
+        // GeoSphere hat genauere Temp-Daten
+        if (f.temp_2m != null && f.temp_2m < minTemp) minTemp = f.temp_2m;
+      });
+    }
+
+    // Fallback: Wenn nur GeoSphere vorhanden, 48h-Summe berechnen
+    if (!omForecast && gsForecast && gsForecast.forecasts) {
+      let snow48h = 0;
+      gsForecast.forecasts.slice(0, 48).forEach(f => {
+        snow48h += f.snowfall_cm || 0;
+      });
+      snow3d = snow48h; // 48h ≈ 2 Tage, als 3d-Näherung
+      snow7d = snow48h; // Keine 7d-Daten verfügbar
+    }
+
+    // Glow-Level basierend auf 7-Tage-Schnee
+    const level = snow7d >= 80 ? 'heavy' : snow7d >= 30 ? 'moderate' : snow7d >= 10 ? 'light' : 'none';
 
     return {
-      snow24h: Math.round(snow24h * 10) / 10,
-      snow48h: Math.round(snow48h * 10) / 10,
+      snow3d: Math.round(snow3d * 10) / 10,
+      snow7d: Math.round(snow7d * 10) / 10,
       minTemp: minTemp === Infinity ? null : Math.round(minTemp),
       snowLimit: minSnowLimit === Infinity ? null : Math.round(minSnowLimit),
-      level: snow48h >= 50 ? 'heavy' : snow48h >= 20 ? 'moderate' : snow48h >= 5 ? 'light' : 'none'
+      level,
+      hasOpenMeteo: !!omForecast,
+      hasGeoSphere: !!(gsForecast && gsForecast.forecasts && gsForecast.forecasts.length)
     };
   }
 
-  // Lädt Schneevorhersagen und wendet Glow auf Marker an
+  // Bergfex-Farbskala für Schnee (cm -> Farbe)
+  function getBergfexSnowColor(cm) {
+    if (cm >= 90) return '#FF4500';  // Rot-Orange
+    if (cm >= 70) return '#FF8C00';  // Orange
+    if (cm >= 50) return '#9932CC';  // Lila
+    if (cm >= 40) return '#0000CD';  // Dunkelblau
+    if (cm >= 30) return '#1E90FF';  // Blau
+    if (cm >= 20) return '#00CED1';  // Cyan
+    if (cm >= 15) return '#00FFFF';  // Hellcyan
+    if (cm >= 10) return '#FFFF00';  // Gelb
+    if (cm >= 5)  return '#ADFF2F';  // Gelbgrün
+    return '#98FB98';                 // Hellgrün
+  }
+
+  // Badge-Größe basierend auf Schneemenge
+  function getSnowBadgeSize(cm) {
+    if (cm >= 50) return 'large';
+    if (cm >= 20) return 'medium';
+    return 'small';
+  }
+
+  // Snow Badge Marker speichern
+  const snowBadgeMarkers = {};
+
+  // Lädt Schneevorhersagen und erstellt Badges
   function loadSnowForecasts() {
-    fetch("data/forecasts/current_forecast.json")
+    // Open-Meteo laden (16 Tage, alle Länder)
+    const omPromise = fetch("data/forecasts/openmeteo_forecast.json")
       .then(resp => {
-        if (!resp.ok) throw new Error("Forecast not available");
+        if (!resp.ok) throw new Error("Open-Meteo not available");
+        return resp.json();
+      })
+      .then(data => {
+        if (data.forecasts) {
+          Object.assign(openMeteoForecasts, data.forecasts);
+          forecastMeta.openmeteo.count = Object.keys(data.forecasts).length;
+          forecastMeta.openmeteo.updatedAt = data.generated_at ? new Date(data.generated_at) : null;
+          console.log(`Loaded Open-Meteo forecasts for ${forecastMeta.openmeteo.count} resorts`);
+        }
+      })
+      .catch(err => console.log("Open-Meteo forecast not loaded:", err.message));
+
+    // GeoSphere laden (48h, stündlich - für detaillierte Popup-Info)
+    const gsPromise = fetch("data/forecasts/current_forecast.json")
+      .then(resp => {
+        if (!resp.ok) throw new Error("GeoSphere not available");
         return resp.json();
       })
       .then(data => {
         if (data.forecasts) {
           Object.assign(snowForecasts, data.forecasts);
-          console.log(`Loaded snow forecasts for ${Object.keys(snowForecasts).length} resorts`);
-          applySnowGlowToMarkers();
+          forecastMeta.geosphere.count = Object.keys(data.forecasts).length;
+          forecastMeta.geosphere.updatedAt = data.generated_at ? new Date(data.generated_at) : null;
+          console.log(`Loaded GeoSphere forecasts for ${forecastMeta.geosphere.count} resorts`);
         }
       })
-      .catch(err => {
-        console.log("Snow forecast not loaded:", err.message);
-      });
+      .catch(err => console.log("GeoSphere forecast not loaded:", err.message));
+
+    // Warte auf beide - Badges werden erst bei Weather-Filter ON erstellt
+    Promise.all([omPromise, gsPromise]).then(() => {
+      console.log('Snow forecast data ready for weather filter');
+    });
   }
 
-  // Wendet Glow-Klassen auf existierende Marker an
-  function applySnowGlowToMarkers() {
+  // Erstellt Snow-Badges für Resorts mit Neuschnee
+  function createSnowBadges() {
+    // Entferne alte Badges
+    Object.values(snowBadgeMarkers).forEach(m => map.removeLayer(m));
+    Object.keys(snowBadgeMarkers).forEach(k => delete snowBadgeMarkers[k]);
+
+    let badgeCount = 0;
     Object.values(resorts).forEach(r => {
-      if (!r.stable_id) return;
+      if (!r.stable_id || !r.lat || !r.lon) return;
       const summary = getSnowSummary(r.stable_id);
-      if (!summary || summary.level === 'none') return;
+      if (!summary || summary.snow7d < 10) return; // Nur ab 10cm anzeigen
 
-      const marker = resortMarkers[norm(r.name)];
-      if (!marker || !marker._path) return;
+      const snow = Math.round(summary.snow7d);
+      const color = getBergfexSnowColor(snow);
+      const size = getSnowBadgeSize(snow);
 
-      // Entferne alte Glow-Klassen
-      marker._path.classList.remove('snow-glow-light', 'snow-glow-moderate', 'snow-glow-heavy');
-      // Füge neue Klasse hinzu
-      marker._path.classList.add(`snow-glow-${summary.level}`);
+      // Badge als DivIcon erstellen
+      const badgeHtml = `<div class="snow-badge snow-badge-${size}" style="background:${color}">❄</div>`;
+      const icon = L.divIcon({
+        html: badgeHtml,
+        className: 'snow-badge-wrapper',
+        iconSize: [size === 'large' ? 22 : size === 'medium' ? 18 : 14, size === 'large' ? 22 : size === 'medium' ? 18 : 14],
+        iconAnchor: [-4, size === 'large' ? 22 : size === 'medium' ? 18 : 14] // Rechts oben vom Marker
+      });
+
+      const badge = L.marker([r.lat, r.lon], {
+        icon,
+        interactive: false,
+        pane: 'markerPane'
+      }).addTo(map);
+
+      snowBadgeMarkers[r.stable_id] = badge;
+      badgeCount++;
     });
+
+    console.log(`Created ${badgeCount} snow badges`);
   }
 
   // Karte - zentriert über den Alpen, alle Skigebiete sichtbar
@@ -3069,6 +3503,279 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleBtn.setAttribute('aria-expanded', !isCollapsed);
     });
   })();
+
+  // Weather-Box Logic
+  (function() {
+    const weatherBox = document.getElementById('weather-box');
+    const weatherToggleBtn = document.getElementById('weather-box-toggle');
+    const weatherToggle = document.getElementById('weather-toggle');
+    const timeframeBtns = document.querySelectorAll('.weather-box .timeframe-btn');
+    const snowMinSlider = document.getElementById('snow-min-slider');
+    const snowMinLabel = document.getElementById('snow-min-label');
+
+    if (!weatherBox || !weatherToggleBtn) return;
+
+    // Collapse/Expand Toggle
+    weatherToggleBtn.addEventListener('click', () => {
+      const isCollapsed = weatherBox.classList.toggle('collapsed');
+      weatherToggleBtn.setAttribute('aria-expanded', !isCollapsed);
+    });
+
+    // Weather State (default: disabled, but box visible)
+    window.weatherFilterState = {
+      enabled: false,
+      timeframeHours: 72, // 3 Tage default
+      minSnowCm: 0
+    };
+
+    // On/Off Toggle
+    weatherToggle?.addEventListener('change', () => {
+      window.weatherFilterState.enabled = weatherToggle.checked;
+      updateWeatherDisplay();
+    });
+
+    // Timeframe Buttons
+    timeframeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        timeframeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        window.weatherFilterState.timeframeHours = parseInt(btn.dataset.hours);
+        if (window.weatherFilterState.enabled) {
+          updateWeatherDisplay();
+        }
+      });
+    });
+
+    // Min Snow Slider
+    snowMinSlider?.addEventListener('input', () => {
+      const val = parseInt(snowMinSlider.value);
+      window.weatherFilterState.minSnowCm = val;
+      snowMinLabel.textContent = `≥${val} cm`;
+      // Sync to mobile
+      const mobileSlider = document.getElementById('snow-min-slider-mobile');
+      const mobileLabel = document.getElementById('snow-min-label-mobile');
+      if (mobileSlider) mobileSlider.value = val;
+      if (mobileLabel) mobileLabel.textContent = `≥${val} cm`;
+      if (window.weatherFilterState.enabled) {
+        updateWeatherDisplay();
+      }
+    });
+
+    // === Mobile Weather Controls Sync ===
+    const mobileToggle = document.getElementById('weather-toggle-mobile');
+    const mobileTimeframeBtns = document.querySelectorAll('#weather-mobile-section .timeframe-btn');
+    const mobileSnowSlider = document.getElementById('snow-min-slider-mobile');
+    const mobileSnowLabel = document.getElementById('snow-min-label-mobile');
+
+    // Mobile toggle syncs with desktop
+    mobileToggle?.addEventListener('change', () => {
+      window.weatherFilterState.enabled = mobileToggle.checked;
+      if (weatherToggle) weatherToggle.checked = mobileToggle.checked;
+      updateWeatherDisplay();
+    });
+
+    // Mobile timeframe buttons
+    mobileTimeframeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update mobile buttons
+        mobileTimeframeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        // Sync to desktop
+        const hours = parseInt(btn.dataset.hours);
+        timeframeBtns.forEach(b => {
+          b.classList.toggle('active', parseInt(b.dataset.hours) === hours);
+        });
+        window.weatherFilterState.timeframeHours = hours;
+        if (window.weatherFilterState.enabled) {
+          updateWeatherDisplay();
+        }
+      });
+    });
+
+    // Mobile snow slider
+    mobileSnowSlider?.addEventListener('input', () => {
+      const val = parseInt(mobileSnowSlider.value);
+      window.weatherFilterState.minSnowCm = val;
+      if (mobileSnowLabel) mobileSnowLabel.textContent = `≥${val} cm`;
+      // Sync to desktop
+      if (snowMinSlider) snowMinSlider.value = val;
+      if (snowMinLabel) snowMinLabel.textContent = `≥${val} cm`;
+      if (window.weatherFilterState.enabled) {
+        updateWeatherDisplay();
+      }
+    });
+
+    // === Info Button Handler ===
+    const showWeatherInfo = () => {
+      const hours = window.weatherFilterState?.timeframeHours || 72;
+      const isShortTerm = hours <= 48;
+
+      // Formatiere Zeitstempel relativ
+      const formatAge = (date) => {
+        if (!date) return 'Nicht verfügbar';
+        const now = new Date();
+        const diffMs = now - date;
+        const diffMins = Math.floor(diffMs / 60000);
+        const diffHours = Math.floor(diffMins / 60);
+
+        if (diffMins < 60) return `vor ${diffMins} Minuten`;
+        if (diffHours < 24) return `vor ${diffHours} Stunde${diffHours > 1 ? 'n' : ''}`;
+        const diffDays = Math.floor(diffHours / 24);
+        return `vor ${diffDays} Tag${diffDays > 1 ? 'en' : ''}`;
+      };
+
+      // Bestimme Datenfrische-Status
+      const getFreshnessStatus = (date, maxAgeHours) => {
+        if (!date) return { icon: '⚠️', text: 'Keine Daten' };
+        const ageHours = (new Date() - date) / 3600000;
+        if (ageHours <= maxAgeHours) return { icon: '✅', text: 'Aktuell' };
+        if (ageHours <= maxAgeHours * 2) return { icon: '🟡', text: 'Etwas älter' };
+        return { icon: '🔴', text: 'Veraltet' };
+      };
+
+      const geoStatus = getFreshnessStatus(forecastMeta.geosphere.updatedAt, 12);
+      const omStatus = getFreshnessStatus(forecastMeta.openmeteo.updatedAt, 12);
+
+      const geoAge = formatAge(forecastMeta.geosphere.updatedAt);
+      const omAge = formatAge(forecastMeta.openmeteo.updatedAt);
+
+      // Aktive Quelle hervorheben
+      const activeSource = isShortTerm ? 'geosphere' : 'openmeteo';
+      const activeStatus = isShortTerm ? geoStatus : omStatus;
+      const activeAge = isShortTerm ? geoAge : omAge;
+
+      const timeframeLabel = hours === 24 ? '24h' : hours === 48 ? '48h' : hours === 72 ? '3 Tage' : '7 Tage';
+      const minSnow = window.weatherFilterState?.minSnowCm || 0;
+
+      alert(
+        `🌨️ Schnee & Wetter Info\n\n` +
+        `📍 Zeitraum: ${timeframeLabel}\n` +
+        `${activeStatus.icon} Daten: ${activeStatus.text} (${activeAge})\n\n` +
+        `────────────────────\n\n` +
+        `🎚️ Schnee-Vorhersage (${minSnow > 0 ? `≥${minSnow}cm` : 'aus'}):\n` +
+        `  Filtert Skigebiete nach erwartetem\n` +
+        `  Neuschnee im gewählten Zeitraum.\n` +
+        `  Gebiete unter dem Wert werden\n` +
+        `  auf der Karte ausgeblendet.\n\n` +
+        `────────────────────\n\n` +
+        `${isShortTerm ? '▶ ' : ''}Kurzfrist (24h, 48h):\n` +
+        `  GeoSphere Austria - stündlich\n` +
+        `  ${geoStatus.icon} ${geoAge} (${forecastMeta.geosphere.count} Gebiete)\n` +
+        `  Abdeckung: AT, DE, CH, SI\n\n` +
+        `${!isShortTerm ? '▶ ' : ''}Mittelfrist (3T, 7T):\n` +
+        `  Open-Meteo - täglich, 16 Tage\n` +
+        `  ${omStatus.icon} ${omAge} (${forecastMeta.openmeteo.count} Gebiete)\n` +
+        `  Abdeckung: Alle Länder\n\n` +
+        `────────────────────\n` +
+        `📡 Auto-Updates: 07:00 & 19:00 Uhr`
+      );
+    };
+
+    document.getElementById('weather-info-btn')?.addEventListener('click', showWeatherInfo);
+    document.getElementById('weather-info-btn-mobile')?.addEventListener('click', showWeatherInfo);
+  })();
+
+  // Berechnet Schnee für einen bestimmten Zeitraum
+  function getSnowForTimeframe(stableId, hours) {
+    const omForecast = openMeteoForecasts[stableId];
+    const gsForecast = snowForecasts[stableId];
+
+    // Kurzfrist (24h, 48h): GeoSphere bevorzugen
+    // WICHTIG: GeoSphere liefert kumulative Werte (snow_acc), nicht stündliche!
+    // Daher nehmen wir den letzten Wert im Zeitraum, nicht die Summe.
+    if (hours <= 48 && gsForecast?.forecasts?.length) {
+      const forecasts = gsForecast.forecasts.slice(0, hours);
+      // Letzten nicht-null Wert im Zeitraum finden (kumulativer Gesamtschnee)
+      for (let i = forecasts.length - 1; i >= 0; i--) {
+        const snow = forecasts[i].snowfall_cm;
+        if (snow != null) {
+          return Math.round(snow * 10) / 10;
+        }
+      }
+      return 0;
+    }
+
+    // Mittelfrist (3T, 7T): Open-Meteo nutzen
+    if (omForecast) {
+      if (hours <= 72) return omForecast.snow_3d_cm || 0;
+      return omForecast.snow_7d_cm || 0;
+    }
+
+    return 0;
+  }
+
+  // Update-Funktion für Wetter-Anzeige
+  function updateWeatherDisplay() {
+    const state = window.weatherFilterState;
+
+    // Entferne alle Snow-Badges
+    Object.values(snowBadgeMarkers).forEach(m => map.removeLayer(m));
+    Object.keys(snowBadgeMarkers).forEach(k => delete snowBadgeMarkers[k]);
+
+    if (!state.enabled) {
+      // Zeige normale Marker
+      Object.values(resortMarkers).forEach(m => {
+        if (m._icon) m._icon.style.display = '';
+        if (m._path) m._path.style.display = '';
+      });
+      console.log('Weather display disabled');
+      return;
+    }
+
+    let badgeCount = 0;
+    let hiddenCount = 0;
+
+    Object.values(resorts).forEach(r => {
+      if (!r.stable_id || !r.lat || !r.lon) return;
+
+      const snow = getSnowForTimeframe(r.stable_id, state.timeframeHours);
+      const marker = resortMarkers[norm(r.name)];
+
+      // Filter: Min Snow
+      if (snow < state.minSnowCm) {
+        if (marker) {
+          if (marker._icon) marker._icon.style.display = 'none';
+          if (marker._path) marker._path.style.display = 'none';
+        }
+        hiddenCount++;
+        return;
+      }
+
+      // Zeige Marker
+      if (marker) {
+        if (marker._icon) marker._icon.style.display = '';
+        if (marker._path) marker._path.style.display = '';
+      }
+
+      // Badge nur ab 5cm anzeigen
+      if (snow < 5) return;
+
+      const color = getBergfexSnowColor(snow);
+      const size = getSnowBadgeSize(snow);
+      const snowText = Math.round(snow);
+
+      // Badge mit Zahl statt Schneeflocke
+      const badgeHtml = `<div class="snow-badge snow-badge-${size}" style="background:${color}" title="${snowText}cm in ${state.timeframeHours}h">${snowText}</div>`;
+      const iconSize = size === 'large' ? 22 : size === 'medium' ? 18 : 14;
+      const icon = L.divIcon({
+        html: badgeHtml,
+        className: 'snow-badge-wrapper',
+        iconSize: [iconSize, iconSize],
+        iconAnchor: [-4, iconSize]
+      });
+
+      const badge = L.marker([r.lat, r.lon], {
+        icon,
+        interactive: false,
+        pane: 'markerPane'
+      }).addTo(map);
+
+      snowBadgeMarkers[r.stable_id] = badge;
+      badgeCount++;
+    });
+
+    console.log(`Weather display: ${badgeCount} badges, ${hiddenCount} hidden (min: ${state.minSnowCm}cm, timeframe: ${state.timeframeHours}h)`);
+  }
 
 </script>
 

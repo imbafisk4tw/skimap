@@ -556,9 +556,9 @@ function updateVerbundUi() {
 
       const ctrl = L.control({ position: "topright" });
       ctrl.onAdd = function () {
-        const div = L.DomUtil.create("div", "filter-box leaflet-control");
+        const div = L.DomUtil.create("div", "filter-box leaflet-control collapsed");
         div.innerHTML = `
-          <button type="button" class="panel-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="true">
+          <button type="button" class="panel-toggle" aria-label="Filter ein-/ausklappen" aria-expanded="false">
             <span class="toggle-title">Filter</span>
             <span class="toggle-icon">▼</span>
           </button>

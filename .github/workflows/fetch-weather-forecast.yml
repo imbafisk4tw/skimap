@@ -31,8 +31,12 @@ jobs:
           python pipeline/scripts/fetch_openmeteo_forecast.py
 
       - name: Fetch GeoSphere forecasts (2.5 days, AT/DE/CH/SI only)
+        continue-on-error: true  # Don't fail workflow if rate limited
+        timeout-minutes: 20
         run: |
-          python pipeline/scripts/fetch_geosphere_forecast.py --json-only
+          # --resume: Continue from previous run if incomplete
+          # --max-age 12: Re-fetch all if data > 12h old (matches cron interval)
+          python pipeline/scripts/fetch_geosphere_forecast.py --json-only --resume --max-age 12
 
       - name: Commit and push forecast data
         run: |

@@ -49,9 +49,11 @@ PARAMETERS = [
     "rr_acc",    # Total precipitation (mm)
 ]
 
-# Rate limiting (GeoSphere has strict rate limits)
-REQUEST_DELAY_S = 1.2  # Delay between requests - 1.2s to stay under rate limit
-MAX_RETRIES = 2        # Retry on 502/503 errors
+# Rate limiting (GeoSphere has strict rate limits: 5/s, 240/h)
+REQUEST_DELAY_S = 1.0  # Delay between batch requests
+MAX_RETRIES = 3        # Retry on 502/503/429 errors
+RATE_LIMIT_BACKOFF_S = 30  # Wait time when hitting rate limit (429)
+BATCH_SIZE = 20        # Number of locations per request (API supports multiple lat_lon)
 
 # Bounding box for Alps (skip resorts outside GeoSphere coverage)
 # Note: GeoSphere covers AT + surrounding area, but FR/IT mostly return errors
@@ -184,31 +186,43 @@ def is_in_geosphere_coverage(lat: float, lon: float) -> bool:
     )
 
 
-def fetch_forecast(lat: float, lon: float) -> dict | None:
+def fetch_forecast_batch(locations: list[tuple[float, float]]) -> dict | None:
     """
-    Fetch weather forecast from GeoSphere API for a single point.
+    Fetch weather forecast from GeoSphere API for multiple points in one request.
 
-    Returns parsed forecast data or None on error.
+    Args:
+        locations: List of (lat, lon) tuples
+
+    Returns:
+        Parsed GeoJSON data with multiple features, or None on error.
     """
     url = f"{GEOSPHERE_BASE_URL}/timeseries/forecast/{DATASET}"
 
-    params = {
-        "parameters": ",".join(PARAMETERS),
-        "lat_lon": f"{lat},{lon}",
-        "output_format": "geojson"
-    }
+    # Build params with multiple lat_lon entries
+    # requests library handles list values as repeated params: lat_lon=x,y&lat_lon=a,b
+    params = [
+        ("parameters", ",".join(PARAMETERS)),
+        ("output_format", "geojson"),
+    ]
+    for lat, lon in locations:
+        params.append(("lat_lon", f"{lat},{lon}"))
 
     for attempt in range(MAX_RETRIES + 1):
         try:
-            response = requests.get(url, params=params, timeout=30)
+            response = requests.get(url, params=params, timeout=60)  # Longer timeout for batch
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException as e:
             status = getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None
             # Retry on 502, 503, 429 errors
             if status in (502, 503, 429) and attempt < MAX_RETRIES:
-                wait_time = (attempt + 1) * 2  # Exponential backoff: 2s, 4s
-                print(f"  [{status}] Retry {attempt+1}/{MAX_RETRIES} in {wait_time}s...", end=" ", flush=True)
+                # Rate limit (429) needs longer backoff
+                if status == 429:
+                    wait_time = RATE_LIMIT_BACKOFF_S
+                    print(f"\n  [429 Rate Limit] Waiting {wait_time}s before retry {attempt+1}/{MAX_RETRIES}...", end=" ", flush=True)
+                else:
+                    wait_time = (attempt + 1) * 3  # Exponential backoff: 3s, 6s, 9s
+                    print(f"  [{status}] Retry {attempt+1}/{MAX_RETRIES} in {wait_time}s...", end=" ", flush=True)
                 time.sleep(wait_time)
                 continue
             print(f"  Error: {e}")
@@ -216,27 +230,14 @@ def fetch_forecast(lat: float, lon: float) -> dict | None:
     return None
 
 
-def parse_geosphere_response(data: dict, max_elevation_m: int = None) -> list:
-    """
-    Parse GeoSphere API response into forecast records.
+def fetch_forecast(lat: float, lon: float) -> dict | None:
+    """Fetch forecast for a single point (wrapper for backwards compatibility)."""
+    return fetch_forecast_batch([(lat, lon)])
 
-    Args:
-        data: GeoSphere API response (GeoJSON)
-        max_elevation_m: Resort's max elevation (for snow estimation)
 
-    Returns:
-        List of forecast dicts with timestamp, snowfall, temp, etc.
-    """
-    if not data or 'features' not in data:
-        return []
-
-    features = data.get('features', [])
-    if not features:
-        return []
-
-    # Timestamps are at root level, not in properties
-    timestamps = data.get('timestamps', [])
-    props = features[0].get('properties', {})
+def parse_feature_forecasts(feature: dict, timestamps: list) -> list:
+    """Parse a single GeoJSON feature into forecast records."""
+    props = feature.get('properties', {})
     parameters = props.get('parameters', {})
 
     # Extract parameter arrays (using correct API parameter names)
@@ -277,6 +278,61 @@ def parse_geosphere_response(data: dict, max_elevation_m: int = None) -> list:
     return forecasts
 
 
+def parse_geosphere_batch_response(data: dict, resorts: list) -> dict:
+    """
+    Parse GeoSphere API batch response into forecast records per resort.
+
+    Args:
+        data: GeoSphere API response (GeoJSON with multiple features)
+        resorts: List of resort dicts with lat/lon (in same order as request)
+
+    Returns:
+        Dict mapping stable_id to forecast data
+    """
+    if not data or 'features' not in data:
+        return {}
+
+    features = data.get('features', [])
+    timestamps = data.get('timestamps', [])
+
+    if not features or not timestamps:
+        return {}
+
+    results = {}
+
+    # Features are returned in same order as requested lat_lon params
+    for i, feature in enumerate(features):
+        if i >= len(resorts):
+            break
+
+        resort = resorts[i]
+        forecasts = parse_feature_forecasts(feature, timestamps)
+
+        if forecasts:
+            results[resort['stable_id']] = {
+                'name': resort['name'],
+                'lat': resort['lat'],
+                'lon': resort['lon'],
+                'forecasts': forecasts
+            }
+
+    return results
+
+
+def parse_geosphere_response(data: dict, max_elevation_m: int = None) -> list:
+    """Parse single-location response (backwards compatibility)."""
+    if not data or 'features' not in data:
+        return []
+
+    features = data.get('features', [])
+    timestamps = data.get('timestamps', [])
+
+    if not features or not timestamps:
+        return []
+
+    return parse_feature_forecasts(features[0], timestamps)
+
+
 # ==============================================================================
 # Export Functions
 # ==============================================================================
@@ -300,12 +356,38 @@ def export_forecasts_to_json(all_forecasts: dict, output_path: Path):
 # Main
 # ==============================================================================
 
+def load_existing_forecasts(output_path: Path) -> tuple[dict, datetime | None]:
+    """Load existing forecasts to resume from previous run.
+
+    Returns:
+        Tuple of (forecasts dict, generated_at datetime or None)
+    """
+    if output_path.exists():
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                forecasts = data.get('forecasts', {})
+                generated_at = None
+                if 'generated_at' in data:
+                    try:
+                        generated_at = datetime.fromisoformat(data['generated_at'].replace('Z', '+00:00'))
+                    except (ValueError, AttributeError):
+                        pass
+                return forecasts, generated_at
+        except Exception as e:
+            print(f"Warning: Could not load existing forecasts: {e}")
+    return {}, None
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch GeoSphere weather forecasts")
     parser.add_argument("--dry-run", action="store_true", help="Don't save to database")
     parser.add_argument("--limit", type=int, help="Limit number of resorts to fetch")
     parser.add_argument("--json-only", action="store_true", help="Export to JSON, skip database")
     parser.add_argument("--resorts-json", type=Path, help="Path to resorts.json (fallback if no DB)")
+    parser.add_argument("--resume", action="store_true", help="Resume from previous run (skip already fetched)")
+    parser.add_argument("--max-age", type=float, default=12.0, help="Max age in hours before re-fetching (default: 12)")
+    parser.add_argument("--save-interval", type=int, default=20, help="Save progress every N resorts")
     args = parser.parse_args()
 
     print(f"=== GeoSphere Forecast Fetcher ===")
@@ -339,54 +421,92 @@ def main():
     if skipped > 0:
         print(f"Skipping {skipped} resorts outside GeoSphere coverage")
 
-    print(f"Fetching forecasts for {len(resorts_in_coverage)} resorts...")
+    # Output path
+    output_dir = Path(__file__).parent.parent.parent / "data" / "forecasts"
+    output_dir.mkdir(exist_ok=True)
+    output_path = output_dir / "current_forecast.json"
+
+    # Load existing forecasts if resuming
+    all_forecasts = {}
+    data_is_fresh = False
+    if args.resume:
+        all_forecasts, generated_at = load_existing_forecasts(output_path)
+        if all_forecasts:
+            # Check if data is still fresh
+            if generated_at:
+                age_hours = (datetime.now(timezone.utc) - generated_at).total_seconds() / 3600
+                data_is_fresh = age_hours < args.max_age
+                print(f"Existing data: {len(all_forecasts)} forecasts, {age_hours:.1f}h old (max: {args.max_age}h)")
+                if not data_is_fresh:
+                    print(f"Data too old, will re-fetch all resorts")
+                    all_forecasts = {}  # Clear old data
+            else:
+                print(f"Resuming: loaded {len(all_forecasts)} existing forecasts (no timestamp)")
+                data_is_fresh = True  # Assume fresh if no timestamp
+
+    # Filter out already fetched resorts (only if data is fresh)
+    if all_forecasts and data_is_fresh:
+        resorts_to_fetch = [r for r in resorts_in_coverage if r['stable_id'] not in all_forecasts]
+        already_done = len(resorts_in_coverage) - len(resorts_to_fetch)
+        if already_done > 0:
+            print(f"Skipping {already_done} already fetched resorts")
+    else:
+        resorts_to_fetch = resorts_in_coverage
+
+    # Calculate batches
+    num_batches = (len(resorts_to_fetch) + BATCH_SIZE - 1) // BATCH_SIZE
+    print(f"Fetching forecasts for {len(resorts_to_fetch)} resorts in {num_batches} batches (batch size: {BATCH_SIZE})...")
     print()
 
-    # Fetch forecasts
-    all_forecasts = {}
+    # Fetch forecasts in batches
     success_count = 0
     error_count = 0
+    consecutive_errors = 0
+    MAX_CONSECUTIVE_ERRORS = 3  # Stop if too many batch errors in a row
 
-    for i, resort in enumerate(resorts_in_coverage):
-        stable_id = resort['stable_id']
-        # Use ASCII-safe name for console output (Windows cp1252 compatibility)
-        safe_name = resort['name'].encode('ascii', 'replace').decode('ascii')
-        print(f"[{i+1}/{len(resorts_in_coverage)}] {safe_name}...", end=" ", flush=True)
+    for batch_idx in range(num_batches):
+        batch_start = batch_idx * BATCH_SIZE
+        batch_end = min(batch_start + BATCH_SIZE, len(resorts_to_fetch))
+        batch_resorts = resorts_to_fetch[batch_start:batch_end]
 
-        data = fetch_forecast(resort['lat'], resort['lon'])
+        # Build location list for batch request
+        locations = [(r['lat'], r['lon']) for r in batch_resorts]
+
+        total_done = len(all_forecasts)
+        print(f"Batch {batch_idx+1}/{num_batches} ({len(batch_resorts)} resorts, {total_done} total done)...", end=" ", flush=True)
+
+        data = fetch_forecast_batch(locations)
 
         if data:
-            forecasts = parse_geosphere_response(data, resort.get('max_elevation_m'))
+            batch_results = parse_geosphere_batch_response(data, batch_resorts)
 
-            if forecasts:
-                all_forecasts[stable_id] = {
-                    'name': resort['name'],
-                    'lat': resort['lat'],
-                    'lon': resort['lon'],
-                    'forecasts': forecasts
-                }
+            if batch_results:
+                # Merge results into all_forecasts
+                all_forecasts.update(batch_results)
+                batch_success = len(batch_results)
+                success_count += batch_success
+                consecutive_errors = 0
 
-                # Save to database
-                if conn and not args.dry_run and resort.get('id'):
-                    try:
-                        saved = save_forecasts_to_db(conn, resort['id'], forecasts)
-                        print(f"OK ({len(forecasts)} hours, saved {saved})")
-                    except Exception as e:
-                        print(f"DB error: {e}")
-                        error_count += 1
-                        continue
-                else:
-                    print(f"OK ({len(forecasts)} hours)")
+                print(f"OK ({batch_success}/{len(batch_resorts)} resorts)")
 
-                success_count += 1
+                # Save progress after each batch
+                export_forecasts_to_json(all_forecasts, output_path)
             else:
-                print("No data")
-                error_count += 1
+                print("No data in response")
+                error_count += len(batch_resorts)
+                consecutive_errors += 1
         else:
             print("Failed")
-            error_count += 1
+            error_count += len(batch_resorts)
+            consecutive_errors += 1
 
-        # Rate limiting
+        # Stop if too many consecutive batch errors
+        if consecutive_errors >= MAX_CONSECUTIVE_ERRORS:
+            print(f"\n*** Too many consecutive batch errors ({consecutive_errors}), stopping early ***")
+            print(f"*** Run again with --resume to continue ***")
+            break
+
+        # Rate limiting between batches
         time.sleep(REQUEST_DELAY_S)
 
     # Commit database changes
@@ -396,19 +516,12 @@ def main():
 
     print()
     print(f"=== Done ===")
-    print(f"Success: {success_count}, Errors: {error_count}")
+    print(f"This run: Success: {success_count}, Errors: {error_count}")
+    print(f"Total forecasts: {len(all_forecasts)}")
 
-    # Export to JSON
+    # Export final JSON
     if all_forecasts:
-        output_dir = Path(__file__).parent.parent.parent / "data" / "forecasts"
-        output_dir.mkdir(exist_ok=True)
-
-        # Current forecast file (overwritten each run)
-        export_forecasts_to_json(all_forecasts, output_dir / "current_forecast.json")
-
-        # Timestamped archive (optional)
-        # timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
-        # export_forecasts_to_json(all_forecasts, output_dir / f"forecast_{timestamp}.json")
+        export_forecasts_to_json(all_forecasts, output_path)
 
 
 if __name__ == "__main__":
