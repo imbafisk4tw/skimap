@@ -1,5 +1,77 @@
 # Skigebiete Karte - Entwicklungsstand
 
+## Abgeschlossene Arbeiten (Session 12.01.2026)
+
+### 1. Bug-Fix: GeoSphere kumulative Schneewerte
+
+**Problem:** St. Anton zeigte 57cm statt 7cm Neuschnee für 24h.
+
+**Ursache:** GeoSphere API liefert `snow_acc` (akkumulierte Werte), nicht stündliche Mengen:
+- Hour 8: 0.2cm (Summe bis dahin)
+- Hour 23: 6.9cm (Summe nach 24h)
+
+Der Code summierte alle Werte (0.2 + 0.6 + ... + 6.9 = 57cm) statt den letzten Wert zu nehmen.
+
+**Lösung:** `getSnowForTimeframe()` nimmt jetzt den letzten nicht-null Wert im Zeitraum:
+```javascript
+// Vorher (falsch): Summe aller Werte
+gsForecast.forecasts.slice(0, hours).forEach(f => {
+  snowSum += f.snowfall_cm || 0;
+});
+
+// Nachher (richtig): Letzter kumulativer Wert
+for (let i = forecasts.length - 1; i >= 0; i--) {
+  if (forecasts[i].snowfall_cm != null) {
+    return forecasts[i].snowfall_cm;
+  }
+}
+```
+
+### 2. GeoSphere Batch-Requests (Rate-Limit-Lösung)
+
+**Problem:** Workflow brach nach ~10 Resorts wegen Rate-Limit (429) ab.
+
+**Lösung:** Batch-Requests mit mehreren `lat_lon` Parametern pro Anfrage:
+- `BATCH_SIZE = 20` Standorte pro Request
+- Reduziert API-Calls von 689 auf ~35
+- Neue Flags: `--resume`, `--max-age 12`
+
+**Dateien:**
+- `pipeline/scripts/fetch_geosphere_forecast.py`
+- `.github/workflows/fetch-weather-forecast.yml`
+
+### 3. Mobile Wetter-Controls
+
+Wetter-Box ist auf Desktop separat, auf Mobile in der Slider-Box integriert:
+
+**Features:**
+- Toggle-Switch für Schnee-Anzeige (synchronisiert Desktop ↔ Mobile)
+- Zeitraum-Buttons: 24h, 48h, 3T, 7T
+- Schnee-Vorhersage Slider (0-100cm)
+- Legende mit Farbpunkten (Bergfex-Farben)
+
+**CSS:** Eigene Styles für `.weather-mobile-section` (Toggle, Legende, etc.)
+
+### 4. Info-Icon mit dynamischer Datenfrische
+
+Info-Button zeigt:
+- Aktuelle Zeitraum-Auswahl
+- Datenfrische-Status (✅ Aktuell / 🟡 Etwas älter / 🔴 Veraltet)
+- Relative Zeitangabe ("vor 3 Stunden")
+- Erklärung des Schnee-Vorhersage Sliders
+- Datenquellen (GeoSphere für 24h/48h, Open-Meteo für 3T/7T)
+
+**Position:** Neben Legende (Desktop), im Header (Mobile)
+
+### 5. UI-Verbesserungen
+
+- **Counter verschoben:** Von separater Box inline neben Suchfeld
+- **Filter-Box:** Standardmäßig eingeklappt
+- **Export-Box:** Button-Höhe korrigiert (war größer als andere Panels)
+- **Label geändert:** "Min. Neuschnee" → "Schnee-Vorhersage"
+
+---
+
 ## Abgeschlossene Arbeiten (Session 10.01.2026 - Abend)
 
 ### 1. V2 Database: Travel Times Pipeline
