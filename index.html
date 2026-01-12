@@ -3528,6 +3528,13 @@ document.addEventListener("DOMContentLoaded", () => {
       minSnowCm: 0
     };
 
+    // Debounced update to prevent memory leak from rapid slider movements
+    let weatherUpdateTimer = null;
+    function debouncedWeatherUpdate() {
+      if (weatherUpdateTimer) clearTimeout(weatherUpdateTimer);
+      weatherUpdateTimer = setTimeout(() => updateWeatherDisplay(), 150);
+    }
+
     // On/Off Toggle
     weatherToggle?.addEventListener('change', () => {
       window.weatherFilterState.enabled = weatherToggle.checked;
@@ -3557,7 +3564,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (mobileSlider) mobileSlider.value = val;
       if (mobileLabel) mobileLabel.textContent = `≥${val} cm`;
       if (window.weatherFilterState.enabled) {
-        updateWeatherDisplay();
+        debouncedWeatherUpdate();
       }
     });
 
@@ -3601,7 +3608,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (snowMinSlider) snowMinSlider.value = val;
       if (snowMinLabel) snowMinLabel.textContent = `≥${val} cm`;
       if (window.weatherFilterState.enabled) {
-        updateWeatherDisplay();
+        debouncedWeatherUpdate();
       }
     });
 
