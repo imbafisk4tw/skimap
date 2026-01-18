@@ -1,0 +1,87 @@
+name: Fetch Weather Forecasts
+
+on:
+  # Manueller Trigger
+  workflow_dispatch:
+
+  # Automatisch 3x täglich (06:00, 11:30, 18:00 UTC)
+  schedule:
+    - cron: '0 6 * * *'    # 07:00 CET / 08:00 CEST
+    - cron: '30 11 * * *'  # 12:30 CET / 13:30 CEST
+    - cron: '0 18 * * *'   # 19:00 CET / 20:00 CEST
+
+permissions:
+  contents: write
+
+# Prevent concurrent weather fetches - but don't block pages deployments
+concurrency:
+  group: "weather-forecast"
+  cancel-in-progress: false
+
+jobs:
+  fetch-forecasts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Fetch Open-Meteo forecasts (16 days, mountain + valley, all countries)
+        run: |
+          python pipeline/scripts/fetch_openmeteo_forecast.py
+
+      - name: Fetch GeoSphere forecasts (2.5 days, AT/DE/CH/SI only)
+        continue-on-error: true  # Don't fail workflow if rate limited
+        timeout-minutes: 20
+        run: |
+          # --resume: Continue from previous run if incomplete
+          # --max-age 12: Re-fetch all if data > 12h old (matches cron interval)
+          python pipeline/scripts/fetch_geosphere_forecast.py --json-only --resume --max-age 12
+
+      - name: Commit and push forecast data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if there are changes
+          if git diff --quiet data/forecasts/; then
+            echo "No changes to forecast data"
+            exit 0
+          fi
+
+          git add data/forecasts/
+
+          # Check if last commit is a weather forecast commit (amend it instead of creating new)
+          LAST_COMMIT_MSG=$(git log -1 --format=%s)
+          if [[ "$LAST_COMMIT_MSG" == "Update weather forecasts"* ]]; then
+            echo "Amending existing weather commit..."
+            git commit --amend --no-edit --date="$(date -u)"
+            git push --force-with-lease
+          else
+            echo "Creating new weather commit..."
+            git commit -m "Update weather forecasts $(date -u +%Y-%m-%d)"
+            # Pull any changes that happened during the workflow run, then push
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      # Optional: Mit Datenbank (erfordert Secrets)
+      # - name: Fetch and save to database
+      #   env:
+      #     DB_HOST: ${{ secrets.DB_HOST }}
+      #     DB_PORT: ${{ secrets.DB_PORT }}
+      #     DB_NAME: ${{ secrets.DB_NAME }}
+      #     DB_USER: ${{ secrets.DB_USER }}
+      #     DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      #   run: |
+      #     pip install psycopg2-binary
+      #     python pipeline/scripts/fetch_geosphere_forecast.py

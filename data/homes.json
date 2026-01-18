@@ -1,0 +1,22 @@
+{
+  "muc": {
+    "name": "München Zentrum",
+    "lat": 48.137,
+    "lon": 11.575
+  },
+  "muc_home": {
+    "name": "Claude-Lorrain-Str. 23",
+    "lat": 48.1194923,
+    "lon": 11.5673942
+  },
+  "ljubljana": {
+    "name": "Ljubljana",
+    "lat": 46.074893,
+    "lon": 14.505501
+  },
+  "alpe_dhuez": {
+    "name": "Alpe d'Huez",
+    "lat": 45.0919,
+    "lon": 6.0653
+  }
+}

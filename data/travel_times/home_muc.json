@@ -1,0 +1,5802 @@
+{
+  "hart-nusplingen": {
+    "duration_min": 0.0,
+    "duration_sec": 0,
+    "distance_km": null
+  },
+  "am-ried-farchant": {
+    "duration_min": 30.5,
+    "duration_sec": 1832,
+    "distance_km": 27.1
+  },
+  "barmsee-kruen": {
+    "duration_min": 32.1,
+    "duration_sec": 1926,
+    "distance_km": 22.2
+  },
+  "beuerberg": {
+    "duration_min": 32.4,
+    "duration_sec": 1945,
+    "distance_km": 28.5
+  },
+  "blomberg": {
+    "duration_min": 34.8,
+    "duration_sec": 2089,
+    "distance_km": 34.1
+  },
+  "oberhof": {
+    "duration_min": 37.6,
+    "duration_sec": 2258,
+    "distance_km": 33.8
+  },
+  "alpspitz-edelsberg-ostallgaeu": {
+    "duration_min": 37.7,
+    "duration_sec": 2264,
+    "distance_km": 26.8
+  },
+  "oedberglifte": {
+    "duration_min": 38.8,
+    "duration_sec": 2329,
+    "distance_km": 32.1
+  },
+  "moosach-tranzlberg": {
+    "duration_min": 39.1,
+    "duration_sec": 2345,
+    "distance_km": 33.4
+  },
+  "wallberg-tegernseertal": {
+    "duration_min": 44.0,
+    "duration_sec": 2637,
+    "distance_km": 36.4
+  },
+  "brauneck-lenggries": {
+    "duration_min": 45.0,
+    "duration_sec": 2700,
+    "distance_km": 38.4
+  },
+  "oetzlifte-kochel": {
+    "duration_min": 46.3,
+    "duration_sec": 2779,
+    "distance_km": 44.3
+  },
+  "neukirchen-lautertal": {
+    "duration_min": 48.5,
+    "duration_sec": 2909,
+    "distance_km": 40.4
+  },
+  "ebersberg": {
+    "duration_min": 48.5,
+    "duration_sec": 2909,
+    "distance_km": 40.4
+  },
+  "skilift-treisberg-pferdskopf": {
+    "duration_min": 54.5,
+    "duration_sec": 3269,
+    "distance_km": 68.6
+  },
+  "schluchsee": {
+    "duration_min": 54.5,
+    "duration_sec": 3269,
+    "distance_km": 68.6
+  },
+  "rabenkopf-oberau": {
+    "duration_min": 54.6,
+    "duration_sec": 3274,
+    "distance_km": 68.7
+  },
+  "kreuth-kirchberg": {
+    "duration_min": 55.7,
+    "duration_sec": 3340,
+    "distance_km": 46.3
+  },
+  "kreuth-hirschberglifte": {
+    "duration_min": 55.7,
+    "duration_sec": 3340,
+    "distance_km": 46.3
+  },
+  "kirchberglift-oberweissbach": {
+    "duration_min": 56.9,
+    "duration_sec": 3413,
+    "distance_km": 46.8
+  },
+  "jachenau-muehle": {
+    "duration_min": 57.0,
+    "duration_sec": 3417,
+    "distance_km": 54.2
+  },
+  "oberaudorf-hocheck": {
+    "duration_min": 57.4,
+    "duration_sec": 3446,
+    "distance_km": 71.1
+  },
+  "bernau-spitzenberg-koepfle": {
+    "duration_min": 60.2,
+    "duration_sec": 3614,
+    "distance_km": 72.8
+  },
+  "brombergalm": {
+    "duration_min": 61.2,
+    "duration_sec": 3673,
+    "distance_km": 66.3
+  },
+  "karwendel-mittenwald": {
+    "duration_min": 62.1,
+    "duration_sec": 3728,
+    "distance_km": 69.7
+  },
+  "walchensee-herzogstand": {
+    "duration_min": 63.7,
+    "duration_sec": 3820,
+    "distance_km": 70.9
+  },
+  "laber-oberammergau": {
+    "duration_min": 65.3,
+    "duration_sec": 3921,
+    "distance_km": 77.6
+  },
+  "wendelstein-bayrischzell": {
+    "duration_min": 65.8,
+    "duration_sec": 3950,
+    "distance_km": 65.6
+  },
+  "wasentegernbach": {
+    "duration_min": 66.2,
+    "duration_sec": 3973,
+    "distance_km": 73.9
+  },
+  "amberglift-walchsee": {
+    "duration_min": 66.9,
+    "duration_sec": 4015,
+    "distance_km": 78.9
+  },
+  "unterammergau": {
+    "duration_min": 67.1,
+    "duration_sec": 4024,
+    "distance_km": 81.3
+  },
+  "garmisch-partenkirchen": {
+    "duration_min": 67.5,
+    "duration_sec": 4048,
+    "distance_km": 81.1
+  },
+  "spitzingsee-tegernsee": {
+    "duration_min": 68.4,
+    "duration_sec": 4104,
+    "distance_km": 53.0
+  },
+  "kaiserblick-sachrang": {
+    "duration_min": 68.5,
+    "duration_sec": 4111,
+    "distance_km": 80.7
+  },
+  "tirolina-thiersee": {
+    "duration_min": 69.5,
+    "duration_sec": 4167,
+    "distance_km": 84.3
+  },
+  "sudelfeld-bayrischzell": {
+    "duration_min": 70.7,
+    "duration_sec": 4243,
+    "distance_km": 77.0
+  },
+  "schneeberglifte-thiersee": {
+    "duration_min": 72.4,
+    "duration_sec": 4346,
+    "distance_km": 87.3
+  },
+  "hochfeldlift-schwoich": {
+    "duration_min": 72.7,
+    "duration_sec": 4364,
+    "distance_km": 87.4
+  },
+  "dorflift-landl": {
+    "duration_min": 72.9,
+    "duration_sec": 4375,
+    "distance_km": 74.8
+  },
+  "christlum": {
+    "duration_min": 73.1,
+    "duration_sec": 4388,
+    "distance_km": 69.2
+  },
+  "unterwoessen-balsberg": {
+    "duration_min": 73.3,
+    "duration_sec": 4398,
+    "distance_km": 84.5
+  },
+  "planberg-und-wiesenlifte": {
+    "duration_min": 77.0,
+    "duration_sec": 4619,
+    "distance_km": 75.9
+  },
+  "schleching-geigelstein": {
+    "duration_min": 78.3,
+    "duration_sec": 4697,
+    "distance_km": 89.7
+  },
+  "inzell-kessel-lifte": {
+    "duration_min": 79.3,
+    "duration_sec": 4757,
+    "distance_km": 104.1
+  },
+  "rofan-seilbahn-maurach": {
+    "duration_min": 81.4,
+    "duration_sec": 4885,
+    "distance_km": 79.1
+  },
+  "bernau-hofeck": {
+    "duration_min": 81.5,
+    "duration_sec": 4893,
+    "distance_km": 97.3
+  },
+  "hochfelln": {
+    "duration_min": 81.5,
+    "duration_sec": 4893,
+    "distance_km": 97.3
+  },
+  "ruhpolding-unternberg": {
+    "duration_min": 82.7,
+    "duration_sec": 4959,
+    "distance_km": 102.6
+  },
+  "monte-kienader": {
+    "duration_min": 82.9,
+    "duration_sec": 4972,
+    "distance_km": 78.7
+  },
+  "monte-voggo-voggenthal": {
+    "duration_min": 82.9,
+    "duration_sec": 4972,
+    "distance_km": 78.7
+  },
+  "monte-sperlasso": {
+    "duration_min": 82.9,
+    "duration_sec": 4972,
+    "distance_km": 78.7
+  },
+  "skiwelt-wilder-kaiser-brixental": {
+    "duration_min": 83.0,
+    "duration_sec": 4983,
+    "distance_km": 102.8
+  },
+  "koessen": {
+    "duration_min": 83.4,
+    "duration_sec": 5005,
+    "distance_km": 92.4
+  },
+  "scheffau": {
+    "duration_min": 84.3,
+    "duration_sec": 5057,
+    "distance_km": 97.0
+  },
+  "halblech": {
+    "duration_min": 85.3,
+    "duration_sec": 5121,
+    "distance_km": 93.8
+  },
+  "lermoos-grubigstein": {
+    "duration_min": 85.5,
+    "duration_sec": 5131,
+    "distance_km": 101.2
+  },
+  "wettersteinbahnen-ehrwald": {
+    "duration_min": 85.7,
+    "duration_sec": 5141,
+    "distance_km": 100.0
+  },
+  "reit-im-winkl": {
+    "duration_min": 86.6,
+    "duration_sec": 5197,
+    "distance_km": 96.6
+  },
+  "zugspitze": {
+    "duration_min": 87.4,
+    "duration_sec": 5245,
+    "distance_km": 102.0
+  },
+  "zugspitzbahn": {
+    "duration_min": 87.4,
+    "duration_sec": 5245,
+    "distance_km": 102.0
+  },
+  "soell": {
+    "duration_min": 88.0,
+    "duration_sec": 5280,
+    "distance_km": 98.3
+  },
+  "ehrwald": {
+    "duration_min": 88.6,
+    "duration_sec": 5314,
+    "distance_km": 101.9
+  },
+  "buchenbergbahn-buching": {
+    "duration_min": 88.8,
+    "duration_sec": 5326,
+    "distance_km": 96.2
+  },
+  "biberwier": {
+    "duration_min": 89.8,
+    "duration_sec": 5388,
+    "distance_km": 105.1
+  },
+  "katzenkopf-leutasch": {
+    "duration_min": 89.9,
+    "duration_sec": 5392,
+    "distance_km": 107.9
+  },
+  "seefeld-rosshuette": {
+    "duration_min": 90.5,
+    "duration_sec": 5431,
+    "distance_km": 105.3
+  },
+  "seefeld-gschwandtkopf": {
+    "duration_min": 91.5,
+    "duration_sec": 5491,
+    "distance_km": 108.2
+  },
+  "birkenlift-geigenbuehellift-seefeld": {
+    "duration_min": 91.5,
+    "duration_sec": 5491,
+    "distance_km": 108.2
+  },
+  "roggenboden": {
+    "duration_min": 91.9,
+    "duration_sec": 5513,
+    "distance_km": 106.9
+  },
+  "kirchdorf-in-tirol": {
+    "duration_min": 92.4,
+    "duration_sec": 5544,
+    "distance_km": 101.0
+  },
+  "untersberg-groedig": {
+    "duration_min": 92.4,
+    "duration_sec": 5546,
+    "distance_km": 130.0
+  },
+  "astenberg-wiesing": {
+    "duration_min": 93.8,
+    "duration_sec": 5626,
+    "distance_km": 116.9
+  },
+  "alte-reite-rosshaupten": {
+    "duration_min": 94.3,
+    "duration_sec": 5658,
+    "distance_km": 100.6
+  },
+  "skilifte-laerchenhof-erpfendorf": {
+    "duration_min": 94.4,
+    "duration_sec": 5664,
+    "distance_km": 104.2
+  },
+  "hopfgarten": {
+    "duration_min": 94.8,
+    "duration_sec": 5687,
+    "distance_km": 107.8
+  },
+  "skilifte-kirchdorf": {
+    "duration_min": 95.3,
+    "duration_sec": 5720,
+    "distance_km": 101.9
+  },
+  "burglift-stans": {
+    "duration_min": 96.0,
+    "duration_sec": 5757,
+    "distance_km": 89.4
+  },
+  "tegelberg-ostallgaeu": {
+    "duration_min": 96.2,
+    "duration_sec": 5771,
+    "distance_km": 103.5
+  },
+  "hinterfeldlift-moesern": {
+    "duration_min": 96.3,
+    "duration_sec": 5779,
+    "distance_km": 112.2
+  },
+  "going": {
+    "duration_min": 97.0,
+    "duration_sec": 5820,
+    "distance_km": 103.0
+  },
+  "ellmau": {
+    "duration_min": 97.7,
+    "duration_sec": 5864,
+    "distance_km": 103.8
+  },
+  "nocksteinlifte": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "tonnerhuettenlift": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "waldrastlift-ehenbichl": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "spechtenseelift-woerschachwald": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "stgeorgen": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "steinberg": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "skilift-haberinglift-poelstal": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "dorfberglift-kartitsch": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "moosberglift": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "schoeder": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "heumoeserlift-ebnit-dornbirn": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "tirolina-aktivberg-thiersee": {
+    "duration_min": 98.5,
+    "duration_sec": 5907,
+    "distance_km": 122.9
+  },
+  "wildschoenau-ski-juwel": {
+    "duration_min": 98.6,
+    "duration_sec": 5914,
+    "distance_km": 109.7
+  },
+  "stjohann-tirol": {
+    "duration_min": 98.8,
+    "duration_sec": 5925,
+    "distance_km": 111.8
+  },
+  "westendorf": {
+    "duration_min": 99.2,
+    "duration_sec": 5950,
+    "distance_km": 112.1
+  },
+  "spieljochbahn-fuegen": {
+    "duration_min": 100.1,
+    "duration_sec": 6007,
+    "distance_km": 124.5
+  },
+  "winklmoos-steinplatte": {
+    "duration_min": 100.2,
+    "duration_sec": 6014,
+    "distance_km": 104.4
+  },
+  "hallein-duerrnberg": {
+    "duration_min": 102.5,
+    "duration_sec": 6147,
+    "distance_km": 142.6
+  },
+  "alpbachtal": {
+    "duration_min": 102.5,
+    "duration_sec": 6149,
+    "distance_km": 120.9
+  },
+  "wildschoenau": {
+    "duration_min": 102.7,
+    "duration_sec": 6162,
+    "distance_km": 113.6
+  },
+  "zinkenlifte-duerrnberg": {
+    "duration_min": 103.8,
+    "duration_sec": 6225,
+    "distance_km": 141.0
+  },
+  "berwang": {
+    "duration_min": 103.9,
+    "duration_sec": 6235,
+    "distance_km": 115.4
+  },
+  "goetschen-berchtesgaden": {
+    "duration_min": 104.2,
+    "duration_sec": 6249,
+    "distance_km": 135.3
+  },
+  "thalgau": {
+    "duration_min": 105.0,
+    "duration_sec": 6301,
+    "distance_km": 147.5
+  },
+  "schwannerlift": {
+    "duration_min": 105.7,
+    "duration_sec": 6339,
+    "distance_km": 101.6
+  },
+  "kirchdorf-ssc": {
+    "duration_min": 106.6,
+    "duration_sec": 6396,
+    "distance_km": 155.4
+  },
+  "skigebiet-gries-laengenfeld": {
+    "duration_min": 107.1,
+    "duration_sec": 6424,
+    "distance_km": 116.7
+  },
+  "brixen": {
+    "duration_min": 107.4,
+    "duration_sec": 6443,
+    "distance_km": 115.7
+  },
+  "hochschwarzeck-ramsau-bei-berchtesgaden": {
+    "duration_min": 107.8,
+    "duration_sec": 6467,
+    "distance_km": 141.8
+  },
+  "almenwelt-lofer": {
+    "duration_min": 107.8,
+    "duration_sec": 6471,
+    "distance_km": 119.0
+  },
+  "sonntag": {
+    "duration_min": 108.2,
+    "duration_sec": 6494,
+    "distance_km": 114.1
+  },
+  "kitzbuehel-kirchberg": {
+    "duration_min": 108.4,
+    "duration_sec": 6505,
+    "distance_km": 124.8
+  },
+  "schollenwiesenlift": {
+    "duration_min": 108.9,
+    "duration_sec": 6536,
+    "distance_km": 114.6
+  },
+  "mautgrube-oberau": {
+    "duration_min": 109.2,
+    "duration_sec": 6552,
+    "distance_km": 145.3
+  },
+  "voegelsberg": {
+    "duration_min": 109.3,
+    "duration_sec": 6559,
+    "distance_km": 106.3
+  },
+  "hochfuegen": {
+    "duration_min": 109.6,
+    "duration_sec": 6576,
+    "distance_km": 136.2
+  },
+  "huettegglift-weerberg": {
+    "duration_min": 109.8,
+    "duration_sec": 6591,
+    "distance_km": 104.2
+  },
+  "pillersee-hochfilzen": {
+    "duration_min": 110.0,
+    "duration_sec": 6600,
+    "distance_km": 119.4
+  },
+  "birgitz": {
+    "duration_min": 112.1,
+    "duration_sec": 6728,
+    "distance_km": 128.6
+  },
+  "kellerjoch": {
+    "duration_min": 112.4,
+    "duration_sec": 6746,
+    "distance_km": 102.7
+  },
+  "schwannerlifte-weerberg": {
+    "duration_min": 112.9,
+    "duration_sec": 6773,
+    "distance_km": 105.2
+  },
+  "ranggerkoepfl": {
+    "duration_min": 112.9,
+    "duration_sec": 6774,
+    "distance_km": 128.6
+  },
+  "waidring-steinplatte": {
+    "duration_min": 112.9,
+    "duration_sec": 6776,
+    "distance_km": 113.5
+  },
+  "gschwend": {
+    "duration_min": 113.1,
+    "duration_sec": 6784,
+    "distance_km": 121.2
+  },
+  "muttereralm-nockspitzbahn": {
+    "duration_min": 113.6,
+    "duration_sec": 6818,
+    "distance_km": 129.1
+  },
+  "muttereralm": {
+    "duration_min": 113.6,
+    "duration_sec": 6818,
+    "distance_km": 129.1
+  },
+  "schmiedhornlift": {
+    "duration_min": 113.7,
+    "duration_sec": 6823,
+    "distance_km": 156.1
+  },
+  "pfronten-steinach-allgaeu": {
+    "duration_min": 114.9,
+    "duration_sec": 6896,
+    "distance_km": 118.4
+  },
+  "sonnenbichl": {
+    "duration_min": 114.9,
+    "duration_sec": 6896,
+    "distance_km": 118.4
+  },
+  "kesselmannlift-faistenau": {
+    "duration_min": 115.5,
+    "duration_sec": 6927,
+    "distance_km": 156.7
+  },
+  "sonnenberglift-gries-im-sellrain": {
+    "duration_min": 115.5,
+    "duration_sec": 6930,
+    "distance_km": 133.2
+  },
+  "kolsassberg": {
+    "duration_min": 116.0,
+    "duration_sec": 6958,
+    "distance_km": 106.7
+  },
+  "sonnenlifte-pfronten-roefleuten": {
+    "duration_min": 116.0,
+    "duration_sec": 6958,
+    "distance_km": 123.6
+  },
+  "jenner-schoenau-am-koenigssee": {
+    "duration_min": 117.1,
+    "duration_sec": 7027,
+    "distance_km": 148.1
+  },
+  "wildstaettlift-wattenberg": {
+    "duration_min": 117.2,
+    "duration_sec": 7029,
+    "distance_km": 111.5
+  },
+  "buronlifte-wertach": {
+    "duration_min": 117.5,
+    "duration_sec": 7052,
+    "distance_km": 126.7
+  },
+  "gaissau-hintersee": {
+    "duration_min": 117.6,
+    "duration_sec": 7056,
+    "distance_km": 156.2
+  },
+  "krispl-gaissau": {
+    "duration_min": 117.6,
+    "duration_sec": 7056,
+    "distance_km": 156.2
+  },
+  "gaissauhintersee": {
+    "duration_min": 117.6,
+    "duration_sec": 7056,
+    "distance_km": 156.2
+  },
+  "huettegglift": {
+    "duration_min": 117.7,
+    "duration_sec": 7060,
+    "distance_km": 107.2
+  },
+  "karkogel-abtenau": {
+    "duration_min": 118.8,
+    "duration_sec": 7128,
+    "distance_km": 166.7
+  },
+  "oberwaldlift-faistenau": {
+    "duration_min": 118.9,
+    "duration_sec": 7132,
+    "distance_km": 159.6
+  },
+  "mieders": {
+    "duration_min": 119.1,
+    "duration_sec": 7146,
+    "distance_km": 140.9
+  },
+  "stanzach": {
+    "duration_min": 119.3,
+    "duration_sec": 7160,
+    "distance_km": 129.0
+  },
+  "kitzbueheler-alpen-mittersill": {
+    "duration_min": 119.9,
+    "duration_sec": 7196,
+    "distance_km": 131.2
+  },
+  "nesselwaengle": {
+    "duration_min": 120.2,
+    "duration_sec": 7210,
+    "distance_km": 127.0
+  },
+  "mayrhofen": {
+    "duration_min": 120.3,
+    "duration_sec": 7220,
+    "distance_km": 145.7
+  },
+  "axamer-lizum": {
+    "duration_min": 121.0,
+    "duration_sec": 7261,
+    "distance_km": 134.9
+  },
+  "werfenweng": {
+    "duration_min": 121.5,
+    "duration_sec": 7289,
+    "distance_km": 170.8
+  },
+  "imst": {
+    "duration_min": 123.0,
+    "duration_sec": 7379,
+    "distance_km": 135.2
+  },
+  "jungholz": {
+    "duration_min": 123.3,
+    "duration_sec": 7397,
+    "distance_km": 132.8
+  },
+  "buchensteinwand-pillersee": {
+    "duration_min": 123.6,
+    "duration_sec": 7416,
+    "distance_km": 125.7
+  },
+  "heutal-unken": {
+    "duration_min": 123.6,
+    "duration_sec": 7416,
+    "distance_km": 125.7
+  },
+  "innsbruck-nordkette": {
+    "duration_min": 124.1,
+    "duration_sec": 7448,
+    "distance_km": 134.3
+  },
+  "glungezer": {
+    "duration_min": 124.7,
+    "duration_sec": 7482,
+    "distance_km": 112.5
+  },
+  "lofer": {
+    "duration_min": 124.8,
+    "duration_sec": 7488,
+    "distance_km": 126.2
+  },
+  "spieserlifte-allgaeu": {
+    "duration_min": 124.9,
+    "duration_sec": 7493,
+    "distance_km": 135.6
+  },
+  "hochzillertal": {
+    "duration_min": 124.9,
+    "duration_sec": 7493,
+    "distance_km": 138.9
+  },
+  "innsbruck-igls-patscherkofel": {
+    "duration_min": 125.1,
+    "duration_sec": 7505,
+    "distance_km": 143.0
+  },
+  "fuessener-joechle-graen": {
+    "duration_min": 125.1,
+    "duration_sec": 7507,
+    "distance_km": 132.1
+  },
+  "monte-popolo-eben": {
+    "duration_min": 125.3,
+    "duration_sec": 7517,
+    "distance_km": 181.6
+  },
+  "finkenberger-almbahnen": {
+    "duration_min": 125.3,
+    "duration_sec": 7521,
+    "distance_km": 150.2
+  },
+  "ellegg-faistenoy-allgaeu": {
+    "duration_min": 125.5,
+    "duration_sec": 7527,
+    "distance_km": 132.2
+  },
+  "hochplett-oberaschau": {
+    "duration_min": 126.5,
+    "duration_sec": 7587,
+    "distance_km": 170.3
+  },
+  "gerlos": {
+    "duration_min": 127.0,
+    "duration_sec": 7620,
+    "distance_km": 153.9
+  },
+  "leogang": {
+    "duration_min": 127.3,
+    "duration_sec": 7637,
+    "distance_km": 135.6
+  },
+  "zell-am-ziller": {
+    "duration_min": 127.3,
+    "duration_sec": 7638,
+    "distance_km": 145.9
+  },
+  "kuehtai": {
+    "duration_min": 127.8,
+    "duration_sec": 7669,
+    "distance_km": 145.5
+  },
+  "sonnenhanglifte-unterjoch": {
+    "duration_min": 127.9,
+    "duration_sec": 7675,
+    "distance_km": 139.5
+  },
+  "stubaital-neustift": {
+    "duration_min": 128.2,
+    "duration_sec": 7689,
+    "distance_km": 149.5
+  },
+  "elferbahnen-neustift": {
+    "duration_min": 128.2,
+    "duration_sec": 7689,
+    "distance_km": 149.5
+  },
+  "radstadt-altenmarkt": {
+    "duration_min": 128.2,
+    "duration_sec": 7689,
+    "distance_km": 186.9
+  },
+  "bergeralm": {
+    "duration_min": 128.9,
+    "duration_sec": 7737,
+    "distance_km": 157.1
+  },
+  "schwaerzenlifte-allgaeu": {
+    "duration_min": 129.1,
+    "duration_sec": 7744,
+    "distance_km": 148.7
+  },
+  "st-veit-im-pongau-astenlift": {
+    "duration_min": 129.3,
+    "duration_sec": 7760,
+    "distance_km": 183.2
+  },
+  "schlick": {
+    "duration_min": 129.8,
+    "duration_sec": 7786,
+    "distance_km": 150.5
+  },
+  "haeselgehr": {
+    "duration_min": 129.8,
+    "duration_sec": 7791,
+    "distance_km": 140.1
+  },
+  "laerchenhof-erpfendorf": {
+    "duration_min": 130.0,
+    "duration_sec": 7802,
+    "distance_km": 188.1
+  },
+  "neunerkoepfle": {
+    "duration_min": 130.7,
+    "duration_sec": 7842,
+    "distance_km": 135.7
+  },
+  "rastkogelbahnen-tux": {
+    "duration_min": 130.9,
+    "duration_sec": 7857,
+    "distance_km": 152.6
+  },
+  "venet": {
+    "duration_min": 131.6,
+    "duration_sec": 7895,
+    "distance_km": 149.1
+  },
+  "navis": {
+    "duration_min": 132.1,
+    "duration_sec": 7928,
+    "distance_km": 156.4
+  },
+  "gruenberg-obsteig": {
+    "duration_min": 132.2,
+    "duration_sec": 7929,
+    "distance_km": 190.3
+  },
+  "rastkogel-tux-vorderlanersbach": {
+    "duration_min": 132.4,
+    "duration_sec": 7942,
+    "distance_km": 156.9
+  },
+  "maria-schmolln": {
+    "duration_min": 132.7,
+    "duration_sec": 7959,
+    "distance_km": 171.5
+  },
+  "abtenau": {
+    "duration_min": 132.7,
+    "duration_sec": 7963,
+    "distance_km": 170.9
+  },
+  "sonnenbergbahn-neustift-milders": {
+    "duration_min": 132.9,
+    "duration_sec": 7976,
+    "distance_km": 152.2
+  },
+  "niederthai-oetztal": {
+    "duration_min": 133.6,
+    "duration_sec": 8016,
+    "distance_km": 156.7
+  },
+  "russbach": {
+    "duration_min": 133.7,
+    "duration_sec": 8021,
+    "distance_km": 178.9
+  },
+  "annaberg-lammertal": {
+    "duration_min": 134.3,
+    "duration_sec": 8056,
+    "distance_km": 179.4
+  },
+  "zauchensee": {
+    "duration_min": 134.4,
+    "duration_sec": 8063,
+    "distance_km": 195.7
+  },
+  "st-martin-tennengebirge": {
+    "duration_min": 134.5,
+    "duration_sec": 8072,
+    "distance_km": 187.4
+  },
+  "galtwiese-arzl-im-pitztal": {
+    "duration_min": 134.6,
+    "duration_sec": 8074,
+    "distance_km": 142.6
+  },
+  "eggalm-tux-lanersbach": {
+    "duration_min": 134.8,
+    "duration_sec": 8086,
+    "distance_km": 158.5
+  },
+  "umhausen-niederthai": {
+    "duration_min": 135.0,
+    "duration_sec": 8102,
+    "distance_km": 157.9
+  },
+  "stelzen-lohnsburg": {
+    "duration_min": 135.1,
+    "duration_sec": 8104,
+    "distance_km": 178.4
+  },
+  "skilifte-knittel": {
+    "duration_min": 135.5,
+    "duration_sec": 8128,
+    "distance_km": 146.2
+  },
+  "gohrersberg-kreuzthal": {
+    "duration_min": 135.7,
+    "duration_sec": 8141,
+    "distance_km": 157.8
+  },
+  "gosau": {
+    "duration_min": 135.8,
+    "duration_sec": 8146,
+    "distance_km": 186.1
+  },
+  "fageralm": {
+    "duration_min": 135.9,
+    "duration_sec": 8152,
+    "distance_km": 194.7
+  },
+  "lammertallift": {
+    "duration_min": 136.0,
+    "duration_sec": 8158,
+    "distance_km": 176.5
+  },
+  "oetz-hochoetz": {
+    "duration_min": 136.7,
+    "duration_sec": 8203,
+    "distance_km": 154.2
+  },
+  "postalm": {
+    "duration_min": 136.8,
+    "duration_sec": 8210,
+    "distance_km": 177.2
+  },
+  "koenigsleiten-zillertal-arena": {
+    "duration_min": 137.0,
+    "duration_sec": 8218,
+    "distance_km": 163.3
+  },
+  "hochkoenig-maria-alm-dienten-muehlbach": {
+    "duration_min": 137.8,
+    "duration_sec": 8269,
+    "distance_km": 191.5
+  },
+  "attergau-schilift-kronberg": {
+    "duration_min": 138.0,
+    "duration_sec": 8280,
+    "distance_km": 202.3
+  },
+  "hoernergruppe-fischen": {
+    "duration_min": 138.1,
+    "duration_sec": 8288,
+    "distance_km": 171.9
+  },
+  "goldegg": {
+    "duration_min": 138.2,
+    "duration_sec": 8291,
+    "distance_km": 189.8
+  },
+  "isny-felderhalde": {
+    "duration_min": 138.2,
+    "duration_sec": 8294,
+    "distance_km": 171.1
+  },
+  "frauenzell-brennberg": {
+    "duration_min": 138.3,
+    "duration_sec": 8299,
+    "distance_km": 158.8
+  },
+  "koenigsleiten": {
+    "duration_min": 138.9,
+    "duration_sec": 8335,
+    "distance_km": 163.8
+  },
+  "gramais": {
+    "duration_min": 139.4,
+    "duration_sec": 8363,
+    "distance_km": 147.0
+  },
+  "hochzeiger": {
+    "duration_min": 139.6,
+    "duration_sec": 8378,
+    "distance_km": 148.8
+  },
+  "hochlecken": {
+    "duration_min": 140.3,
+    "duration_sec": 8420,
+    "distance_km": 185.3
+  },
+  "buchberg-goldegg": {
+    "duration_min": 140.3,
+    "duration_sec": 8420,
+    "distance_km": 187.8
+  },
+  "postalm-wolfgangsee": {
+    "duration_min": 140.6,
+    "duration_sec": 8433,
+    "distance_km": 178.7
+  },
+  "skilift-peretseck-sankt-johann-am-walde": {
+    "duration_min": 140.7,
+    "duration_sec": 8439,
+    "distance_km": 181.5
+  },
+  "hintertux": {
+    "duration_min": 140.8,
+    "duration_sec": 8448,
+    "distance_km": 164.6
+  },
+  "hahnenkamm-hoefen-reutte": {
+    "duration_min": 140.8,
+    "duration_sec": 8450,
+    "distance_km": 120.1
+  },
+  "steirischerseeberg": {
+    "duration_min": 141.3,
+    "duration_sec": 8478,
+    "distance_km": 186.1
+  },
+  "filzmoos": {
+    "duration_min": 141.3,
+    "duration_sec": 8479,
+    "distance_km": 191.8
+  },
+  "laichingen": {
+    "duration_min": 141.7,
+    "duration_sec": 8501,
+    "distance_km": 162.1
+  },
+  "hinterreit": {
+    "duration_min": 141.8,
+    "duration_sec": 8508,
+    "distance_km": 150.6
+  },
+  "grossarl": {
+    "duration_min": 141.9,
+    "duration_sec": 8512,
+    "distance_km": 194.1
+  },
+  "hoerndllift-embach": {
+    "duration_min": 142.1,
+    "duration_sec": 8527,
+    "distance_km": 197.8
+  },
+  "kleinarl-flachauwinkl": {
+    "duration_min": 142.1,
+    "duration_sec": 8527,
+    "distance_km": 194.5
+  },
+  "fageralm-forstau": {
+    "duration_min": 142.2,
+    "duration_sec": 8534,
+    "distance_km": 197.1
+  },
+  "gerlosstein": {
+    "duration_min": 142.3,
+    "duration_sec": 8539,
+    "distance_km": 148.5
+  },
+  "rotecklift-tobadill": {
+    "duration_min": 142.7,
+    "duration_sec": 8561,
+    "distance_km": 159.9
+  },
+  "sankt-johann-alpendorf": {
+    "duration_min": 142.7,
+    "duration_sec": 8564,
+    "distance_km": 190.5
+  },
+  "joechelspitze": {
+    "duration_min": 143.2,
+    "duration_sec": 8594,
+    "distance_km": 152.6
+  },
+  "thalerhoehe": {
+    "duration_min": 143.5,
+    "duration_sec": 8609,
+    "distance_km": 167.0
+  },
+  "holzgau": {
+    "duration_min": 143.6,
+    "duration_sec": 8614,
+    "distance_km": 153.0
+  },
+  "piesendorf-niedernsill": {
+    "duration_min": 144.1,
+    "duration_sec": 8647,
+    "distance_km": 158.7
+  },
+  "krimml-hochkrimml": {
+    "duration_min": 144.2,
+    "duration_sec": 8653,
+    "distance_km": 168.2
+  },
+  "dorfgastein-grossarltal": {
+    "duration_min": 144.4,
+    "duration_sec": 8664,
+    "distance_km": 198.8
+  },
+  "wildkogel-arena-neukirchen-bramberg": {
+    "duration_min": 144.4,
+    "duration_sec": 8666,
+    "distance_km": 159.7
+  },
+  "nagelkoepfl-piesendorf": {
+    "duration_min": 144.6,
+    "duration_sec": 8674,
+    "distance_km": 159.1
+  },
+  "ofterschwang-hoernergruppe": {
+    "duration_min": 145.2,
+    "duration_sec": 8709,
+    "distance_km": 172.0
+  },
+  "bolsterlang-hoernergruppe": {
+    "duration_min": 145.5,
+    "duration_sec": 8729,
+    "distance_km": 176.7
+  },
+  "eben": {
+    "duration_min": 145.7,
+    "duration_sec": 8743,
+    "distance_km": 194.5
+  },
+  "skilift-markt-hartmannsdorf": {
+    "duration_min": 145.7,
+    "duration_sec": 8743,
+    "distance_km": 194.5
+  },
+  "zwoelferhorn": {
+    "duration_min": 145.8,
+    "duration_sec": 8746,
+    "distance_km": 178.6
+  },
+  "oberjoch-bad-hindelang": {
+    "duration_min": 146.0,
+    "duration_sec": 8758,
+    "distance_km": 143.9
+  },
+  "fendels": {
+    "duration_min": 146.5,
+    "duration_sec": 8788,
+    "distance_km": 163.8
+  },
+  "soellereck-hoellwies-oberstdorf": {
+    "duration_min": 147.0,
+    "duration_sec": 8821,
+    "distance_km": 180.8
+  },
+  "waldzell": {
+    "duration_min": 147.1,
+    "duration_sec": 8826,
+    "distance_km": 187.0
+  },
+  "dorfgastein": {
+    "duration_min": 147.8,
+    "duration_sec": 8868,
+    "distance_km": 200.8
+  },
+  "eberschwang": {
+    "duration_min": 148.0,
+    "duration_sec": 8878,
+    "distance_km": 204.3
+  },
+  "weiler-simmerberg": {
+    "duration_min": 148.1,
+    "duration_sec": 8885,
+    "distance_km": 178.5
+  },
+  "see": {
+    "duration_min": 148.3,
+    "duration_sec": 8900,
+    "distance_km": 164.2
+  },
+  "sinswang-allgaeu": {
+    "duration_min": 148.4,
+    "duration_sec": 8903,
+    "distance_km": 177.6
+  },
+  "obertauern": {
+    "duration_min": 149.0,
+    "duration_sec": 8938,
+    "distance_km": 209.5
+  },
+  "salzwinkel": {
+    "duration_min": 149.1,
+    "duration_sec": 8948,
+    "distance_km": 184.1
+  },
+  "muensingen-dottingen": {
+    "duration_min": 149.1,
+    "duration_sec": 8948,
+    "distance_km": 184.1
+  },
+  "awengen-eberhardzell": {
+    "duration_min": 149.1,
+    "duration_sec": 8948,
+    "distance_km": 184.1
+  },
+  "dachstein-krippenstein": {
+    "duration_min": 149.5,
+    "duration_sec": 8969,
+    "distance_km": 200.4
+  },
+  "wildkogel": {
+    "duration_min": 149.9,
+    "duration_sec": 8992,
+    "distance_km": 161.3
+  },
+  "adelharzlifte": {
+    "duration_min": 150.0,
+    "duration_sec": 9002,
+    "distance_km": 173.1
+  },
+  "badhofgastein": {
+    "duration_min": 150.7,
+    "duration_sec": 9040,
+    "distance_km": 206.3
+  },
+  "stubaier-gletscher": {
+    "duration_min": 152.1,
+    "duration_sec": 9127,
+    "distance_km": 167.4
+  },
+  "feuerkogel-ebensee": {
+    "duration_min": 153.2,
+    "duration_sec": 9193,
+    "distance_km": 202.1
+  },
+  "ramsau-dachstein": {
+    "duration_min": 153.4,
+    "duration_sec": 9202,
+    "distance_km": 208.8
+  },
+  "saalbach-hinterglemm-leogang": {
+    "duration_min": 153.4,
+    "duration_sec": 9205,
+    "distance_km": 165.6
+  },
+  "stanton-stchristoph": {
+    "duration_min": 153.9,
+    "duration_sec": 9232,
+    "distance_km": 175.3
+  },
+  "schanze-schmallenberg": {
+    "duration_min": 153.9,
+    "duration_sec": 9233,
+    "distance_km": 180.3
+  },
+  "balderschwang-hochschelpenlifte": {
+    "duration_min": 154.1,
+    "duration_sec": 9245,
+    "distance_km": 188.0
+  },
+  "rauriser-hochalmbahnen": {
+    "duration_min": 154.8,
+    "duration_sec": 9288,
+    "distance_km": 208.3
+  },
+  "voegelsberg-aktivpark-serfaus": {
+    "duration_min": 155.4,
+    "duration_sec": 9324,
+    "distance_km": 171.5
+  },
+  "kitzsteinhorn-kaprun": {
+    "duration_min": 155.6,
+    "duration_sec": 9333,
+    "distance_km": 169.8
+  },
+  "flachau": {
+    "duration_min": 155.6,
+    "duration_sec": 9333,
+    "distance_km": 195.1
+  },
+  "kleinwalsertal-kanzelwand": {
+    "duration_min": 155.8,
+    "duration_sec": 9350,
+    "distance_km": 187.2
+  },
+  "feuerkogel": {
+    "duration_min": 156.7,
+    "duration_sec": 9404,
+    "distance_km": 204.7
+  },
+  "graukogel-bad-gastein": {
+    "duration_min": 156.8,
+    "duration_sec": 9411,
+    "distance_km": 212.8
+  },
+  "dorflift-sulzberg": {
+    "duration_min": 157.4,
+    "duration_sec": 9447,
+    "distance_km": 187.7
+  },
+  "kappl": {
+    "duration_min": 157.8,
+    "duration_sec": 9471,
+    "distance_km": 171.7
+  },
+  "karsee-wangen": {
+    "duration_min": 157.9,
+    "duration_sec": 9475,
+    "distance_km": 191.4
+  },
+  "stuben": {
+    "duration_min": 158.4,
+    "duration_sec": 9502,
+    "distance_km": 181.9
+  },
+  "serfaus-fiss-ladis": {
+    "duration_min": 159.4,
+    "duration_sec": 9567,
+    "distance_km": 170.3
+  },
+  "nebelhorn-oberstdorf": {
+    "duration_min": 160.1,
+    "duration_sec": 9607,
+    "distance_km": 179.0
+  },
+  "luggi-leitner-lifte-scheidegg": {
+    "duration_min": 160.2,
+    "duration_sec": 9614,
+    "distance_km": 190.4
+  },
+  "ladurns-gossensass-pflerschtal": {
+    "duration_min": 160.3,
+    "duration_sec": 9618,
+    "distance_km": 179.9
+  },
+  "schanz-lift": {
+    "duration_min": 160.4,
+    "duration_sec": 9623,
+    "distance_km": 190.3
+  },
+  "reiteralm": {
+    "duration_min": 160.4,
+    "duration_sec": 9623,
+    "distance_km": 210.3
+  },
+  "annerlbauer-lift": {
+    "duration_min": 160.4,
+    "duration_sec": 9623,
+    "distance_km": 190.3
+  },
+  "badgastein": {
+    "duration_min": 160.6,
+    "duration_sec": 9637,
+    "distance_km": 214.1
+  },
+  "soelden": {
+    "duration_min": 161.5,
+    "duration_sec": 9692,
+    "distance_km": 184.4
+  },
+  "katschberg": {
+    "duration_min": 161.7,
+    "duration_sec": 9700,
+    "distance_km": 232.7
+  },
+  "huendle-thalkirchdorf": {
+    "duration_min": 162.3,
+    "duration_sec": 9739,
+    "distance_km": 176.1
+  },
+  "hochlitten": {
+    "duration_min": 162.5,
+    "duration_sec": 9751,
+    "distance_km": 191.3
+  },
+  "warth-schroecken": {
+    "duration_min": 163.6,
+    "duration_sec": 9816,
+    "distance_km": 172.0
+  },
+  "walmendingerhorn-ifen-heuberg": {
+    "duration_min": 165.3,
+    "duration_sec": 9921,
+    "distance_km": 191.5
+  },
+  "skilift-hittisberg": {
+    "duration_min": 165.7,
+    "duration_sec": 9943,
+    "distance_km": 198.6
+  },
+  "rosskopf-wipptal-sterzing": {
+    "duration_min": 166.4,
+    "duration_sec": 9982,
+    "distance_km": 182.8
+  },
+  "sportgastein": {
+    "duration_min": 166.5,
+    "duration_sec": 9989,
+    "distance_km": 218.5
+  },
+  "grosseck-speiereck": {
+    "duration_min": 166.6,
+    "duration_sec": 9996,
+    "distance_km": 229.4
+  },
+  "hauserkaibling": {
+    "duration_min": 166.9,
+    "duration_sec": 10016,
+    "distance_km": 217.1
+  },
+  "sonnenkopf": {
+    "duration_min": 167.1,
+    "duration_sec": 10026,
+    "distance_km": 191.8
+  },
+  "rauris": {
+    "duration_min": 167.3,
+    "duration_sec": 10041,
+    "distance_km": 208.4
+  },
+  "zlaim-grundlsee": {
+    "duration_min": 167.7,
+    "duration_sec": 10063,
+    "distance_km": 217.5
+  },
+  "ratschings-jaufen-wipptal": {
+    "duration_min": 168.4,
+    "duration_sec": 10106,
+    "distance_km": 199.0
+  },
+  "virgen-osttirol": {
+    "duration_min": 168.6,
+    "duration_sec": 10115,
+    "distance_km": 186.5
+  },
+  "nauders": {
+    "duration_min": 169.5,
+    "duration_sec": 10170,
+    "distance_km": 191.5
+  },
+  "silvretta-arena-ischgl-samnaun": {
+    "duration_min": 169.6,
+    "duration_sec": 10174,
+    "distance_km": 181.0
+  },
+  "schladming-planai": {
+    "duration_min": 169.6,
+    "duration_sec": 10176,
+    "distance_km": 220.3
+  },
+  "sibratsgfaell": {
+    "duration_min": 169.7,
+    "duration_sec": 10184,
+    "distance_km": 201.6
+  },
+  "obergurgl-hochgurgl": {
+    "duration_min": 170.4,
+    "duration_sec": 10223,
+    "distance_km": 194.2
+  },
+  "samnaun": {
+    "duration_min": 170.6,
+    "duration_sec": 10233,
+    "distance_km": 191.1
+  },
+  "hochgratbahn": {
+    "duration_min": 171.3,
+    "duration_sec": 10281,
+    "distance_km": 188.8
+  },
+  "argental-weitnau-allgaeu": {
+    "duration_min": 173.2,
+    "duration_sec": 10394,
+    "distance_km": 208.2
+  },
+  "wengen": {
+    "duration_min": 173.5,
+    "duration_sec": 10411,
+    "distance_km": 208.7
+  },
+  "hennenstein-trochtelfingen": {
+    "duration_min": 173.5,
+    "duration_sec": 10411,
+    "distance_km": 208.7
+  },
+  "sonnenbuehl-genkingen": {
+    "duration_min": 173.5,
+    "duration_sec": 10411,
+    "distance_km": 208.7
+  },
+  "engstingen": {
+    "duration_min": 173.5,
+    "duration_sec": 10411,
+    "distance_km": 208.7
+  },
+  "alpin-lift-hausen-an-der-lauchert": {
+    "duration_min": 173.5,
+    "duration_sec": 10411,
+    "distance_km": 208.7
+  },
+  "praegraten-grossvenediger": {
+    "duration_min": 173.7,
+    "duration_sec": 10419,
+    "distance_km": 192.4
+  },
+  "weissee-gletscherwelt": {
+    "duration_min": 174.4,
+    "duration_sec": 10462,
+    "distance_km": 164.3
+  },
+  "bichllifte-praegraten": {
+    "duration_min": 175.1,
+    "duration_sec": 10506,
+    "distance_km": 193.3
+  },
+  "innerkrems": {
+    "duration_min": 175.1,
+    "duration_sec": 10508,
+    "distance_km": 248.3
+  },
+  "loser": {
+    "duration_min": 176.8,
+    "duration_sec": 10606,
+    "distance_km": 223.1
+  },
+  "lech-zuers-arlberg": {
+    "duration_min": 177.5,
+    "duration_sec": 10651,
+    "distance_km": 194.6
+  },
+  "annaberg": {
+    "duration_min": 178.4,
+    "duration_sec": 10705,
+    "distance_km": 243.0
+  },
+  "haldenlift-wintersulgen-heiligenberg": {
+    "duration_min": 178.5,
+    "duration_sec": 10710,
+    "distance_km": 220.1
+  },
+  "diedamskopf": {
+    "duration_min": 178.9,
+    "duration_sec": 10735,
+    "distance_km": 188.9
+  },
+  "stoderzinken-groebming": {
+    "duration_min": 179.3,
+    "duration_sec": 10760,
+    "distance_km": 231.9
+  },
+  "galsterberg": {
+    "duration_min": 179.3,
+    "duration_sec": 10760,
+    "distance_km": 231.9
+  },
+  "galtuer-silvapark": {
+    "duration_min": 180.4,
+    "duration_sec": 10825,
+    "distance_km": 193.7
+  },
+  "fanningberg": {
+    "duration_min": 180.7,
+    "duration_sec": 10840,
+    "distance_km": 238.4
+  },
+  "vent": {
+    "duration_min": 181.7,
+    "duration_sec": 10901,
+    "distance_km": 197.2
+  },
+  "lessach": {
+    "duration_min": 182.1,
+    "duration_sec": 10924,
+    "distance_km": 244.5
+  },
+  "schoeneben-haideralm-reschenpass": {
+    "duration_min": 182.4,
+    "duration_sec": 10944,
+    "distance_km": 199.9
+  },
+  "maseben-langtaufers-reschenpass": {
+    "duration_min": 182.6,
+    "duration_sec": 10958,
+    "distance_km": 202.7
+  },
+  "schetteregg": {
+    "duration_min": 182.8,
+    "duration_sec": 10968,
+    "distance_km": 206.0
+  },
+  "fellhorn": {
+    "duration_min": 183.3,
+    "duration_sec": 10996,
+    "distance_km": 191.7
+  },
+  "boedele": {
+    "duration_min": 185.4,
+    "duration_sec": 11122,
+    "distance_km": 210.9
+  },
+  "villnoess": {
+    "duration_min": 186.3,
+    "duration_sec": 11178,
+    "distance_km": 224.1
+  },
+  "silvretta-bielerhoehe": {
+    "duration_min": 187.2,
+    "duration_sec": 11231,
+    "distance_km": 199.0
+  },
+  "ankogel-mallnitz": {
+    "duration_min": 187.8,
+    "duration_sec": 11269,
+    "distance_km": 234.6
+  },
+  "stjakob-defereggen": {
+    "duration_min": 188.4,
+    "duration_sec": 11302,
+    "distance_km": 206.9
+  },
+  "scuol": {
+    "duration_min": 189.1,
+    "duration_sec": 11344,
+    "distance_km": 210.9
+  },
+  "schnee-erlebnisland-flattach": {
+    "duration_min": 189.7,
+    "duration_sec": 11382,
+    "distance_km": 241.5
+  },
+  "schilift-reuthe-baien": {
+    "duration_min": 189.8,
+    "duration_sec": 11389,
+    "distance_km": 214.3
+  },
+  "seilbahn-bezau": {
+    "duration_min": 191.6,
+    "duration_sec": 11497,
+    "distance_km": 215.1
+  },
+  "schilift-hotz": {
+    "duration_min": 192.0,
+    "duration_sec": 11518,
+    "distance_km": 272.6
+  },
+  "gitschberg-jochtal": {
+    "duration_min": 192.1,
+    "duration_sec": 11525,
+    "distance_km": 219.9
+  },
+  "ochsengartenlift": {
+    "duration_min": 192.4,
+    "duration_sec": 11543,
+    "distance_km": 279.2
+  },
+  "wurzeralm": {
+    "duration_min": 193.8,
+    "duration_sec": 11628,
+    "distance_km": 277.4
+  },
+  "groeden-sankt-ulrich": {
+    "duration_min": 194.1,
+    "duration_sec": 11643,
+    "distance_km": 236.1
+  },
+  "schilifte-schuttannen": {
+    "duration_min": 194.3,
+    "duration_sec": 11658,
+    "distance_km": 235.0
+  },
+  "mellau": {
+    "duration_min": 194.4,
+    "duration_sec": 11662,
+    "distance_km": 201.5
+  },
+  "tauplitz": {
+    "duration_min": 195.3,
+    "duration_sec": 11716,
+    "distance_km": 238.9
+  },
+  "riesneralm": {
+    "duration_min": 195.5,
+    "duration_sec": 11731,
+    "distance_km": 259.9
+  },
+  "planneralm": {
+    "duration_min": 196.7,
+    "duration_sec": 11799,
+    "distance_km": 260.5
+  },
+  "krakau-tockneralmlift": {
+    "duration_min": 197.8,
+    "duration_sec": 11870,
+    "distance_km": 261.5
+  },
+  "oberegg-sankt-anton": {
+    "duration_min": 197.9,
+    "duration_sec": 11876,
+    "distance_km": 237.7
+  },
+  "brandnertal": {
+    "duration_min": 197.9,
+    "duration_sec": 11877,
+    "distance_km": 222.1
+  },
+  "watles": {
+    "duration_min": 198.6,
+    "duration_sec": 11918,
+    "distance_km": 217.7
+  },
+  "oberneukirchen": {
+    "duration_min": 199.4,
+    "duration_sec": 11964,
+    "distance_km": 267.1
+  },
+  "kirchschlag": {
+    "duration_min": 199.4,
+    "duration_sec": 11964,
+    "distance_km": 267.1
+  },
+  "saalfelden": {
+    "duration_min": 199.4,
+    "duration_sec": 11964,
+    "distance_km": 267.1
+  },
+  "hansberg": {
+    "duration_min": 199.4,
+    "duration_sec": 11964,
+    "distance_km": 267.1
+  },
+  "turracherhoehe": {
+    "duration_min": 200.2,
+    "duration_sec": 12010,
+    "distance_km": 270.2
+  },
+  "skigebiet-gurtis": {
+    "duration_min": 200.2,
+    "duration_sec": 12014,
+    "distance_km": 228.7
+  },
+  "schilifte-groellerkopf": {
+    "duration_min": 200.3,
+    "duration_sec": 12020,
+    "distance_km": 249.9
+  },
+  "groeden-sankt-christina": {
+    "duration_min": 200.4,
+    "duration_sec": 12024,
+    "distance_km": 240.6
+  },
+  "skilifte-raggal": {
+    "duration_min": 200.4,
+    "duration_sec": 12027,
+    "distance_km": 226.1
+  },
+  "reinswald-sarntal": {
+    "duration_min": 201.7,
+    "duration_sec": 12104,
+    "distance_km": 232.0
+  },
+  "heiden-bischofsberg": {
+    "duration_min": 201.8,
+    "duration_sec": 12110,
+    "distance_km": 241.0
+  },
+  "schmittenhoehe-zellamsee": {
+    "duration_min": 202.3,
+    "duration_sec": 12139,
+    "distance_km": 166.9
+  },
+  "schilift-bazora": {
+    "duration_min": 202.6,
+    "duration_sec": 12154,
+    "distance_km": 230.3
+  },
+  "dorfberg-kartitsch": {
+    "duration_min": 203.4,
+    "duration_sec": 12202,
+    "distance_km": 230.2
+  },
+  "skilifte-furx": {
+    "duration_min": 203.4,
+    "duration_sec": 12203,
+    "distance_km": 247.3
+  },
+  "goldeck": {
+    "duration_min": 203.7,
+    "duration_sec": 12222,
+    "distance_km": 289.0
+  },
+  "faschina": {
+    "duration_min": 204.6,
+    "duration_sec": 12275,
+    "distance_km": 205.8
+  },
+  "lienz": {
+    "duration_min": 204.6,
+    "duration_sec": 12277,
+    "distance_km": 214.1
+  },
+  "boden-bschlabs": {
+    "duration_min": 204.8,
+    "duration_sec": 12286,
+    "distance_km": 210.4
+  },
+  "gais-klausenboehl": {
+    "duration_min": 205.7,
+    "duration_sec": 12339,
+    "distance_km": 250.1
+  },
+  "groeden-seiser-alm": {
+    "duration_min": 206.6,
+    "duration_sec": 12395,
+    "distance_km": 242.0
+  },
+  "groeden-wolkenstein": {
+    "duration_min": 206.7,
+    "duration_sec": 12404,
+    "distance_km": 245.1
+  },
+  "skizentrum-sillian-hochpustertal": {
+    "duration_min": 208.0,
+    "duration_sec": 12481,
+    "distance_km": 235.3
+  },
+  "dellach-rietschach": {
+    "duration_min": 208.2,
+    "duration_sec": 12492,
+    "distance_km": 234.7
+  },
+  "badkleinkirchheim": {
+    "duration_min": 208.3,
+    "duration_sec": 12501,
+    "distance_km": 288.0
+  },
+  "flattnitz": {
+    "duration_min": 209.0,
+    "duration_sec": 12538,
+    "distance_km": 275.1
+  },
+  "pfelders-passeiertal": {
+    "duration_min": 209.2,
+    "duration_sec": 12554,
+    "distance_km": 232.9
+  },
+  "skiheiligenblut": {
+    "duration_min": 209.5,
+    "duration_sec": 12572,
+    "distance_km": 205.3
+  },
+  "plose-brixen": {
+    "duration_min": 210.6,
+    "duration_sec": 12637,
+    "distance_km": 229.4
+  },
+  "hinterstoder-hoess": {
+    "duration_min": 211.6,
+    "duration_sec": 12693,
+    "distance_km": 272.5
+  },
+  "gitschtal": {
+    "duration_min": 211.7,
+    "duration_sec": 12702,
+    "distance_km": 302.6
+  },
+  "trafoi-ortler": {
+    "duration_min": 212.0,
+    "duration_sec": 12720,
+    "distance_km": 233.3
+  },
+  "kristberg": {
+    "duration_min": 212.5,
+    "duration_sec": 12750,
+    "distance_km": 229.8
+  },
+  "kreischberg": {
+    "duration_min": 212.5,
+    "duration_sec": 12752,
+    "distance_km": 272.1
+  },
+  "weissensee": {
+    "duration_min": 212.7,
+    "duration_sec": 12762,
+    "distance_km": 301.6
+  },
+  "kaiserau-admont": {
+    "duration_min": 213.0,
+    "duration_sec": 12781,
+    "distance_km": 280.7
+  },
+  "hagenberg-sulzberg-thal": {
+    "duration_min": 214.1,
+    "duration_sec": 12844,
+    "distance_km": 282.7
+  },
+  "gargellen": {
+    "duration_min": 214.2,
+    "duration_sec": 12849,
+    "distance_km": 235.1
+  },
+  "guggenberg-taitsen": {
+    "duration_min": 214.4,
+    "duration_sec": 12866,
+    "distance_km": 249.9
+  },
+  "hohentauern": {
+    "duration_min": 214.6,
+    "duration_sec": 12874,
+    "distance_km": 290.0
+  },
+  "riepenlift-antholz-mittertal": {
+    "duration_min": 215.2,
+    "duration_sec": 12910,
+    "distance_km": 252.3
+  },
+  "schilift-hrast-feistritz-gail": {
+    "duration_min": 215.6,
+    "duration_sec": 12935,
+    "distance_km": 307.3
+  },
+  "kals-grossglockner": {
+    "duration_min": 215.7,
+    "duration_sec": 12944,
+    "distance_km": 207.6
+  },
+  "rittner-horn": {
+    "duration_min": 216.0,
+    "duration_sec": 12959,
+    "distance_km": 262.1
+  },
+  "kaunertal": {
+    "duration_min": 216.2,
+    "duration_sec": 12974,
+    "distance_km": 197.3
+  },
+  "bruelisau-leugangen": {
+    "duration_min": 216.3,
+    "duration_sec": 12976,
+    "distance_km": 257.6
+  },
+  "kaiserau": {
+    "duration_min": 216.3,
+    "duration_sec": 12978,
+    "distance_km": 286.6
+  },
+  "skilift-pichl-gsiesertal": {
+    "duration_min": 217.0,
+    "duration_sec": 13021,
+    "distance_km": 253.8
+  },
+  "grub-kaien": {
+    "duration_min": 217.2,
+    "duration_sec": 13035,
+    "distance_km": 264.4
+  },
+  "golzentipp-obertilliach-lesachtal": {
+    "duration_min": 217.8,
+    "duration_sec": 13067,
+    "distance_km": 247.1
+  },
+  "toggenburg": {
+    "duration_min": 218.0,
+    "duration_sec": 13081,
+    "distance_km": 269.4
+  },
+  "latemar-obereggen": {
+    "duration_min": 218.2,
+    "duration_sec": 13091,
+    "distance_km": 262.6
+  },
+  "koetschach-mauthen": {
+    "duration_min": 218.4,
+    "duration_sec": 13104,
+    "distance_km": 241.4
+  },
+  "fahrendorf-velden": {
+    "duration_min": 218.7,
+    "duration_sec": 13123,
+    "distance_km": 317.5
+  },
+  "alpsteinblick-gonten": {
+    "duration_min": 220.3,
+    "duration_sec": 13216,
+    "distance_km": 262.2
+  },
+  "ebenalp": {
+    "duration_min": 220.8,
+    "duration_sec": 13248,
+    "distance_km": 258.3
+  },
+  "davos-pischa": {
+    "duration_min": 221.1,
+    "duration_sec": 13264,
+    "distance_km": 246.1
+  },
+  "speikboden-tauferer-ahrntal": {
+    "duration_min": 221.2,
+    "duration_sec": 13272,
+    "distance_km": 249.1
+  },
+  "sulden-ortler": {
+    "duration_min": 221.3,
+    "duration_sec": 13279,
+    "distance_km": 241.8
+  },
+  "sellaronda-dolomiten": {
+    "duration_min": 221.4,
+    "duration_sec": 13283,
+    "distance_km": 256.4
+  },
+  "alta-badia": {
+    "duration_min": 221.7,
+    "duration_sec": 13304,
+    "distance_km": 256.9
+  },
+  "schwellbrunn": {
+    "duration_min": 221.8,
+    "duration_sec": 13310,
+    "distance_km": 271.1
+  },
+  "golm": {
+    "duration_min": 222.1,
+    "duration_sec": 13326,
+    "distance_km": 228.3
+  },
+  "glasenberg": {
+    "duration_min": 222.9,
+    "duration_sec": 13377,
+    "distance_km": 283.8
+  },
+  "alpinwellt-weissenbach-family-skilift": {
+    "duration_min": 223.1,
+    "duration_sec": 13385,
+    "distance_km": 255.7
+  },
+  "silvretta-montafon": {
+    "duration_min": 223.1,
+    "duration_sec": 13386,
+    "distance_km": 234.4
+  },
+  "ebingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "burladingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "albstadt-lautlingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "dickeloch-winterlingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "winterberg-schonach": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "rohrhardsberg-lift": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "piz-bohl-strassberg": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "onstmettingen-ruchtal": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "truchtelfingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "albstadt-tailfingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "pfeffingen": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "taele-messstetten": {
+    "duration_min": 223.8,
+    "duration_sec": 13426,
+    "distance_km": 271.2
+  },
+  "oclini": {
+    "duration_min": 224.3,
+    "duration_sec": 13461,
+    "distance_km": 269.5
+  },
+  "hochrindl": {
+    "duration_min": 224.4,
+    "duration_sec": 13467,
+    "distance_km": 289.4
+  },
+  "skilift-griminitzen": {
+    "duration_min": 224.4,
+    "duration_sec": 13467,
+    "distance_km": 250.3
+  },
+  "dorflift-johnsbach": {
+    "duration_min": 224.6,
+    "duration_sec": 13475,
+    "distance_km": 292.2
+  },
+  "stmartin": {
+    "duration_min": 224.7,
+    "duration_sec": 13479,
+    "distance_km": 334.3
+  },
+  "falkert": {
+    "duration_min": 224.7,
+    "duration_sec": 13481,
+    "distance_km": 291.5
+  },
+  "urnaesch-osteregg": {
+    "duration_min": 224.8,
+    "duration_sec": 13486,
+    "distance_km": 266.5
+  },
+  "degersheim": {
+    "duration_min": 225.0,
+    "duration_sec": 13500,
+    "distance_km": 273.1
+  },
+  "dreilaendereck": {
+    "duration_min": 225.0,
+    "duration_sec": 13502,
+    "distance_km": 328.6
+  },
+  "laterns": {
+    "duration_min": 225.2,
+    "duration_sec": 13514,
+    "distance_km": 249.8
+  },
+  "minschuns": {
+    "duration_min": 225.3,
+    "duration_sec": 13519,
+    "distance_km": 242.1
+  },
+  "schatzalp": {
+    "duration_min": 227.5,
+    "duration_sec": 13652,
+    "distance_km": 251.8
+  },
+  "carezza-karersee-rosengarten": {
+    "duration_min": 227.6,
+    "duration_sec": 13655,
+    "distance_km": 266.8
+  },
+  "aela-maloja": {
+    "duration_min": 227.8,
+    "duration_sec": 13667,
+    "distance_km": 251.9
+  },
+  "schidorf-kirchbach": {
+    "duration_min": 227.8,
+    "duration_sec": 13669,
+    "distance_km": 254.8
+  },
+  "embergeralm": {
+    "duration_min": 227.9,
+    "duration_sec": 13672,
+    "distance_km": 300.5
+  },
+  "rein-tauferer-ahrntal": {
+    "duration_min": 228.0,
+    "duration_sec": 13678,
+    "distance_km": 256.2
+  },
+  "zuoz": {
+    "duration_min": 228.2,
+    "duration_sec": 13689,
+    "distance_km": 248.3
+  },
+  "tristeli-st-margarethenberg": {
+    "duration_min": 228.2,
+    "duration_sec": 13694,
+    "distance_km": 287.8
+  },
+  "buchsteinlift": {
+    "duration_min": 228.6,
+    "duration_sec": 13714,
+    "distance_km": 306.1
+  },
+  "sthemma": {
+    "duration_min": 228.7,
+    "duration_sec": 13723,
+    "distance_km": 336.8
+  },
+  "davos-parsenn": {
+    "duration_min": 228.8,
+    "duration_sec": 13726,
+    "distance_km": 250.4
+  },
+  "toggenburg-chaeserrugg": {
+    "duration_min": 228.8,
+    "duration_sec": 13730,
+    "distance_km": 272.7
+  },
+  "hammerbodenlift-grossreifling": {
+    "duration_min": 228.9,
+    "duration_sec": 13735,
+    "distance_km": 309.4
+  },
+  "buchserberg-malbun": {
+    "duration_min": 228.9,
+    "duration_sec": 13735,
+    "distance_km": 269.7
+  },
+  "klosters-madrisa": {
+    "duration_min": 229.3,
+    "duration_sec": 13757,
+    "distance_km": 252.5
+  },
+  "gruesch-danusa": {
+    "duration_min": 229.4,
+    "duration_sec": 13766,
+    "distance_km": 294.3
+  },
+  "lachtal": {
+    "duration_min": 229.7,
+    "duration_sec": 13779,
+    "distance_km": 299.8
+  },
+  "meran-2000": {
+    "duration_min": 230.3,
+    "duration_sec": 13817,
+    "distance_km": 247.4
+  },
+  "belvedere-fassatal-val-fassa": {
+    "duration_min": 230.9,
+    "duration_sec": 13855,
+    "distance_km": 263.7
+  },
+  "mojstrana": {
+    "duration_min": 231.8,
+    "duration_sec": 13910,
+    "distance_km": 336.6
+  },
+  "buegls-s-chanf": {
+    "duration_min": 232.1,
+    "duration_sec": 13923,
+    "distance_km": 255.7
+  },
+  "nassfeld": {
+    "duration_min": 232.4,
+    "duration_sec": 13942,
+    "distance_km": 328.2
+  },
+  "macesnovc": {
+    "duration_min": 233.2,
+    "duration_sec": 13992,
+    "distance_km": 343.9
+  },
+  "hemberg": {
+    "duration_min": 233.6,
+    "duration_sec": 14015,
+    "distance_km": 282.3
+  },
+  "pizol": {
+    "duration_min": 233.7,
+    "duration_sec": 14019,
+    "distance_km": 294.4
+  },
+  "wagnershalde-messstetten": {
+    "duration_min": 233.8,
+    "duration_sec": 14031,
+    "distance_km": 278.7
+  },
+  "lagazuoi-cinque-torri": {
+    "duration_min": 233.9,
+    "duration_sec": 14033,
+    "distance_km": 268.5
+  },
+  "flumserberg": {
+    "duration_min": 234.1,
+    "duration_sec": 14047,
+    "distance_km": 297.1
+  },
+  "arabba": {
+    "duration_min": 234.3,
+    "duration_sec": 14058,
+    "distance_km": 267.4
+  },
+  "kranjska-gora": {
+    "duration_min": 235.0,
+    "duration_sec": 14101,
+    "distance_km": 329.1
+  },
+  "forsteralm": {
+    "duration_min": 235.5,
+    "duration_sec": 14131,
+    "distance_km": 303.8
+  },
+  "vigo-fassa-catinaccio-val-fassa-fassatal": {
+    "duration_min": 235.5,
+    "duration_sec": 14132,
+    "distance_km": 276.3
+  },
+  "ciampac-fassatal-alba-canazei-val-fassa": {
+    "duration_min": 236.1,
+    "duration_sec": 14167,
+    "distance_km": 267.9
+  },
+  "davos-jakobshorn": {
+    "duration_min": 236.3,
+    "duration_sec": 14181,
+    "distance_km": 258.1
+  },
+  "misurina": {
+    "duration_min": 236.8,
+    "duration_sec": 14205,
+    "distance_km": 275.0
+  },
+  "stokinger-freudenstadt": {
+    "duration_min": 236.9,
+    "duration_sec": 14217,
+    "distance_km": 299.3
+  },
+  "kniebis-freudenstadt": {
+    "duration_min": 236.9,
+    "duration_sec": 14217,
+    "distance_km": 299.3
+  },
+  "skilift-winterhalde": {
+    "duration_min": 236.9,
+    "duration_sec": 14217,
+    "distance_km": 299.3
+  },
+  "oberhelfenschwil": {
+    "duration_min": 237.3,
+    "duration_sec": 14241,
+    "distance_km": 283.9
+  },
+  "klausberg-tauferer-ahrntal": {
+    "duration_min": 237.4,
+    "duration_sec": 14244,
+    "distance_km": 262.0
+  },
+  "hamberg-gaehwil": {
+    "duration_min": 237.4,
+    "duration_sec": 14244,
+    "distance_km": 294.4
+  },
+  "kaiserlindenlift-gams": {
+    "duration_min": 237.9,
+    "duration_sec": 14274,
+    "distance_km": 318.5
+  },
+  "stilfser-joch-ortler": {
+    "duration_min": 238.2,
+    "duration_sec": 14293,
+    "distance_km": 247.6
+  },
+  "kronplatz": {
+    "duration_min": 238.2,
+    "duration_sec": 14295,
+    "distance_km": 251.6
+  },
+  "fridingen-antoni": {
+    "duration_min": 238.3,
+    "duration_sec": 14300,
+    "distance_km": 283.2
+  },
+  "obernheim-burgbuehl": {
+    "duration_min": 238.3,
+    "duration_sec": 14300,
+    "distance_km": 283.2
+  },
+  "boettingen": {
+    "duration_min": 238.3,
+    "duration_sec": 14300,
+    "distance_km": 283.2
+  },
+  "oberstocken-tieringen-messstetten": {
+    "duration_min": 238.3,
+    "duration_sec": 14300,
+    "distance_km": 283.2
+  },
+  "survih-samedan": {
+    "duration_min": 238.6,
+    "duration_sec": 14313,
+    "distance_km": 259.1
+  },
+  "drei-zinnen-dolomiten": {
+    "duration_min": 239.1,
+    "duration_sec": 14346,
+    "distance_km": 270.9
+  },
+  "gutachhalde-kappel": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "kuhberglifte-lenzkirch-saig": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "stich-opfertshofen": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "eisenbach": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "postwiese-neuastenberg": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "saegenhof-urach-voehrenbach": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "bregtallift-furtwangen": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "skilift-rothaus": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "winterberg-oberkirnach-sankt-georgen": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "oberer-schlossberg-sankt-georgen": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "roessle-skilift-schoenwald": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "kalte-herberge-urach-voehrenbach": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "thurner": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "skilift-uehlingen-birkendorf": {
+    "duration_min": 239.2,
+    "duration_sec": 14353,
+    "distance_km": 300.8
+  },
+  "gerlitzen-alpe": {
+    "duration_min": 239.2,
+    "duration_sec": 14355,
+    "distance_km": 322.3
+  },
+  "grebenzen": {
+    "duration_min": 239.4,
+    "duration_sec": 14363,
+    "distance_km": 291.8
+  },
+  "vigiljoch": {
+    "duration_min": 239.7,
+    "duration_sec": 14383,
+    "distance_km": 284.2
+  },
+  "sankt-urban": {
+    "duration_min": 240.2,
+    "duration_sec": 14415,
+    "distance_km": 334.1
+  },
+  "sitzberg": {
+    "duration_min": 240.8,
+    "duration_sec": 14451,
+    "distance_km": 298.2
+  },
+  "wolzenalp-krummenau": {
+    "duration_min": 241.1,
+    "duration_sec": 14466,
+    "distance_km": 285.2
+  },
+  "rinerhorn": {
+    "duration_min": 241.2,
+    "duration_sec": 14475,
+    "distance_km": 261.2
+  },
+  "languard-pontresina": {
+    "duration_min": 241.3,
+    "duration_sec": 14478,
+    "distance_km": 264.4
+  },
+  "livigno-mottolino-fun-mountain": {
+    "duration_min": 241.7,
+    "duration_sec": 14501,
+    "distance_km": 259.0
+  },
+  "kerenzerberg": {
+    "duration_min": 241.8,
+    "duration_sec": 14505,
+    "distance_km": 310.1
+  },
+  "livigno": {
+    "duration_min": 241.8,
+    "duration_sec": 14511,
+    "distance_km": 259.2
+  },
+  "schafbuel-wildberg": {
+    "duration_min": 242.1,
+    "duration_sec": 14528,
+    "distance_km": 303.7
+  },
+  "paganella": {
+    "duration_min": 242.6,
+    "duration_sec": 14556,
+    "distance_km": 306.0
+  },
+  "pany": {
+    "duration_min": 242.7,
+    "duration_sec": 14559,
+    "distance_km": 262.9
+  },
+  "livigno-carosello3000": {
+    "duration_min": 243.3,
+    "duration_sec": 14599,
+    "distance_km": 258.6
+  },
+  "stoaninger-alm": {
+    "duration_min": 243.4,
+    "duration_sec": 14605,
+    "distance_km": 314.6
+  },
+  "sella-nevea": {
+    "duration_min": 244.1,
+    "duration_sec": 14645,
+    "distance_km": 354.2
+  },
+  "straza-bled": {
+    "duration_min": 245.0,
+    "duration_sec": 14701,
+    "distance_km": 350.4
+  },
+  "faloria-cristallo-mietres": {
+    "duration_min": 245.2,
+    "duration_sec": 14711,
+    "distance_km": 283.0
+  },
+  "tanzboden-ebnat-kappel": {
+    "duration_min": 245.4,
+    "duration_sec": 14725,
+    "distance_km": 292.6
+  },
+  "buffaure-fassatal-fassa-pozza-val-fassa": {
+    "duration_min": 245.6,
+    "duration_sec": 14738,
+    "distance_km": 282.5
+  },
+  "predaia-coredo": {
+    "duration_min": 245.7,
+    "duration_sec": 14743,
+    "distance_km": 310.5
+  },
+  "st-moritz-corviglia": {
+    "duration_min": 247.2,
+    "duration_sec": 14829,
+    "distance_km": 267.0
+  },
+  "pokljuka-zatrnik": {
+    "duration_min": 247.2,
+    "duration_sec": 14831,
+    "distance_km": 348.9
+  },
+  "moena-lusia": {
+    "duration_min": 247.6,
+    "duration_sec": 14854,
+    "distance_km": 286.2
+  },
+  "cortina-ampezzo": {
+    "duration_min": 247.8,
+    "duration_sec": 14870,
+    "distance_km": 287.8
+  },
+  "steg": {
+    "duration_min": 248.5,
+    "duration_sec": 14911,
+    "distance_km": 305.9
+  },
+  "praebichl": {
+    "duration_min": 248.8,
+    "duration_sec": 14928,
+    "distance_km": 340.3
+  },
+  "riesenlehen-sankt-georgen-am-reith": {
+    "duration_min": 249.3,
+    "duration_sec": 14959,
+    "distance_km": 318.0
+  },
+  "pusterwald": {
+    "duration_min": 249.5,
+    "duration_sec": 14971,
+    "distance_km": 321.2
+  },
+  "bildhaus-ricken": {
+    "duration_min": 249.7,
+    "duration_sec": 14981,
+    "distance_km": 308.9
+  },
+  "grossglockner-zellersee": {
+    "duration_min": 249.9,
+    "duration_sec": 14992,
+    "distance_km": 349.6
+  },
+  "marmolada-gletscher": {
+    "duration_min": 250.0,
+    "duration_sec": 14998,
+    "distance_km": 278.5
+  },
+  "diavolezza": {
+    "duration_min": 250.0,
+    "duration_sec": 15000,
+    "distance_km": 275.0
+  },
+  "corvatsch-furtschellas": {
+    "duration_min": 250.6,
+    "duration_sec": 15034,
+    "distance_km": 271.6
+  },
+  "hochwang": {
+    "duration_min": 250.6,
+    "duration_sec": 15035,
+    "distance_km": 315.5
+  },
+  "fischenthal": {
+    "duration_min": 251.2,
+    "duration_sec": 15073,
+    "distance_km": 307.8
+  },
+  "bodental": {
+    "duration_min": 251.4,
+    "duration_sec": 15083,
+    "distance_km": 350.2
+  },
+  "amden": {
+    "duration_min": 251.5,
+    "duration_sec": 15090,
+    "distance_km": 316.3
+  },
+  "monte-bondone": {
+    "duration_min": 251.8,
+    "duration_sec": 15110,
+    "distance_km": 320.4
+  },
+  "berguen-filisur": {
+    "duration_min": 252.0,
+    "duration_sec": 15121,
+    "distance_km": 275.2
+  },
+  "chur-brambrueesch": {
+    "duration_min": 252.1,
+    "duration_sec": 15125,
+    "distance_km": 314.3
+  },
+  "wildalpen": {
+    "duration_min": 252.1,
+    "duration_sec": 15125,
+    "distance_km": 335.0
+  },
+  "arosa-lenzerheide": {
+    "duration_min": 252.9,
+    "duration_sec": 15173,
+    "distance_km": 320.3
+  },
+  "valdidentro": {
+    "duration_min": 253.1,
+    "duration_sec": 15187,
+    "distance_km": 265.3
+  },
+  "la-punt-muesella": {
+    "duration_min": 254.5,
+    "duration_sec": 15268,
+    "distance_km": 325.8
+  },
+  "tofana": {
+    "duration_min": 254.5,
+    "duration_sec": 15272,
+    "distance_km": 285.8
+  },
+  "horben": {
+    "duration_min": 254.6,
+    "duration_sec": 15274,
+    "distance_km": 311.0
+  },
+  "eberstein": {
+    "duration_min": 255.1,
+    "duration_sec": 15305,
+    "distance_km": 369.0
+  },
+  "schwemmalm-ultental": {
+    "duration_min": 255.2,
+    "duration_sec": 15313,
+    "distance_km": 303.9
+  },
+  "val-di-fiemme-alpe-cermis": {
+    "duration_min": 255.3,
+    "duration_sec": 15316,
+    "distance_km": 282.5
+  },
+  "schnalstal": {
+    "duration_min": 255.9,
+    "duration_sec": 15354,
+    "distance_km": 277.9
+  },
+  "junker-st-antoenien": {
+    "duration_min": 256.1,
+    "duration_sec": 15367,
+    "distance_km": 271.7
+  },
+  "obdach": {
+    "duration_min": 256.4,
+    "duration_sec": 15383,
+    "distance_km": 332.4
+  },
+  "gaal": {
+    "duration_min": 257.7,
+    "duration_sec": 15462,
+    "distance_km": 358.2
+  },
+  "kellerberg-haldi": {
+    "duration_min": 258.7,
+    "duration_sec": 15521,
+    "distance_km": 320.6
+  },
+  "skilift-mastrils": {
+    "duration_min": 258.7,
+    "duration_sec": 15521,
+    "distance_km": 320.6
+  },
+  "sarn-heizenberg": {
+    "duration_min": 258.7,
+    "duration_sec": 15521,
+    "distance_km": 329.6
+  },
+  "skiliftraten": {
+    "duration_min": 258.7,
+    "duration_sec": 15521,
+    "distance_km": 320.6
+  },
+  "kleinlobming": {
+    "duration_min": 258.7,
+    "duration_sec": 15523,
+    "distance_km": 358.2
+  },
+  "steig-baeretswil": {
+    "duration_min": 259.2,
+    "duration_sec": 15550,
+    "distance_km": 315.6
+  },
+  "ghoech": {
+    "duration_min": 259.8,
+    "duration_sec": 15587,
+    "distance_km": 314.0
+  },
+  "pokljuka-goreljek": {
+    "duration_min": 259.9,
+    "duration_sec": 15593,
+    "distance_km": 357.1
+  },
+  "passo-rolle": {
+    "duration_min": 260.2,
+    "duration_sec": 15612,
+    "distance_km": 305.0
+  },
+  "feldis": {
+    "duration_min": 260.3,
+    "duration_sec": 15620,
+    "distance_km": 327.6
+  },
+  "san-vito-di-cadore": {
+    "duration_min": 260.4,
+    "duration_sec": 15627,
+    "distance_km": 299.0
+  },
+  "bivio": {
+    "duration_min": 260.9,
+    "duration_sec": 15654,
+    "distance_km": 285.1
+  },
+  "schilt": {
+    "duration_min": 261.2,
+    "duration_sec": 15674,
+    "distance_km": 320.8
+  },
+  "panarotta-valsugana": {
+    "duration_min": 261.9,
+    "duration_sec": 15713,
+    "distance_km": 328.0
+  },
+  "tschiertschen": {
+    "duration_min": 262.1,
+    "duration_sec": 15729,
+    "distance_km": 319.0
+  },
+  "waegital-vorderthal": {
+    "duration_min": 263.3,
+    "duration_sec": 15797,
+    "distance_km": 338.8
+  },
+  "lavarone-luserna": {
+    "duration_min": 263.6,
+    "duration_sec": 15816,
+    "distance_km": 331.7
+  },
+  "tenna": {
+    "duration_min": 263.9,
+    "duration_sec": 15834,
+    "distance_km": 329.7
+  },
+  "gaberl": {
+    "duration_min": 264.6,
+    "duration_sec": 15876,
+    "distance_km": 338.8
+  },
+  "passo-pellegrino-fassatal-falcade-trevalli": {
+    "duration_min": 264.8,
+    "duration_sec": 15889,
+    "distance_km": 307.0
+  },
+  "sankt-johann-hahnbaum": {
+    "duration_min": 265.3,
+    "duration_sec": 15918,
+    "distance_km": 396.4
+  },
+  "atzmaennig": {
+    "duration_min": 265.4,
+    "duration_sec": 15924,
+    "distance_km": 336.0
+  },
+  "fideriser-heuberge": {
+    "duration_min": 265.8,
+    "duration_sec": 15945,
+    "distance_km": 271.0
+  },
+  "tarvisio": {
+    "duration_min": 266.0,
+    "duration_sec": 15958,
+    "distance_km": 353.3
+  },
+  "tschappina-urmein-heinzenberg": {
+    "duration_min": 266.0,
+    "duration_sec": 15962,
+    "distance_km": 336.9
+  },
+  "santa-caterina-valfurva": {
+    "duration_min": 266.4,
+    "duration_sec": 15983,
+    "distance_km": 279.2
+  },
+  "senozeta": {
+    "duration_min": 266.9,
+    "duration_sec": 16011,
+    "distance_km": 371.7
+  },
+  "klippitztoerl": {
+    "duration_min": 266.9,
+    "duration_sec": 16017,
+    "distance_km": 333.4
+  },
+  "schnabelsberg-einsiedeln": {
+    "duration_min": 267.3,
+    "duration_sec": 16036,
+    "distance_km": 346.7
+  },
+  "altipiani-folgaria-lavarone-luserna": {
+    "duration_min": 267.4,
+    "duration_sec": 16043,
+    "distance_km": 337.3
+  },
+  "sattelegg": {
+    "duration_min": 267.5,
+    "duration_sec": 16051,
+    "distance_km": 343.3
+  },
+  "hochkar": {
+    "duration_min": 267.6,
+    "duration_sec": 16053,
+    "distance_km": 336.1
+  },
+  "jauerling": {
+    "duration_min": 268.2,
+    "duration_sec": 16091,
+    "distance_km": 358.0
+  },
+  "moelltalergletscher": {
+    "duration_min": 268.7,
+    "duration_sec": 16122,
+    "distance_km": 250.4
+  },
+  "sanmartino-di-castrozza": {
+    "duration_min": 268.8,
+    "duration_sec": 16129,
+    "distance_km": 314.2
+  },
+  "rudno": {
+    "duration_min": 269.1,
+    "duration_sec": 16146,
+    "distance_km": 369.3
+  },
+  "sodrazica": {
+    "duration_min": 269.3,
+    "duration_sec": 16160,
+    "distance_km": 392.8
+  },
+  "ravascletto-zoncolan": {
+    "duration_min": 269.5,
+    "duration_sec": 16171,
+    "distance_km": 284.3
+  },
+  "eichfeldlift": {
+    "duration_min": 270.0,
+    "duration_sec": 16201,
+    "distance_km": 375.1
+  },
+  "turnau": {
+    "duration_min": 270.2,
+    "duration_sec": 16211,
+    "distance_km": 374.2
+  },
+  "bovec-kanin": {
+    "duration_min": 270.3,
+    "duration_sec": 16216,
+    "distance_km": 370.5
+  },
+  "lunz-am-see": {
+    "duration_min": 270.4,
+    "duration_sec": 16226,
+    "distance_km": 337.1
+  },
+  "petzen": {
+    "duration_min": 271.8,
+    "duration_sec": 16310,
+    "distance_km": 386.9
+  },
+  "rieseralm": {
+    "duration_min": 272.2,
+    "duration_sec": 16333,
+    "distance_km": 332.8
+  },
+  "puchenstuben-eisenwurzen": {
+    "duration_min": 272.5,
+    "duration_sec": 16351,
+    "distance_km": 356.5
+  },
+  "gedersberg": {
+    "duration_min": 272.5,
+    "duration_sec": 16351,
+    "distance_km": 381.9
+  },
+  "civetta": {
+    "duration_min": 272.6,
+    "duration_sec": 16354,
+    "distance_km": 300.9
+  },
+  "menzingen": {
+    "duration_min": 272.6,
+    "duration_sec": 16356,
+    "distance_km": 351.8
+  },
+  "egg-hallau": {
+    "duration_min": 272.6,
+    "duration_sec": 16356,
+    "distance_km": 352.0
+  },
+  "spluegen-rheinwald": {
+    "duration_min": 273.0,
+    "duration_sec": 16379,
+    "distance_km": 352.5
+  },
+  "soriska-planina": {
+    "duration_min": 273.0,
+    "duration_sec": 16379,
+    "distance_km": 381.3
+  },
+  "braunwald": {
+    "duration_min": 273.9,
+    "duration_sec": 16436,
+    "distance_km": 334.1
+  },
+  "mrzla-dolina": {
+    "duration_min": 273.9,
+    "duration_sec": 16436,
+    "distance_km": 385.1
+  },
+  "savognin": {
+    "duration_min": 274.1,
+    "duration_sec": 16449,
+    "distance_km": 350.1
+  },
+  "pizmundaun": {
+    "duration_min": 274.8,
+    "duration_sec": 16485,
+    "distance_km": 343.3
+  },
+  "laax": {
+    "duration_min": 274.9,
+    "duration_sec": 16492,
+    "distance_km": 328.9
+  },
+  "etmissl": {
+    "duration_min": 275.1,
+    "duration_sec": 16506,
+    "distance_km": 375.1
+  },
+  "sappada": {
+    "duration_min": 275.2,
+    "duration_sec": 16513,
+    "distance_km": 308.8
+  },
+  "neusell": {
+    "duration_min": 275.3,
+    "duration_sec": 16520,
+    "distance_km": 353.4
+  },
+  "mutten": {
+    "duration_min": 275.5,
+    "duration_sec": 16529,
+    "distance_km": 340.8
+  },
+  "smucisce": {
+    "duration_min": 276.2,
+    "duration_sec": 16570,
+    "distance_km": 379.3
+  },
+  "hochbaerneck": {
+    "duration_min": 276.2,
+    "duration_sec": 16573,
+    "distance_km": 348.8
+  },
+  "vogel": {
+    "duration_min": 276.4,
+    "duration_sec": 16582,
+    "distance_km": 379.4
+  },
+  "bumbach-schangnau": {
+    "duration_min": 276.6,
+    "duration_sec": 16598,
+    "distance_km": 353.0
+  },
+  "sattel-hochstuckli": {
+    "duration_min": 277.2,
+    "duration_sec": 16631,
+    "distance_km": 355.9
+  },
+  "friherrenberg-einsiedeln": {
+    "duration_min": 277.8,
+    "duration_sec": 16669,
+    "distance_km": 353.7
+  },
+  "teichalm": {
+    "duration_min": 280.7,
+    "duration_sec": 16841,
+    "distance_km": 382.6
+  },
+  "nussbaumerlifte-hof": {
+    "duration_min": 280.7,
+    "duration_sec": 16841,
+    "distance_km": 382.6
+  },
+  "brunni": {
+    "duration_min": 281.1,
+    "duration_sec": 16864,
+    "distance_km": 359.8
+  },
+  "bormio": {
+    "duration_min": 281.4,
+    "duration_sec": 16882,
+    "distance_km": 272.8
+  },
+  "brunni-alpthal": {
+    "duration_min": 281.5,
+    "duration_sec": 16890,
+    "distance_km": 360.1
+  },
+  "folgarida-marilleva-val-di-sole": {
+    "duration_min": 281.9,
+    "duration_sec": 16913,
+    "distance_km": 341.5
+  },
+  "schmoll-lifte": {
+    "duration_min": 281.9,
+    "duration_sec": 16915,
+    "distance_km": 399.9
+  },
+  "semmering-happylift": {
+    "duration_min": 281.9,
+    "duration_sec": 16916,
+    "distance_km": 402.5
+  },
+  "feistritzsattel": {
+    "duration_min": 282.1,
+    "duration_sec": 16926,
+    "distance_km": 403.6
+  },
+  "semmering-stuhleck": {
+    "duration_min": 282.1,
+    "duration_sec": 16929,
+    "distance_km": 398.0
+  },
+  "hauereck": {
+    "duration_min": 282.7,
+    "duration_sec": 16960,
+    "distance_km": 395.5
+  },
+  "javornik": {
+    "duration_min": 282.7,
+    "duration_sec": 16962,
+    "distance_km": 406.4
+  },
+  "lackenhof-oetscher": {
+    "duration_min": 282.9,
+    "duration_sec": 16977,
+    "distance_km": 347.1
+  },
+  "starivrh": {
+    "duration_min": 282.9,
+    "duration_sec": 16977,
+    "distance_km": 391.5
+  },
+  "pradibosco": {
+    "duration_min": 283.5,
+    "duration_sec": 17008,
+    "distance_km": 302.3
+  },
+  "nollen-unteraegeri": {
+    "duration_min": 283.6,
+    "duration_sec": 17017,
+    "distance_km": 359.9
+  },
+  "elm": {
+    "duration_min": 283.9,
+    "duration_sec": 17032,
+    "distance_km": 342.7
+  },
+  "crna": {
+    "duration_min": 284.1,
+    "duration_sec": 17046,
+    "distance_km": 409.1
+  },
+  "oberiberg": {
+    "duration_min": 284.8,
+    "duration_sec": 17090,
+    "distance_km": 359.3
+  },
+  "schneidhofer": {
+    "duration_min": 285.1,
+    "duration_sec": 17108,
+    "distance_km": 400.3
+  },
+  "hoernli-schoenengrund": {
+    "duration_min": 285.2,
+    "duration_sec": 17110,
+    "distance_km": 357.8
+  },
+  "forni-di-sopra": {
+    "duration_min": 285.4,
+    "duration_sec": 17121,
+    "distance_km": 321.7
+  },
+  "kluglifte": {
+    "duration_min": 285.5,
+    "duration_sec": 17128,
+    "distance_km": 430.1
+  },
+  "strallegg": {
+    "duration_min": 286.1,
+    "duration_sec": 17165,
+    "distance_km": 400.0
+  },
+  "regensberg": {
+    "duration_min": 286.1,
+    "duration_sec": 17169,
+    "distance_km": 369.2
+  },
+  "roehrenmoos-dietikon": {
+    "duration_min": 286.1,
+    "duration_sec": 17169,
+    "distance_km": 369.2
+  },
+  "campitello-fassatal-col-rodella-val-fassa": {
+    "duration_min": 286.4,
+    "duration_sec": 17182,
+    "distance_km": 390.5
+  },
+  "kotlje": {
+    "duration_min": 286.5,
+    "duration_sec": 17191,
+    "distance_km": 409.6
+  },
+  "vals": {
+    "duration_min": 286.5,
+    "duration_sec": 17192,
+    "distance_km": 353.3
+  },
+  "sanbernardino": {
+    "duration_min": 286.9,
+    "duration_sec": 17217,
+    "distance_km": 367.6
+  },
+  "brigels": {
+    "duration_min": 289.2,
+    "duration_sec": 17355,
+    "distance_km": 352.9
+  },
+  "sommeralm": {
+    "duration_min": 289.5,
+    "duration_sec": 17369,
+    "distance_km": 390.9
+  },
+  "pirstingerkogellift": {
+    "duration_min": 289.5,
+    "duration_sec": 17369,
+    "distance_km": 390.9
+  },
+  "abetone-val-di-luce": {
+    "duration_min": 289.8,
+    "duration_sec": 17385,
+    "distance_km": 398.4
+  },
+  "pejo-val-di-sole": {
+    "duration_min": 289.8,
+    "duration_sec": 17385,
+    "distance_km": 351.2
+  },
+  "piane-di-mocogno": {
+    "duration_min": 289.8,
+    "duration_sec": 17385,
+    "distance_km": 398.4
+  },
+  "monte-cimone-sestola": {
+    "duration_min": 289.8,
+    "duration_sec": 17385,
+    "distance_km": 398.4
+  },
+  "kaberlaba": {
+    "duration_min": 289.8,
+    "duration_sec": 17387,
+    "distance_km": 357.7
+  },
+  "ibergeregg": {
+    "duration_min": 290.3,
+    "duration_sec": 17417,
+    "distance_km": 364.5
+  },
+  "modriach": {
+    "duration_min": 290.6,
+    "duration_sec": 17436,
+    "distance_km": 430.2
+  },
+  "wenigzell": {
+    "duration_min": 290.7,
+    "duration_sec": 17444,
+    "distance_km": 406.2
+  },
+  "avers": {
+    "duration_min": 291.1,
+    "duration_sec": 17467,
+    "distance_km": 359.6
+  },
+  "presena-gletscher": {
+    "duration_min": 291.1,
+    "duration_sec": 17468,
+    "distance_km": 355.5
+  },
+  "rigi": {
+    "duration_min": 291.3,
+    "duration_sec": 17479,
+    "distance_km": 381.9
+  },
+  "passo-tonale-val-di-sole": {
+    "duration_min": 291.9,
+    "duration_sec": 17515,
+    "distance_km": 356.4
+  },
+  "stjakobimwalde": {
+    "duration_min": 292.1,
+    "duration_sec": 17529,
+    "distance_km": 407.3
+  },
+  "krvavec": {
+    "duration_min": 292.2,
+    "duration_sec": 17534,
+    "distance_km": 393.0
+  },
+  "disentis": {
+    "duration_min": 292.6,
+    "duration_sec": 17556,
+    "distance_km": 362.7
+  },
+  "kalte-kuchl": {
+    "duration_min": 292.8,
+    "duration_sec": 17565,
+    "distance_km": 409.3
+  },
+  "lagorai-passo-brocon": {
+    "duration_min": 292.8,
+    "duration_sec": 17568,
+    "distance_km": 366.7
+  },
+  "madonna-di-campiglio": {
+    "duration_min": 293.3,
+    "duration_sec": 17599,
+    "distance_km": 348.5
+  },
+  "ybrig": {
+    "duration_min": 293.8,
+    "duration_sec": 17630,
+    "distance_km": 363.4
+  },
+  "corno-alle-scale": {
+    "duration_min": 294.0,
+    "duration_sec": 17641,
+    "distance_km": 401.9
+  },
+  "cerreto-laghi": {
+    "duration_min": 294.0,
+    "duration_sec": 17641,
+    "distance_km": 401.9
+  },
+  "doganaccia-cutigliano": {
+    "duration_min": 294.0,
+    "duration_sec": 17641,
+    "distance_km": 401.9
+  },
+  "kozji-hrbet-2864-bohinj": {
+    "duration_min": 295.8,
+    "duration_sec": 17746,
+    "distance_km": 413.9
+  },
+  "eibisberg": {
+    "duration_min": 296.1,
+    "duration_sec": 17763,
+    "distance_km": 401.3
+  },
+  "trije-kralji": {
+    "duration_min": 296.7,
+    "duration_sec": 17802,
+    "distance_km": 424.5
+  },
+  "niederalpl": {
+    "duration_min": 297.4,
+    "duration_sec": 17844,
+    "distance_km": 403.5
+  },
+  "stoos": {
+    "duration_min": 297.4,
+    "duration_sec": 17847,
+    "distance_km": 368.8
+  },
+  "skilift-rettenegg": {
+    "duration_min": 298.1,
+    "duration_sec": 17884,
+    "distance_km": 411.0
+  },
+  "skilift-breitenfurt-brenneralm": {
+    "duration_min": 298.5,
+    "duration_sec": 17910,
+    "distance_km": 411.8
+  },
+  "valtgeva-druni-kids-arena-sedrun": {
+    "duration_min": 298.7,
+    "duration_sec": 17921,
+    "distance_km": 369.0
+  },
+  "kuessnacht-rigi-seebodenalp": {
+    "duration_min": 299.1,
+    "duration_sec": 17948,
+    "distance_km": 387.5
+  },
+  "ponte-di-legno": {
+    "duration_min": 299.2,
+    "duration_sec": 17953,
+    "distance_km": 364.4
+  },
+  "sentjost-nad-horjulom": {
+    "duration_min": 299.3,
+    "duration_sec": 17958,
+    "distance_km": 397.8
+  },
+  "melette-2000-gallio": {
+    "duration_min": 299.7,
+    "duration_sec": 17983,
+    "distance_km": 363.1
+  },
+  "sauris": {
+    "duration_min": 299.9,
+    "duration_sec": 17993,
+    "distance_km": 428.4
+  },
+  "visevnik": {
+    "duration_min": 299.9,
+    "duration_sec": 17995,
+    "distance_km": 383.8
+  },
+  "mythenregion": {
+    "duration_min": 300.1,
+    "duration_sec": 18008,
+    "distance_km": 372.7
+  },
+  "biancoia-conco": {
+    "duration_min": 300.6,
+    "duration_sec": 18038,
+    "distance_km": 368.1
+  },
+  "st-blasien-menzenschwand": {
+    "duration_min": 301.3,
+    "duration_sec": 18078,
+    "distance_km": 384.3
+  },
+  "althuette-waldmuenchen": {
+    "duration_min": 301.3,
+    "duration_sec": 18078,
+    "distance_km": 384.3
+  },
+  "hoechenschwand": {
+    "duration_min": 301.3,
+    "duration_sec": 18078,
+    "distance_km": 384.3
+  },
+  "cerkno": {
+    "duration_min": 303.5,
+    "duration_sec": 18212,
+    "distance_km": 413.8
+  },
+  "eggberge": {
+    "duration_min": 304.1,
+    "duration_sec": 18243,
+    "distance_km": 382.5
+  },
+  "hapfere-plaffeien": {
+    "duration_min": 304.1,
+    "duration_sec": 18249,
+    "distance_km": 390.3
+  },
+  "valchiavenna": {
+    "duration_min": 304.4,
+    "duration_sec": 18262,
+    "distance_km": 374.8
+  },
+  "salzstiegl": {
+    "duration_min": 304.8,
+    "duration_sec": 18286,
+    "distance_km": 440.1
+  },
+  "aprica": {
+    "duration_min": 305.0,
+    "duration_sec": 18302,
+    "distance_km": 314.9
+  },
+  "skilift-bonka": {
+    "duration_min": 306.5,
+    "duration_sec": 18390,
+    "distance_km": 427.0
+  },
+  "arabichl": {
+    "duration_min": 307.1,
+    "duration_sec": 18429,
+    "distance_km": 427.1
+  },
+  "eremo-monte-carpegna": {
+    "duration_min": 307.5,
+    "duration_sec": 18449,
+    "distance_km": 433.4
+  },
+  "sassotetto-santa-maria-maddalena-monti-sibillini": {
+    "duration_min": 307.5,
+    "duration_sec": 18449,
+    "distance_km": 433.4
+  },
+  "bukovnik": {
+    "duration_min": 307.7,
+    "duration_sec": 18461,
+    "distance_km": 424.0
+  },
+  "ventasso-laghi": {
+    "duration_min": 308.0,
+    "duration_sec": 18481,
+    "distance_km": 410.8
+  },
+  "kope-ribnisko-pohorje": {
+    "duration_min": 309.6,
+    "duration_sec": 18576,
+    "distance_km": 431.7
+  },
+  "monte-verena-2000-asiago": {
+    "duration_min": 311.8,
+    "duration_sec": 18708,
+    "distance_km": 369.7
+  },
+  "stcorona": {
+    "duration_min": 313.4,
+    "duration_sec": 18805,
+    "distance_km": 433.5
+  },
+  "haldenkoepfle": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "herrischried": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "schauinslandbahn": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "muggenbrunn": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "herrenschwand-todtmoos": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "halde": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "notschrei-skilifte": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "hofsgrund": {
+    "duration_min": 314.5,
+    "duration_sec": 18868,
+    "distance_km": 411.6
+  },
+  "ratzi": {
+    "duration_min": 314.9,
+    "duration_sec": 18891,
+    "distance_km": 371.1
+  },
+  "pinzolo": {
+    "duration_min": 315.0,
+    "duration_sec": 18899,
+    "distance_km": 365.8
+  },
+  "kinderland-rinn": {
+    "duration_min": 315.4,
+    "duration_sec": 18925,
+    "distance_km": 430.7
+  },
+  "bagolino-gaverland": {
+    "duration_min": 316.1,
+    "duration_sec": 18964,
+    "distance_km": 382.0
+  },
+  "kukmirn": {
+    "duration_min": 316.4,
+    "duration_sec": 18982,
+    "distance_km": 450.3
+  },
+  "monte-avena-croce-d-aune": {
+    "duration_min": 316.5,
+    "duration_sec": 18990,
+    "distance_km": 360.2
+  },
+  "celjska-koca": {
+    "duration_min": 316.6,
+    "duration_sec": 18999,
+    "distance_km": 454.6
+  },
+  "velikaplanina": {
+    "duration_min": 317.4,
+    "duration_sec": 19047,
+    "distance_km": 418.4
+  },
+  "liftverbund-feldberg": {
+    "duration_min": 317.7,
+    "duration_sec": 19063,
+    "distance_km": 397.4
+  },
+  "todtnauberg": {
+    "duration_min": 317.7,
+    "duration_sec": 19063,
+    "distance_km": 397.4
+  },
+  "stollenbach": {
+    "duration_min": 317.7,
+    "duration_sec": 19063,
+    "distance_km": 397.4
+  },
+  "moenichwald": {
+    "duration_min": 318.1,
+    "duration_sec": 19088,
+    "distance_km": 420.5
+  },
+  "alpe-nevegal-col-visentin": {
+    "duration_min": 318.5,
+    "duration_sec": 19111,
+    "distance_km": 360.7
+  },
+  "prato-spilla": {
+    "duration_min": 318.6,
+    "duration_sec": 19119,
+    "distance_km": 432.3
+  },
+  "gemeindealpe": {
+    "duration_min": 318.8,
+    "duration_sec": 19125,
+    "distance_km": 417.5
+  },
+  "malcesine-monte-baldo": {
+    "duration_min": 318.8,
+    "duration_sec": 19129,
+    "distance_km": 449.6
+  },
+  "puchberg-schneeberg": {
+    "duration_min": 319.4,
+    "duration_sec": 19162,
+    "distance_km": 445.9
+  },
+  "ribnisko-pohorje": {
+    "duration_min": 319.4,
+    "duration_sec": 19165,
+    "distance_km": 443.6
+  },
+  "andermatt-oberalp-sedrun": {
+    "duration_min": 319.6,
+    "duration_sec": 19177,
+    "distance_km": 390.3
+  },
+  "andermatt-gemsstock": {
+    "duration_min": 319.6,
+    "duration_sec": 19177,
+    "distance_km": 390.3
+  },
+  "gace": {
+    "duration_min": 319.7,
+    "duration_sec": 19183,
+    "distance_km": 464.1
+  },
+  "quellenwiese": {
+    "duration_min": 321.3,
+    "duration_sec": 19279,
+    "distance_km": 441.8
+  },
+  "frontignano-ussita": {
+    "duration_min": 323.5,
+    "duration_sec": 19410,
+    "distance_km": 444.2
+  },
+  "gitschenen": {
+    "duration_min": 325.4,
+    "duration_sec": 19521,
+    "distance_km": 397.9
+  },
+  "hohe-winde-beinwil": {
+    "duration_min": 326.2,
+    "duration_sec": 19571,
+    "distance_km": 420.5
+  },
+  "hirschberg-bizau": {
+    "duration_min": 326.7,
+    "duration_sec": 19604,
+    "distance_km": 439.7
+  },
+  "realp": {
+    "duration_min": 329.1,
+    "duration_sec": 19746,
+    "distance_km": 399.0
+  },
+  "dallenwil": {
+    "duration_min": 329.1,
+    "duration_sec": 19748,
+    "distance_km": 417.4
+  },
+  "muenstertal-wieden": {
+    "duration_min": 329.3,
+    "duration_sec": 19758,
+    "distance_km": 420.4
+  },
+  "hornlift-froehnd": {
+    "duration_min": 329.3,
+    "duration_sec": 19758,
+    "distance_km": 420.4
+  },
+  "belchen": {
+    "duration_min": 329.3,
+    "duration_sec": 19758,
+    "distance_km": 420.4
+  },
+  "kandelblick-voehrenbach": {
+    "duration_min": 329.3,
+    "duration_sec": 19758,
+    "distance_km": 420.4
+  },
+  "unterberg": {
+    "duration_min": 329.7,
+    "duration_sec": 19784,
+    "distance_km": 447.4
+  },
+  "schoenfeld-thomatal": {
+    "duration_min": 329.9,
+    "duration_sec": 19797,
+    "distance_km": 455.8
+  },
+  "moenichkirchen": {
+    "duration_min": 330.3,
+    "duration_sec": 19820,
+    "distance_km": 459.1
+  },
+  "campo-blenio": {
+    "duration_min": 330.7,
+    "duration_sec": 19843,
+    "distance_km": 400.4
+  },
+  "klewenalp": {
+    "duration_min": 331.4,
+    "duration_sec": 19883,
+    "distance_km": 422.2
+  },
+  "langis-glaubenberg": {
+    "duration_min": 331.5,
+    "duration_sec": 19891,
+    "distance_km": 423.0
+  },
+  "gfellen-entlebuch-finsterwald": {
+    "duration_min": 333.5,
+    "duration_sec": 20010,
+    "distance_km": 418.9
+  },
+  "schia-monte-caio": {
+    "duration_min": 333.5,
+    "duration_sec": 20010,
+    "distance_km": 441.5
+  },
+  "chiesa-valmalenco": {
+    "duration_min": 333.6,
+    "duration_sec": 20015,
+    "distance_km": 340.0
+  },
+  "mariborsko-pohorje": {
+    "duration_min": 334.2,
+    "duration_sec": 20050,
+    "distance_km": 462.1
+  },
+  "golte": {
+    "duration_min": 336.0,
+    "duration_sec": 20162,
+    "distance_km": 439.5
+  },
+  "moerlialp": {
+    "duration_min": 337.7,
+    "duration_sec": 20263,
+    "distance_km": 430.1
+  },
+  "maniva": {
+    "duration_min": 337.8,
+    "duration_sec": 20266,
+    "distance_km": 398.1
+  },
+  "langenbruck": {
+    "duration_min": 339.4,
+    "duration_sec": 20364,
+    "distance_km": 434.2
+  },
+  "janina": {
+    "duration_min": 339.4,
+    "duration_sec": 20364,
+    "distance_km": 476.0
+  },
+  "auronzo": {
+    "duration_min": 340.9,
+    "duration_sec": 20451,
+    "distance_km": 397.9
+  },
+  "engelberg": {
+    "duration_min": 341.1,
+    "duration_sec": 20468,
+    "distance_km": 429.2
+  },
+  "rossa": {
+    "duration_min": 341.5,
+    "duration_sec": 20490,
+    "distance_km": 421.0
+  },
+  "melchsee-frutt": {
+    "duration_min": 342.4,
+    "duration_sec": 20541,
+    "distance_km": 432.4
+  },
+  "schratten-fluehli": {
+    "duration_min": 343.6,
+    "duration_sec": 20614,
+    "distance_km": 427.4
+  },
+  "bruesti-attinghausen": {
+    "duration_min": 346.1,
+    "duration_sec": 20769,
+    "distance_km": 393.7
+  },
+  "rogla": {
+    "duration_min": 346.2,
+    "duration_sec": 20771,
+    "distance_km": 465.4
+  },
+  "brunni-engelberg": {
+    "duration_min": 349.4,
+    "duration_sec": 20966,
+    "distance_km": 433.1
+  },
+  "airolo": {
+    "duration_min": 350.8,
+    "duration_sec": 21045,
+    "distance_km": 433.1
+  },
+  "airolo-luina": {
+    "duration_min": 350.8,
+    "duration_sec": 21045,
+    "distance_km": 433.1
+  },
+  "hoernle": {
+    "duration_min": 351.1,
+    "duration_sec": 21066,
+    "distance_km": 441.9
+  },
+  "axalp": {
+    "duration_min": 351.4,
+    "duration_sec": 21084,
+    "distance_km": 450.0
+  },
+  "prato-leventina": {
+    "duration_min": 351.7,
+    "duration_sec": 21104,
+    "distance_km": 454.0
+  },
+  "marbachegg": {
+    "duration_min": 352.5,
+    "duration_sec": 21152,
+    "distance_km": 435.2
+  },
+  "piancavallo": {
+    "duration_min": 352.6,
+    "duration_sec": 21153,
+    "distance_km": 478.1
+  },
+  "bedrina-dalpe": {
+    "duration_min": 354.8,
+    "duration_sec": 21287,
+    "distance_km": 456.6
+  },
+  "gadmen": {
+    "duration_min": 355.5,
+    "duration_sec": 21331,
+    "distance_km": 441.1
+  },
+  "bedea-novaggio": {
+    "duration_min": 355.5,
+    "duration_sec": 21332,
+    "distance_km": 451.5
+  },
+  "meiringen-hasliberg": {
+    "duration_min": 356.0,
+    "duration_sec": 21362,
+    "distance_km": 442.1
+  },
+  "obergoms": {
+    "duration_min": 356.8,
+    "duration_sec": 21405,
+    "distance_km": 419.7
+  },
+  "nara-leontica-cancori": {
+    "duration_min": 358.1,
+    "duration_sec": 21485,
+    "distance_km": 416.8
+  },
+  "cari": {
+    "duration_min": 359.2,
+    "duration_sec": 21553,
+    "distance_km": 458.9
+  },
+  "alpe-di-neggia": {
+    "duration_min": 359.5,
+    "duration_sec": 21568,
+    "distance_km": 443.6
+  },
+  "soerenberg": {
+    "duration_min": 360.4,
+    "duration_sec": 21627,
+    "distance_km": 438.8
+  },
+  "la-bresse-hohneck": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "le-tanet": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "schnepfenried": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "gaschney-360": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "saint-hilaire": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "grand-valtin": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "lac-blanc": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "haut-du-tot": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "larcenaire-bussang": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "dolleren-le-schlumpf": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "saint-maurice-sur-moselle": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "sternenberg": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "le-markstein": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "lispach-la-bresse": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "planche-des-belles-filles": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "bellefontaine": {
+    "duration_min": 360.6,
+    "duration_sec": 21634,
+    "distance_km": 446.7
+  },
+  "les-baganelles": {
+    "duration_min": 360.6,
+    "duration_sec": 21635,
+    "distance_km": 446.5
+  },
+  "dicki-weisslingen": {
+    "duration_min": 364.7,
+    "duration_sec": 21882,
+    "distance_km": 453.2
+  },
+  "monte-purito-selvino": {
+    "duration_min": 365.4,
+    "duration_sec": 21924,
+    "distance_km": 498.2
+  },
+  "sous-le-mont": {
+    "duration_min": 366.8,
+    "duration_sec": 22005,
+    "distance_km": 451.5
+  },
+  "les-genevez": {
+    "duration_min": 366.8,
+    "duration_sec": 22005,
+    "distance_km": 451.5
+  },
+  "tramelan": {
+    "duration_min": 367.1,
+    "duration_sec": 22027,
+    "distance_km": 452.9
+  },
+  "pescegallo-valgerola": {
+    "duration_min": 367.1,
+    "duration_sec": 22028,
+    "distance_km": 367.4
+  },
+  "borno-monte-altissimo": {
+    "duration_min": 368.9,
+    "duration_sec": 22136,
+    "distance_km": 359.8
+  },
+  "le-chaluet": {
+    "duration_min": 369.3,
+    "duration_sec": 22158,
+    "distance_km": 450.5
+  },
+  "eggiwil": {
+    "duration_min": 369.5,
+    "duration_sec": 22171,
+    "distance_km": 450.4
+  },
+  "barzio-piani-di-bobbio": {
+    "duration_min": 371.6,
+    "duration_sec": 22297,
+    "distance_km": 379.1
+  },
+  "habkern": {
+    "duration_min": 372.0,
+    "duration_sec": 22320,
+    "distance_km": 466.0
+  },
+  "beatenberg-niederhorn-hohwald": {
+    "duration_min": 373.1,
+    "duration_sec": 22386,
+    "distance_km": 469.1
+  },
+  "eriz": {
+    "duration_min": 374.2,
+    "duration_sec": 22452,
+    "distance_km": 458.2
+  },
+  "aeschi": {
+    "duration_min": 375.4,
+    "duration_sec": 22522,
+    "distance_km": 472.9
+  },
+  "muerren-schilthorn": {
+    "duration_min": 376.9,
+    "duration_sec": 22614,
+    "distance_km": 473.2
+  },
+  "biel-kinzig": {
+    "duration_min": 377.1,
+    "duration_sec": 22625,
+    "distance_km": 459.3
+  },
+  "les-pres-d-orvin": {
+    "duration_min": 377.1,
+    "duration_sec": 22625,
+    "distance_km": 459.3
+  },
+  "skilift-linden": {
+    "duration_min": 377.8,
+    "duration_sec": 22670,
+    "distance_km": 460.7
+  },
+  "val-palot-pisogne": {
+    "duration_min": 380.0,
+    "duration_sec": 22799,
+    "distance_km": 512.5
+  },
+  "montecampione": {
+    "duration_min": 380.0,
+    "duration_sec": 22802,
+    "distance_km": 495.5
+  },
+  "chuderhuesi": {
+    "duration_min": 380.9,
+    "duration_sec": 22855,
+    "distance_km": 454.8
+  },
+  "heimenschwand-buchholterberg": {
+    "duration_min": 381.8,
+    "duration_sec": 22907,
+    "distance_km": 462.4
+  },
+  "schilpario": {
+    "duration_min": 383.1,
+    "duration_sec": 22984,
+    "distance_km": 507.5
+  },
+  "bellwald": {
+    "duration_min": 383.4,
+    "duration_sec": 23002,
+    "distance_km": 444.0
+  },
+  "craveggia-piana-vigezzo": {
+    "duration_min": 383.9,
+    "duration_sec": 23036,
+    "distance_km": 470.2
+  },
+  "faltschen-reichenbach-kandertal": {
+    "duration_min": 384.4,
+    "duration_sec": 23065,
+    "distance_km": 484.9
+  },
+  "kiental": {
+    "duration_min": 385.9,
+    "duration_sec": 23155,
+    "distance_km": 486.3
+  },
+  "schwanden-sigriswil": {
+    "duration_min": 386.5,
+    "duration_sec": 23191,
+    "distance_km": 478.4
+  },
+  "la-baitina-druogno": {
+    "duration_min": 386.8,
+    "duration_sec": 23208,
+    "distance_km": 472.5
+  },
+  "colere": {
+    "duration_min": 387.2,
+    "duration_sec": 23231,
+    "distance_km": 508.4
+  },
+  "homberg": {
+    "duration_min": 389.9,
+    "duration_sec": 23394,
+    "distance_km": 468.5
+  },
+  "gurten": {
+    "duration_min": 392.5,
+    "duration_sec": 23551,
+    "distance_km": 468.2
+  },
+  "cioss-prato-bedretto": {
+    "duration_min": 392.9,
+    "duration_sec": 23573,
+    "distance_km": 476.3
+  },
+  "aletsch-arena": {
+    "duration_min": 393.0,
+    "duration_sec": 23578,
+    "distance_km": 449.3
+  },
+  "heiligenschwendi": {
+    "duration_min": 393.9,
+    "duration_sec": 23634,
+    "distance_km": 470.7
+  },
+  "presolana": {
+    "duration_min": 394.1,
+    "duration_sec": 23645,
+    "distance_km": 510.4
+  },
+  "ulovka": {
+    "duration_min": 397.0,
+    "duration_sec": 23820,
+    "distance_km": 475.4
+  },
+  "masun": {
+    "duration_min": 397.0,
+    "duration_sec": 23820,
+    "distance_km": 475.4
+  },
+  "piazzatorre": {
+    "duration_min": 398.0,
+    "duration_sec": 23879,
+    "distance_km": 525.6
+  },
+  "bosco-gurin": {
+    "duration_min": 398.2,
+    "duration_sec": 23892,
+    "distance_km": 480.3
+  },
+  "spiazzi-di-gromo-boario": {
+    "duration_min": 399.7,
+    "duration_sec": 23981,
+    "distance_km": 520.0
+  },
+  "springenboden": {
+    "duration_min": 401.1,
+    "duration_sec": 24065,
+    "distance_km": 493.9
+  },
+  "mogno": {
+    "duration_min": 401.4,
+    "duration_sec": 24082,
+    "distance_km": 482.3
+  },
+  "piano-di-peccia": {
+    "duration_min": 402.8,
+    "duration_sec": 24168,
+    "distance_km": 481.0
+  },
+  "elsigen-metsch-frutigen": {
+    "duration_min": 403.4,
+    "duration_sec": 24207,
+    "distance_km": 497.2
+  },
+  "lizzola-valbondione": {
+    "duration_min": 403.7,
+    "duration_sec": 24224,
+    "distance_km": 530.0
+  },
+  "wiriehorn": {
+    "duration_min": 404.5,
+    "duration_sec": 24272,
+    "distance_km": 497.0
+  },
+  "adelboden": {
+    "duration_min": 405.4,
+    "duration_sec": 24324,
+    "distance_km": 504.5
+  },
+  "rossberg": {
+    "duration_min": 405.8,
+    "duration_sec": 24346,
+    "distance_km": 499.4
+  },
+  "grimmialp": {
+    "duration_min": 405.9,
+    "duration_sec": 24352,
+    "distance_km": 499.4
+  },
+  "jungfrau-grindelwald-wengen": {
+    "duration_min": 408.1,
+    "duration_sec": 24488,
+    "distance_km": 486.7
+  },
+  "riffenmatt": {
+    "duration_min": 409.3,
+    "duration_sec": 24559,
+    "distance_km": 512.1
+  },
+  "val-formazza-sagersboden": {
+    "duration_min": 409.5,
+    "duration_sec": 24572,
+    "distance_km": 482.7
+  },
+  "engstligenalp-adelboden": {
+    "duration_min": 409.8,
+    "duration_sec": 24585,
+    "distance_km": 507.1
+  },
+  "balmberg": {
+    "duration_min": 410.7,
+    "duration_sec": 24641,
+    "distance_km": 511.9
+  },
+  "jaunpass": {
+    "duration_min": 411.4,
+    "duration_sec": 24681,
+    "distance_km": 511.3
+  },
+  "gantrisch-gurnigel": {
+    "duration_min": 414.3,
+    "duration_sec": 24859,
+    "distance_km": 516.0
+  },
+  "rothwald-wasenalp-simplon": {
+    "duration_min": 415.9,
+    "duration_sec": 24951,
+    "distance_km": 474.2
+  },
+  "oberwangen": {
+    "duration_min": 415.9,
+    "duration_sec": 24953,
+    "distance_km": 515.4
+  },
+  "belalp": {
+    "duration_min": 416.7,
+    "duration_sec": 25001,
+    "distance_km": 467.5
+  },
+  "staldenried-gspon": {
+    "duration_min": 416.9,
+    "duration_sec": 25011,
+    "distance_km": 476.1
+  },
+  "rosswald": {
+    "duration_min": 417.1,
+    "duration_sec": 25025,
+    "distance_km": 470.9
+  },
+  "domobianca": {
+    "duration_min": 417.4,
+    "duration_sec": 25046,
+    "distance_km": 496.9
+  },
+  "rueschegg-eywald": {
+    "duration_min": 418.2,
+    "duration_sec": 25094,
+    "distance_km": 516.3
+  },
+  "jaun": {
+    "duration_min": 418.6,
+    "duration_sec": 25116,
+    "distance_km": 518.0
+  },
+  "schwarzenbuehl-selital": {
+    "duration_min": 418.9,
+    "duration_sec": 25133,
+    "distance_km": 521.0
+  },
+  "visperterminen": {
+    "duration_min": 419.5,
+    "duration_sec": 25169,
+    "distance_km": 474.8
+  },
+  "ottenleuebad": {
+    "duration_min": 425.9,
+    "duration_sec": 25555,
+    "distance_km": 524.3
+  },
+  "san-domenico": {
+    "duration_min": 426.7,
+    "duration_sec": 25602,
+    "distance_km": 503.9
+  },
+  "hohsaas-saas-grund": {
+    "duration_min": 428.1,
+    "duration_sec": 25684,
+    "distance_km": 487.5
+  },
+  "lenk": {
+    "duration_min": 433.1,
+    "duration_sec": 25988,
+    "distance_km": 526.2
+  },
+  "alpe-devero": {
+    "duration_min": 433.2,
+    "duration_sec": 25994,
+    "distance_km": 508.9
+  },
+  "saas-fee": {
+    "duration_min": 433.4,
+    "duration_sec": 26002,
+    "distance_km": 490.8
+  },
+  "saas-almagell": {
+    "duration_min": 433.6,
+    "duration_sec": 26016,
+    "distance_km": 491.5
+  },
+  "unterbaech": {
+    "duration_min": 434.1,
+    "duration_sec": 26044,
+    "distance_km": 482.1
+  },
+  "charmey": {
+    "duration_min": 435.9,
+    "duration_sec": 26153,
+    "distance_km": 530.2
+  },
+  "graechen": {
+    "duration_min": 436.1,
+    "duration_sec": 26168,
+    "distance_km": 490.2
+  },
+  "nods-chasseral": {
+    "duration_min": 437.1,
+    "duration_sec": 26223,
+    "distance_km": 537.3
+  },
+  "les-breuleux": {
+    "duration_min": 437.1,
+    "duration_sec": 26224,
+    "distance_km": 537.3
+  },
+  "saint-imier-mont-soleil": {
+    "duration_min": 437.1,
+    "duration_sec": 26225,
+    "distance_km": 537.3
+  },
+  "bugnenets-savagnieres": {
+    "duration_min": 437.1,
+    "duration_sec": 26225,
+    "distance_km": 537.3
+  },
+  "le-paquier": {
+    "duration_min": 437.1,
+    "duration_sec": 26229,
+    "distance_km": 537.4
+  },
+  "jeizinen-engersch-gampel": {
+    "duration_min": 437.5,
+    "duration_sec": 26252,
+    "distance_km": 495.9
+  },
+  "schwarzsee": {
+    "duration_min": 437.9,
+    "duration_sec": 26274,
+    "distance_km": 534.9
+  },
+  "moosalpregion": {
+    "duration_min": 438.4,
+    "duration_sec": 26301,
+    "distance_km": 483.9
+  },
+  "gstaad": {
+    "duration_min": 441.8,
+    "duration_sec": 26507,
+    "distance_km": 532.1
+  },
+  "macugnaga": {
+    "duration_min": 442.6,
+    "duration_sec": 26554,
+    "distance_km": 525.7
+  },
+  "zermatt": {
+    "duration_min": 443.3,
+    "duration_sec": 26596,
+    "distance_km": 500.0
+  },
+  "mottarone": {
+    "duration_min": 444.1,
+    "duration_sec": 26647,
+    "distance_km": 511.0
+  },
+  "lauchernalp": {
+    "duration_min": 444.4,
+    "duration_sec": 26662,
+    "distance_km": 531.2
+  },
+  "les-loges": {
+    "duration_min": 444.6,
+    "duration_sec": 26677,
+    "distance_km": 540.9
+  },
+  "cret-meuron": {
+    "duration_min": 444.6,
+    "duration_sec": 26677,
+    "distance_km": 540.9
+  },
+  "bulle-lachia": {
+    "duration_min": 445.4,
+    "duration_sec": 26724,
+    "distance_km": 540.5
+  },
+  "vercorin": {
+    "duration_min": 446.5,
+    "duration_sec": 26788,
+    "distance_km": 512.7
+  },
+  "sportbahnen-eischoll": {
+    "duration_min": 447.2,
+    "duration_sec": 26832,
+    "distance_km": 485.7
+  },
+  "crans-montana": {
+    "duration_min": 448.7,
+    "duration_sec": 26920,
+    "distance_km": 510.0
+  },
+  "brot-plamboz": {
+    "duration_min": 450.8,
+    "duration_sec": 27048,
+    "distance_km": 547.8
+  },
+  "chauffaud-val-de-morteau": {
+    "duration_min": 450.8,
+    "duration_sec": 27048,
+    "distance_km": 547.8
+  },
+  "sommartel-le-locle": {
+    "duration_min": 450.8,
+    "duration_sec": 27048,
+    "distance_km": 547.8
+  },
+  "meix-musy-pierre-a-feu": {
+    "duration_min": 450.8,
+    "duration_sec": 27048,
+    "distance_km": 547.8
+  },
+  "la-berra": {
+    "duration_min": 451.1,
+    "duration_sec": 27065,
+    "distance_km": 538.4
+  },
+  "la-corbatiere": {
+    "duration_min": 453.9,
+    "duration_sec": 27232,
+    "distance_km": 545.4
+  },
+  "funiluc": {
+    "duration_min": 455.3,
+    "duration_sec": 27320,
+    "distance_km": 516.7
+  },
+  "grimentz-zinal": {
+    "duration_min": 456.5,
+    "duration_sec": 27388,
+    "distance_km": 517.3
+  },
+  "mont-noble-nax": {
+    "duration_min": 457.9,
+    "duration_sec": 27474,
+    "distance_km": 526.5
+  },
+  "les-diablerets": {
+    "duration_min": 458.6,
+    "duration_sec": 27515,
+    "distance_km": 551.9
+  },
+  "la-bonade-grand-combe-chateleu": {
+    "duration_min": 461.4,
+    "duration_sec": 27684,
+    "distance_km": 558.0
+  },
+  "la-brevine": {
+    "duration_min": 461.4,
+    "duration_sec": 27684,
+    "distance_km": 558.0
+  },
+  "bielmonte": {
+    "duration_min": 462.5,
+    "duration_sec": 27750,
+    "distance_km": 570.0
+  },
+  "anzere": {
+    "duration_min": 463.3,
+    "duration_sec": 27799,
+    "distance_km": 528.2
+  },
+  "les-paccots-chatel-saint-denis": {
+    "duration_min": 463.5,
+    "duration_sec": 27812,
+    "distance_km": 566.3
+  },
+  "nendaz-4-vallees": {
+    "duration_min": 463.7,
+    "duration_sec": 27824,
+    "distance_km": 527.6
+  },
+  "thyon-4-vallees": {
+    "duration_min": 464.4,
+    "duration_sec": 27861,
+    "distance_km": 529.1
+  },
+  "mont-gibloux": {
+    "duration_min": 464.7,
+    "duration_sec": 27881,
+    "distance_km": 553.7
+  },
+  "moleson-la-gruyere": {
+    "duration_min": 464.7,
+    "duration_sec": 27882,
+    "distance_km": 548.6
+  },
+  "veysonnaz-4-vallees": {
+    "duration_min": 465.0,
+    "duration_sec": 27901,
+    "distance_km": 527.1
+  },
+  "evolene": {
+    "duration_min": 468.0,
+    "duration_sec": 28082,
+    "distance_km": 534.4
+  },
+  "ovronnaz": {
+    "duration_min": 470.3,
+    "duration_sec": 28218,
+    "distance_km": 537.6
+  },
+  "leysin-mosses-lecherette": {
+    "duration_min": 470.7,
+    "duration_sec": 28241,
+    "distance_km": 564.6
+  },
+  "leukerbad": {
+    "duration_min": 471.0,
+    "duration_sec": 28261,
+    "distance_km": 509.7
+  },
+  "les-marecottes": {
+    "duration_min": 472.2,
+    "duration_sec": 28332,
+    "distance_km": 549.1
+  },
+  "la-cernay-blanche-la-chaux-de-gilley": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "les-fourgs": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "sainte-croix": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "les-verrieres": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "entre-les-fourgs-jougne": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "la-robella": {
+    "duration_min": 472.2,
+    "duration_sec": 28335,
+    "distance_km": 569.4
+  },
+  "rathvel": {
+    "duration_min": 472.4,
+    "duration_sec": 28342,
+    "distance_km": 571.6
+  },
+  "les-prevondes": {
+    "duration_min": 476.9,
+    "duration_sec": 28616,
+    "distance_km": 563.7
+  },
+  "latzoumaz": {
+    "duration_min": 477.6,
+    "duration_sec": 28654,
+    "distance_km": 545.7
+  },
+  "champex": {
+    "duration_min": 478.7,
+    "duration_sec": 28721,
+    "distance_km": 556.7
+  },
+  "la-chaux-de-fonds": {
+    "duration_min": 479.5,
+    "duration_sec": 28769,
+    "distance_km": 587.2
+  },
+  "diablerets": {
+    "duration_min": 479.6,
+    "duration_sec": 28775,
+    "distance_km": 535.5
+  },
+  "scopello-alpe-mera": {
+    "duration_min": 481.6,
+    "duration_sec": 28893,
+    "distance_km": 584.6
+  },
+  "la-cote-aux-fees": {
+    "duration_min": 482.4,
+    "duration_sec": 28946,
+    "distance_km": 589.1
+  },
+  "balme-vallorcine": {
+    "duration_min": 482.6,
+    "duration_sec": 28956,
+    "distance_km": 566.1
+  },
+  "arolla": {
+    "duration_min": 482.9,
+    "duration_sec": 28976,
+    "distance_km": 547.5
+  },
+  "les-pleiades": {
+    "duration_min": 484.2,
+    "duration_sec": 29052,
+    "distance_km": 577.0
+  },
+  "bruson": {
+    "duration_min": 485.3,
+    "duration_sec": 29120,
+    "distance_km": 564.9
+  },
+  "la-poya-vallorcine": {
+    "duration_min": 485.8,
+    "duration_sec": 29147,
+    "distance_km": 568.1
+  },
+  "torgon": {
+    "duration_min": 488.7,
+    "duration_sec": 29321,
+    "distance_km": 579.2
+  },
+  "vicheres": {
+    "duration_min": 488.9,
+    "duration_sec": 29331,
+    "distance_km": 570.1
+  },
+  "verbier": {
+    "duration_min": 491.0,
+    "duration_sec": 29459,
+    "distance_km": 568.9
+  },
+  "la-fouly": {
+    "duration_min": 491.8,
+    "duration_sec": 29509,
+    "distance_km": 570.6
+  },
+  "la-vormaine": {
+    "duration_min": 492.2,
+    "duration_sec": 29535,
+    "distance_km": 574.9
+  },
+  "grands-montets-chamonix": {
+    "duration_min": 493.6,
+    "duration_sec": 29619,
+    "distance_km": 574.8
+  },
+  "rochers-de-naye": {
+    "duration_min": 497.9,
+    "duration_sec": 29876,
+    "distance_km": 593.3
+  },
+  "villars": {
+    "duration_min": 499.8,
+    "duration_sec": 29986,
+    "distance_km": 575.9
+  },
+  "brevent-flegere-chamonix": {
+    "duration_min": 499.8,
+    "duration_sec": 29990,
+    "distance_km": 579.9
+  },
+  "chatel": {
+    "duration_min": 501.3,
+    "duration_sec": 30080,
+    "distance_km": 578.4
+  },
+  "champery": {
+    "duration_min": 508.1,
+    "duration_sec": 30483,
+    "distance_km": 576.7
+  },
+  "abondance": {
+    "duration_min": 508.5,
+    "duration_sec": 30509,
+    "distance_km": 589.0
+  },
+  "chamonix-mont-blanc": {
+    "duration_min": 509.6,
+    "duration_sec": 30576,
+    "distance_km": 588.8
+  },
+  "tourchet": {
+    "duration_min": 511.0,
+    "duration_sec": 30659,
+    "distance_km": 589.8
+  },
+  "la-chapelle-dabondance": {
+    "duration_min": 511.4,
+    "duration_sec": 30684,
+    "distance_km": 587.3
+  },
+  "thollon-les-memises": {
+    "duration_min": 516.8,
+    "duration_sec": 31009,
+    "distance_km": 618.4
+  },
+  "st-jean-daulps": {
+    "duration_min": 517.2,
+    "duration_sec": 31033,
+    "distance_km": 592.7
+  },
+  "les-houches": {
+    "duration_min": 517.9,
+    "duration_sec": 31073,
+    "distance_km": 593.6
+  },
+  "brusson": {
+    "duration_min": 518.9,
+    "duration_sec": 31136,
+    "distance_km": 626.4
+  },
+  "champorcher": {
+    "duration_min": 519.2,
+    "duration_sec": 31150,
+    "distance_km": 620.1
+  },
+  "crevacol": {
+    "duration_min": 521.6,
+    "duration_sec": 31295,
+    "distance_km": 597.0
+  },
+  "gressoney-saint-jean": {
+    "duration_min": 524.4,
+    "duration_sec": 31465,
+    "distance_km": 622.9
+  },
+  "chamois": {
+    "duration_min": 525.8,
+    "duration_sec": 31546,
+    "distance_km": 635.5
+  },
+  "bernex": {
+    "duration_min": 526.9,
+    "duration_sec": 31616,
+    "distance_km": 623.9
+  },
+  "antagnod-ayas": {
+    "duration_min": 529.4,
+    "duration_sec": 31762,
+    "distance_km": 636.0
+  },
+  "la-magdeleine": {
+    "duration_min": 530.9,
+    "duration_sec": 31856,
+    "distance_km": 638.2
+  },
+  "champoluc": {
+    "duration_min": 532.1,
+    "duration_sec": 31924,
+    "distance_km": 638.3
+  },
+  "st-gervais": {
+    "duration_min": 535.7,
+    "duration_sec": 32143,
+    "distance_km": 610.5
+  },
+  "courmayeur": {
+    "duration_min": 536.0,
+    "duration_sec": 32158,
+    "distance_km": 608.8
+  },
+  "valtournenche": {
+    "duration_min": 536.6,
+    "duration_sec": 32195,
+    "distance_km": 644.6
+  },
+  "monterosa-aostatal": {
+    "duration_min": 537.0,
+    "duration_sec": 32218,
+    "distance_km": 634.0
+  },
+  "passy-plaine-joux": {
+    "duration_min": 540.3,
+    "duration_sec": 32420,
+    "distance_km": 609.3
+  },
+  "gressoney-la-trinite": {
+    "duration_min": 540.6,
+    "duration_sec": 32439,
+    "distance_km": 634.6
+  },
+  "breuil-cervinia": {
+    "duration_min": 540.8,
+    "duration_sec": 32449,
+    "distance_km": 649.7
+  },
+  "les-rafforts": {
+    "duration_min": 542.8,
+    "duration_sec": 32566,
+    "distance_km": 619.8
+  },
+  "megeve": {
+    "duration_min": 543.9,
+    "duration_sec": 32636,
+    "distance_km": 618.5
+  },
+  "cordon": {
+    "duration_min": 545.3,
+    "duration_sec": 32716,
+    "distance_km": 617.6
+  },
+  "praz-sur-arly": {
+    "duration_min": 545.8,
+    "duration_sec": 32746,
+    "distance_km": 621.2
+  },
+  "prali": {
+    "duration_min": 546.4,
+    "duration_sec": 32782,
+    "distance_km": 661.0
+  },
+  "bellevaux-hirmentaz": {
+    "duration_min": 546.6,
+    "duration_sec": 32794,
+    "distance_km": 643.0
+  },
+  "mont-saxonnex": {
+    "duration_min": 548.5,
+    "duration_sec": 32907,
+    "distance_km": 634.3
+  },
+  "truches": {
+    "duration_min": 550.3,
+    "duration_sec": 33018,
+    "distance_km": 627.5
+  },
+  "cogne-gran-paradiso": {
+    "duration_min": 553.0,
+    "duration_sec": 33179,
+    "distance_km": 673.7
+  },
+  "les-carroz": {
+    "duration_min": 553.4,
+    "duration_sec": 33203,
+    "distance_km": 632.9
+  },
+  "morillon": {
+    "duration_min": 554.9,
+    "duration_sec": 33291,
+    "distance_km": 641.0
+  },
+  "pila-aostatal": {
+    "duration_min": 555.4,
+    "duration_sec": 33324,
+    "distance_km": 665.1
+  },
+  "romme": {
+    "duration_min": 555.8,
+    "duration_sec": 33347,
+    "distance_km": 639.8
+  },
+  "samoens": {
+    "duration_min": 558.0,
+    "duration_sec": 33481,
+    "distance_km": 641.2
+  },
+  "valgrisenche": {
+    "duration_min": 558.1,
+    "duration_sec": 33484,
+    "distance_km": 676.5
+  },
+  "chanavey": {
+    "duration_min": 558.5,
+    "duration_sec": 33507,
+    "distance_km": 676.3
+  },
+  "crest-voland-cohennoz": {
+    "duration_min": 560.4,
+    "duration_sec": 33622,
+    "distance_km": 632.0
+  },
+  "thuile-rosiere-aostatal": {
+    "duration_min": 562.2,
+    "duration_sec": 33732,
+    "distance_km": 627.8
+  },
+  "praz-de-lys-sommand": {
+    "duration_min": 562.9,
+    "duration_sec": 33772,
+    "distance_km": 632.1
+  },
+  "avoriaz": {
+    "duration_min": 564.1,
+    "duration_sec": 33847,
+    "distance_km": 628.9
+  },
+  "les-brasses": {
+    "duration_min": 564.9,
+    "duration_sec": 33892,
+    "distance_km": 655.4
+  },
+  "sixt-fer-a-cheval": {
+    "duration_min": 565.1,
+    "duration_sec": 33904,
+    "distance_km": 648.1
+  },
+  "flaine": {
+    "duration_min": 565.9,
+    "duration_sec": 33951,
+    "distance_km": 643.9
+  },
+  "les-saisies": {
+    "duration_min": 567.0,
+    "duration_sec": 34022,
+    "distance_km": 639.5
+  },
+  "le-grand-bornand": {
+    "duration_min": 567.5,
+    "duration_sec": 34051,
+    "distance_km": 649.2
+  },
+  "manigod": {
+    "duration_min": 568.6,
+    "duration_sec": 34117,
+    "distance_km": 642.5
+  },
+  "les-chosalets": {
+    "duration_min": 568.9,
+    "duration_sec": 34136,
+    "distance_km": 646.8
+  },
+  "ala-stura": {
+    "duration_min": 573.4,
+    "duration_sec": 34401,
+    "distance_km": 676.8
+  },
+  "chiomonte-frais": {
+    "duration_min": 574.1,
+    "duration_sec": 34447,
+    "distance_km": 693.5
+  },
+  "les-contamines-montjoie": {
+    "duration_min": 574.8,
+    "duration_sec": 34488,
+    "distance_km": 620.9
+  },
+  "archamps": {
+    "duration_min": 575.2,
+    "duration_sec": 34511,
+    "distance_km": 672.2
+  },
+  "torgnon": {
+    "duration_min": 577.7,
+    "duration_sec": 34663,
+    "distance_km": 651.1
+  },
+  "la-clusaz": {
+    "duration_min": 578.7,
+    "duration_sec": 34721,
+    "distance_km": 646.3
+  },
+  "saint-cergue": {
+    "duration_min": 584.8,
+    "duration_sec": 35087,
+    "distance_km": 683.9
+  },
+  "chaux-neuve": {
+    "duration_min": 584.8,
+    "duration_sec": 35087,
+    "distance_km": 683.9
+  },
+  "areches-beaufort": {
+    "duration_min": 588.3,
+    "duration_sec": 35300,
+    "distance_km": 660.5
+  },
+  "vallee-de-joux": {
+    "duration_min": 589.5,
+    "duration_sec": 35369,
+    "distance_km": 686.9
+  },
+  "saint-george": {
+    "duration_min": 589.5,
+    "duration_sec": 35369,
+    "distance_km": 686.9
+  },
+  "mouthe": {
+    "duration_min": 591.7,
+    "duration_sec": 35503,
+    "distance_km": 687.4
+  },
+  "le-reposoir-chalet-neuf": {
+    "duration_min": 592.0,
+    "duration_sec": 35517,
+    "distance_km": 688.7
+  },
+  "cesana-sansicario": {
+    "duration_min": 592.9,
+    "duration_sec": 35571,
+    "distance_km": 719.9
+  },
+  "le-semnoz": {
+    "duration_min": 594.8,
+    "duration_sec": 35686,
+    "distance_km": 703.6
+  },
+  "sauze-oulx": {
+    "duration_min": 595.3,
+    "duration_sec": 35716,
+    "distance_km": 717.0
+  },
+  "le-plateau-de-retord": {
+    "duration_min": 596.9,
+    "duration_sec": 35811,
+    "distance_km": 709.0
+  },
+  "brides-les-bains": {
+    "duration_min": 599.7,
+    "duration_sec": 35984,
+    "distance_km": 682.2
+  },
+  "mijoux-la-faucille": {
+    "duration_min": 601.3,
+    "duration_sec": 36077,
+    "distance_km": 687.3
+  },
+  "valfrejus": {
+    "duration_min": 603.4,
+    "duration_sec": 36204,
+    "distance_km": 739.5
+  },
+  "sestriere": {
+    "duration_min": 604.1,
+    "duration_sec": 36244,
+    "distance_km": 730.8
+  },
+  "menthieres-chezery": {
+    "duration_min": 604.9,
+    "duration_sec": 36293,
+    "distance_km": 715.1
+  },
+  "claviere": {
+    "duration_min": 605.5,
+    "duration_sec": 36327,
+    "distance_km": 727.5
+  },
+  "montgenevre": {
+    "duration_min": 606.4,
+    "duration_sec": 36385,
+    "distance_km": 729.3
+  },
+  "val-cenis": {
+    "duration_min": 606.6,
+    "duration_sec": 36396,
+    "distance_km": 728.0
+  },
+  "le-revard": {
+    "duration_min": 607.7,
+    "duration_sec": 36461,
+    "distance_km": 727.4
+  },
+  "valmorel": {
+    "duration_min": 608.0,
+    "duration_sec": 36483,
+    "distance_km": 685.8
+  },
+  "la-feclaz": {
+    "duration_min": 609.4,
+    "duration_sec": 36563,
+    "distance_km": 730.4
+  },
+  "nevache": {
+    "duration_min": 611.1,
+    "duration_sec": 36665,
+    "distance_km": 730.3
+  },
+  "saint-martin-de-belleville": {
+    "duration_min": 611.4,
+    "duration_sec": 36683,
+    "distance_km": 694.9
+  },
+  "aillons-margeriaz": {
+    "duration_min": 611.4,
+    "duration_sec": 36686,
+    "distance_km": 721.5
+  },
+  "st-francois-longchamp": {
+    "duration_min": 612.4,
+    "duration_sec": 36743,
+    "distance_km": 691.1
+  },
+  "aussois": {
+    "duration_min": 612.5,
+    "duration_sec": 36753,
+    "distance_km": 747.4
+  },
+  "lajoux": {
+    "duration_min": 613.1,
+    "duration_sec": 36784,
+    "distance_km": 700.1
+  },
+  "la-combe-saint-pierre": {
+    "duration_min": 614.4,
+    "duration_sec": 36865,
+    "distance_km": 700.0
+  },
+  "courchevel": {
+    "duration_min": 617.5,
+    "duration_sec": 37048,
+    "distance_km": 698.5
+  },
+  "pragelato": {
+    "duration_min": 617.9,
+    "duration_sec": 37072,
+    "distance_km": 727.6
+  },
+  "les-menuires": {
+    "duration_min": 617.9,
+    "duration_sec": 37072,
+    "distance_km": 700.3
+  },
+  "lelex-crozet": {
+    "duration_min": 617.9,
+    "duration_sec": 37076,
+    "distance_km": 682.2
+  },
+  "la-norma": {
+    "duration_min": 618.5,
+    "duration_sec": 37108,
+    "distance_km": 750.8
+  },
+  "longchaumois-rosset": {
+    "duration_min": 619.0,
+    "duration_sec": 37143,
+    "distance_km": 705.4
+  },
+  "morbier-les-gentianes": {
+    "duration_min": 619.1,
+    "duration_sec": 37144,
+    "distance_km": 703.1
+  },
+  "jura-sur-leman": {
+    "duration_min": 619.1,
+    "duration_sec": 37144,
+    "distance_km": 703.1
+  },
+  "foncine-le-haut": {
+    "duration_min": 619.1,
+    "duration_sec": 37144,
+    "distance_km": 703.1
+  },
+  "bardonecchia": {
+    "duration_min": 619.1,
+    "duration_sec": 37147,
+    "distance_km": 730.5
+  },
+  "granier": {
+    "duration_min": 619.4,
+    "duration_sec": 37165,
+    "distance_km": 697.5
+  },
+  "saint-colomban-des-villards-les-sybelles": {
+    "duration_min": 619.5,
+    "duration_sec": 37173,
+    "distance_km": 714.6
+  },
+  "col-de-marcieu": {
+    "duration_min": 620.7,
+    "duration_sec": 37241,
+    "distance_km": 709.0
+  },
+  "pralognan-la-vanoise": {
+    "duration_min": 621.1,
+    "duration_sec": 37268,
+    "distance_km": 703.0
+  },
+  "meribel": {
+    "duration_min": 622.7,
+    "duration_sec": 37361,
+    "distance_km": 698.3
+  },
+  "le-desert-dentremont": {
+    "duration_min": 622.8,
+    "duration_sec": 37365,
+    "distance_km": 711.7
+  },
+  "bonneval-sur-arc": {
+    "duration_min": 623.7,
+    "duration_sec": 37420,
+    "distance_km": 742.9
+  },
+  "les-coulmes": {
+    "duration_min": 624.6,
+    "duration_sec": 37476,
+    "distance_km": 731.3
+  },
+  "les-moussieres": {
+    "duration_min": 625.4,
+    "duration_sec": 37525,
+    "distance_km": 709.6
+  },
+  "barioz-cret-du-poulet": {
+    "duration_min": 626.2,
+    "duration_sec": 37573,
+    "distance_km": 721.9
+  },
+  "peisey-vallandry": {
+    "duration_min": 626.6,
+    "duration_sec": 37597,
+    "distance_km": 708.6
+  },
+  "serre-chevalier": {
+    "duration_min": 626.8,
+    "duration_sec": 37606,
+    "distance_km": 745.5
+  },
+  "bessans-val-darc": {
+    "duration_min": 626.8,
+    "duration_sec": 37607,
+    "distance_km": 740.7
+  },
+  "les-7-laux": {
+    "duration_min": 627.9,
+    "duration_sec": 37674,
+    "distance_km": 721.3
+  },
+  "notre-dame-du-pre": {
+    "duration_min": 628.5,
+    "duration_sec": 37709,
+    "distance_km": 696.4
+  },
+  "orelle-val-thorens": {
+    "duration_min": 628.7,
+    "duration_sec": 37720,
+    "distance_km": 758.7
+  },
+  "val-thorens": {
+    "duration_min": 630.8,
+    "duration_sec": 37847,
+    "distance_km": 712.2
+  },
+  "la-plagne": {
+    "duration_min": 631.1,
+    "duration_sec": 37866,
+    "distance_km": 710.9
+  },
+  "la-toussuire": {
+    "duration_min": 631.2,
+    "duration_sec": 37871,
+    "distance_km": 725.8
+  },
+  "karellis": {
+    "duration_min": 631.3,
+    "duration_sec": 37880,
+    "distance_km": 726.5
+  },
+  "valmeinier": {
+    "duration_min": 632.0,
+    "duration_sec": 37921,
+    "distance_km": 767.3
+  },
+  "le-planolet": {
+    "duration_min": 632.7,
+    "duration_sec": 37962,
+    "distance_km": 719.8
+  },
+  "la-pesse": {
+    "duration_min": 633.5,
+    "duration_sec": 38007,
+    "distance_km": 716.8
+  },
+  "sappey-en-chartreuse": {
+    "duration_min": 634.6,
+    "duration_sec": 38078,
+    "distance_km": 757.9
+  },
+  "saint-sorlin-darves": {
+    "duration_min": 636.7,
+    "duration_sec": 38201,
+    "distance_km": 730.5
+  },
+  "les-arcs-bourg-saint-maurice": {
+    "duration_min": 637.5,
+    "duration_sec": 38253,
+    "distance_km": 712.3
+  },
+  "albiez-montrond": {
+    "duration_min": 637.6,
+    "duration_sec": 38258,
+    "distance_km": 726.9
+  },
+  "col-de-porte": {
+    "duration_min": 638.2,
+    "duration_sec": 38295,
+    "distance_km": 725.2
+  },
+  "le-collet-d-allevard": {
+    "duration_min": 639.7,
+    "duration_sec": 38383,
+    "distance_km": 713.9
+  },
+  "valloire": {
+    "duration_min": 640.5,
+    "duration_sec": 38430,
+    "distance_km": 771.4
+  },
+  "les-egaux-st-hugues": {
+    "duration_min": 641.9,
+    "duration_sec": 38516,
+    "distance_km": 727.6
+  },
+  "saint-nizier-du-moucherotte": {
+    "duration_min": 645.8,
+    "duration_sec": 38750,
+    "distance_km": 747.4
+  },
+  "sainte-foy-tarentaise": {
+    "duration_min": 646.4,
+    "duration_sec": 38783,
+    "distance_km": 721.4
+  },
+  "puy-st-vincent": {
+    "duration_min": 650.0,
+    "duration_sec": 38998,
+    "distance_km": 765.8
+  },
+  "pelvoux-vallouise": {
+    "duration_min": 650.8,
+    "duration_sec": 39046,
+    "distance_km": 766.4
+  },
+  "limone-piemonte": {
+    "duration_min": 650.9,
+    "duration_sec": 39056,
+    "distance_km": 762.8
+  },
+  "tignes": {
+    "duration_min": 653.4,
+    "duration_sec": 39205,
+    "distance_km": 731.8
+  },
+  "la-rosiere": {
+    "duration_min": 653.5,
+    "duration_sec": 39208,
+    "distance_km": 726.1
+  },
+  "chamrousse": {
+    "duration_min": 653.7,
+    "duration_sec": 39222,
+    "distance_km": 753.4
+  },
+  "val-disere": {
+    "duration_min": 655.9,
+    "duration_sec": 39354,
+    "distance_km": 773.2
+  },
+  "neve-2000-monte-spada": {
+    "duration_min": 656.0,
+    "duration_sec": 39361,
+    "distance_km": 766.4
+  },
+  "arvieux-en-queyras": {
+    "duration_min": 658.6,
+    "duration_sec": 39517,
+    "distance_km": 770.8
+  },
+  "artesina": {
+    "duration_min": 660.5,
+    "duration_sec": 39629,
+    "distance_km": 770.3
+  },
+  "la-grave": {
+    "duration_min": 660.7,
+    "duration_sec": 39640,
+    "distance_km": 782.4
+  },
+  "le-chazelet": {
+    "duration_min": 661.0,
+    "duration_sec": 39657,
+    "distance_km": 782.3
+  },
+  "frabosa-soprana": {
+    "duration_min": 661.4,
+    "duration_sec": 39683,
+    "distance_km": 767.1
+  },
+  "lans-en-vercors": {
+    "duration_min": 662.2,
+    "duration_sec": 39735,
+    "distance_km": 760.7
+  },
+  "oz-en-oisans-3300": {
+    "duration_min": 664.4,
+    "duration_sec": 39861,
+    "distance_km": 754.2
+  },
+  "autrans": {
+    "duration_min": 664.9,
+    "duration_sec": 39893,
+    "distance_km": 765.2
+  },
+  "vaujany": {
+    "duration_min": 664.9,
+    "duration_sec": 39896,
+    "distance_km": 754.2
+  },
+  "alpe-du-grand-serre": {
+    "duration_min": 666.0,
+    "duration_sec": 39961,
+    "distance_km": 771.0
+  },
+  "gresse-en-vercors": {
+    "duration_min": 668.8,
+    "duration_sec": 40126,
+    "distance_km": 783.3
+  },
+  "villard-reculas": {
+    "duration_min": 670.0,
+    "duration_sec": 40201,
+    "distance_km": 758.0
+  },
+  "prato-nevoso-artesina": {
+    "duration_min": 670.2,
+    "duration_sec": 40212,
+    "distance_km": 777.2
+  },
+  "villard-de-lans-correncon": {
+    "duration_min": 670.5,
+    "duration_sec": 40230,
+    "distance_km": 767.1
+  },
+  "aiguilles": {
+    "duration_min": 672.7,
+    "duration_sec": 40360,
+    "distance_km": 783.5
+  },
+  "vars": {
+    "duration_min": 673.8,
+    "duration_sec": 40430,
+    "distance_km": 790.1
+  },
+  "col-d-ornon": {
+    "duration_min": 675.9,
+    "duration_sec": 40554,
+    "distance_km": 768.4
+  },
+  "ceillac-en-queyras": {
+    "duration_min": 677.6,
+    "duration_sec": 40655,
+    "distance_km": 790.7
+  },
+  "crevoux": {
+    "duration_min": 680.0,
+    "duration_sec": 40800,
+    "distance_km": 797.5
+  },
+  "molines-en-queyras": {
+    "duration_min": 680.4,
+    "duration_sec": 40823,
+    "distance_km": 788.2
+  },
+  "meaudre": {
+    "duration_min": 680.9,
+    "duration_sec": 40851,
+    "distance_km": 772.5
+  },
+  "alpe-dhuez-grand-domaine": {
+    "duration_min": 681.9,
+    "duration_sec": 40915,
+    "distance_km": 772.0
+  },
+  "les2alpes": {
+    "duration_min": 682.7,
+    "duration_sec": 40964,
+    "distance_km": 774.4
+  },
+  "ristolas": {
+    "duration_min": 683.7,
+    "duration_sec": 41021,
+    "distance_km": 793.2
+  },
+  "abries-en-queyras": {
+    "duration_min": 683.7,
+    "duration_sec": 41021,
+    "distance_km": 793.2
+  },
+  "garessio-2000": {
+    "duration_min": 685.3,
+    "duration_sec": 41119,
+    "distance_km": 794.2
+  },
+  "les-orres": {
+    "duration_min": 686.9,
+    "duration_sec": 41215,
+    "distance_km": 804.9
+  },
+  "auris-en-oisans": {
+    "duration_min": 687.6,
+    "duration_sec": 41256,
+    "distance_km": 774.5
+  },
+  "argentera": {
+    "duration_min": 688.4,
+    "duration_sec": 41302,
+    "distance_km": 792.8
+  },
+  "reallon": {
+    "duration_min": 696.5,
+    "duration_sec": 41793,
+    "distance_km": 809.9
+  },
+  "sainte-anne-la-condamine": {
+    "duration_min": 706.0,
+    "duration_sec": 42359,
+    "distance_km": 817.7
+  },
+  "font-d-urle-chaud-clapier": {
+    "duration_min": 707.4,
+    "duration_sec": 42442,
+    "distance_km": 806.2
+  },
+  "saint-jean-montclar": {
+    "duration_min": 709.9,
+    "duration_sec": 42591,
+    "distance_km": 830.5
+  },
+  "col-de-rousset": {
+    "duration_min": 711.7,
+    "duration_sec": 42700,
+    "distance_km": 808.8
+  },
+  "ancelle": {
+    "duration_min": 711.9,
+    "duration_sec": 42711,
+    "distance_km": 826.7
+  },
+  "ledevoluy": {
+    "duration_min": 712.4,
+    "duration_sec": 42743,
+    "distance_km": 826.1
+  },
+  "caldirola-monte-gropa": {
+    "duration_min": 717.8,
+    "duration_sec": 43066,
+    "distance_km": 833.7
+  },
+  "laye": {
+    "duration_min": 718.7,
+    "duration_sec": 43124,
+    "distance_km": 837.9
+  },
+  "sauze-super-sauze": {
+    "duration_min": 720.2,
+    "duration_sec": 43213,
+    "distance_km": 830.8
+  },
+  "saint-leger-les-melezes": {
+    "duration_min": 721.8,
+    "duration_sec": 43307,
+    "distance_km": 836.7
+  },
+  "saint-michel-de-chaillol": {
+    "duration_min": 722.5,
+    "duration_sec": 43351,
+    "distance_km": 840.7
+  },
+  "praloup": {
+    "duration_min": 722.9,
+    "duration_sec": 43371,
+    "distance_km": 834.6
+  },
+  "auron": {
+    "duration_min": 729.1,
+    "duration_sec": 43747,
+    "distance_km": 830.0
+  },
+  "serre-eyraud": {
+    "duration_min": 731.2,
+    "duration_sec": 43872,
+    "distance_km": 844.0
+  },
+  "chabanon": {
+    "duration_min": 734.6,
+    "duration_sec": 44078,
+    "distance_km": 845.0
+  },
+  "orcieres-merlette": {
+    "duration_min": 735.6,
+    "duration_sec": 44135,
+    "distance_km": 852.6
+  },
+  "roubion": {
+    "duration_min": 739.6,
+    "duration_sec": 44378,
+    "distance_km": 839.0
+  },
+  "val-dallos": {
+    "duration_min": 745.5,
+    "duration_sec": 44731,
+    "distance_km": 855.0
+  },
+  "la-colmiane": {
+    "duration_min": 751.9,
+    "duration_sec": 45116,
+    "distance_km": 846.1
+  },
+  "beuil-les-launes": {
+    "duration_min": 752.9,
+    "duration_sec": 45173,
+    "distance_km": 851.0
+  },
+  "col-de-turini-camp-d-argent": {
+    "duration_min": 757.8,
+    "duration_sec": 45466,
+    "distance_km": 848.0
+  },
+  "valberg": {
+    "duration_min": 757.8,
+    "duration_sec": 45467,
+    "distance_km": 854.8
+  },
+  "mont-serein": {
+    "duration_min": 825.0,
+    "duration_sec": 49497,
+    "distance_km": 943.1
+  },
+  "greolieres-les-neiges": {
+    "duration_min": 825.1,
+    "duration_sec": 49506,
+    "distance_km": 915.5
+  },
+  "l-audiberge": {
+    "duration_min": 836.1,
+    "duration_sec": 50165,
+    "distance_km": 922.3
+  },
+  "chalet-reynard": {
+    "duration_min": 837.7,
+    "duration_sec": 50263,
+    "distance_km": 987.0
+  }
+}

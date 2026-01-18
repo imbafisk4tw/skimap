@@ -1,0 +1,4693 @@
+[
+    {
+        "id": "0eb96cfc-a44d-4943-8116-269e72fb9412",
+        "lat": 47.0646175,
+        "lon": 11.2067865,
+        "kind": "verbund",
+        "name": "Stubai",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 37,
+            "resortCount": 2,
+            "maxElevation": 3210,
+            "pistesKmTotal": 90.0
+        },
+        "members": [
+            {
+                "lat": 46.99126,
+                "lon": 11.120567,
+                "name": "Stubaier Gletscher / Stubaital",
+                "isPrimary": true,
+                "stable_id": "stubaier-gletscher"
+            },
+            {
+                "lat": 47.137975,
+                "lon": 11.293006,
+                "name": "Schlick 2000 - Fulpmes",
+                "isPrimary": false,
+                "stable_id": "schlick"
+            }
+        ],
+        "website": "https://www.stubaier-gletscher.com",
+        "isVerbund": true,
+        "stable_id": "stubai",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.01082,
+                "lon": 11.15477,
+                "name": "Talstation 2",
+                "resortName": "Stubaier Gletscher / Stubaital"
+            },
+            {
+                "lat": 47.01333,
+                "lon": 11.16223,
+                "name": "Talstation 1",
+                "resortName": "Stubaier Gletscher / Stubaital"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "113bd1ca-e2f9-45a6-bbdf-10f0c04ada46",
+        "lat": 46.0408368,
+        "lon": 6.7016393999999995,
+        "kind": "verbund",
+        "name": "Le Grand Massif",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 115,
+            "resortCount": 5,
+            "maxElevation": 2500,
+            "pistesKmTotal": 732.0
+        },
+        "members": [
+            {
+                "lat": 46.000659,
+                "lon": 6.703549,
+                "name": "Flaine / Le Grand Massif",
+                "isPrimary": true,
+                "stable_id": "flaine"
+            },
+            {
+                "lat": 46.025724,
+                "lon": 6.657286,
+                "name": "Les Carroz / Le Grand Massif",
+                "isPrimary": false,
+                "stable_id": "les-carroz"
+            },
+            {
+                "lat": 46.069777,
+                "lon": 6.671791,
+                "name": "Morillon / Le Grand Massif",
+                "isPrimary": false,
+                "stable_id": "morillon"
+            },
+            {
+                "lat": 46.065013,
+                "lon": 6.708527,
+                "name": "Samoëns / Le Grand Massif",
+                "isPrimary": false,
+                "stable_id": "samoens"
+            },
+            {
+                "lat": 46.043011,
+                "lon": 6.767044,
+                "name": "Sixt-Fer-à-Cheval / Le Grand Massif",
+                "isPrimary": false,
+                "stable_id": "sixt-fer-a-cheval"
+            }
+        ],
+        "website": "https://www.grand-massif.com",
+        "isVerbund": true,
+        "stable_id": "le-grand-massif",
+        "description": "Skiverbund in Haute-Savoie",
+        "accessPoints": [
+            {
+                "lat": 46.00066,
+                "lon": 6.70355,
+                "name": "Skigebiet Flaine",
+                "resortName": "Flaine / Le Grand Massif"
+            },
+            {
+                "lat": 46.02059,
+                "lon": 6.67095,
+                "name": "Talstation 3",
+                "resortName": "Flaine / Le Grand Massif"
+            },
+            {
+                "lat": 46.02059,
+                "lon": 6.67095,
+                "name": "Talstation 3",
+                "resortName": "Les Carroz / Le Grand Massif"
+            },
+            {
+                "lat": 46.02059,
+                "lon": 6.67095,
+                "name": "Talstation 3",
+                "resortName": "Morillon / Le Grand Massif"
+            },
+            {
+                "lat": 46.02059,
+                "lon": 6.67095,
+                "name": "Talstation 3",
+                "resortName": "Samoëns / Le Grand Massif"
+            },
+            {
+                "lat": 46.02470,
+                "lon": 6.64440,
+                "name": "Talstation 1",
+                "resortName": "Flaine / Le Grand Massif"
+            },
+            {
+                "lat": 46.02470,
+                "lon": 6.64440,
+                "name": "Talstation 1",
+                "resortName": "Les Carroz / Le Grand Massif"
+            },
+            {
+                "lat": 46.02470,
+                "lon": 6.64440,
+                "name": "Talstation 1",
+                "resortName": "Morillon / Le Grand Massif"
+            },
+            {
+                "lat": 46.02470,
+                "lon": 6.64440,
+                "name": "Talstation 1",
+                "resortName": "Samoëns / Le Grand Massif"
+            },
+            {
+                "lat": 46.02572,
+                "lon": 6.65729,
+                "name": "Skigebiet Les Carroz",
+                "resortName": "Les Carroz / Le Grand Massif"
+            },
+            {
+                "lat": 46.04301,
+                "lon": 6.76704,
+                "name": "Skigebiet Sixt-Fer-à-Cheval",
+                "resortName": "Sixt-Fer-à-Cheval / Le Grand Massif"
+            },
+            {
+                "lat": 46.06501,
+                "lon": 6.70853,
+                "name": "Skigebiet Samoëns",
+                "resortName": "Samoëns / Le Grand Massif"
+            },
+            {
+                "lat": 46.06978,
+                "lon": 6.67179,
+                "name": "Skigebiet Morillon",
+                "resortName": "Morillon / Le Grand Massif"
+            },
+            {
+                "lat": 46.08145,
+                "lon": 6.68057,
+                "name": "Talstation 2",
+                "resortName": "Flaine / Le Grand Massif"
+            },
+            {
+                "lat": 46.08145,
+                "lon": 6.68057,
+                "name": "Talstation 2",
+                "resortName": "Les Carroz / Le Grand Massif"
+            },
+            {
+                "lat": 46.08145,
+                "lon": 6.68057,
+                "name": "Talstation 2",
+                "resortName": "Morillon / Le Grand Massif"
+            },
+            {
+                "lat": 46.08145,
+                "lon": 6.68057,
+                "name": "Talstation 2",
+                "resortName": "Samoëns / Le Grand Massif"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "16f455d5-2449-41bc-8380-d654d18598a5",
+        "lat": 46.219033,
+        "lon": 7.566776333333333,
+        "kind": "verbund",
+        "name": "Val d'Anniviers",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 45,
+            "resortCount": 3,
+            "maxElevation": 3000,
+            "pistesKmTotal": 210.0
+        },
+        "members": [
+            {
+                "lat": 46.180841,
+                "lon": 7.556791,
+                "name": "Grimentz - Zinal",
+                "isPrimary": true,
+                "stable_id": "grimentz-zinal"
+            },
+            {
+                "lat": 46.237981,
+                "lon": 7.614641,
+                "name": "St-Luc / Chandolin",
+                "isPrimary": false,
+                "stable_id": "funiluc"
+            },
+            {
+                "lat": 46.238277,
+                "lon": 7.528897,
+                "name": "Vercorin",
+                "isPrimary": false,
+                "stable_id": "vercorin"
+            }
+        ],
+        "website": "https://www.valdanniviers.ch",
+        "isVerbund": true,
+        "stable_id": "val-anniviers",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.13828,
+                "lon": 7.62402,
+                "name": "Talstation 2",
+                "resortName": "Grimentz - Zinal"
+            },
+            {
+                "lat": 46.17618,
+                "lon": 7.57354,
+                "name": "Talstation 1",
+                "resortName": "Grimentz - Zinal"
+            },
+            {
+                "lat": 46.23798,
+                "lon": 7.61464,
+                "name": "Skigebiet St-Luc",
+                "resortName": "St-Luc / Chandolin"
+            },
+            {
+                "lat": 46.25407,
+                "lon": 7.53426,
+                "name": "Talstation 1",
+                "resortName": "Vercorin"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "231b1a0e-4438-4b45-afa2-98b22443773d",
+        "lat": 45.172033,
+        "lon": 6.473651,
+        "kind": "verbund",
+        "name": "Galibier Thabor",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 56,
+            "resortCount": 2,
+            "maxElevation": 2750,
+            "pistesKmTotal": 320.0
+        },
+        "members": [
+            {
+                "lat": 45.164187,
+                "lon": 6.446142,
+                "name": "Valloire - Galibier Thabor",
+                "isPrimary": true,
+                "stable_id": "valloire"
+            },
+            {
+                "lat": 45.179879,
+                "lon": 6.50116,
+                "name": "Valmeinier - Galibier Thabor",
+                "isPrimary": false,
+                "stable_id": "valmeinier"
+            }
+        ],
+        "website": "https://www.galibier-thabor.com",
+        "isVerbund": true,
+        "stable_id": "galibier-thabor",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.16419,
+                "lon": 6.44614,
+                "name": "Skigebiet Valloire - Galibier Thabor",
+                "resortName": "Valloire - Galibier Thabor"
+            },
+            {
+                "lat": 45.17988,
+                "lon": 6.50116,
+                "name": "Skigebiet Valmeinier - Galibier Thabor",
+                "resortName": "Valmeinier - Galibier Thabor"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "256e53de-5db0-4766-abe3-a08ddeb31840",
+        "lat": 47.4043755,
+        "lon": 12.676635999999998,
+        "kind": "verbund",
+        "name": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 139,
+            "resortCount": 2,
+            "maxElevation": 2096,
+            "pistesKmTotal": 540.0
+        },
+        "members": [
+            {
+                "lat": 47.417751,
+                "lon": 12.714272,
+                "name": "Leogang / Saalbach Hinterglemm Fieberbrunn",
+                "isPrimary": false,
+                "stable_id": "leogang"
+            },
+            {
+                "lat": 47.391,
+                "lon": 12.639,
+                "name": "Saalbach Hinterglemm / Leogang / Fieberbrunn",
+                "isPrimary": false,
+                "stable_id": "saalbach-hinterglemm-leogang"
+            }
+        ],
+        "website": "https://www.saalbach.com",
+        "isVerbund": true,
+        "stable_id": "skicircus-saalbach",
+        "description": "Groesster Skiverbund im Pinzgau",
+        "accessPoints": [
+            {
+                "lat": 47.37286,
+                "lon": 12.59325,
+                "name": "Talstation 3",
+                "resortName": "Leogang / Saalbach Hinterglemm Fieberbrunn"
+            },
+            {
+                "lat": 47.37286,
+                "lon": 12.59325,
+                "name": "Talstation 3",
+                "resortName": "Saalbach Hinterglemm / Leogang / Fieberbrunn"
+            },
+            {
+                "lat": 47.37889,
+                "lon": 12.67602,
+                "name": "Talstation 2",
+                "resortName": "Leogang / Saalbach Hinterglemm Fieberbrunn"
+            },
+            {
+                "lat": 47.37889,
+                "lon": 12.67602,
+                "name": "Talstation 2",
+                "resortName": "Saalbach Hinterglemm / Leogang / Fieberbrunn"
+            },
+            {
+                "lat": 47.43850,
+                "lon": 12.73391,
+                "name": "Talstation 1",
+                "resortName": "Leogang / Saalbach Hinterglemm Fieberbrunn"
+            },
+            {
+                "lat": 47.43850,
+                "lon": 12.73391,
+                "name": "Talstation 1",
+                "resortName": "Saalbach Hinterglemm / Leogang / Fieberbrunn"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "273f8221-2dea-438b-9b8c-9f04a4b7acbd",
+        "lat": 47.37488199999999,
+        "lon": 13.696017333333335,
+        "kind": "verbund",
+        "name": "Schladming 4-Berge-Skischaukel",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 41,
+            "resortCount": 3,
+            "maxElevation": 2015,
+            "pistesKmTotal": 368.4
+        },
+        "members": [
+            {
+                "lat": 47.379406,
+                "lon": 13.769989,
+                "name": "Hauser Kaibling / Schladming / Ski amade",
+                "isPrimary": false,
+                "stable_id": "hauserkaibling"
+            },
+            {
+                "lat": 47.374233,
+                "lon": 13.721752,
+                "name": "Planai / Schladming / Ski amade",
+                "isPrimary": false,
+                "stable_id": "schladming-planai"
+            },
+            {
+                "lat": 47.371007,
+                "lon": 13.596311,
+                "name": "Reiteralm / Schladming / Ski amade",
+                "isPrimary": false,
+                "stable_id": "reiteralm"
+            }
+        ],
+        "website": "https://www.schladming-dachstein.at",
+        "isVerbund": true,
+        "stable_id": "schladming-4berge",
+        "description": "4 Berge verbunden per Skischaukel",
+        "accessPoints": [
+            {
+                "lat": 47.37101,
+                "lon": 13.59631,
+                "name": "Skigebiet Reiteralm",
+                "resortName": "Reiteralm / Schladming / Ski amade"
+            },
+            {
+                "lat": 47.37423,
+                "lon": 13.72175,
+                "name": "Skigebiet Planai",
+                "resortName": "Planai / Schladming / Ski amade"
+            },
+            {
+                "lat": 47.37941,
+                "lon": 13.76999,
+                "name": "Skigebiet Hauser Kaibling",
+                "resortName": "Hauser Kaibling / Schladming / Ski amade"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "2b0a29db-bdd6-4869-979b-0db8671c6a7e",
+        "lat": 46.53930523333332,
+        "lon": 10.1303189,
+        "kind": "verbund",
+        "name": "Livigno",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 111,
+            "resortCount": 3,
+            "maxElevation": 2798,
+            "pistesKmTotal": 214.8
+        },
+        "members": [
+            {
+                "lat": 46.5368217,
+                "lon": 10.1299687,
+                "name": "Livigno",
+                "isPrimary": true,
+                "stable_id": "livigno"
+            },
+            {
+                "lat": 46.543336,
+                "lon": 10.118408,
+                "name": "Carosello 3000/ Livigno",
+                "isPrimary": false,
+                "stable_id": "livigno-carosello3000"
+            },
+            {
+                "lat": 46.537758,
+                "lon": 10.14258,
+                "name": "Mottolino Fun Mountain/ Livigno",
+                "isPrimary": false,
+                "stable_id": "livigno-mottolino-fun-mountain"
+            }
+        ],
+        "website": "https://www.ski-livigno.com",
+        "isVerbund": true,
+        "stable_id": "livigno-ski",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.52073,
+                "lon": 10.12264,
+                "name": "Talstation 1",
+                "resortName": "Livigno"
+            },
+            {
+                "lat": 46.52885,
+                "lon": 10.17309,
+                "name": "Talstation 3",
+                "resortName": "Livigno"
+            },
+            {
+                "lat": 46.53776,
+                "lon": 10.14258,
+                "name": "Skigebiet Mottolino Fun Mountain/ Livigno",
+                "resortName": "Mottolino Fun Mountain/ Livigno"
+            },
+            {
+                "lat": 46.53777,
+                "lon": 10.14263,
+                "name": "Talstation 2",
+                "resortName": "Livigno"
+            },
+            {
+                "lat": 46.54334,
+                "lon": 10.11841,
+                "name": "Skigebiet Carosello 3000/ Livigno",
+                "resortName": "Carosello 3000/ Livigno"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "2db9a8cc-12e9-451a-8d60-745aeb6f4f8e",
+        "lat": 47.1423374,
+        "lon": 13.1251158,
+        "kind": "verbund",
+        "name": "Ski Gastein",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 33,
+            "resortCount": 5,
+            "maxElevation": 2650,
+            "pistesKmTotal": 207.3
+        },
+        "members": [
+            {
+                "lat": 47.119301,
+                "lon": 13.137561,
+                "name": "Bad Gastein – Skigastein – Graukogel - Ski amade",
+                "isPrimary": false,
+                "stable_id": "badgastein"
+            },
+            {
+                "lat": 47.171,
+                "lon": 13.1,
+                "name": "Bad Hofgastein / Bad Gastein - Skigastein - Schlossalm / Angertal / Stubnerkogel - Ski amade",
+                "isPrimary": false,
+                "stable_id": "badhofgastein"
+            },
+            {
+                "lat": 47.237986,
+                "lon": 13.138018,
+                "name": "Dorfgastein / Ski amade",
+                "isPrimary": false,
+                "stable_id": "dorfgastein"
+            },
+            {
+                "lat": 47.1167,
+                "lon": 13.1333,
+                "name": "Graukogel - Bad Gastein",
+                "isPrimary": false,
+                "stable_id": "graukogel-bad-gastein"
+            },
+            {
+                "lat": 47.0667,
+                "lon": 13.1167,
+                "name": "Sportgastein",
+                "isPrimary": false,
+                "stable_id": "sportgastein"
+            }
+        ],
+        "website": "https://www.skigastein.com",
+        "isVerbund": true,
+        "stable_id": "skigastein",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.06214,
+                "lon": 13.05874,
+                "name": "Talstation 1",
+                "resortName": "Sportgastein"
+            },
+            {
+                "lat": 47.11605,
+                "lon": 13.13984,
+                "name": "Talstation 1",
+                "resortName": "Graukogel - Bad Gastein"
+            },
+            {
+                "lat": 47.11930,
+                "lon": 13.13756,
+                "name": "Skigebiet Bad Gastein – Skigastein – Graukogel - Ski amade",
+                "resortName": "Bad Gastein – Skigastein – Graukogel - Ski amade"
+            },
+            {
+                "lat": 47.17100,
+                "lon": 13.10000,
+                "name": "Skigebiet Bad Hofgastein",
+                "resortName": "Bad Hofgastein / Bad Gastein - Skigastein - Schlossalm / Angertal / Stubnerkogel - Ski amade"
+            },
+            {
+                "lat": 47.23799,
+                "lon": 13.13802,
+                "name": "Skigebiet Dorfgastein",
+                "resortName": "Dorfgastein / Ski amade"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "2dc67a2b-a38f-4d63-ac47-97a91d368467",
+        "lat": 47.384096666666665,
+        "lon": 10.269098333333332,
+        "kind": "verbund",
+        "name": "OK Bergbahnen",
+        "stats": {
+            "countries": [
+                "DE"
+            ],
+            "liftsTotal": 27,
+            "resortCount": 3,
+            "maxElevation": 2224,
+            "pistesKmTotal": 62.9
+        },
+        "members": [
+            {
+                "lat": 47.348303,
+                "lon": 10.217113,
+                "name": "Fellhorn - Kanzelwand",
+                "isPrimary": false,
+                "stable_id": "fellhorn"
+            },
+            {
+                "lat": 47.413627,
+                "lon": 10.346804,
+                "name": "Nebelhorn / Oberstdorf",
+                "isPrimary": false,
+                "stable_id": "nebelhorn-oberstdorf"
+            },
+            {
+                "lat": 47.39036,
+                "lon": 10.243378,
+                "name": "Söllereck / Oberstdorf",
+                "isPrimary": false,
+                "stable_id": "soellereck-hoellwies-oberstdorf"
+            }
+        ],
+        "website": "https://www.bergbahnen-ok.at",
+        "isVerbund": true,
+        "stable_id": "ok-bergbahnen",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.34830,
+                "lon": 10.21711,
+                "name": "Skigebiet Fellhorn - Kanzelwand",
+                "resortName": "Fellhorn - Kanzelwand"
+            },
+            {
+                "lat": 47.40482,
+                "lon": 10.28592,
+                "name": "Talstation 1",
+                "resortName": "Nebelhorn / Oberstdorf"
+            },
+            {
+                "lat": 47.41363,
+                "lon": 10.34680,
+                "name": "Skigebiet Nebelhorn",
+                "resortName": "Nebelhorn / Oberstdorf"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "34834dad-c673-46e8-90c7-226a24f652ca",
+        "lat": 45.94808683333333,
+        "lon": 7.682463833333333,
+        "kind": "verbund",
+        "name": "Matterhorn Ski Paradise",
+        "stats": {
+            "countries": [
+                "CH",
+                "IT"
+            ],
+            "liftsTotal": 56,
+            "resortCount": 3,
+            "maxElevation": 3883,
+            "pistesKmTotal": 519.0
+        },
+        "members": [
+            {
+                "lat": 46.017112,
+                "lon": 7.770081,
+                "name": "Zermatt",
+                "isPrimary": true,
+                "stable_id": "zermatt"
+            },
+            {
+                "lat": 45.9338545,
+                "lon": 7.6303115,
+                "name": "Breuil - Cervinia",
+                "isPrimary": false,
+                "stable_id": "breuil-cervinia"
+            },
+            {
+                "lat": 45.893294,
+                "lon": 7.646999,
+                "name": "Valtournenche",
+                "isPrimary": false,
+                "stable_id": "valtournenche"
+            }
+        ],
+        "website": "https://www.matterhornparadise.ch",
+        "isVerbund": true,
+        "stable_id": "matterhorn-ski-paradise",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.89329,
+                "lon": 7.64700,
+                "name": "Skigebiet Valtournenche",
+                "resortName": "Valtournenche"
+            },
+            {
+                "lat": 45.93385,
+                "lon": 7.63031,
+                "name": "Skigebiet Breuil - Cervinia",
+                "resortName": "Breuil - Cervinia"
+            },
+            {
+                "lat": 46.01711,
+                "lon": 7.77008,
+                "name": "Skigebiet Zermatt",
+                "resortName": "Zermatt"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "360fd7ac-6423-4e0e-b8cd-608e8929da60",
+        "lat": 46.533256771428576,
+        "lon": 11.79552762857143,
+        "kind": "verbund",
+        "name": "Sellaronda",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 231,
+            "resortCount": 7,
+            "maxElevation": 3269,
+            "pistesKmTotal": 519.6
+        },
+        "members": [
+            {
+                "lat": 46.516292,
+                "lon": 11.807899,
+                "name": "Sellaronda - Dolomiten",
+                "isPrimary": true,
+                "stable_id": "sellaronda-dolomiten"
+            },
+            {
+                "lat": 46.5667265,
+                "lon": 11.9382985,
+                "name": "Alta Badia",
+                "isPrimary": false,
+                "stable_id": "alta-badia"
+            },
+            {
+                "lat": 46.4974172,
+                "lon": 11.8734103,
+                "name": "Arabba",
+                "isPrimary": false,
+                "stable_id": "arabba"
+            },
+            {
+                "lat": 46.481876,
+                "lon": 11.797299,
+                "name": "Canazei - Belvedere / Val di Fassa",
+                "isPrimary": false,
+                "stable_id": "belvedere-fassatal-val-fassa"
+            },
+            {
+                "lat": 46.558211,
+                "lon": 11.725931,
+                "name": "Dolomites Val Gardena / Gröden - St. Christina",
+                "isPrimary": false,
+                "stable_id": "groeden-sankt-christina"
+            },
+            {
+                "lat": 46.5733067,
+                "lon": 11.6734026,
+                "name": "Dolomites Val Gardena / Gröden - St. Ulrich",
+                "isPrimary": false,
+                "stable_id": "groeden-sankt-ulrich"
+            },
+            {
+                "lat": 46.538968,
+                "lon": 11.752453,
+                "name": "Dolomites Val Gardena / Gröden - Wolkenstein",
+                "isPrimary": false,
+                "stable_id": "groeden-wolkenstein"
+            }
+        ],
+        "website": "https://www.dolomitisuperski.com",
+        "isVerbund": true,
+        "stable_id": "sellaronda",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.48188,
+                "lon": 11.79730,
+                "name": "Skigebiet Canazei - Belvedere",
+                "resortName": "Canazei - Belvedere / Val di Fassa"
+            },
+            {
+                "lat": 46.49543,
+                "lon": 11.87443,
+                "name": "Talstation 1",
+                "resortName": "Arabba"
+            },
+            {
+                "lat": 46.49716,
+                "lon": 11.87183,
+                "name": "Talstation 2",
+                "resortName": "Arabba"
+            },
+            {
+                "lat": 46.52018,
+                "lon": 11.87329,
+                "name": "Talstation 3",
+                "resortName": "Arabba"
+            },
+            {
+                "lat": 46.53897,
+                "lon": 11.75245,
+                "name": "Skigebiet Dolomites Val Gardena",
+                "resortName": "Dolomites Val Gardena / Gröden - Wolkenstein"
+            },
+            {
+                "lat": 46.54871,
+                "lon": 11.87137,
+                "name": "Talstation 3",
+                "resortName": "Alta Badia"
+            },
+            {
+                "lat": 46.55821,
+                "lon": 11.72593,
+                "name": "Skigebiet Dolomites Val Gardena",
+                "resortName": "Dolomites Val Gardena / Gröden - St. Christina"
+            },
+            {
+                "lat": 46.57331,
+                "lon": 11.67340,
+                "name": "Skigebiet Dolomites Val Gardena",
+                "resortName": "Dolomites Val Gardena / Gröden - St. Ulrich"
+            },
+            {
+                "lat": 46.58124,
+                "lon": 11.90096,
+                "name": "Talstation 2",
+                "resortName": "Alta Badia"
+            },
+            {
+                "lat": 46.59899,
+                "lon": 11.90004,
+                "name": "Talstation 1",
+                "resortName": "Alta Badia"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "3a5342c0-0c78-432c-9384-2eddabb68793",
+        "lat": 47.648864,
+        "lon": 12.585783,
+        "kind": "verbund",
+        "name": "Steinplatte–Winklmoosalm",
+        "stats": {
+            "countries": [
+                "DE"
+            ],
+            "liftsTotal": 28,
+            "resortCount": 2,
+            "maxElevation": 1869,
+            "pistesKmTotal": 84.0
+        },
+        "members": [
+            {
+                "lat": 47.63026,
+                "lon": 12.574282,
+                "name": "Steinplatte / Waidring",
+                "isPrimary": false,
+                "stable_id": "waidring-steinplatte"
+            },
+            {
+                "lat": 47.667468,
+                "lon": 12.597284,
+                "name": "Steinplatte Winklmoosalm",
+                "isPrimary": false,
+                "stable_id": "winklmoos-steinplatte"
+            }
+        ],
+        "website": "https://www.steinplatte.co.at",
+        "isVerbund": true,
+        "stable_id": "steinplatte",
+        "description": "Grenzüberschreitendes Skigebiet AT/DE",
+        "accessPoints": [
+            {
+                "lat": 47.63026,
+                "lon": 12.57428,
+                "name": "Skigebiet Steinplatte",
+                "resortName": "Steinplatte / Waidring"
+            },
+            {
+                "lat": 47.66747,
+                "lon": 12.59728,
+                "name": "Skigebiet Steinplatte Winklmoosalm",
+                "resortName": "Steinplatte Winklmoosalm"
+            }
+        ],
+        "skiresortSlug": "steinplatte-winklmoosalm"
+    },
+    {
+        "id": "41437818-e1e5-4597-93f3-a26259efcd5d",
+        "lat": 46.539558,
+        "lon": 12.11895,
+        "kind": "verbund",
+        "name": "Cortina d'Ampezzo",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 58,
+            "resortCount": 2,
+            "maxElevation": 3244,
+            "pistesKmTotal": 167.0
+        },
+        "members": [
+            {
+                "lat": 46.538495,
+                "lon": 12.137833,
+                "name": "Cortina d'Ampezzo",
+                "isPrimary": true,
+                "stable_id": "cortina-ampezzo"
+            },
+            {
+                "lat": 46.540621,
+                "lon": 12.100067,
+                "name": "Tofana - Ra Valles",
+                "isPrimary": false,
+                "stable_id": "tofana"
+            }
+        ],
+        "website": "https://www.dolomiti.org/cortina",
+        "isVerbund": true,
+        "stable_id": "cortina-ski",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.48781,
+                "lon": 12.03414,
+                "name": "Talstation 3",
+                "resortName": "Cortina d'Ampezzo"
+            },
+            {
+                "lat": 46.53850,
+                "lon": 12.13783,
+                "name": "Skigebiet Cortina d'Ampezzo",
+                "resortName": "Cortina d'Ampezzo"
+            },
+            {
+                "lat": 46.54062,
+                "lon": 12.10007,
+                "name": "Skigebiet Tofana - Ra Valles",
+                "resortName": "Tofana - Ra Valles"
+            },
+            {
+                "lat": 46.54582,
+                "lon": 12.13139,
+                "name": "Talstation 2",
+                "resortName": "Cortina d'Ampezzo"
+            },
+            {
+                "lat": 46.55127,
+                "lon": 12.18951,
+                "name": "Talstation 1",
+                "resortName": "Cortina d'Ampezzo"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "4c92b723-af6b-4170-acfd-d1c5abde544d",
+        "lat": 46.9536825,
+        "lon": 11.94819,
+        "kind": "verbund",
+        "name": "Ahrntal Skiworld",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 19,
+            "resortCount": 2,
+            "maxElevation": 2510,
+            "pistesKmTotal": 74.5
+        },
+        "members": [
+            {
+                "lat": 46.925883,
+                "lon": 11.904202,
+                "name": "Speikboden - Tauferer Ahrntal",
+                "isPrimary": true,
+                "stable_id": "speikboden-tauferer-ahrntal"
+            },
+            {
+                "lat": 46.981482,
+                "lon": 11.992178,
+                "name": "Klausberg - Ahrntal",
+                "isPrimary": false,
+                "stable_id": "klausberg-tauferer-ahrntal"
+            }
+        ],
+        "website": "https://www.klausberg.it",
+        "isVerbund": true,
+        "stable_id": "ahrntal-skiworld",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.92588,
+                "lon": 11.90420,
+                "name": "Skigebiet Speikboden - Tauferer Ahrntal",
+                "resortName": "Speikboden - Tauferer Ahrntal"
+            },
+            {
+                "lat": 46.98148,
+                "lon": 11.99218,
+                "name": "Skigebiet Klausberg - Ahrntal",
+                "resortName": "Klausberg - Ahrntal"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "534dcbf2-b3cc-4b0e-bd75-824636f322e1",
+        "lat": 46.327193333333334,
+        "lon": 7.139053666666666,
+        "kind": "verbund",
+        "name": "Villars-Gryon-Les Diablerets",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 70,
+            "resortCount": 3,
+            "maxElevation": 3200,
+            "pistesKmTotal": 202.0
+        },
+        "members": [
+            {
+                "lat": 46.321504,
+                "lon": 7.064209,
+                "name": "Villars - Gryon - Les Diablerets",
+                "isPrimary": true,
+                "stable_id": "villars"
+            },
+            {
+                "lat": 46.318303,
+                "lon": 7.212782,
+                "name": "Glacier 3000 - Les Diablerets",
+                "isPrimary": false,
+                "stable_id": "diablerets"
+            },
+            {
+                "lat": 46.341773,
+                "lon": 7.14017,
+                "name": "Les Diablerets - Glacier 3000",
+                "isPrimary": false,
+                "stable_id": "les-diablerets"
+            }
+        ],
+        "website": "https://www.villars-diablerets.ch",
+        "isVerbund": true,
+        "stable_id": "villars-gryon-diablerets",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.28368,
+                "lon": 7.07680,
+                "name": "Talstation 3",
+                "resortName": "Villars - Gryon - Les Diablerets"
+            },
+            {
+                "lat": 46.30370,
+                "lon": 7.05494,
+                "name": "Talstation 1",
+                "resortName": "Villars - Gryon - Les Diablerets"
+            },
+            {
+                "lat": 46.34177,
+                "lon": 7.14017,
+                "name": "Skigebiet Les Diablerets - Glacier 3000",
+                "resortName": "Les Diablerets - Glacier 3000"
+            },
+            {
+                "lat": 46.34558,
+                "lon": 7.15491,
+                "name": "Talstation 2",
+                "resortName": "Villars - Gryon - Les Diablerets"
+            },
+            {
+                "lat": 46.35410,
+                "lon": 7.20541,
+                "name": "Talstation 1",
+                "resortName": "Glacier 3000 - Les Diablerets"
+            },
+            {
+                "lat": 46.35410,
+                "lon": 7.20541,
+                "name": "Talstation 1",
+                "resortName": "Les Diablerets - Glacier 3000"
+            },
+            {
+                "lat": 46.36534,
+                "lon": 7.23550,
+                "name": "Talstation 2",
+                "resortName": "Glacier 3000 - Les Diablerets"
+            },
+            {
+                "lat": 46.36534,
+                "lon": 7.23550,
+                "name": "Talstation 2",
+                "resortName": "Les Diablerets - Glacier 3000"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "54534edd-280a-40b9-a69e-5f5dbbf40ea0",
+        "lat": 45.837512333333336,
+        "lon": 6.667483,
+        "kind": "verbund",
+        "name": "Évasion Mont-Blanc",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 184,
+            "resortCount": 3,
+            "maxElevation": 2487,
+            "pistesKmTotal": 394.0
+        },
+        "members": [
+            {
+                "lat": 45.839922,
+                "lon": 6.621494,
+                "name": "Megève",
+                "isPrimary": true,
+                "stable_id": "megeve"
+            },
+            {
+                "lat": 45.788462,
+                "lon": 6.689251,
+                "name": "Les Contamines - Montjoie / Hauteluce",
+                "isPrimary": false,
+                "stable_id": "les-contamines-montjoie"
+            },
+            {
+                "lat": 45.884153,
+                "lon": 6.691704,
+                "name": "Saint-Gervais",
+                "isPrimary": false,
+                "stable_id": "st-gervais"
+            }
+        ],
+        "website": "https://www.montblanc-evasion.com",
+        "isVerbund": true,
+        "stable_id": "evasion-mont-blanc",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.77279,
+                "lon": 6.64099,
+                "name": "Talstation 3",
+                "resortName": "Les Contamines - Montjoie / Hauteluce"
+            },
+            {
+                "lat": 45.78846,
+                "lon": 6.68925,
+                "name": "Skigebiet Les Contamines - Montjoie",
+                "resortName": "Les Contamines - Montjoie / Hauteluce"
+            },
+            {
+                "lat": 45.80100,
+                "lon": 6.71971,
+                "name": "Talstation 2",
+                "resortName": "Les Contamines - Montjoie / Hauteluce"
+            },
+            {
+                "lat": 45.81160,
+                "lon": 6.72315,
+                "name": "Talstation 1",
+                "resortName": "Les Contamines - Montjoie / Hauteluce"
+            },
+            {
+                "lat": 45.81724,
+                "lon": 6.65180,
+                "name": "Talstation 2",
+                "resortName": "Megève"
+            },
+            {
+                "lat": 45.85352,
+                "lon": 6.63226,
+                "name": "Talstation 1",
+                "resortName": "Megève"
+            },
+            {
+                "lat": 45.88415,
+                "lon": 6.69170,
+                "name": "Skigebiet Saint-Gervais",
+                "resortName": "Saint-Gervais"
+            },
+            {
+                "lat": 45.89020,
+                "lon": 6.70737,
+                "name": "Talstation 3",
+                "resortName": "Megève"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "58dcc3bf-7340-4c95-8018-061957e52356",
+        "lat": 46.39416,
+        "lon": 8.09942,
+        "kind": "verbund",
+        "name": "Aletsch Arena",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 35,
+            "resortCount": 1,
+            "maxElevation": 2869,
+            "pistesKmTotal": 104.0
+        },
+        "members": [
+            {
+                "lat": 46.39416,
+                "lon": 8.09942,
+                "name": "Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn",
+                "isPrimary": true,
+                "stable_id": "aletsch-arena"
+            }
+        ],
+        "website": "https://www.aletscharena.ch",
+        "isVerbund": true,
+        "stable_id": "aletsch-arena",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.35657,
+                "lon": 8.04602,
+                "name": "Talstation 1",
+                "resortName": "Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn"
+            },
+            {
+                "lat": 46.37142,
+                "lon": 8.07687,
+                "name": "Talstation 2",
+                "resortName": "Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn"
+            },
+            {
+                "lat": 46.40610,
+                "lon": 8.13417,
+                "name": "Talstation 3",
+                "resortName": "Aletsch Arena / Riederalp - Bettmeralp - Fiesch-Eggishorn"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "5991b929-c510-49ad-adb0-350e20d7e939",
+        "lat": 46.22810566666667,
+        "lon": 10.818529333333332,
+        "kind": "verbund",
+        "name": "Skirama Dolomiti Adamello Brenta",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 58,
+            "resortCount": 3,
+            "maxElevation": 2580,
+            "pistesKmTotal": 150.0
+        },
+        "members": [
+            {
+                "lat": 46.230144,
+                "lon": 10.826855,
+                "name": "Madonna di Campiglio / Dolomiti di Brenta",
+                "isPrimary": true,
+                "stable_id": "madonna-di-campiglio"
+            },
+            {
+                "lat": 46.283317,
+                "lon": 10.827885,
+                "name": "Folgarida - Marilleva - Val di Sole / Dolomiti di Brenta",
+                "isPrimary": false,
+                "stable_id": "folgarida-marilleva-val-di-sole"
+            },
+            {
+                "lat": 46.170856,
+                "lon": 10.800848,
+                "name": "Pinzolo - Val Rendena / Dolomiti di Brenta",
+                "isPrimary": false,
+                "stable_id": "pinzolo"
+            }
+        ],
+        "website": "https://www.skiramadolomiti.it",
+        "isVerbund": true,
+        "stable_id": "skirama-dolomiti",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.17086,
+                "lon": 10.80085,
+                "name": "Skigebiet Pinzolo - Val Rendena",
+                "resortName": "Pinzolo - Val Rendena / Dolomiti di Brenta"
+            },
+            {
+                "lat": 46.23014,
+                "lon": 10.82686,
+                "name": "Skigebiet Madonna di Campiglio",
+                "resortName": "Madonna di Campiglio / Dolomiti di Brenta"
+            },
+            {
+                "lat": 46.28332,
+                "lon": 10.82789,
+                "name": "Skigebiet Folgarida - Marilleva - Val di Sole",
+                "resortName": "Folgarida - Marilleva - Val di Sole / Dolomiti di Brenta"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "5f035683-b1fa-446b-aa1e-dbb00397875a",
+        "lat": 46.45203166666667,
+        "lon": 9.870941666666667,
+        "kind": "verbund",
+        "name": "Engadin St. Moritz",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 41,
+            "resortCount": 3,
+            "maxElevation": 3303,
+            "pistesKmTotal": 310.0
+        },
+        "members": [
+            {
+                "lat": 46.510364,
+                "lon": 9.8232,
+                "name": "Corviglia / St. Moritz",
+                "isPrimary": true,
+                "stable_id": "st-moritz-corviglia"
+            },
+            {
+                "lat": 46.432119,
+                "lon": 9.823236,
+                "name": "Corvatsch - Furtschellas",
+                "isPrimary": false,
+                "stable_id": "corvatsch-furtschellas"
+            },
+            {
+                "lat": 46.413612,
+                "lon": 9.966389,
+                "name": "Diavolezza - Lagalb",
+                "isPrimary": false,
+                "stable_id": "diavolezza"
+            }
+        ],
+        "website": "https://www.engadin.ch",
+        "isVerbund": true,
+        "stable_id": "engadin-st-moritz",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.43244,
+                "lon": 9.77296,
+                "name": "Talstation 2",
+                "resortName": "Corvatsch - Furtschellas"
+            },
+            {
+                "lat": 46.43677,
+                "lon": 9.99483,
+                "name": "Talstation 2",
+                "resortName": "Diavolezza - Lagalb"
+            },
+            {
+                "lat": 46.44102,
+                "lon": 9.98346,
+                "name": "Talstation 1",
+                "resortName": "Diavolezza - Lagalb"
+            },
+            {
+                "lat": 46.45484,
+                "lon": 9.81384,
+                "name": "Talstation 1",
+                "resortName": "Corvatsch - Furtschellas"
+            },
+            {
+                "lat": 46.48356,
+                "lon": 9.83257,
+                "name": "Talstation 1",
+                "resortName": "Corviglia / St. Moritz"
+            },
+            {
+                "lat": 46.49878,
+                "lon": 9.83773,
+                "name": "Talstation 3",
+                "resortName": "Corviglia / St. Moritz"
+            },
+            {
+                "lat": 46.51036,
+                "lon": 9.82320,
+                "name": "Skigebiet Corviglia",
+                "resortName": "Corviglia / St. Moritz"
+            },
+            {
+                "lat": 46.51282,
+                "lon": 9.85296,
+                "name": "Talstation 2",
+                "resortName": "Corviglia / St. Moritz"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "62969376-4b37-46d9-8ab8-c12c95876904",
+        "lat": 45.35515718571428,
+        "lon": 6.568222471428571,
+        "kind": "verbund",
+        "name": "Les 3 Vallees",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 254,
+            "resortCount": 7,
+            "maxElevation": 3230,
+            "pistesKmTotal": 939.0
+        },
+        "members": [
+            {
+                "lat": 45.444,
+                "lon": 6.562,
+                "name": "Brides-les-Bains / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "brides-les-bains"
+            },
+            {
+                "lat": 45.4149013,
+                "lon": 6.6375983,
+                "name": "Courchevel / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "courchevel"
+            },
+            {
+                "lat": 45.349009,
+                "lon": 6.5518,
+                "name": "Les Menuires / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "les-menuires"
+            },
+            {
+                "lat": 45.374458,
+                "lon": 6.561584,
+                "name": "Méribel / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "meribel"
+            },
+            {
+                "lat": 45.234163,
+                "lon": 6.560726,
+                "name": "Orelle Val Thorens / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "orelle-val-thorens"
+            },
+            {
+                "lat": 45.382,
+                "lon": 6.516,
+                "name": "Saint Martin de Belleville / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "saint-martin-de-belleville"
+            },
+            {
+                "lat": 45.287569,
+                "lon": 6.587849,
+                "name": "Val Thorens / Les 3 Vallées",
+                "isPrimary": false,
+                "stable_id": "val-thorens"
+            }
+        ],
+        "website": "https://www.les3vallees.com",
+        "isVerbund": true,
+        "stable_id": "les-3-vallees",
+        "description": "Groesstes zusammenhaengendes Skigebiet der Welt",
+        "accessPoints": [
+            {
+                "lat": 6.51600,
+                "lon": 45.38200,
+                "name": "Skigebiet Saint Martin de Belleville",
+                "resortName": "Saint Martin de Belleville / Les 3 Vallées"
+            },
+            {
+                "lat": 6.56200,
+                "lon": 45.44400,
+                "name": "Skigebiet Brides-les-Bains",
+                "resortName": "Brides-les-Bains / Les 3 Vallées"
+            },
+            {
+                "lat": 45.23416,
+                "lon": 6.56073,
+                "name": "Skigebiet Orelle Val Thorens",
+                "resortName": "Orelle Val Thorens / Les 3 Vallées"
+            },
+            {
+                "lat": 45.28757,
+                "lon": 6.58785,
+                "name": "Skigebiet Val Thorens",
+                "resortName": "Val Thorens / Les 3 Vallées"
+            },
+            {
+                "lat": 45.34901,
+                "lon": 6.55180,
+                "name": "Skigebiet Les Menuires",
+                "resortName": "Les Menuires / Les 3 Vallées"
+            },
+            {
+                "lat": 45.37446,
+                "lon": 6.56158,
+                "name": "Skigebiet Méribel",
+                "resortName": "Méribel / Les 3 Vallées"
+            },
+            {
+                "lat": 45.41490,
+                "lon": 6.63760,
+                "name": "Skigebiet Courchevel",
+                "resortName": "Courchevel / Les 3 Vallées"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "67ca555d-7213-491e-bea1-6d640de93d68",
+        "lat": 47.23552685000001,
+        "lon": 12.037627766666667,
+        "kind": "verbund",
+        "name": "Zillertal Arena",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 312,
+            "resortCount": 6,
+            "maxElevation": 2500,
+            "pistesKmTotal": 760.1
+        },
+        "members": [
+            {
+                "lat": 47.2295535,
+                "lon": 12.0323659,
+                "name": "Gerlos",
+                "isPrimary": false,
+                "stable_id": "gerlos"
+            },
+            {
+                "lat": 47.202584,
+                "lon": 11.912581,
+                "name": "Gerlosstein-Hainzenberg / Zillertal Arena",
+                "isPrimary": false,
+                "stable_id": "gerlosstein"
+            },
+            {
+                "lat": 47.259311,
+                "lon": 12.10144,
+                "name": "Königsleiten-Wald / Zillertal Arena",
+                "isPrimary": false,
+                "stable_id": "koenigsleiten"
+            },
+            {
+                "lat": 47.2486,
+                "lon": 12.1192,
+                "name": "Königsleiten - Zillertal Arena",
+                "isPrimary": false,
+                "stable_id": "koenigsleiten-zillertal-arena"
+            },
+            {
+                "lat": 47.2342526,
+                "lon": 12.1374387,
+                "name": "Krimml-Hochkrimml / Zillertal Arena",
+                "isPrimary": false,
+                "stable_id": "krimml-hochkrimml"
+            },
+            {
+                "lat": 47.23886,
+                "lon": 11.922741,
+                "name": "Zell am Ziller / Zillertal Arena",
+                "isPrimary": false,
+                "stable_id": "zell-am-ziller"
+            }
+        ],
+        "website": "https://www.zillertalarena.com",
+        "isVerbund": true,
+        "stable_id": "zillertal-arena",
+        "description": "Skiverbund im Zillertal",
+        "accessPoints": [
+            {
+                "lat": 47.21776,
+                "lon": 11.90004,
+                "name": "Talstation 1",
+                "resortName": "Gerlosstein-Hainzenberg / Zillertal Arena"
+            },
+            {
+                "lat": 47.22618,
+                "lon": 12.03463,
+                "name": "Talstation 2",
+                "resortName": "Gerlos"
+            },
+            {
+                "lat": 47.22618,
+                "lon": 12.03463,
+                "name": "Talstation 2",
+                "resortName": "Königsleiten-Wald / Zillertal Arena"
+            },
+            {
+                "lat": 47.22618,
+                "lon": 12.03463,
+                "name": "Talstation 2",
+                "resortName": "Königsleiten - Zillertal Arena"
+            },
+            {
+                "lat": 47.22618,
+                "lon": 12.03463,
+                "name": "Talstation 2",
+                "resortName": "Krimml-Hochkrimml / Zillertal Arena"
+            },
+            {
+                "lat": 47.22618,
+                "lon": 12.03463,
+                "name": "Talstation 2",
+                "resortName": "Zell am Ziller / Zillertal Arena"
+            },
+            {
+                "lat": 47.22955,
+                "lon": 12.03237,
+                "name": "Skigebiet Gerlos",
+                "resortName": "Gerlos"
+            },
+            {
+                "lat": 47.22963,
+                "lon": 12.04903,
+                "name": "Talstation 3",
+                "resortName": "Gerlos"
+            },
+            {
+                "lat": 47.22963,
+                "lon": 12.04903,
+                "name": "Talstation 3",
+                "resortName": "Königsleiten-Wald / Zillertal Arena"
+            },
+            {
+                "lat": 47.22963,
+                "lon": 12.04903,
+                "name": "Talstation 3",
+                "resortName": "Königsleiten - Zillertal Arena"
+            },
+            {
+                "lat": 47.22963,
+                "lon": 12.04903,
+                "name": "Talstation 3",
+                "resortName": "Krimml-Hochkrimml / Zillertal Arena"
+            },
+            {
+                "lat": 47.22963,
+                "lon": 12.04903,
+                "name": "Talstation 3",
+                "resortName": "Zell am Ziller / Zillertal Arena"
+            },
+            {
+                "lat": 47.23425,
+                "lon": 12.13744,
+                "name": "Skigebiet Krimml-Hochkrimml",
+                "resortName": "Krimml-Hochkrimml / Zillertal Arena"
+            },
+            {
+                "lat": 47.23721,
+                "lon": 11.89930,
+                "name": "Talstation 1",
+                "resortName": "Gerlos"
+            },
+            {
+                "lat": 47.23721,
+                "lon": 11.89930,
+                "name": "Talstation 1",
+                "resortName": "Königsleiten-Wald / Zillertal Arena"
+            },
+            {
+                "lat": 47.23721,
+                "lon": 11.89930,
+                "name": "Talstation 1",
+                "resortName": "Königsleiten - Zillertal Arena"
+            },
+            {
+                "lat": 47.23721,
+                "lon": 11.89930,
+                "name": "Talstation 1",
+                "resortName": "Krimml-Hochkrimml / Zillertal Arena"
+            },
+            {
+                "lat": 47.23721,
+                "lon": 11.89930,
+                "name": "Talstation 1",
+                "resortName": "Zell am Ziller / Zillertal Arena"
+            },
+            {
+                "lat": 47.23886,
+                "lon": 11.92274,
+                "name": "Skigebiet Zell am Ziller",
+                "resortName": "Zell am Ziller / Zillertal Arena"
+            },
+            {
+                "lat": 47.24860,
+                "lon": 12.11920,
+                "name": "Skigebiet Königsleiten - Zillertal Arena",
+                "resortName": "Königsleiten - Zillertal Arena"
+            },
+            {
+                "lat": 47.25931,
+                "lon": 12.10144,
+                "name": "Skigebiet Königsleiten-Wald",
+                "resortName": "Königsleiten-Wald / Zillertal Arena"
+            }
+        ],
+        "skiresortSlug": "zillertal-arena-zell-am-ziller-gerlos-koenigsleiten-hochkrimml"
+    },
+    {
+        "id": "6aa8ebf5-5b9f-49de-a5b2-a6bb96b939af",
+        "lat": 47.39710845396826,
+        "lon": 11.997195017460319,
+        "kind": "verbund",
+        "name": "Ski Juwel Alpbachtal Wildschoenau",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 135,
+            "resortCount": 3,
+            "maxElevation": 2030,
+            "pistesKmTotal": 324.7
+        },
+        "members": [
+            {
+                "lat": 47.36930436190477,
+                "lon": 11.929580052380953,
+                "name": "Alpbach / Ski Juwel Alpbachtal Wildschönau",
+                "isPrimary": false,
+                "stable_id": "alpbachtal"
+            },
+            {
+                "lat": 47.4167,
+                "lon": 12.05,
+                "name": "Wildschönau - Ski Juwel",
+                "isPrimary": false,
+                "stable_id": "wildschoenau-ski-juwel"
+            },
+            {
+                "lat": 47.405321,
+                "lon": 12.012005,
+                "name": "Wildschönau / Ski Juwel Alpbachtal Wildschönau",
+                "isPrimary": false,
+                "stable_id": "wildschoenau"
+            }
+        ],
+        "website": "https://www.skijuwel.com",
+        "isVerbund": true,
+        "stable_id": "ski-juwel",
+        "description": "Skiverbund in Tirol",
+        "accessPoints": [
+            {
+                "lat": 47.36930,
+                "lon": 11.92958,
+                "name": "Skigebiet Alpbach",
+                "resortName": "Alpbach / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.37712,
+                "lon": 11.95752,
+                "name": "Talstation 3",
+                "resortName": "Alpbach / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.37712,
+                "lon": 11.95752,
+                "name": "Talstation 3",
+                "resortName": "Wildschönau / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.37827,
+                "lon": 11.95701,
+                "name": "Talstation 2",
+                "resortName": "Alpbach / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.37827,
+                "lon": 11.95701,
+                "name": "Talstation 2",
+                "resortName": "Wildschönau / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.39621,
+                "lon": 11.92441,
+                "name": "Talstation 1",
+                "resortName": "Alpbach / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.39621,
+                "lon": 11.92441,
+                "name": "Talstation 1",
+                "resortName": "Wildschönau / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.40532,
+                "lon": 12.01201,
+                "name": "Skigebiet Wildschönau",
+                "resortName": "Wildschönau / Ski Juwel Alpbachtal Wildschönau"
+            },
+            {
+                "lat": 47.41670,
+                "lon": 12.05000,
+                "name": "Skigebiet Wildschönau - Ski Juwel",
+                "resortName": "Wildschönau - Ski Juwel"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "6ab21549-8951-4fe8-ac18-e6f5fee95013",
+        "lat": 47.39095825,
+        "lon": 10.8750635,
+        "kind": "verbund",
+        "name": "Tiroler Zugspitz Arena",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 33,
+            "resortCount": 4,
+            "maxElevation": 2100,
+            "pistesKmTotal": 100.3
+        },
+        "members": [
+            {
+                "lat": 47.386147,
+                "lon": 10.965729,
+                "name": "Ehrwalder Almbahn / Ehrwald",
+                "isPrimary": true,
+                "stable_id": "ehrwald"
+            },
+            {
+                "lat": 47.418738,
+                "lon": 10.760765,
+                "name": "Berwang",
+                "isPrimary": false,
+                "stable_id": "berwang"
+            },
+            {
+                "lat": 47.357548,
+                "lon": 10.89406,
+                "name": "Biberwier / Marienbergbahnen",
+                "isPrimary": false,
+                "stable_id": "biberwier"
+            },
+            {
+                "lat": 47.4014,
+                "lon": 10.8797,
+                "name": "Lermoos - Grubigstein",
+                "isPrimary": false,
+                "stable_id": "lermoos-grubigstein"
+            }
+        ],
+        "website": "https://www.zugspitzarena.com",
+        "isVerbund": true,
+        "stable_id": "zugspitz-arena",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.35755,
+                "lon": 10.89406,
+                "name": "Skigebiet Biberwier",
+                "resortName": "Biberwier / Marienbergbahnen"
+            },
+            {
+                "lat": 47.38615,
+                "lon": 10.96573,
+                "name": "Skigebiet Ehrwalder Almbahn",
+                "resortName": "Ehrwalder Almbahn / Ehrwald"
+            },
+            {
+                "lat": 47.39583,
+                "lon": 10.88651,
+                "name": "Talstation 1",
+                "resortName": "Lermoos - Grubigstein"
+            },
+            {
+                "lat": 47.40139,
+                "lon": 10.87887,
+                "name": "Talstation 2",
+                "resortName": "Lermoos - Grubigstein"
+            },
+            {
+                "lat": 47.41874,
+                "lon": 10.76077,
+                "name": "Skigebiet Berwang",
+                "resortName": "Berwang"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "6ede6256-b731-4394-8d8c-b33745b38348",
+        "lat": 45.838565249999995,
+        "lon": 7.807877,
+        "kind": "verbund",
+        "name": "Monterosa Ski",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 47,
+            "resortCount": 4,
+            "maxElevation": 3275,
+            "pistesKmTotal": 301.0
+        },
+        "members": [
+            {
+                "lat": 45.869334,
+                "lon": 7.781668,
+                "name": "Monterosa",
+                "isPrimary": true,
+                "stable_id": "monterosa-aostatal"
+            },
+            {
+                "lat": 45.833046,
+                "lon": 7.754545,
+                "name": "Champoluc / Frachey",
+                "isPrimary": false,
+                "stable_id": "champoluc"
+            },
+            {
+                "lat": 45.877252,
+                "lon": 7.869001,
+                "name": "Gressoney - La Trinité / Alagna Valsesia",
+                "isPrimary": false,
+                "stable_id": "gressoney-la-trinite"
+            },
+            {
+                "lat": 45.774629,
+                "lon": 7.826294,
+                "name": "Gressoney - Saint Jean",
+                "isPrimary": false,
+                "stable_id": "gressoney-saint-jean"
+            }
+        ],
+        "website": "https://www.monterosa-ski.com",
+        "isVerbund": true,
+        "stable_id": "monterosa-ski",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.77463,
+                "lon": 7.82629,
+                "name": "Skigebiet Gressoney - Saint Jean",
+                "resortName": "Gressoney - Saint Jean"
+            },
+            {
+                "lat": 45.83305,
+                "lon": 7.75455,
+                "name": "Skigebiet Champoluc",
+                "resortName": "Champoluc / Frachey"
+            },
+            {
+                "lat": 45.86933,
+                "lon": 7.78167,
+                "name": "Skigebiet Monterosa",
+                "resortName": "Monterosa"
+            },
+            {
+                "lat": 45.87725,
+                "lon": 7.86900,
+                "name": "Skigebiet Gressoney - La Trinité",
+                "resortName": "Gressoney - La Trinité / Alagna Valsesia"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "77d1c9c2-e195-4ed5-9fb8-5f0e664aae77",
+        "lat": 45.4433705,
+        "lon": 6.410221999999999,
+        "kind": "verbund",
+        "name": "Grand Domaine",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 46,
+            "resortCount": 2,
+            "maxElevation": 2550,
+            "pistesKmTotal": 206.0
+        },
+        "members": [
+            {
+                "lat": 45.455936,
+                "lon": 6.435928,
+                "name": "Valmorel - Le Grand Domaine",
+                "isPrimary": true,
+                "stable_id": "valmorel"
+            },
+            {
+                "lat": 45.430805,
+                "lon": 6.384516,
+                "name": "St. François Longchamp - Le Grand Domaine",
+                "isPrimary": false,
+                "stable_id": "st-francois-longchamp"
+            }
+        ],
+        "website": "https://www.grand-domaine.com",
+        "isVerbund": true,
+        "stable_id": "grand-domaine",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.43081,
+                "lon": 6.38452,
+                "name": "Skigebiet St. François Longchamp - Le Grand Domaine",
+                "resortName": "St. François Longchamp - Le Grand Domaine"
+            },
+            {
+                "lat": 45.45594,
+                "lon": 6.43593,
+                "name": "Skigebiet Valmorel - Le Grand Domaine",
+                "resortName": "Valmorel - Le Grand Domaine"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "7bd3e5dc-9090-4f66-a87c-7413fdf4047b",
+        "lat": 44.960449675,
+        "lon": 6.827489975,
+        "kind": "verbund",
+        "name": "Via Lattea",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 276,
+            "resortCount": 4,
+            "maxElevation": 2789,
+            "pistesKmTotal": 1600.0
+        },
+        "members": [
+            {
+                "lat": 44.950221,
+                "lon": 6.792984,
+                "name": "Cesana - Sansicario",
+                "isPrimary": false,
+                "stable_id": "cesana-sansicario"
+            },
+            {
+                "lat": 44.929201,
+                "lon": 6.766548,
+                "name": "Claviere",
+                "isPrimary": false,
+                "stable_id": "claviere"
+            },
+            {
+                "lat": 45.004913,
+                "lon": 6.868455,
+                "name": "Sauze d'Oulx",
+                "isPrimary": false,
+                "stable_id": "sauze-oulx"
+            },
+            {
+                "lat": 44.9574637,
+                "lon": 6.8819729,
+                "name": "Sestriere",
+                "isPrimary": false,
+                "stable_id": "sestriere"
+            }
+        ],
+        "website": "https://www.vialattea.it",
+        "isVerbund": true,
+        "stable_id": "via-lattea",
+        "description": "Skiverbund in den piemontesischen Alpen",
+        "accessPoints": [
+            {
+                "lat": 44.92894,
+                "lon": 6.71759,
+                "name": "Talstation 3",
+                "resortName": "Cesana - Sansicario"
+            },
+            {
+                "lat": 44.92894,
+                "lon": 6.71759,
+                "name": "Talstation 3",
+                "resortName": "Claviere"
+            },
+            {
+                "lat": 44.92894,
+                "lon": 6.71759,
+                "name": "Talstation 3",
+                "resortName": "Sauze d'Oulx"
+            },
+            {
+                "lat": 44.92894,
+                "lon": 6.71759,
+                "name": "Talstation 3",
+                "resortName": "Sestriere"
+            },
+            {
+                "lat": 44.94588,
+                "lon": 6.79708,
+                "name": "Talstation 2",
+                "resortName": "Cesana - Sansicario"
+            },
+            {
+                "lat": 44.94588,
+                "lon": 6.79708,
+                "name": "Talstation 2",
+                "resortName": "Claviere"
+            },
+            {
+                "lat": 44.94588,
+                "lon": 6.79708,
+                "name": "Talstation 2",
+                "resortName": "Sauze d'Oulx"
+            },
+            {
+                "lat": 44.94588,
+                "lon": 6.79708,
+                "name": "Talstation 2",
+                "resortName": "Sestriere"
+            },
+            {
+                "lat": 45.02599,
+                "lon": 6.86066,
+                "name": "Talstation 1",
+                "resortName": "Cesana - Sansicario"
+            },
+            {
+                "lat": 45.02599,
+                "lon": 6.86066,
+                "name": "Talstation 1",
+                "resortName": "Claviere"
+            },
+            {
+                "lat": 45.02599,
+                "lon": 6.86066,
+                "name": "Talstation 1",
+                "resortName": "Sauze d'Oulx"
+            },
+            {
+                "lat": 45.02599,
+                "lon": 6.86066,
+                "name": "Talstation 1",
+                "resortName": "Sestriere"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "826020bd-958d-47d3-9a01-1fc938c44f52",
+        "lat": 47.3167015,
+        "lon": 13.292063500000001,
+        "kind": "verbund",
+        "name": "Snow Space Salzburg",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 90,
+            "resortCount": 2,
+            "maxElevation": 2000,
+            "pistesKmTotal": 420.0
+        },
+        "members": [
+            {
+                "lat": 47.325443,
+                "lon": 13.347359,
+                "name": "Ski amade / Flachau / Snow Space Salzburg",
+                "isPrimary": false,
+                "stable_id": "flachau"
+            },
+            {
+                "lat": 47.30796,
+                "lon": 13.236768,
+                "name": "Ski amade / St. Johann Alpendorf / Snow Space Salzburg",
+                "isPrimary": false,
+                "stable_id": "sankt-johann-alpendorf"
+            }
+        ],
+        "website": "https://www.snow-space.com",
+        "isVerbund": true,
+        "stable_id": "snow-space-salzburg",
+        "description": "Skiverbund im Salzburger Land",
+        "accessPoints": [
+            {
+                "lat": 47.30796,
+                "lon": 13.23677,
+                "name": "Skigebiet Ski amade",
+                "resortName": "Ski amade / St. Johann Alpendorf / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.32544,
+                "lon": 13.34736,
+                "name": "Skigebiet Ski amade",
+                "resortName": "Ski amade / Flachau / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.34384,
+                "lon": 13.38915,
+                "name": "Talstation 3",
+                "resortName": "Ski amade / Flachau / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.34384,
+                "lon": 13.38915,
+                "name": "Talstation 3",
+                "resortName": "Ski amade / St. Johann Alpendorf / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.35340,
+                "lon": 13.38559,
+                "name": "Talstation 2",
+                "resortName": "Ski amade / Flachau / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.35340,
+                "lon": 13.38559,
+                "name": "Talstation 2",
+                "resortName": "Ski amade / St. Johann Alpendorf / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.35920,
+                "lon": 13.38273,
+                "name": "Talstation 1",
+                "resortName": "Ski amade / Flachau / Snow Space Salzburg"
+            },
+            {
+                "lat": 47.35920,
+                "lon": 13.38273,
+                "name": "Talstation 1",
+                "resortName": "Ski amade / St. Johann Alpendorf / Snow Space Salzburg"
+            }
+        ],
+        "skiresortSlug": "snow-space-salzburg-flachau-wagrain-st-johann-alpendorf"
+    },
+    {
+        "id": "84d18d19-4826-453e-94cc-975a011d0f87",
+        "lat": 47.3659995,
+        "lon": 12.372943,
+        "kind": "verbund",
+        "name": "Kitzbueheler Alpen",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 112,
+            "resortCount": 2,
+            "maxElevation": 2000,
+            "pistesKmTotal": 422.0
+        },
+        "members": [
+            {
+                "lat": 47.419473,
+                "lon": 12.361977,
+                "name": "Kitzbühel / Kirchberg",
+                "isPrimary": false,
+                "stable_id": "kitzbuehel-kirchberg"
+            },
+            {
+                "lat": 47.312526,
+                "lon": 12.383909,
+                "name": "Panoramabahn Kitzbüheler Alpen / Mittersill",
+                "isPrimary": false,
+                "stable_id": "kitzbueheler-alpen-mittersill"
+            }
+        ],
+        "website": "https://www.kitzbueheler-alpen.com",
+        "isVerbund": true,
+        "stable_id": "kitzbuehel",
+        "description": "Skiregion rund um Kitzbuehel",
+        "accessPoints": [
+            {
+                "lat": 47.31253,
+                "lon": 12.38391,
+                "name": "Skigebiet Panoramabahn Kitzbüheler Alpen",
+                "resortName": "Panoramabahn Kitzbüheler Alpen / Mittersill"
+            },
+            {
+                "lat": 47.41720,
+                "lon": 12.31528,
+                "name": "Talstation 3",
+                "resortName": "Kitzbühel / Kirchberg"
+            },
+            {
+                "lat": 47.41720,
+                "lon": 12.31528,
+                "name": "Talstation 3",
+                "resortName": "Panoramabahn Kitzbüheler Alpen / Mittersill"
+            },
+            {
+                "lat": 47.44320,
+                "lon": 12.38928,
+                "name": "Talstation 2",
+                "resortName": "Kitzbühel / Kirchberg"
+            },
+            {
+                "lat": 47.44320,
+                "lon": 12.38928,
+                "name": "Talstation 2",
+                "resortName": "Panoramabahn Kitzbüheler Alpen / Mittersill"
+            },
+            {
+                "lat": 47.45039,
+                "lon": 12.33498,
+                "name": "Talstation 1",
+                "resortName": "Kitzbühel / Kirchberg"
+            },
+            {
+                "lat": 47.45039,
+                "lon": 12.33498,
+                "name": "Talstation 1",
+                "resortName": "Panoramabahn Kitzbüheler Alpen / Mittersill"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "8741311b-fb32-4a66-a5e6-e19693ea1df0",
+        "lat": 45.10119514,
+        "lon": 6.067839640000001,
+        "kind": "verbund",
+        "name": "Alpe d'Huez Grand Domaine",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 176,
+            "resortCount": 5,
+            "maxElevation": 3330,
+            "pistesKmTotal": 417.6
+        },
+        "members": [
+            {
+                "lat": 45.0906378,
+                "lon": 6.0649768,
+                "name": "Alpe d'Huez / Alpe d'Huez Grand Domaine",
+                "isPrimary": true,
+                "stable_id": "alpe-dhuez-grand-domaine"
+            },
+            {
+                "lat": 45.0543486,
+                "lon": 6.0771511,
+                "name": "Auris en Oisans / Alpe d'Huez Grand Domaine",
+                "isPrimary": false,
+                "stable_id": "auris-en-oisans"
+            },
+            {
+                "lat": 45.1284373,
+                "lon": 6.0716533,
+                "name": "Oz 3300 / Alpe d'Huez Grand Domaine",
+                "isPrimary": false,
+                "stable_id": "oz-en-oisans-3300"
+            },
+            {
+                "lat": 45.139342,
+                "lon": 6.092897,
+                "name": "Vaujany / Alpe d'Huez Grand Domaine",
+                "isPrimary": false,
+                "stable_id": "vaujany"
+            },
+            {
+                "lat": 45.09321,
+                "lon": 6.03252,
+                "name": "Villard-Reculas / Alpe d'Huez Grand Domaine",
+                "isPrimary": false,
+                "stable_id": "villard-reculas"
+            }
+        ],
+        "website": "https://www.alpedhuez.com",
+        "isVerbund": true,
+        "stable_id": "alpe-dhuez-grand-domaine",
+        "description": "Skiverbund rund um Alpe d'Huez",
+        "accessPoints": [
+            {
+                "lat": 45.05435,
+                "lon": 6.07715,
+                "name": "Skigebiet Auris en Oisans",
+                "resortName": "Auris en Oisans / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.09064,
+                "lon": 6.06498,
+                "name": "Skigebiet Alpe d'Huez",
+                "resortName": "Alpe d'Huez / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.09321,
+                "lon": 6.03252,
+                "name": "Skigebiet Villard-Reculas",
+                "resortName": "Villard-Reculas / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.09774,
+                "lon": 6.03463,
+                "name": "Talstation 3",
+                "resortName": "Alpe d'Huez / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.12779,
+                "lon": 6.07119,
+                "name": "Talstation 2",
+                "resortName": "Alpe d'Huez / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.12844,
+                "lon": 6.07165,
+                "name": "Skigebiet Oz 3300",
+                "resortName": "Oz 3300 / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.13934,
+                "lon": 6.09290,
+                "name": "Skigebiet Vaujany",
+                "resortName": "Vaujany / Alpe d'Huez Grand Domaine"
+            },
+            {
+                "lat": 45.15762,
+                "lon": 6.07972,
+                "name": "Talstation 1",
+                "resortName": "Alpe d'Huez / Alpe d'Huez Grand Domaine"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "88028c35-3ba9-4256-8ec3-78e31e8b07a7",
+        "lat": 47.266687000000005,
+        "lon": 11.805418,
+        "kind": "verbund",
+        "name": "Ski Optimal Hochfügen-Hochzillertal",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 38,
+            "resortCount": 2,
+            "maxElevation": 2500,
+            "pistesKmTotal": 181.4
+        },
+        "members": [
+            {
+                "lat": 47.269316,
+                "lon": 11.775599,
+                "name": "Hochfügen / Zillertal",
+                "isPrimary": true,
+                "stable_id": "hochfuegen"
+            },
+            {
+                "lat": 47.264058,
+                "lon": 11.835237,
+                "name": "Hochzillertal / Zillertal",
+                "isPrimary": false,
+                "stable_id": "hochzillertal"
+            }
+        ],
+        "website": "https://www.hochzillertal.com",
+        "isVerbund": true,
+        "stable_id": "ski-optimal",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.26406,
+                "lon": 11.83524,
+                "name": "Skigebiet Hochzillertal",
+                "resortName": "Hochzillertal / Zillertal"
+            },
+            {
+                "lat": 47.26932,
+                "lon": 11.77560,
+                "name": "Skigebiet Hochfügen",
+                "resortName": "Hochfügen / Zillertal"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "8d03c38a-3ca2-474d-87b8-858eea2668c2",
+        "lat": 47.1818585,
+        "lon": 10.178810250000002,
+        "kind": "verbund",
+        "name": "Ski Arlberg",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 270,
+            "resortCount": 4,
+            "maxElevation": 2811,
+            "pistesKmTotal": 1198.8
+        },
+        "members": [
+            {
+                "lat": 47.211945,
+                "lon": 10.142777,
+                "name": "Lech Zürs / Arlberg",
+                "isPrimary": false,
+                "stable_id": "lech-zuers-arlberg"
+            },
+            {
+                "lat": 47.128613,
+                "lon": 10.262777,
+                "name": "St. Anton / Arlberg",
+                "isPrimary": false,
+                "stable_id": "stanton-stchristoph"
+            },
+            {
+                "lat": 47.131002,
+                "lon": 10.17128,
+                "name": "Stuben / Arlberg",
+                "isPrimary": false,
+                "stable_id": "stuben"
+            },
+            {
+                "lat": 47.255874,
+                "lon": 10.138407,
+                "name": "Warth / Schröcken am Arlberg",
+                "isPrimary": false,
+                "stable_id": "warth-schroecken"
+            }
+        ],
+        "website": "https://www.skiarlberg.at",
+        "isVerbund": true,
+        "stable_id": "ski-arlberg",
+        "description": "Groesstes zusammenhaengendes Skigebiet Oesterreichs",
+        "accessPoints": [
+            {
+                "lat": 47.12785,
+                "lon": 10.21436,
+                "name": "Talstation 3",
+                "resortName": "Lech Zürs / Arlberg"
+            },
+            {
+                "lat": 47.12785,
+                "lon": 10.21436,
+                "name": "Talstation 3",
+                "resortName": "St. Anton / Arlberg"
+            },
+            {
+                "lat": 47.12785,
+                "lon": 10.21436,
+                "name": "Talstation 3",
+                "resortName": "Stuben / Arlberg"
+            },
+            {
+                "lat": 47.12785,
+                "lon": 10.21436,
+                "name": "Talstation 3",
+                "resortName": "Warth / Schröcken am Arlberg"
+            },
+            {
+                "lat": 47.13772,
+                "lon": 10.15985,
+                "name": "Talstation 1",
+                "resortName": "Lech Zürs / Arlberg"
+            },
+            {
+                "lat": 47.13772,
+                "lon": 10.15985,
+                "name": "Talstation 1",
+                "resortName": "St. Anton / Arlberg"
+            },
+            {
+                "lat": 47.13772,
+                "lon": 10.15985,
+                "name": "Talstation 1",
+                "resortName": "Stuben / Arlberg"
+            },
+            {
+                "lat": 47.13772,
+                "lon": 10.15985,
+                "name": "Talstation 1",
+                "resortName": "Warth / Schröcken am Arlberg"
+            },
+            {
+                "lat": 47.13805,
+                "lon": 10.18023,
+                "name": "Talstation 2",
+                "resortName": "Lech Zürs / Arlberg"
+            },
+            {
+                "lat": 47.13805,
+                "lon": 10.18023,
+                "name": "Talstation 2",
+                "resortName": "St. Anton / Arlberg"
+            },
+            {
+                "lat": 47.13805,
+                "lon": 10.18023,
+                "name": "Talstation 2",
+                "resortName": "Stuben / Arlberg"
+            },
+            {
+                "lat": 47.13805,
+                "lon": 10.18023,
+                "name": "Talstation 2",
+                "resortName": "Warth / Schröcken am Arlberg"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "93569ecf-24ad-4b54-8c0c-30026d78a488",
+        "lat": 47.470769874999995,
+        "lon": 12.232695249999999,
+        "kind": "verbund",
+        "name": "SkiWelt",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 678,
+            "resortCount": 8,
+            "maxElevation": 1869,
+            "pistesKmTotal": 2200.0
+        },
+        "members": [
+            {
+                "lat": 47.45,
+                "lon": 12.1667,
+                "name": "SkiWelt Wilder Kaiser-Brixental",
+                "isPrimary": true,
+                "stable_id": "skiwelt-wilder-kaiser-brixental"
+            },
+            {
+                "lat": 47.462219,
+                "lon": 12.230015,
+                "name": "SkiWelt / Brixen im Thale",
+                "isPrimary": false,
+                "stable_id": "brixen"
+            },
+            {
+                "lat": 47.493951,
+                "lon": 12.272072,
+                "name": "SkiWelt / Ellmau",
+                "isPrimary": false,
+                "stable_id": "ellmau"
+            },
+            {
+                "lat": 47.500184,
+                "lon": 12.321038,
+                "name": "SkiWelt / Going",
+                "isPrimary": false,
+                "stable_id": "going"
+            },
+            {
+                "lat": 47.456822,
+                "lon": 12.185125,
+                "name": "SkiWelt / Hopfgarten / Itter",
+                "isPrimary": false,
+                "stable_id": "hopfgarten"
+            },
+            {
+                "lat": 47.5052,
+                "lon": 12.249928,
+                "name": "SkiWelt / Scheffau",
+                "isPrimary": false,
+                "stable_id": "scheffau"
+            },
+            {
+                "lat": 47.478116,
+                "lon": 12.199116,
+                "name": "SkiWelt / Söll",
+                "isPrimary": false,
+                "stable_id": "soell"
+            },
+            {
+                "lat": 47.419667,
+                "lon": 12.237568,
+                "name": "SkiWelt / Westendorf",
+                "isPrimary": false,
+                "stable_id": "westendorf"
+            }
+        ],
+        "website": "https://www.skiwelt.at",
+        "isVerbund": true,
+        "stable_id": "skiwelt",
+        "description": "Eines der größten Skigebiete der Welt",
+        "accessPoints": [
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Brixen im Thale"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Ellmau"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Going"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Hopfgarten / Itter"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Scheffau"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Söll"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt / Westendorf"
+            },
+            {
+                "lat": 47.49685,
+                "lon": 12.19826,
+                "name": "Talstation 1",
+                "resortName": "SkiWelt Wilder Kaiser-Brixental"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Brixen im Thale"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Ellmau"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Going"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Hopfgarten / Itter"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Scheffau"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Söll"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt / Westendorf"
+            },
+            {
+                "lat": 47.51316,
+                "lon": 12.31785,
+                "name": "Talstation 3",
+                "resortName": "SkiWelt Wilder Kaiser-Brixental"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Brixen im Thale"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Ellmau"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Going"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Hopfgarten / Itter"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Scheffau"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Söll"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt / Westendorf"
+            },
+            {
+                "lat": 47.51999,
+                "lon": 12.24894,
+                "name": "Talstation 2",
+                "resortName": "SkiWelt Wilder Kaiser-Brixental"
+            }
+        ],
+        "skiresortSlug": "skiwelt-wilder-kaiser-brixental"
+    },
+    {
+        "id": "9bba14db-71ca-4147-b540-fa9e57e8db15",
+        "lat": 47.176269,
+        "lon": 9.311752,
+        "kind": "verbund",
+        "name": "Toggenburg",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 14,
+            "resortCount": 1,
+            "maxElevation": 2262,
+            "pistesKmTotal": 50.0
+        },
+        "members": [
+            {
+                "lat": 47.176269,
+                "lon": 9.311752,
+                "name": "Toggenburg - Chäserrugg / Alt St. Johann / Unterwasser",
+                "isPrimary": true,
+                "stable_id": "toggenburg-chaeserrugg"
+            }
+        ],
+        "website": "https://www.toggenburg.swiss",
+        "isVerbund": true,
+        "stable_id": "toggenburg",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.17627,
+                "lon": 9.31175,
+                "name": "Skigebiet Toggenburg - Chäserrugg",
+                "resortName": "Toggenburg - Chäserrugg / Alt St. Johann / Unterwasser"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "a06ee414-c334-43c3-8b66-15e102ff360d",
+        "lat": 44.3142271,
+        "lon": 6.59447615,
+        "kind": "verbund",
+        "name": "Espace Lumière",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 38,
+            "resortCount": 2,
+            "maxElevation": 2600,
+            "pistesKmTotal": 217.0
+        },
+        "members": [
+            {
+                "lat": 44.3694172,
+                "lon": 6.6025313,
+                "name": "Pra Loup / Espace Lumière",
+                "isPrimary": true,
+                "stable_id": "praloup"
+            },
+            {
+                "lat": 44.259037,
+                "lon": 6.586421,
+                "name": "Val d'Allos",
+                "isPrimary": false,
+                "stable_id": "val-dallos"
+            }
+        ],
+        "website": "https://www.espacelumiere.com",
+        "isVerbund": true,
+        "stable_id": "espace-lumiere",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 44.25904,
+                "lon": 6.58642,
+                "name": "Skigebiet Val d'Allos",
+                "resortName": "Val d'Allos"
+            },
+            {
+                "lat": 44.36942,
+                "lon": 6.60253,
+                "name": "Skigebiet Pra Loup",
+                "resortName": "Pra Loup / Espace Lumière"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "a1a9632f-543e-49f7-80c3-e236ea3427bb",
+        "lat": 46.261196000000005,
+        "lon": 10.550363333333335,
+        "kind": "verbund",
+        "name": "Adamello Ski",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 62,
+            "resortCount": 3,
+            "maxElevation": 3016,
+            "pistesKmTotal": 261.5
+        },
+        "members": [
+            {
+                "lat": 46.271838,
+                "lon": 10.562153,
+                "name": "Passo Tonale - Adamello Ski / Val di Sole",
+                "isPrimary": true,
+                "stable_id": "passo-tonale-val-di-sole"
+            },
+            {
+                "lat": 46.24175,
+                "lon": 10.518937,
+                "name": "Ponte di Legno - Temù - Adamello Ski",
+                "isPrimary": false,
+                "stable_id": "ponte-di-legno"
+            },
+            {
+                "lat": 46.27,
+                "lon": 10.57,
+                "name": "Presena Gletscher - Adamello Ski",
+                "isPrimary": false,
+                "stable_id": "presena-gletscher"
+            }
+        ],
+        "website": "https://www.adamelloski.com",
+        "isVerbund": true,
+        "stable_id": "adamello-ski",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.24175,
+                "lon": 10.51894,
+                "name": "Skigebiet Ponte di Legno - Temù - Adamello Ski",
+                "resortName": "Ponte di Legno - Temù - Adamello Ski"
+            },
+            {
+                "lat": 46.27000,
+                "lon": 10.57000,
+                "name": "Skigebiet Presena Gletscher - Adamello Ski",
+                "resortName": "Presena Gletscher - Adamello Ski"
+            },
+            {
+                "lat": 46.27184,
+                "lon": 10.56215,
+                "name": "Skigebiet Passo Tonale - Adamello Ski",
+                "resortName": "Passo Tonale - Adamello Ski / Val di Sole"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "a68f15f3-b4df-4c16-9bf4-e41f3bfcbc7d",
+        "lat": 44.25305135,
+        "lon": 7.774861850000001,
+        "kind": "verbund",
+        "name": "Mondolé Ski",
+        "stats": {
+            "countries": [
+                "IT"
+            ],
+            "liftsTotal": 22,
+            "resortCount": 2,
+            "maxElevation": 2085,
+            "pistesKmTotal": 82.6
+        },
+        "members": [
+            {
+                "lat": 44.2475017,
+                "lon": 7.7555677,
+                "name": "Artesina / Mondolè Ski",
+                "isPrimary": true,
+                "stable_id": "artesina"
+            },
+            {
+                "lat": 44.258601,
+                "lon": 7.794156,
+                "name": "Prato Nevoso / Mondolé Ski",
+                "isPrimary": false,
+                "stable_id": "prato-nevoso-artesina"
+            }
+        ],
+        "website": "https://www.mondoleski.it",
+        "isVerbund": true,
+        "stable_id": "mondole-ski",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 44.24750,
+                "lon": 7.75557,
+                "name": "Skigebiet Artesina",
+                "resortName": "Artesina / Mondolè Ski"
+            },
+            {
+                "lat": 44.25860,
+                "lon": 7.79416,
+                "name": "Skigebiet Prato Nevoso",
+                "resortName": "Prato Nevoso / Mondolé Ski"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "a95ac293-8d8e-4aa2-92ad-037f3e46e465",
+        "lat": 44.086953,
+        "lon": 6.9541525,
+        "kind": "verbund",
+        "name": "Valberg-Beuil",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 34,
+            "resortCount": 2,
+            "maxElevation": 2675,
+            "pistesKmTotal": 180.0
+        },
+        "members": [
+            {
+                "lat": 44.087708,
+                "lon": 6.930485,
+                "name": "Valberg - Beuil / Valberg",
+                "isPrimary": true,
+                "stable_id": "valberg"
+            },
+            {
+                "lat": 44.086198,
+                "lon": 6.97782,
+                "name": "Beuil Les Launes - Beuil / Valberg",
+                "isPrimary": false,
+                "stable_id": "beuil-les-launes"
+            }
+        ],
+        "website": "https://www.valberg.com",
+        "isVerbund": true,
+        "stable_id": "valberg-beuil",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 44.08620,
+                "lon": 6.97782,
+                "name": "Skigebiet Beuil Les Launes - Beuil",
+                "resortName": "Beuil Les Launes - Beuil / Valberg"
+            },
+            {
+                "lat": 44.08717,
+                "lon": 6.96952,
+                "name": "Talstation 3",
+                "resortName": "Valberg - Beuil / Valberg"
+            },
+            {
+                "lat": 44.09088,
+                "lon": 6.93515,
+                "name": "Talstation 1",
+                "resortName": "Valberg - Beuil / Valberg"
+            },
+            {
+                "lat": 44.09206,
+                "lon": 6.98335,
+                "name": "Talstation 2",
+                "resortName": "Valberg - Beuil / Valberg"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "ad94318e-c977-4ae5-8f6f-33240387be3c",
+        "lat": 46.9818185,
+        "lon": 10.3457095,
+        "kind": "verbund",
+        "name": "Silvretta Arena Ischgl-Samnaun",
+        "stats": {
+            "countries": [
+                "AT",
+                "CH"
+            ],
+            "liftsTotal": 92,
+            "resortCount": 2,
+            "maxElevation": 2900,
+            "pistesKmTotal": 477.0
+        },
+        "members": [
+            {
+                "lat": 46.982448,
+                "lon": 10.317321,
+                "name": "Silvretta Arena Ischgl / Samnaun",
+                "isPrimary": false,
+                "stable_id": "silvretta-arena-ischgl-samnaun"
+            },
+            {
+                "lat": 46.981189,
+                "lon": 10.374098,
+                "name": "Silvretta Arena Samnaun / Ischgl",
+                "isPrimary": false,
+                "stable_id": "samnaun"
+            }
+        ],
+        "website": "https://www.ischgl.com",
+        "isVerbund": true,
+        "stable_id": "silvretta-arena",
+        "description": "Grenzueberschreitendes Skigebiet AT/CH",
+        "accessPoints": [
+            {
+                "lat": 46.95145,
+                "lon": 10.37467,
+                "name": "Talstation 3",
+                "resortName": "Silvretta Arena Ischgl / Samnaun"
+            },
+            {
+                "lat": 46.95145,
+                "lon": 10.37467,
+                "name": "Talstation 3",
+                "resortName": "Silvretta Arena Samnaun / Ischgl"
+            },
+            {
+                "lat": 47.00994,
+                "lon": 10.28819,
+                "name": "Talstation 2",
+                "resortName": "Silvretta Arena Ischgl / Samnaun"
+            },
+            {
+                "lat": 47.00994,
+                "lon": 10.28819,
+                "name": "Talstation 2",
+                "resortName": "Silvretta Arena Samnaun / Ischgl"
+            },
+            {
+                "lat": 47.01287,
+                "lon": 10.29413,
+                "name": "Talstation 1",
+                "resortName": "Silvretta Arena Ischgl / Samnaun"
+            },
+            {
+                "lat": 47.01287,
+                "lon": 10.29413,
+                "name": "Talstation 1",
+                "resortName": "Silvretta Arena Samnaun / Ischgl"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "b7105b7a-c8e8-402d-87dd-06abf964f270",
+        "lat": 45.54501966666667,
+        "lon": 6.7531870000000005,
+        "kind": "verbund",
+        "name": "Paradiski",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 182,
+            "resortCount": 3,
+            "maxElevation": 3226,
+            "pistesKmTotal": 625.0
+        },
+        "members": [
+            {
+                "lat": 45.503239,
+                "lon": 6.69445,
+                "name": "La Plagne / Paradiski",
+                "isPrimary": false,
+                "stable_id": "la-plagne"
+            },
+            {
+                "lat": 45.578864,
+                "lon": 6.795044,
+                "name": "Les Arcs - Bourg-Saint-Maurice / Paradiski",
+                "isPrimary": false,
+                "stable_id": "les-arcs-bourg-saint-maurice"
+            },
+            {
+                "lat": 45.552956,
+                "lon": 6.770067,
+                "name": "Peisey Vallandry / Paradiski",
+                "isPrimary": false,
+                "stable_id": "peisey-vallandry"
+            }
+        ],
+        "website": "https://paradiski.com",
+        "isVerbund": true,
+        "stable_id": "paradiski",
+        "description": "Les Arcs und La Plagne verbunden durch Vanoise Express",
+        "accessPoints": [
+            {
+                "lat": 45.45627,
+                "lon": 6.69307,
+                "name": "Talstation 1",
+                "resortName": "La Plagne / Paradiski"
+            },
+            {
+                "lat": 45.50524,
+                "lon": 6.67722,
+                "name": "Talstation 3",
+                "resortName": "La Plagne / Paradiski"
+            },
+            {
+                "lat": 45.53455,
+                "lon": 6.63716,
+                "name": "Talstation 2",
+                "resortName": "La Plagne / Paradiski"
+            },
+            {
+                "lat": 45.55296,
+                "lon": 6.77007,
+                "name": "Skigebiet Peisey Vallandry",
+                "resortName": "Peisey Vallandry / Paradiski"
+            },
+            {
+                "lat": 45.57886,
+                "lon": 6.79504,
+                "name": "Skigebiet Les Arcs - Bourg-Saint-Maurice",
+                "resortName": "Les Arcs - Bourg-Saint-Maurice / Paradiski"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "b7e1b11c-f99a-4d68-a6f3-e97e660748e3",
+        "lat": 44.566869,
+        "lon": 6.675568,
+        "kind": "verbund",
+        "name": "Forêt Blanche",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 32,
+            "resortCount": 2,
+            "maxElevation": 2750,
+            "pistesKmTotal": 185.0
+        },
+        "members": [
+            {
+                "lat": 44.566869,
+                "lon": 6.675568,
+                "name": "Vars - La Fôret Blanche",
+                "isPrimary": true,
+                "stable_id": "vars"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Risoul - La Fôret Blanche",
+                "isPrimary": false,
+                "stable_id": "risoul"
+            }
+        ],
+        "website": "https://www.foret-blanche.com",
+        "isVerbund": true,
+        "stable_id": "foret-blanche",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 44.56687,
+                "lon": 6.67557,
+                "name": "Skigebiet Vars - La Fôret Blanche",
+                "resortName": "Vars - La Fôret Blanche"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "bbef66da-c1e0-4e18-ab1d-610dda50b37b",
+        "lat": 46.2669415,
+        "lon": 6.800450333333333,
+        "kind": "verbund",
+        "name": "Portes du Soleil",
+        "stats": {
+            "countries": [
+                "CH",
+                "FR"
+            ],
+            "liftsTotal": 379,
+            "resortCount": 9,
+            "maxElevation": 2466,
+            "pistesKmTotal": 414.6
+        },
+        "members": [
+            {
+                "lat": 46.279669,
+                "lon": 6.721793,
+                "name": "Abondance / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "abondance"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Avoriaz 1800 / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "avoriaz"
+            },
+            {
+                "lat": 46.206567,
+                "lon": 6.849031,
+                "name": "Champéry - Les Crosets - Champoussin - Morgins / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "champery"
+            },
+            {
+                "lat": 46.267685,
+                "lon": 6.858344,
+                "name": "Châtel / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "chatel"
+            },
+            {
+                "lat": 46.284582,
+                "lon": 6.776779,
+                "name": "La Chapelle d'Abondance / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "la-chapelle-dabondance"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Les Gets / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "les-gets"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Morzine / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "morzine"
+            },
+            {
+                "lat": 46.25,
+                "lon": 6.73,
+                "name": "Roc d'Enfer  - Saint-Jean-d'Aulps - La Chèvrerie / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "st-jean-daulps"
+            },
+            {
+                "lat": 46.313146,
+                "lon": 6.866755,
+                "name": "Torgon / Portes du Soleil",
+                "isPrimary": false,
+                "stable_id": "torgon"
+            }
+        ],
+        "website": "https://www.portesdusoleil.com",
+        "isVerbund": true,
+        "stable_id": "portes-du-soleil",
+        "description": "Groesstes grenzueberschreitendes Skigebiet FR/CH",
+        "accessPoints": [
+            {
+                "lat": 46.14883,
+                "lon": 6.65808,
+                "name": "Talstation 1",
+                "resortName": "Avoriaz 1800 / Portes du Soleil"
+            },
+            {
+                "lat": 46.14883,
+                "lon": 6.65808,
+                "name": "Talstation 1",
+                "resortName": "Champéry - Les Crosets - Champoussin - Morgins / Portes du Soleil"
+            },
+            {
+                "lat": 46.14883,
+                "lon": 6.65808,
+                "name": "Talstation 1",
+                "resortName": "Châtel / Portes du Soleil"
+            },
+            {
+                "lat": 46.14883,
+                "lon": 6.65808,
+                "name": "Talstation 1",
+                "resortName": "Morzine / Portes du Soleil"
+            },
+            {
+                "lat": 46.15696,
+                "lon": 6.66878,
+                "name": "Talstation 2",
+                "resortName": "Avoriaz 1800 / Portes du Soleil"
+            },
+            {
+                "lat": 46.15696,
+                "lon": 6.66878,
+                "name": "Talstation 2",
+                "resortName": "Champéry - Les Crosets - Champoussin - Morgins / Portes du Soleil"
+            },
+            {
+                "lat": 46.15696,
+                "lon": 6.66878,
+                "name": "Talstation 2",
+                "resortName": "Châtel / Portes du Soleil"
+            },
+            {
+                "lat": 46.15696,
+                "lon": 6.66878,
+                "name": "Talstation 2",
+                "resortName": "Morzine / Portes du Soleil"
+            },
+            {
+                "lat": 46.16084,
+                "lon": 6.66969,
+                "name": "Talstation 3",
+                "resortName": "Avoriaz 1800 / Portes du Soleil"
+            },
+            {
+                "lat": 46.16084,
+                "lon": 6.66969,
+                "name": "Talstation 3",
+                "resortName": "Champéry - Les Crosets - Champoussin - Morgins / Portes du Soleil"
+            },
+            {
+                "lat": 46.16084,
+                "lon": 6.66969,
+                "name": "Talstation 3",
+                "resortName": "Châtel / Portes du Soleil"
+            },
+            {
+                "lat": 46.16084,
+                "lon": 6.66969,
+                "name": "Talstation 3",
+                "resortName": "Morzine / Portes du Soleil"
+            },
+            {
+                "lat": 46.20657,
+                "lon": 6.84903,
+                "name": "Skigebiet Champéry - Les Crosets - Champoussin - Morgins",
+                "resortName": "Champéry - Les Crosets - Champoussin - Morgins / Portes du Soleil"
+            },
+            {
+                "lat": 46.25000,
+                "lon": 6.73000,
+                "name": "Skigebiet Roc d'Enfer  - Saint-Jean-d'Aulps - La Chèvrerie",
+                "resortName": "Roc d'Enfer  - Saint-Jean-d'Aulps - La Chèvrerie / Portes du Soleil"
+            },
+            {
+                "lat": 46.26769,
+                "lon": 6.85834,
+                "name": "Skigebiet Châtel",
+                "resortName": "Châtel / Portes du Soleil"
+            },
+            {
+                "lat": 46.27967,
+                "lon": 6.72179,
+                "name": "Skigebiet Abondance",
+                "resortName": "Abondance / Portes du Soleil"
+            },
+            {
+                "lat": 46.28458,
+                "lon": 6.77678,
+                "name": "Skigebiet La Chapelle d'Abondance",
+                "resortName": "La Chapelle d'Abondance / Portes du Soleil"
+            },
+            {
+                "lat": 46.31315,
+                "lon": 6.86676,
+                "name": "Skigebiet Torgon",
+                "resortName": "Torgon / Portes du Soleil"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "bc33bd4f-4025-4dd3-be8e-ec1f7550ddab",
+        "lat": 45.928102499999994,
+        "lon": 6.447172,
+        "kind": "verbund",
+        "name": "Aravis",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 54,
+            "resortCount": 2,
+            "maxElevation": 2600,
+            "pistesKmTotal": 215.0
+        },
+        "members": [
+            {
+                "lat": 45.898849,
+                "lon": 6.438675,
+                "name": "La Clusaz - Lake Annecy Ski Resort",
+                "isPrimary": true,
+                "stable_id": "la-clusaz"
+            },
+            {
+                "lat": 45.957356,
+                "lon": 6.455669,
+                "name": "Le Grand Bornand",
+                "isPrimary": false,
+                "stable_id": "le-grand-bornand"
+            }
+        ],
+        "website": "https://www.aravis.com",
+        "isVerbund": true,
+        "stable_id": "aravis",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.89885,
+                "lon": 6.43868,
+                "name": "Skigebiet La Clusaz - Lake Annecy Ski Resort",
+                "resortName": "La Clusaz - Lake Annecy Ski Resort"
+            },
+            {
+                "lat": 45.94501,
+                "lon": 6.43498,
+                "name": "Talstation 1",
+                "resortName": "Le Grand Bornand"
+            },
+            {
+                "lat": 45.97011,
+                "lon": 6.45164,
+                "name": "Talstation 3",
+                "resortName": "Le Grand Bornand"
+            },
+            {
+                "lat": 45.97315,
+                "lon": 6.45682,
+                "name": "Talstation 2",
+                "resortName": "Le Grand Bornand"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "c8e19e42-0732-4b2e-8226-8aaca6d8ff3e",
+        "lat": 45.92636025,
+        "lon": 6.8679195,
+        "kind": "verbund",
+        "name": "Chamonix Mont-Blanc",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 122,
+            "resortCount": 4,
+            "maxElevation": 3842,
+            "pistesKmTotal": 223.3
+        },
+        "members": [
+            {
+                "lat": 45.901955,
+                "lon": 6.884479,
+                "name": "Chamonix Mont-Blanc",
+                "isPrimary": true,
+                "stable_id": "chamonix-mont-blanc"
+            },
+            {
+                "lat": 45.951005,
+                "lon": 6.867335,
+                "name": "Brévent - Flégère / Chamonix",
+                "isPrimary": false,
+                "stable_id": "brevent-flegere-chamonix"
+            },
+            {
+                "lat": 45.966057,
+                "lon": 6.944389,
+                "name": "Grands Montets / Argentière",
+                "isPrimary": false,
+                "stable_id": "grands-montets-chamonix"
+            },
+            {
+                "lat": 45.886424,
+                "lon": 6.775475,
+                "name": "Les Houches / Saint-Gervais",
+                "isPrimary": false,
+                "stable_id": "les-houches"
+            }
+        ],
+        "website": "https://www.chamonix.com",
+        "isVerbund": true,
+        "stable_id": "chamonix-valley",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.88642,
+                "lon": 6.77548,
+                "name": "Skigebiet Les Houches",
+                "resortName": "Les Houches / Saint-Gervais"
+            },
+            {
+                "lat": 45.90196,
+                "lon": 6.88448,
+                "name": "Skigebiet Chamonix Mont-Blanc",
+                "resortName": "Chamonix Mont-Blanc"
+            },
+            {
+                "lat": 45.92405,
+                "lon": 6.86326,
+                "name": "Talstation 1",
+                "resortName": "Brévent - Flégère / Chamonix"
+            },
+            {
+                "lat": 45.92623,
+                "lon": 6.86734,
+                "name": "Talstation 3",
+                "resortName": "Brévent - Flégère / Chamonix"
+            },
+            {
+                "lat": 45.94167,
+                "lon": 6.88540,
+                "name": "Talstation 2",
+                "resortName": "Brévent - Flégère / Chamonix"
+            },
+            {
+                "lat": 45.95101,
+                "lon": 6.86734,
+                "name": "Skigebiet Brévent - Flégère",
+                "resortName": "Brévent - Flégère / Chamonix"
+            },
+            {
+                "lat": 45.96606,
+                "lon": 6.94439,
+                "name": "Skigebiet Grands Montets",
+                "resortName": "Grands Montets / Argentière"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "cd316c62-97d1-408c-a65c-32698d5c05bc",
+        "lat": 45.66366,
+        "lon": 6.8888565,
+        "kind": "verbund",
+        "name": "Espace San Bernardo",
+        "stats": {
+            "countries": [
+                "FR",
+                "IT"
+            ],
+            "liftsTotal": 58,
+            "resortCount": 2,
+            "maxElevation": 2800,
+            "pistesKmTotal": 308.0
+        },
+        "members": [
+            {
+                "lat": 45.636727,
+                "lon": 6.85667,
+                "name": "La Rosière - Espace San Bernardo",
+                "isPrimary": true,
+                "stable_id": "la-rosiere"
+            },
+            {
+                "lat": 45.690593,
+                "lon": 6.921043,
+                "name": "La Thuile - La Rosiere / San Bernardo",
+                "isPrimary": false,
+                "stable_id": "thuile-rosiere-aostatal"
+            }
+        ],
+        "website": "https://www.espacesanbernardo.com",
+        "isVerbund": true,
+        "stable_id": "san-bernardo",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.63673,
+                "lon": 6.85667,
+                "name": "Skigebiet La Rosière - Espace San Bernardo",
+                "resortName": "La Rosière - Espace San Bernardo"
+            },
+            {
+                "lat": 45.69059,
+                "lon": 6.92104,
+                "name": "Skigebiet La Thuile - La Rosiere",
+                "resortName": "La Thuile - La Rosiere / San Bernardo"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "cf13e16c-4649-4280-b7d8-078cbbbbe80b",
+        "lat": 46.46949,
+        "lon": 7.4953845,
+        "kind": "verbund",
+        "name": "Adelboden-Lenk",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 55,
+            "resortCount": 2,
+            "maxElevation": 2362,
+            "pistesKmTotal": 420.0
+        },
+        "members": [
+            {
+                "lat": 46.492725,
+                "lon": 7.558776,
+                "name": "Adelboden",
+                "isPrimary": false,
+                "stable_id": "adelboden"
+            },
+            {
+                "lat": 46.446255,
+                "lon": 7.431993,
+                "name": "Lenk",
+                "isPrimary": false,
+                "stable_id": "lenk"
+            }
+        ],
+        "website": "https://www.adelboden-lenk.ch",
+        "isVerbund": true,
+        "stable_id": "adelboden-lenk",
+        "description": "Verbundenes Skigebiet im Berner Oberland",
+        "accessPoints": [
+            {
+                "lat": 46.44205,
+                "lon": 7.45708,
+                "name": "Talstation 2",
+                "resortName": "Adelboden"
+            },
+            {
+                "lat": 46.44205,
+                "lon": 7.45708,
+                "name": "Talstation 2",
+                "resortName": "Lenk"
+            },
+            {
+                "lat": 46.44626,
+                "lon": 7.43199,
+                "name": "Skigebiet Lenk",
+                "resortName": "Lenk"
+            },
+            {
+                "lat": 46.45134,
+                "lon": 7.47122,
+                "name": "Talstation 3",
+                "resortName": "Adelboden"
+            },
+            {
+                "lat": 46.45134,
+                "lon": 7.47122,
+                "name": "Talstation 3",
+                "resortName": "Lenk"
+            },
+            {
+                "lat": 46.48782,
+                "lon": 7.56016,
+                "name": "Talstation 1",
+                "resortName": "Adelboden"
+            },
+            {
+                "lat": 46.48782,
+                "lon": 7.56016,
+                "name": "Talstation 1",
+                "resortName": "Lenk"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "d36498c9-5a65-45a4-8d40-af942c3b0656",
+        "lat": 46.10701633333333,
+        "lon": 7.947205333333334,
+        "kind": "verbund",
+        "name": "Saastal",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 39,
+            "resortCount": 3,
+            "maxElevation": 3573,
+            "pistesKmTotal": 138.1
+        },
+        "members": [
+            {
+                "lat": 46.089067,
+                "lon": 7.919168,
+                "name": "Saas-Fee",
+                "isPrimary": true,
+                "stable_id": "saas-fee"
+            },
+            {
+                "lat": 46.09347,
+                "lon": 7.95736,
+                "name": "Saas Almagell",
+                "isPrimary": false,
+                "stable_id": "saas-almagell"
+            },
+            {
+                "lat": 46.138512,
+                "lon": 7.965088,
+                "name": "Saas Grund - Hohsaas",
+                "isPrimary": false,
+                "stable_id": "hohsaas-saas-grund"
+            }
+        ],
+        "website": "https://www.saas-fee.ch",
+        "isVerbund": true,
+        "stable_id": "saastal",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.09347,
+                "lon": 7.95736,
+                "name": "Skigebiet Saas Almagell",
+                "resortName": "Saas Almagell"
+            },
+            {
+                "lat": 46.10258,
+                "lon": 7.92633,
+                "name": "Talstation 2",
+                "resortName": "Saas-Fee"
+            },
+            {
+                "lat": 46.10308,
+                "lon": 7.92368,
+                "name": "Talstation 3",
+                "resortName": "Saas-Fee"
+            },
+            {
+                "lat": 46.11118,
+                "lon": 7.93298,
+                "name": "Talstation 1",
+                "resortName": "Saas-Fee"
+            },
+            {
+                "lat": 46.12811,
+                "lon": 7.93853,
+                "name": "Talstation 1",
+                "resortName": "Saas Grund - Hohsaas"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "d50a1a02-b67e-436f-9bfe-3087155d1576",
+        "lat": 45.4533445,
+        "lon": 6.939669,
+        "kind": "verbund",
+        "name": "Espace Killy",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 80,
+            "resortCount": 2,
+            "maxElevation": 3456,
+            "pistesKmTotal": 300.0
+        },
+        "members": [
+            {
+                "lat": 45.471106,
+                "lon": 6.908684,
+                "name": "Tignes",
+                "isPrimary": true,
+                "stable_id": "tignes"
+            },
+            {
+                "lat": 45.435583,
+                "lon": 6.970654,
+                "name": "Val d'Isère",
+                "isPrimary": false,
+                "stable_id": "val-disere"
+            }
+        ],
+        "website": "https://www.espacekilly.com",
+        "isVerbund": true,
+        "stable_id": "espace-killy",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.43558,
+                "lon": 6.97065,
+                "name": "Skigebiet Val d'Isère",
+                "resortName": "Val d'Isère"
+            },
+            {
+                "lat": 45.44671,
+                "lon": 6.97615,
+                "name": "Talstation 2",
+                "resortName": "Tignes"
+            },
+            {
+                "lat": 45.44671,
+                "lon": 6.97615,
+                "name": "Talstation 2",
+                "resortName": "Val d'Isère"
+            },
+            {
+                "lat": 45.46830,
+                "lon": 6.90712,
+                "name": "Talstation 3",
+                "resortName": "Tignes"
+            },
+            {
+                "lat": 45.46830,
+                "lon": 6.90712,
+                "name": "Talstation 3",
+                "resortName": "Val d'Isère"
+            },
+            {
+                "lat": 45.47111,
+                "lon": 6.90868,
+                "name": "Skigebiet Tignes",
+                "resortName": "Tignes"
+            },
+            {
+                "lat": 45.50643,
+                "lon": 6.92093,
+                "name": "Talstation 1",
+                "resortName": "Tignes"
+            },
+            {
+                "lat": 45.50643,
+                "lon": 6.92093,
+                "name": "Talstation 1",
+                "resortName": "Val d'Isère"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "d9dd2c2e-a75d-43fa-9727-209c3ad3d050",
+        "lat": 46.1453588,
+        "lon": 7.308234199999999,
+        "kind": "verbund",
+        "name": "4 Vallees",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 216,
+            "resortCount": 5,
+            "maxElevation": 3330,
+            "pistesKmTotal": 1850.0
+        },
+        "members": [
+            {
+                "lat": 46.130363,
+                "lon": 7.224455,
+                "name": "La Tzoumaz - Mayens de Riddes",
+                "isPrimary": false,
+                "stable_id": "latzoumaz"
+            },
+            {
+                "lat": 46.132848,
+                "lon": 7.308655,
+                "name": "Nendaz / 4 Vallées",
+                "isPrimary": false,
+                "stable_id": "nendaz-4-vallees"
+            },
+            {
+                "lat": 46.177914,
+                "lon": 7.379164,
+                "name": "Thyon / 4 Vallées",
+                "isPrimary": false,
+                "stable_id": "thyon-4-vallees"
+            },
+            {
+                "lat": 46.09746,
+                "lon": 7.274752,
+                "name": "Verbier / 4 Vallées",
+                "isPrimary": false,
+                "stable_id": "verbier"
+            },
+            {
+                "lat": 46.188209,
+                "lon": 7.354145,
+                "name": "Veysonnaz / 4 Vallées",
+                "isPrimary": false,
+                "stable_id": "veysonnaz-4-vallees"
+            }
+        ],
+        "website": "https://verbier4vallees.ch",
+        "isVerbund": true,
+        "stable_id": "4-vallees",
+        "description": "Groesster Skiverbund der Schweiz mit Verbier",
+        "accessPoints": [
+            {
+                "lat": 46.07879,
+                "lon": 7.21479,
+                "name": "Talstation 1",
+                "resortName": "La Tzoumaz - Mayens de Riddes"
+            },
+            {
+                "lat": 46.07879,
+                "lon": 7.21479,
+                "name": "Talstation 1",
+                "resortName": "Nendaz / 4 Vallées"
+            },
+            {
+                "lat": 46.07879,
+                "lon": 7.21479,
+                "name": "Talstation 1",
+                "resortName": "Thyon / 4 Vallées"
+            },
+            {
+                "lat": 46.07879,
+                "lon": 7.21479,
+                "name": "Talstation 1",
+                "resortName": "Verbier / 4 Vallées"
+            },
+            {
+                "lat": 46.07879,
+                "lon": 7.21479,
+                "name": "Talstation 1",
+                "resortName": "Veysonnaz / 4 Vallées"
+            },
+            {
+                "lat": 46.09381,
+                "lon": 7.23364,
+                "name": "Talstation 2",
+                "resortName": "La Tzoumaz - Mayens de Riddes"
+            },
+            {
+                "lat": 46.09381,
+                "lon": 7.23364,
+                "name": "Talstation 2",
+                "resortName": "Nendaz / 4 Vallées"
+            },
+            {
+                "lat": 46.09381,
+                "lon": 7.23364,
+                "name": "Talstation 2",
+                "resortName": "Thyon / 4 Vallées"
+            },
+            {
+                "lat": 46.09381,
+                "lon": 7.23364,
+                "name": "Talstation 2",
+                "resortName": "Verbier / 4 Vallées"
+            },
+            {
+                "lat": 46.09381,
+                "lon": 7.23364,
+                "name": "Talstation 2",
+                "resortName": "Veysonnaz / 4 Vallées"
+            },
+            {
+                "lat": 46.09746,
+                "lon": 7.27475,
+                "name": "Skigebiet Verbier",
+                "resortName": "Verbier / 4 Vallées"
+            },
+            {
+                "lat": 46.17996,
+                "lon": 7.29119,
+                "name": "Talstation 3",
+                "resortName": "La Tzoumaz - Mayens de Riddes"
+            },
+            {
+                "lat": 46.17996,
+                "lon": 7.29119,
+                "name": "Talstation 3",
+                "resortName": "Nendaz / 4 Vallées"
+            },
+            {
+                "lat": 46.17996,
+                "lon": 7.29119,
+                "name": "Talstation 3",
+                "resortName": "Thyon / 4 Vallées"
+            },
+            {
+                "lat": 46.17996,
+                "lon": 7.29119,
+                "name": "Talstation 3",
+                "resortName": "Verbier / 4 Vallées"
+            },
+            {
+                "lat": 46.17996,
+                "lon": 7.29119,
+                "name": "Talstation 3",
+                "resortName": "Veysonnaz / 4 Vallées"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "dae2820d-a145-49e8-b019-029ddcd323e4",
+        "lat": 47.1486618,
+        "lon": 11.7575354,
+        "kind": "verbund",
+        "name": "Zillertal 3000",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 236,
+            "resortCount": 5,
+            "maxElevation": 3250,
+            "pistesKmTotal": 280.0
+        },
+        "members": [
+            {
+                "lat": 47.074,
+                "lon": 11.664,
+                "name": "Hintertuxer Gletscher / Hintertux / Zillertal",
+                "isPrimary": true,
+                "stable_id": "hintertux"
+            },
+            {
+                "lat": 47.163633,
+                "lon": 11.70928,
+                "name": "Eggalm Bahnen / Tux-Lanersbach / Zillertal",
+                "isPrimary": false,
+                "stable_id": "eggalm-tux-lanersbach"
+            },
+            {
+                "lat": 47.162072,
+                "lon": 11.807611,
+                "name": "Finkenberger Almbahnen / Finkenberg - Zillertal",
+                "isPrimary": false,
+                "stable_id": "finkenberger-almbahnen"
+            },
+            {
+                "lat": 47.161883,
+                "lon": 11.858625,
+                "name": "Mayrhofen / Zillertal",
+                "isPrimary": false,
+                "stable_id": "mayrhofen"
+            },
+            {
+                "lat": 47.181721,
+                "lon": 11.748161,
+                "name": "Rastkogel Bahnen / Tux-Vorderlanersbach / Zillertal",
+                "isPrimary": false,
+                "stable_id": "rastkogel-tux-vorderlanersbach"
+            }
+        ],
+        "website": "https://www.zillertal3000.at",
+        "isVerbund": true,
+        "stable_id": "zillertal-3000",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.07400,
+                "lon": 11.66400,
+                "name": "Skigebiet Hintertuxer Gletscher",
+                "resortName": "Hintertuxer Gletscher / Hintertux / Zillertal"
+            },
+            {
+                "lat": 47.16188,
+                "lon": 11.85863,
+                "name": "Skigebiet Mayrhofen",
+                "resortName": "Mayrhofen / Zillertal"
+            },
+            {
+                "lat": 47.16207,
+                "lon": 11.80761,
+                "name": "Skigebiet Finkenberger Almbahnen",
+                "resortName": "Finkenberger Almbahnen / Finkenberg - Zillertal"
+            },
+            {
+                "lat": 47.16363,
+                "lon": 11.70928,
+                "name": "Skigebiet Eggalm Bahnen",
+                "resortName": "Eggalm Bahnen / Tux-Lanersbach / Zillertal"
+            },
+            {
+                "lat": 47.18172,
+                "lon": 11.74816,
+                "name": "Skigebiet Rastkogel Bahnen",
+                "resortName": "Rastkogel Bahnen / Tux-Vorderlanersbach / Zillertal"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "edda566c-ab53-43ec-83c8-b522dacac015",
+        "lat": 46.83184625,
+        "lon": 9.8596715,
+        "kind": "verbund",
+        "name": "Davos Klosters",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 38,
+            "resortCount": 4,
+            "maxElevation": 2844,
+            "pistesKmTotal": 203.5
+        },
+        "members": [
+            {
+                "lat": 46.847571,
+                "lon": 9.820662,
+                "name": "Davos Klosters Parsenn",
+                "isPrimary": true,
+                "stable_id": "davos-parsenn"
+            },
+            {
+                "lat": 46.774495,
+                "lon": 9.83654,
+                "name": "Davos Jakobshorn",
+                "isPrimary": false,
+                "stable_id": "davos-jakobshorn"
+            },
+            {
+                "lat": 46.807873,
+                "lon": 9.913616,
+                "name": "Davos Pischa",
+                "isPrimary": false,
+                "stable_id": "davos-pischa"
+            },
+            {
+                "lat": 46.897446,
+                "lon": 9.867868,
+                "name": "Klosters Madrisa",
+                "isPrimary": false,
+                "stable_id": "klosters-madrisa"
+            }
+        ],
+        "website": "https://www.davos.ch",
+        "isVerbund": true,
+        "stable_id": "davos-klosters",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.77450,
+                "lon": 9.83654,
+                "name": "Skigebiet Davos Jakobshorn",
+                "resortName": "Davos Jakobshorn"
+            },
+            {
+                "lat": 46.80787,
+                "lon": 9.91362,
+                "name": "Skigebiet Davos Pischa",
+                "resortName": "Davos Pischa"
+            },
+            {
+                "lat": 46.80840,
+                "lon": 9.83839,
+                "name": "Talstation 2",
+                "resortName": "Davos Klosters Parsenn"
+            },
+            {
+                "lat": 46.84757,
+                "lon": 9.82066,
+                "name": "Skigebiet Davos Klosters Parsenn",
+                "resortName": "Davos Klosters Parsenn"
+            },
+            {
+                "lat": 46.86897,
+                "lon": 9.88033,
+                "name": "Talstation 1",
+                "resortName": "Davos Klosters Parsenn"
+            },
+            {
+                "lat": 46.89745,
+                "lon": 9.86787,
+                "name": "Skigebiet Klosters Madrisa",
+                "resortName": "Klosters Madrisa"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "ee5afbb4-6311-4d21-ae00-0cc97718b8c1",
+        "lat": 47.55345693333334,
+        "lon": 13.473551933333333,
+        "kind": "verbund",
+        "name": "Dachstein West",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 66,
+            "resortCount": 3,
+            "maxElevation": 1650,
+            "pistesKmTotal": 153.0
+        },
+        "members": [
+            {
+                "lat": 47.566218,
+                "lon": 13.497348,
+                "name": "Gosau / Dachstein West",
+                "isPrimary": true,
+                "stable_id": "gosau"
+            },
+            {
+                "lat": 47.5151668,
+                "lon": 13.4499498,
+                "name": "Annaberg / Lungötz / Dachstein West",
+                "isPrimary": false,
+                "stable_id": "annaberg-lammertal"
+            },
+            {
+                "lat": 47.578986,
+                "lon": 13.473358,
+                "name": "Rußbach am Paß Gschütt / Dachstein West",
+                "isPrimary": false,
+                "stable_id": "russbach"
+            }
+        ],
+        "website": "https://www.dachstein.at",
+        "isVerbund": true,
+        "stable_id": "dachstein-west",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.51861,
+                "lon": 13.45088,
+                "name": "Talstation 2",
+                "resortName": "Annaberg / Lungötz / Dachstein West"
+            },
+            {
+                "lat": 47.56622,
+                "lon": 13.49735,
+                "name": "Skigebiet Gosau",
+                "resortName": "Gosau / Dachstein West"
+            },
+            {
+                "lat": 47.56687,
+                "lon": 13.51838,
+                "name": "Talstation 3",
+                "resortName": "Annaberg / Lungötz / Dachstein West"
+            },
+            {
+                "lat": 47.57899,
+                "lon": 13.47336,
+                "name": "Skigebiet Rußbach am Paß Gschütt",
+                "resortName": "Rußbach am Paß Gschütt / Dachstein West"
+            },
+            {
+                "lat": 47.58878,
+                "lon": 13.46242,
+                "name": "Talstation 1",
+                "resortName": "Annaberg / Lungötz / Dachstein West"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "f73cfcdc-16ee-412c-9f1b-910d534bef69",
+        "lat": 47.2772065,
+        "lon": 12.7242785,
+        "kind": "verbund",
+        "name": "Zell am See - Kaprun",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 51,
+            "resortCount": 2,
+            "maxElevation": 3029,
+            "pistesKmTotal": 139.5
+        },
+        "members": [
+            {
+                "lat": 47.328992,
+                "lon": 12.737961,
+                "name": "Schmitten / Zell am See",
+                "isPrimary": true,
+                "stable_id": "schmittenhoehe-zellamsee"
+            },
+            {
+                "lat": 47.225421,
+                "lon": 12.710596,
+                "name": "Kitzsteinhorn / Kaprun / Zell am See",
+                "isPrimary": false,
+                "stable_id": "kitzsteinhorn-kaprun"
+            }
+        ],
+        "website": "https://www.zellamsee-kaprun.com",
+        "isVerbund": true,
+        "stable_id": "zell-kaprun",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 47.22542,
+                "lon": 12.71060,
+                "name": "Skigebiet Kitzsteinhorn",
+                "resortName": "Kitzsteinhorn / Kaprun / Zell am See"
+            },
+            {
+                "lat": 47.32899,
+                "lon": 12.73796,
+                "name": "Skigebiet Schmitten",
+                "resortName": "Schmitten / Zell am See"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "fae60b7c-4b51-4eb0-a070-c60073cebbb7",
+        "lat": 46.587205,
+        "lon": 7.899213,
+        "kind": "verbund",
+        "name": "Jungfrau Ski Region",
+        "stats": {
+            "countries": [
+                "CH"
+            ],
+            "liftsTotal": 124,
+            "resortCount": 2,
+            "maxElevation": 3000,
+            "pistesKmTotal": 216.0
+        },
+        "members": [
+            {
+                "lat": 46.612658,
+                "lon": 7.942171,
+                "name": "Jungfrau Ski Region Grindelwald - Wengen",
+                "isPrimary": true,
+                "stable_id": "jungfrau-grindelwald-wengen"
+            },
+            {
+                "lat": 46.561752,
+                "lon": 7.856255,
+                "name": "Jungfrau Ski Region Mürren - Schilthorn",
+                "isPrimary": false,
+                "stable_id": "muerren-schilthorn"
+            }
+        ],
+        "website": "https://www.jungfrau.ch",
+        "isVerbund": true,
+        "stable_id": "jungfrau-region",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.56175,
+                "lon": 7.85626,
+                "name": "Skigebiet Jungfrau Ski Region Mürren - Schilthorn",
+                "resortName": "Jungfrau Ski Region Mürren - Schilthorn"
+            },
+            {
+                "lat": 46.59832,
+                "lon": 7.90818,
+                "name": "Talstation 1",
+                "resortName": "Jungfrau Ski Region Grindelwald - Wengen"
+            },
+            {
+                "lat": 46.61266,
+                "lon": 7.94217,
+                "name": "Skigebiet Jungfrau Ski Region Grindelwald - Wengen",
+                "resortName": "Jungfrau Ski Region Grindelwald - Wengen"
+            },
+            {
+                "lat": 46.62231,
+                "lon": 8.02378,
+                "name": "Talstation 3",
+                "resortName": "Jungfrau Ski Region Grindelwald - Wengen"
+            },
+            {
+                "lat": 46.62447,
+                "lon": 8.01940,
+                "name": "Talstation 2",
+                "resortName": "Jungfrau Ski Region Grindelwald - Wengen"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "fb3f28b5-6d98-4b79-946b-baa8d9b1d785",
+        "lat": 47.00319266666667,
+        "lon": 9.910826666666667,
+        "kind": "verbund",
+        "name": "Montafon",
+        "stats": {
+            "countries": [
+                "AT"
+            ],
+            "liftsTotal": 52,
+            "resortCount": 3,
+            "maxElevation": 2430,
+            "pistesKmTotal": 197.6
+        },
+        "members": [
+            {
+                "lat": 46.983883,
+                "lon": 9.986057,
+                "name": "Silvretta Montafon",
+                "isPrimary": true,
+                "stable_id": "silvretta-montafon"
+            },
+            {
+                "lat": 46.959841,
+                "lon": 9.899926,
+                "name": "Gargellen / Montafon",
+                "isPrimary": false,
+                "stable_id": "gargellen"
+            },
+            {
+                "lat": 47.065854,
+                "lon": 9.846497,
+                "name": "Golm / Montafon",
+                "isPrimary": false,
+                "stable_id": "golm"
+            }
+        ],
+        "website": "https://www.montafon.at",
+        "isVerbund": true,
+        "stable_id": "montafon",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 46.96761,
+                "lon": 9.91930,
+                "name": "Talstation 1",
+                "resortName": "Gargellen / Montafon"
+            },
+            {
+                "lat": 47.06874,
+                "lon": 9.92973,
+                "name": "Talstation 2",
+                "resortName": "Silvretta Montafon"
+            },
+            {
+                "lat": 47.07563,
+                "lon": 9.87174,
+                "name": "Talstation 2",
+                "resortName": "Golm / Montafon"
+            },
+            {
+                "lat": 47.07972,
+                "lon": 9.92352,
+                "name": "Talstation 1",
+                "resortName": "Silvretta Montafon"
+            },
+            {
+                "lat": 47.08940,
+                "lon": 9.86883,
+                "name": "Talstation 1",
+                "resortName": "Golm / Montafon"
+            },
+            {
+                "lat": 47.09505,
+                "lon": 9.96681,
+                "name": "Talstation 3",
+                "resortName": "Silvretta Montafon"
+            }
+        ],
+        "skiresortSlug": null
+    },
+    {
+        "id": "ffe8e32e-80b8-484c-949d-d0c507b848af",
+        "lat": 45.235487,
+        "lon": 6.2297205,
+        "kind": "verbund",
+        "name": "Les Sybelles",
+        "stats": {
+            "countries": [
+                "FR"
+            ],
+            "liftsTotal": 97,
+            "resortCount": 5,
+            "maxElevation": 2620,
+            "pistesKmTotal": 165.0
+        },
+        "members": [
+            {
+                "lat": 45.211008,
+                "lon": 6.213799,
+                "name": "Saint Sorlin d'Arves - Les Sybelles",
+                "isPrimary": true,
+                "stable_id": "saint-sorlin-darves"
+            },
+            {
+                "lat": 45.259966,
+                "lon": 6.245642,
+                "name": "La Toussuire - Les Sybelles",
+                "isPrimary": false,
+                "stable_id": "la-toussuire"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Le Corbier - Les Sybelles",
+                "isPrimary": false,
+                "stable_id": "le-corbier"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Les Bottières - Les Sybelles",
+                "isPrimary": false,
+                "stable_id": "les-bottieres"
+            },
+            {
+                "lat": null,
+                "lon": null,
+                "name": "Saint Jean d'Arves - Les Sybelles",
+                "isPrimary": false,
+                "stable_id": "saint-jean-darves"
+            }
+        ],
+        "website": "https://www.sybelles.ski",
+        "isVerbund": true,
+        "stable_id": "les-sybelles",
+        "description": null,
+        "accessPoints": [
+            {
+                "lat": 45.21101,
+                "lon": 6.21380,
+                "name": "Skigebiet Saint Sorlin d'Arves - Les Sybelles",
+                "resortName": "Saint Sorlin d'Arves - Les Sybelles"
+            },
+            {
+                "lat": 45.25997,
+                "lon": 6.24564,
+                "name": "Skigebiet La Toussuire - Les Sybelles",
+                "resortName": "La Toussuire - Les Sybelles"
+            }
+        ],
+        "skiresortSlug": null
+    }
+]

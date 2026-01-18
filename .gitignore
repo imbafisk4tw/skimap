@@ -1,0 +1,80 @@
+########################################
+# Secrets / lokale Konfiguration
+########################################
+.env
+**/.env
+**/*API*Key*.txt
+**/API Key.txt
+
+# Optional: config override für Prod/Local
+# js/config.js - jetzt im Repo (kostenloser ORS-Key, kein Risiko)
+
+########################################
+# OS / Editor
+########################################
+.DS_Store
+Thumbs.db
+*.swp
+
+########################################
+# Node
+########################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+########################################
+# Python
+########################################
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+########################################
+# Große GIS/OSM/OSRM Artefakte (lokal)
+########################################
+*.pbf
+*.osm.pbf
+*.osrm
+*.osrm.*
+*.zip
+
+# pmtiles: standardmäßig ignorieren, aber die deploy-Tiles erlauben
+*.pmtiles
+!tiles/*.pmtiles
+
+########################################
+# Pipeline: KOMPLETT lokal (nicht auf GitHub)
+# Ausnahme: Wetter-Scripts für GitHub Actions
+########################################
+pipeline/
+!pipeline/scripts/
+pipeline/scripts/*
+!pipeline/scripts/fetch_geosphere_forecast.py
+!pipeline/scripts/fetch_openmeteo_forecast.py
+
+########################################
+# DB: KOMPLETT lokal (nicht auf GitHub)
+########################################
+db/
+
+########################################
+# Lokale Entwickler-Dateien
+########################################
+.claude/
+tmpclaude-*
+nul
+package.json
+package-lock.json
+start_map_server.bat
+gitignore.snippet.txt
+CLAUDE.md
+.github/copilot-instructions.md
+
+# Scraping-Mappings (nicht fürs Frontend)
+data/skiresort_*.json
+
+# Lokale Planungsdokumente (nicht öffentlich)
+IDEAS.md
